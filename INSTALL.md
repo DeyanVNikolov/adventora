@@ -27,7 +27,7 @@
 ## Активирайте виртуалната среда:
 
 ### За Windows:
-```.\\env\\Скриптове\\активиране```
+```.\\env\\Scripts\\activate```
 
 ### За macOS/Linux:
 ```source  env/bin/activate```
