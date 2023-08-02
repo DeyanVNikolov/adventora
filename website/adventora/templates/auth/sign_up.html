@@ -1,18 +1,12 @@
 {% extends "base.html" %}
 {% load static %}
+{% load crispy_forms_tags %}
 {% block content %}
 
 
 
-    <form method="post" class="form-group">
         {% csrf_token %}
-        {{ form.as_p }}
-
-        <button type="submit" class="btn btn-success">Submit</button>
-
-
-    </form>
-
+        {% crispy form %}
 
 
 

@@ -5,7 +5,12 @@ from .forms import RegisterForm, LoginForm
 
 
 def sign_up(request):
-    form = RegisterForm()
+    if request.method == 'POST':
+        form = RegisterForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+    else:
+        form = RegisterForm()
     return render(request, 'auth/sign_up.html', {'form': form})
 
 
