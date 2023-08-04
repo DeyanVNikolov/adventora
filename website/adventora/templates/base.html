@@ -105,16 +105,16 @@
                 <div class="buttons">
                     {#                    if authed#}
                     {% if user.is_authenticated %}
-                        <a class="button is-primary" href="{% url 'logout' %}">
-                            <strong>Log out</strong>
+                        <a class="button is-danger" href="{% url 'logout' %}">
+                            <strong>Изход</strong>
                         </a>
                     {% else %}
 
                         <a class="button is-primary" href="{% url 'sign-up' %}">
-                            <strong>Sign up</strong>
+                            <strong>Регистрация</strong>
                         </a>
                         <a class="button is-light" href="{% url 'sign-in' %}">
-                            Log in
+                            Вход
                         </a>
                     {% endif %}
                 </div>
