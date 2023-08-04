@@ -6,8 +6,17 @@ from django.contrib.auth.forms import UserCreationForm
 
 
 class LoginForm(forms.Form):
-    username = forms.CharField(max_length=65)
-    password = forms.CharField(max_length=65, widget=forms.PasswordInput)
+    username = forms.CharField(max_length=100, label="Потребителско име или имейл", required=True)
+    password = forms.CharField(max_length=65, widget=forms.PasswordInput, label="Парола", required=True)
+
+
+    class Meta:
+        model = User
+        fields = ('username', 'password')
+
+    helper = FormHelper()
+    helper.add_input(Submit('submit', 'Вход', css_class='is-primary'))
+    helper.form_method = 'POST'
 
 
 class RegisterForm(UserCreationForm):
