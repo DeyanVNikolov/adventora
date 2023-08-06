@@ -4,14 +4,78 @@
 {% block content %}
 
 
-        {% csrf_token %}
+
+{% csrf_token %}
         {% crispy form %}
 
 
+        <style>
+    button {
+        width: 100% !important;
+        background-color: #ededed !important;
+    }
+    </style>
 
+    <hr>
+    <div class="columns">
+        <div class="column has-text-centered">
+            <button onclick="window.location.href='{% url "social:begin" "google-oauth2" %}';" class="button is-rounded"
+                    style="background-color: #d7d7d7">
+                <img class="is-rounded" style="width: 20px; margin-right: 10px"
+                     src="{% static 'img/oauth2/google.png' %}" alt="Google Logo">
+                Вход с Google
+            </button><br>
+            <button onclick="window.location.href='{% url "social:begin" "trello" %}';" class="button is-rounded"
+                    style="margin-top:5px; width: 173px; background-color: #d7d7d7">
+                <img class="is-rounded" style="width: 20px; margin-right: 10px"
+                     src="{% static 'img/oauth2/trello.png' %}" alt="Trello Logo">
+                Вход с Trello
+            </button>
+        </div>
+        <div class="column has-text-centered">
+            <button onclick="window.location.href='{% url "social:begin" "github" %}';" class="button is-rounded"
+                    style="background-color: #d7d7d7">
+                <img class="is-rounded" style="width: 20px; margin-right: 10px"
+                     src="{% static 'img/oauth2/github.png' %}" alt="GitHub Logo">
+                Вход с GitHub
+            </button><br>
+            <button onclick="window.location.href='{% url "social:begin" "patreon" %}';" class="button is-rounded"
+                    style="margin-top:5px; width: 173px; background-color: #d7d7d7">
+                <img class="is-rounded" style="width: 20px; margin-right: 10px"
+                     src="{% static 'img/oauth2/patreon.png' %}" alt="Patreon Logo">
+                Вход с Patreon
+            </button>
+        </div>
 
+        <div class="column has-text-centered">
+            <button onclick="window.location.href='{% url "social:begin" "reddit" %}';" class="button is-rounded"
+                    style="background-color: #d7d7d7">
+                <img class="is-rounded" style="width: 20px; margin-right: 10px"
+                     src="{% static 'img/oauth2/reddit.png' %}" alt="Reddit Logo">
+                Вход с Reddit
+            </button><br>
+            <button onclick="window.location.href='{% url "social:begin" "steam" %}';" class="button is-rounded"
+                    style="margin-top:5px; width: 173px; background-color: #d7d7d7">
+                <img class="is-rounded" style="width: 20px; margin-right: 10px"
+                     src="{% static 'img/oauth2/steam.png' %}" alt="Steam Logo">
+                Вход със Steam
+            </button>
 
-
-
+        </div>
+        <div class="column has-text-centered">
+            <button onclick="window.location.href='{% url "social:begin" "spotify" %}';" class="button is-rounded"
+                    style="background-color: #d7d7d7">
+                <img class="is-rounded" style="width: 20px; margin-right: 10px"
+                     src="{% static 'img/oauth2/spotify.png' %}" alt="Spotify Logo">
+                Вход със Spotify
+            </button><br>
+            <button onclick="window.location.href='{% url "social:begin" "vk-oauth2" %}';" class="button is-rounded"
+                    style="margin-top:5px; width: 173px; background-color: #d7d7d7">
+                <img class="is-rounded" style="width: 20px; margin-right: 10px"
+                     src="{% static 'img/oauth2/vk.png' %}" alt="VK Logo">
+                Вход с VK
+            </button>
+        </div>
+    </div>
 
 {% endblock %}
