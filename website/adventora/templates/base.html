@@ -105,6 +105,9 @@
                 <div class="buttons">
                     {#                    if authed#}
                     {% if user.is_authenticated %}
+                        <a class="button is-info" href="{% url 'edit-profile' %}">
+                            <strong>Профил</strong>
+                        </a>
                         <a class="button is-danger" href="{% url 'logout' %}">
                             <strong>Изход</strong>
                         </a>
@@ -168,27 +171,23 @@
 
 <br><br>
 
-<div class="container" style="margin-top: 20px; min-height: 100vh !important;"> {% block content %} {% endblock %}
+<div class="container is-fluid" style="min-height: 100vh !important; margin-bottom: 50px"> {% block content %} {% endblock %}
 </div>
 
 
-<footer class="footer">
-    <div class="container">
-        <div class="content has-text-centered">
+<footer class="footer is-fluid">
+    <div class="container is-fluid">
+        <div class="content has-text-centered is-fluid">
 
             <b><p>Adventora подкрепя малкия и среден бизнес.</p></b>
             <br>
             <p>&copy; 2023 Adventora. Всички права запазени.</p>
 
-
-            <!-- Evenly distributed and centered footer links -->
-            <div class="footer-links">
-                <a href="/">Начало</a>
-                <a href="/about-us">За нас</a>
-                <a href="/privacy">Поверителност</a>
-                <a href="/terms-of-use">Политика за използване</a>
-                <a href="/contacts">Контакти</a>
-            </div>
+                <a style="margin-right: 10px" href="/">Начало</a>
+                <a style="margin-right: 10px" href="/about-us">За нас</a>
+                <a style="margin-right: 10px" href="/privacy">Поверителност</a>
+                <a style="margin-right: 10px" href="/terms-of-use">Политика за използване</a>
+                <a style="margin-right: 10px" href="/contacts">Контакти</a>
         </div>
     </div>
 </footer>
