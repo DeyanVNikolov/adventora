@@ -24,8 +24,14 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bulma',
     'home',
-    'authentication'
+    'authentication',
+    'api',
+    'social_django',
 ]
+
+SOCIAL_AUTH_JSONFIELD_ENABLED = True
+
+
 
 JAZZMIN_SETTINGS = {
     "site_title": "Adventora Admin",
@@ -78,6 +84,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'adventora.middleware.CheckRole'
+
 ]
 
 ROOT_URLCONF = 'adventora.urls'
@@ -93,6 +101,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -106,6 +116,55 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+AUTHENTICATION_BACKENDS = (
+    'social_core.backends.open_id.OpenIdAuth',
+    'social_core.backends.google.GoogleOAuth2',
+    'social_core.backends.twitter.TwitterOAuth',
+    'social_core.backends.github.GithubOAuth2',
+    'social_core.backends.reddit.RedditOAuth2',
+    'social_core.backends.spotify.SpotifyOAuth2',
+    'social_core.backends.trello.TrelloOAuth',
+    'social_core.backends.patreon.PatreonOAuth2',
+    'social_core.backends.steam.SteamOpenId',
+    'social_core.backends.vk.VKOAuth2',
+    'django.contrib.auth.backends.ModelBackend',
+)
+
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = os.environ.get("SOCIAL_AUTH_GOOGLE_OAUTH2_KEY")
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = os.environ.get("SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET")
+
+SOCIAL_AUTH_GITHUB_KEY = os.environ.get("SOCIAL_AUTH_GITHUB_KEY")
+SOCIAL_AUTH_GITHUB_SECRET = os.environ.get("SOCIAL_AUTH_GITHUB_SECRET")
+
+SOCIAL_AUTH_REDDIT_KEY = os.environ.get("SOCIAL_AUTH_REDDIT_KEY")
+SOCIAL_AUTH_REDDIT_SECRET = os.environ.get("SOCIAL_AUTH_REDDIT_SECRET")
+SOCIAL_AUTH_REDDIT_AUTH_EXTRA_ARGUMENTS = {'duration': 'permanent'}
+
+SOCIAL_AUTH_SPOTIFY_KEY = os.environ.get("SOCIAL_AUTH_SPOTIFY_KEY")
+SOCIAL_AUTH_SPOTIFY_SECRET = os.environ.get("SOCIAL_AUTH_SPOTIFY_SECRET")
+
+SOCIAL_AUTH_TRELLO_KEY = os.environ.get("SOCIAL_AUTH_TRELLO_KEY")
+SOCIAL_AUTH_TRELLO_SECRET = os.environ.get("SOCIAL_AUTH_TRELLO_SECRET")
+
+SOCIAL_AUTH_PATREON_KEY = os.environ.get("SOCIAL_AUTH_PATREON_KEY")
+SOCIAL_AUTH_PATREON_SECRET = os.environ.get("SOCIAL_AUTH_PATREON_SECRET")
+
+SOCIAL_AUTH_STEAM_API_KEY = os.environ.get("SOCIAL_AUTH_STEAM_API_KEY")
+SOCIAL_AUTH_STEAM_EXTRA_DATA = ['player']
+
+SOCIAL_AUTH_VK_OAUTH2_KEY = os.environ.get("SOCIAL_AUTH_VK_OAUTH2_KEY")
+SOCIAL_AUTH_VK_OAUTH2_SECRET = os.environ.get("SOCIAL_AUTH_VK_OAUTH2_SECRET")
+
+SOCIAL_AUTH_URL_NAMESPACE = 'social'
+URL_NAMESPACE = 'social'
+
+SOCIAL_AUTH_IMMUTABLE_USER_FIELDS = ['email', 'first_name', 'last_name', 'username']
+
+
+SOCIAL_AUTH_USER_MODEL = 'authentication.CustomUser'
+
+
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -143,3 +202,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CRISPY_ALLOWED_TEMPLATE_PACKS = ("bulma",)
 
 CRISPY_TEMPLATE_PACK = "bulma"
+
+AUTH_USER_MODEL = 'authentication.CustomUser'
+
+LOGIN_REDIRECT_URL = 'home'
+
+LOGOUT_REDIRECT_URL = 'home'
+
+LOGIN_URL = 'sign-in'
+
+LOGOUT_URL = 'logout'
