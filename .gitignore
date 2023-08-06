@@ -2,3 +2,4 @@
 .idea/
 *.pyc
 .env
+website/db.sqlite3
