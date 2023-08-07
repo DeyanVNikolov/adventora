@@ -5,9 +5,8 @@ import dotenv
 dotenv_file = os.path.join(BASE_DIR, ".env")
 if os.path.isfile(dotenv_file):
     dotenv.load_dotenv(dotenv_file)
-    print("Found .env file")
-else:
-    print("No .env file found")
+
+
 SECRET_KEY = os.environ.get("SECRET_KEY")
 DEBUG = True
 
@@ -28,6 +27,7 @@ INSTALLED_APPS = [
     'home',
     'authentication',
     'api',
+    'promocode',
     'social_django',
 ]
 

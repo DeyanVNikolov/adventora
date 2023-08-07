@@ -19,6 +19,15 @@ class Hotel(models.Model):
     ownerid = models.CharField(max_length=50)
     stars = models.IntegerField()
 
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "Hotel"
+        verbose_name_plural = "Hotels"
+
+
+
 
 class CustomUser(AbstractUser):
 
