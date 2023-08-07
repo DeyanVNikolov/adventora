@@ -8,3 +8,7 @@ def home(request):
 
 def contacts(request):
     return render(request, 'contact.html')
+
+
+def partnerships(request):
+    return render(request, 'partnerships.html')
