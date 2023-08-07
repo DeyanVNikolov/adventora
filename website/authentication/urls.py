@@ -15,4 +15,10 @@ urlpatterns = [
     path('complete-citizenship', views.complete_citizenship, name='complete-citizenship'),
     path('complete-phone', views.complete_phone, name='complete-phone'),
     path('banned', views.banned, name='banned'),
+    path('resend-verification-email', views.resend_verification_email, name='resend-verification-email'),
+    path('two-factor', views.two_factor, name='two-factor'),
+    path('two-factor/enable', views.two_factor_enable, name='two-factor-enable'),
+    path('two-factor/disable', views.two_factor_disable, name='two-factor-disable'),
+    path('two-factor/enable/verify', views.two_factor_enable_confirm, name='two-factor-verify'),
+
 ]

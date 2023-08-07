@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+
+    <img src="{% static 'qr/'|add:user.uniqueid|add:'.png' %}" alt="QR Code" width="200">
+
+
+{% csrf_token %}
+        {% crispy form %}
+
+
+{% endblock %}

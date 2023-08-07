@@ -1,11 +1,17 @@
+from django.conf import settings
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate, logout, update_session_auth_hash
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from .forms import RegisterForm, LoginForm, RoleChoiceForm, CompleteNameForm, CompleteEmailForm, CompleteUserNameForm, EditProfileForm, ChangePasswordForm, SetPasswordFromSocialLogin, DeleteAccountForm, CitizenshipForm, PhoneForm
+from .forms import RegisterForm, LoginForm, RoleChoiceForm, CompleteNameForm, CompleteEmailForm, CompleteUserNameForm, EditProfileForm, ChangePasswordForm, SetPasswordFromSocialLogin, DeleteAccountForm, CitizenshipForm, PhoneForm, TwoFactorEnableForm, TwoFactorEnableConfirmForm, TwoFactorForm, TwoFactorDisableForm
 from django.contrib import messages
+from twilio.rest import Client
+import os
+import pyqrcode
+from dotenv import load_dotenv
+
 
 from .models import CustomUser
 
@@ -55,7 +61,7 @@ def sign_up(request):
                 messages.error(request, 'Потребител с това потребителско име вече съществува.')
                 return redirect('sign-up')
 
-            user = User.objects.create_user(username=username, email=email, password=password, first_name=first_name,
+            user = CustomUser.objects.create_user(username=username, email=email, password=password, first_name=first_name,
                                             last_name=last_name)
             user.save()
             login(request, user)
@@ -82,7 +88,7 @@ def sign_in(request):
 
             # username is either email or username
             if '@' in username:
-                user = User.objects.filter(email=username).first()
+                user = CustomUser.objects.filter(email=username).first()
                 if user is None:
                     messages.error(request, 'Потребител с този имейл не съществува.')
                     return redirect('sign-in')
@@ -92,13 +98,16 @@ def sign_in(request):
                 print(user)
                 if user is not None:
                     login(request, user)
+                    if request.user.two_fa_enabled is True:
+                        request.user.factor_passed = False
+                        request.user.save()
                     messages.success(request, 'Успешно влизане.')
                     return redirect('home')
                 else:
                     messages.error(request, 'Грешна парола.')
                     return redirect('sign-in')
             else:
-                user = User.objects.filter(username=username).first()
+                user = CustomUser.objects.filter(username=username).first()
                 if user is None:
                     messages.error(request, 'Потребител с това потребителско име не съществува.')
                     return redirect('sign-in')
@@ -198,10 +207,13 @@ def complete_username(request):
             username = form.cleaned_data.get('username')
 
             existing_user = CustomUser.objects.filter(username=username).first()
-            if existing_user is not None:
-                if existing_user != request.user:
-                    messages.error(request, 'Потребител с това потребителско име вече съществува.')
-                    return redirect('complete-username')
+            if existing_user is not None and existing_user != request.user:
+                messages.error(request, 'Потребител с това потребителско име вече съществува.')
+                return redirect('complete-username')
+
+            if username.strip() == '' or username is None or len(username) < 5:
+                messages.error(request, 'Невалидно потребителско име. Поне 5 символа.')
+                return redirect('complete-username')
 
             request.user.username = username
             request.user.confirmedusername = True
@@ -233,6 +245,9 @@ def edit_profile(request):
             if existing_user is not None and existing_user != request.user:
                 messages.error(request, 'Потребител с това потребителско име вече съществува.')
                 return redirect('edit-profile')
+            if username.strip() == "" or username is None or len(username) < 5:
+                messages.error(request, 'Невалидно потребителско име. Поне 5 символа.')
+                return redirect('edit-profile')
 
             role_choices = ["user", "hotel_manager", "employee"]
             role = form.cleaned_data.get('role')
@@ -263,7 +278,8 @@ def edit_profile(request):
     email = request.user.email
     username = request.user.username
     citizenship = request.user.citizenship
-    context = {'form': form, 'first_name': first_name, 'last_name': last_name, 'email': email, 'username': username, citizenship: 'citizenship'}
+    context = {'form': form, 'first_name': first_name, 'last_name': last_name, 'email': email, 'username': username,
+               citizenship: 'citizenship'}
     return render(request, 'auth/edit_profile.html', context)
 
 
@@ -372,3 +388,180 @@ def banned(request):
     full_name = first_name + " " + last_name
     context = {'full_name': full_name}
     return render(request, 'auth/banned.html', context)
+
+
+
+load_dotenv(".env")
+
+account_sid = os.getenv("TWILIO_SID")
+auth_token = os.getenv("TWILIO_AUTH")
+
+
+def generate_qr_code(uri, uuid):
+    qr = pyqrcode.create(uri)
+    # save qr code as png to settings.STATIC_ROOT
+    qr.png(f"static/qr/{uuid}.png", scale=6)
+
+
+def generate_new_factor(user, uuid):
+    client = Client(account_sid, auth_token)
+
+    name = user.first_name + " " + user.last_name
+
+    new_factor = client.verify.v2.services("VAa66c2fc670269be421064b095e18f682").entities(uuid).new_factors.create(
+        friendly_name=f"{name}", factor_type='totp')
+    generate_qr_code(new_factor.binding['uri'], uuid)
+
+    return new_factor
+
+
+def verifyfactor(user, id, uuid, code):
+    client = Client(account_sid, auth_token)
+
+    factor = user.factor
+
+    id1 = id
+    uuid1 = uuid
+    code1 = str(code)
+    factor1 = factor
+
+    print("--------------------")
+    print(id1)
+    print(uuid1)
+    print(code1)
+    print(factor1)
+    print("--------------------")
+
+    verifiedfactor = client.verify.v2.services('VAa66c2fc670269be421064b095e18f682').entities(f'{uuid1}').factors(
+        f'{factor1}').update(auth_payload=f'{code1}')
+
+    return verifiedfactor
+
+
+def verifyuser(user, id, uuid, code):
+    client = Client(account_sid, auth_token)
+
+    factor = user.factor
+
+    challenge = client.verify.v2.services('VAa66c2fc670269be421064b095e18f682').entities(f'{uuid}').challenges.create(
+        auth_payload=f'{code}', factor_sid=f'{factor}')
+
+    return challenge
+
+
+def resend_verification_email(request):
+    return HttpResponse("Not implemented yet.")
+
+
+def two_factor(request):
+    if request.user.two_fa_enabled is False:
+        messages.error(request, 'Трябва да активирате двуфакторен аутентификатор.')
+        return redirect('home')
+
+    if request.user.factor_passed is True:
+        messages.error(request, 'Вече сте въвели кода.')
+        return redirect('home')
+
+    if request.method == 'POST':
+        form = TwoFactorForm(request.POST)
+        if form.is_valid():
+            code = form.cleaned_data.get('code')
+            verification = verifyuser(request.user, request.user.id, request.user.uniqueid, code)
+
+            if verification.status == 'approved':
+                request.user.factor_passed = True
+                request.user.save()
+                messages.success(request, 'Успешно въведен код.')
+                return redirect('home')
+            else:
+                messages.error(request, 'Грешен код.')
+                return redirect('two-factor')
+
+
+
+    form = TwoFactorForm()
+    context = {'form': form}
+    return render(request, 'auth/two_factor.html', context)
+
+
+def two_factor_enable(request):
+    if request.user.two_fa_enabled is True:
+        messages.error(request, 'Вече сте активирали двуфакторен аутентификатор.')
+        return redirect('home')
+    if request.method == 'POST':
+        form = TwoFactorEnableForm(request.POST)
+        if form.is_valid():
+            password = form.cleaned_data.get('password')
+
+            if not request.user.check_password(password):
+                messages.error(request, 'Грешна парола.')
+                return redirect('two-factor-enable')
+
+            uuid = request.user.uniqueid
+
+            new_factor = generate_new_factor(request.user, uuid)
+
+            request.user.factor = new_factor.sid
+            request.user.save()
+
+
+            messages.success(request, 'Успешно активиран двуфакторен аутентификатор.')
+            return redirect('two-factor-verify')
+
+
+    form = TwoFactorEnableForm()
+    return render(request, 'auth/two_factor_enable.html', {'form': form})
+
+
+def two_factor_enable_confirm(request):
+    if request.user.two_fa_enabled is True:
+        messages.error(request, 'Вече сте активирали двуфакторен аутентификатор.')
+        return redirect('home')
+    if request.method == 'POST':
+        form = TwoFactorEnableConfirmForm(request.POST)
+        if form.is_valid():
+            code = form.cleaned_data.get('code')
+
+            uuid = request.user.uniqueid
+            id = request.user.id
+
+            verifiedfactor = verifyfactor(request.user, id, uuid, code)
+
+            if verifiedfactor.status == "verified":
+                request.user.two_fa_enabled = True
+                request.user.save()
+                messages.success(request, 'Успешно активиран двуфакторен аутентификатор.')
+                return redirect('home')
+            else:
+                messages.error(request, 'Грешен код.')
+                return redirect('two-factor-verify')
+
+
+
+    form = TwoFactorEnableConfirmForm()
+    return render(request, 'auth/two_factor_enable_confirm.html', {'form': form})
+
+
+def two_factor_disable(request):
+    if request.user.two_fa_enabled is False:
+        messages.error(request, 'Вече сте деактивирали двуфакторен аутентификатор.')
+        return redirect('home')
+
+    if request.method == 'POST':
+        form = TwoFactorDisableForm(request.POST)
+        if form.is_valid():
+            password = form.cleaned_data.get('password')
+
+            if not request.user.check_password(password):
+                messages.error(request, 'Грешна парола.')
+                return redirect('two-factor-disable')
+
+            request.user.two_fa_enabled = False
+            request.user.factor = None
+            request.user.factor_passed = False
+            request.user.save()
+            messages.success(request, 'Успешно деактивиран двуфакторен аутентификатор.')
+            return redirect('home')
+
+    form = TwoFactorDisableForm()
+    return render(request, 'auth/two_factor_disable.html', {'form': form})

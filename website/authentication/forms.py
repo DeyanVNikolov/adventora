@@ -156,3 +156,34 @@ class PhoneForm(forms.Form):
     helper = FormHelper()
     helper.add_input(Submit('submit', 'Запази', css_class='button is-link'))
     helper.form_method = 'POST'
+
+
+class TwoFactorEnableForm(forms.Form):
+    password = forms.CharField(max_length=65, label="Парола", widget=forms.PasswordInput, required=True)
+
+    helper = FormHelper()
+    helper.add_input(Submit('submit', 'Включи', css_class='button is-link'))
+    helper.form_method = 'POST'
+
+
+class TwoFactorEnableConfirmForm(forms.Form):
+    code = forms.CharField(max_length=65, label="Код", required=True)
+
+    helper = FormHelper()
+    helper.add_input(Submit('submit', 'Включи', css_class='button is-link'))
+    helper.form_method = 'POST'
+
+
+class TwoFactorForm(forms.Form):
+    code = forms.CharField(max_length=65, label="Код", required=True)
+
+    helper = FormHelper()
+    helper.add_input(Submit('submit', 'Включи', css_class='button is-link'))
+    helper.form_method = 'POST'
+
+class TwoFactorDisableForm(forms.Form):
+    password = forms.CharField(max_length=65, label="Парола", widget=forms.PasswordInput, required=True)
+
+    helper = FormHelper()
+    helper.add_input(Submit('submit', 'Изключи', css_class='button is-link'))
+    helper.form_method = 'POST'

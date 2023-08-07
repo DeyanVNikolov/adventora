@@ -11,6 +11,13 @@ class CheckRole:
                 return redirect("/authentication/banned")
             if request.path.startswith("/authentication/banned") and request.user.banned is False:
                 return redirect("/")
+
+            if request.user.two_fa_enabled is True and request.user.factor_passed is False and request.path.startswith("/authentication/two-factor") is False:
+                if request.path.startswith('/authentication/logout'):
+                    pass
+                else:
+                    return redirect("/authentication/two-factor")
+
             if not request.path.startswith("/authentication"):
                 if request.user.role is None or request.user.role.strip() == "" or request.user.confirmedrole is False:
                     return redirect("/authentication/choose-role")
