@@ -105,6 +105,11 @@
                 <div class="buttons">
                     {#                    if authed#}
                     {% if user.is_authenticated %}
+                        {% if user.is_staff == True %}
+                            <a class="button is-warning" href="/admin">
+                            <strong>Админ</strong>
+                        </a>
+                            {% endif %}
                         <a class="button is-info" href="{% url 'edit-profile' %}">
                             <strong>Профил</strong>
                         </a>

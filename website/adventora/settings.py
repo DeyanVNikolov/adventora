@@ -21,6 +21,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_countries',
+    "phonenumber_field",
     'crispy_forms',
     'crispy_bulma',
     'home',
@@ -31,6 +33,9 @@ INSTALLED_APPS = [
 
 SOCIAL_AUTH_JSONFIELD_ENABLED = True
 
+COUNTRIES_FIRST = [
+    "BG", "RO", "GR", "SRB", "MK", "TR"
+]
 
 
 JAZZMIN_SETTINGS = {

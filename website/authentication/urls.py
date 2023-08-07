@@ -12,4 +12,7 @@ urlpatterns = [
     path('edit-profile', views.edit_profile, name='edit-profile'),
     path('change-password', views.change_password, name='change-password'),
     path('delete-account', views.delete_account, name='delete-account'),
+    path('complete-citizenship', views.complete_citizenship, name='complete-citizenship'),
+    path('complete-phone', views.complete_phone, name='complete-phone'),
+    path('banned', views.banned, name='banned'),
 ]

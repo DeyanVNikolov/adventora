@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+
+    <p>Dear {{ full_name }},</p>
+<br>
+    <h2><strong>NOTICE OF ACCOUNT SUSPENSION</strong></h2>
+
+    <p>We regret to inform you that your account has been suspended from accessing our website due to violations of our terms of service. This suspension is effective immediately.</p>
+<br>
+    <p><strong>Reason for Suspension:</strong><br>
+    Your account has been found to have engaged in activities that are in direct violation of our community guidelines and terms of use.</p>
+<br>
+    <p><strong>Effects of Suspension:</strong><br>
+    During the suspension period, you will not be able to log in to your account or access any of the features and services provided by our website.</p>
+<br>
+    <p><strong>Appealing the Suspension:</strong><br>
+    If you believe this suspension has been issued in error, or if you would like to appeal this decision, you may contact our support team at <a href="mailto:support@adventora.net">support@adventora.net</a>. Please provide any relevant information and details that you believe may assist in reviewing your suspension.</p>
+<br>
+    <p><strong>Duration of Suspension:</strong><br>
+    The duration of your suspension will be determined based on the severity of the violation. We will review your case and notify you of any updates regarding the status of your account suspension.</p>
+<br>
+    <p>We take the enforcement of our community guidelines and terms of use seriously in order to provide a safe and respectful environment for all of our users. We appreciate your understanding and cooperation.</p>
+<br><br>
+    <p><em>Sincerely,<br>
+    The Adventora Team</em></p>
+
+{% endblock %}

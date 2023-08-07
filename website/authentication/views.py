@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate, logout, update_session_auth_hash
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from .forms import RegisterForm, LoginForm, RoleChoiceForm, CompleteNameForm, CompleteEmailForm, CompleteUserNameForm, EditProfileForm, ChangePasswordForm, SetPasswordFromSocialLogin, DeleteAccountForm
+from .forms import RegisterForm, LoginForm, RoleChoiceForm, CompleteNameForm, CompleteEmailForm, CompleteUserNameForm, EditProfileForm, ChangePasswordForm, SetPasswordFromSocialLogin, DeleteAccountForm, CitizenshipForm, PhoneForm
 from django.contrib import messages
 
 from .models import CustomUser
@@ -76,7 +76,6 @@ def sign_in(request):
         print("POST")
         form = LoginForm(request.POST)
         if form.is_valid():
-
 
             username = form.cleaned_data.get('username')
             password = form.cleaned_data.get('password')
@@ -162,11 +161,7 @@ def complete_name(request):
     form = CompleteNameForm(initial={'first_name': request.user.first_name, 'last_name': request.user.last_name})
     first_name = request.user.first_name
     last_name = request.user.last_name
-    context = {
-        'form': form,
-        'first_name': first_name,
-        'last_name': last_name
-    }
+    context = {'form': form, 'first_name': first_name, 'last_name': last_name}
     return render(request, 'auth/complete_name.html', context)
 
 
@@ -191,10 +186,7 @@ def complete_email(request):
 
     form = CompleteEmailForm(initial={'email': request.user.email})
     email = request.user.email
-    context = {
-        'form': form,
-        'email': email,
-    }
+    context = {'form': form, 'email': email, }
     return render(request, 'auth/complete_email.html', context)
 
 
@@ -219,10 +211,7 @@ def complete_username(request):
 
     form = CompleteUserNameForm(initial={'username': request.user.username})
     username = request.user.username
-    context = {
-        'form': form,
-        'username': username,
-    }
+    context = {'form': form, 'username': username, }
     return render(request, 'auth/complete_username.html', context)
 
 
@@ -251,31 +240,30 @@ def edit_profile(request):
                 messages.error(request, 'Невалидна роля.')
                 return redirect('edit-profile')
 
-
+            citizenship = form.cleaned_data.get('citizenship')
+            phone = form.cleaned_data.get('phone')
 
             request.user.first_name = first_name
             request.user.last_name = last_name
             request.user.email = email
             request.user.username = username
             request.user.role = role
+            request.user.citizenship = citizenship
+            request.user.phone = phone
             request.user.save()
             messages.success(request, 'Успешно редактиран профил.')
             return redirect('home')
 
-
-
-    form = EditProfileForm(initial={'first_name': request.user.first_name, 'last_name': request.user.last_name, 'email': request.user.email, 'username': request.user.username, 'role': request.user.role})
+    form = EditProfileForm(initial={'first_name': request.user.first_name, 'last_name': request.user.last_name,
+                                    'email': request.user.email, 'username': request.user.username,
+                                    'role': request.user.role, 'citizenship': request.user.citizenship,
+                                    'phone': request.user.phone})
     first_name = request.user.first_name
     last_name = request.user.last_name
     email = request.user.email
     username = request.user.username
-    context = {
-        'form': form,
-        'first_name': first_name,
-        'last_name': last_name,
-        'email': email,
-        'username': username,
-    }
+    citizenship = request.user.citizenship
+    context = {'form': form, 'first_name': first_name, 'last_name': last_name, 'email': email, 'username': username, citizenship: 'citizenship'}
     return render(request, 'auth/edit_profile.html', context)
 
 
@@ -340,3 +328,47 @@ def delete_account(request):
 
     form = DeleteAccountForm()
     return render(request, 'auth/delete_account.html', {'form': form})
+
+
+def complete_citizenship(request):
+    if request.method == 'POST':
+        form = CitizenshipForm(request.POST)
+        if form.is_valid():
+            citizenship = form.cleaned_data.get('citizenship')
+
+            request.user.citizenship = citizenship
+            request.user.confirmedcitizenship = True
+            request.user.save()
+            messages.success(request, 'Успешно попълнено гражданство.')
+            return redirect('home')
+
+    form = CitizenshipForm(initial={'citizenship': request.user.citizenship})
+    citizenship = request.user.citizenship
+    context = {'form': form, 'citizenship': citizenship, }
+    return render(request, 'auth/complete_citizenship.html', context)
+
+
+def complete_phone(request):
+    if request.method == 'POST':
+        form = PhoneForm(request.POST)
+        if form.is_valid():
+            phone = form.cleaned_data.get('phone')
+
+            request.user.phone = phone
+            request.user.confirmedphone = True
+            request.user.save()
+            messages.success(request, 'Успешно попълнен телефонен номер.')
+            return redirect('home')
+
+    form = PhoneForm(initial={'phone': request.user.phone})
+    phone = request.user.phone
+    context = {'form': form, 'phone': phone, }
+    return render(request, 'auth/complete_phonenumber.html', context)
+
+
+def banned(request):
+    first_name = request.user.first_name
+    last_name = request.user.last_name
+    full_name = first_name + " " + last_name
+    context = {'full_name': full_name}
+    return render(request, 'auth/banned.html', context)

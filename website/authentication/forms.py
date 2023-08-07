@@ -4,6 +4,12 @@ from crispy_forms.layout import Layout
 from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm, PasswordChangeForm
+from django_countries.fields import CountryField, LazyTypedChoiceField
+from django_countries.widgets import CountrySelectWidget
+from .models import CustomUser, Hotel
+from phonenumber_field.formfields import PhoneNumberField
+from phonenumber_field.widgets import PhoneNumberPrefixWidget
+
 
 
 class LoginForm(forms.Form):
@@ -93,8 +99,9 @@ class EditProfileForm(forms.Form):
     email = forms.EmailField(max_length=65, label="Имейл", help_text="Имейлът трябва да е валиден.", required=True)
     username = forms.CharField(max_length=65, label="Потребителско име", required=True,
                                  help_text="Потребителското име трябва да съдържа поне 8 символа.")
+    citizenship = CountryField(blank_label='(select country)').formfield(label="Гражданство", required=True)
+    phone = PhoneNumberField(label="Телефон", required=True, widget=forms.TextInput(attrs={'placeholder': '+359 888 888 888'}))
     role = forms.ChoiceField(choices=ROLE_CHOICES, widget=forms.RadioSelect, label='Choose a Role')
-
 
 
     helper = FormHelper()
@@ -128,3 +135,24 @@ class DeleteAccountForm(forms.Form):
     helper.add_input(Submit('submit', 'Изтрий акаунта', css_class='button is-link'))
     helper.form_method = 'POST'
 
+
+class CitizenshipForm(forms.Form):
+
+    class Meta:
+        model = CustomUser
+        fields = ('citizenship',)
+        widgets = {'citizenship': CountrySelectWidget()}
+
+    citizenship = CountryField().formfield(label="Гражданство", required=True)
+
+    helper = FormHelper()
+    helper.add_input(Submit('submit', 'Запази', css_class='button is-link'))
+    helper.form_method = 'POST'
+
+
+class PhoneForm(forms.Form):
+    phone = PhoneNumberField(label="Телефон", required=True, widget=forms.TextInput(attrs={'placeholder': '+359 888 888 888'}))
+
+    helper = FormHelper()
+    helper.add_input(Submit('submit', 'Запази', css_class='button is-link'))
+    helper.form_method = 'POST'

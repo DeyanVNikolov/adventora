@@ -1,5 +1,7 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
+from django_countries.fields import CountryField
+from phonenumber_field.modelfields import PhoneNumberField
 
 
 class Hotel(models.Model):
@@ -20,13 +22,20 @@ class CustomUser(AbstractUser):
 
     ROLE_CHOICES = (('user', 'User'), ('manager', 'Manager'), ("employee", "Employee"), ("admin", "Admin"),)
 
-    confirmedusername = models.BooleanField(default=False)
-    confirmedemail = models.BooleanField(default=False)
-    confirmedname = models.BooleanField(default=False)
-    confirmedrole = models.BooleanField(default=False)
+
+    banned = models.BooleanField(default=False, null=True, blank=True)
+    confirmedusername = models.BooleanField(default=False, null=True, blank=True)
+    confirmedemail = models.BooleanField(default=False, null=True, blank=True)
+    confirmedname = models.BooleanField(default=False, null=True, blank=True)
+    confirmedrole = models.BooleanField(default=False, null=True, blank=True)
+    confirmedcitizenship = models.BooleanField(default=False, null=True, blank=True)
+    confirmedphone = models.BooleanField(default=False, null=True, blank=True)
+    phone = PhoneNumberField(null=True, blank=True)
+    citizenship = CountryField(blank_label='(select country)', null=True, blank=True)
     role = models.CharField(max_length=20, choices=ROLE_CHOICES, null=True, blank=True)
     manager = models.ForeignKey('self', on_delete=models.SET_NULL, null=True, blank=True, related_name='employees')
     hotel = models.ForeignKey(Hotel, on_delete=models.SET_NULL, null=True, blank=True)
+
 
     def __str__(self):
         return self.username
