@@ -3,6 +3,7 @@ from django.http import HttpResponse
 
 
 def home(request):
+    print("user:", request.user)
     return render(request, 'home.html', {'name': 'Deyan'})
 
 

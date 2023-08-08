@@ -1,3 +1,4 @@
+from captcha.fields import CaptchaField
 from crispy_bulma.layout import Submit
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout
@@ -15,6 +16,7 @@ from phonenumber_field.widgets import PhoneNumberPrefixWidget
 class LoginForm(forms.Form):
     username = forms.CharField(max_length=100, label="Потребителско име или имейл", required=True)
     password = forms.CharField(max_length=65, widget=forms.PasswordInput, label="Парола", required=True)
+    captcha = CaptchaField()
 
     class Meta:
         model = User
@@ -38,6 +40,7 @@ class RegisterForm(UserCreationForm):
                                 required=True)
     password2 = forms.CharField(max_length=65, label="Повтори паролата", widget=forms.PasswordInput, required=True,
                                 help_text="Въведете същата парола, както по-горе, за да потвърдите.")
+    captcha = CaptchaField()
 
     class Meta:
         model = User

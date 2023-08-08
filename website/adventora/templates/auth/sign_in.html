@@ -7,11 +7,28 @@
     {% csrf_token %}
     {% crispy form %}
 
+
+    <script>
+{#    change cursor when hovering#}
+        $('.captcha').hover(function () {
+            $(this).css('cursor', 'pointer');
+        }, function () {
+            $(this).css('cursor', 'auto');
+        });
+
+        $('.captcha').click(function () {
+            $.getJSON("/captcha/refresh/", function (result) {
+                $('.captcha').attr('src', result['image_url']);
+                $('#id_captcha_0').val(result['key'])
+            });
+        });
+    </script>
+
     <style>
-    button {
-        width: 100% !important;
-        background-color: #ededed !important;
-    }
+        button {
+            width: 100% !important;
+            background-color: #ededed !important;
+        }
     </style>
 
     <hr>
@@ -22,7 +39,8 @@
                 <img class="is-rounded" style="width: 20px; margin-right: 10px"
                      src="{% static 'img/oauth2/google.png' %}" alt="Google Logo">
                 Вход с Google
-            </button><br>
+            </button>
+            <br>
             <button onclick="window.location.href='{% url "social:begin" "trello" %}';" class="button is-rounded"
                     style="margin-top:5px; width: 173px; background-color: #d7d7d7">
                 <img class="is-rounded" style="width: 20px; margin-right: 10px"
@@ -36,7 +54,8 @@
                 <img class="is-rounded" style="width: 20px; margin-right: 10px"
                      src="{% static 'img/oauth2/github.png' %}" alt="GitHub Logo">
                 Вход с GitHub
-            </button><br>
+            </button>
+            <br>
             <button onclick="window.location.href='{% url "social:begin" "patreon" %}';" class="button is-rounded"
                     style="margin-top:5px; width: 173px; background-color: #d7d7d7">
                 <img class="is-rounded" style="width: 20px; margin-right: 10px"
@@ -51,7 +70,8 @@
                 <img class="is-rounded" style="width: 20px; margin-right: 10px"
                      src="{% static 'img/oauth2/reddit.png' %}" alt="Reddit Logo">
                 Вход с Reddit
-            </button><br>
+            </button>
+            <br>
             <button onclick="window.location.href='{% url "social:begin" "steam" %}';" class="button is-rounded"
                     style="margin-top:5px; width: 173px; background-color: #d7d7d7">
                 <img class="is-rounded" style="width: 20px; margin-right: 10px"
@@ -66,7 +86,8 @@
                 <img class="is-rounded" style="width: 20px; margin-right: 10px"
                      src="{% static 'img/oauth2/spotify.png' %}" alt="Spotify Logo">
                 Вход със Spotify
-            </button><br>
+            </button>
+            <br>
             <button onclick="window.location.href='{% url "social:begin" "vk-oauth2" %}';" class="button is-rounded"
                     style="margin-top:5px; width: 173px; background-color: #d7d7d7">
                 <img class="is-rounded" style="width: 20px; margin-right: 10px"
@@ -75,6 +96,8 @@
             </button>
         </div>
     </div>
+
+
 
 
 {% endblock %}
