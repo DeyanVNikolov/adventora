@@ -22,6 +22,7 @@
     <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
     <script src="{% static 'js/main.js' %}"></script>
     <style>
         /* Custom styling for the footer */
@@ -53,6 +54,25 @@
 
         .footer-links a:hover {
             color: #6a0dad;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px; /* Adjust the height as needed */
+            margin: 10px;
+            padding-top: 0;
+        }
+        .section {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
         }
     </style>
 </head>
@@ -107,9 +127,14 @@
                     {% if user.is_authenticated %}
                         {% if user.is_staff == True %}
                             <a class="button is-warning" href="/admin">
-                            <strong>Админ</strong>
-                        </a>
-                            {% endif %}
+                                <strong>Админ</strong>
+                            </a>
+                        {% endif %}
+                        {% if user.role == "hotel_manager" %}
+                            <a class="button is-primary" href="/hotel/dashboard">
+                                <strong>Панел</strong>
+                            </a>
+                        {% endif %}
                         <a class="button is-info" href="{% url 'edit-profile' %}">
                             <strong>Профил</strong>
                         </a>
@@ -176,7 +201,8 @@
 
 <br><br>
 
-<div class="container is-fluid" style="min-height: 100vh !important; margin-bottom: 50px"> {% block content %} {% endblock %}
+<div class="container is-fluid" style="min-height: 100vh !important; margin-bottom: 50px">
+    {% block content %} {% endblock %}
 </div>
 
 
@@ -185,21 +211,43 @@
         <div class="content has-text-centered is-fluid">
 
             <b><p>Adventora подкрепя малкия и среден бизнес.</p></b>
+
             <br>
+
+
+            <section class="section">
+                <div class="container">
+                    <div class="columns is-multiline">
+                        <div class="column is-6">
+                            <div class="image-container">
+                                <img onclick="window.open('/', '_self');" style="cursor: pointer;" src="{% static 'img/logo/adv-redplane-transparent.png' %}" alt="Adventora Logo">
+                            </div>
+                        </div>
+                        <div class="column is-6">
+                            <div class="image-container">
+                                <img onclick="window.open('https://toprentacar.bg/?partner=adventora', '_blank');" style="cursor: pointer;" src="{% static 'img/logo/top-rent-a-car.png' %}" alt="Top Rent A Car Logo">
+                            </div>
+                        </div>
+                        <!-- Add more columns for additional images -->
+                    </div>
+                </div>
+            </section>
+            <br>
+
             <p>&copy; 2023 Adventora. Всички права запазени.</p>
 
-                <a style="margin-right: 10px" href="/">Начало</a>
-                <a style="margin-right: 10px" href="/about-us">За нас</a>
-                <a style="margin-right: 10px" href="/privacy">Поверителност</a>
-                <a style="margin-right: 10px" href="/terms-of-use">Политика за използване</a>
-                <a style="margin-right: 10px" href="/contacts">Контакти</a>
-                <a style="margin-right: 10px" href="/partnerships">Партньорства</a>
+            <a style="margin-right: 10px" href="/">Начало</a>
+            <a style="margin-right: 10px" href="/about-us">За нас</a>
+            <a style="margin-right: 10px" href="/privacy">Поверителност</a>
+            <a style="margin-right: 10px" href="/terms-of-use">Политика за използване</a>
+            <a style="margin-right: 10px" href="/contacts">Контакти</a>
+            <a style="margin-right: 10px" href="/partnerships">Партньорства</a>
         </div>
     </div>
 </footer>
 
 
 <script src="https://unpkg.com/htmx.org@1.9.4"></script>
-
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 </body>
 </html>
