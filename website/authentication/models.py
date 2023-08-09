@@ -4,7 +4,6 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django_countries.fields import CountryField
 from phonenumber_field.modelfields import PhoneNumberField
-from hotel.models import Hotel
 
 
 class CustomUser(AbstractUser):
@@ -29,8 +28,7 @@ class CustomUser(AbstractUser):
     phone = PhoneNumberField(null=True, blank=True)
     citizenship = CountryField(blank_label='(select country)', null=True, blank=True)
     role = models.CharField(max_length=20, choices=ROLE_CHOICES, null=True, blank=True)
-    manager = models.ForeignKey('self', on_delete=models.SET_NULL, null=True, blank=True, related_name='employees')
-    hotel = models.ForeignKey(Hotel, on_delete=models.SET_NULL, null=True, blank=True)
+    hotel = models.ForeignKey('hotel.Hotel', on_delete=models.CASCADE, null=True, blank=True, default=None, related_name='hotel')
 
     def __str__(self):
         return self.username

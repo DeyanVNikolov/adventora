@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm, PasswordChangeForm
 from django_countries.fields import CountryField, LazyTypedChoiceField
 from django_countries.widgets import CountrySelectWidget
-from .models import CustomUser, Hotel
+from .models import CustomUser
 from phonenumber_field.formfields import PhoneNumberField
 from phonenumber_field.widgets import PhoneNumberPrefixWidget
 
