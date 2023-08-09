@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'api',
     'promocode',
     'social_django',
+    'location_field.apps.DefaultConfig'
 ]
 
 SOCIAL_AUTH_JSONFIELD_ENABLED = True
@@ -39,6 +40,7 @@ SOCIAL_AUTH_JSONFIELD_ENABLED = True
 COUNTRIES_FIRST = [
     "BG", "RO", "GR", "SRB", "MK", "TR"
 ]
+
 
 
 JAZZMIN_SETTINGS = {
@@ -220,3 +222,13 @@ LOGOUT_REDIRECT_URL = 'home'
 LOGIN_URL = 'sign-in'
 
 LOGOUT_URL = 'logout'
+
+GDAL_LIBRARY_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), '..', 'venv', 'Lib', 'site-packages', 'osgeo', 'gdal304.dll')
+GDAL_DATA_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), '..', 'venv', 'Lib', 'site-packages', 'osgeo', 'data')
+GEOS_LIBRARY_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), '..', 'venv', 'Lib', 'site-packages', 'osgeo', 'geos_c.dll')
+
+LOCATION_FIELD = {
+    'map.provider': 'openstreetmap',
+    'search.provider': 'google',
+    'provider.openstreetmap.max_zoom': 2,
+}
