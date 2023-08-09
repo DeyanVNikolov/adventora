@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+<div class="has-text-centered">
+    {% if hotel == None %}
+    Нямате хотел.
+
+        Регистрирайте нов тук: <a href="{% url 'register-hotel' %}">Регистрация</a>
+
+    {% else %}
+
+    Имате хотел
+<br><br>
+        <button class="button is-primary" onclick="window.location.href='/hotel/dashboard/{{ hotel.unique_id }}'">Детайли</button>
+    {% endif %}
+</div>
+
+ {% endblock %}
