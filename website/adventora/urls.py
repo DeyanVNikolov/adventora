@@ -25,4 +25,5 @@ urlpatterns = [
     path('social/', include('social_django.urls', namespace='social')),
     path('promocode/', include('promocode.urls')),
     path('captcha/', include('captcha.urls')),
+    path('hotel/', include('hotel.urls')),
 ]
