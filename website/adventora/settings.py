@@ -99,11 +99,14 @@ MIDDLEWARE = [
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'restrictedsessions.middleware.RestrictedSessionsMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'adventora.middleware.CheckRole'
 
 ]
+
+RESTRICTEDSESSIONS_REDIRECT_VIEW = 'home'
 
 ROOT_URLCONF = 'adventora.urls'
 
