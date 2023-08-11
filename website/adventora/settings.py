@@ -2,12 +2,8 @@ import os.path
 from pathlib import Path
 from dotenv_vault import load_dotenv
 
-
 BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv()
-
-
-
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = True
@@ -34,10 +30,34 @@ INSTALLED_APPS = [
     'promocode',
     'social_django',
     'location_field.apps.DefaultConfig',
-    'multiselectfield'
+    'multiselectfield',
+    'ckeditor',
 ]
 
 SOCIAL_AUTH_JSONFIELD_ENABLED = True
+
+CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
+
+# DISABLE FILE UPLOAD, ONLY TEXT
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Custom',
+        'height': 300,
+        'width': 700,
+        'allowedContent': False,
+        'resize_enabled': True,
+        'resize_dir': 'both',
+        'toolbar_Custom': [
+            ['Format', 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript'],
+            ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'],
+            ['Link', 'Unlink'],
+            ['RemoveFormat', "Styles", "Font", "FontSize", "TextColor", "BGColor"],
+            ['Maximize', 'ShowBlocks', 'Source'],
+        ],
+
+    },
+}
 
 CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.math_challenge'
 CAPTCHA_TIMEOUT = 10
