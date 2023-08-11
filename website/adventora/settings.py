@@ -1,13 +1,16 @@
 import os.path
 from pathlib import Path
+from dotenv_vault import load_dotenv
+
+
 BASE_DIR = Path(__file__).resolve().parent.parent
-import dotenv
-dotenv_file = os.path.join(BASE_DIR, ".env")
-if os.path.isfile(dotenv_file):
-    dotenv.load_dotenv(dotenv_file)
+load_dotenv()
 
 
-SECRET_KEY = os.environ.get("SECRET_KEY")
+
+
+SECRET_KEY = os.getenv("SECRET_KEY")
+print(SECRET_KEY)
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -29,19 +32,24 @@ INSTALLED_APPS = [
     'home',
     'authentication',
     'hotel',
-    'api',
     'promocode',
     'social_django',
-    'location_field.apps.DefaultConfig'
+    'location_field.apps.DefaultConfig',
+    'multiselectfield'
 ]
 
 SOCIAL_AUTH_JSONFIELD_ENABLED = True
 
+CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.math_challenge'
+CAPTCHA_TIMEOUT = 10
+CAPTCHA_LENGTH = 5
+CAPTCHA_FONT_SIZE = 50
+CAPTCHA_MATH_CHALLENGE_OPERATOR = '+'
+CAPTCHA_IMAGE_SIZE = (200, 100)
+
 COUNTRIES_FIRST = [
     "BG", "RO", "GR", "SRB", "MK", "TR"
 ]
-
-
 
 JAZZMIN_SETTINGS = {
     "site_title": "Adventora Admin",
@@ -56,7 +64,7 @@ JAZZMIN_SETTINGS = {
     "search_model": ["auth.User", "auth.Group"],
     "user_avatar": None,
     "topmenu_links": [
-        {"name": "Home",  "url": "admin:index", "permissions": ["auth.view_user"]},
+        {"name": "Home", "url": "admin:index", "permissions": ["auth.view_user"]},
         {"name": "GitHub", "url": "https://github.com/deyanvnikolov/adventora", "new_window": True},
         {"model": "auth.User"},
         {"name": "Website", "url": "/", "new_window": False},
@@ -121,10 +129,19 @@ TEMPLATES = [
 WSGI_APPLICATION = 'adventora.wsgi.application'
 
 DATABASES = {
+    # TODO PRODUCTION
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'main',
+        'USER': os.getenv("DB_USER"),
+        'PASSWORD': os.getenv("DB_PASSWORD"),
+        'HOST': os.getenv("DB_HOST"),
+        'PORT': '5432',
+    },
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': 'db.sqlite3',
+    # }
 }
 
 AUTHENTICATION_BACKENDS = (
@@ -138,43 +155,44 @@ AUTHENTICATION_BACKENDS = (
     'social_core.backends.patreon.PatreonOAuth2',
     'social_core.backends.steam.SteamOpenId',
     'social_core.backends.vk.VKOAuth2',
+    'social_core.backends.amazon.AmazonOAuth2',
     'django.contrib.auth.backends.ModelBackend',
 )
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = os.environ.get("SOCIAL_AUTH_GOOGLE_OAUTH2_KEY")
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = os.environ.get("SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET")
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = os.getenv("SOCIAL_AUTH_GOOGLE_OAUTH2_KEY")
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = os.getenv("SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET")
 
-SOCIAL_AUTH_GITHUB_KEY = os.environ.get("SOCIAL_AUTH_GITHUB_KEY")
-SOCIAL_AUTH_GITHUB_SECRET = os.environ.get("SOCIAL_AUTH_GITHUB_SECRET")
+SOCIAL_AUTH_GITHUB_KEY = os.getenv("SOCIAL_AUTH_GITHUB_KEY")
+SOCIAL_AUTH_GITHUB_SECRET = os.getenv("SOCIAL_AUTH_GITHUB_SECRET")
 
-SOCIAL_AUTH_REDDIT_KEY = os.environ.get("SOCIAL_AUTH_REDDIT_KEY")
-SOCIAL_AUTH_REDDIT_SECRET = os.environ.get("SOCIAL_AUTH_REDDIT_SECRET")
+SOCIAL_AUTH_REDDIT_KEY = os.getenv("SOCIAL_AUTH_REDDIT_KEY")
+SOCIAL_AUTH_REDDIT_SECRET = os.getenv("SOCIAL_AUTH_REDDIT_SECRET")
 SOCIAL_AUTH_REDDIT_AUTH_EXTRA_ARGUMENTS = {'duration': 'permanent'}
 
-SOCIAL_AUTH_SPOTIFY_KEY = os.environ.get("SOCIAL_AUTH_SPOTIFY_KEY")
-SOCIAL_AUTH_SPOTIFY_SECRET = os.environ.get("SOCIAL_AUTH_SPOTIFY_SECRET")
+SOCIAL_AUTH_SPOTIFY_KEY = os.getenv("SOCIAL_AUTH_SPOTIFY_KEY")
+SOCIAL_AUTH_SPOTIFY_SECRET = os.getenv("SOCIAL_AUTH_SPOTIFY_SECRET")
 
-SOCIAL_AUTH_TRELLO_KEY = os.environ.get("SOCIAL_AUTH_TRELLO_KEY")
-SOCIAL_AUTH_TRELLO_SECRET = os.environ.get("SOCIAL_AUTH_TRELLO_SECRET")
+SOCIAL_AUTH_TRELLO_KEY = os.getenv("SOCIAL_AUTH_TRELLO_KEY")
+SOCIAL_AUTH_TRELLO_SECRET = os.getenv("SOCIAL_AUTH_TRELLO_SECRET")
 
-SOCIAL_AUTH_PATREON_KEY = os.environ.get("SOCIAL_AUTH_PATREON_KEY")
-SOCIAL_AUTH_PATREON_SECRET = os.environ.get("SOCIAL_AUTH_PATREON_SECRET")
+SOCIAL_AUTH_PATREON_KEY = os.getenv("SOCIAL_AUTH_PATREON_KEY")
+SOCIAL_AUTH_PATREON_SECRET = os.getenv("SOCIAL_AUTH_PATREON_SECRET")
 
-SOCIAL_AUTH_STEAM_API_KEY = os.environ.get("SOCIAL_AUTH_STEAM_API_KEY")
+SOCIAL_AUTH_STEAM_API_KEY = os.getenv("SOCIAL_AUTH_STEAM_API_KEY")
 SOCIAL_AUTH_STEAM_EXTRA_DATA = ['player']
 
-SOCIAL_AUTH_VK_OAUTH2_KEY = os.environ.get("SOCIAL_AUTH_VK_OAUTH2_KEY")
-SOCIAL_AUTH_VK_OAUTH2_SECRET = os.environ.get("SOCIAL_AUTH_VK_OAUTH2_SECRET")
+SOCIAL_AUTH_VK_OAUTH2_KEY = os.getenv("SOCIAL_AUTH_VK_OAUTH2_KEY")
+SOCIAL_AUTH_VK_OAUTH2_SECRET = os.getenv("SOCIAL_AUTH_VK_OAUTH2_SECRET")
+
+SOCIAL_AUTH_AMAZON_KEY = os.getenv("SOCIAL_AUTH_AMAZON_KEY")
+SOCIAL_AUTH_AMAZON_SECRET = os.getenv("SOCIAL_AUTH_AMAZON_SECRET")
 
 SOCIAL_AUTH_URL_NAMESPACE = 'social'
 URL_NAMESPACE = 'social'
 
 SOCIAL_AUTH_IMMUTABLE_USER_FIELDS = ['email', 'first_name', 'last_name', 'username']
 
-
 SOCIAL_AUTH_USER_MODEL = 'authentication.CustomUser'
-
-
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -198,10 +216,12 @@ TIME_ZONE = 'EET'
 USE_I18N = True
 
 USE_TZ = True
-
 STATIC_URL = 'static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticroot')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
