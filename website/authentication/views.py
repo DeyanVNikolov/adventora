@@ -227,6 +227,7 @@ def complete_username(request):
     return render(request, 'auth/complete_username.html', context)
 
 
+@login_required
 def edit_profile(request):
     if request.method == 'POST':
         form = EditProfileForm(request.POST)
@@ -283,6 +284,7 @@ def edit_profile(request):
     return render(request, 'auth/edit_profile.html', context)
 
 
+@login_required
 def change_password(request):
     if request.method == 'POST':
         if request.user.has_usable_password():
@@ -327,7 +329,7 @@ def change_password(request):
         form = SetPasswordFromSocialLogin()
     return render(request, 'auth/change_password.html', {'form': form})
 
-
+@login_required
 def delete_account(request):
     if request.method == 'POST':
         form = DeleteAccountForm(request.POST)
@@ -345,7 +347,7 @@ def delete_account(request):
     form = DeleteAccountForm()
     return render(request, 'auth/delete_account.html', {'form': form})
 
-
+@login_required
 def complete_citizenship(request):
     if request.method == 'POST':
         form = CitizenshipForm(request.POST)
@@ -363,7 +365,7 @@ def complete_citizenship(request):
     context = {'form': form, 'citizenship': citizenship, }
     return render(request, 'auth/complete_citizenship.html', context)
 
-
+@login_required
 def complete_phone(request):
     if request.method == 'POST':
         form = PhoneForm(request.POST)
@@ -381,7 +383,7 @@ def complete_phone(request):
     context = {'form': form, 'phone': phone, }
     return render(request, 'auth/complete_phonenumber.html', context)
 
-
+@login_required
 def banned(request):
     first_name = request.user.first_name
     last_name = request.user.last_name
@@ -452,7 +454,7 @@ def verifyuser(user, id, uuid, code):
 def resend_verification_email(request):
     return HttpResponse("Not implemented yet.")
 
-
+@login_required
 def two_factor(request):
     if request.user.two_fa_enabled is False:
         messages.error(request, 'Трябва да активирате двуфакторен аутентификатор.')
