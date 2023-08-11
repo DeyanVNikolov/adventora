@@ -45,6 +45,12 @@
                      src="{% static 'img/oauth2/patreon.png' %}" alt="Patreon Logo">
                 Вход с Patreon
             </button>
+                            <button onclick="window.location.href='{% url "social:begin" "amazon" %}';" class="button is-rounded"
+                        style="margin-top:5px; width: 173px; background-color: #d7d7d7">
+                    <img class="is-rounded" style="width: 20px; margin-right: 10px"
+                         src="{% static 'img/oauth2/amazon.png' %}" alt="Amazon Logo">
+                    Вход с Amazon
+                </button>`
         </div>
 
         <div class="column has-text-centered">

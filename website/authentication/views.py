@@ -67,6 +67,10 @@ def sign_up(request):
             login(request, user)
             messages.success(request, 'Успешна регистрация.')
             return redirect('home')
+        else:
+            messages.error(request, 'Невалидни данни.')
+            print(form.errors.as_data())
+            return render(request, 'auth/sign_up.html', {'form': form})
 
 
     else:
@@ -95,7 +99,6 @@ def sign_in(request):
                 username = user.username
 
                 user = authenticate(request, username=username, password=password)
-                print(user)
                 if user is not None:
                     login(request, user)
                     if request.user.two_fa_enabled is True:
@@ -120,6 +123,11 @@ def sign_in(request):
                     else:
                         messages.error(request, 'Грешна парола.')
                         return redirect('sign-in')
+
+        else:
+            messages.error(request, 'Невалидни данни.')
+            print(form.errors.as_data())
+            return render(request, 'auth/sign_in.html', {'form': form})
     form = LoginForm()
     return render(request, 'auth/sign_in.html', {'form': form})
 
@@ -147,6 +155,9 @@ def choose_role(request):
             request.user.save()
             messages.success(request, 'Успешно избрана роля.')
             return redirect('home')
+        else:
+            messages.error(request, 'Невалидни данни.')
+            return render(request, 'auth/choose_role.html', {'form': form})
 
     form = RoleChoiceForm()
     return render(request, 'auth/choose_role.html', {'form': form})
@@ -166,6 +177,9 @@ def complete_name(request):
             request.user.save()
             messages.success(request, 'Успешно попълнено име.')
             return redirect('home')
+        else:
+            messages.error(request, 'Невалидни данни.')
+            return render(request, 'auth/complete_name.html', {'form': form})
 
     form = CompleteNameForm(initial={'first_name': request.user.first_name, 'last_name': request.user.last_name})
     first_name = request.user.first_name
@@ -192,6 +206,9 @@ def complete_email(request):
             request.user.save()
             messages.success(request, 'Успешно попълнен имейл.')
             return redirect('home')
+        else:
+            messages.error(request, 'Невалидни данни.')
+            return render(request, 'auth/complete_email.html', {'form': form})
 
     form = CompleteEmailForm(initial={'email': request.user.email})
     email = request.user.email
@@ -220,6 +237,9 @@ def complete_username(request):
             request.user.save()
             messages.success(request, 'Успешно попълнено потребителско име.')
             return redirect('home')
+        else:
+            messages.error(request, 'Невалидни данни.')
+            return render(request, 'auth/complete_username.html', {'form': form})
 
     form = CompleteUserNameForm(initial={'username': request.user.username})
     username = request.user.username
@@ -269,6 +289,9 @@ def edit_profile(request):
             request.user.save()
             messages.success(request, 'Успешно редактиран профил.')
             return redirect('home')
+        else:
+            messages.error(request, 'Невалидни данни.')
+            return render(request, 'auth/edit_profile.html', {'form': form})
 
     form = EditProfileForm(initial={'first_name': request.user.first_name, 'last_name': request.user.last_name,
                                     'email': request.user.email, 'username': request.user.username,
@@ -307,6 +330,9 @@ def change_password(request):
                 update_session_auth_hash(request, request.user)
                 messages.success(request, 'Успешно сменена парола.')
                 return redirect('home')
+            else:
+                messages.error(request, 'Невалидни данни.')
+                return render(request, 'auth/change_password.html', {'form': form})
 
         else:
             form = SetPasswordFromSocialLogin(request.POST)
@@ -323,6 +349,9 @@ def change_password(request):
                 update_session_auth_hash(request, request.user)
                 messages.success(request, 'Успешно сменена парола.')
                 return redirect('home')
+            else:
+                messages.error(request, 'Невалидни данни.')
+                return render(request, 'auth/change_password.html', {'form': form})
     if request.user.has_usable_password():
         form = ChangePasswordForm()
     else:
@@ -343,6 +372,9 @@ def delete_account(request):
             request.user.delete()
             messages.success(request, 'Успешно изтрит потребител.')
             return redirect('home')
+        else:
+            messages.error(request, 'Невалидни данни.')
+            return render(request, 'auth/delete_account.html', {'form': form})
 
     form = DeleteAccountForm()
     return render(request, 'auth/delete_account.html', {'form': form})
@@ -359,6 +391,9 @@ def complete_citizenship(request):
             request.user.save()
             messages.success(request, 'Успешно попълнено гражданство.')
             return redirect('home')
+        else:
+            messages.error(request, 'Невалидни данни.')
+            return render(request, 'auth/complete_citizenship.html', {'form': form})
 
     form = CitizenshipForm(initial={'citizenship': request.user.citizenship})
     citizenship = request.user.citizenship
@@ -377,6 +412,9 @@ def complete_phone(request):
             request.user.save()
             messages.success(request, 'Успешно попълнен телефонен номер.')
             return redirect('home')
+        else:
+            messages.error(request, 'Невалидни данни.')
+            return render(request, 'auth/complete_phonenumber.html', {'form': form})
 
     form = PhoneForm(initial={'phone': request.user.phone})
     phone = request.user.phone
@@ -478,6 +516,9 @@ def two_factor(request):
             else:
                 messages.error(request, 'Грешен код.')
                 return redirect('two-factor')
+        else:
+            messages.error(request, 'Невалидни данни.')
+            return render(request, 'auth/two_factor.html', {'form': form})
 
 
 
@@ -509,6 +550,9 @@ def two_factor_enable(request):
 
             messages.success(request, 'Успешно активиран двуфакторен аутентификатор.')
             return redirect('two-factor-verify')
+        else:
+            messages.error(request, 'Невалидни данни.')
+            return render(request, 'auth/two_factor_enable.html', {'form': form})
 
 
     form = TwoFactorEnableForm()
@@ -537,6 +581,9 @@ def two_factor_enable_confirm(request):
             else:
                 messages.error(request, 'Грешен код.')
                 return redirect('two-factor-verify')
+        else:
+            messages.error(request, 'Невалидни данни.')
+            return render(request, 'auth/two_factor_enable_confirm.html', {'form': form})
 
 
 
@@ -564,6 +611,9 @@ def two_factor_disable(request):
             request.user.save()
             messages.success(request, 'Успешно деактивиран двуфакторен аутентификатор.')
             return redirect('home')
+        else:
+            messages.error(request, 'Невалидни данни.')
+            return render(request, 'auth/two_factor_disable.html', {'form': form})
 
     form = TwoFactorDisableForm()
     return render(request, 'auth/two_factor_disable.html', {'form': form})
