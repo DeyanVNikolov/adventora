@@ -64,6 +64,7 @@
             margin: 10px;
             padding-top: 0;
         }
+
         .section {
             padding-top: 0;
             padding-bottom: 0;
@@ -73,6 +74,16 @@
             max-width: 100%;
             max-height: 100%;
             object-fit: contain;
+        }
+        
+        #cke_id_description {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        .django-ckeditor-widget {
+            width: 100% !important;
+            max-width: 100% !important;
         }
     </style>
 </head>
@@ -225,7 +236,8 @@
                         </div>
                         <div class="column is-6">
                             <div class="image-container">
-                                <img onclick="window.open('https://toprentacar.bg/?partner=adventora', '_blank');" style="cursor: pointer;" src="{% static 'img/logo/top-rent-a-car.png' %}" alt="Top Rent A Car Logo">
+                                <img onclick="window.open('https://toprentacar.bg/?partner=adventora', '_blank');" style="cursor: pointer;" src="{% static 'img/logo/top-rent-a-car.png' %}"
+                                     alt="Top Rent A Car Logo">
                             </div>
                         </div>
                         <!-- Add more columns for additional images -->
