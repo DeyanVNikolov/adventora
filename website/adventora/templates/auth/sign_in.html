@@ -16,6 +16,7 @@
     </style>
 
     <hr>
+    {% if not request.get_host == "dev.adventora.net" %}
     <div class="columns">
         <div class="column has-text-centered">
             <button onclick="window.location.href='{% url "social:begin" "google-oauth2" %}';" class="button is-rounded"
@@ -86,6 +87,9 @@
             </button>
         </div>
     </div>
+    {% else %}
+    <h2 class="title is-5">Социален вход е изключен в тестовия сървър. Използвайте 127.0.0.1 или adventora.net</h2>
+    {% endif %}
 
 
 
