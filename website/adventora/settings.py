@@ -8,7 +8,22 @@ load_dotenv()
 SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'dev.adventora.net',
+    'adventora.net',
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://127.0.0.1:8000',
+    'http://localhost:8000',
+    'https://dev.adventora.net',
+    'https://adventora.net',
+]
+
+CSRF_COOKIE_PATH = '/'
+CSRF_COOKIE_SECURE = True
 
 INSTALLED_APPS = [
     'jazzmin',
@@ -32,88 +47,13 @@ INSTALLED_APPS = [
     'location_field.apps.DefaultConfig',
     'multiselectfield',
     'ckeditor',
+    'corsheaders',
+    'debug_toolbar'
 ]
-
-SOCIAL_AUTH_JSONFIELD_ENABLED = True
-
-CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
-
-# DISABLE FILE UPLOAD, ONLY TEXT
-CKEDITOR_CONFIGS = {
-    'default': {
-        'toolbar': 'Custom',
-        'height': 300,
-        'width': 700,
-        'allowedContent': False,
-        'resize_enabled': True,
-        'resize_dir': 'both',
-        'toolbar_Custom': [
-            ['Format', 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript'],
-            ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo'],
-            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent'],
-            ['Link', 'Unlink'],
-            ['RemoveFormat', "Styles", "Font", "FontSize", "TextColor", "BGColor"],
-            ['Maximize', 'ShowBlocks', 'Source'],
-        ],
-
-    },
-}
-
-CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.math_challenge'
-CAPTCHA_TIMEOUT = 10
-CAPTCHA_LENGTH = 5
-CAPTCHA_FONT_SIZE = 50
-CAPTCHA_MATH_CHALLENGE_OPERATOR = '+'
-CAPTCHA_IMAGE_SIZE = (200, 100)
-
-COUNTRIES_FIRST = [
-    "BG", "RO", "GR", "SRB", "MK", "TR"
-]
-
-JAZZMIN_SETTINGS = {
-    "site_title": "Adventora Admin",
-    "site_header": "Adventora",
-    "site_brand": "Adventora",
-    "login_logo": None,
-    "login_logo_dark": None,
-    "site_logo_classes": "img-circle",
-    "site_icon": None,
-    "welcome_sign": "Adventora",
-    "copyright": "Adventora LLC",
-    "search_model": ["auth.User", "auth.Group"],
-    "user_avatar": None,
-    "topmenu_links": [
-        {"name": "Home", "url": "admin:index", "permissions": ["auth.view_user"]},
-        {"name": "GitHub", "url": "https://github.com/deyanvnikolov/adventora", "new_window": True},
-        {"model": "auth.User"},
-        {"name": "Website", "url": "/", "new_window": False},
-    ],
-    "usermenu_links": [
-        {"name": "Support", "url": "https://github.com/deyanvnikolov/adventora", "new_window": True},
-        {"model": "auth.user"}
-    ],
-    "show_sidebar": True,
-    "navigation_expanded": True,
-    "hide_apps": [],
-    "hide_models": [],
-    "custom_links": {},
-    "icons": {
-        "auth": "fas fa-users-cog",
-        "auth.user": "fas fa-user",
-        "auth.Group": "fas fa-users",
-    },
-    "default_icon_parents": "fas fa-chevron-circle-right",
-    "default_icon_children": "fas fa-circle",
-    "related_modal_active": False,
-    "custom_css": None,
-    "custom_js": None,
-    "use_google_fonts_cdn": True,
-    "show_ui_builder": False,
-    "changeform_format": "horizontal_tabs",
-    "changeform_format_overrides": {"auth.user": "collapsible", "auth.group": "vertical_tabs"},
-}
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -122,8 +62,12 @@ MIDDLEWARE = [
     'restrictedsessions.middleware.RestrictedSessionsMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'adventora.middleware.CheckRole'
+    'adventora.middleware.CheckRole',
 
+]
+
+INTERNAL_IPS = [
+    '127.0.0.1',
 ]
 
 RESTRICTEDSESSIONS_REDIRECT_VIEW = 'home'
@@ -230,6 +174,87 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+SOCIAL_AUTH_JSONFIELD_ENABLED = True
+
+CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
+
+# DISABLE FILE UPLOAD, ONLY TEXT
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Custom',
+        'height': 300,
+        'width': 700,
+        'allowedContent': False,
+        'resize_enabled': True,
+        'resize_dir': 'both',
+        'startupFocus': False,
+        'contentsCss': ['/static/css/custom_ckeditor.css'],
+        'toolbar_Custom': [
+            ['Format', 'Styles', "Font", "FontSize", 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', 'SpecialChars'],
+            ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', 'Replace', '-', 'Undo', 'Redo'],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', 'HorizontalRule', 'Table'],
+            ['RemoveFormat', "TextColor", "BGColor"],
+            ['Maximize', 'ShowBlocks', 'Source'],
+            ['About']
+        ],
+
+    },
+}
+
+CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.math_challenge'
+CAPTCHA_TIMEOUT = 10
+CAPTCHA_LENGTH = 5
+CAPTCHA_FONT_SIZE = 50
+CAPTCHA_MATH_CHALLENGE_OPERATOR = '+'
+CAPTCHA_IMAGE_SIZE = (200, 100)
+
+COUNTRIES_FIRST = [
+    "BG", "RO", "GR", "SRB", "MK", "TR"
+]
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Adventora Admin",
+    "site_header": "Adventora",
+    "site_brand": "Adventora",
+    "login_logo": None,
+    "login_logo_dark": None,
+    "site_logo_classes": "img-circle",
+    "site_icon": None,
+    "welcome_sign": "Adventora",
+    "copyright": "Adventora LLC",
+    "search_model": ["auth.User", "auth.Group"],
+    "user_avatar": None,
+    "topmenu_links": [
+        {"name": "Home", "url": "admin:index", "permissions": ["auth.view_user"]},
+        {"name": "GitHub", "url": "https://github.com/deyanvnikolov/adventora", "new_window": True},
+        {"model": "auth.User"},
+        {"name": "Website", "url": "/", "new_window": False},
+    ],
+    "usermenu_links": [
+        {"name": "Support", "url": "https://github.com/deyanvnikolov/adventora", "new_window": True},
+        {"model": "auth.user"}
+    ],
+    "show_sidebar": True,
+    "navigation_expanded": True,
+    "hide_apps": [],
+    "hide_models": [],
+    "custom_links": {},
+    "icons": {
+        "auth": "fas fa-users-cog",
+        "auth.user": "fas fa-user",
+        "auth.Group": "fas fa-users",
+    },
+    "default_icon_parents": "fas fa-chevron-circle-right",
+    "default_icon_children": "fas fa-circle",
+    "related_modal_active": False,
+    "custom_css": None,
+    "custom_js": None,
+    "use_google_fonts_cdn": True,
+    "show_ui_builder": False,
+    "changeform_format": "horizontal_tabs",
+    "changeform_format_overrides": {"auth.user": "collapsible", "auth.group": "vertical_tabs"},
+}
 
 LANGUAGE_CODE = 'en-us'
 
