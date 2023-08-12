@@ -9,7 +9,7 @@ class CustomUser(AbstractUser):
 
     ROLE_CHOICES = (('user', 'User'), ('manager', 'Manager'), ("employee", "Employee"), ("admin", "Admin"),)
 
-    uid = models.CharField(max_length=100, null=True, blank=True, default=str(uuid.uuid4()))
+    uid = models.CharField(max_length=100, null=True, blank=True, default=uuid.uuid4, unique=True)
     banned = models.BooleanField(default=False, null=True, blank=True)
     confirmedusername = models.BooleanField(default=False, null=True, blank=True)
     confirmedemail = models.BooleanField(default=False, null=True, blank=True)
