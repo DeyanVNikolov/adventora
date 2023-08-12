@@ -105,7 +105,7 @@ def sign_in(request):
                         request.user.factor_passed = False
                         request.user.save()
                     messages.success(request, 'Успешно влизане.')
-                    return redirect('home')
+                    return redirect('/')
                 else:
                     messages.error(request, 'Грешна парола.')
                     return redirect('sign-in')
@@ -119,7 +119,7 @@ def sign_in(request):
                     if user is not None:
                         login(request, user)
                         messages.success(request, 'Успешно влизане.')
-                        return redirect('home')
+                        return redirect('/')
                     else:
                         messages.error(request, 'Грешна парола.')
                         return redirect('sign-in')
