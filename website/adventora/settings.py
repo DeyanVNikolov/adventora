@@ -96,13 +96,15 @@ WSGI_APPLICATION = 'adventora.wsgi.application'
 
 DATABASES = {
     # TODO PRODUCTION
+    # AWS RDS
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'main',
+        'NAME': 'postgres',
         'USER': os.getenv("DB_USER"),
         'PASSWORD': os.getenv("DB_PASSWORD"),
         'HOST': os.getenv("DB_HOST"),
         'PORT': '5432',
+
     },
     # 'default': {
     #     'ENGINE': 'django.db.backends.sqlite3',
