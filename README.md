@@ -1,3 +1,13 @@
+![GitHub](https://img.shields.io/github/license/DeyanVNikolov/adventora)
+![GitHub issues](https://img.shields.io/github/issues/deyanvnikolov/adventora)
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/deyanvnikolov/adventora)
+![GitHub last commit (branch)](https://img.shields.io/github/last-commit/deyanvnikolov/adventora/main)
+![GitHub contributors](https://img.shields.io/github/contributors/deyanvnikolov/adventora)
+![GitHub repo size](https://img.shields.io/github/repo-size/deyanvnikolov/adventora)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fadventora.net)
+
+
+
 # 🌊 Adventora - Сайт за резервации/управление на хотели 🏨
 
 Adventora е цялостна платформа за онлайн резервации и управление на хотели, предназначена да улесни безпроблемните
