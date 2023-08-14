@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'multiselectfield',
     'ckeditor',
     'corsheaders',
-    'debug_toolbar'
+    'debug_toolbar',
 ]
 
 MIDDLEWARE = [
@@ -57,6 +57,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'restrictedsessions.middleware.RestrictedSessionsMiddleware',
@@ -258,7 +259,6 @@ JAZZMIN_SETTINGS = {
     "changeform_format_overrides": {"auth.user": "collapsible", "auth.group": "vertical_tabs"},
 }
 
-LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'EET'
 
@@ -297,3 +297,24 @@ LOCATION_FIELD = {
     'search.provider': 'google',
     'provider.openstreetmap.max_zoom': 2,
 }
+
+
+LANGUAGE_CODE = 'bg-bg'
+
+LANGUAGES = (
+    ('bg', 'Bulgarian'),
+    ('en', 'English'),
+    ('de', 'German'),
+    ('ru', 'Russian'),
+    ('uk', 'Ukrainian'),
+    ('fr', 'French'),
+    ('es', 'Spanish'),
+    ('it', 'Italian'),
+    ('pt', 'Portuguese'),
+    ('tr', 'Turkish'),
+    ('ja', 'Japanese'),
+)
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale'),
+)
