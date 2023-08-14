@@ -11,7 +11,7 @@ from twilio.rest import Client
 import os
 import pyqrcode
 from dotenv import load_dotenv
-
+from django.utils.translation import gettext as _
 
 from .models import CustomUser
 
@@ -32,43 +32,44 @@ def sign_up(request):
             username = form.cleaned_data.get('username')
             # check if user exists
             if User.objects.filter(email=email).exists():
-                messages.error(request, 'Потребител с този имейл вече съществува.')
-                return redirect('sign-up')
+                messages.error(request, _('A user with that email already exists.'))
+                return render(request, 'auth/sign_up.html', {'form': form})
 
             if len(password) < 8:
-                messages.error(request, 'Паролата трябва да съдържа поне 8 символа.')
-                return redirect('sign-up')
+                messages.error(request, _('Password must be at least 8 characters long.'))
+                return render(request, 'auth/sign_up.html', {'form': form})
 
             if password != password2:
-                messages.error(request, 'Паролите не съвпадат.')
-                return redirect('sign-up')
+                messages.error(request, _('Passwords do not match.'))
+                return render(request, 'auth/sign_up.html', {'form': form})
 
             if len(username) < 4:
-                messages.error(request, 'Потребителското име трябва да съдържа поне 4 символа.')
-                return redirect('sign-up')
+                messages.error(request, _('Username must be at least 4 characters long.'))
+                return render(request, 'auth/sign_up.html', {'form': form})
 
             # no symbols in username
             if not username.isalnum():
-                messages.error(request, 'Потребителското име трябва да съдържа само букви и цифри.')
-                return redirect('sign-up')
+                messages.error(request, _('Username should only contain letters and numbers.'))
+                return render(request, 'auth/sign_up.html', {'form': form})
 
             # is email valid, e.g has @, domain, etc.
             if not email.isalnum():
-                messages.error(request, 'Невалиден имейл.')
-                return redirect('sign-up')
+                messages.error(request, _('Invalid email.'))
+                return render(request, 'auth/sign_up.html', {'form': form})
 
             if User.objects.filter(username=username).exists():
-                messages.error(request, 'Потребител с това потребителско име вече съществува.')
-                return redirect('sign-up')
+                messages.error(request, _('A user with that username already exists.'))
+                return render(request, 'auth/sign_up.html', {'form': form})
 
             user = CustomUser.objects.create_user(username=username, email=email, password=password, first_name=first_name,
-                                            last_name=last_name)
+                                                  last_name=last_name
+                                                  )
             user.save()
             login(request, user)
-            messages.success(request, 'Успешна регистрация.')
+            messages.success(request, _('Successfully registration.'))
             return redirect('home')
         else:
-            messages.error(request, 'Невалидни данни.')
+            messages.error(request, _('Invalid data.'))
             print(form.errors.as_data())
             return render(request, 'auth/sign_up.html', {'form': form})
 
@@ -94,8 +95,8 @@ def sign_in(request):
             if '@' in username:
                 user = CustomUser.objects.filter(email=username).first()
                 if user is None:
-                    messages.error(request, 'Потребител с този имейл не съществува.')
-                    return redirect('sign-in')
+                    messages.error(request, _('A user with that email does not exist.'))
+                    return render(request, 'auth/sign_in.html', {'form': form})
                 username = user.username
 
                 user = authenticate(request, username=username, password=password)
@@ -104,28 +105,28 @@ def sign_in(request):
                     if request.user.two_fa_enabled is True:
                         request.user.factor_passed = False
                         request.user.save()
-                    messages.success(request, 'Успешно влизане.')
+                    messages.success(request, _('Successfully logged in.'))
                     return redirect('/')
                 else:
-                    messages.error(request, 'Грешна парола.')
-                    return redirect('sign-in')
+                    messages.error(request, _('Invalid password.'))
+                    return render(request, 'auth/sign_in.html', {'form': form})
             else:
                 user = CustomUser.objects.filter(username=username).first()
                 if user is None:
-                    messages.error(request, 'Потребител с това потребителско име не съществува.')
-                    return redirect('sign-in')
+                    messages.error(request, _('A user with that username does not exist.'))
+                    return render(request, 'auth/sign_in.html', {'form': form})
                 else:
                     user = authenticate(request, username=username, password=password)
                     if user is not None:
                         login(request, user)
-                        messages.success(request, 'Успешно влизане.')
+                        messages.success(request, _('Successfully logged in.'))
                         return redirect('/')
                     else:
-                        messages.error(request, 'Грешна парола.')
-                        return redirect('sign-in')
+                        messages.error(request, _('Invalid password.'))
+                        return render(request, 'auth/sign_in.html', {'form': form})
 
         else:
-            messages.error(request, 'Невалидни данни.')
+            messages.error(request, _('Invalid data.'))
             print(form.errors.as_data())
             return render(request, 'auth/sign_in.html', {'form': form})
     form = LoginForm()
@@ -135,7 +136,7 @@ def sign_in(request):
 @login_required
 def log_out(request):
     logout(request)
-    messages.success(request, 'Успешно излизане.')
+    messages.success(request, _('Successfully logged out.'))
     return redirect('home')
 
 
@@ -148,15 +149,15 @@ def choose_role(request):
             role_choices = ["user", "hotel_manager", "employee"]
             role = form.cleaned_data.get('role')
             if role not in role_choices:
-                messages.error(request, 'Невалидна роля.')
-                return redirect('choose-role')
+                messages.error(request, _('Invalid role.'))
+                return render(request, 'auth/choose_role.html', {'form': form})
             request.user.role = role
             request.user.confirmedrole = True
             request.user.save()
-            messages.success(request, 'Успешно избрана роля.')
+            messages.success(request, _('Successfully chosen role.'))
             return redirect('home')
         else:
-            messages.error(request, 'Невалидни данни.')
+            messages.error(request, _('Invalid data.'))
             return render(request, 'auth/choose_role.html', {'form': form})
 
     form = RoleChoiceForm()
@@ -175,10 +176,10 @@ def complete_name(request):
             request.user.last_name = last_name
             request.user.confirmedname = True
             request.user.save()
-            messages.success(request, 'Успешно попълнено име.')
+            messages.success(request, _('Successfully confirmed name.'))
             return redirect('home')
         else:
-            messages.error(request, 'Невалидни данни.')
+            messages.error(request, _('Invalid data.'))
             return render(request, 'auth/complete_name.html', {'form': form})
 
     form = CompleteNameForm(initial={'first_name': request.user.first_name, 'last_name': request.user.last_name})
@@ -198,16 +199,16 @@ def complete_email(request):
             existing_user = CustomUser.objects.filter(email=email).first()
             if existing_user is not None:
                 if existing_user != request.user:
-                    messages.error(request, 'Потребител с този имейл вече съществува.')
-                    return redirect('complete-email')
+                    messages.error(request, _('A user with that email already exists.'))
+                    return render(request, 'auth/complete_email.html', {'form': form})
 
             request.user.email = email
             request.user.confirmedemail = True
             request.user.save()
-            messages.success(request, 'Успешно попълнен имейл.')
+            messages.success(request, _('Successfully confirmed email.'))
             return redirect('home')
         else:
-            messages.error(request, 'Невалидни данни.')
+            messages.error(request, _('Invalid data.'))
             return render(request, 'auth/complete_email.html', {'form': form})
 
     form = CompleteEmailForm(initial={'email': request.user.email})
@@ -225,20 +226,20 @@ def complete_username(request):
 
             existing_user = CustomUser.objects.filter(username=username).first()
             if existing_user is not None and existing_user != request.user:
-                messages.error(request, 'Потребител с това потребителско име вече съществува.')
-                return redirect('complete-username')
+                messages.error(request, _('A user with that username already exists.'))
+                return render(request, 'auth/complete_username.html', {'form': form})
 
             if username.strip() == '' or username is None or len(username) < 5:
-                messages.error(request, 'Невалидно потребителско име. Поне 5 символа.')
-                return redirect('complete-username')
+                messages.error(request, _('Invalid username. At least 5 characters.'))
+                return render(request, 'auth/complete_username.html', {'form': form})
 
             request.user.username = username
             request.user.confirmedusername = True
             request.user.save()
-            messages.success(request, 'Успешно попълнено потребителско име.')
+            messages.success(request, _('Successfully confirmed username.'))
             return redirect('home')
         else:
-            messages.error(request, 'Невалидни данни.')
+            messages.error(request, _('Invalid data.'))
             return render(request, 'auth/complete_username.html', {'form': form})
 
     form = CompleteUserNameForm(initial={'username': request.user.username})
@@ -258,23 +259,23 @@ def edit_profile(request):
             email = form.cleaned_data.get('email')
             existing_user = CustomUser.objects.filter(email=email).first()
             if existing_user is not None and existing_user != request.user:
-                messages.error(request, 'Потребител с този имейл вече съществува.')
-                return redirect('edit-profile')
+                messages.error(request, _('A user with that email already exists.'))
+                return render(request, 'auth/edit_profile.html', {'form': form})
 
             username = form.cleaned_data.get('username')
             existing_user = CustomUser.objects.filter(username=username).first()
             if existing_user is not None and existing_user != request.user:
-                messages.error(request, 'Потребител с това потребителско име вече съществува.')
-                return redirect('edit-profile')
+                messages.error(request, _('A user with that username already exists.'))
+                return render(request, 'auth/edit_profile.html', {'form': form})
             if username.strip() == "" or username is None or len(username) < 5:
-                messages.error(request, 'Невалидно потребителско име. Поне 5 символа.')
-                return redirect('edit-profile')
+                messages.error(request, _('Invalid username. At least 5 characters.'))
+                return render(request, 'auth/edit_profile.html', {'form': form})
 
             role_choices = ["user", "hotel_manager", "employee"]
             role = form.cleaned_data.get('role')
             if role not in role_choices:
-                messages.error(request, 'Невалидна роля.')
-                return redirect('edit-profile')
+                messages.error(request, _('Invalid role.'))
+                return render(request, 'auth/edit_profile.html', {'form': form})
 
             citizenship = form.cleaned_data.get('citizenship')
             phone = form.cleaned_data.get('phone')
@@ -287,16 +288,17 @@ def edit_profile(request):
             request.user.citizenship = citizenship
             request.user.phone = phone
             request.user.save()
-            messages.success(request, 'Успешно редактиран профил.')
+            messages.success(request, _('Successfully edited profile.'))
             return redirect('home')
         else:
-            messages.error(request, 'Невалидни данни.')
+            messages.error(request, _('Invalid data.'))
             return render(request, 'auth/edit_profile.html', {'form': form})
 
     form = EditProfileForm(initial={'first_name': request.user.first_name, 'last_name': request.user.last_name,
                                     'email': request.user.email, 'username': request.user.username,
                                     'role': request.user.role, 'citizenship': request.user.citizenship,
-                                    'phone': request.user.phone})
+                                    'phone': request.user.phone}
+                           )
     first_name = request.user.first_name
     last_name = request.user.last_name
     email = request.user.email
@@ -318,20 +320,20 @@ def change_password(request):
                 new_password2 = form.cleaned_data.get('new_password2')
 
                 if not request.user.check_password(old_password):
-                    messages.error(request, 'Грешна парола.')
+                    messages.error(request, _('Incorrect old password.'))
                     return redirect('change-password')
 
                 if new_password1 != new_password2:
-                    messages.error(request, 'Паролите не съвпадат.')
+                    messages.error(request, _('Passwords do not match.'))
                     return redirect('change-password')
 
                 request.user.set_password(new_password1)
                 request.user.save()
                 update_session_auth_hash(request, request.user)
-                messages.success(request, 'Успешно сменена парола.')
+                messages.success(request, _('Successfully changed password.'))
                 return redirect('home')
             else:
-                messages.error(request, 'Невалидни данни.')
+                messages.error(request, _('Invalid data.'))
                 return render(request, 'auth/change_password.html', {'form': form})
 
         else:
@@ -341,22 +343,23 @@ def change_password(request):
                 new_password2 = form.cleaned_data.get('new_password2')
 
                 if new_password1 != new_password2:
-                    messages.error(request, 'Паролите не съвпадат.')
-                    return redirect('change-password')
+                    messages.error(request, _('Passwords do not match.'))
+                    return render(request, 'auth/change_password.html', {'form': form})
 
                 request.user.set_password(new_password1)
                 request.user.save()
                 update_session_auth_hash(request, request.user)
-                messages.success(request, 'Успешно сменена парола.')
+                messages.success(request, _('Successfully changed password.'))
                 return redirect('home')
             else:
-                messages.error(request, 'Невалидни данни.')
+                messages.error(request, _('Invalid data.'))
                 return render(request, 'auth/change_password.html', {'form': form})
     if request.user.has_usable_password():
         form = ChangePasswordForm()
     else:
         form = SetPasswordFromSocialLogin()
     return render(request, 'auth/change_password.html', {'form': form})
+
 
 @login_required
 def delete_account(request):
@@ -366,18 +369,19 @@ def delete_account(request):
             password = form.cleaned_data.get('password')
 
             if not request.user.check_password(password):
-                messages.error(request, 'Грешна парола.')
+                messages.error(request, _('Incorrect password.'))
                 return redirect('delete-account')
 
             request.user.delete()
-            messages.success(request, 'Успешно изтрит потребител.')
+            messages.success(request, _('Successfully deleted account.'))
             return redirect('home')
         else:
-            messages.error(request, 'Невалидни данни.')
+            messages.error(request, _('Invalid data.'))
             return render(request, 'auth/delete_account.html', {'form': form})
 
     form = DeleteAccountForm()
     return render(request, 'auth/delete_account.html', {'form': form})
+
 
 @login_required
 def complete_citizenship(request):
@@ -389,16 +393,17 @@ def complete_citizenship(request):
             request.user.citizenship = citizenship
             request.user.confirmedcitizenship = True
             request.user.save()
-            messages.success(request, 'Успешно попълнено гражданство.')
+            messages.success(request, _('Successfully confirmed citizenship.'))
             return redirect('home')
         else:
-            messages.error(request, 'Невалидни данни.')
+            messages.error(request, _('Invalid data.'))
             return render(request, 'auth/complete_citizenship.html', {'form': form})
 
     form = CitizenshipForm(initial={'citizenship': request.user.citizenship})
     citizenship = request.user.citizenship
     context = {'form': form, 'citizenship': citizenship, }
     return render(request, 'auth/complete_citizenship.html', context)
+
 
 @login_required
 def complete_phone(request):
@@ -410,16 +415,17 @@ def complete_phone(request):
             request.user.phone = phone
             request.user.confirmedphone = True
             request.user.save()
-            messages.success(request, 'Успешно попълнен телефонен номер.')
+            messages.success(request, _('Successfully confirmed phone number.'))
             return redirect('home')
         else:
-            messages.error(request, 'Невалидни данни.')
+            messages.error(request, _('Invalid data.'))
             return render(request, 'auth/complete_phonenumber.html', {'form': form})
 
     form = PhoneForm(initial={'phone': request.user.phone})
     phone = request.user.phone
     context = {'form': form, 'phone': phone, }
     return render(request, 'auth/complete_phonenumber.html', context)
+
 
 @login_required
 def banned(request):
@@ -428,7 +434,6 @@ def banned(request):
     full_name = first_name + " " + last_name
     context = {'full_name': full_name}
     return render(request, 'auth/banned.html', context)
-
 
 
 load_dotenv(".env")
@@ -449,7 +454,8 @@ def generate_new_factor(user, uuid):
     name = user.first_name + " " + user.last_name
 
     new_factor = client.verify.v2.services("VAa66c2fc670269be421064b095e18f682").entities(uuid).new_factors.create(
-        friendly_name=f"{name}", factor_type='totp')
+        friendly_name=f"{name}", factor_type='totp'
+    )
     generate_qr_code(new_factor.binding['uri'], uuid)
 
     return new_factor
@@ -473,7 +479,8 @@ def verifyfactor(user, id, uuid, code):
     print("--------------------")
 
     verifiedfactor = client.verify.v2.services('VAa66c2fc670269be421064b095e18f682').entities(f'{uuid1}').factors(
-        f'{factor1}').update(auth_payload=f'{code1}')
+        f'{factor1}'
+    ).update(auth_payload=f'{code1}')
 
     return verifiedfactor
 
@@ -484,7 +491,8 @@ def verifyuser(user, id, uuid, code):
     factor = user.factor
 
     challenge = client.verify.v2.services('VAa66c2fc670269be421064b095e18f682').entities(f'{uuid}').challenges.create(
-        auth_payload=f'{code}', factor_sid=f'{factor}')
+        auth_payload=f'{code}', factor_sid=f'{factor}'
+    )
 
     return challenge
 
@@ -492,14 +500,15 @@ def verifyuser(user, id, uuid, code):
 def resend_verification_email(request):
     return HttpResponse("Not implemented yet.")
 
+
 @login_required
 def two_factor(request):
     if request.user.two_fa_enabled is False:
-        messages.error(request, 'Трябва да активирате двуфакторен аутентификатор.')
+        messages.error(request, _('Two factor authentication is not enabled.'))
         return redirect('home')
 
     if request.user.factor_passed is True:
-        messages.error(request, 'Вече сте въвели кода.')
+        messages.error(request, _('Two factor authentication is already passed.'))
         return redirect('home')
 
     if request.method == 'POST':
@@ -511,16 +520,14 @@ def two_factor(request):
             if verification.status == 'approved':
                 request.user.factor_passed = True
                 request.user.save()
-                messages.success(request, 'Успешно въведен код.')
+                messages.success(request, _('Successfully passed two factor authentication'))
                 return redirect('home')
             else:
-                messages.error(request, 'Грешен код.')
+                messages.error(request, _('Invalid code.'))
                 return redirect('two-factor')
         else:
-            messages.error(request, 'Невалидни данни.')
+            messages.error(request, _('Invalid data.'))
             return render(request, 'auth/two_factor.html', {'form': form})
-
-
 
     form = TwoFactorForm()
     context = {'form': form}
@@ -529,7 +536,7 @@ def two_factor(request):
 
 def two_factor_enable(request):
     if request.user.two_fa_enabled is True:
-        messages.error(request, 'Вече сте активирали двуфакторен аутентификатор.')
+        messages.error(request, _('Two factor authentication is already enabled.'))
         return redirect('home')
     if request.method == 'POST':
         form = TwoFactorEnableForm(request.POST)
@@ -537,7 +544,7 @@ def two_factor_enable(request):
             password = form.cleaned_data.get('password')
 
             if not request.user.check_password(password):
-                messages.error(request, 'Грешна парола.')
+                messages.error(request, _('Incorrect password.'))
                 return redirect('two-factor-enable')
 
             uuid = request.user.uniqueid
@@ -547,13 +554,11 @@ def two_factor_enable(request):
             request.user.factor = new_factor.sid
             request.user.save()
 
-
-            messages.success(request, 'Успешно активиран двуфакторен аутентификатор.')
+            messages.success(request, _('Successfully enabled two factor authentication.'))
             return redirect('two-factor-verify')
         else:
-            messages.error(request, 'Невалидни данни.')
+            messages.error(request, _('Invalid data.'))
             return render(request, 'auth/two_factor_enable.html', {'form': form})
-
 
     form = TwoFactorEnableForm()
     return render(request, 'auth/two_factor_enable.html', {'form': form})
@@ -561,7 +566,7 @@ def two_factor_enable(request):
 
 def two_factor_enable_confirm(request):
     if request.user.two_fa_enabled is True:
-        messages.error(request, 'Вече сте активирали двуфакторен аутентификатор.')
+        messages.error(request, _('Two factor authentication is already enabled.'))
         return redirect('home')
     if request.method == 'POST':
         form = TwoFactorEnableConfirmForm(request.POST)
@@ -576,16 +581,14 @@ def two_factor_enable_confirm(request):
             if verifiedfactor.status == "verified":
                 request.user.two_fa_enabled = True
                 request.user.save()
-                messages.success(request, 'Успешно активиран двуфакторен аутентификатор.')
+                messages.success(request, _('Successfully enabled two factor authentication.'))
                 return redirect('home')
             else:
-                messages.error(request, 'Грешен код.')
+                messages.error(request, _('Invalid code.'))
                 return redirect('two-factor-verify')
         else:
-            messages.error(request, 'Невалидни данни.')
+            messages.error(request, _('Invalid data.'))
             return render(request, 'auth/two_factor_enable_confirm.html', {'form': form})
-
-
 
     form = TwoFactorEnableConfirmForm()
     return render(request, 'auth/two_factor_enable_confirm.html', {'form': form})
@@ -593,7 +596,7 @@ def two_factor_enable_confirm(request):
 
 def two_factor_disable(request):
     if request.user.two_fa_enabled is False:
-        messages.error(request, 'Вече сте деактивирали двуфакторен аутентификатор.')
+        messages.error(request, _('Two factor authentication is not enabled.'))
         return redirect('home')
 
     if request.method == 'POST':
@@ -602,17 +605,17 @@ def two_factor_disable(request):
             password = form.cleaned_data.get('password')
 
             if not request.user.check_password(password):
-                messages.error(request, 'Грешна парола.')
+                messages.error(request, _('Incorrect password.'))
                 return redirect('two-factor-disable')
 
             request.user.two_fa_enabled = False
             request.user.factor = None
             request.user.factor_passed = False
             request.user.save()
-            messages.success(request, 'Успешно деактивиран двуфакторен аутентификатор.')
+            messages.success(request, _('Successfully disabled two factor authentication.'))
             return redirect('home')
         else:
-            messages.error(request, 'Невалидни данни.')
+            messages.error(request, _('Invalid data.'))
             return render(request, 'auth/two_factor_disable.html', {'form': form})
 
     form = TwoFactorDisableForm()
