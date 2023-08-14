@@ -16,6 +16,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls.i18n import i18n_patterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +27,5 @@ urlpatterns = [
     path('captcha/', include('captcha.urls')),
     path('hotel/', include('hotel.urls')),
     path("__debug__/", include("debug_toolbar.urls")),
+    path('lang/', include('django.conf.urls.i18n')),
 ]

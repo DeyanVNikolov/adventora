@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 {% load static %}
+{% load i18n %}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -143,24 +144,25 @@
                         {% endif %}
                         {% if user.role == "hotel_manager" %}
                             <a class="button is-primary" href="/hotel/dashboard">
-                                <strong>Панел</strong>
+                                <strong>{% trans "Panel" %}</strong>
                             </a>
                         {% endif %}
                         <a class="button is-info" href="{% url 'edit-profile' %}">
-                            <strong>Профил</strong>
+                            <strong>{% trans "Panel" %}</strong>
                         </a>
                         <a class="button is-danger" href="{% url 'logout' %}">
-                            <strong>Изход</strong>
+                            <strong>{% trans "Logout" %}</strong>
                         </a>
                     {% else %}
 
                         <a class="button is-primary" href="{% url 'sign-up' %}">
-                            <strong>Регистрация</strong>
+                            <strong>{% trans 'Sign up' %}</strong>
                         </a>
                         <a class="button is-light" href="{% url 'sign-in' %}">
-                            Вход
+                            {% trans "Login" %}
                         </a>
                     {% endif %}
+
                 </div>
             </div>
         </div>
@@ -174,7 +176,7 @@
         {% if message.tags == 'error' %}
             <article class="message is-danger">
                 <div class="message-header">
-                    <p>Грешка</p>
+                    <p>{% trans "Error" %}</p>
                     {#                    on click delete the parent article#}
                     <button class="delete" aria-label="delete"
                             onclick="this.parentElement.parentElement.remove();"></button>
@@ -186,7 +188,7 @@
         {% elif message.tags == "success" %}
             <article class="message is-success">
                 <div class="message-header">
-                    <p>Успех</p>
+                    <p>{% trans "Success" %}</p>
                     <button class="delete" aria-label="delete"
                             onclick="this.parentElement.parentElement.remove();"></button>
                 </div>
@@ -197,7 +199,7 @@
         {% elif message.tags == "warning" %}
             <article class="message is-warning">
                 <div class="message-header">
-                    <p>Предупреждение</p>
+                    <p>{% trans "Warning" %}</p>
                     <button class="delete" aria-label="delete"
                             onclick="this.parentElement.parentElement.remove();"></button>
                 </div>
@@ -221,7 +223,7 @@
     <div class="container is-fluid">
         <div class="content has-text-centered is-fluid">
 
-            <b><p>Adventora подкрепя малкия и среден бизнес.</p></b>
+            <b><p>{% trans "Adventora supports small, medium and large businesses" %}</p></b>
 
             <br>
 
@@ -246,14 +248,14 @@
             </section>
             <br>
 
-            <p>&copy; 2023 Adventora. Всички права запазени.</p>
+            <p>&copy; 2023 Adventora. {% trans "All Rights Reserved"%}</p>
 
-            <a style="margin-right: 10px" href="/">Начало</a>
-            <a style="margin-right: 10px" href="/about-us">За нас</a>
-            <a style="margin-right: 10px" href="/privacy">Поверителност</a>
-            <a style="margin-right: 10px" href="/terms-of-use">Политика за използване</a>
-            <a style="margin-right: 10px" href="/contacts">Контакти</a>
-            <a style="margin-right: 10px" href="/partnerships">Партньорства</a>
+            <a style="margin-right: 10px" href="/">{% trans "Homepage" %}</a>
+            <a style="margin-right: 10px" href="/about-us">{% trans "About us" %}</a>
+            <a style="margin-right: 10px" href="/privacy">{% trans "Privacy" %}</a>
+            <a style="margin-right: 10px" href="/terms-of-use">{% trans "Terms of use" %}</a>
+            <a style="margin-right: 10px" href="/contacts">{% trans "Contacts" %}</a>
+            <a style="margin-right: 10px" href="/partnerships">{% trans "Partnerships" %}</a>
         </div>
     </div>
 </footer>
