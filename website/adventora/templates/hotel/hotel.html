@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 {% load crispy_forms_tags %}
 {% block content %}
 
@@ -9,7 +10,7 @@
     Телефон на хотела <b>{{ hotel.phone }}</b><br>
     Имейл на хотела <b>{{ hotel.email }}</b><br>
     Име на собственика <b>{{ hotel.mol_name }}</b><br>
-    ЕИК: <b>{{ hotel.EIK }}</b><br>
+    ЕИК: <b>{{ hotel.eik }}</b><br>
     </h4>
 </div>
 

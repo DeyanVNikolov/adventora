@@ -1,33 +1,39 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 {% load crispy_forms_tags %}
 {% block content %}
 
     <div class="container is-fluid">
-    <h2 class="title is-2">Статус</h2>
+        <h2 class="title is-2">Статус</h2>
         <br>
-    Email: {% if user.verifiedemail == False %} <span class="tag is-danger">Непотвърден </span>  <button class="button is-primary is-small" onclick="window.location.href='{% url 'resend-verification-email' %}'">Изпрати отново</button> {% else %} <span class="tag is-success">Потвърден </span>  {% endif %}
-<br><br>
-    2FA:&nbsp;&nbsp;&nbsp;  {% if user.two_fa_enabled == True %} <span class="tag is-success">Включен </span>  <button class="button is-primary is-small" onclick="window.location.href='{% url 'two-factor-disable' %}'">Изключи</button> {% else %} <span class="tag is-danger">Изключен </span>  <button class="button is-primary is-small" onclick="window.location.href='{% url 'two-factor-enable' %}'">Включи</button> {% endif %}
+        Email: {% if user.verifiedemail == False %}<span class="tag is-danger">{% trans "Not confirmed" %} </span>
+        <button class="button is-primary is-small" onclick="window.location.href='{% url 'resend-verification-email' %}'">Изпрати отново</button> {% else %}
+        <span class="tag is-success">{% trans "Confirmed" %} </span>  {% endif %}
+        <br><br>
+        2FA:&nbsp;&nbsp;&nbsp;  {% if user.two_fa_enabled == True %}<span class="tag is-success">{% trans "Turned On" %} </span>
+        <button class="button is-primary is-small" onclick="window.location.href='{% url 'two-factor-disable' %}'">{% trans "Turn off" %}</button> {% else %}
+        <span class="tag is-danger">{% trans "Turned Off" %} </span>
+        <button class="button is-primary is-small" onclick="window.location.href='{% url 'two-factor-enable' %}'">{% trans "Turn on" %}</button> {% endif %}
 
 
     </div>
 
 
-<hr>
-   <a class="button is-primary" href="{% url 'change-password' %}">
-                            <strong>Промени парола</strong>
-   </a>
-       <a class="button is-danger" href="{% url 'delete-account' %}">
-                            <strong>Изтрий акаунт</strong>
-   </a>
+    <hr>
+    <a class="button is-primary" href="{% url 'change-password' %}">
+        <strong>Промени парола</strong>
+    </a>
+    <a class="button is-danger" href="{% url 'delete-account' %}">
+        <strong>Изтрий акаунт</strong>
+    </a>
 
 
     <br><br>
 
 
-{% csrf_token %}
-        {% crispy form %}
+    {% csrf_token %}
+    {% crispy form %}
 
 
 {% endblock %}

@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 {% load crispy_forms_tags %}
 {% block content %}
 
@@ -17,19 +18,20 @@
     </style>
 
     <hr>
+    {% if not request.get_host == "dev.adventora.net" %}
     <div class="columns">
         <div class="column has-text-centered">
             <button onclick="window.location.href='{% url "social:begin" "google-oauth2" %}';" class="button is-rounded"
                     style="background-color: #d7d7d7">
                 <img class="is-rounded" style="width: 20px; margin-right: 10px"
                      src="{% static 'img/oauth2/google.png' %}" alt="Google Logo">
-                Вход с Google
+                {% trans "Login with Google" %}
             </button><br>
             <button onclick="window.location.href='{% url "social:begin" "trello" %}';" class="button is-rounded"
                     style="margin-top:5px; width: 173px; background-color: #d7d7d7">
                 <img class="is-rounded" style="width: 20px; margin-right: 10px"
                      src="{% static 'img/oauth2/trello.png' %}" alt="Trello Logo">
-                Вход с Trello
+                {% trans "Login with Trello" %}
             </button>
         </div>
         <div class="column has-text-centered">
@@ -37,19 +39,19 @@
                     style="background-color: #d7d7d7">
                 <img class="is-rounded" style="width: 20px; margin-right: 10px"
                      src="{% static 'img/oauth2/github.png' %}" alt="GitHub Logo">
-                Вход с GitHub
+                {% trans "Login with GitHub" %}
             </button><br>
             <button onclick="window.location.href='{% url "social:begin" "patreon" %}';" class="button is-rounded"
                     style="margin-top:5px; width: 173px; background-color: #d7d7d7">
                 <img class="is-rounded" style="width: 20px; margin-right: 10px"
                      src="{% static 'img/oauth2/patreon.png' %}" alt="Patreon Logo">
-                Вход с Patreon
+                {% trans "Login with Patreon" %}
             </button>
                             <button onclick="window.location.href='{% url "social:begin" "amazon" %}';" class="button is-rounded"
                         style="margin-top:5px; width: 173px; background-color: #d7d7d7">
                     <img class="is-rounded" style="width: 20px; margin-right: 10px"
                          src="{% static 'img/oauth2/amazon.png' %}" alt="Amazon Logo">
-                    Вход с Amazon
+                    {% trans "Login with Amazon" %}
                 </button>`
         </div>
 
@@ -58,13 +60,13 @@
                     style="background-color: #d7d7d7">
                 <img class="is-rounded" style="width: 20px; margin-right: 10px"
                      src="{% static 'img/oauth2/reddit.png' %}" alt="Reddit Logo">
-                Вход с Reddit
+                {% trans "Login with Reddit" %}
             </button><br>
             <button onclick="window.location.href='{% url "social:begin" "steam" %}';" class="button is-rounded"
                     style="margin-top:5px; width: 173px; background-color: #d7d7d7">
                 <img class="is-rounded" style="width: 20px; margin-right: 10px"
                      src="{% static 'img/oauth2/steam.png' %}" alt="Steam Logo">
-                Вход със Steam
+                {% trans "Login with Steam" %}
             </button>
 
         </div>
@@ -73,15 +75,18 @@
                     style="background-color: #d7d7d7">
                 <img class="is-rounded" style="width: 20px; margin-right: 10px"
                      src="{% static 'img/oauth2/spotify.png' %}" alt="Spotify Logo">
-                Вход със Spotify
+                {% trans "Login with Spotify." %}
             </button><br>
             <button onclick="window.location.href='{% url "social:begin" "vk-oauth2" %}';" class="button is-rounded"
                     style="margin-top:5px; width: 173px; background-color: #d7d7d7">
                 <img class="is-rounded" style="width: 20px; margin-right: 10px"
                      src="{% static 'img/oauth2/vk.png' %}" alt="VK Logo">
-                Вход с VK
+                {% trans "Login with VK" %}
             </button>
         </div>
     </div>
+    {% else %}
+    <h2 class="title is-5">Социален вход е изключен в тестовия сървър. Използвайте 127.0.0.1 или adventora.net</h2>
+    {% endif %}
 
 {% endblock %}

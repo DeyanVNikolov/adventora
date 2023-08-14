@@ -1,20 +1,27 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 {% block content %}
 
 
-<div class="has-text-centered">
-    {% if hotel == None %}
-    Нямате хотел.
+    <div class="has-text-centered">
+        {% if hotel == None %}
+            Нямате хотел.
 
-        Регистрирайте нов тук: <a href="{% url 'register-hotel' %}">Регистрация</a>
+            Регистрирайте нов тук: <a href="{% url 'register-hotel' %}">Регистрация</a>
 
-    {% else %}
+        {% else %}
 
-    Имате хотел
-<br><br>
-        <button class="button is-primary" onclick="window.location.href='/hotel/dashboard/{{ hotel.unique_id }}'">Детайли</button>
-    {% endif %}
-</div>
+            {% if hotel.approved == True %}
+                Вашият хотел очаква одобрение, това може да отнеме до 2 работни дни.<br<br>
+                Ако желаете да промените данните за хотела си, моля свържете се с нас в страницата за <a href="{% url 'contact' %}">контакти</a>.
+                {% else %}
 
- {% endblock %}
+            Имате хотел
+            <br><br>
+            <button class="button is-primary" onclick="window.location.href='/hotel/dashboard/{{ hotel.uid }}'">Детайли</button>
+        {% endif %}
+        {% endif %}
+    </div>
+
+{% endblock %}
