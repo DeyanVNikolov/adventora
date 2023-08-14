@@ -1,0 +1,545 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-14 09:48+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\adventora\templates\auth\edit_profile.html:10
+msgid "Not confirmed"
+msgstr "Не підтверджено"
+
+#: .\adventora\templates\auth\edit_profile.html:12
+msgid "Confirmed"
+msgstr "Підтверджено"
+
+#: .\adventora\templates\auth\edit_profile.html:14
+msgid "Turned On"
+msgstr "Включено"
+
+#: .\adventora\templates\auth\edit_profile.html:15
+msgid "Turn off"
+msgstr "Вимкнути"
+
+#: .\adventora\templates\auth\edit_profile.html:16
+msgid "Turned Off"
+msgstr "Вимкнений"
+
+#: .\adventora\templates\auth\edit_profile.html:17
+msgid "Turn on"
+msgstr "Ввімкнути"
+
+#: .\adventora\templates\auth\sign_in.html:27
+#: .\adventora\templates\auth\sign_up.html:28
+msgid "Login with Google"
+msgstr "Увійдіть через Google"
+
+#: .\adventora\templates\auth\sign_in.html:33
+#: .\adventora\templates\auth\sign_up.html:34
+msgid "Login with Trello"
+msgstr "Увійдіть за допомогою Trello"
+
+#: .\adventora\templates\auth\sign_in.html:41
+#: .\adventora\templates\auth\sign_up.html:42
+msgid "Login with GitHub"
+msgstr "Увійдіть за допомогою GitHub"
+
+#: .\adventora\templates\auth\sign_in.html:47
+#: .\adventora\templates\auth\sign_up.html:48
+msgid "Login with Patreon"
+msgstr "Увійдіть за допомогою Patreon"
+
+#: .\adventora\templates\auth\sign_in.html:53
+#: .\adventora\templates\auth\sign_up.html:54
+msgid "Login with Amazon"
+msgstr "Увійдіть через Amazon"
+
+#: .\adventora\templates\auth\sign_in.html:62
+#: .\adventora\templates\auth\sign_up.html:63
+msgid "Login with Reddit"
+msgstr "Увійдіть за допомогою Reddit"
+
+#: .\adventora\templates\auth\sign_in.html:68
+#: .\adventora\templates\auth\sign_up.html:69
+msgid "Login with Steam"
+msgstr "Увійдіть за допомогою Steam"
+
+#: .\adventora\templates\auth\sign_in.html:77
+#: .\adventora\templates\auth\sign_up.html:78
+msgid "Login with Spotify."
+msgstr "Увійдіть за допомогою Spotify"
+
+#: .\adventora\templates\auth\sign_in.html:83
+#: .\adventora\templates\auth\sign_up.html:84
+msgid "Login with VK"
+msgstr "Увійти через ВК"
+
+#: .\adventora\templates\base.html:147 .\adventora\templates\base.html:151
+msgid "Panel"
+msgstr "Панель"
+
+#: .\adventora\templates\base.html:154
+msgid "Logout"
+msgstr "Вийти"
+
+#: .\adventora\templates\base.html:159 .\authentication\forms.py:52
+msgid "Sign up"
+msgstr "Зареєструватися"
+
+#: .\adventora\templates\base.html:162 .\authentication\forms.py:24
+msgid "Login"
+msgstr "Логін"
+
+#: .\adventora\templates\base.html:179
+msgid "Error"
+msgstr "Помилка"
+
+#: .\adventora\templates\base.html:191
+msgid "Success"
+msgstr "Успіх"
+
+#: .\adventora\templates\base.html:202
+msgid "Warning"
+msgstr "УВАГА"
+
+#: .\adventora\templates\base.html:226
+#, fuzzy
+#| msgid "Adventora supports small and medium business"
+msgid "Adventora supports small, medium and large businesses"
+msgstr "Adventora підтримує малий, середній та великий бізнес"
+
+#: .\adventora\templates\base.html:251
+msgid "All Rights Reserved"
+msgstr "Всі права захищені"
+
+#: .\adventora\templates\base.html:253
+msgid "Homepage"
+msgstr "Домашня сторінка"
+
+#: .\adventora\templates\base.html:254
+msgid "About us"
+msgstr "Про нас"
+
+#: .\adventora\templates\base.html:255
+msgid "Privacy"
+msgstr "Конфіденційність"
+
+#: .\adventora\templates\base.html:256
+msgid "Terms of use"
+msgstr "Умови використання"
+
+#: .\adventora\templates\base.html:257
+msgid "Contacts"
+msgstr "Контакти"
+
+#: .\adventora\templates\base.html:258
+msgid "Partnerships"
+msgstr "Партнерські відносини"
+
+#: .\adventora\templates\partnerships.html:9
+msgid "For partnerships contact us at"
+msgstr "Для партнерства зв'яжіться з нами за адресою"
+
+#: .\authentication\forms.py:15
+msgid "Username or email"
+msgstr "Ім'я користувача або адресу електронної пошти"
+
+#: .\authentication\forms.py:16 .\authentication\forms.py:35
+#: .\authentication\forms.py:140 .\authentication\forms.py:173
+#: .\authentication\forms.py:200
+msgid "Password"
+msgstr "Пароль"
+
+#: .\authentication\forms.py:29 .\authentication\forms.py:87
+#: .\authentication\forms.py:105
+msgid "Username"
+msgstr "Ім'я користувача"
+
+#: .\authentication\forms.py:30 .\authentication\forms.py:88
+#: .\authentication\forms.py:106
+msgid "The username must contain at least 8 characters."
+msgstr "Ім'я користувача має містити не менше 8 символів."
+
+#: .\authentication\forms.py:32
+msgid "First name"
+msgstr "Ім'я"
+
+#: .\authentication\forms.py:33
+msgid "Last name"
+msgstr "Прізвище"
+
+#: .\authentication\forms.py:34 .\authentication\forms.py:78
+#: .\authentication\forms.py:104 .\hotel\forms.py:27
+msgid "Email"
+msgstr "Електронна пошта"
+
+#: .\authentication\forms.py:34
+msgid "Email address must be valid"
+msgstr "Адреса електронної пошти має бути дійсною"
+
+#: .\authentication\forms.py:36
+msgid ""
+"The password must be at least 8 characters long. <br> The password should "
+"not contain only digits. <br> The password should not contain only letters. "
+"<br> The password should not contain only special characters. <br> The "
+"password should not contain the username. <br> The password should not be a "
+"commonly used password."
+msgstr "Пароль має бути не менше 8 символів. "
+
+#: .\authentication\forms.py:42
+msgid "Confirm password"
+msgstr "Підтвердьте пароль"
+
+#: .\authentication\forms.py:43
+msgid "Enter the same password as above, for verification."
+msgstr "Для підтвердження введіть той самий пароль, що й вище."
+
+#: .\authentication\forms.py:57 .\authentication\forms.py:98
+msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
+msgstr ""
+"Відпочиваючий – досліджуйте, плануйте та бронюйте свої ідеальні види "
+"відпочинку."
+
+#: .\authentication\forms.py:58 .\authentication\forms.py:99
+msgid ""
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
+msgstr ""
+"Менеджер готелю - нагляд за операціями та надання чудових послуг у вашому "
+"власному готелі."
+
+#: .\authentication\forms.py:59 .\authentication\forms.py:100
+msgid ""
+"Employee - Contribute your expertise to a thriving workplace, such as a "
+"hotel or guest house."
+msgstr ""
+"Співробітник. Внесіть свій досвід у процвітаюче робоче місце, наприклад "
+"готель чи пансіонат."
+
+#: .\authentication\forms.py:65
+msgid "Submit"
+msgstr "Надіслати"
+
+#: .\authentication\forms.py:69 .\authentication\forms.py:102
+msgid "First Name"
+msgstr "Ім'я"
+
+#: .\authentication\forms.py:70 .\authentication\forms.py:103
+msgid "Last Name"
+msgstr "Прізвище"
+
+#: .\authentication\forms.py:73 .\authentication\forms.py:81
+#: .\authentication\forms.py:92 .\authentication\forms.py:113
+#: .\authentication\forms.py:124 .\authentication\forms.py:134
+#: .\authentication\forms.py:158 .\authentication\forms.py:167
+msgid "Save"
+msgstr "зберегти"
+
+#: .\authentication\forms.py:78 .\authentication\forms.py:104
+msgid "The email must be valid."
+msgstr "Електронна адреса має бути дійсною."
+
+#: .\authentication\forms.py:108 .\authentication\forms.py:155
+msgid "Citizenship"
+msgstr "Громадянство"
+
+#: .\authentication\forms.py:109 .\authentication\forms.py:164
+#: .\hotel\forms.py:26
+msgid "Phone"
+msgstr "Телефон"
+
+#: .\authentication\forms.py:110
+msgid "Choose a Role"
+msgstr "Виберіть роль"
+
+#: .\authentication\forms.py:119
+msgid "Old Password"
+msgstr "Старий пароль"
+
+#: .\authentication\forms.py:120 .\authentication\forms.py:130
+msgid "New Password"
+msgstr "Новий пароль"
+
+#: .\authentication\forms.py:121 .\authentication\forms.py:131
+msgid "Confirm New Password"
+msgstr "Підтвердити новий пароль"
+
+#: .\authentication\forms.py:143
+msgid "Delete Account"
+msgstr "Видалити аккаунт"
+
+#: .\authentication\forms.py:176 .\authentication\forms.py:185
+#: .\authentication\forms.py:194
+msgid "Enable"
+msgstr "Увімкнути"
+
+#: .\authentication\forms.py:182 .\authentication\forms.py:191
+msgid "Code"
+msgstr "Код"
+
+#: .\authentication\forms.py:203
+msgid "Disable"
+msgstr "Вимкнути"
+
+#: .\authentication\models.py:11
+msgid "User"
+msgstr "Користувач"
+
+#: .\authentication\models.py:11
+msgid "Manager"
+msgstr "Менеджер"
+
+#: .\authentication\models.py:11
+msgid "Employee"
+msgstr "Співробітник"
+
+#: .\authentication\models.py:11
+msgid "Admin"
+msgstr "адмін"
+
+#: .\authentication\views.py:35 .\authentication\views.py:202
+#: .\authentication\views.py:262
+msgid "A user with that email already exists."
+msgstr "Користувач із такою електронною адресою вже існує."
+
+#: .\authentication\views.py:39
+msgid "Password must be at least 8 characters long."
+msgstr "Пароль має бути не менше 8 символів."
+
+#: .\authentication\views.py:43 .\authentication\views.py:327
+#: .\authentication\views.py:346
+msgid "Passwords do not match."
+msgstr "Паролі не збігаються."
+
+#: .\authentication\views.py:47
+msgid "Username must be at least 4 characters long."
+msgstr "Ім'я користувача має складатися не менше ніж з 4 символів."
+
+#: .\authentication\views.py:52
+msgid "Username should only contain letters and numbers."
+msgstr "Ім'я користувача має містити лише літери та цифри."
+
+#: .\authentication\views.py:57
+msgid "Invalid email."
+msgstr "Недійсна електронна адреса."
+
+#: .\authentication\views.py:61 .\authentication\views.py:229
+#: .\authentication\views.py:268
+msgid "A user with that username already exists."
+msgstr "Користувач із таким ім'ям вже існує."
+
+#: .\authentication\views.py:69
+msgid "Successfully registration."
+msgstr "Успішна реєстрація."
+
+#: .\authentication\views.py:72 .\authentication\views.py:129
+#: .\authentication\views.py:160 .\authentication\views.py:182
+#: .\authentication\views.py:211 .\authentication\views.py:242
+#: .\authentication\views.py:294 .\authentication\views.py:336
+#: .\authentication\views.py:355 .\authentication\views.py:379
+#: .\authentication\views.py:399 .\authentication\views.py:421
+#: .\authentication\views.py:529 .\authentication\views.py:560
+#: .\authentication\views.py:590 .\authentication\views.py:618
+msgid "Invalid data."
+msgstr "Недійсні дані."
+
+#: .\authentication\views.py:98
+msgid "A user with that email does not exist."
+msgstr "Користувача з такою електронною адресою не існує."
+
+#: .\authentication\views.py:108 .\authentication\views.py:122
+msgid "Successfully logged in."
+msgstr "Успішно ввійшли."
+
+#: .\authentication\views.py:111 .\authentication\views.py:125
+msgid "Invalid password."
+msgstr "Недійсний пароль."
+
+#: .\authentication\views.py:116
+msgid "A user with that username does not exist."
+msgstr "Користувача з таким іменем користувача не існує."
+
+#: .\authentication\views.py:139
+msgid "Successfully logged out."
+msgstr "Успішно вийшли."
+
+#: .\authentication\views.py:152 .\authentication\views.py:277
+msgid "Invalid role."
+msgstr "Недійсна роль."
+
+#: .\authentication\views.py:157
+msgid "Successfully chosen role."
+msgstr "Вдало обрана роль."
+
+#: .\authentication\views.py:179
+msgid "Successfully confirmed name."
+msgstr "Ім'я успішно підтверджено."
+
+#: .\authentication\views.py:208
+msgid "Successfully confirmed email."
+msgstr "Електронну адресу успішно підтверджено."
+
+#: .\authentication\views.py:233 .\authentication\views.py:271
+msgid "Invalid username. At least 5 characters."
+msgstr "Невірне ім'я користувача. "
+
+#: .\authentication\views.py:239
+msgid "Successfully confirmed username."
+msgstr "Ім'я користувача успішно підтверджено."
+
+#: .\authentication\views.py:291
+msgid "Successfully edited profile."
+msgstr "Профіль успішно відредаговано."
+
+#: .\authentication\views.py:323
+msgid "Incorrect old password."
+msgstr "Неправильний старий пароль."
+
+#: .\authentication\views.py:333 .\authentication\views.py:352
+msgid "Successfully changed password."
+msgstr "Пароль успішно змінено."
+
+#: .\authentication\views.py:372 .\authentication\views.py:547
+#: .\authentication\views.py:608
+msgid "Incorrect password."
+msgstr "Невірний пароль."
+
+#: .\authentication\views.py:376
+msgid "Successfully deleted account."
+msgstr "Акаунт успішно видалено."
+
+#: .\authentication\views.py:396
+msgid "Successfully confirmed citizenship."
+msgstr "Успішно підтвердив громадянство."
+
+#: .\authentication\views.py:418
+msgid "Successfully confirmed phone number."
+msgstr "Номер телефону успішно підтверджено."
+
+#: .\authentication\views.py:507 .\authentication\views.py:599
+msgid "Two factor authentication is not enabled."
+msgstr "Двофакторна автентифікація не ввімкнена."
+
+#: .\authentication\views.py:511
+msgid "Two factor authentication is already passed."
+msgstr "Двофакторну автентифікацію вже пройдено."
+
+#: .\authentication\views.py:523
+msgid "Successfully passed two factor authentication"
+msgstr "Успішно пройшов двофакторну аутентифікацію"
+
+#: .\authentication\views.py:526 .\authentication\views.py:587
+msgid "Invalid code."
+msgstr "Невірний код."
+
+#: .\authentication\views.py:539 .\authentication\views.py:569
+msgid "Two factor authentication is already enabled."
+msgstr "Двофакторна автентифікація вже ввімкнена."
+
+#: .\authentication\views.py:557 .\authentication\views.py:584
+msgid "Successfully enabled two factor authentication."
+msgstr "Успішно ввімкнено двофакторну автентифікацію."
+
+#: .\authentication\views.py:615
+msgid "Successfully disabled two factor authentication."
+msgstr "Двофакторну автентифікацію успішно вимкнено."
+
+#: .\hotel\forms.py:23
+msgid "Hotel Name"
+msgstr "Назва готелю"
+
+#: .\hotel\forms.py:24
+msgid "Address"
+msgstr "Адреса"
+
+#: .\hotel\forms.py:25
+msgid "City"
+msgstr "Місто"
+
+#: .\hotel\forms.py:28
+msgid "Website"
+msgstr "Веб-сайт"
+
+#: .\hotel\forms.py:29
+msgid "Description"
+msgstr "опис"
+
+#: .\hotel\forms.py:30
+msgid "EIK"
+msgstr "EIK"
+
+#: .\hotel\forms.py:31
+msgid "Authorized Person"
+msgstr "Уповноважена особа"
+
+#: .\hotel\forms.py:32
+msgid "Stars"
+msgstr "Зірки"
+
+#: .\hotel\forms.py:37
+msgid "Register Hotel"
+msgstr "Зареєструвати готель"
+
+#: .\hotel\forms.py:44
+msgid "Confirm Address"
+msgstr "Підтвердіть адресу"
+
+#: .\hotel\models.py:19
+msgid "No description provided."
+msgstr "Опис не надано."
+
+#: .\hotel\models.py:49
+msgid "Room"
+msgstr "Кімната"
+
+#: .\hotel\models.py:50
+msgid "Rooms"
+msgstr "Кімнати"
+
+#: .\hotel\views.py:23 .\hotel\views.py:156
+msgid "You do not have permission to view this page"
+msgstr "Ви не маєте дозволу на перегляд цієї сторінки"
+
+#: .\hotel\views.py:32
+msgid "Your hotel is not approved yet"
+msgstr "Ваш готель ще не схвалено"
+
+#: .\hotel\views.py:86
+msgid "Successfully registered hotel"
+msgstr "Успішно зареєстрований готель"
+
+#: .\hotel\views.py:90
+msgid "Error while registering hotel"
+msgstr "Помилка при реєстрації готелю"
+
+#: .\hotel\views.py:97
+msgid "You have already registered a hotel"
+msgstr "Ви вже зареєстрували готель"
+
+#: .\hotel\views.py:115
+msgid "You have not registered a hotel yet"
+msgstr "Ви ще не зареєстрували готель"
+
+#: .\hotel\views.py:133
+msgid "Successfully confirmed address"
+msgstr "Адресу успішно підтверджено"
+
+#: .\hotel\views.py:136
+msgid "Error while confirming address"
+msgstr "Помилка під час підтвердження адреси"
+
+#: .\hotel\views.py:152
+msgid "No such hotel"
+msgstr "Немає такого готелю"
