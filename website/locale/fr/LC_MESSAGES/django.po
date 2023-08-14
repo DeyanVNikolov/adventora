@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -116,7 +115,6 @@ msgid "Warning"
 msgstr "Avertissement"
 
 #: .\adventora\templates\base.html:226
-#, fuzzy
 
 msgid "Adventora supports small, medium and large businesses"
 msgstr "Adventora soutient les petites, moyennes et grandes entreprises"
@@ -200,7 +198,6 @@ msgid ""
 msgstr "Le mot de passe doit comporter au moins 8 caractères. "
 
 #: .\authentication\forms.py:42
-#, fuzzy
 #| msgid "Confirmed"
 msgid "Confirm password"
 msgstr "Confirmé"
@@ -276,7 +273,6 @@ msgid "New Password"
 msgstr "nouveau mot de passe"
 
 #: .\authentication\forms.py:121 .\authentication\forms.py:131
-#, fuzzy
 #| msgid "Confirmed"
 msgid "Confirm New Password"
 msgstr "Confirmé"
@@ -499,7 +495,6 @@ msgid "Register Hotel"
 msgstr "Enregistrer l'hôtel"
 
 #: .\hotel\forms.py:44
-#, fuzzy
 #| msgid "Confirmed"
 msgid "Confirm Address"
 msgstr "Confirmé"
