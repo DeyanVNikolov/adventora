@@ -304,6 +304,7 @@ LANGUAGE_CODE = 'bg-bg'
 LANGUAGES = (
     ('bg', 'Bulgarian'),
     ('en', 'English'),
+    ('ro', 'Romanian'),
     ('de', 'German'),
     ('cs', 'Czech'),
     ('da', 'Danish'),

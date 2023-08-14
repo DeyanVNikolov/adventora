@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 09:48+0300\n"
+"POT-Creation-Date: 2023-08-14 18:21+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,6 +20,10 @@ msgstr ""
 #: .\adventora\templates\auth\edit_profile.html:10
 msgid "Not confirmed"
 msgstr "Непотвърдено"
+
+#: .\adventora\templates\auth\edit_profile.html:11
+msgid "Send confirmation email again."
+msgstr "Изпратете имейл за потвърждение отново."
 
 #: .\adventora\templates\auth\edit_profile.html:12
 msgid "Confirmed"
@@ -40,6 +44,17 @@ msgstr "Изключен"
 #: .\adventora\templates\auth\edit_profile.html:17
 msgid "Turn on"
 msgstr "Включи"
+
+#: .\adventora\templates\auth\edit_profile.html:25
+#, fuzzy
+#| msgid "Confirm password"
+msgid "Change password"
+msgstr "Потвърдено"
+
+#: .\adventora\templates\auth\edit_profile.html:28
+#: .\authentication\forms.py:143
+msgid "Delete Account"
+msgstr "Изтриване на акаунт"
 
 #: .\adventora\templates\auth\sign_in.html:27
 #: .\adventora\templates\auth\sign_up.html:28
@@ -86,64 +101,67 @@ msgstr "Влезте със Spotify"
 msgid "Login with VK"
 msgstr "Влезте с VK"
 
-#: .\adventora\templates\base.html:147 .\adventora\templates\base.html:151
+#: .\adventora\templates\base.html:148
 msgid "Panel"
 msgstr "Панел"
 
-#: .\adventora\templates\base.html:154
+#: .\adventora\templates\base.html:152
+msgid "Profile"
+msgstr "Профил"
+
+#: .\adventora\templates\base.html:155
 msgid "Logout"
 msgstr "Излез от профила си"
 
-#: .\adventora\templates\base.html:159 .\authentication\forms.py:52
+#: .\adventora\templates\base.html:160 .\authentication\forms.py:52
 msgid "Sign up"
 msgstr "Регистрирай се"
 
-#: .\adventora\templates\base.html:162 .\authentication\forms.py:24
+#: .\adventora\templates\base.html:163 .\authentication\forms.py:24
 msgid "Login"
 msgstr "Влизам"
 
-#: .\adventora\templates\base.html:179
+#: .\adventora\templates\base.html:180
 msgid "Error"
 msgstr "Грешка"
 
-#: .\adventora\templates\base.html:191
+#: .\adventora\templates\base.html:192
 msgid "Success"
 msgstr "Успех"
 
-#: .\adventora\templates\base.html:202
+#: .\adventora\templates\base.html:203
 msgid "Warning"
 msgstr "Внимание"
 
-#: .\adventora\templates\base.html:226
-
+#: .\adventora\templates\base.html:227
 msgid "Adventora supports small, medium and large businesses"
 msgstr "Adventora подкрепя малкия, средния и големия бизнес"
 
-#: .\adventora\templates\base.html:251
+#: .\adventora\templates\base.html:252
 msgid "All Rights Reserved"
 msgstr "Всички права запазени"
 
-#: .\adventora\templates\base.html:253
+#: .\adventora\templates\base.html:254
 msgid "Homepage"
 msgstr "Начална страница"
 
-#: .\adventora\templates\base.html:254
+#: .\adventora\templates\base.html:255
 msgid "About us"
 msgstr "За нас"
 
-#: .\adventora\templates\base.html:255
+#: .\adventora\templates\base.html:256
 msgid "Privacy"
 msgstr "поверителност"
 
-#: .\adventora\templates\base.html:256
+#: .\adventora\templates\base.html:257
 msgid "Terms of use"
 msgstr "Условия за ползване"
 
-#: .\adventora\templates\base.html:257
+#: .\adventora\templates\base.html:258
 msgid "Contacts"
 msgstr "Контакти"
 
-#: .\adventora\templates\base.html:258
+#: .\adventora\templates\base.html:259
 msgid "Partnerships"
 msgstr "Партньорства"
 
@@ -198,7 +216,6 @@ msgid ""
 msgstr "Паролата трябва да е с дължина поне 8 знака. "
 
 #: .\authentication\forms.py:42
-#| msgid "Confirmed"
 msgid "Confirm password"
 msgstr "Потвърдено"
 
@@ -214,8 +231,8 @@ msgstr ""
 
 #: .\authentication\forms.py:58 .\authentication\forms.py:99
 msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own"
-" hotel."
+"Hotel Manager - Oversee operations and provide excellent service in your own "
+"hotel."
 msgstr ""
 "Мениджър на хотел - Наблюдавайте операциите и предоставяйте отлично "
 "обслужване във вашия собствен хотел."
@@ -273,13 +290,8 @@ msgid "New Password"
 msgstr "нова парола"
 
 #: .\authentication\forms.py:121 .\authentication\forms.py:131
-#| msgid "Confirmed"
 msgid "Confirm New Password"
 msgstr "Потвърдено"
-
-#: .\authentication\forms.py:143
-msgid "Delete Account"
-msgstr "Изтриване на акаунт"
 
 #: .\authentication\forms.py:176 .\authentication\forms.py:185
 #: .\authentication\forms.py:194
@@ -494,7 +506,6 @@ msgid "Register Hotel"
 msgstr "Регистрирайте хотел"
 
 #: .\hotel\forms.py:44
-#| msgid "Confirmed"
 msgid "Confirm Address"
 msgstr "Потвърдено"
 
@@ -545,3 +556,334 @@ msgstr "Грешка при потвърждаване на адреса"
 #: .\hotel\views.py:152
 msgid "No such hotel"
 msgstr "Няма такъв хотел"
+
+#~ msgid "Notice addressed to"
+#~ msgstr "Известие, адресирано до"
+
+#~ msgid "NOTICE OF ACCOUNT SUSPENSION"
+#~ msgstr "ИЗВЕСТИЕ ЗА СПИРАНЕ НА АКАУНТ"
+
+#~ msgid ""
+#~ "We regret to inform you that your account has been suspended from "
+#~ "accessing our website due to violations of our terms of service. This "
+#~ "suspension is effective immediately."
+#~ msgstr ""
+#~ "Със съжаление трябва да ви информираме, че достъпът до нашия уебсайт е "
+#~ "спрян от вашия акаунт поради нарушения на нашите условия за ползване. "
+
+#~ msgid "Reason for Suspension:"
+#~ msgstr "Причина за спиране:"
+
+#~ msgid ""
+#~ "Your account has been found to have engaged in activities that are in "
+#~ "direct violation of our community guidelines and terms of use."
+#~ msgstr ""
+#~ "Установено е, че вашият акаунт е участвал в дейности, които са в пряко "
+#~ "нарушение на нашите насоки на общността и условията за използване."
+
+#~ msgid "Effects of Suspension:"
+#~ msgstr "Ефекти от спирането:"
+
+#~ msgid ""
+#~ "During the suspension period, you will not be able to log in to your "
+#~ "account or access any of the features and services provided by our "
+#~ "website."
+#~ msgstr ""
+#~ "По време на периода на спиране няма да можете да влезете в акаунта си или "
+#~ "да получите достъп до която и да е от функциите и услугите, предоставяни "
+#~ "от нашия уебсайт."
+
+#~ msgid "Appealing the Suspension:"
+#~ msgstr "Обжалване на спирането:"
+
+#~ msgid ""
+#~ "If you believe this suspension has been issued in error, or if you would "
+#~ "like to appeal this decision, you may contact our support team at"
+#~ msgstr ""
+#~ "Ако смятате, че това спиране е направено по погрешка или ако искате да "
+#~ "обжалвате това решение, можете да се свържете с нашия екип за поддръжка на"
+
+#~ msgid ""
+#~ "Please provide any relevant information and details that you believe may "
+#~ "assist in reviewing your suspension."
+#~ msgstr ""
+#~ "Моля, предоставете всяка подходяща информация и подробности, които "
+#~ "смятате, че могат да помогнат при преразглеждането на вашето спиране."
+
+#~ msgid "Duration of Suspension:"
+#~ msgstr "Продължителност на спирането:"
+
+#~ msgid ""
+#~ "The duration of your suspension will be determined based on the severity "
+#~ "of the violation. We will review your case and notify you of any updates "
+#~ "regarding the status of your account suspension."
+#~ msgstr ""
+#~ "Продължителността на вашето спиране ще бъде определена въз основа на "
+#~ "тежестта на нарушението. "
+
+#~ msgid ""
+#~ "We take the enforcement of our community guidelines and terms of use "
+#~ "seriously in order to provide a safe and respectful environment for all "
+#~ "of our users. We appreciate your understanding and cooperation."
+#~ msgstr ""
+#~ "Ние приемаме сериозно прилагането на нашите насоки на общността и "
+#~ "условията за използване, за да осигурим безопасна и уважителна среда за "
+#~ "всички наши потребители. "
+
+#~ msgid "Sincerely"
+#~ msgstr "на Ваше разположение"
+
+#~ msgid "Adventora Privacy Policy"
+#~ msgstr "Правила за поверителност на Adventora"
+
+#~ msgid "Last Updated: August 13, 2023"
+#~ msgstr "Последна актуализация: 13 август 2023 г"
+
+#~ msgid "This"
+#~ msgstr "Това"
+
+#, fuzzy
+#~| msgid "Privacy"
+#~ msgid "Privacy Policy"
+#~ msgstr "поверителност"
+
+#~ msgid "explains how Adventora (\\"
+#~ msgstr "обяснява как Adventora (\\"
+
+#~ msgid "\\"
+#~ msgstr "\\"
+
+#~ msgid "1. Collection of Information"
+#~ msgstr "1. Събиране на информация"
+
+#~ msgid ""
+#~ "We collect various personal data from users to ensure the smooth "
+#~ "functioning of our reservation services. This includes, but is not "
+#~ "limited to:"
+#~ msgstr ""
+#~ "Ние събираме различни лични данни от потребителите, за да гарантираме "
+#~ "гладкото функциониране на нашите резервационни услуги. "
+
+#, fuzzy
+#~| msgid "First name"
+#~ msgid "First and last name"
+#~ msgstr "Първо име"
+
+#, fuzzy
+#~| msgid "Email address must be valid"
+#~ msgid "Email address"
+#~ msgstr "Имейл адресът трябва да е валиден"
+
+#~ msgid "Phone numbers"
+#~ msgstr "Телефонни номера"
+
+#~ msgid "Nationality"
+#~ msgstr "Националност"
+
+#~ msgid "For individuals marked as \\"
+#~ msgstr "За лица, маркирани като \\"
+
+#, fuzzy
+#~| msgid "Hotel Name"
+#~ msgid "Hotel name"
+#~ msgstr "Име на хотел"
+
+#, fuzzy
+#~| msgid "Manager"
+#~ msgid "Manager's name"
+#~ msgstr "Управител"
+
+#~ msgid "Hotel's unique identification number (EIK)"
+#~ msgstr "Уникален идентификационен номер на хотела (EIK)"
+
+#~ msgid "Hotel's phone number"
+#~ msgstr "Телефонен номер на хотела"
+
+#~ msgid "Hotel's email address"
+#~ msgstr "Имейл адрес на хотела"
+
+#~ msgid "Hotel's physical address"
+#~ msgstr "Физическият адрес на хотела"
+
+#~ msgid "2. Purpose and Use of Data"
+#~ msgstr "2. Цел и използване на данните"
+
+#~ msgid ""
+#~ "The collected personal information serves as a basis for smooth, secure, "
+#~ "and effective reservations and bookings. Your data facilitates account "
+#~ "management, responsive customer support, and critical communication. If "
+#~ "identified as a hotel manager, certain details are shared with the "
+#~ "establishment to optimize reservation monitoring."
+#~ msgstr ""
+#~ "Събраната лична информация служи като основа за гладки, сигурни и "
+#~ "ефективни резервации и резервации. "
+
+#~ msgid "3. Engagement with Third-Party Services"
+#~ msgstr "3. Ангажираност с услуги на трети страни"
+
+#~ msgid ""
+#~ "To enhance user experience and expand our offerings, we engage respected "
+#~ "third-party services, including but not limited to:"
+#~ msgstr ""
+#~ "За да подобрим потребителското изживяване и да разширим нашите "
+#~ "предложения, ние ангажираме уважавани услуги на трети страни, "
+#~ "включително, но не само:"
+
+#~ msgid "Google Analytics for in-depth website analysis"
+#~ msgstr "Google Analytics за задълбочен анализ на уебсайта"
+
+#~ msgid ""
+#~ "Top-Rent-A-Car for promotional banners, widgets, and joint promotions"
+#~ msgstr "Top-Rent-A-Car за рекламни банери, уиджети и съвместни промоции"
+
+#~ msgid ""
+#~ "Social services for login, including Google, GitHub, Reddit, Spotify, "
+#~ "Trello, Patreon, Steam, VK, and Amazon"
+#~ msgstr ""
+#~ "Социални услуги за влизане, включително Google, GitHub, Reddit, Spotify, "
+#~ "Trello, Patreon, Steam, VK и Amazon"
+
+#~ msgid ""
+#~ "Payment processing through reputable providers like Stripe and epay.bg "
+#~ "for secure financial transactions"
+#~ msgstr ""
+#~ "Обработка на плащания чрез реномирани доставчици като Stripe и epay.bg за "
+#~ "сигурни финансови транзакции"
+
+#~ msgid "4. Tracking Mechanisms and Cookies"
+#~ msgstr "4. Механизми за проследяване и бисквитки"
+
+#~ msgid ""
+#~ "Cookies serve as essential components of our digital architecture, "
+#~ "contributing to seamless session retention and preserving data for "
+#~ "personalization, such as theme settings and language preferences. "
+#~ "Additionally, certain third-party cookies may be used in conjunction with "
+#~ "our respected partners."
+#~ msgstr ""
+#~ "Бисквитките служат като основни компоненти на нашата дигитална "
+#~ "архитектура, като допринасят за безпроблемното запазване на сесията и "
+#~ "съхраняват данни за персонализиране, като например настройки на теми и "
+#~ "езикови предпочитания. "
+
+#~ msgid "5. Data Retention Strategy"
+#~ msgstr "5. Стратегия за запазване на данни"
+
+#~ msgid ""
+#~ "User personal data remains stored in our systems throughout the active "
+#~ "account period. The option to delete your account is provided, allowing "
+#~ "voluntary removal of associated data. For hotel managers, data related to "
+#~ "establishments is retained for up to one year to comply with security "
+#~ "protocols and potential legal requirements."
+#~ msgstr ""
+#~ "Личните данни на потребителите остават съхранени в нашите системи през "
+#~ "целия период на активен акаунт. "
+
+#~ msgid "6. Robust Security Framework"
+#~ msgstr "6. Здрава рамка за сигурност"
+
+#~ msgid ""
+#~ "With the help of modern encryption protocols, including a 512-character "
+#~ "encryption key, we enforce strict measures to protect sensitive data. The "
+#~ "data is stored on a remote database server located in the European Union, "
+#~ "safeguarded by the comprehensive security infrastructure provided by "
+#~ "Amazon Web Services."
+#~ msgstr ""
+#~ "С помощта на модерни протоколи за криптиране, включително ключ за "
+#~ "криптиране с 512 знака, ние прилагаме строги мерки за защита на "
+#~ "чувствителните данни. "
+
+#~ msgid "7. Data Sharing and Collaborative Efforts"
+#~ msgstr "7. Споделяне на данни и съвместни усилия"
+
+#~ msgid ""
+#~ "Certain user data, including email addresses, names, and contact numbers, "
+#~ "are shared with hotels to facilitate efficient reservation management. "
+#~ "Outside established partnerships, data sharing with external "
+#~ "organizations is limited to data automatically collected by Google "
+#~ "Analytics and Top-Rent-A-Car."
+#~ msgstr ""
+#~ "Определени потребителски данни, включително имейл адреси, имена и номера "
+#~ "за контакт, се споделят с хотелите, за да се улесни ефективното "
+#~ "управление на резервациите. "
+
+#~ msgid "8. Cross-Border Data Transfers"
+#~ msgstr "8. Трансгранични трансфери на данни"
+
+#~ msgid ""
+#~ "User personal data remains entirely within the European Union's "
+#~ "boundaries. In cases where your citizenship does not fall within the EU, "
+#~ "data may be transferred internationally for storage within the EU "
+#~ "jurisdiction."
+#~ msgstr ""
+#~ "Личните данни на потребителя остават изцяло в границите на Европейския "
+#~ "съюз. "
+
+#~ msgid "9. Children's Personal Information"
+#~ msgstr "9. Лична информация на децата"
+
+#~ msgid ""
+#~ "Adventora is solely directed towards lawful adult individuals. Due to the "
+#~ "mandatory nature of collecting personal data for reservation purposes and "
+#~ "payment processing, the platform is not intended for minors. Exceptions "
+#~ "may arise when lawful adults provide information about minors in the "
+#~ "context of reservations made for them."
+#~ msgstr "Adventora е насочена единствено към законни пълнолетни лица. "
+
+#~ msgid "10. Notification of Policy Changes"
+#~ msgstr "10. Уведомяване за промени в политиката"
+
+#~ msgid ""
+#~ "Changes or modifications to this Policy will be communicated via email "
+#~ "and prominently displayed on the Website."
+#~ msgstr ""
+#~ "Промените или модификациите на тази Политика ще бъдат съобщавани по имейл "
+#~ "и ще бъдат показвани на видно място на уебсайта."
+
+#~ msgid "11. Legitimate Basis for Data Processing"
+#~ msgstr "11. Легитимно основание за обработка на данни"
+
+#~ msgid ""
+#~ "The collection and processing of data are based on the mandatory "
+#~ "execution of reservations and associated booking activities."
+#~ msgstr ""
+#~ "Събирането и обработката на данни се основават на задължителното "
+#~ "извършване на резервации и свързаните с тях дейности по резервации."
+
+#~ msgid "12. Implicit Consent"
+#~ msgstr "12. Подразбиращо се съгласие"
+
+#~ msgid ""
+#~ "By using our platform and creating an account, you implicitly consent to "
+#~ "the collection and processing of personal data, in accordance with this "
+#~ "Policy."
+#~ msgstr ""
+#~ "Използвайки нашата платформа и създавайки акаунт, вие имплицитно се "
+#~ "съгласявате със събирането и обработването на лични данни, в съответствие "
+#~ "с тази Политика."
+
+#~ msgid "13. Compliance with Applicable Regulations"
+#~ msgstr "13. Съответствие с приложимите разпоредби"
+
+#~ msgid ""
+#~ "Our data processing procedures strictly adhere to the regulations and "
+#~ "provisions established by the General Data Protection Regulation (GDPR)."
+#~ msgstr ""
+#~ "Нашите процедури за обработка на данни се придържат стриктно към "
+#~ "разпоредбите и разпоредбите, установени от Общия регламент за защита на "
+#~ "данните (GDPR)."
+
+#~ msgid ""
+#~ "For questions, clarifications, or requests related to your personal data "
+#~ "and this Policy, please be informed that you can contact us through the "
+#~ "following contact: "
+#~ msgstr ""
+#~ "За въпроси, разяснения или искания, свързани с Вашите лични данни и тази "
+#~ "Политика, моля, имайте предвид, че можете да се свържете с нас чрез "
+#~ "следния контакт:"
+
+#~ msgid "hello@adventora.net"
+#~ msgstr "hello@adventora.net"
+
+#, fuzzy
+#~ msgid "Delete account"
+#~ msgstr "Изтриване на акаунт"

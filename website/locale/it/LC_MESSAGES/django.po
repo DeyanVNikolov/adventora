@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 09:48+0300\n"
+"POT-Creation-Date: 2023-08-14 18:21+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,6 +20,10 @@ msgstr ""
 #: .\adventora\templates\auth\edit_profile.html:10
 msgid "Not confirmed"
 msgstr "Non confermato"
+
+#: .\adventora\templates\auth\edit_profile.html:11
+msgid "Send confirmation email again."
+msgstr "Invia di nuovo l'e-mail di conferma."
 
 #: .\adventora\templates\auth\edit_profile.html:12
 msgid "Confirmed"
@@ -40,6 +44,17 @@ msgstr "Spento"
 #: .\adventora\templates\auth\edit_profile.html:17
 msgid "Turn on"
 msgstr "Accendere"
+
+#: .\adventora\templates\auth\edit_profile.html:25
+#, fuzzy
+#| msgid "Confirm password"
+msgid "Change password"
+msgstr "Confermato"
+
+#: .\adventora\templates\auth\edit_profile.html:28
+#: .\authentication\forms.py:143
+msgid "Delete Account"
+msgstr "Eliminare l'account"
 
 #: .\adventora\templates\auth\sign_in.html:27
 #: .\adventora\templates\auth\sign_up.html:28
@@ -86,64 +101,67 @@ msgstr "Accedi con Spotify"
 msgid "Login with VK"
 msgstr "Accedi con VK"
 
-#: .\adventora\templates\base.html:147 .\adventora\templates\base.html:151
+#: .\adventora\templates\base.html:148
 msgid "Panel"
 msgstr "Pannello"
 
-#: .\adventora\templates\base.html:154
+#: .\adventora\templates\base.html:152
+msgid "Profile"
+msgstr "Profilo"
+
+#: .\adventora\templates\base.html:155
 msgid "Logout"
 msgstr "Disconnettersi"
 
-#: .\adventora\templates\base.html:159 .\authentication\forms.py:52
+#: .\adventora\templates\base.html:160 .\authentication\forms.py:52
 msgid "Sign up"
 msgstr "Iscrizione"
 
-#: .\adventora\templates\base.html:162 .\authentication\forms.py:24
+#: .\adventora\templates\base.html:163 .\authentication\forms.py:24
 msgid "Login"
 msgstr "Login"
 
-#: .\adventora\templates\base.html:179
+#: .\adventora\templates\base.html:180
 msgid "Error"
 msgstr "Errore"
 
-#: .\adventora\templates\base.html:191
+#: .\adventora\templates\base.html:192
 msgid "Success"
 msgstr "Successo"
 
-#: .\adventora\templates\base.html:202
+#: .\adventora\templates\base.html:203
 msgid "Warning"
 msgstr "Avvertimento"
 
-#: .\adventora\templates\base.html:226
-
+#: .\adventora\templates\base.html:227
 msgid "Adventora supports small, medium and large businesses"
 msgstr "Adventora supporta le piccole, medie e grandi imprese"
 
-#: .\adventora\templates\base.html:251
+#: .\adventora\templates\base.html:252
 msgid "All Rights Reserved"
 msgstr "Tutti i diritti riservati"
 
-#: .\adventora\templates\base.html:253
+#: .\adventora\templates\base.html:254
 msgid "Homepage"
 msgstr "Pagina iniziale"
 
-#: .\adventora\templates\base.html:254
+#: .\adventora\templates\base.html:255
 msgid "About us"
 msgstr "Chi siamo"
 
-#: .\adventora\templates\base.html:255
+#: .\adventora\templates\base.html:256
 msgid "Privacy"
 msgstr "Riservatezza"
 
-#: .\adventora\templates\base.html:256
+#: .\adventora\templates\base.html:257
 msgid "Terms of use"
 msgstr "Termini di utilizzo"
 
-#: .\adventora\templates\base.html:257
+#: .\adventora\templates\base.html:258
 msgid "Contacts"
 msgstr "Contatti"
 
-#: .\adventora\templates\base.html:258
+#: .\adventora\templates\base.html:259
 msgid "Partnerships"
 msgstr "Partnership"
 
@@ -198,7 +216,6 @@ msgid ""
 msgstr "La password deve essere lunga almeno 8 caratteri. "
 
 #: .\authentication\forms.py:42
-#| msgid "Confirmed"
 msgid "Confirm password"
 msgstr "Confermato"
 
@@ -213,11 +230,11 @@ msgstr ""
 
 #: .\authentication\forms.py:58 .\authentication\forms.py:99
 msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own"
-" hotel."
+"Hotel Manager - Oversee operations and provide excellent service in your own "
+"hotel."
 msgstr ""
-"Hotel Manager - Supervisiona le operazioni e fornisci un servizio eccellente"
-" nel tuo hotel."
+"Hotel Manager - Supervisiona le operazioni e fornisci un servizio eccellente "
+"nel tuo hotel."
 
 #: .\authentication\forms.py:59 .\authentication\forms.py:100
 msgid ""
@@ -272,13 +289,8 @@ msgid "New Password"
 msgstr "nuova password"
 
 #: .\authentication\forms.py:121 .\authentication\forms.py:131
-#| msgid "Confirmed"
 msgid "Confirm New Password"
 msgstr "Confermato"
-
-#: .\authentication\forms.py:143
-msgid "Delete Account"
-msgstr "Eliminare l'account"
 
 #: .\authentication\forms.py:176 .\authentication\forms.py:185
 #: .\authentication\forms.py:194
@@ -493,7 +505,6 @@ msgid "Register Hotel"
 msgstr "Registrati Albergo"
 
 #: .\hotel\forms.py:44
-#| msgid "Confirmed"
 msgid "Confirm Address"
 msgstr "Confermato"
 
@@ -544,3 +555,32 @@ msgstr "Errore durante la conferma dell'indirizzo"
 #: .\hotel\views.py:152
 msgid "No such hotel"
 msgstr "Nessun hotel del genere"
+
+#, fuzzy
+#~| msgid "Privacy"
+#~ msgid "Privacy Policy"
+#~ msgstr "Riservatezza"
+
+#, fuzzy
+#~| msgid "First name"
+#~ msgid "First and last name"
+#~ msgstr "Nome di battesimo"
+
+#, fuzzy
+#~| msgid "Email address must be valid"
+#~ msgid "Email address"
+#~ msgstr "L'indirizzo e-mail deve essere valido"
+
+#, fuzzy
+#~| msgid "Hotel Name"
+#~ msgid "Hotel name"
+#~ msgstr "Nome dell'albergo"
+
+#, fuzzy
+#~| msgid "Manager"
+#~ msgid "Manager's name"
+#~ msgstr "Manager"
+
+#, fuzzy
+#~ msgid "Delete account"
+#~ msgstr "Eliminare l'account"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 10:31+0300\n"
+"POT-Creation-Date: 2023-08-14 18:21+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,6 +20,10 @@ msgstr ""
 #: .\adventora\templates\auth\edit_profile.html:10
 msgid "Not confirmed"
 msgstr "확인되지 않음"
+
+#: .\adventora\templates\auth\edit_profile.html:11
+msgid "Send confirmation email again."
+msgstr "확인 이메일을 다시 보냅니다."
 
 #: .\adventora\templates\auth\edit_profile.html:12
 msgid "Confirmed"
@@ -40,6 +44,17 @@ msgstr "껐다"
 #: .\adventora\templates\auth\edit_profile.html:17
 msgid "Turn on"
 msgstr "켜다"
+
+#: .\adventora\templates\auth\edit_profile.html:25
+#, fuzzy
+#| msgid "Confirm password"
+msgid "Change password"
+msgstr "비밀번호 확인"
+
+#: .\adventora\templates\auth\edit_profile.html:28
+#: .\authentication\forms.py:143
+msgid "Delete Account"
+msgstr "계정 삭제"
 
 #: .\adventora\templates\auth\sign_in.html:27
 #: .\adventora\templates\auth\sign_up.html:28
@@ -86,63 +101,67 @@ msgstr "Spotify로 로그인하십시오."
 msgid "Login with VK"
 msgstr "VK로 로그인"
 
-#: .\adventora\templates\base.html:147 .\adventora\templates\base.html:151
+#: .\adventora\templates\base.html:148
 msgid "Panel"
 msgstr "패널"
 
-#: .\adventora\templates\base.html:154
+#: .\adventora\templates\base.html:152
+msgid "Profile"
+msgstr "프로필"
+
+#: .\adventora\templates\base.html:155
 msgid "Logout"
 msgstr "로그 아웃"
 
-#: .\adventora\templates\base.html:159 .\authentication\forms.py:52
+#: .\adventora\templates\base.html:160 .\authentication\forms.py:52
 msgid "Sign up"
 msgstr "가입하기"
 
-#: .\adventora\templates\base.html:162 .\authentication\forms.py:24
+#: .\adventora\templates\base.html:163 .\authentication\forms.py:24
 msgid "Login"
 msgstr "로그인"
 
-#: .\adventora\templates\base.html:179
+#: .\adventora\templates\base.html:180
 msgid "Error"
 msgstr "오류"
 
-#: .\adventora\templates\base.html:191
+#: .\adventora\templates\base.html:192
 msgid "Success"
 msgstr "성공"
 
-#: .\adventora\templates\base.html:202
+#: .\adventora\templates\base.html:203
 msgid "Warning"
 msgstr "경고"
 
-#: .\adventora\templates\base.html:226
+#: .\adventora\templates\base.html:227
 msgid "Adventora supports small, medium and large businesses"
 msgstr "Adventora는 중소기업 및 대기업을 지원합니다."
 
-#: .\adventora\templates\base.html:251
+#: .\adventora\templates\base.html:252
 msgid "All Rights Reserved"
 msgstr "판권 소유"
 
-#: .\adventora\templates\base.html:253
+#: .\adventora\templates\base.html:254
 msgid "Homepage"
 msgstr "홈페이지"
 
-#: .\adventora\templates\base.html:254
+#: .\adventora\templates\base.html:255
 msgid "About us"
 msgstr "회사 소개"
 
-#: .\adventora\templates\base.html:255
+#: .\adventora\templates\base.html:256
 msgid "Privacy"
 msgstr "은둔"
 
-#: .\adventora\templates\base.html:256
+#: .\adventora\templates\base.html:257
 msgid "Terms of use"
 msgstr "이용약관"
 
-#: .\adventora\templates\base.html:257
+#: .\adventora\templates\base.html:258
 msgid "Contacts"
 msgstr "콘택트 렌즈"
 
-#: .\adventora\templates\base.html:258
+#: .\adventora\templates\base.html:259
 msgid "Partnerships"
 msgstr "파트너십"
 
@@ -210,15 +229,18 @@ msgstr "Vacationer - 이상적인 휴가 활동을 탐색, 계획 및 예약하�
 
 #: .\authentication\forms.py:58 .\authentication\forms.py:99
 msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own"
-" hotel."
-msgstr "호텔 매니저 - 운영을 감독하고 자신의 호텔에서 훌륭한 서비스를 제공합니다."
+"Hotel Manager - Oversee operations and provide excellent service in your own "
+"hotel."
+msgstr ""
+"호텔 매니저 - 운영을 감독하고 자신의 호텔에서 훌륭한 서비스를 제공합니다."
 
 #: .\authentication\forms.py:59 .\authentication\forms.py:100
 msgid ""
 "Employee - Contribute your expertise to a thriving workplace, such as a "
 "hotel or guest house."
-msgstr "직원 - 호텔이나 게스트 하우스와 같이 번성하는 직장에 전문 지식을 제공하십시오."
+msgstr ""
+"직원 - 호텔이나 게스트 하우스와 같이 번성하는 직장에 전문 지식을 제공하십시"
+"오."
 
 #: .\authentication\forms.py:65
 msgid "Submit"
@@ -267,10 +289,6 @@ msgstr "새 비밀번호"
 #: .\authentication\forms.py:121 .\authentication\forms.py:131
 msgid "Confirm New Password"
 msgstr "새 암호를 확인합니다"
-
-#: .\authentication\forms.py:143
-msgid "Delete Account"
-msgstr "계정 삭제"
 
 #: .\authentication\forms.py:176 .\authentication\forms.py:185
 #: .\authentication\forms.py:194
@@ -535,3 +553,32 @@ msgstr "주소 확인 중 오류"
 #: .\hotel\views.py:152
 msgid "No such hotel"
 msgstr "해당 호텔 없음"
+
+#, fuzzy
+#~| msgid "Privacy"
+#~ msgid "Privacy Policy"
+#~ msgstr "은둔"
+
+#, fuzzy
+#~| msgid "First name"
+#~ msgid "First and last name"
+#~ msgstr "이름"
+
+#, fuzzy
+#~| msgid "Email address must be valid"
+#~ msgid "Email address"
+#~ msgstr "이메일 주소는 유효해야 합니다."
+
+#, fuzzy
+#~| msgid "Hotel Name"
+#~ msgid "Hotel name"
+#~ msgstr "호텔 이름"
+
+#, fuzzy
+#~| msgid "Manager"
+#~ msgid "Manager's name"
+#~ msgstr "관리자"
+
+#, fuzzy
+#~ msgid "Delete account"
+#~ msgstr "계정 삭제"

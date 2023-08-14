@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 09:48+0300\n"
+"POT-Creation-Date: 2023-08-14 18:21+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,10 @@ msgstr ""
 #: .\adventora\templates\auth\edit_profile.html:10
 msgid "Not confirmed"
 msgstr "確認されていません"
+
+#: .\adventora\templates\auth\edit_profile.html:11
+msgid "Send confirmation email again."
+msgstr "再度確認メールを送信してください。"
 
 #: .\adventora\templates\auth\edit_profile.html:12
 msgid "Confirmed"
@@ -39,6 +43,17 @@ msgstr "オフになっています"
 #: .\adventora\templates\auth\edit_profile.html:17
 msgid "Turn on"
 msgstr "オンにする"
+
+#: .\adventora\templates\auth\edit_profile.html:25
+#, fuzzy
+#| msgid "Confirm password"
+msgid "Change password"
+msgstr "パスワードを認証する"
+
+#: .\adventora\templates\auth\edit_profile.html:28
+#: .\authentication\forms.py:143
+msgid "Delete Account"
+msgstr "アカウントを削除する"
 
 #: .\adventora\templates\auth\sign_in.html:27
 #: .\adventora\templates\auth\sign_up.html:28
@@ -85,64 +100,67 @@ msgstr "Spotifyでログイン"
 msgid "Login with VK"
 msgstr "VKでログイン"
 
-#: .\adventora\templates\base.html:147 .\adventora\templates\base.html:151
+#: .\adventora\templates\base.html:148
 msgid "Panel"
 msgstr "パネル"
 
-#: .\adventora\templates\base.html:154
+#: .\adventora\templates\base.html:152
+msgid "Profile"
+msgstr "プロフィール"
+
+#: .\adventora\templates\base.html:155
 msgid "Logout"
 msgstr "ログアウト"
 
-#: .\adventora\templates\base.html:159 .\authentication\forms.py:52
+#: .\adventora\templates\base.html:160 .\authentication\forms.py:52
 msgid "Sign up"
 msgstr "サインアップ"
 
-#: .\adventora\templates\base.html:162 .\authentication\forms.py:24
+#: .\adventora\templates\base.html:163 .\authentication\forms.py:24
 msgid "Login"
 msgstr "ログイン"
 
-#: .\adventora\templates\base.html:179
+#: .\adventora\templates\base.html:180
 msgid "Error"
 msgstr "エラー"
 
-#: .\adventora\templates\base.html:191
+#: .\adventora\templates\base.html:192
 msgid "Success"
 msgstr "成功"
 
-#: .\adventora\templates\base.html:202
+#: .\adventora\templates\base.html:203
 msgid "Warning"
 msgstr "警告"
 
-#: .\adventora\templates\base.html:226
-
+#: .\adventora\templates\base.html:227
 msgid "Adventora supports small, medium and large businesses"
 msgstr "Adventora は中小企業、大規模企業をサポートします"
 
-#: .\adventora\templates\base.html:251
+#: .\adventora\templates\base.html:252
 msgid "All Rights Reserved"
 msgstr "無断転載を禁じます"
 
-#: .\adventora\templates\base.html:253
+#: .\adventora\templates\base.html:254
 msgid "Homepage"
 msgstr "ホームページ"
 
-#: .\adventora\templates\base.html:254
+#: .\adventora\templates\base.html:255
 msgid "About us"
 msgstr "私たちについて"
 
-#: .\adventora\templates\base.html:255
+#: .\adventora\templates\base.html:256
 msgid "Privacy"
 msgstr "プライバシー"
 
-#: .\adventora\templates\base.html:256
+#: .\adventora\templates\base.html:257
 msgid "Terms of use"
 msgstr "利用規約"
 
-#: .\adventora\templates\base.html:257
+#: .\adventora\templates\base.html:258
 msgid "Contacts"
 msgstr "連絡先"
 
-#: .\adventora\templates\base.html:258
+#: .\adventora\templates\base.html:259
 msgid "Partnerships"
 msgstr "パートナーシップ"
 
@@ -210,15 +228,17 @@ msgstr "行楽客 - 理想的な休暇のアクティビティを探索、計画
 
 #: .\authentication\forms.py:58 .\authentication\forms.py:99
 msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own"
-" hotel."
-msgstr "ホテルマネージャー - 自社ホテルの運営を監督し、優れたサービスを提供します。"
+"Hotel Manager - Oversee operations and provide excellent service in your own "
+"hotel."
+msgstr ""
+"ホテルマネージャー - 自社ホテルの運営を監督し、優れたサービスを提供します。"
 
 #: .\authentication\forms.py:59 .\authentication\forms.py:100
 msgid ""
 "Employee - Contribute your expertise to a thriving workplace, such as a "
 "hotel or guest house."
-msgstr "従業員 - ホテルやゲストハウスなどの繁栄する職場に専門知識を貢献してください。"
+msgstr ""
+"従業員 - ホテルやゲストハウスなどの繁栄する職場に専門知識を貢献してください。"
 
 #: .\authentication\forms.py:65
 msgid "Submit"
@@ -267,10 +287,6 @@ msgstr "新しいパスワード"
 #: .\authentication\forms.py:121 .\authentication\forms.py:131
 msgid "Confirm New Password"
 msgstr "新しいパスワードを確認"
-
-#: .\authentication\forms.py:143
-msgid "Delete Account"
-msgstr "アカウントを削除する"
 
 #: .\authentication\forms.py:176 .\authentication\forms.py:185
 #: .\authentication\forms.py:194
@@ -535,3 +551,32 @@ msgstr "住所確認中にエラーが発生しました"
 #: .\hotel\views.py:152
 msgid "No such hotel"
 msgstr "そのようなホテルはありません"
+
+#, fuzzy
+#~| msgid "Privacy"
+#~ msgid "Privacy Policy"
+#~ msgstr "プライバシー"
+
+#, fuzzy
+#~| msgid "First name"
+#~ msgid "First and last name"
+#~ msgstr "ファーストネーム"
+
+#, fuzzy
+#~| msgid "Email address must be valid"
+#~ msgid "Email address"
+#~ msgstr "メールアドレスは有効である必要があります"
+
+#, fuzzy
+#~| msgid "Hotel Name"
+#~ msgid "Hotel name"
+#~ msgstr "ホテル名"
+
+#, fuzzy
+#~| msgid "Manager"
+#~ msgid "Manager's name"
+#~ msgstr "マネージャー"
+
+#, fuzzy
+#~ msgid "Delete account"
+#~ msgstr "アカウントを削除する"

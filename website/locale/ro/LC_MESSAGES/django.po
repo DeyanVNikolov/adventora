@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -15,96 +16,96 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
 
 #: .\adventora\templates\auth\edit_profile.html:10
 msgid "Not confirmed"
-msgstr "Nije potvrđeno"
+msgstr "Neconfirmat"
 
 #: .\adventora\templates\auth\edit_profile.html:11
 msgid "Send confirmation email again."
-msgstr "Ponovno pošalji potvrdni e-mail."
+msgstr "Trimite din nou e-mail de confirmare."
 
 #: .\adventora\templates\auth\edit_profile.html:12
 msgid "Confirmed"
-msgstr "Potvrđeno"
+msgstr "Confirmat"
 
 #: .\adventora\templates\auth\edit_profile.html:14
 msgid "Turned On"
-msgstr "Upaljeno"
+msgstr "Pornit"
 
 #: .\adventora\templates\auth\edit_profile.html:15
 msgid "Turn off"
-msgstr "Isključiti"
+msgstr "Opriți"
 
 #: .\adventora\templates\auth\edit_profile.html:16
 msgid "Turned Off"
-msgstr "Ugašen"
+msgstr "Oprit"
 
 #: .\adventora\templates\auth\edit_profile.html:17
 msgid "Turn on"
-msgstr "Upaliti"
+msgstr "Porniți"
 
 #: .\adventora\templates\auth\edit_profile.html:25
 #, fuzzy
 #| msgid "Confirm password"
 msgid "Change password"
-msgstr "Potvrdi lozinku"
+msgstr "Confirmă parola"
 
 #: .\adventora\templates\auth\edit_profile.html:28
 #: .\authentication\forms.py:143
 msgid "Delete Account"
-msgstr "Izbriši račun"
+msgstr "Șterge cont"
 
 #: .\adventora\templates\auth\sign_in.html:27
 #: .\adventora\templates\auth\sign_up.html:28
 msgid "Login with Google"
-msgstr "Prijavite se s Googleom"
+msgstr "Conectați-vă cu Google"
 
 #: .\adventora\templates\auth\sign_in.html:33
 #: .\adventora\templates\auth\sign_up.html:34
 msgid "Login with Trello"
-msgstr "Prijavite se s Trellom"
+msgstr "Conectați-vă cu Trello"
 
 #: .\adventora\templates\auth\sign_in.html:41
 #: .\adventora\templates\auth\sign_up.html:42
 msgid "Login with GitHub"
-msgstr "Prijavite se s GitHubom"
+msgstr "Conectați-vă cu GitHub"
 
 #: .\adventora\templates\auth\sign_in.html:47
 #: .\adventora\templates\auth\sign_up.html:48
 msgid "Login with Patreon"
-msgstr "Prijavi se putem Patreona"
+msgstr "Conectați-vă cu Patreon"
 
 #: .\adventora\templates\auth\sign_in.html:53
 #: .\adventora\templates\auth\sign_up.html:54
 msgid "Login with Amazon"
-msgstr "Prijavite se putem Amazona"
+msgstr "Conectați-vă cu Amazon"
 
 #: .\adventora\templates\auth\sign_in.html:62
 #: .\adventora\templates\auth\sign_up.html:63
 msgid "Login with Reddit"
-msgstr "Prijavite se putem Reddita"
+msgstr "Conectați-vă cu Reddit"
 
 #: .\adventora\templates\auth\sign_in.html:68
 #: .\adventora\templates\auth\sign_up.html:69
 msgid "Login with Steam"
-msgstr "Prijavite se putem Steam-a"
+msgstr "Conectați-vă cu Steam"
 
 #: .\adventora\templates\auth\sign_in.html:77
 #: .\adventora\templates\auth\sign_up.html:78
 msgid "Login with Spotify."
-msgstr "Prijavite se putem Spotifyja."
+msgstr "Conectați-vă cu Spotify."
 
 #: .\adventora\templates\auth\sign_in.html:83
 #: .\adventora\templates\auth\sign_up.html:84
 msgid "Login with VK"
-msgstr "Prijavite se s VK"
+msgstr "Conectați-vă cu VK"
 
 #: .\adventora\templates\base.html:148
 msgid "Panel"
-msgstr "Ploča"
+msgstr "Panou"
 
 #: .\adventora\templates\base.html:152
 msgid "Profile"
@@ -112,91 +113,91 @@ msgstr "Profil"
 
 #: .\adventora\templates\base.html:155
 msgid "Logout"
-msgstr "Odjavite se"
+msgstr "Deconectare"
 
 #: .\adventora\templates\base.html:160 .\authentication\forms.py:52
 msgid "Sign up"
-msgstr "Prijavite se"
+msgstr "Inscrie-te"
 
 #: .\adventora\templates\base.html:163 .\authentication\forms.py:24
 msgid "Login"
-msgstr "Prijaviti se"
+msgstr "Log in"
 
 #: .\adventora\templates\base.html:180
 msgid "Error"
-msgstr "Greška"
+msgstr "Eroare"
 
 #: .\adventora\templates\base.html:192
 msgid "Success"
-msgstr "Uspjeh"
+msgstr "Succes"
 
 #: .\adventora\templates\base.html:203
 msgid "Warning"
-msgstr "Upozorenje"
+msgstr "Avertizare"
 
 #: .\adventora\templates\base.html:227
 msgid "Adventora supports small, medium and large businesses"
-msgstr "Adventora podržava mala, srednja i velika poduzeća"
+msgstr "Adventora sprijină întreprinderile mici, mijlocii și mari"
 
 #: .\adventora\templates\base.html:252
 msgid "All Rights Reserved"
-msgstr "Sva prava pridržana"
+msgstr "Toate drepturile rezervate"
 
 #: .\adventora\templates\base.html:254
 msgid "Homepage"
-msgstr "Početna stranica"
+msgstr "Pagina principala"
 
 #: .\adventora\templates\base.html:255
 msgid "About us"
-msgstr "O nama"
+msgstr "Despre noi"
 
 #: .\adventora\templates\base.html:256
 msgid "Privacy"
-msgstr "Privatnost"
+msgstr "Confidențialitate"
 
 #: .\adventora\templates\base.html:257
 msgid "Terms of use"
-msgstr "Uvjeti korištenja"
+msgstr "Termeni de utilizare"
 
 #: .\adventora\templates\base.html:258
 msgid "Contacts"
-msgstr "Kontakti"
+msgstr "Contacte"
 
 #: .\adventora\templates\base.html:259
 msgid "Partnerships"
-msgstr "Partnerstva"
+msgstr "Parteneriate"
 
 #: .\adventora\templates\partnerships.html:9
 msgid "For partnerships contact us at"
-msgstr "Za partnerstva kontaktirajte nas na"
+msgstr "Pentru parteneriate contactati-ne la"
 
 #: .\authentication\forms.py:15
 msgid "Username or email"
-msgstr "Korisničko ime ili email"
+msgstr "Nume de utilizator sau email"
 
 #: .\authentication\forms.py:16 .\authentication\forms.py:35
 #: .\authentication\forms.py:140 .\authentication\forms.py:173
 #: .\authentication\forms.py:200
 msgid "Password"
-msgstr "Lozinka"
+msgstr "Parola"
 
 #: .\authentication\forms.py:29 .\authentication\forms.py:87
 #: .\authentication\forms.py:105
 msgid "Username"
-msgstr "Korisničko ime"
+msgstr "Nume de utilizator"
 
 #: .\authentication\forms.py:30 .\authentication\forms.py:88
 #: .\authentication\forms.py:106
 msgid "The username must contain at least 8 characters."
-msgstr "Korisničko ime mora sadržavati najmanje 8 znakova."
+msgstr "Numele de utilizator trebuie să conțină cel puțin 8 caractere."
 
 #: .\authentication\forms.py:32
 msgid "First name"
-msgstr "Ime"
+msgstr "Nume"
 
 #: .\authentication\forms.py:33
 msgid "Last name"
-msgstr "Prezime"
+msgstr "Nume"
 
 #: .\authentication\forms.py:34 .\authentication\forms.py:78
 #: .\authentication\forms.py:104 .\hotel\forms.py:27
@@ -205,7 +206,7 @@ msgstr "E-mail"
 
 #: .\authentication\forms.py:34
 msgid "Email address must be valid"
-msgstr "Adresa e-pošte mora biti važeća"
+msgstr "Adresa de e-mail trebuie să fie validă"
 
 #: .\authentication\forms.py:36
 msgid ""
@@ -214,64 +215,64 @@ msgid ""
 "<br> The password should not contain only special characters. <br> The "
 "password should not contain the username. <br> The password should not be a "
 "commonly used password."
-msgstr "Lozinka mora imati najmanje 8 znakova. "
+msgstr "Parola trebuie să aibă cel puțin 8 caractere. "
 
 #: .\authentication\forms.py:42
 msgid "Confirm password"
-msgstr "Potvrdi lozinku"
+msgstr "Confirmă parola"
 
 #: .\authentication\forms.py:43
 msgid "Enter the same password as above, for verification."
-msgstr "Unesite istu zaporku kao gore za provjeru."
+msgstr "Introduceți aceeași parolă ca mai sus, pentru verificare."
 
 #: .\authentication\forms.py:57 .\authentication\forms.py:98
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
 msgstr ""
-"Vacationer - Istražite, planirajte i rezervirajte svoje idealne aktivnosti "
-"za odmor."
+"Vacationer - Explorează, planifică și rezervă activitățile tale ideale de "
+"vacanță."
 
 #: .\authentication\forms.py:58 .\authentication\forms.py:99
 msgid ""
 "Hotel Manager - Oversee operations and provide excellent service in your own "
 "hotel."
 msgstr ""
-"Upravitelj hotela - nadzire operacije i pruža izvrsnu uslugu u vlastitom "
-"hotelu."
+"Manager de hotel - Supraveghează operațiunile și oferă servicii excelente în "
+"propriul tău hotel."
 
 #: .\authentication\forms.py:59 .\authentication\forms.py:100
 msgid ""
 "Employee - Contribute your expertise to a thriving workplace, such as a "
 "hotel or guest house."
 msgstr ""
-"Zaposlenik - doprinesite svojom stručnošću uspješnom radnom mjestu, poput "
-"hotela ili pansiona."
+"Angajat - Contribuiți-vă cu experiența la un loc de muncă înfloritor, cum ar "
+"fi un hotel sau o pensiune."
 
 #: .\authentication\forms.py:65
 msgid "Submit"
-msgstr "podnijeti"
+msgstr "Trimite"
 
 #: .\authentication\forms.py:69 .\authentication\forms.py:102
 msgid "First Name"
-msgstr "Ime"
+msgstr "Nume"
 
 #: .\authentication\forms.py:70 .\authentication\forms.py:103
 msgid "Last Name"
-msgstr "Prezime"
+msgstr "Nume"
 
 #: .\authentication\forms.py:73 .\authentication\forms.py:81
 #: .\authentication\forms.py:92 .\authentication\forms.py:113
 #: .\authentication\forms.py:124 .\authentication\forms.py:134
 #: .\authentication\forms.py:158 .\authentication\forms.py:167
 msgid "Save"
-msgstr "Uštedjeti"
+msgstr "Salvați"
 
 #: .\authentication\forms.py:78 .\authentication\forms.py:104
 msgid "The email must be valid."
-msgstr "E-mail mora biti valjan."
+msgstr "E-mailul trebuie să fie valid."
 
 #: .\authentication\forms.py:108 .\authentication\forms.py:155
 msgid "Citizenship"
-msgstr "Državljanstvo"
+msgstr "Cetățenie"
 
 #: .\authentication\forms.py:109 .\authentication\forms.py:164
 #: .\hotel\forms.py:26
@@ -280,83 +281,83 @@ msgstr "Telefon"
 
 #: .\authentication\forms.py:110
 msgid "Choose a Role"
-msgstr "Odaberite ulogu"
+msgstr "Alegeți un rol"
 
 #: .\authentication\forms.py:119
 msgid "Old Password"
-msgstr "stara lozinka"
+msgstr "Parola veche"
 
 #: .\authentication\forms.py:120 .\authentication\forms.py:130
 msgid "New Password"
-msgstr "Nova lozinka"
+msgstr "Parolă Nouă"
 
 #: .\authentication\forms.py:121 .\authentication\forms.py:131
 msgid "Confirm New Password"
-msgstr "Potvrdi novu lozinku"
+msgstr "Confirmă noua parolă"
 
 #: .\authentication\forms.py:176 .\authentication\forms.py:185
 #: .\authentication\forms.py:194
 msgid "Enable"
-msgstr "Omogućiti"
+msgstr "Permite"
 
 #: .\authentication\forms.py:182 .\authentication\forms.py:191
 msgid "Code"
-msgstr "Kodirati"
+msgstr "Cod"
 
 #: .\authentication\forms.py:203
 msgid "Disable"
-msgstr "Onemogući"
+msgstr "Dezactivați"
 
 #: .\authentication\models.py:11
 msgid "User"
-msgstr "Korisnik"
+msgstr "Utilizator"
 
 #: .\authentication\models.py:11
 msgid "Manager"
-msgstr "Menadžer"
+msgstr "Administrator"
 
 #: .\authentication\models.py:11
 msgid "Employee"
-msgstr "Zaposlenik"
+msgstr "Angajat"
 
 #: .\authentication\models.py:11
 msgid "Admin"
-msgstr "Administrator"
+msgstr "Admin"
 
 #: .\authentication\views.py:35 .\authentication\views.py:202
 #: .\authentication\views.py:262
 msgid "A user with that email already exists."
-msgstr "Korisnik s tom e-poštom već postoji."
+msgstr "Utilizatorul cu acest email deja exista."
 
 #: .\authentication\views.py:39
 msgid "Password must be at least 8 characters long."
-msgstr "Lozinka mora imati najmanje 8 znakova."
+msgstr "Parola trebuie să aibă cel puțin 8 caractere."
 
 #: .\authentication\views.py:43 .\authentication\views.py:327
 #: .\authentication\views.py:346
 msgid "Passwords do not match."
-msgstr "Lozinke se ne podudaraju."
+msgstr "Parolele nu se potrivesc."
 
 #: .\authentication\views.py:47
 msgid "Username must be at least 4 characters long."
-msgstr "Korisničko ime mora imati najmanje 4 znaka."
+msgstr "Numele de utilizator trebuie să aibă cel puțin 4 caractere."
 
 #: .\authentication\views.py:52
 msgid "Username should only contain letters and numbers."
-msgstr "Korisničko ime treba sadržavati samo slova i brojke."
+msgstr "Numele de utilizator trebuie să conțină numai litere și cifre."
 
 #: .\authentication\views.py:57
 msgid "Invalid email."
-msgstr "Nevažeći email."
+msgstr "E-mail invalid."
 
 #: .\authentication\views.py:61 .\authentication\views.py:229
 #: .\authentication\views.py:268
 msgid "A user with that username already exists."
-msgstr "Korisnik s tim korisničkim imenom već postoji."
+msgstr "Un utilizator cu acest nume de utilizator există deja."
 
 #: .\authentication\views.py:69
 msgid "Successfully registration."
-msgstr "Uspješna registracija."
+msgstr "Înregistrare cu succes."
 
 #: .\authentication\views.py:72 .\authentication\views.py:129
 #: .\authentication\views.py:160 .\authentication\views.py:182
@@ -367,128 +368,128 @@ msgstr "Uspješna registracija."
 #: .\authentication\views.py:529 .\authentication\views.py:560
 #: .\authentication\views.py:590 .\authentication\views.py:618
 msgid "Invalid data."
-msgstr "Nevažeći podaci."
+msgstr "Date invalide."
 
 #: .\authentication\views.py:98
 msgid "A user with that email does not exist."
-msgstr "Korisnik s tom e-poštom ne postoji."
+msgstr "Un utilizator cu acel e-mail nu există."
 
 #: .\authentication\views.py:108 .\authentication\views.py:122
 msgid "Successfully logged in."
-msgstr "Uspješno prijavljen."
+msgstr "Conectat cu succes."
 
 #: .\authentication\views.py:111 .\authentication\views.py:125
 msgid "Invalid password."
-msgstr "Netočna zaporka."
+msgstr "Parolă Invalidă."
 
 #: .\authentication\views.py:116
 msgid "A user with that username does not exist."
-msgstr "Korisnik s tim korisničkim imenom ne postoji."
+msgstr "Un utilizator cu acel nume de utilizator nu există."
 
 #: .\authentication\views.py:139
 msgid "Successfully logged out."
-msgstr "Uspješno ste odjavljeni."
+msgstr "S-a deconectat cu succes."
 
 #: .\authentication\views.py:152 .\authentication\views.py:277
 msgid "Invalid role."
-msgstr "Nevažeća uloga."
+msgstr "Rol nevalid."
 
 #: .\authentication\views.py:157
 msgid "Successfully chosen role."
-msgstr "Uspješno odabrana uloga."
+msgstr "Rolul ales cu succes."
 
 #: .\authentication\views.py:179
 msgid "Successfully confirmed name."
-msgstr "Ime je uspješno potvrđeno."
+msgstr "Numele a fost confirmat."
 
 #: .\authentication\views.py:208
 msgid "Successfully confirmed email."
-msgstr "Uspješno potvrđena e-pošta."
+msgstr "E-mail confirmat cu succes."
 
 #: .\authentication\views.py:233 .\authentication\views.py:271
 msgid "Invalid username. At least 5 characters."
-msgstr "Nevažeće korisničko ime. "
+msgstr "Nume de utilizator invalid. "
 
 #: .\authentication\views.py:239
 msgid "Successfully confirmed username."
-msgstr "Uspješno potvrđeno korisničko ime."
+msgstr "Numele de utilizator a fost confirmat."
 
 #: .\authentication\views.py:291
 msgid "Successfully edited profile."
-msgstr "Uspješno uređen profil."
+msgstr "Profil editat cu succes."
 
 #: .\authentication\views.py:323
 msgid "Incorrect old password."
-msgstr "Netočna stara lozinka."
+msgstr "Parolă veche incorectă."
 
 #: .\authentication\views.py:333 .\authentication\views.py:352
 msgid "Successfully changed password."
-msgstr "Lozinka je uspješno promijenjena."
+msgstr "Parola a fost schimbată cu succes."
 
 #: .\authentication\views.py:372 .\authentication\views.py:547
 #: .\authentication\views.py:608
 msgid "Incorrect password."
-msgstr "Netočna lozinka."
+msgstr "Parola incorecta."
 
 #: .\authentication\views.py:376
 msgid "Successfully deleted account."
-msgstr "Uspješno izbrisan račun."
+msgstr "Contul a fost șters cu succes."
 
 #: .\authentication\views.py:396
 msgid "Successfully confirmed citizenship."
-msgstr "Uspješno potvrđeno državljanstvo."
+msgstr "Cetățenia confirmată cu succes."
 
 #: .\authentication\views.py:418
 msgid "Successfully confirmed phone number."
-msgstr "Broj telefona uspješno potvrđen."
+msgstr "Număr de telefon confirmat."
 
 #: .\authentication\views.py:507 .\authentication\views.py:599
 msgid "Two factor authentication is not enabled."
-msgstr "Dvostruka autentifikacija nije omogućena."
+msgstr "Autentificarea cu doi factori nu este activată."
 
 #: .\authentication\views.py:511
 msgid "Two factor authentication is already passed."
-msgstr "Dvostruka autentifikacija je već prošla."
+msgstr "Autentificarea cu doi factori este deja trecută."
 
 #: .\authentication\views.py:523
 msgid "Successfully passed two factor authentication"
-msgstr "Uspješno prošla provjeru autentičnosti u dva faktora"
+msgstr "S-a trecut cu succes autentificarea cu doi factori"
 
 #: .\authentication\views.py:526 .\authentication\views.py:587
 msgid "Invalid code."
-msgstr "Neispravan kod."
+msgstr "Cod invalid."
 
 #: .\authentication\views.py:539 .\authentication\views.py:569
 msgid "Two factor authentication is already enabled."
-msgstr "Dvostruka autentifikacija već je omogućena."
+msgstr "Autentificarea cu doi factori este deja activată."
 
 #: .\authentication\views.py:557 .\authentication\views.py:584
 msgid "Successfully enabled two factor authentication."
-msgstr "Uspješno omogućena provjera autentičnosti u dva faktora."
+msgstr "Autentificarea cu doi factori a fost activată."
 
 #: .\authentication\views.py:615
 msgid "Successfully disabled two factor authentication."
-msgstr "Uspješno je onemogućena provjera autentičnosti u dva faktora."
+msgstr "Autentificarea cu doi factori a fost dezactivată."
 
 #: .\hotel\forms.py:23
 msgid "Hotel Name"
-msgstr "Naziv hotela"
+msgstr "Numele Hotelului"
 
 #: .\hotel\forms.py:24
 msgid "Address"
-msgstr "Adresa"
+msgstr "Abordare"
 
 #: .\hotel\forms.py:25
 msgid "City"
-msgstr "Grad"
+msgstr "Oraș"
 
 #: .\hotel\forms.py:28
 msgid "Website"
-msgstr "Web stranica"
+msgstr "Site-ul web"
 
 #: .\hotel\forms.py:29
 msgid "Description"
-msgstr "Opis"
+msgstr "Descriere"
 
 #: .\hotel\forms.py:30
 msgid "EIK"
@@ -496,93 +497,93 @@ msgstr "EIK"
 
 #: .\hotel\forms.py:31
 msgid "Authorized Person"
-msgstr "Ovlaštena osoba"
+msgstr "Persoană autorizată"
 
 #: .\hotel\forms.py:32
 msgid "Stars"
-msgstr "Zvijezde"
+msgstr "Stele"
 
 #: .\hotel\forms.py:37
 msgid "Register Hotel"
-msgstr "Registrirajte hotel"
+msgstr "Înregistrați hotel"
 
 #: .\hotel\forms.py:44
 msgid "Confirm Address"
-msgstr "Potvrdite adresu"
+msgstr "Confirmați adresa"
 
 #: .\hotel\models.py:19
 msgid "No description provided."
-msgstr "Nema opisa."
+msgstr "Nu este furnizată nicio descriere."
 
 #: .\hotel\models.py:49
 msgid "Room"
-msgstr "Soba"
+msgstr "Cameră"
 
 #: .\hotel\models.py:50
 msgid "Rooms"
-msgstr "Sobe"
+msgstr "Camerele"
 
 #: .\hotel\views.py:23 .\hotel\views.py:156
 msgid "You do not have permission to view this page"
-msgstr "Nemate dopuštenje za pregled ove stranice"
+msgstr "Nu aveți permisiunea de a vizualiza această pagină"
 
 #: .\hotel\views.py:32
 msgid "Your hotel is not approved yet"
-msgstr "Vaš hotel još nije odobren"
+msgstr "Hotelul dvs. nu este aprobat încă"
 
 #: .\hotel\views.py:86
 msgid "Successfully registered hotel"
-msgstr "Uspješno registriran hotel"
+msgstr "Hotel înregistrat cu succes"
 
 #: .\hotel\views.py:90
 msgid "Error while registering hotel"
-msgstr "Greška prilikom registracije hotela"
+msgstr "Eroare la înregistrarea hotelului"
 
 #: .\hotel\views.py:97
 msgid "You have already registered a hotel"
-msgstr "Već ste registrirali hotel"
+msgstr "Ați înregistrat deja un hotel"
 
 #: .\hotel\views.py:115
 msgid "You have not registered a hotel yet"
-msgstr "Još niste registrirali hotel"
+msgstr "Nu ați înregistrat încă un hotel"
 
 #: .\hotel\views.py:133
 msgid "Successfully confirmed address"
-msgstr "Adresa uspješno potvrđena"
+msgstr "Adresă confirmată cu succes"
 
 #: .\hotel\views.py:136
 msgid "Error while confirming address"
-msgstr "Pogreška prilikom potvrđivanja adrese"
+msgstr "Eroare la confirmarea adresei"
 
 #: .\hotel\views.py:152
 msgid "No such hotel"
-msgstr "Nema takvog hotela"
+msgstr "Nu există un astfel de hotel"
 
 #, fuzzy
 #~| msgid "Privacy"
 #~ msgid "Privacy Policy"
-#~ msgstr "Privatnost"
+#~ msgstr "Confidențialitate"
 
 #, fuzzy
 #~| msgid "First name"
 #~ msgid "First and last name"
-#~ msgstr "Ime"
+#~ msgstr "Nume"
 
 #, fuzzy
 #~| msgid "Email address must be valid"
 #~ msgid "Email address"
-#~ msgstr "Adresa e-pošte mora biti važeća"
+#~ msgstr "Adresa de e-mail trebuie să fie validă"
 
 #, fuzzy
 #~| msgid "Hotel Name"
 #~ msgid "Hotel name"
-#~ msgstr "Naziv hotela"
+#~ msgstr "Numele Hotelului"
 
 #, fuzzy
 #~| msgid "Manager"
 #~ msgid "Manager's name"
-#~ msgstr "Menadžer"
+#~ msgstr "Administrator"
 
 #, fuzzy
 #~ msgid "Delete account"
-#~ msgstr "Izbriši račun"
+#~ msgstr "Șterge cont"
