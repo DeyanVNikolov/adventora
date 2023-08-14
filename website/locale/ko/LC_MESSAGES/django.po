@@ -1,0 +1,538 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-14 10:31+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\adventora\templates\auth\edit_profile.html:10
+msgid "Not confirmed"
+msgstr "확인되지 않음"
+
+#: .\adventora\templates\auth\edit_profile.html:12
+msgid "Confirmed"
+msgstr "확인됨"
+
+#: .\adventora\templates\auth\edit_profile.html:14
+msgid "Turned On"
+msgstr "켜짐"
+
+#: .\adventora\templates\auth\edit_profile.html:15
+msgid "Turn off"
+msgstr "끄다"
+
+#: .\adventora\templates\auth\edit_profile.html:16
+msgid "Turned Off"
+msgstr "껐다"
+
+#: .\adventora\templates\auth\edit_profile.html:17
+msgid "Turn on"
+msgstr "켜다"
+
+#: .\adventora\templates\auth\sign_in.html:27
+#: .\adventora\templates\auth\sign_up.html:28
+msgid "Login with Google"
+msgstr "Google로 로그인"
+
+#: .\adventora\templates\auth\sign_in.html:33
+#: .\adventora\templates\auth\sign_up.html:34
+msgid "Login with Trello"
+msgstr "트렐로로 로그인"
+
+#: .\adventora\templates\auth\sign_in.html:41
+#: .\adventora\templates\auth\sign_up.html:42
+msgid "Login with GitHub"
+msgstr "GitHub로 로그인"
+
+#: .\adventora\templates\auth\sign_in.html:47
+#: .\adventora\templates\auth\sign_up.html:48
+msgid "Login with Patreon"
+msgstr "Patreon으로 로그인"
+
+#: .\adventora\templates\auth\sign_in.html:53
+#: .\adventora\templates\auth\sign_up.html:54
+msgid "Login with Amazon"
+msgstr "아마존으로 로그인"
+
+#: .\adventora\templates\auth\sign_in.html:62
+#: .\adventora\templates\auth\sign_up.html:63
+msgid "Login with Reddit"
+msgstr "레딧으로 로그인"
+
+#: .\adventora\templates\auth\sign_in.html:68
+#: .\adventora\templates\auth\sign_up.html:69
+msgid "Login with Steam"
+msgstr "Steam으로 로그인"
+
+#: .\adventora\templates\auth\sign_in.html:77
+#: .\adventora\templates\auth\sign_up.html:78
+msgid "Login with Spotify."
+msgstr "Spotify로 로그인하십시오."
+
+#: .\adventora\templates\auth\sign_in.html:83
+#: .\adventora\templates\auth\sign_up.html:84
+msgid "Login with VK"
+msgstr "VK로 로그인"
+
+#: .\adventora\templates\base.html:147 .\adventora\templates\base.html:151
+msgid "Panel"
+msgstr "패널"
+
+#: .\adventora\templates\base.html:154
+msgid "Logout"
+msgstr "로그 아웃"
+
+#: .\adventora\templates\base.html:159 .\authentication\forms.py:52
+msgid "Sign up"
+msgstr "가입하기"
+
+#: .\adventora\templates\base.html:162 .\authentication\forms.py:24
+msgid "Login"
+msgstr "로그인"
+
+#: .\adventora\templates\base.html:179
+msgid "Error"
+msgstr "오류"
+
+#: .\adventora\templates\base.html:191
+msgid "Success"
+msgstr "성공"
+
+#: .\adventora\templates\base.html:202
+msgid "Warning"
+msgstr "경고"
+
+#: .\adventora\templates\base.html:226
+msgid "Adventora supports small, medium and large businesses"
+msgstr "Adventora는 중소기업 및 대기업을 지원합니다."
+
+#: .\adventora\templates\base.html:251
+msgid "All Rights Reserved"
+msgstr "판권 소유"
+
+#: .\adventora\templates\base.html:253
+msgid "Homepage"
+msgstr "홈페이지"
+
+#: .\adventora\templates\base.html:254
+msgid "About us"
+msgstr "회사 소개"
+
+#: .\adventora\templates\base.html:255
+msgid "Privacy"
+msgstr "은둔"
+
+#: .\adventora\templates\base.html:256
+msgid "Terms of use"
+msgstr "이용약관"
+
+#: .\adventora\templates\base.html:257
+msgid "Contacts"
+msgstr "콘택트 렌즈"
+
+#: .\adventora\templates\base.html:258
+msgid "Partnerships"
+msgstr "파트너십"
+
+#: .\adventora\templates\partnerships.html:9
+msgid "For partnerships contact us at"
+msgstr "파트너십에 대해서는 다음으로 문의하십시오."
+
+#: .\authentication\forms.py:15
+msgid "Username or email"
+msgstr "아이디 또는 이메일"
+
+#: .\authentication\forms.py:16 .\authentication\forms.py:35
+#: .\authentication\forms.py:140 .\authentication\forms.py:173
+#: .\authentication\forms.py:200
+msgid "Password"
+msgstr "비밀번호"
+
+#: .\authentication\forms.py:29 .\authentication\forms.py:87
+#: .\authentication\forms.py:105
+msgid "Username"
+msgstr "사용자 이름"
+
+#: .\authentication\forms.py:30 .\authentication\forms.py:88
+#: .\authentication\forms.py:106
+msgid "The username must contain at least 8 characters."
+msgstr "사용자 이름은 8자 이상이어야 합니다."
+
+#: .\authentication\forms.py:32
+msgid "First name"
+msgstr "이름"
+
+#: .\authentication\forms.py:33
+msgid "Last name"
+msgstr "성"
+
+#: .\authentication\forms.py:34 .\authentication\forms.py:78
+#: .\authentication\forms.py:104 .\hotel\forms.py:27
+msgid "Email"
+msgstr "이메일"
+
+#: .\authentication\forms.py:34
+msgid "Email address must be valid"
+msgstr "이메일 주소는 유효해야 합니다."
+
+#: .\authentication\forms.py:36
+msgid ""
+"The password must be at least 8 characters long. <br> The password should "
+"not contain only digits. <br> The password should not contain only letters. "
+"<br> The password should not contain only special characters. <br> The "
+"password should not contain the username. <br> The password should not be a "
+"commonly used password."
+msgstr "비밀번호는 8자 이상이어야 합니다. "
+
+#: .\authentication\forms.py:42
+msgid "Confirm password"
+msgstr "비밀번호 확인"
+
+#: .\authentication\forms.py:43
+msgid "Enter the same password as above, for verification."
+msgstr "확인을 위해 위와 동일한 비밀번호를 입력합니다."
+
+#: .\authentication\forms.py:57 .\authentication\forms.py:98
+msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
+msgstr "Vacationer - 이상적인 휴가 활동을 탐색, 계획 및 예약하세요."
+
+#: .\authentication\forms.py:58 .\authentication\forms.py:99
+msgid ""
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
+msgstr "호텔 매니저 - 운영을 감독하고 자신의 호텔에서 훌륭한 서비스를 제공합니다."
+
+#: .\authentication\forms.py:59 .\authentication\forms.py:100
+msgid ""
+"Employee - Contribute your expertise to a thriving workplace, such as a "
+"hotel or guest house."
+msgstr "직원 - 호텔이나 게스트 하우스와 같이 번성하는 직장에 전문 지식을 제공하십시오."
+
+#: .\authentication\forms.py:65
+msgid "Submit"
+msgstr "제출하다"
+
+#: .\authentication\forms.py:69 .\authentication\forms.py:102
+msgid "First Name"
+msgstr "이름"
+
+#: .\authentication\forms.py:70 .\authentication\forms.py:103
+msgid "Last Name"
+msgstr "성"
+
+#: .\authentication\forms.py:73 .\authentication\forms.py:81
+#: .\authentication\forms.py:92 .\authentication\forms.py:113
+#: .\authentication\forms.py:124 .\authentication\forms.py:134
+#: .\authentication\forms.py:158 .\authentication\forms.py:167
+msgid "Save"
+msgstr "구하다"
+
+#: .\authentication\forms.py:78 .\authentication\forms.py:104
+msgid "The email must be valid."
+msgstr "이메일은 유효해야 합니다."
+
+#: .\authentication\forms.py:108 .\authentication\forms.py:155
+msgid "Citizenship"
+msgstr "시민권"
+
+#: .\authentication\forms.py:109 .\authentication\forms.py:164
+#: .\hotel\forms.py:26
+msgid "Phone"
+msgstr "핸드폰"
+
+#: .\authentication\forms.py:110
+msgid "Choose a Role"
+msgstr "역할 선택"
+
+#: .\authentication\forms.py:119
+msgid "Old Password"
+msgstr "기존 비밀번호"
+
+#: .\authentication\forms.py:120 .\authentication\forms.py:130
+msgid "New Password"
+msgstr "새 비밀번호"
+
+#: .\authentication\forms.py:121 .\authentication\forms.py:131
+msgid "Confirm New Password"
+msgstr "새 암호를 확인합니다"
+
+#: .\authentication\forms.py:143
+msgid "Delete Account"
+msgstr "계정 삭제"
+
+#: .\authentication\forms.py:176 .\authentication\forms.py:185
+#: .\authentication\forms.py:194
+msgid "Enable"
+msgstr "할 수 있게 하다"
+
+#: .\authentication\forms.py:182 .\authentication\forms.py:191
+msgid "Code"
+msgstr "암호"
+
+#: .\authentication\forms.py:203
+msgid "Disable"
+msgstr "장애를 입히다"
+
+#: .\authentication\models.py:11
+msgid "User"
+msgstr "사용자"
+
+#: .\authentication\models.py:11
+msgid "Manager"
+msgstr "관리자"
+
+#: .\authentication\models.py:11
+msgid "Employee"
+msgstr "직원"
+
+#: .\authentication\models.py:11
+msgid "Admin"
+msgstr "관리자"
+
+#: .\authentication\views.py:35 .\authentication\views.py:202
+#: .\authentication\views.py:262
+msgid "A user with that email already exists."
+msgstr "해당 이메일을 가진 사용자가 이미 존재합니다."
+
+#: .\authentication\views.py:39
+msgid "Password must be at least 8 characters long."
+msgstr "비밀번호는 8자 이상이어야 합니다."
+
+#: .\authentication\views.py:43 .\authentication\views.py:327
+#: .\authentication\views.py:346
+msgid "Passwords do not match."
+msgstr "비밀번호가 일치하지 않습니다."
+
+#: .\authentication\views.py:47
+msgid "Username must be at least 4 characters long."
+msgstr "사용자 이름은 4자 이상이어야 합니다."
+
+#: .\authentication\views.py:52
+msgid "Username should only contain letters and numbers."
+msgstr "사용자 이름은 문자와 숫자만 포함해야 합니다."
+
+#: .\authentication\views.py:57
+msgid "Invalid email."
+msgstr "잘못된 이메일입니다."
+
+#: .\authentication\views.py:61 .\authentication\views.py:229
+#: .\authentication\views.py:268
+msgid "A user with that username already exists."
+msgstr "해당 사용자 이름을 가진 사용자가 이미 존재합니다."
+
+#: .\authentication\views.py:69
+msgid "Successfully registration."
+msgstr "성공적으로 등록되었습니다."
+
+#: .\authentication\views.py:72 .\authentication\views.py:129
+#: .\authentication\views.py:160 .\authentication\views.py:182
+#: .\authentication\views.py:211 .\authentication\views.py:242
+#: .\authentication\views.py:294 .\authentication\views.py:336
+#: .\authentication\views.py:355 .\authentication\views.py:379
+#: .\authentication\views.py:399 .\authentication\views.py:421
+#: .\authentication\views.py:529 .\authentication\views.py:560
+#: .\authentication\views.py:590 .\authentication\views.py:618
+msgid "Invalid data."
+msgstr "유효하지 않은 데이터."
+
+#: .\authentication\views.py:98
+msgid "A user with that email does not exist."
+msgstr "해당 이메일을 사용하는 사용자가 존재하지 않습니다."
+
+#: .\authentication\views.py:108 .\authentication\views.py:122
+msgid "Successfully logged in."
+msgstr "성공적으로 로그인했습니다."
+
+#: .\authentication\views.py:111 .\authentication\views.py:125
+msgid "Invalid password."
+msgstr "유효하지 않은 비밀번호."
+
+#: .\authentication\views.py:116
+msgid "A user with that username does not exist."
+msgstr "해당 사용자 이름을 가진 사용자가 존재하지 않습니다."
+
+#: .\authentication\views.py:139
+msgid "Successfully logged out."
+msgstr "성공적으로 로그아웃되었습니다."
+
+#: .\authentication\views.py:152 .\authentication\views.py:277
+msgid "Invalid role."
+msgstr "잘못된 역할입니다."
+
+#: .\authentication\views.py:157
+msgid "Successfully chosen role."
+msgstr "성공적으로 역할을 선택했습니다."
+
+#: .\authentication\views.py:179
+msgid "Successfully confirmed name."
+msgstr "이름을 성공적으로 확인했습니다."
+
+#: .\authentication\views.py:208
+msgid "Successfully confirmed email."
+msgstr "이메일을 성공적으로 확인했습니다."
+
+#: .\authentication\views.py:233 .\authentication\views.py:271
+msgid "Invalid username. At least 5 characters."
+msgstr "잘못된 사용자 이름. "
+
+#: .\authentication\views.py:239
+msgid "Successfully confirmed username."
+msgstr "사용자 이름을 성공적으로 확인했습니다."
+
+#: .\authentication\views.py:291
+msgid "Successfully edited profile."
+msgstr "프로필을 수정했습니다."
+
+#: .\authentication\views.py:323
+msgid "Incorrect old password."
+msgstr "이전 암호가 잘못되었습니다."
+
+#: .\authentication\views.py:333 .\authentication\views.py:352
+msgid "Successfully changed password."
+msgstr "비밀번호를 성공적으로 변경했습니다."
+
+#: .\authentication\views.py:372 .\authentication\views.py:547
+#: .\authentication\views.py:608
+msgid "Incorrect password."
+msgstr "잘못된 비밀번호."
+
+#: .\authentication\views.py:376
+msgid "Successfully deleted account."
+msgstr "계정을 성공적으로 삭제했습니다."
+
+#: .\authentication\views.py:396
+msgid "Successfully confirmed citizenship."
+msgstr "성공적으로 시민권을 확인했습니다."
+
+#: .\authentication\views.py:418
+msgid "Successfully confirmed phone number."
+msgstr "전화번호를 성공적으로 확인했습니다."
+
+#: .\authentication\views.py:507 .\authentication\views.py:599
+msgid "Two factor authentication is not enabled."
+msgstr "이중 인증이 활성화되지 않았습니다."
+
+#: .\authentication\views.py:511
+msgid "Two factor authentication is already passed."
+msgstr "이중 인증이 이미 통과되었습니다."
+
+#: .\authentication\views.py:523
+msgid "Successfully passed two factor authentication"
+msgstr "2단계 인증을 성공적으로 통과했습니다."
+
+#: .\authentication\views.py:526 .\authentication\views.py:587
+msgid "Invalid code."
+msgstr "유효하지 않은 코드."
+
+#: .\authentication\views.py:539 .\authentication\views.py:569
+msgid "Two factor authentication is already enabled."
+msgstr "이중 인증이 이미 활성화되어 있습니다."
+
+#: .\authentication\views.py:557 .\authentication\views.py:584
+msgid "Successfully enabled two factor authentication."
+msgstr "2단계 인증을 성공적으로 활성화했습니다."
+
+#: .\authentication\views.py:615
+msgid "Successfully disabled two factor authentication."
+msgstr "2단계 인증을 성공적으로 비활성화했습니다."
+
+#: .\hotel\forms.py:23
+msgid "Hotel Name"
+msgstr "호텔 이름"
+
+#: .\hotel\forms.py:24
+msgid "Address"
+msgstr "주소"
+
+#: .\hotel\forms.py:25
+msgid "City"
+msgstr "도시"
+
+#: .\hotel\forms.py:28
+msgid "Website"
+msgstr "웹사이트"
+
+#: .\hotel\forms.py:29
+msgid "Description"
+msgstr "설명"
+
+#: .\hotel\forms.py:30
+msgid "EIK"
+msgstr "에이크"
+
+#: .\hotel\forms.py:31
+msgid "Authorized Person"
+msgstr "권한이 있는 사람"
+
+#: .\hotel\forms.py:32
+msgid "Stars"
+msgstr "별"
+
+#: .\hotel\forms.py:37
+msgid "Register Hotel"
+msgstr "호텔 등록"
+
+#: .\hotel\forms.py:44
+msgid "Confirm Address"
+msgstr "주소 확인"
+
+#: .\hotel\models.py:19
+msgid "No description provided."
+msgstr "제공된 설명이 없습니다."
+
+#: .\hotel\models.py:49
+msgid "Room"
+msgstr "방"
+
+#: .\hotel\models.py:50
+msgid "Rooms"
+msgstr "객실"
+
+#: .\hotel\views.py:23 .\hotel\views.py:156
+msgid "You do not have permission to view this page"
+msgstr "이 페이지를 볼 수 있는 권한이 없습니다."
+
+#: .\hotel\views.py:32
+msgid "Your hotel is not approved yet"
+msgstr "호텔이 아직 승인되지 않았습니다."
+
+#: .\hotel\views.py:86
+msgid "Successfully registered hotel"
+msgstr "성공적으로 등록된 호텔"
+
+#: .\hotel\views.py:90
+msgid "Error while registering hotel"
+msgstr "호텔 등록 중 오류 발생"
+
+#: .\hotel\views.py:97
+msgid "You have already registered a hotel"
+msgstr "이미 호텔을 등록하셨습니다."
+
+#: .\hotel\views.py:115
+msgid "You have not registered a hotel yet"
+msgstr "아직 호텔을 등록하지 않았습니다."
+
+#: .\hotel\views.py:133
+msgid "Successfully confirmed address"
+msgstr "성공적으로 확인된 주소"
+
+#: .\hotel\views.py:136
+msgid "Error while confirming address"
+msgstr "주소 확인 중 오류"
+
+#: .\hotel\views.py:152
+msgid "No such hotel"
+msgstr "해당 호텔 없음"

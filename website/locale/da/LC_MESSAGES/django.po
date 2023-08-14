@@ -1,0 +1,542 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-14 10:29+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\adventora\templates\auth\edit_profile.html:10
+msgid "Not confirmed"
+msgstr "Ikke bekræftet"
+
+#: .\adventora\templates\auth\edit_profile.html:12
+msgid "Confirmed"
+msgstr "Bekræftet"
+
+#: .\adventora\templates\auth\edit_profile.html:14
+msgid "Turned On"
+msgstr "Tændt"
+
+#: .\adventora\templates\auth\edit_profile.html:15
+msgid "Turn off"
+msgstr "Sluk"
+
+#: .\adventora\templates\auth\edit_profile.html:16
+msgid "Turned Off"
+msgstr "Slukket"
+
+#: .\adventora\templates\auth\edit_profile.html:17
+msgid "Turn on"
+msgstr "Tænde for"
+
+#: .\adventora\templates\auth\sign_in.html:27
+#: .\adventora\templates\auth\sign_up.html:28
+msgid "Login with Google"
+msgstr "Log ind med Google"
+
+#: .\adventora\templates\auth\sign_in.html:33
+#: .\adventora\templates\auth\sign_up.html:34
+msgid "Login with Trello"
+msgstr "Log ind med Trello"
+
+#: .\adventora\templates\auth\sign_in.html:41
+#: .\adventora\templates\auth\sign_up.html:42
+msgid "Login with GitHub"
+msgstr "Log ind med GitHub"
+
+#: .\adventora\templates\auth\sign_in.html:47
+#: .\adventora\templates\auth\sign_up.html:48
+msgid "Login with Patreon"
+msgstr "Log ind med Patreon"
+
+#: .\adventora\templates\auth\sign_in.html:53
+#: .\adventora\templates\auth\sign_up.html:54
+msgid "Login with Amazon"
+msgstr "Log ind med Amazon"
+
+#: .\adventora\templates\auth\sign_in.html:62
+#: .\adventora\templates\auth\sign_up.html:63
+msgid "Login with Reddit"
+msgstr "Log ind med Reddit"
+
+#: .\adventora\templates\auth\sign_in.html:68
+#: .\adventora\templates\auth\sign_up.html:69
+msgid "Login with Steam"
+msgstr "Log ind med Steam"
+
+#: .\adventora\templates\auth\sign_in.html:77
+#: .\adventora\templates\auth\sign_up.html:78
+msgid "Login with Spotify."
+msgstr "Log ind med Spotify."
+
+#: .\adventora\templates\auth\sign_in.html:83
+#: .\adventora\templates\auth\sign_up.html:84
+msgid "Login with VK"
+msgstr "Log ind med VK"
+
+#: .\adventora\templates\base.html:147 .\adventora\templates\base.html:151
+msgid "Panel"
+msgstr "Panel"
+
+#: .\adventora\templates\base.html:154
+msgid "Logout"
+msgstr "Log ud"
+
+#: .\adventora\templates\base.html:159 .\authentication\forms.py:52
+msgid "Sign up"
+msgstr "Tilmelde"
+
+#: .\adventora\templates\base.html:162 .\authentication\forms.py:24
+msgid "Login"
+msgstr "Log på"
+
+#: .\adventora\templates\base.html:179
+msgid "Error"
+msgstr "Fejl"
+
+#: .\adventora\templates\base.html:191
+msgid "Success"
+msgstr "Succes"
+
+#: .\adventora\templates\base.html:202
+msgid "Warning"
+msgstr "Advarsel"
+
+#: .\adventora\templates\base.html:226
+msgid "Adventora supports small, medium and large businesses"
+msgstr "Adventora understøtter små, mellemstore og store virksomheder"
+
+#: .\adventora\templates\base.html:251
+msgid "All Rights Reserved"
+msgstr "Alle rettigheder forbeholdes"
+
+#: .\adventora\templates\base.html:253
+msgid "Homepage"
+msgstr "Hjemmeside"
+
+#: .\adventora\templates\base.html:254
+msgid "About us"
+msgstr "Om os"
+
+#: .\adventora\templates\base.html:255
+msgid "Privacy"
+msgstr "Privatliv"
+
+#: .\adventora\templates\base.html:256
+msgid "Terms of use"
+msgstr "Vilkår for brug"
+
+#: .\adventora\templates\base.html:257
+msgid "Contacts"
+msgstr "Kontaktpersoner"
+
+#: .\adventora\templates\base.html:258
+msgid "Partnerships"
+msgstr "Partnerskaber"
+
+#: .\adventora\templates\partnerships.html:9
+msgid "For partnerships contact us at"
+msgstr "For partnerskaber kontakt os på"
+
+#: .\authentication\forms.py:15
+msgid "Username or email"
+msgstr "Brugernavn eller e-mail"
+
+#: .\authentication\forms.py:16 .\authentication\forms.py:35
+#: .\authentication\forms.py:140 .\authentication\forms.py:173
+#: .\authentication\forms.py:200
+msgid "Password"
+msgstr "Adgangskode"
+
+#: .\authentication\forms.py:29 .\authentication\forms.py:87
+#: .\authentication\forms.py:105
+msgid "Username"
+msgstr "Brugernavn"
+
+#: .\authentication\forms.py:30 .\authentication\forms.py:88
+#: .\authentication\forms.py:106
+msgid "The username must contain at least 8 characters."
+msgstr "Brugernavnet skal indeholde mindst 8 tegn."
+
+#: .\authentication\forms.py:32
+msgid "First name"
+msgstr "Fornavn"
+
+#: .\authentication\forms.py:33
+msgid "Last name"
+msgstr "Efternavn"
+
+#: .\authentication\forms.py:34 .\authentication\forms.py:78
+#: .\authentication\forms.py:104 .\hotel\forms.py:27
+msgid "Email"
+msgstr "E-mail"
+
+#: .\authentication\forms.py:34
+msgid "Email address must be valid"
+msgstr "E-mailadressen skal være gyldig"
+
+#: .\authentication\forms.py:36
+msgid ""
+"The password must be at least 8 characters long. <br> The password should "
+"not contain only digits. <br> The password should not contain only letters. "
+"<br> The password should not contain only special characters. <br> The "
+"password should not contain the username. <br> The password should not be a "
+"commonly used password."
+msgstr "Adgangskoden skal være på mindst 8 tegn. "
+
+#: .\authentication\forms.py:42
+msgid "Confirm password"
+msgstr "Bekræft kodeord"
+
+#: .\authentication\forms.py:43
+msgid "Enter the same password as above, for verification."
+msgstr "Indtast den samme adgangskode som ovenfor til verifikation."
+
+#: .\authentication\forms.py:57 .\authentication\forms.py:98
+msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
+msgstr "Vacationer - Udforsk, planlæg og book dine ideelle ferieaktiviteter."
+
+#: .\authentication\forms.py:58 .\authentication\forms.py:99
+msgid ""
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
+msgstr ""
+"Hotel Manager - Overvåg driften og yde fremragende service på dit eget "
+"hotel."
+
+#: .\authentication\forms.py:59 .\authentication\forms.py:100
+msgid ""
+"Employee - Contribute your expertise to a thriving workplace, such as a "
+"hotel or guest house."
+msgstr ""
+"Medarbejder - Bidrag med din ekspertise til en blomstrende arbejdsplads, "
+"såsom et hotel eller pensionat."
+
+#: .\authentication\forms.py:65
+msgid "Submit"
+msgstr "Indsend"
+
+#: .\authentication\forms.py:69 .\authentication\forms.py:102
+msgid "First Name"
+msgstr "Fornavn"
+
+#: .\authentication\forms.py:70 .\authentication\forms.py:103
+msgid "Last Name"
+msgstr "Efternavn"
+
+#: .\authentication\forms.py:73 .\authentication\forms.py:81
+#: .\authentication\forms.py:92 .\authentication\forms.py:113
+#: .\authentication\forms.py:124 .\authentication\forms.py:134
+#: .\authentication\forms.py:158 .\authentication\forms.py:167
+msgid "Save"
+msgstr "Gemme"
+
+#: .\authentication\forms.py:78 .\authentication\forms.py:104
+msgid "The email must be valid."
+msgstr "E-mailen skal være gyldig."
+
+#: .\authentication\forms.py:108 .\authentication\forms.py:155
+msgid "Citizenship"
+msgstr "Borgerskab"
+
+#: .\authentication\forms.py:109 .\authentication\forms.py:164
+#: .\hotel\forms.py:26
+msgid "Phone"
+msgstr "telefon"
+
+#: .\authentication\forms.py:110
+msgid "Choose a Role"
+msgstr "Vælg en rolle"
+
+#: .\authentication\forms.py:119
+msgid "Old Password"
+msgstr "Gammelt kodeord"
+
+#: .\authentication\forms.py:120 .\authentication\forms.py:130
+msgid "New Password"
+msgstr "nyt kodeord"
+
+#: .\authentication\forms.py:121 .\authentication\forms.py:131
+msgid "Confirm New Password"
+msgstr "Bekræft ny adgangskode"
+
+#: .\authentication\forms.py:143
+msgid "Delete Account"
+msgstr "Slet konto"
+
+#: .\authentication\forms.py:176 .\authentication\forms.py:185
+#: .\authentication\forms.py:194
+msgid "Enable"
+msgstr "Aktiver"
+
+#: .\authentication\forms.py:182 .\authentication\forms.py:191
+msgid "Code"
+msgstr "Kode"
+
+#: .\authentication\forms.py:203
+msgid "Disable"
+msgstr "Deaktiver"
+
+#: .\authentication\models.py:11
+msgid "User"
+msgstr "Bruger"
+
+#: .\authentication\models.py:11
+msgid "Manager"
+msgstr "Manager"
+
+#: .\authentication\models.py:11
+msgid "Employee"
+msgstr "Medarbejder"
+
+#: .\authentication\models.py:11
+msgid "Admin"
+msgstr "Admin"
+
+#: .\authentication\views.py:35 .\authentication\views.py:202
+#: .\authentication\views.py:262
+msgid "A user with that email already exists."
+msgstr "En bruger med den e-mail eksisterer allerede."
+
+#: .\authentication\views.py:39
+msgid "Password must be at least 8 characters long."
+msgstr "Adgangskoden skal være på mindst 8 tegn."
+
+#: .\authentication\views.py:43 .\authentication\views.py:327
+#: .\authentication\views.py:346
+msgid "Passwords do not match."
+msgstr "Adgangskoderne stemmer ikke overens."
+
+#: .\authentication\views.py:47
+msgid "Username must be at least 4 characters long."
+msgstr "Brugernavnet skal være på mindst 4 tegn."
+
+#: .\authentication\views.py:52
+msgid "Username should only contain letters and numbers."
+msgstr "Brugernavn må kun indeholde bogstaver og tal."
+
+#: .\authentication\views.py:57
+msgid "Invalid email."
+msgstr "Ugyldig email."
+
+#: .\authentication\views.py:61 .\authentication\views.py:229
+#: .\authentication\views.py:268
+msgid "A user with that username already exists."
+msgstr "En bruger med det brugernavn eksisterer allerede."
+
+#: .\authentication\views.py:69
+msgid "Successfully registration."
+msgstr "Registrering lykkedes."
+
+#: .\authentication\views.py:72 .\authentication\views.py:129
+#: .\authentication\views.py:160 .\authentication\views.py:182
+#: .\authentication\views.py:211 .\authentication\views.py:242
+#: .\authentication\views.py:294 .\authentication\views.py:336
+#: .\authentication\views.py:355 .\authentication\views.py:379
+#: .\authentication\views.py:399 .\authentication\views.py:421
+#: .\authentication\views.py:529 .\authentication\views.py:560
+#: .\authentication\views.py:590 .\authentication\views.py:618
+msgid "Invalid data."
+msgstr "Ugyldige data."
+
+#: .\authentication\views.py:98
+msgid "A user with that email does not exist."
+msgstr "En bruger med den e-mail eksisterer ikke."
+
+#: .\authentication\views.py:108 .\authentication\views.py:122
+msgid "Successfully logged in."
+msgstr "Log ind."
+
+#: .\authentication\views.py:111 .\authentication\views.py:125
+msgid "Invalid password."
+msgstr "Forkert kodeord."
+
+#: .\authentication\views.py:116
+msgid "A user with that username does not exist."
+msgstr "En bruger med det brugernavn findes ikke."
+
+#: .\authentication\views.py:139
+msgid "Successfully logged out."
+msgstr "Loget ud."
+
+#: .\authentication\views.py:152 .\authentication\views.py:277
+msgid "Invalid role."
+msgstr "Ugyldig rolle."
+
+#: .\authentication\views.py:157
+msgid "Successfully chosen role."
+msgstr "Vellykket valgt rolle."
+
+#: .\authentication\views.py:179
+msgid "Successfully confirmed name."
+msgstr "Navnet blev bekræftet."
+
+#: .\authentication\views.py:208
+msgid "Successfully confirmed email."
+msgstr "Bekræftet e-mail."
+
+#: .\authentication\views.py:233 .\authentication\views.py:271
+msgid "Invalid username. At least 5 characters."
+msgstr "Ugyldigt brugernavn. "
+
+#: .\authentication\views.py:239
+msgid "Successfully confirmed username."
+msgstr "Bekræftet brugernavn."
+
+#: .\authentication\views.py:291
+msgid "Successfully edited profile."
+msgstr "Profilen er redigeret."
+
+#: .\authentication\views.py:323
+msgid "Incorrect old password."
+msgstr "Forkert gammel adgangskode."
+
+#: .\authentication\views.py:333 .\authentication\views.py:352
+msgid "Successfully changed password."
+msgstr "Adgangskode blev ændret."
+
+#: .\authentication\views.py:372 .\authentication\views.py:547
+#: .\authentication\views.py:608
+msgid "Incorrect password."
+msgstr "Forkert kodeord."
+
+#: .\authentication\views.py:376
+msgid "Successfully deleted account."
+msgstr "Kontoen er blevet slettet."
+
+#: .\authentication\views.py:396
+msgid "Successfully confirmed citizenship."
+msgstr "Bekræftet statsborgerskab."
+
+#: .\authentication\views.py:418
+msgid "Successfully confirmed phone number."
+msgstr "Telefonnummeret er bekræftet."
+
+#: .\authentication\views.py:507 .\authentication\views.py:599
+msgid "Two factor authentication is not enabled."
+msgstr "Tofaktorgodkendelse er ikke aktiveret."
+
+#: .\authentication\views.py:511
+msgid "Two factor authentication is already passed."
+msgstr "Tofaktorgodkendelse er allerede bestået."
+
+#: .\authentication\views.py:523
+msgid "Successfully passed two factor authentication"
+msgstr "Bestået tofaktorgodkendelse"
+
+#: .\authentication\views.py:526 .\authentication\views.py:587
+msgid "Invalid code."
+msgstr "Ugyldig kode."
+
+#: .\authentication\views.py:539 .\authentication\views.py:569
+msgid "Two factor authentication is already enabled."
+msgstr "Tofaktorgodkendelse er allerede aktiveret."
+
+#: .\authentication\views.py:557 .\authentication\views.py:584
+msgid "Successfully enabled two factor authentication."
+msgstr "Tofaktorgodkendelse blev aktiveret."
+
+#: .\authentication\views.py:615
+msgid "Successfully disabled two factor authentication."
+msgstr "Tofaktorgodkendelse blev deaktiveret."
+
+#: .\hotel\forms.py:23
+msgid "Hotel Name"
+msgstr "Hotel navn"
+
+#: .\hotel\forms.py:24
+msgid "Address"
+msgstr "Adresse"
+
+#: .\hotel\forms.py:25
+msgid "City"
+msgstr "By"
+
+#: .\hotel\forms.py:28
+msgid "Website"
+msgstr "Internet side"
+
+#: .\hotel\forms.py:29
+msgid "Description"
+msgstr "Beskrivelse"
+
+#: .\hotel\forms.py:30
+msgid "EIK"
+msgstr "EIK"
+
+#: .\hotel\forms.py:31
+msgid "Authorized Person"
+msgstr "Autoriseret person"
+
+#: .\hotel\forms.py:32
+msgid "Stars"
+msgstr "Stjerner"
+
+#: .\hotel\forms.py:37
+msgid "Register Hotel"
+msgstr "Tilmeld hotel"
+
+#: .\hotel\forms.py:44
+msgid "Confirm Address"
+msgstr "Bekræft adresse"
+
+#: .\hotel\models.py:19
+msgid "No description provided."
+msgstr "Ingen beskrivelse angivet."
+
+#: .\hotel\models.py:49
+msgid "Room"
+msgstr "Værelse"
+
+#: .\hotel\models.py:50
+msgid "Rooms"
+msgstr "Værelser"
+
+#: .\hotel\views.py:23 .\hotel\views.py:156
+msgid "You do not have permission to view this page"
+msgstr "Du har ikke tilladelse til at se denne side"
+
+#: .\hotel\views.py:32
+msgid "Your hotel is not approved yet"
+msgstr "Dit hotel er ikke godkendt endnu"
+
+#: .\hotel\views.py:86
+msgid "Successfully registered hotel"
+msgstr "Registreret hotel med succes"
+
+#: .\hotel\views.py:90
+msgid "Error while registering hotel"
+msgstr "Fejl under registrering af hotel"
+
+#: .\hotel\views.py:97
+msgid "You have already registered a hotel"
+msgstr "Du har allerede registreret et hotel"
+
+#: .\hotel\views.py:115
+msgid "You have not registered a hotel yet"
+msgstr "Du har ikke registreret et hotel endnu"
+
+#: .\hotel\views.py:133
+msgid "Successfully confirmed address"
+msgstr "Adressen er bekræftet"
+
+#: .\hotel\views.py:136
+msgid "Error while confirming address"
+msgstr "Fejl under bekræftelse af adresse"
+
+#: .\hotel\views.py:152
+msgid "No such hotel"
+msgstr "Intet sådant hotel"

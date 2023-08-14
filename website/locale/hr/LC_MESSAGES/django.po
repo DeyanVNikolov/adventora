@@ -1,0 +1,544 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-14 10:31+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: .\adventora\templates\auth\edit_profile.html:10
+msgid "Not confirmed"
+msgstr "Nije potvrđeno"
+
+#: .\adventora\templates\auth\edit_profile.html:12
+msgid "Confirmed"
+msgstr "Potvrđeno"
+
+#: .\adventora\templates\auth\edit_profile.html:14
+msgid "Turned On"
+msgstr "Upaljeno"
+
+#: .\adventora\templates\auth\edit_profile.html:15
+msgid "Turn off"
+msgstr "Isključiti"
+
+#: .\adventora\templates\auth\edit_profile.html:16
+msgid "Turned Off"
+msgstr "Ugašen"
+
+#: .\adventora\templates\auth\edit_profile.html:17
+msgid "Turn on"
+msgstr "Upaliti"
+
+#: .\adventora\templates\auth\sign_in.html:27
+#: .\adventora\templates\auth\sign_up.html:28
+msgid "Login with Google"
+msgstr "Prijavite se s Googleom"
+
+#: .\adventora\templates\auth\sign_in.html:33
+#: .\adventora\templates\auth\sign_up.html:34
+msgid "Login with Trello"
+msgstr "Prijavite se s Trellom"
+
+#: .\adventora\templates\auth\sign_in.html:41
+#: .\adventora\templates\auth\sign_up.html:42
+msgid "Login with GitHub"
+msgstr "Prijavite se s GitHubom"
+
+#: .\adventora\templates\auth\sign_in.html:47
+#: .\adventora\templates\auth\sign_up.html:48
+msgid "Login with Patreon"
+msgstr "Prijavi se putem Patreona"
+
+#: .\adventora\templates\auth\sign_in.html:53
+#: .\adventora\templates\auth\sign_up.html:54
+msgid "Login with Amazon"
+msgstr "Prijavite se putem Amazona"
+
+#: .\adventora\templates\auth\sign_in.html:62
+#: .\adventora\templates\auth\sign_up.html:63
+msgid "Login with Reddit"
+msgstr "Prijavite se putem Reddita"
+
+#: .\adventora\templates\auth\sign_in.html:68
+#: .\adventora\templates\auth\sign_up.html:69
+msgid "Login with Steam"
+msgstr "Prijavite se putem Steam-a"
+
+#: .\adventora\templates\auth\sign_in.html:77
+#: .\adventora\templates\auth\sign_up.html:78
+msgid "Login with Spotify."
+msgstr "Prijavite se putem Spotifyja."
+
+#: .\adventora\templates\auth\sign_in.html:83
+#: .\adventora\templates\auth\sign_up.html:84
+msgid "Login with VK"
+msgstr "Prijavite se s VK"
+
+#: .\adventora\templates\base.html:147 .\adventora\templates\base.html:151
+msgid "Panel"
+msgstr "Ploča"
+
+#: .\adventora\templates\base.html:154
+msgid "Logout"
+msgstr "Odjavite se"
+
+#: .\adventora\templates\base.html:159 .\authentication\forms.py:52
+msgid "Sign up"
+msgstr "Prijavite se"
+
+#: .\adventora\templates\base.html:162 .\authentication\forms.py:24
+msgid "Login"
+msgstr "Prijaviti se"
+
+#: .\adventora\templates\base.html:179
+msgid "Error"
+msgstr "Greška"
+
+#: .\adventora\templates\base.html:191
+msgid "Success"
+msgstr "Uspjeh"
+
+#: .\adventora\templates\base.html:202
+msgid "Warning"
+msgstr "Upozorenje"
+
+#: .\adventora\templates\base.html:226
+msgid "Adventora supports small, medium and large businesses"
+msgstr "Adventora podržava mala, srednja i velika poduzeća"
+
+#: .\adventora\templates\base.html:251
+msgid "All Rights Reserved"
+msgstr "Sva prava pridržana"
+
+#: .\adventora\templates\base.html:253
+msgid "Homepage"
+msgstr "Početna stranica"
+
+#: .\adventora\templates\base.html:254
+msgid "About us"
+msgstr "O nama"
+
+#: .\adventora\templates\base.html:255
+msgid "Privacy"
+msgstr "Privatnost"
+
+#: .\adventora\templates\base.html:256
+msgid "Terms of use"
+msgstr "Uvjeti korištenja"
+
+#: .\adventora\templates\base.html:257
+msgid "Contacts"
+msgstr "Kontakti"
+
+#: .\adventora\templates\base.html:258
+msgid "Partnerships"
+msgstr "Partnerstva"
+
+#: .\adventora\templates\partnerships.html:9
+msgid "For partnerships contact us at"
+msgstr "Za partnerstva kontaktirajte nas na"
+
+#: .\authentication\forms.py:15
+msgid "Username or email"
+msgstr "Korisničko ime ili email"
+
+#: .\authentication\forms.py:16 .\authentication\forms.py:35
+#: .\authentication\forms.py:140 .\authentication\forms.py:173
+#: .\authentication\forms.py:200
+msgid "Password"
+msgstr "Lozinka"
+
+#: .\authentication\forms.py:29 .\authentication\forms.py:87
+#: .\authentication\forms.py:105
+msgid "Username"
+msgstr "Korisničko ime"
+
+#: .\authentication\forms.py:30 .\authentication\forms.py:88
+#: .\authentication\forms.py:106
+msgid "The username must contain at least 8 characters."
+msgstr "Korisničko ime mora sadržavati najmanje 8 znakova."
+
+#: .\authentication\forms.py:32
+msgid "First name"
+msgstr "Ime"
+
+#: .\authentication\forms.py:33
+msgid "Last name"
+msgstr "Prezime"
+
+#: .\authentication\forms.py:34 .\authentication\forms.py:78
+#: .\authentication\forms.py:104 .\hotel\forms.py:27
+msgid "Email"
+msgstr "E-mail"
+
+#: .\authentication\forms.py:34
+msgid "Email address must be valid"
+msgstr "Adresa e-pošte mora biti važeća"
+
+#: .\authentication\forms.py:36
+msgid ""
+"The password must be at least 8 characters long. <br> The password should "
+"not contain only digits. <br> The password should not contain only letters. "
+"<br> The password should not contain only special characters. <br> The "
+"password should not contain the username. <br> The password should not be a "
+"commonly used password."
+msgstr "Lozinka mora imati najmanje 8 znakova. "
+
+#: .\authentication\forms.py:42
+msgid "Confirm password"
+msgstr "Potvrdi lozinku"
+
+#: .\authentication\forms.py:43
+msgid "Enter the same password as above, for verification."
+msgstr "Unesite istu zaporku kao gore za provjeru."
+
+#: .\authentication\forms.py:57 .\authentication\forms.py:98
+msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
+msgstr ""
+"Vacationer - Istražite, planirajte i rezervirajte svoje idealne aktivnosti "
+"za odmor."
+
+#: .\authentication\forms.py:58 .\authentication\forms.py:99
+msgid ""
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
+msgstr ""
+"Upravitelj hotela - nadzire operacije i pruža izvrsnu uslugu u vlastitom "
+"hotelu."
+
+#: .\authentication\forms.py:59 .\authentication\forms.py:100
+msgid ""
+"Employee - Contribute your expertise to a thriving workplace, such as a "
+"hotel or guest house."
+msgstr ""
+"Zaposlenik - doprinesite svojom stručnošću uspješnom radnom mjestu, poput "
+"hotela ili pansiona."
+
+#: .\authentication\forms.py:65
+msgid "Submit"
+msgstr "podnijeti"
+
+#: .\authentication\forms.py:69 .\authentication\forms.py:102
+msgid "First Name"
+msgstr "Ime"
+
+#: .\authentication\forms.py:70 .\authentication\forms.py:103
+msgid "Last Name"
+msgstr "Prezime"
+
+#: .\authentication\forms.py:73 .\authentication\forms.py:81
+#: .\authentication\forms.py:92 .\authentication\forms.py:113
+#: .\authentication\forms.py:124 .\authentication\forms.py:134
+#: .\authentication\forms.py:158 .\authentication\forms.py:167
+msgid "Save"
+msgstr "Uštedjeti"
+
+#: .\authentication\forms.py:78 .\authentication\forms.py:104
+msgid "The email must be valid."
+msgstr "E-mail mora biti valjan."
+
+#: .\authentication\forms.py:108 .\authentication\forms.py:155
+msgid "Citizenship"
+msgstr "Državljanstvo"
+
+#: .\authentication\forms.py:109 .\authentication\forms.py:164
+#: .\hotel\forms.py:26
+msgid "Phone"
+msgstr "Telefon"
+
+#: .\authentication\forms.py:110
+msgid "Choose a Role"
+msgstr "Odaberite ulogu"
+
+#: .\authentication\forms.py:119
+msgid "Old Password"
+msgstr "stara lozinka"
+
+#: .\authentication\forms.py:120 .\authentication\forms.py:130
+msgid "New Password"
+msgstr "Nova lozinka"
+
+#: .\authentication\forms.py:121 .\authentication\forms.py:131
+msgid "Confirm New Password"
+msgstr "Potvrdi novu lozinku"
+
+#: .\authentication\forms.py:143
+msgid "Delete Account"
+msgstr "Izbriši račun"
+
+#: .\authentication\forms.py:176 .\authentication\forms.py:185
+#: .\authentication\forms.py:194
+msgid "Enable"
+msgstr "Omogućiti"
+
+#: .\authentication\forms.py:182 .\authentication\forms.py:191
+msgid "Code"
+msgstr "Kodirati"
+
+#: .\authentication\forms.py:203
+msgid "Disable"
+msgstr "Onemogući"
+
+#: .\authentication\models.py:11
+msgid "User"
+msgstr "Korisnik"
+
+#: .\authentication\models.py:11
+msgid "Manager"
+msgstr "Menadžer"
+
+#: .\authentication\models.py:11
+msgid "Employee"
+msgstr "Zaposlenik"
+
+#: .\authentication\models.py:11
+msgid "Admin"
+msgstr "Administrator"
+
+#: .\authentication\views.py:35 .\authentication\views.py:202
+#: .\authentication\views.py:262
+msgid "A user with that email already exists."
+msgstr "Korisnik s tom e-poštom već postoji."
+
+#: .\authentication\views.py:39
+msgid "Password must be at least 8 characters long."
+msgstr "Lozinka mora imati najmanje 8 znakova."
+
+#: .\authentication\views.py:43 .\authentication\views.py:327
+#: .\authentication\views.py:346
+msgid "Passwords do not match."
+msgstr "Lozinke se ne podudaraju."
+
+#: .\authentication\views.py:47
+msgid "Username must be at least 4 characters long."
+msgstr "Korisničko ime mora imati najmanje 4 znaka."
+
+#: .\authentication\views.py:52
+msgid "Username should only contain letters and numbers."
+msgstr "Korisničko ime treba sadržavati samo slova i brojke."
+
+#: .\authentication\views.py:57
+msgid "Invalid email."
+msgstr "Nevažeći email."
+
+#: .\authentication\views.py:61 .\authentication\views.py:229
+#: .\authentication\views.py:268
+msgid "A user with that username already exists."
+msgstr "Korisnik s tim korisničkim imenom već postoji."
+
+#: .\authentication\views.py:69
+msgid "Successfully registration."
+msgstr "Uspješna registracija."
+
+#: .\authentication\views.py:72 .\authentication\views.py:129
+#: .\authentication\views.py:160 .\authentication\views.py:182
+#: .\authentication\views.py:211 .\authentication\views.py:242
+#: .\authentication\views.py:294 .\authentication\views.py:336
+#: .\authentication\views.py:355 .\authentication\views.py:379
+#: .\authentication\views.py:399 .\authentication\views.py:421
+#: .\authentication\views.py:529 .\authentication\views.py:560
+#: .\authentication\views.py:590 .\authentication\views.py:618
+msgid "Invalid data."
+msgstr "Nevažeći podaci."
+
+#: .\authentication\views.py:98
+msgid "A user with that email does not exist."
+msgstr "Korisnik s tom e-poštom ne postoji."
+
+#: .\authentication\views.py:108 .\authentication\views.py:122
+msgid "Successfully logged in."
+msgstr "Uspješno prijavljen."
+
+#: .\authentication\views.py:111 .\authentication\views.py:125
+msgid "Invalid password."
+msgstr "Netočna zaporka."
+
+#: .\authentication\views.py:116
+msgid "A user with that username does not exist."
+msgstr "Korisnik s tim korisničkim imenom ne postoji."
+
+#: .\authentication\views.py:139
+msgid "Successfully logged out."
+msgstr "Uspješno ste odjavljeni."
+
+#: .\authentication\views.py:152 .\authentication\views.py:277
+msgid "Invalid role."
+msgstr "Nevažeća uloga."
+
+#: .\authentication\views.py:157
+msgid "Successfully chosen role."
+msgstr "Uspješno odabrana uloga."
+
+#: .\authentication\views.py:179
+msgid "Successfully confirmed name."
+msgstr "Ime je uspješno potvrđeno."
+
+#: .\authentication\views.py:208
+msgid "Successfully confirmed email."
+msgstr "Uspješno potvrđena e-pošta."
+
+#: .\authentication\views.py:233 .\authentication\views.py:271
+msgid "Invalid username. At least 5 characters."
+msgstr "Nevažeće korisničko ime. "
+
+#: .\authentication\views.py:239
+msgid "Successfully confirmed username."
+msgstr "Uspješno potvrđeno korisničko ime."
+
+#: .\authentication\views.py:291
+msgid "Successfully edited profile."
+msgstr "Uspješno uređen profil."
+
+#: .\authentication\views.py:323
+msgid "Incorrect old password."
+msgstr "Netočna stara lozinka."
+
+#: .\authentication\views.py:333 .\authentication\views.py:352
+msgid "Successfully changed password."
+msgstr "Lozinka je uspješno promijenjena."
+
+#: .\authentication\views.py:372 .\authentication\views.py:547
+#: .\authentication\views.py:608
+msgid "Incorrect password."
+msgstr "Netočna lozinka."
+
+#: .\authentication\views.py:376
+msgid "Successfully deleted account."
+msgstr "Uspješno izbrisan račun."
+
+#: .\authentication\views.py:396
+msgid "Successfully confirmed citizenship."
+msgstr "Uspješno potvrđeno državljanstvo."
+
+#: .\authentication\views.py:418
+msgid "Successfully confirmed phone number."
+msgstr "Broj telefona uspješno potvrđen."
+
+#: .\authentication\views.py:507 .\authentication\views.py:599
+msgid "Two factor authentication is not enabled."
+msgstr "Dvostruka autentifikacija nije omogućena."
+
+#: .\authentication\views.py:511
+msgid "Two factor authentication is already passed."
+msgstr "Dvostruka autentifikacija je već prošla."
+
+#: .\authentication\views.py:523
+msgid "Successfully passed two factor authentication"
+msgstr "Uspješno prošla provjeru autentičnosti u dva faktora"
+
+#: .\authentication\views.py:526 .\authentication\views.py:587
+msgid "Invalid code."
+msgstr "Neispravan kod."
+
+#: .\authentication\views.py:539 .\authentication\views.py:569
+msgid "Two factor authentication is already enabled."
+msgstr "Dvostruka autentifikacija već je omogućena."
+
+#: .\authentication\views.py:557 .\authentication\views.py:584
+msgid "Successfully enabled two factor authentication."
+msgstr "Uspješno omogućena provjera autentičnosti u dva faktora."
+
+#: .\authentication\views.py:615
+msgid "Successfully disabled two factor authentication."
+msgstr "Uspješno je onemogućena provjera autentičnosti u dva faktora."
+
+#: .\hotel\forms.py:23
+msgid "Hotel Name"
+msgstr "Naziv hotela"
+
+#: .\hotel\forms.py:24
+msgid "Address"
+msgstr "Adresa"
+
+#: .\hotel\forms.py:25
+msgid "City"
+msgstr "Grad"
+
+#: .\hotel\forms.py:28
+msgid "Website"
+msgstr "Web stranica"
+
+#: .\hotel\forms.py:29
+msgid "Description"
+msgstr "Opis"
+
+#: .\hotel\forms.py:30
+msgid "EIK"
+msgstr "EIK"
+
+#: .\hotel\forms.py:31
+msgid "Authorized Person"
+msgstr "Ovlaštena osoba"
+
+#: .\hotel\forms.py:32
+msgid "Stars"
+msgstr "Zvijezde"
+
+#: .\hotel\forms.py:37
+msgid "Register Hotel"
+msgstr "Registrirajte hotel"
+
+#: .\hotel\forms.py:44
+msgid "Confirm Address"
+msgstr "Potvrdite adresu"
+
+#: .\hotel\models.py:19
+msgid "No description provided."
+msgstr "Nema opisa."
+
+#: .\hotel\models.py:49
+msgid "Room"
+msgstr "Soba"
+
+#: .\hotel\models.py:50
+msgid "Rooms"
+msgstr "Sobe"
+
+#: .\hotel\views.py:23 .\hotel\views.py:156
+msgid "You do not have permission to view this page"
+msgstr "Nemate dopuštenje za pregled ove stranice"
+
+#: .\hotel\views.py:32
+msgid "Your hotel is not approved yet"
+msgstr "Vaš hotel još nije odobren"
+
+#: .\hotel\views.py:86
+msgid "Successfully registered hotel"
+msgstr "Uspješno registriran hotel"
+
+#: .\hotel\views.py:90
+msgid "Error while registering hotel"
+msgstr "Greška prilikom registracije hotela"
+
+#: .\hotel\views.py:97
+msgid "You have already registered a hotel"
+msgstr "Već ste registrirali hotel"
+
+#: .\hotel\views.py:115
+msgid "You have not registered a hotel yet"
+msgstr "Još niste registrirali hotel"
+
+#: .\hotel\views.py:133
+msgid "Successfully confirmed address"
+msgstr "Adresa uspješno potvrđena"
+
+#: .\hotel\views.py:136
+msgid "Error while confirming address"
+msgstr "Pogreška prilikom potvrđivanja adrese"
+
+#: .\hotel\views.py:152
+msgid "No such hotel"
+msgstr "Nema takvog hotela"

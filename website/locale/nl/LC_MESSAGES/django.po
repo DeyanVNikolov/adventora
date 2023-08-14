@@ -1,0 +1,542 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-14 10:31+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\adventora\templates\auth\edit_profile.html:10
+msgid "Not confirmed"
+msgstr "Niet bevestigd"
+
+#: .\adventora\templates\auth\edit_profile.html:12
+msgid "Confirmed"
+msgstr "Bevestigd"
+
+#: .\adventora\templates\auth\edit_profile.html:14
+msgid "Turned On"
+msgstr "Opgewonden"
+
+#: .\adventora\templates\auth\edit_profile.html:15
+msgid "Turn off"
+msgstr "Uitschakelen"
+
+#: .\adventora\templates\auth\edit_profile.html:16
+msgid "Turned Off"
+msgstr "Uitgeschakeld"
+
+#: .\adventora\templates\auth\edit_profile.html:17
+msgid "Turn on"
+msgstr "Aanzetten"
+
+#: .\adventora\templates\auth\sign_in.html:27
+#: .\adventora\templates\auth\sign_up.html:28
+msgid "Login with Google"
+msgstr "Inloggen met Google"
+
+#: .\adventora\templates\auth\sign_in.html:33
+#: .\adventora\templates\auth\sign_up.html:34
+msgid "Login with Trello"
+msgstr "Log in met Trello"
+
+#: .\adventora\templates\auth\sign_in.html:41
+#: .\adventora\templates\auth\sign_up.html:42
+msgid "Login with GitHub"
+msgstr "Log in met GitHub"
+
+#: .\adventora\templates\auth\sign_in.html:47
+#: .\adventora\templates\auth\sign_up.html:48
+msgid "Login with Patreon"
+msgstr "Log in met Patreon"
+
+#: .\adventora\templates\auth\sign_in.html:53
+#: .\adventora\templates\auth\sign_up.html:54
+msgid "Login with Amazon"
+msgstr "Log in met Amazon"
+
+#: .\adventora\templates\auth\sign_in.html:62
+#: .\adventora\templates\auth\sign_up.html:63
+msgid "Login with Reddit"
+msgstr "Log in met Reddit"
+
+#: .\adventora\templates\auth\sign_in.html:68
+#: .\adventora\templates\auth\sign_up.html:69
+msgid "Login with Steam"
+msgstr "Log in met Steam"
+
+#: .\adventora\templates\auth\sign_in.html:77
+#: .\adventora\templates\auth\sign_up.html:78
+msgid "Login with Spotify."
+msgstr "Log in met Spotify."
+
+#: .\adventora\templates\auth\sign_in.html:83
+#: .\adventora\templates\auth\sign_up.html:84
+msgid "Login with VK"
+msgstr "Inloggen met VK"
+
+#: .\adventora\templates\base.html:147 .\adventora\templates\base.html:151
+msgid "Panel"
+msgstr "Paneel"
+
+#: .\adventora\templates\base.html:154
+msgid "Logout"
+msgstr "Uitloggen"
+
+#: .\adventora\templates\base.html:159 .\authentication\forms.py:52
+msgid "Sign up"
+msgstr "Aanmelden"
+
+#: .\adventora\templates\base.html:162 .\authentication\forms.py:24
+msgid "Login"
+msgstr "Log in"
+
+#: .\adventora\templates\base.html:179
+msgid "Error"
+msgstr "Fout"
+
+#: .\adventora\templates\base.html:191
+msgid "Success"
+msgstr "Succes"
+
+#: .\adventora\templates\base.html:202
+msgid "Warning"
+msgstr "Waarschuwing"
+
+#: .\adventora\templates\base.html:226
+msgid "Adventora supports small, medium and large businesses"
+msgstr "Adventora ondersteunt kleine, middelgrote en grote bedrijven"
+
+#: .\adventora\templates\base.html:251
+msgid "All Rights Reserved"
+msgstr "Alle rechten voorbehouden"
+
+#: .\adventora\templates\base.html:253
+msgid "Homepage"
+msgstr "Startpagina"
+
+#: .\adventora\templates\base.html:254
+msgid "About us"
+msgstr "Over ons"
+
+#: .\adventora\templates\base.html:255
+msgid "Privacy"
+msgstr "Privacy"
+
+#: .\adventora\templates\base.html:256
+msgid "Terms of use"
+msgstr "Gebruiksvoorwaarden"
+
+#: .\adventora\templates\base.html:257
+msgid "Contacts"
+msgstr "Contacten"
+
+#: .\adventora\templates\base.html:258
+msgid "Partnerships"
+msgstr "partnerschappen"
+
+#: .\adventora\templates\partnerships.html:9
+msgid "For partnerships contact us at"
+msgstr "Neem voor partnerschappen contact met ons op via"
+
+#: .\authentication\forms.py:15
+msgid "Username or email"
+msgstr "Gebruikersnaam of email"
+
+#: .\authentication\forms.py:16 .\authentication\forms.py:35
+#: .\authentication\forms.py:140 .\authentication\forms.py:173
+#: .\authentication\forms.py:200
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: .\authentication\forms.py:29 .\authentication\forms.py:87
+#: .\authentication\forms.py:105
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: .\authentication\forms.py:30 .\authentication\forms.py:88
+#: .\authentication\forms.py:106
+msgid "The username must contain at least 8 characters."
+msgstr "De gebruikersnaam moet minimaal 8 tekens bevatten."
+
+#: .\authentication\forms.py:32
+msgid "First name"
+msgstr "Voornaam"
+
+#: .\authentication\forms.py:33
+msgid "Last name"
+msgstr "Achternaam"
+
+#: .\authentication\forms.py:34 .\authentication\forms.py:78
+#: .\authentication\forms.py:104 .\hotel\forms.py:27
+msgid "Email"
+msgstr "E-mail"
+
+#: .\authentication\forms.py:34
+msgid "Email address must be valid"
+msgstr "E-mailadres moet geldig zijn"
+
+#: .\authentication\forms.py:36
+msgid ""
+"The password must be at least 8 characters long. <br> The password should "
+"not contain only digits. <br> The password should not contain only letters. "
+"<br> The password should not contain only special characters. <br> The "
+"password should not contain the username. <br> The password should not be a "
+"commonly used password."
+msgstr "Het wachtwoord moet minimaal 8 tekens lang zijn. "
+
+#: .\authentication\forms.py:42
+msgid "Confirm password"
+msgstr "Bevestig wachtwoord"
+
+#: .\authentication\forms.py:43
+msgid "Enter the same password as above, for verification."
+msgstr "Voer ter verificatie hetzelfde wachtwoord in als hierboven."
+
+#: .\authentication\forms.py:57 .\authentication\forms.py:98
+msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
+msgstr "Vakantieganger - Ontdek, plan en boek uw ideale vakantieactiviteiten."
+
+#: .\authentication\forms.py:58 .\authentication\forms.py:99
+msgid ""
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
+msgstr ""
+"Hotelmanager - Houd toezicht op de operaties en bied uitstekende service in "
+"uw eigen hotel."
+
+#: .\authentication\forms.py:59 .\authentication\forms.py:100
+msgid ""
+"Employee - Contribute your expertise to a thriving workplace, such as a "
+"hotel or guest house."
+msgstr ""
+"Medewerker - Draag uw expertise bij aan een bloeiende werkplek, zoals een "
+"hotel of pension."
+
+#: .\authentication\forms.py:65
+msgid "Submit"
+msgstr "Indienen"
+
+#: .\authentication\forms.py:69 .\authentication\forms.py:102
+msgid "First Name"
+msgstr "Voornaam"
+
+#: .\authentication\forms.py:70 .\authentication\forms.py:103
+msgid "Last Name"
+msgstr "Achternaam"
+
+#: .\authentication\forms.py:73 .\authentication\forms.py:81
+#: .\authentication\forms.py:92 .\authentication\forms.py:113
+#: .\authentication\forms.py:124 .\authentication\forms.py:134
+#: .\authentication\forms.py:158 .\authentication\forms.py:167
+msgid "Save"
+msgstr "Redden"
+
+#: .\authentication\forms.py:78 .\authentication\forms.py:104
+msgid "The email must be valid."
+msgstr "De e-mail moet geldig zijn."
+
+#: .\authentication\forms.py:108 .\authentication\forms.py:155
+msgid "Citizenship"
+msgstr "Burgerschap"
+
+#: .\authentication\forms.py:109 .\authentication\forms.py:164
+#: .\hotel\forms.py:26
+msgid "Phone"
+msgstr "Telefoon"
+
+#: .\authentication\forms.py:110
+msgid "Choose a Role"
+msgstr "Kies een rol"
+
+#: .\authentication\forms.py:119
+msgid "Old Password"
+msgstr "Oud Wachtwoord"
+
+#: .\authentication\forms.py:120 .\authentication\forms.py:130
+msgid "New Password"
+msgstr "nieuw paswoord"
+
+#: .\authentication\forms.py:121 .\authentication\forms.py:131
+msgid "Confirm New Password"
+msgstr "Bevestig nieuw wachtwoord"
+
+#: .\authentication\forms.py:143
+msgid "Delete Account"
+msgstr "Account verwijderen"
+
+#: .\authentication\forms.py:176 .\authentication\forms.py:185
+#: .\authentication\forms.py:194
+msgid "Enable"
+msgstr "Inschakelen"
+
+#: .\authentication\forms.py:182 .\authentication\forms.py:191
+msgid "Code"
+msgstr "Code"
+
+#: .\authentication\forms.py:203
+msgid "Disable"
+msgstr "Uitzetten"
+
+#: .\authentication\models.py:11
+msgid "User"
+msgstr "Gebruiker"
+
+#: .\authentication\models.py:11
+msgid "Manager"
+msgstr "Manager"
+
+#: .\authentication\models.py:11
+msgid "Employee"
+msgstr "Medewerker"
+
+#: .\authentication\models.py:11
+msgid "Admin"
+msgstr "beheerder"
+
+#: .\authentication\views.py:35 .\authentication\views.py:202
+#: .\authentication\views.py:262
+msgid "A user with that email already exists."
+msgstr "Een gebruiker met dat email adres bestaat al."
+
+#: .\authentication\views.py:39
+msgid "Password must be at least 8 characters long."
+msgstr "Wachtwoord moet minimaal 8 tekens lang zijn."
+
+#: .\authentication\views.py:43 .\authentication\views.py:327
+#: .\authentication\views.py:346
+msgid "Passwords do not match."
+msgstr "Wachtwoorden komen niet overeen."
+
+#: .\authentication\views.py:47
+msgid "Username must be at least 4 characters long."
+msgstr "De gebruikersnaam moet minimaal 4 tekens lang zijn."
+
+#: .\authentication\views.py:52
+msgid "Username should only contain letters and numbers."
+msgstr "Gebruikersnaam mag alleen letters en cijfers bevatten."
+
+#: .\authentication\views.py:57
+msgid "Invalid email."
+msgstr "Ongeldig e-mail."
+
+#: .\authentication\views.py:61 .\authentication\views.py:229
+#: .\authentication\views.py:268
+msgid "A user with that username already exists."
+msgstr "Een gebruiker met die gebruikersnaam bestaat al."
+
+#: .\authentication\views.py:69
+msgid "Successfully registration."
+msgstr "Registratie succesvol."
+
+#: .\authentication\views.py:72 .\authentication\views.py:129
+#: .\authentication\views.py:160 .\authentication\views.py:182
+#: .\authentication\views.py:211 .\authentication\views.py:242
+#: .\authentication\views.py:294 .\authentication\views.py:336
+#: .\authentication\views.py:355 .\authentication\views.py:379
+#: .\authentication\views.py:399 .\authentication\views.py:421
+#: .\authentication\views.py:529 .\authentication\views.py:560
+#: .\authentication\views.py:590 .\authentication\views.py:618
+msgid "Invalid data."
+msgstr "Onjuiste data."
+
+#: .\authentication\views.py:98
+msgid "A user with that email does not exist."
+msgstr "Een gebruiker met dat e-mailadres bestaat niet."
+
+#: .\authentication\views.py:108 .\authentication\views.py:122
+msgid "Successfully logged in."
+msgstr "Succesvol ingelogd."
+
+#: .\authentication\views.py:111 .\authentication\views.py:125
+msgid "Invalid password."
+msgstr "Ongeldig wachtwoord."
+
+#: .\authentication\views.py:116
+msgid "A user with that username does not exist."
+msgstr "Een gebruiker met die gebruikersnaam bestaat niet."
+
+#: .\authentication\views.py:139
+msgid "Successfully logged out."
+msgstr "Succesvol uitgelogd."
+
+#: .\authentication\views.py:152 .\authentication\views.py:277
+msgid "Invalid role."
+msgstr "Ongeldige rol."
+
+#: .\authentication\views.py:157
+msgid "Successfully chosen role."
+msgstr "Succesvol gekozen rol."
+
+#: .\authentication\views.py:179
+msgid "Successfully confirmed name."
+msgstr "Naam succesvol bevestigd."
+
+#: .\authentication\views.py:208
+msgid "Successfully confirmed email."
+msgstr "E-mail succesvol bevestigd."
+
+#: .\authentication\views.py:233 .\authentication\views.py:271
+msgid "Invalid username. At least 5 characters."
+msgstr "Ongeldige gebruikersnaam. "
+
+#: .\authentication\views.py:239
+msgid "Successfully confirmed username."
+msgstr "Gebruikersnaam succesvol bevestigd."
+
+#: .\authentication\views.py:291
+msgid "Successfully edited profile."
+msgstr "Profiel bewerkt."
+
+#: .\authentication\views.py:323
+msgid "Incorrect old password."
+msgstr "Onjuist oud wachtwoord."
+
+#: .\authentication\views.py:333 .\authentication\views.py:352
+msgid "Successfully changed password."
+msgstr "Wachtwoord succesvol gewijzigd."
+
+#: .\authentication\views.py:372 .\authentication\views.py:547
+#: .\authentication\views.py:608
+msgid "Incorrect password."
+msgstr "Incorrect wachtwoord."
+
+#: .\authentication\views.py:376
+msgid "Successfully deleted account."
+msgstr "Succesvol verwijderd account."
+
+#: .\authentication\views.py:396
+msgid "Successfully confirmed citizenship."
+msgstr "Staatsburgerschap succesvol bevestigd."
+
+#: .\authentication\views.py:418
+msgid "Successfully confirmed phone number."
+msgstr "Telefoonnummer succesvol bevestigd."
+
+#: .\authentication\views.py:507 .\authentication\views.py:599
+msgid "Two factor authentication is not enabled."
+msgstr "Twee-factor-authenticatie is niet ingeschakeld."
+
+#: .\authentication\views.py:511
+msgid "Two factor authentication is already passed."
+msgstr "Twee-factor-authenticatie is al geslaagd."
+
+#: .\authentication\views.py:523
+msgid "Successfully passed two factor authentication"
+msgstr "Twee-factor-authenticatie met succes doorstaan"
+
+#: .\authentication\views.py:526 .\authentication\views.py:587
+msgid "Invalid code."
+msgstr "Ongeldige code."
+
+#: .\authentication\views.py:539 .\authentication\views.py:569
+msgid "Two factor authentication is already enabled."
+msgstr "Twee-factor-authenticatie is al ingeschakeld."
+
+#: .\authentication\views.py:557 .\authentication\views.py:584
+msgid "Successfully enabled two factor authentication."
+msgstr "Twee-factor-authenticatie ingeschakeld."
+
+#: .\authentication\views.py:615
+msgid "Successfully disabled two factor authentication."
+msgstr "Twee-factor-authenticatie succesvol uitgeschakeld."
+
+#: .\hotel\forms.py:23
+msgid "Hotel Name"
+msgstr "Hotel naam"
+
+#: .\hotel\forms.py:24
+msgid "Address"
+msgstr "Adres"
+
+#: .\hotel\forms.py:25
+msgid "City"
+msgstr "Stad"
+
+#: .\hotel\forms.py:28
+msgid "Website"
+msgstr "Website"
+
+#: .\hotel\forms.py:29
+msgid "Description"
+msgstr "Beschrijving"
+
+#: .\hotel\forms.py:30
+msgid "EIK"
+msgstr "EIK"
+
+#: .\hotel\forms.py:31
+msgid "Authorized Person"
+msgstr "Geautoriseerd persoon"
+
+#: .\hotel\forms.py:32
+msgid "Stars"
+msgstr "Sterren"
+
+#: .\hotel\forms.py:37
+msgid "Register Hotel"
+msgstr "Hotel aanmelden"
+
+#: .\hotel\forms.py:44
+msgid "Confirm Address"
+msgstr "Bevestig adres"
+
+#: .\hotel\models.py:19
+msgid "No description provided."
+msgstr "Geen beschrijving gegeven."
+
+#: .\hotel\models.py:49
+msgid "Room"
+msgstr "Kamer"
+
+#: .\hotel\models.py:50
+msgid "Rooms"
+msgstr "Kamers"
+
+#: .\hotel\views.py:23 .\hotel\views.py:156
+msgid "You do not have permission to view this page"
+msgstr "U heeft geen toestemming om deze pagina te bekijken"
+
+#: .\hotel\views.py:32
+msgid "Your hotel is not approved yet"
+msgstr "Uw hotel is nog niet goedgekeurd"
+
+#: .\hotel\views.py:86
+msgid "Successfully registered hotel"
+msgstr "Succesvol geregistreerd hotel"
+
+#: .\hotel\views.py:90
+msgid "Error while registering hotel"
+msgstr "Fout bij het registreren van hotel"
+
+#: .\hotel\views.py:97
+msgid "You have already registered a hotel"
+msgstr "U heeft al een hotel geregistreerd"
+
+#: .\hotel\views.py:115
+msgid "You have not registered a hotel yet"
+msgstr "U heeft nog geen hotel geregistreerd"
+
+#: .\hotel\views.py:133
+msgid "Successfully confirmed address"
+msgstr "Succesvol bevestigd adres"
+
+#: .\hotel\views.py:136
+msgid "Error while confirming address"
+msgstr "Fout bij het bevestigen van het adres"
+
+#: .\hotel\views.py:152
+msgid "No such hotel"
+msgstr "Niet zo'n hotel"

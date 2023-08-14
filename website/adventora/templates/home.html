@@ -2,26 +2,63 @@
 {% load static %}
 {% load i18n %}
 {% block content %}
+    {% get_current_language as LANGUAGE_CODE %}
+    {% get_available_languages as LANGUAGES %}
+    {% get_language_info_list for LANGUAGES as languages %}
 
 
+    <div id="description" class="description"><p>Good morning!</p></div>
 
-    Hi
+    <script>
+        const translatedContent = document.getElementById('.description p');
+        const contentToTranslate = document.querySelector('.description p').textContent;
+
+        window.addEventListener('load', () => {
+            {% get_current_language as LANGUAGE_CODE %}
+            const targetLanguage = '{{ LANGUAGE_CODE }}'
+
+
+            // Call the translation API
+            fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=bg&tl=${targetLanguage}&dt=t&q=${contentToTranslate}`, {
+                method: 'POST',
+                headers:
+                    {
+                        'Content-Type':
+                            'application/json'
+                    }
+                ,
+                body: JSON.stringify({
+                    q: contentToTranslate,
+                    target: targetLanguage
+                })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    const translatedText = data.data.translations[0].translatedText;
+                    translatedContent.textContent = translatedText;
+                })
+                .catch(error => {
+                    console.error('Translation error:', error);
+                });
+        })
+        ;
+    </script>
+
+
     <img src="{% static 'example.jpg' %}" alt="My image">
 
-<form action="{% url 'set_language' %}" method="post">{% csrf_token %}
-    <input name="next" type="hidden" value="{{ redirect_to }}">
-    <select name="language">
-        {% get_current_language as LANGUAGE_CODE %}
-        {% get_available_languages as LANGUAGES %}
-        {% get_language_info_list for LANGUAGES as languages %}
-        {% for language in languages %}
-            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
-                {{ language.name_local }} ({{ language.code }})
-            </option>
-        {% endfor %}
-    </select>
-    <input type="submit" value="Go">
-</form>
+    <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+        <input name="next" type="hidden" value="{{ redirect_to }}">
+        <select name="language">
+
+            {% for language in languages %}
+                <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                    {{ language.name_local }} ({{ language.code }})
+                </option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Go">
+    </form>
 
 
- {% endblock %}
+{% endblock %}

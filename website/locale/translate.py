@@ -36,6 +36,30 @@ def translate_folder(folder, source, target):
             translate_file(folder + "\\" + file, source, target)
             print("Translated " + file)
 
+    ('bg', 'Bulgarian'),
+    ('en', 'English'),
+    ('de', 'German'),
+    ('cs', 'Czech'),
+    ('da', 'Danish'),
+    ('el', 'Greek'),
+    ('fi', 'Finnish'),
+    ('hu', 'Hungarian'),
+    ('is', 'Icelandic'),
+    ('hr', 'Croatian'),
+    ('mk', 'Macedonian'),
+    ('sr', 'Serbian'),
+    ('ko', 'Korean'),
+    ('nl', 'Dutch'),
+    ('no', 'Norwegian'),
+    ('sv', 'Swedish'),
+    ('ru', 'Russian'),
+    ('uk', 'Ukrainian'),
+    ('fr', 'French'),
+    ('es', 'Spanish'),
+    ('it', 'Italian'),
+    ('pt', 'Portuguese'),
+    ('tr', 'Turkish'),
+    ('ja', 'Japanese'),
 
 current_unix = int(time.time())
 print("-----------------------------")
@@ -68,6 +92,45 @@ translate_folder("A:/Repos/adventora/website/locale/tr/", "en", "tr")
 print("-----------------------------")
 print("Japanese")
 translate_folder("A:/Repos/adventora/website/locale/ja/", "en", "ja")
+print("-----------------------------")
+print("Czech")
+translate_folder("A:/Repos/adventora/website/locale/cs/", "en", "cs")
+print("-----------------------------")
+print("Danish")
+translate_folder("A:/Repos/adventora/website/locale/da/", "en", "da")
+print("-----------------------------")
+print("Greek")
+translate_folder("A:/Repos/adventora/website/locale/el/", "en", "el")
+print("-----------------------------")
+print("Finnish")
+translate_folder("A:/Repos/adventora/website/locale/fi/", "en", "fi")
+print("-----------------------------")
+print("Hungarian")
+translate_folder("A:/Repos/adventora/website/locale/hu/", "en", "hu")
+print("-----------------------------")
+print("Icelandic")
+translate_folder("A:/Repos/adventora/website/locale/is/", "en", "is")
+print("-----------------------------")
+print("Croatian")
+translate_folder("A:/Repos/adventora/website/locale/hr/", "en", "hr")
+print("-----------------------------")
+print("Macedonian")
+translate_folder("A:/Repos/adventora/website/locale/mk/", "en", "mk")
+print("-----------------------------")
+print("Serbian")
+translate_folder("A:/Repos/adventora/website/locale/sr/", "en", "sr")
+print("-----------------------------")
+print("Korean")
+translate_folder("A:/Repos/adventora/website/locale/ko/", "en", "ko")
+print("-----------------------------")
+print("Dutch")
+translate_folder("A:/Repos/adventora/website/locale/nl/", "en", "nl")
+print("-----------------------------")
+print("Norwegian")
+translate_folder("A:/Repos/adventora/website/locale/no/", "en", "no")
+print("-----------------------------")
+print("Swedish")
+translate_folder("A:/Repos/adventora/website/locale/sv/", "en", "sv")
 print("-----------------------------")
 print("Done")
 new_unix = int(time.time())
