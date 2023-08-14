@@ -116,7 +116,7 @@ msgstr "УВАГА"
 
 #: .\adventora\templates\base.html:226
 #, fuzzy
-#| msgid "Adventora supports small and medium business"
+
 msgid "Adventora supports small, medium and large businesses"
 msgstr "Adventora підтримує малий, середній та великий бізнес"
 
