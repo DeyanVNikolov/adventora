@@ -36,6 +36,9 @@ def is_hotel_confirmed(func):
     return wrapper
 
 
+def mainpage(request):
+    return redirect('dashboard')
+
 
 @login_required
 @is_current_user_role_manager
@@ -189,4 +192,5 @@ def room(request, hotel_id, room_id):
     # TODO Room images
     # TODO Room reservations
     pass
+
 

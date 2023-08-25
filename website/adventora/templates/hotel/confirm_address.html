@@ -4,11 +4,125 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
-<iframe title="Адрес" width="900px" height="300px" src="https://www.openstreetmap.org/export/embed.html?bbox={{ lon }},{{ lat }}&layer=mapnik"></iframe>
 
+    {% block addhead %}
 
-{% csrf_token %}
-    {% crispy form %}
+    {% endblock %}
 
+    <p style="display: none">
+        {% block show %}true;{% endblock %}
+    </p>
 
+    <script>
+        // add tags has-aside-left has-aside-mobile-transition has-navbar-fixed-top has-aside-expanded to html
+        document.getElementsByTagName("html")[0].classList.add("has-aside-left", "has-aside-mobile-transition", "has-navbar-fixed-top", "has-aside-expanded");
+    </script>
+    <style>
+        .container.is-fluid {
+            padding: 0;
+        }
+    </style>
+    <div id="app" style="padding-left: 15px; padding-right: 15px">
+
+        <aside class="aside is-placed-left is-expanded">
+            <div class="aside-tools">
+                <div class="aside-tools-label">
+                    {% if hotel and hotel.approved %}
+                        {{ hotel.name }}
+                    {% else %}
+                        {% trans "You don't have a hotel" %}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="menu is-menu-main">
+                <p class="menu-label">{% trans "General Settings" %}</p>
+                <ul class="menu-list">
+                    <li>
+                        <a href="{% url 'dashboard' %}" class="is-active router-link-active has-icon">
+                            <span class="icon"><i class="mdi mdi-desktop-mac"></i></span>
+                            <span class="menu-item-label">{% trans "Dashboard" %}</span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="menu-label">{% trans "Management" %}</p>
+                <ul class="menu-list">
+                    <li>
+                        <a href="tables.html" class="has-icon">
+                            <span class="icon has-update-mark"><i class="mdi mdi-table"></i></span>
+                            <span class="menu-item-label">Tables</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <section class="section is-title-bar">
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <ul>
+                            <li>{% trans "Admin" %}</li>
+                            <li>{% trans "Dashboard" %}</li>
+                            <li>{% trans "Confirm Address" %}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="buttons is-right">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero is-hero-bar">
+            <div class="hero-body">
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item"><h1 class="title">
+                            {% trans "Confirm Address" %}
+                        </h1></div>
+                    </div>
+                    <div class="level-right" style="display: none;">
+                        <div class="level-item"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container has-text-centered" style="max-width: 50vw !important;">
+            <br><br><br>
+            <style>
+                #map_address {
+                    width: 100% !important;
+                    min-height: 400px;
+                }
+
+                .field {
+                    margin-top: 30px !important;
+                }
+            </style>
+            <iframe title="Адрес" width="100%" height="500px" src="http://m.osmtools.de/?lon={{ lon }}&lat={{ lat }}&zoom=19&mlon={{ lon }}&mlat={{ lat }}&icon=4&iframe=1" loading="lazy">
+                LOADING...
+            </iframe>
+
+            {% csrf_token %}
+            {% crispy form %}
+        </div>
+
+    </div>
+
+    <script>
+        {#    change cursor when hovering#}
+        $('.captcha').hover(function () {
+            $(this).css('cursor', 'pointer');
+        }, function () {
+            $(this).css('cursor', 'auto');
+        });
+
+        $('.captcha').click(function () {
+            $.getJSON("/captcha/refresh/", function (result) {
+                $('.captcha').attr('src', result['image_url']);
+                $('#id_captcha_0').val(result['key'])
+            });
+        });
+    </script>
 {% endblock %}

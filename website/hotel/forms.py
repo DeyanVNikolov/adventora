@@ -6,6 +6,8 @@ from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm, PasswordChangeForm
 from django.contrib.gis.geos import Point
+from django.urls import reverse_lazy
+from django.utils.safestring import mark_safe
 from django_countries.fields import CountryField, LazyTypedChoiceField
 from django_countries.widgets import CountrySelectWidget
 from location_field.forms.plain import PlainLocationField
@@ -15,8 +17,6 @@ from phonenumber_field.formfields import PhoneNumberField
 from phonenumber_field.widgets import PhoneNumberPrefixWidget
 from ckeditor.widgets import CKEditorWidget
 from django.utils.translation import gettext_lazy as _
-
-
 
 
 class RegisterHotelForm(forms.Form):
@@ -31,8 +31,25 @@ class RegisterHotelForm(forms.Form):
     mol_name = forms.CharField(max_length=100, label=_('Authorized Person'))
     stars = forms.IntegerField(label=_('Stars'), min_value=1, max_value=6)
     captcha = CaptchaField()
+    read_privacy_policy = forms.BooleanField(
+        label=mark_safe(_('I have read and agree to the <a href="/privacy" target="_blank">privacy policy</a>')),
+        required=True,
+        widget=forms.CheckboxInput(attrs={'class': 'form-check-input'})
+    )
+    read_terms_and_conditions = forms.BooleanField(
+        label=mark_safe(_('I have read and agree to the <a href="/terms-of-use" target="_blank">terms and conditions</a>')),
+        required=True,
+        widget=forms.CheckboxInput(attrs={'class': 'form-check-input'})
+    )
+    liability = forms.BooleanField(
+        label=mark_safe(
+            _('I hereby certify, under penalty of law, that the information provided about myself and my hotel is accurate and complete to the best of my knowledge.<br> I understand that any false or misleading information provided may result in the immdiate suspesion of my hotel listing from Adventora and may lead to potential legal consequences.')),
+        required=True,
+        widget=forms.CheckboxInput(attrs={'class': 'form-check-input'})
+    )
 
-    helper = FormHelper()
+
+    helper=FormHelper()
     helper.form_method = 'POST'
     helper.add_input(Submit('submit', _('Register Hotel')))
 
@@ -42,8 +59,6 @@ class ConfirmAddressForm(forms.Form):
     helper = FormHelper()
     helper.form_method = 'POST'
     helper.add_input(Submit('submit', _('Confirm Address')))
-
-
 
 # class Room(models.Model):
 #     types_of_luxuries_choices = (

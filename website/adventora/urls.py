@@ -26,6 +26,5 @@ urlpatterns = [
     path('promocode/', include('promocode.urls')),
     path('captcha/', include('captcha.urls')),
     path('hotel/', include('hotel.urls')),
-    path("__debug__/", include("debug_toolbar.urls")),
     path('lang/', include('django.conf.urls.i18n')),
 ]
