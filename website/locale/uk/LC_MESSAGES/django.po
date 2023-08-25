@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 18:21+0300\n"
+"POT-Creation-Date: 2023-08-16 20:19+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,6 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 #: .\adventora\templates\auth\edit_profile.html:10
 msgid "Not confirmed"
@@ -45,124 +47,181 @@ msgid "Turn on"
 msgstr "Ввімкнути"
 
 #: .\adventora\templates\auth\edit_profile.html:25
-#, fuzzy
-#| msgid "Confirm password"
 msgid "Change password"
-msgstr "Підтвердьте пароль"
+msgstr "Змінити пароль"
 
 #: .\adventora\templates\auth\edit_profile.html:28
 #: .\authentication\forms.py:143
 msgid "Delete Account"
 msgstr "Видалити аккаунт"
 
-#: .\adventora\templates\auth\sign_in.html:27
+#: .\adventora\templates\auth\sign_in.html:28
 #: .\adventora\templates\auth\sign_up.html:28
 msgid "Login with Google"
 msgstr "Увійдіть через Google"
 
-#: .\adventora\templates\auth\sign_in.html:33
+#: .\adventora\templates\auth\sign_in.html:34
 #: .\adventora\templates\auth\sign_up.html:34
 msgid "Login with Trello"
 msgstr "Увійдіть за допомогою Trello"
 
-#: .\adventora\templates\auth\sign_in.html:41
+#: .\adventora\templates\auth\sign_in.html:42
 #: .\adventora\templates\auth\sign_up.html:42
 msgid "Login with GitHub"
 msgstr "Увійдіть за допомогою GitHub"
 
-#: .\adventora\templates\auth\sign_in.html:47
+#: .\adventora\templates\auth\sign_in.html:48
 #: .\adventora\templates\auth\sign_up.html:48
 msgid "Login with Patreon"
 msgstr "Увійдіть за допомогою Patreon"
 
-#: .\adventora\templates\auth\sign_in.html:53
+#: .\adventora\templates\auth\sign_in.html:54
 #: .\adventora\templates\auth\sign_up.html:54
 msgid "Login with Amazon"
 msgstr "Увійдіть через Amazon"
 
-#: .\adventora\templates\auth\sign_in.html:62
+#: .\adventora\templates\auth\sign_in.html:63
 #: .\adventora\templates\auth\sign_up.html:63
 msgid "Login with Reddit"
 msgstr "Увійдіть за допомогою Reddit"
 
-#: .\adventora\templates\auth\sign_in.html:68
+#: .\adventora\templates\auth\sign_in.html:69
 #: .\adventora\templates\auth\sign_up.html:69
 msgid "Login with Steam"
 msgstr "Увійдіть за допомогою Steam"
 
-#: .\adventora\templates\auth\sign_in.html:77
+#: .\adventora\templates\auth\sign_in.html:78
 #: .\adventora\templates\auth\sign_up.html:78
 msgid "Login with Spotify."
-msgstr "Увійдіть за допомогою Spotify"
+msgstr "Увійдіть за допомогою Spotify."
 
-#: .\adventora\templates\auth\sign_in.html:83
+#: .\adventora\templates\auth\sign_in.html:84
 #: .\adventora\templates\auth\sign_up.html:84
 msgid "Login with VK"
 msgstr "Увійти через ВК"
 
-#: .\adventora\templates\base.html:148
-msgid "Panel"
-msgstr "Панель"
+#: .\adventora\templates\base.html:135
+msgid "Hotel"
+msgstr "Готель"
 
-#: .\adventora\templates\base.html:152
+#: .\adventora\templates\base.html:141
+#: .\adventora\templates\hotel\confirm_address.html:43
+#: .\adventora\templates\hotel\confirm_address.html:64
+#: .\adventora\templates\hotel\dashboard.html:63
+#: .\adventora\templates\hotel\dashboard.html:84
+#: .\adventora\templates\hotel\dashboard.html:101
+#: .\adventora\templates\hotel\register_hotel.html:43
+#: .\adventora\templates\hotel\register_hotel.html:64
+msgid "Dashboard"
+msgstr "Панель приладів"
+
+#: .\adventora\templates\base.html:159
 msgid "Profile"
 msgstr "Профіль"
 
-#: .\adventora\templates\base.html:155
-msgid "Logout"
+#: .\adventora\templates\base.html:164 .\adventora\templates\base.html:174
+#: .\adventora\templates\base.html:176
+msgid "Log out"
 msgstr "Вийти"
 
-#: .\adventora\templates\base.html:160 .\authentication\forms.py:52
-msgid "Sign up"
-msgstr "Зареєструватися"
-
-#: .\adventora\templates\base.html:163 .\authentication\forms.py:24
+#: .\adventora\templates\base.html:181 .\authentication\forms.py:24
 msgid "Login"
 msgstr "Логін"
 
-#: .\adventora\templates\base.html:180
+#: .\adventora\templates\base.html:185 .\authentication\forms.py:52
+msgid "Sign up"
+msgstr "Зареєструватися"
+
+#: .\adventora\templates\base.html:191
+msgid "Language"
+msgstr "Мова"
+
+#: .\adventora\templates\base.html:230
 msgid "Error"
 msgstr "Помилка"
 
-#: .\adventora\templates\base.html:192
+#: .\adventora\templates\base.html:242
 msgid "Success"
 msgstr "Успіх"
 
-#: .\adventora\templates\base.html:203
+#: .\adventora\templates\base.html:253
 msgid "Warning"
 msgstr "УВАГА"
 
-#: .\adventora\templates\base.html:227
+#: .\adventora\templates\base.html:277
 msgid "Adventora supports small, medium and large businesses"
 msgstr "Adventora підтримує малий, середній та великий бізнес"
 
-#: .\adventora\templates\base.html:252
+#: .\adventora\templates\base.html:302
 msgid "All Rights Reserved"
 msgstr "Всі права захищені"
 
-#: .\adventora\templates\base.html:254
+#: .\adventora\templates\base.html:304
 msgid "Homepage"
 msgstr "Домашня сторінка"
 
-#: .\adventora\templates\base.html:255
+#: .\adventora\templates\base.html:305
 msgid "About us"
 msgstr "Про нас"
 
-#: .\adventora\templates\base.html:256
+#: .\adventora\templates\base.html:306
 msgid "Privacy"
 msgstr "Конфіденційність"
 
-#: .\adventora\templates\base.html:257
+#: .\adventora\templates\base.html:307
 msgid "Terms of use"
 msgstr "Умови використання"
 
-#: .\adventora\templates\base.html:258
+#: .\adventora\templates\base.html:308
 msgid "Contacts"
 msgstr "Контакти"
 
-#: .\adventora\templates\base.html:259
+#: .\adventora\templates\base.html:309
 msgid "Partnerships"
 msgstr "Партнерські відносини"
+
+#: .\adventora\templates\hotel\confirm_address.html:33
+#: .\adventora\templates\hotel\dashboard.html:53
+#: .\adventora\templates\hotel\dashboard.html:527
+#: .\adventora\templates\hotel\register_hotel.html:33
+msgid "You don't have a hotel"
+msgstr "У вас немає готелю"
+
+#: .\adventora\templates\hotel\confirm_address.html:38
+#: .\adventora\templates\hotel\dashboard.html:58
+#: .\adventora\templates\hotel\register_hotel.html:38
+msgid "General Settings"
+msgstr "Загальні налаштування"
+
+#: .\adventora\templates\hotel\confirm_address.html:47
+#: .\adventora\templates\hotel\dashboard.html:67
+#: .\adventora\templates\hotel\register_hotel.html:47
+msgid "Management"
+msgstr "управління"
+
+#: .\adventora\templates\hotel\confirm_address.html:63
+#: .\adventora\templates\hotel\dashboard.html:83
+#: .\adventora\templates\hotel\register_hotel.html:63
+#: .\authentication\models.py:11
+msgid "Admin"
+msgstr "адмін"
+
+#: .\adventora\templates\hotel\confirm_address.html:65
+#: .\adventora\templates\hotel\confirm_address.html:82 .\hotel\forms.py:61
+msgid "Confirm Address"
+msgstr "Підтвердіть адресу"
+
+#: .\adventora\templates\hotel\dashboard.html:521
+msgid ""
+"Your hotel is not yet approved. Allow us to confirm your info within 48 "
+"hours."
+msgstr "Ваш готель ще не схвалено. "
+
+#: .\adventora\templates\hotel\dashboard.html:529
+#: .\adventora\templates\hotel\register_hotel.html:65
+#: .\adventora\templates\hotel\register_hotel.html:82 .\hotel\forms.py:54
+msgid "Register Hotel"
+msgstr "Зареєструвати готель"
 
 #: .\adventora\templates\partnerships.html:9
 msgid "For partnerships contact us at"
@@ -230,8 +289,8 @@ msgstr ""
 
 #: .\authentication\forms.py:58 .\authentication\forms.py:99
 msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own "
-"hotel."
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
 msgstr ""
 "Менеджер готелю - нагляд за операціями та надання чудових послуг у вашому "
 "власному готелі."
@@ -317,10 +376,6 @@ msgstr "Менеджер"
 msgid "Employee"
 msgstr "Співробітник"
 
-#: .\authentication\models.py:11
-msgid "Admin"
-msgstr "адмін"
-
 #: .\authentication\views.py:35 .\authentication\views.py:202
 #: .\authentication\views.py:262
 msgid "A user with that email already exists."
@@ -385,7 +440,7 @@ msgstr "Користувача з таким іменем користувача
 
 #: .\authentication\views.py:139
 msgid "Successfully logged out."
-msgstr "Успішно вийшли."
+msgstr "Ви успішно вийшли."
 
 #: .\authentication\views.py:152 .\authentication\views.py:277
 msgid "Invalid role."
@@ -458,7 +513,7 @@ msgstr "Невірний код."
 
 #: .\authentication\views.py:539 .\authentication\views.py:569
 msgid "Two factor authentication is already enabled."
-msgstr "Двофакторна автентифікація вже ввімкнена."
+msgstr "Двофакторну автентифікацію вже ввімкнено."
 
 #: .\authentication\views.py:557 .\authentication\views.py:584
 msgid "Successfully enabled two factor authentication."
@@ -500,13 +555,34 @@ msgstr "Уповноважена особа"
 msgid "Stars"
 msgstr "Зірки"
 
-#: .\hotel\forms.py:37
-msgid "Register Hotel"
-msgstr "Зареєструвати готель"
+#: .\hotel\forms.py:35
+msgid ""
+"I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
+"policy</a>"
+msgstr ""
+"Я прочитав і приймаю <a href=\"/privacy\" target=\"_blank\">політику "
+"конфіденційності</a>"
 
-#: .\hotel\forms.py:44
-msgid "Confirm Address"
-msgstr "Підтвердіть адресу"
+#: .\hotel\forms.py:40
+msgid ""
+"I have read and agree to the <a href=\"/terms-of-use\" "
+"target=\"_blank\">terms and conditions</a>"
+msgstr ""
+"Я прочитав і приймаю <a href=\"/terms-of-use\" target=\"_blank\">умови "
+"використання</a>"
+
+#: .\hotel\forms.py:46
+msgid ""
+"I hereby certify, under penalty of law, that the information provided about "
+"myself and my hotel is accurate and complete to the best of my "
+"knowledge.<br> I understand that any false or misleading information "
+"provided may result in the immdiate suspesion of my hotel listing from "
+"Adventora and may lead to potential legal consequences."
+msgstr ""
+"Цим я засвідчую під страхом закону, що інформація, надана про мене та мій "
+"готель, є точною та повною, наскільки мені відомо.<br> Я розумію, що будь-"
+"яка надана неправдива або оманлива інформація може призвести до негайного "
+"призупинення діяльності мого готелю "
 
 #: .\hotel\models.py:19
 msgid "No description provided."
@@ -520,7 +596,7 @@ msgstr "Кімната"
 msgid "Rooms"
 msgstr "Кімнати"
 
-#: .\hotel\views.py:23 .\hotel\views.py:156
+#: .\hotel\views.py:23 .\hotel\views.py:159
 msgid "You do not have permission to view this page"
 msgstr "Ви не маєте дозволу на перегляд цієї сторінки"
 
@@ -528,59 +604,30 @@ msgstr "Ви не маєте дозволу на перегляд цієї ст�
 msgid "Your hotel is not approved yet"
 msgstr "Ваш готель ще не схвалено"
 
-#: .\hotel\views.py:86
+#: .\hotel\views.py:89
 msgid "Successfully registered hotel"
 msgstr "Успішно зареєстрований готель"
 
-#: .\hotel\views.py:90
+#: .\hotel\views.py:93
 msgid "Error while registering hotel"
 msgstr "Помилка при реєстрації готелю"
 
-#: .\hotel\views.py:97
+#: .\hotel\views.py:100
 msgid "You have already registered a hotel"
 msgstr "Ви вже зареєстрували готель"
 
-#: .\hotel\views.py:115
+#: .\hotel\views.py:118
 msgid "You have not registered a hotel yet"
 msgstr "Ви ще не зареєстрували готель"
 
-#: .\hotel\views.py:133
+#: .\hotel\views.py:136
 msgid "Successfully confirmed address"
 msgstr "Адресу успішно підтверджено"
 
-#: .\hotel\views.py:136
+#: .\hotel\views.py:139
 msgid "Error while confirming address"
 msgstr "Помилка під час підтвердження адреси"
 
-#: .\hotel\views.py:152
+#: .\hotel\views.py:155
 msgid "No such hotel"
 msgstr "Немає такого готелю"
-
-#, fuzzy
-#~| msgid "Privacy"
-#~ msgid "Privacy Policy"
-#~ msgstr "Конфіденційність"
-
-#, fuzzy
-#~| msgid "First name"
-#~ msgid "First and last name"
-#~ msgstr "Ім'я"
-
-#, fuzzy
-#~| msgid "Email address must be valid"
-#~ msgid "Email address"
-#~ msgstr "Адреса електронної пошти має бути дійсною"
-
-#, fuzzy
-#~| msgid "Hotel Name"
-#~ msgid "Hotel name"
-#~ msgstr "Назва готелю"
-
-#, fuzzy
-#~| msgid "Manager"
-#~ msgid "Manager's name"
-#~ msgstr "Менеджер"
-
-#, fuzzy
-#~ msgid "Delete account"
-#~ msgstr "Видалити аккаунт"

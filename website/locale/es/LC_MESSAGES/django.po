@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 18:21+0300\n"
+"POT-Creation-Date: 2023-08-16 20:19+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,124 +47,181 @@ msgid "Turn on"
 msgstr "Encender"
 
 #: .\adventora\templates\auth\edit_profile.html:25
-#, fuzzy
-#| msgid "Confirm password"
 msgid "Change password"
-msgstr "Confirmado"
+msgstr "Cambiar la contraseña"
 
 #: .\adventora\templates\auth\edit_profile.html:28
 #: .\authentication\forms.py:143
 msgid "Delete Account"
 msgstr "Borrar cuenta"
 
-#: .\adventora\templates\auth\sign_in.html:27
+#: .\adventora\templates\auth\sign_in.html:28
 #: .\adventora\templates\auth\sign_up.html:28
 msgid "Login with Google"
 msgstr "Iniciar sesión con Google"
 
-#: .\adventora\templates\auth\sign_in.html:33
+#: .\adventora\templates\auth\sign_in.html:34
 #: .\adventora\templates\auth\sign_up.html:34
 msgid "Login with Trello"
 msgstr "Iniciar sesión con Trello"
 
-#: .\adventora\templates\auth\sign_in.html:41
+#: .\adventora\templates\auth\sign_in.html:42
 #: .\adventora\templates\auth\sign_up.html:42
 msgid "Login with GitHub"
 msgstr "Iniciar sesión con GitHub"
 
-#: .\adventora\templates\auth\sign_in.html:47
+#: .\adventora\templates\auth\sign_in.html:48
 #: .\adventora\templates\auth\sign_up.html:48
 msgid "Login with Patreon"
 msgstr "Iniciar sesión con Patreon"
 
-#: .\adventora\templates\auth\sign_in.html:53
+#: .\adventora\templates\auth\sign_in.html:54
 #: .\adventora\templates\auth\sign_up.html:54
 msgid "Login with Amazon"
 msgstr "Iniciar sesión con Amazon"
 
-#: .\adventora\templates\auth\sign_in.html:62
+#: .\adventora\templates\auth\sign_in.html:63
 #: .\adventora\templates\auth\sign_up.html:63
 msgid "Login with Reddit"
 msgstr "Iniciar sesión con Reddit"
 
-#: .\adventora\templates\auth\sign_in.html:68
+#: .\adventora\templates\auth\sign_in.html:69
 #: .\adventora\templates\auth\sign_up.html:69
 msgid "Login with Steam"
 msgstr "Iniciar sesión con Steam"
 
-#: .\adventora\templates\auth\sign_in.html:77
+#: .\adventora\templates\auth\sign_in.html:78
 #: .\adventora\templates\auth\sign_up.html:78
 msgid "Login with Spotify."
-msgstr "Iniciar sesión con Spotify"
+msgstr "Inicie sesión con Spotify."
 
-#: .\adventora\templates\auth\sign_in.html:83
+#: .\adventora\templates\auth\sign_in.html:84
 #: .\adventora\templates\auth\sign_up.html:84
 msgid "Login with VK"
 msgstr "Iniciar sesión con VK"
 
-#: .\adventora\templates\base.html:148
-msgid "Panel"
+#: .\adventora\templates\base.html:135
+msgid "Hotel"
+msgstr "Hotel"
+
+#: .\adventora\templates\base.html:141
+#: .\adventora\templates\hotel\confirm_address.html:43
+#: .\adventora\templates\hotel\confirm_address.html:64
+#: .\adventora\templates\hotel\dashboard.html:63
+#: .\adventora\templates\hotel\dashboard.html:84
+#: .\adventora\templates\hotel\dashboard.html:101
+#: .\adventora\templates\hotel\register_hotel.html:43
+#: .\adventora\templates\hotel\register_hotel.html:64
+msgid "Dashboard"
 msgstr "Panel"
 
-#: .\adventora\templates\base.html:152
+#: .\adventora\templates\base.html:159
 msgid "Profile"
 msgstr "Perfil"
 
-#: .\adventora\templates\base.html:155
-msgid "Logout"
+#: .\adventora\templates\base.html:164 .\adventora\templates\base.html:174
+#: .\adventora\templates\base.html:176
+msgid "Log out"
 msgstr "Cerrar sesión"
 
-#: .\adventora\templates\base.html:160 .\authentication\forms.py:52
-msgid "Sign up"
-msgstr "Inscribirse"
-
-#: .\adventora\templates\base.html:163 .\authentication\forms.py:24
+#: .\adventora\templates\base.html:181 .\authentication\forms.py:24
 msgid "Login"
 msgstr "Acceso"
 
-#: .\adventora\templates\base.html:180
+#: .\adventora\templates\base.html:185 .\authentication\forms.py:52
+msgid "Sign up"
+msgstr "Inscribirse"
+
+#: .\adventora\templates\base.html:191
+msgid "Language"
+msgstr "Idioma"
+
+#: .\adventora\templates\base.html:230
 msgid "Error"
 msgstr "Error"
 
-#: .\adventora\templates\base.html:192
+#: .\adventora\templates\base.html:242
 msgid "Success"
 msgstr "Éxito"
 
-#: .\adventora\templates\base.html:203
+#: .\adventora\templates\base.html:253
 msgid "Warning"
 msgstr "Advertencia"
 
-#: .\adventora\templates\base.html:227
+#: .\adventora\templates\base.html:277
 msgid "Adventora supports small, medium and large businesses"
 msgstr "Adventora apoya a las pequeñas, medianas y grandes empresas"
 
-#: .\adventora\templates\base.html:252
+#: .\adventora\templates\base.html:302
 msgid "All Rights Reserved"
 msgstr "Reservados todos los derechos"
 
-#: .\adventora\templates\base.html:254
+#: .\adventora\templates\base.html:304
 msgid "Homepage"
 msgstr "Página principal"
 
-#: .\adventora\templates\base.html:255
+#: .\adventora\templates\base.html:305
 msgid "About us"
 msgstr "Sobre nosotros"
 
-#: .\adventora\templates\base.html:256
+#: .\adventora\templates\base.html:306
 msgid "Privacy"
 msgstr "Privacidad"
 
-#: .\adventora\templates\base.html:257
+#: .\adventora\templates\base.html:307
 msgid "Terms of use"
 msgstr "Condiciones de uso"
 
-#: .\adventora\templates\base.html:258
+#: .\adventora\templates\base.html:308
 msgid "Contacts"
 msgstr "Contactos"
 
-#: .\adventora\templates\base.html:259
+#: .\adventora\templates\base.html:309
 msgid "Partnerships"
 msgstr "Asociaciones"
+
+#: .\adventora\templates\hotel\confirm_address.html:33
+#: .\adventora\templates\hotel\dashboard.html:53
+#: .\adventora\templates\hotel\dashboard.html:527
+#: .\adventora\templates\hotel\register_hotel.html:33
+msgid "You don't have a hotel"
+msgstr "no tienes hotel"
+
+#: .\adventora\templates\hotel\confirm_address.html:38
+#: .\adventora\templates\hotel\dashboard.html:58
+#: .\adventora\templates\hotel\register_hotel.html:38
+msgid "General Settings"
+msgstr "Configuración general"
+
+#: .\adventora\templates\hotel\confirm_address.html:47
+#: .\adventora\templates\hotel\dashboard.html:67
+#: .\adventora\templates\hotel\register_hotel.html:47
+msgid "Management"
+msgstr "Gestión"
+
+#: .\adventora\templates\hotel\confirm_address.html:63
+#: .\adventora\templates\hotel\dashboard.html:83
+#: .\adventora\templates\hotel\register_hotel.html:63
+#: .\authentication\models.py:11
+msgid "Admin"
+msgstr "Administración"
+
+#: .\adventora\templates\hotel\confirm_address.html:65
+#: .\adventora\templates\hotel\confirm_address.html:82 .\hotel\forms.py:61
+msgid "Confirm Address"
+msgstr "Confirmar dirección"
+
+#: .\adventora\templates\hotel\dashboard.html:521
+msgid ""
+"Your hotel is not yet approved. Allow us to confirm your info within 48 "
+"hours."
+msgstr "Su hotel aún no está aprobado. "
+
+#: .\adventora\templates\hotel\dashboard.html:529
+#: .\adventora\templates\hotel\register_hotel.html:65
+#: .\adventora\templates\hotel\register_hotel.html:82 .\hotel\forms.py:54
+msgid "Register Hotel"
+msgstr "Registrar Hotel"
 
 #: .\adventora\templates\partnerships.html:9
 msgid "For partnerships contact us at"
@@ -217,7 +275,7 @@ msgstr "La contraseña debe tener al menos 8 caracteres. "
 
 #: .\authentication\forms.py:42
 msgid "Confirm password"
-msgstr "Confirmado"
+msgstr "Confirmar Contraseña"
 
 #: .\authentication\forms.py:43
 msgid "Enter the same password as above, for verification."
@@ -231,8 +289,8 @@ msgstr ""
 
 #: .\authentication\forms.py:58 .\authentication\forms.py:99
 msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own "
-"hotel."
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
 msgstr ""
 "Gerente de hotel: Supervise las operaciones y brinde un excelente servicio "
 "en su propio hotel."
@@ -242,8 +300,8 @@ msgid ""
 "Employee - Contribute your expertise to a thriving workplace, such as a "
 "hotel or guest house."
 msgstr ""
-"Empleado: contribuya con su experiencia a un lugar de trabajo próspero, como "
-"un hotel o una casa de huéspedes."
+"Empleado: contribuya con su experiencia a un lugar de trabajo próspero, como"
+" un hotel o una casa de huéspedes."
 
 #: .\authentication\forms.py:65
 msgid "Submit"
@@ -291,7 +349,7 @@ msgstr "Nueva contraseña"
 
 #: .\authentication\forms.py:121 .\authentication\forms.py:131
 msgid "Confirm New Password"
-msgstr "Confirmado"
+msgstr "Confirmar nueva contraseña"
 
 #: .\authentication\forms.py:176 .\authentication\forms.py:185
 #: .\authentication\forms.py:194
@@ -317,10 +375,6 @@ msgstr "Gerente"
 #: .\authentication\models.py:11
 msgid "Employee"
 msgstr "Empleado"
-
-#: .\authentication\models.py:11
-msgid "Admin"
-msgstr "Administración"
 
 #: .\authentication\views.py:35 .\authentication\views.py:202
 #: .\authentication\views.py:262
@@ -501,13 +555,34 @@ msgstr "Persona autorizada"
 msgid "Stars"
 msgstr "Estrellas"
 
-#: .\hotel\forms.py:37
-msgid "Register Hotel"
-msgstr "Registrar Hotel"
+#: .\hotel\forms.py:35
+msgid ""
+"I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
+"policy</a>"
+msgstr ""
+"He leído y acepto la <a href=\"/privacy\" target=\"_blank\">política de "
+"privacidad</a>"
 
-#: .\hotel\forms.py:44
-msgid "Confirm Address"
-msgstr "Confirmado"
+#: .\hotel\forms.py:40
+msgid ""
+"I have read and agree to the <a href=\"/terms-of-use\" "
+"target=\"_blank\">terms and conditions</a>"
+msgstr ""
+"He leído y acepto los <a href=\"/terms-of-use\" target=\"_blank\">términos y"
+" condiciones</a>"
+
+#: .\hotel\forms.py:46
+msgid ""
+"I hereby certify, under penalty of law, that the information provided about "
+"myself and my hotel is accurate and complete to the best of my "
+"knowledge.<br> I understand that any false or misleading information "
+"provided may result in the immdiate suspesion of my hotel listing from "
+"Adventora and may lead to potential legal consequences."
+msgstr ""
+"Por la presente certifico, bajo pena de ley, que la información "
+"proporcionada sobre mí y mi hotel es precisa y completa según mi leal saber "
+"y entender.<br> Entiendo que cualquier información falsa o engañosa "
+"proporcionada puede resultar en la suspensión inmediata de mi hotel. "
 
 #: .\hotel\models.py:19
 msgid "No description provided."
@@ -521,7 +596,7 @@ msgstr "Habitación"
 msgid "Rooms"
 msgstr "Habitaciones"
 
-#: .\hotel\views.py:23 .\hotel\views.py:156
+#: .\hotel\views.py:23 .\hotel\views.py:159
 msgid "You do not have permission to view this page"
 msgstr "No tienes permiso para ver esta página"
 
@@ -529,361 +604,30 @@ msgstr "No tienes permiso para ver esta página"
 msgid "Your hotel is not approved yet"
 msgstr "Su hotel aún no está aprobado"
 
-#: .\hotel\views.py:86
+#: .\hotel\views.py:89
 msgid "Successfully registered hotel"
 msgstr "Hotel registrado correctamente"
 
-#: .\hotel\views.py:90
+#: .\hotel\views.py:93
 msgid "Error while registering hotel"
 msgstr "Error al registrar hotel"
 
-#: .\hotel\views.py:97
+#: .\hotel\views.py:100
 msgid "You have already registered a hotel"
 msgstr "Ya has registrado un hotel"
 
-#: .\hotel\views.py:115
+#: .\hotel\views.py:118
 msgid "You have not registered a hotel yet"
 msgstr "Aún no has registrado un hotel"
 
-#: .\hotel\views.py:133
+#: .\hotel\views.py:136
 msgid "Successfully confirmed address"
 msgstr "Dirección confirmada con éxito"
 
-#: .\hotel\views.py:136
+#: .\hotel\views.py:139
 msgid "Error while confirming address"
 msgstr "Error al confirmar la dirección"
 
-#: .\hotel\views.py:152
+#: .\hotel\views.py:155
 msgid "No such hotel"
 msgstr "No hay tal hotel"
-
-#~ msgid "Notice addressed to"
-#~ msgstr "Aviso dirigido a"
-
-#~ msgid "NOTICE OF ACCOUNT SUSPENSION"
-#~ msgstr "AVISO DE SUSPENSIÓN DE LA CUENTA"
-
-#~ msgid ""
-#~ "We regret to inform you that your account has been suspended from "
-#~ "accessing our website due to violations of our terms of service. This "
-#~ "suspension is effective immediately."
-#~ msgstr ""
-#~ "Lamentamos informarle que su cuenta ha sido suspendida para acceder a "
-#~ "nuestro sitio web debido a violaciones de nuestros términos de servicio. "
-
-#~ msgid "Reason for Suspension:"
-#~ msgstr "Motivo de la suspensión:"
-
-#~ msgid ""
-#~ "Your account has been found to have engaged in activities that are in "
-#~ "direct violation of our community guidelines and terms of use."
-#~ msgstr ""
-#~ "Se ha descubierto que su cuenta se ha involucrado en actividades que "
-#~ "violan directamente las pautas de nuestra comunidad y los términos de uso."
-
-#~ msgid "Effects of Suspension:"
-#~ msgstr "Efectos de la Suspensión:"
-
-#~ msgid ""
-#~ "During the suspension period, you will not be able to log in to your "
-#~ "account or access any of the features and services provided by our "
-#~ "website."
-#~ msgstr ""
-#~ "Durante el período de suspensión, no podrá iniciar sesión en su cuenta ni "
-#~ "acceder a ninguna de las funciones y servicios proporcionados por nuestro "
-#~ "sitio web."
-
-#~ msgid "Appealing the Suspension:"
-#~ msgstr "Apelación de la suspensión:"
-
-#~ msgid ""
-#~ "If you believe this suspension has been issued in error, or if you would "
-#~ "like to appeal this decision, you may contact our support team at"
-#~ msgstr ""
-#~ "Si cree que esta suspensión se emitió por error o si desea apelar esta "
-#~ "decisión, puede comunicarse con nuestro equipo de soporte al"
-
-#~ msgid ""
-#~ "Please provide any relevant information and details that you believe may "
-#~ "assist in reviewing your suspension."
-#~ msgstr ""
-#~ "Proporcione cualquier información y detalles relevantes que crea que "
-#~ "pueden ayudar a revisar su suspensión."
-
-#~ msgid "Duration of Suspension:"
-#~ msgstr "Duración de la suspensión:"
-
-#~ msgid ""
-#~ "The duration of your suspension will be determined based on the severity "
-#~ "of the violation. We will review your case and notify you of any updates "
-#~ "regarding the status of your account suspension."
-#~ msgstr ""
-#~ "La duración de su suspensión se determinará en función de la gravedad de "
-#~ "la infracción. "
-
-#~ msgid ""
-#~ "We take the enforcement of our community guidelines and terms of use "
-#~ "seriously in order to provide a safe and respectful environment for all "
-#~ "of our users. We appreciate your understanding and cooperation."
-#~ msgstr ""
-#~ "Nos tomamos muy en serio el cumplimiento de las pautas de nuestra "
-#~ "comunidad y los términos de uso para proporcionar un entorno seguro y "
-#~ "respetuoso para todos nuestros usuarios. "
-
-#~ msgid "Sincerely"
-#~ msgstr "Atentamente"
-
-#~ msgid "Adventora Privacy Policy"
-#~ msgstr "Política de privacidad de Adventora"
-
-#~ msgid "Last Updated: August 13, 2023"
-#~ msgstr "Última actualización: 13 de agosto de 2023"
-
-#~ msgid "This"
-#~ msgstr "Este"
-
-#, fuzzy
-#~| msgid "Privacy"
-#~ msgid "Privacy Policy"
-#~ msgstr "Privacidad"
-
-#~ msgid "explains how Adventora (\\"
-#~ msgstr "explica cómo Adventora (\\"
-
-#~ msgid "\\"
-#~ msgstr "\\"
-
-#~ msgid "1. Collection of Information"
-#~ msgstr "1. Recolección de Información"
-
-#~ msgid ""
-#~ "We collect various personal data from users to ensure the smooth "
-#~ "functioning of our reservation services. This includes, but is not "
-#~ "limited to:"
-#~ msgstr ""
-#~ "Recopilamos varios datos personales de los usuarios para garantizar el "
-#~ "buen funcionamiento de nuestros servicios de reserva. "
-
-#, fuzzy
-#~| msgid "First name"
-#~ msgid "First and last name"
-#~ msgstr "Nombre de pila"
-
-#, fuzzy
-#~| msgid "Email address must be valid"
-#~ msgid "Email address"
-#~ msgstr "La dirección de correo electrónico debe ser válida"
-
-#~ msgid "Phone numbers"
-#~ msgstr "Números de teléfono"
-
-#~ msgid "Nationality"
-#~ msgstr "Nacionalidad"
-
-#~ msgid "For individuals marked as \\"
-#~ msgstr "Para individuos marcados como \\"
-
-#, fuzzy
-#~| msgid "Hotel Name"
-#~ msgid "Hotel name"
-#~ msgstr "Nombre del hotel"
-
-#, fuzzy
-#~| msgid "Manager"
-#~ msgid "Manager's name"
-#~ msgstr "Gerente"
-
-#~ msgid "Hotel's unique identification number (EIK)"
-#~ msgstr "Número de identificación único del hotel (EIK)"
-
-#~ msgid "Hotel's phone number"
-#~ msgstr "Número de teléfono del hotel"
-
-#~ msgid "Hotel's email address"
-#~ msgstr "dirección de correo electrónico del hotel"
-
-#~ msgid "Hotel's physical address"
-#~ msgstr "Dirección física del hotel"
-
-#~ msgid "2. Purpose and Use of Data"
-#~ msgstr "2. Finalidad y uso de los datos"
-
-#~ msgid ""
-#~ "The collected personal information serves as a basis for smooth, secure, "
-#~ "and effective reservations and bookings. Your data facilitates account "
-#~ "management, responsive customer support, and critical communication. If "
-#~ "identified as a hotel manager, certain details are shared with the "
-#~ "establishment to optimize reservation monitoring."
-#~ msgstr ""
-#~ "La información personal recopilada sirve como base para reservas y "
-#~ "reservas sin problemas, seguras y efectivas. "
-
-#~ msgid "3. Engagement with Third-Party Services"
-#~ msgstr "3. Compromiso con servicios de terceros"
-
-#~ msgid ""
-#~ "To enhance user experience and expand our offerings, we engage respected "
-#~ "third-party services, including but not limited to:"
-#~ msgstr ""
-#~ "Para mejorar la experiencia del usuario y expandir nuestras ofertas, "
-#~ "contratamos servicios de terceros respetados, que incluyen, entre otros:"
-
-#~ msgid "Google Analytics for in-depth website analysis"
-#~ msgstr "Google Analytics para un análisis detallado del sitio web"
-
-#~ msgid ""
-#~ "Top-Rent-A-Car for promotional banners, widgets, and joint promotions"
-#~ msgstr ""
-#~ "Top-Rent-A-Car para banners promocionales, widgets y promociones conjuntas"
-
-#~ msgid ""
-#~ "Social services for login, including Google, GitHub, Reddit, Spotify, "
-#~ "Trello, Patreon, Steam, VK, and Amazon"
-#~ msgstr ""
-#~ "Servicios sociales para iniciar sesión, incluidos Google, GitHub, Reddit, "
-#~ "Spotify, Trello, Patreon, Steam, VK y Amazon"
-
-#~ msgid ""
-#~ "Payment processing through reputable providers like Stripe and epay.bg "
-#~ "for secure financial transactions"
-#~ msgstr ""
-#~ "Procesamiento de pagos a través de proveedores acreditados como Stripe y "
-#~ "epay.bg para transacciones financieras seguras"
-
-#~ msgid "4. Tracking Mechanisms and Cookies"
-#~ msgstr "4. Mecanismos de Seguimiento y Cookies"
-
-#~ msgid ""
-#~ "Cookies serve as essential components of our digital architecture, "
-#~ "contributing to seamless session retention and preserving data for "
-#~ "personalization, such as theme settings and language preferences. "
-#~ "Additionally, certain third-party cookies may be used in conjunction with "
-#~ "our respected partners."
-#~ msgstr ""
-#~ "Las cookies sirven como componentes esenciales de nuestra arquitectura "
-#~ "digital, lo que contribuye a la retención de sesiones sin inconvenientes "
-#~ "y a la conservación de datos para la personalización, como la "
-#~ "configuración de temas y las preferencias de idioma. "
-
-#~ msgid "5. Data Retention Strategy"
-#~ msgstr "5. Estrategia de retención de datos"
-
-#~ msgid ""
-#~ "User personal data remains stored in our systems throughout the active "
-#~ "account period. The option to delete your account is provided, allowing "
-#~ "voluntary removal of associated data. For hotel managers, data related to "
-#~ "establishments is retained for up to one year to comply with security "
-#~ "protocols and potential legal requirements."
-#~ msgstr ""
-#~ "Los datos personales del usuario permanecen almacenados en nuestros "
-#~ "sistemas durante todo el período de cuenta activa. "
-
-#~ msgid "6. Robust Security Framework"
-#~ msgstr "6. Marco de seguridad robusto"
-
-#~ msgid ""
-#~ "With the help of modern encryption protocols, including a 512-character "
-#~ "encryption key, we enforce strict measures to protect sensitive data. The "
-#~ "data is stored on a remote database server located in the European Union, "
-#~ "safeguarded by the comprehensive security infrastructure provided by "
-#~ "Amazon Web Services."
-#~ msgstr ""
-#~ "Con la ayuda de protocolos de encriptación modernos, incluida una clave "
-#~ "de encriptación de 512 caracteres, aplicamos medidas estrictas para "
-#~ "proteger los datos confidenciales. "
-
-#~ msgid "7. Data Sharing and Collaborative Efforts"
-#~ msgstr "7. Intercambio de datos y esfuerzos de colaboración"
-
-#~ msgid ""
-#~ "Certain user data, including email addresses, names, and contact numbers, "
-#~ "are shared with hotels to facilitate efficient reservation management. "
-#~ "Outside established partnerships, data sharing with external "
-#~ "organizations is limited to data automatically collected by Google "
-#~ "Analytics and Top-Rent-A-Car."
-#~ msgstr ""
-#~ "Ciertos datos de los usuarios, incluidas las direcciones de correo "
-#~ "electrónico, los nombres y los números de contacto, se comparten con los "
-#~ "hoteles para facilitar la gestión eficiente de las reservas. "
-
-#~ msgid "8. Cross-Border Data Transfers"
-#~ msgstr "8. Transferencias de datos transfronterizas"
-
-#~ msgid ""
-#~ "User personal data remains entirely within the European Union's "
-#~ "boundaries. In cases where your citizenship does not fall within the EU, "
-#~ "data may be transferred internationally for storage within the EU "
-#~ "jurisdiction."
-#~ msgstr ""
-#~ "Los datos personales del usuario permanecen completamente dentro de los "
-#~ "límites de la Unión Europea. "
-
-#~ msgid "9. Children's Personal Information"
-#~ msgstr "9. Información personal de los niños"
-
-#~ msgid ""
-#~ "Adventora is solely directed towards lawful adult individuals. Due to the "
-#~ "mandatory nature of collecting personal data for reservation purposes and "
-#~ "payment processing, the platform is not intended for minors. Exceptions "
-#~ "may arise when lawful adults provide information about minors in the "
-#~ "context of reservations made for them."
-#~ msgstr "Adventora se dirige únicamente a personas físicas adultas. "
-
-#~ msgid "10. Notification of Policy Changes"
-#~ msgstr "10. Notificación de cambios de política"
-
-#~ msgid ""
-#~ "Changes or modifications to this Policy will be communicated via email "
-#~ "and prominently displayed on the Website."
-#~ msgstr ""
-#~ "Los cambios o modificaciones a esta Política se comunicarán por correo "
-#~ "electrónico y se mostrarán de manera destacada en el sitio web."
-
-#~ msgid "11. Legitimate Basis for Data Processing"
-#~ msgstr "11. Base legítima para el procesamiento de datos"
-
-#~ msgid ""
-#~ "The collection and processing of data are based on the mandatory "
-#~ "execution of reservations and associated booking activities."
-#~ msgstr ""
-#~ "La recopilación y el procesamiento de datos se basan en la ejecución "
-#~ "obligatoria de reservas y actividades de reserva asociadas."
-
-#~ msgid "12. Implicit Consent"
-#~ msgstr "12. Consentimiento Implícito"
-
-#~ msgid ""
-#~ "By using our platform and creating an account, you implicitly consent to "
-#~ "the collection and processing of personal data, in accordance with this "
-#~ "Policy."
-#~ msgstr ""
-#~ "Al usar nuestra plataforma y crear una cuenta, usted acepta "
-#~ "implícitamente la recopilación y el procesamiento de datos personales, de "
-#~ "acuerdo con esta Política."
-
-#~ msgid "13. Compliance with Applicable Regulations"
-#~ msgstr "13. Cumplimiento de la Normativa Aplicable"
-
-#~ msgid ""
-#~ "Our data processing procedures strictly adhere to the regulations and "
-#~ "provisions established by the General Data Protection Regulation (GDPR)."
-#~ msgstr ""
-#~ "Nuestros procedimientos de tratamiento de datos se adhieren estrictamente "
-#~ "a las normas y disposiciones establecidas por el Reglamento General de "
-#~ "Protección de Datos (RGPD)."
-
-#~ msgid ""
-#~ "For questions, clarifications, or requests related to your personal data "
-#~ "and this Policy, please be informed that you can contact us through the "
-#~ "following contact: "
-#~ msgstr ""
-#~ "Para consultas, aclaraciones o solicitudes relacionadas con sus datos "
-#~ "personales y esta Política, le informamos que puede contactarnos a través "
-#~ "del siguiente contacto:"
-
-#~ msgid "hello@adventora.net"
-#~ msgstr "hola@adventora.net"
-
-#, fuzzy
-#~ msgid "Delete account"
-#~ msgstr "Borrar cuenta"

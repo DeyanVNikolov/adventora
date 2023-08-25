@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 18:21+0300\n"
+"POT-Creation-Date: 2023-08-16 20:19+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,124 +47,181 @@ msgid "Turn on"
 msgstr "Aç"
 
 #: .\adventora\templates\auth\edit_profile.html:25
-#, fuzzy
-#| msgid "Confirm password"
 msgid "Change password"
-msgstr "Onaylanmış"
+msgstr "Şifre değiştir"
 
 #: .\adventora\templates\auth\edit_profile.html:28
 #: .\authentication\forms.py:143
 msgid "Delete Account"
 msgstr "Hesabı sil"
 
-#: .\adventora\templates\auth\sign_in.html:27
+#: .\adventora\templates\auth\sign_in.html:28
 #: .\adventora\templates\auth\sign_up.html:28
 msgid "Login with Google"
 msgstr "Google ile giriş yap"
 
-#: .\adventora\templates\auth\sign_in.html:33
+#: .\adventora\templates\auth\sign_in.html:34
 #: .\adventora\templates\auth\sign_up.html:34
 msgid "Login with Trello"
 msgstr "Trello ile giriş yap"
 
-#: .\adventora\templates\auth\sign_in.html:41
+#: .\adventora\templates\auth\sign_in.html:42
 #: .\adventora\templates\auth\sign_up.html:42
 msgid "Login with GitHub"
 msgstr "GitHub ile giriş yap"
 
-#: .\adventora\templates\auth\sign_in.html:47
+#: .\adventora\templates\auth\sign_in.html:48
 #: .\adventora\templates\auth\sign_up.html:48
 msgid "Login with Patreon"
 msgstr "Patreon ile giriş yap"
 
-#: .\adventora\templates\auth\sign_in.html:53
+#: .\adventora\templates\auth\sign_in.html:54
 #: .\adventora\templates\auth\sign_up.html:54
 msgid "Login with Amazon"
 msgstr "Amazon ile giriş yap"
 
-#: .\adventora\templates\auth\sign_in.html:62
+#: .\adventora\templates\auth\sign_in.html:63
 #: .\adventora\templates\auth\sign_up.html:63
 msgid "Login with Reddit"
 msgstr "Reddit ile giriş yap"
 
-#: .\adventora\templates\auth\sign_in.html:68
+#: .\adventora\templates\auth\sign_in.html:69
 #: .\adventora\templates\auth\sign_up.html:69
 msgid "Login with Steam"
 msgstr "Steam ile giriş yap"
 
-#: .\adventora\templates\auth\sign_in.html:77
+#: .\adventora\templates\auth\sign_in.html:78
 #: .\adventora\templates\auth\sign_up.html:78
 msgid "Login with Spotify."
-msgstr "Spotify ile giriş yap"
+msgstr "Spotify ile giriş yap."
 
-#: .\adventora\templates\auth\sign_in.html:83
+#: .\adventora\templates\auth\sign_in.html:84
 #: .\adventora\templates\auth\sign_up.html:84
 msgid "Login with VK"
 msgstr "VK ile giriş yap"
 
-#: .\adventora\templates\base.html:148
-msgid "Panel"
-msgstr "Panel"
+#: .\adventora\templates\base.html:135
+msgid "Hotel"
+msgstr "Otel"
 
-#: .\adventora\templates\base.html:152
+#: .\adventora\templates\base.html:141
+#: .\adventora\templates\hotel\confirm_address.html:43
+#: .\adventora\templates\hotel\confirm_address.html:64
+#: .\adventora\templates\hotel\dashboard.html:63
+#: .\adventora\templates\hotel\dashboard.html:84
+#: .\adventora\templates\hotel\dashboard.html:101
+#: .\adventora\templates\hotel\register_hotel.html:43
+#: .\adventora\templates\hotel\register_hotel.html:64
+msgid "Dashboard"
+msgstr "Gösterge Paneli"
+
+#: .\adventora\templates\base.html:159
 msgid "Profile"
 msgstr "Profil"
 
-#: .\adventora\templates\base.html:155
-msgid "Logout"
+#: .\adventora\templates\base.html:164 .\adventora\templates\base.html:174
+#: .\adventora\templates\base.html:176
+msgid "Log out"
 msgstr "Çıkış Yap"
 
-#: .\adventora\templates\base.html:160 .\authentication\forms.py:52
-msgid "Sign up"
-msgstr "Üye olmak"
-
-#: .\adventora\templates\base.html:163 .\authentication\forms.py:24
+#: .\adventora\templates\base.html:181 .\authentication\forms.py:24
 msgid "Login"
 msgstr "Giriş yapmak"
 
-#: .\adventora\templates\base.html:180
+#: .\adventora\templates\base.html:185 .\authentication\forms.py:52
+msgid "Sign up"
+msgstr "Üye olmak"
+
+#: .\adventora\templates\base.html:191
+msgid "Language"
+msgstr "Dil"
+
+#: .\adventora\templates\base.html:230
 msgid "Error"
 msgstr "Hata"
 
-#: .\adventora\templates\base.html:192
+#: .\adventora\templates\base.html:242
 msgid "Success"
 msgstr "Başarı"
 
-#: .\adventora\templates\base.html:203
+#: .\adventora\templates\base.html:253
 msgid "Warning"
 msgstr "Uyarı"
 
-#: .\adventora\templates\base.html:227
+#: .\adventora\templates\base.html:277
 msgid "Adventora supports small, medium and large businesses"
 msgstr "Adventora küçük, orta ve büyük işletmeleri destekler"
 
-#: .\adventora\templates\base.html:252
+#: .\adventora\templates\base.html:302
 msgid "All Rights Reserved"
 msgstr "Her hakkı saklıdır"
 
-#: .\adventora\templates\base.html:254
+#: .\adventora\templates\base.html:304
 msgid "Homepage"
 msgstr "Anasayfa"
 
-#: .\adventora\templates\base.html:255
+#: .\adventora\templates\base.html:305
 msgid "About us"
 msgstr "Hakkımızda"
 
-#: .\adventora\templates\base.html:256
+#: .\adventora\templates\base.html:306
 msgid "Privacy"
 msgstr "Mahremiyet"
 
-#: .\adventora\templates\base.html:257
+#: .\adventora\templates\base.html:307
 msgid "Terms of use"
 msgstr "Kullanım Şartları"
 
-#: .\adventora\templates\base.html:258
+#: .\adventora\templates\base.html:308
 msgid "Contacts"
 msgstr "Kişiler"
 
-#: .\adventora\templates\base.html:259
+#: .\adventora\templates\base.html:309
 msgid "Partnerships"
 msgstr "ortaklıklar"
+
+#: .\adventora\templates\hotel\confirm_address.html:33
+#: .\adventora\templates\hotel\dashboard.html:53
+#: .\adventora\templates\hotel\dashboard.html:527
+#: .\adventora\templates\hotel\register_hotel.html:33
+msgid "You don't have a hotel"
+msgstr "bir oteliniz yok"
+
+#: .\adventora\templates\hotel\confirm_address.html:38
+#: .\adventora\templates\hotel\dashboard.html:58
+#: .\adventora\templates\hotel\register_hotel.html:38
+msgid "General Settings"
+msgstr "Genel Ayarlar"
+
+#: .\adventora\templates\hotel\confirm_address.html:47
+#: .\adventora\templates\hotel\dashboard.html:67
+#: .\adventora\templates\hotel\register_hotel.html:47
+msgid "Management"
+msgstr "Yönetmek"
+
+#: .\adventora\templates\hotel\confirm_address.html:63
+#: .\adventora\templates\hotel\dashboard.html:83
+#: .\adventora\templates\hotel\register_hotel.html:63
+#: .\authentication\models.py:11
+msgid "Admin"
+msgstr "yönetici"
+
+#: .\adventora\templates\hotel\confirm_address.html:65
+#: .\adventora\templates\hotel\confirm_address.html:82 .\hotel\forms.py:61
+msgid "Confirm Address"
+msgstr "Onay Adresi"
+
+#: .\adventora\templates\hotel\dashboard.html:521
+msgid ""
+"Your hotel is not yet approved. Allow us to confirm your info within 48 "
+"hours."
+msgstr "Oteliniz henüz onaylanmadı. "
+
+#: .\adventora\templates\hotel\dashboard.html:529
+#: .\adventora\templates\hotel\register_hotel.html:65
+#: .\adventora\templates\hotel\register_hotel.html:82 .\hotel\forms.py:54
+msgid "Register Hotel"
+msgstr "Otele Kayıt Ol"
 
 #: .\adventora\templates\partnerships.html:9
 msgid "For partnerships contact us at"
@@ -217,7 +275,7 @@ msgstr "Parola en az 8 karakter uzunluğunda olmalıdır. "
 
 #: .\authentication\forms.py:42
 msgid "Confirm password"
-msgstr "Onaylanmış"
+msgstr "Şifreyi Onayla"
 
 #: .\authentication\forms.py:43
 msgid "Enter the same password as above, for verification."
@@ -225,12 +283,13 @@ msgstr "Doğrulama için yukarıdakiyle aynı parolayı girin."
 
 #: .\authentication\forms.py:57 .\authentication\forms.py:98
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
-msgstr "Tatilci - İdeal tatil aktivitelerinizi keşfedin, planlayın ve ayırtın."
+msgstr ""
+"Tatilci - İdeal tatil aktivitelerinizi keşfedin, planlayın ve ayırtın."
 
 #: .\authentication\forms.py:58 .\authentication\forms.py:99
 msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own "
-"hotel."
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
 msgstr ""
 "Otel Müdürü - Kendi otelinizde operasyonları denetleyin ve mükemmel hizmet "
 "sağlayın."
@@ -289,7 +348,7 @@ msgstr "Yeni Şifre"
 
 #: .\authentication\forms.py:121 .\authentication\forms.py:131
 msgid "Confirm New Password"
-msgstr "Onaylanmış"
+msgstr "Yeni şifreyi onayla"
 
 #: .\authentication\forms.py:176 .\authentication\forms.py:185
 #: .\authentication\forms.py:194
@@ -315,10 +374,6 @@ msgstr "Müdür"
 #: .\authentication\models.py:11
 msgid "Employee"
 msgstr "Çalışan"
-
-#: .\authentication\models.py:11
-msgid "Admin"
-msgstr "yönetici"
 
 #: .\authentication\views.py:35 .\authentication\views.py:202
 #: .\authentication\views.py:262
@@ -499,13 +554,34 @@ msgstr "Yetkili kişi"
 msgid "Stars"
 msgstr "Yıldızlar"
 
-#: .\hotel\forms.py:37
-msgid "Register Hotel"
-msgstr "Otele Kayıt Ol"
+#: .\hotel\forms.py:35
+msgid ""
+"I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
+"policy</a>"
+msgstr ""
+"<a href=\"/privacy\" target=\"_blank\">gizlilik politikasını</a> okudum ve "
+"kabul ediyorum."
 
-#: .\hotel\forms.py:44
-msgid "Confirm Address"
-msgstr "Onaylanmış"
+#: .\hotel\forms.py:40
+msgid ""
+"I have read and agree to the <a href=\"/terms-of-use\" "
+"target=\"_blank\">terms and conditions</a>"
+msgstr ""
+"<a href=\"/terms-of-use\" target=\"_blank\">şartlar ve koşulları</a> okudum "
+"ve kabul ediyorum"
+
+#: .\hotel\forms.py:46
+msgid ""
+"I hereby certify, under penalty of law, that the information provided about "
+"myself and my hotel is accurate and complete to the best of my "
+"knowledge.<br> I understand that any false or misleading information "
+"provided may result in the immdiate suspesion of my hotel listing from "
+"Adventora and may lead to potential legal consequences."
+msgstr ""
+"Kanuni yaptırımlar altında, kendim ve otelim hakkında sağlanan bilgilerin "
+"bildiğim kadarıyla doğru ve eksiksiz olduğunu onaylıyorum.<br> Sağlanan "
+"herhangi bir yanlış veya yanıltıcı bilginin otelimin derhal askıya "
+"alınmasıyla sonuçlanabileceğini anlıyorum. "
 
 #: .\hotel\models.py:19
 msgid "No description provided."
@@ -519,7 +595,7 @@ msgstr "Oda"
 msgid "Rooms"
 msgstr "Odalar"
 
-#: .\hotel\views.py:23 .\hotel\views.py:156
+#: .\hotel\views.py:23 .\hotel\views.py:159
 msgid "You do not have permission to view this page"
 msgstr "Bu sayfayı görüntüleme izniniz yok"
 
@@ -527,59 +603,30 @@ msgstr "Bu sayfayı görüntüleme izniniz yok"
 msgid "Your hotel is not approved yet"
 msgstr "Oteliniz henüz onaylanmadı"
 
-#: .\hotel\views.py:86
+#: .\hotel\views.py:89
 msgid "Successfully registered hotel"
 msgstr "Başarıyla kayıtlı otel"
 
-#: .\hotel\views.py:90
+#: .\hotel\views.py:93
 msgid "Error while registering hotel"
 msgstr "Otel kaydı yapılırken hata oluştu"
 
-#: .\hotel\views.py:97
+#: .\hotel\views.py:100
 msgid "You have already registered a hotel"
 msgstr "Zaten bir otel kaydettiniz"
 
-#: .\hotel\views.py:115
+#: .\hotel\views.py:118
 msgid "You have not registered a hotel yet"
 msgstr "Henüz bir otel kaydı yaptırmadınız"
 
-#: .\hotel\views.py:133
+#: .\hotel\views.py:136
 msgid "Successfully confirmed address"
 msgstr "Adres başarıyla doğrulandı"
 
-#: .\hotel\views.py:136
+#: .\hotel\views.py:139
 msgid "Error while confirming address"
 msgstr "Adres onaylanırken hata oluştu"
 
-#: .\hotel\views.py:152
+#: .\hotel\views.py:155
 msgid "No such hotel"
 msgstr "Böyle bir otel yok"
-
-#, fuzzy
-#~| msgid "Privacy"
-#~ msgid "Privacy Policy"
-#~ msgstr "Mahremiyet"
-
-#, fuzzy
-#~| msgid "First name"
-#~ msgid "First and last name"
-#~ msgstr "İlk adı"
-
-#, fuzzy
-#~| msgid "Email address must be valid"
-#~ msgid "Email address"
-#~ msgstr "E-posta adresi geçerli olmalıdır"
-
-#, fuzzy
-#~| msgid "Hotel Name"
-#~ msgid "Hotel name"
-#~ msgstr "Otel Adı"
-
-#, fuzzy
-#~| msgid "Manager"
-#~ msgid "Manager's name"
-#~ msgstr "Müdür"
-
-#, fuzzy
-#~ msgid "Delete account"
-#~ msgstr "Hesabı sil"

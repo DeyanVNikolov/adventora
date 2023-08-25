@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 18:21+0300\n"
+"POT-Creation-Date: 2023-08-16 20:19+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
 #: .\adventora\templates\auth\edit_profile.html:10
 msgid "Not confirmed"
 msgstr ""
@@ -54,113 +54,172 @@ msgstr ""
 msgid "Delete Account"
 msgstr ""
 
-#: .\adventora\templates\auth\sign_in.html:27
+#: .\adventora\templates\auth\sign_in.html:28
 #: .\adventora\templates\auth\sign_up.html:28
 msgid "Login with Google"
 msgstr ""
 
-#: .\adventora\templates\auth\sign_in.html:33
+#: .\adventora\templates\auth\sign_in.html:34
 #: .\adventora\templates\auth\sign_up.html:34
 msgid "Login with Trello"
 msgstr ""
 
-#: .\adventora\templates\auth\sign_in.html:41
+#: .\adventora\templates\auth\sign_in.html:42
 #: .\adventora\templates\auth\sign_up.html:42
 msgid "Login with GitHub"
 msgstr ""
 
-#: .\adventora\templates\auth\sign_in.html:47
+#: .\adventora\templates\auth\sign_in.html:48
 #: .\adventora\templates\auth\sign_up.html:48
 msgid "Login with Patreon"
 msgstr ""
 
-#: .\adventora\templates\auth\sign_in.html:53
+#: .\adventora\templates\auth\sign_in.html:54
 #: .\adventora\templates\auth\sign_up.html:54
 msgid "Login with Amazon"
 msgstr ""
 
-#: .\adventora\templates\auth\sign_in.html:62
+#: .\adventora\templates\auth\sign_in.html:63
 #: .\adventora\templates\auth\sign_up.html:63
 msgid "Login with Reddit"
 msgstr ""
 
-#: .\adventora\templates\auth\sign_in.html:68
+#: .\adventora\templates\auth\sign_in.html:69
 #: .\adventora\templates\auth\sign_up.html:69
 msgid "Login with Steam"
 msgstr ""
 
-#: .\adventora\templates\auth\sign_in.html:77
+#: .\adventora\templates\auth\sign_in.html:78
 #: .\adventora\templates\auth\sign_up.html:78
 msgid "Login with Spotify."
 msgstr ""
 
-#: .\adventora\templates\auth\sign_in.html:83
+#: .\adventora\templates\auth\sign_in.html:84
 #: .\adventora\templates\auth\sign_up.html:84
 msgid "Login with VK"
 msgstr ""
 
-#: .\adventora\templates\base.html:148
-msgid "Panel"
+#: .\adventora\templates\base.html:135
+msgid "Hotel"
 msgstr ""
 
-#: .\adventora\templates\base.html:152
+#: .\adventora\templates\base.html:141
+#: .\adventora\templates\hotel\confirm_address.html:43
+#: .\adventora\templates\hotel\confirm_address.html:64
+#: .\adventora\templates\hotel\dashboard.html:63
+#: .\adventora\templates\hotel\dashboard.html:84
+#: .\adventora\templates\hotel\dashboard.html:101
+#: .\adventora\templates\hotel\register_hotel.html:43
+#: .\adventora\templates\hotel\register_hotel.html:64
+msgid "Dashboard"
+msgstr ""
+
+#: .\adventora\templates\base.html:159
 msgid "Profile"
 msgstr ""
 
-#: .\adventora\templates\base.html:155
-msgid "Logout"
+#: .\adventora\templates\base.html:164 .\adventora\templates\base.html:174
+#: .\adventora\templates\base.html:176
+msgid "Log out"
 msgstr ""
 
-#: .\adventora\templates\base.html:160 .\authentication\forms.py:52
-msgid "Sign up"
-msgstr ""
-
-#: .\adventora\templates\base.html:163 .\authentication\forms.py:24
+#: .\adventora\templates\base.html:181 .\authentication\forms.py:24
 msgid "Login"
 msgstr ""
 
-#: .\adventora\templates\base.html:180
+#: .\adventora\templates\base.html:185 .\authentication\forms.py:52
+msgid "Sign up"
+msgstr ""
+
+#: .\adventora\templates\base.html:191
+msgid "Language"
+msgstr ""
+
+#: .\adventora\templates\base.html:230
 msgid "Error"
 msgstr ""
 
-#: .\adventora\templates\base.html:192
+#: .\adventora\templates\base.html:242
 msgid "Success"
 msgstr ""
 
-#: .\adventora\templates\base.html:203
+#: .\adventora\templates\base.html:253
 msgid "Warning"
 msgstr ""
 
-#: .\adventora\templates\base.html:227
+#: .\adventora\templates\base.html:277
 msgid "Adventora supports small, medium and large businesses"
 msgstr ""
 
-#: .\adventora\templates\base.html:252
+#: .\adventora\templates\base.html:302
 msgid "All Rights Reserved"
 msgstr ""
 
-#: .\adventora\templates\base.html:254
+#: .\adventora\templates\base.html:304
 msgid "Homepage"
 msgstr ""
 
-#: .\adventora\templates\base.html:255
+#: .\adventora\templates\base.html:305
 msgid "About us"
 msgstr ""
 
-#: .\adventora\templates\base.html:256
+#: .\adventora\templates\base.html:306
 msgid "Privacy"
 msgstr ""
 
-#: .\adventora\templates\base.html:257
+#: .\adventora\templates\base.html:307
 msgid "Terms of use"
 msgstr ""
 
-#: .\adventora\templates\base.html:258
+#: .\adventora\templates\base.html:308
 msgid "Contacts"
 msgstr ""
 
-#: .\adventora\templates\base.html:259
+#: .\adventora\templates\base.html:309
 msgid "Partnerships"
+msgstr ""
+
+#: .\adventora\templates\hotel\confirm_address.html:33
+#: .\adventora\templates\hotel\dashboard.html:53
+#: .\adventora\templates\hotel\dashboard.html:527
+#: .\adventora\templates\hotel\register_hotel.html:33
+msgid "You don't have a hotel"
+msgstr ""
+
+#: .\adventora\templates\hotel\confirm_address.html:38
+#: .\adventora\templates\hotel\dashboard.html:58
+#: .\adventora\templates\hotel\register_hotel.html:38
+msgid "General Settings"
+msgstr ""
+
+#: .\adventora\templates\hotel\confirm_address.html:47
+#: .\adventora\templates\hotel\dashboard.html:67
+#: .\adventora\templates\hotel\register_hotel.html:47
+msgid "Management"
+msgstr ""
+
+#: .\adventora\templates\hotel\confirm_address.html:63
+#: .\adventora\templates\hotel\dashboard.html:83
+#: .\adventora\templates\hotel\register_hotel.html:63
+#: .\authentication\models.py:11
+msgid "Admin"
+msgstr ""
+
+#: .\adventora\templates\hotel\confirm_address.html:65
+#: .\adventora\templates\hotel\confirm_address.html:82 .\hotel\forms.py:61
+msgid "Confirm Address"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:521
+msgid ""
+"Your hotel is not yet approved. Allow us to confirm your info within 48 "
+"hours."
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:529
+#: .\adventora\templates\hotel\register_hotel.html:65
+#: .\adventora\templates\hotel\register_hotel.html:82 .\hotel\forms.py:54
+msgid "Register Hotel"
 msgstr ""
 
 #: .\adventora\templates\partnerships.html:9
@@ -308,10 +367,6 @@ msgstr ""
 
 #: .\authentication\models.py:11
 msgid "Employee"
-msgstr ""
-
-#: .\authentication\models.py:11
-msgid "Admin"
 msgstr ""
 
 #: .\authentication\views.py:35 .\authentication\views.py:202
@@ -493,12 +548,25 @@ msgstr ""
 msgid "Stars"
 msgstr ""
 
-#: .\hotel\forms.py:37
-msgid "Register Hotel"
+#: .\hotel\forms.py:35
+msgid ""
+"I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
+"policy</a>"
 msgstr ""
 
-#: .\hotel\forms.py:44
-msgid "Confirm Address"
+#: .\hotel\forms.py:40
+msgid ""
+"I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank"
+"\">terms and conditions</a>"
+msgstr ""
+
+#: .\hotel\forms.py:46
+msgid ""
+"I hereby certify, under penalty of law, that the information provided about "
+"myself and my hotel is accurate and complete to the best of my knowledge."
+"<br> I understand that any false or misleading information provided may "
+"result in the immdiate suspesion of my hotel listing from Adventora and may "
+"lead to potential legal consequences."
 msgstr ""
 
 #: .\hotel\models.py:19
@@ -513,7 +581,7 @@ msgstr ""
 msgid "Rooms"
 msgstr ""
 
-#: .\hotel\views.py:23 .\hotel\views.py:156
+#: .\hotel\views.py:23 .\hotel\views.py:159
 msgid "You do not have permission to view this page"
 msgstr ""
 
@@ -521,30 +589,30 @@ msgstr ""
 msgid "Your hotel is not approved yet"
 msgstr ""
 
-#: .\hotel\views.py:86
+#: .\hotel\views.py:89
 msgid "Successfully registered hotel"
 msgstr ""
 
-#: .\hotel\views.py:90
+#: .\hotel\views.py:93
 msgid "Error while registering hotel"
 msgstr ""
 
-#: .\hotel\views.py:97
+#: .\hotel\views.py:100
 msgid "You have already registered a hotel"
 msgstr ""
 
-#: .\hotel\views.py:115
+#: .\hotel\views.py:118
 msgid "You have not registered a hotel yet"
 msgstr ""
 
-#: .\hotel\views.py:133
+#: .\hotel\views.py:136
 msgid "Successfully confirmed address"
 msgstr ""
 
-#: .\hotel\views.py:136
+#: .\hotel\views.py:139
 msgid "Error while confirming address"
 msgstr ""
 
-#: .\hotel\views.py:152
+#: .\hotel\views.py:155
 msgid "No such hotel"
 msgstr ""

@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 18:21+0300\n"
+"POT-Creation-Date: 2023-08-16 20:19+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15,9 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
-"%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: .\adventora\templates\auth\edit_profile.html:10
 msgid "Not confirmed"
@@ -48,124 +47,181 @@ msgid "Turn on"
 msgstr "Включать"
 
 #: .\adventora\templates\auth\edit_profile.html:25
-#, fuzzy
-#| msgid "Confirm password"
 msgid "Change password"
-msgstr "Подтвержденный"
+msgstr "Изменить пароль"
 
 #: .\adventora\templates\auth\edit_profile.html:28
 #: .\authentication\forms.py:143
 msgid "Delete Account"
 msgstr "Удалить аккаунт"
 
-#: .\adventora\templates\auth\sign_in.html:27
+#: .\adventora\templates\auth\sign_in.html:28
 #: .\adventora\templates\auth\sign_up.html:28
 msgid "Login with Google"
 msgstr "Войти через Google"
 
-#: .\adventora\templates\auth\sign_in.html:33
+#: .\adventora\templates\auth\sign_in.html:34
 #: .\adventora\templates\auth\sign_up.html:34
 msgid "Login with Trello"
 msgstr "Войти через Трелло"
 
-#: .\adventora\templates\auth\sign_in.html:41
+#: .\adventora\templates\auth\sign_in.html:42
 #: .\adventora\templates\auth\sign_up.html:42
 msgid "Login with GitHub"
-msgstr "Войти через GitHub"
+msgstr "Войти с помощью GitHub"
 
-#: .\adventora\templates\auth\sign_in.html:47
+#: .\adventora\templates\auth\sign_in.html:48
 #: .\adventora\templates\auth\sign_up.html:48
 msgid "Login with Patreon"
 msgstr "Войти через Патреон"
 
-#: .\adventora\templates\auth\sign_in.html:53
+#: .\adventora\templates\auth\sign_in.html:54
 #: .\adventora\templates\auth\sign_up.html:54
 msgid "Login with Amazon"
 msgstr "Войти через Амазон"
 
-#: .\adventora\templates\auth\sign_in.html:62
+#: .\adventora\templates\auth\sign_in.html:63
 #: .\adventora\templates\auth\sign_up.html:63
 msgid "Login with Reddit"
 msgstr "Войти с Reddit"
 
-#: .\adventora\templates\auth\sign_in.html:68
+#: .\adventora\templates\auth\sign_in.html:69
 #: .\adventora\templates\auth\sign_up.html:69
 msgid "Login with Steam"
 msgstr "Войти через Steam"
 
-#: .\adventora\templates\auth\sign_in.html:77
+#: .\adventora\templates\auth\sign_in.html:78
 #: .\adventora\templates\auth\sign_up.html:78
 msgid "Login with Spotify."
-msgstr "Войти через Spotify"
+msgstr "Войти через Spotify."
 
-#: .\adventora\templates\auth\sign_in.html:83
+#: .\adventora\templates\auth\sign_in.html:84
 #: .\adventora\templates\auth\sign_up.html:84
 msgid "Login with VK"
 msgstr "Войти через ВК"
 
-#: .\adventora\templates\base.html:148
-msgid "Panel"
-msgstr "Панель"
+#: .\adventora\templates\base.html:135
+msgid "Hotel"
+msgstr "Гостиница"
 
-#: .\adventora\templates\base.html:152
+#: .\adventora\templates\base.html:141
+#: .\adventora\templates\hotel\confirm_address.html:43
+#: .\adventora\templates\hotel\confirm_address.html:64
+#: .\adventora\templates\hotel\dashboard.html:63
+#: .\adventora\templates\hotel\dashboard.html:84
+#: .\adventora\templates\hotel\dashboard.html:101
+#: .\adventora\templates\hotel\register_hotel.html:43
+#: .\adventora\templates\hotel\register_hotel.html:64
+msgid "Dashboard"
+msgstr "Панель приборов"
+
+#: .\adventora\templates\base.html:159
 msgid "Profile"
 msgstr "Профиль"
 
-#: .\adventora\templates\base.html:155
-msgid "Logout"
+#: .\adventora\templates\base.html:164 .\adventora\templates\base.html:174
+#: .\adventora\templates\base.html:176
+msgid "Log out"
 msgstr "Выйти"
 
-#: .\adventora\templates\base.html:160 .\authentication\forms.py:52
-msgid "Sign up"
-msgstr "Зарегистрироваться"
-
-#: .\adventora\templates\base.html:163 .\authentication\forms.py:24
+#: .\adventora\templates\base.html:181 .\authentication\forms.py:24
 msgid "Login"
 msgstr "Авторизоваться"
 
-#: .\adventora\templates\base.html:180
+#: .\adventora\templates\base.html:185 .\authentication\forms.py:52
+msgid "Sign up"
+msgstr "Зарегистрироваться"
+
+#: .\adventora\templates\base.html:191
+msgid "Language"
+msgstr "Язык"
+
+#: .\adventora\templates\base.html:230
 msgid "Error"
 msgstr "Ошибка"
 
-#: .\adventora\templates\base.html:192
+#: .\adventora\templates\base.html:242
 msgid "Success"
 msgstr "Успех"
 
-#: .\adventora\templates\base.html:203
+#: .\adventora\templates\base.html:253
 msgid "Warning"
 msgstr "Предупреждение"
 
-#: .\adventora\templates\base.html:227
+#: .\adventora\templates\base.html:277
 msgid "Adventora supports small, medium and large businesses"
 msgstr "Adventora поддерживает малый, средний и крупный бизнес"
 
-#: .\adventora\templates\base.html:252
+#: .\adventora\templates\base.html:302
 msgid "All Rights Reserved"
 msgstr "Все права защищены"
 
-#: .\adventora\templates\base.html:254
+#: .\adventora\templates\base.html:304
 msgid "Homepage"
 msgstr "Домашняя страница"
 
-#: .\adventora\templates\base.html:255
+#: .\adventora\templates\base.html:305
 msgid "About us"
 msgstr "О нас"
 
-#: .\adventora\templates\base.html:256
+#: .\adventora\templates\base.html:306
 msgid "Privacy"
 msgstr "Конфиденциальность"
 
-#: .\adventora\templates\base.html:257
+#: .\adventora\templates\base.html:307
 msgid "Terms of use"
 msgstr "Условия эксплуатации"
 
-#: .\adventora\templates\base.html:258
+#: .\adventora\templates\base.html:308
 msgid "Contacts"
 msgstr "Контакты"
 
-#: .\adventora\templates\base.html:259
+#: .\adventora\templates\base.html:309
 msgid "Partnerships"
 msgstr "Партнерские отношения"
+
+#: .\adventora\templates\hotel\confirm_address.html:33
+#: .\adventora\templates\hotel\dashboard.html:53
+#: .\adventora\templates\hotel\dashboard.html:527
+#: .\adventora\templates\hotel\register_hotel.html:33
+msgid "You don't have a hotel"
+msgstr "У вас нет отеля"
+
+#: .\adventora\templates\hotel\confirm_address.html:38
+#: .\adventora\templates\hotel\dashboard.html:58
+#: .\adventora\templates\hotel\register_hotel.html:38
+msgid "General Settings"
+msgstr "общие настройки"
+
+#: .\adventora\templates\hotel\confirm_address.html:47
+#: .\adventora\templates\hotel\dashboard.html:67
+#: .\adventora\templates\hotel\register_hotel.html:47
+msgid "Management"
+msgstr "Управление"
+
+#: .\adventora\templates\hotel\confirm_address.html:63
+#: .\adventora\templates\hotel\dashboard.html:83
+#: .\adventora\templates\hotel\register_hotel.html:63
+#: .\authentication\models.py:11
+msgid "Admin"
+msgstr "Администратор"
+
+#: .\adventora\templates\hotel\confirm_address.html:65
+#: .\adventora\templates\hotel\confirm_address.html:82 .\hotel\forms.py:61
+msgid "Confirm Address"
+msgstr "Подтвердите адрес"
+
+#: .\adventora\templates\hotel\dashboard.html:521
+msgid ""
+"Your hotel is not yet approved. Allow us to confirm your info within 48 "
+"hours."
+msgstr "Ваш отель еще не одобрен. "
+
+#: .\adventora\templates\hotel\dashboard.html:529
+#: .\adventora\templates\hotel\register_hotel.html:65
+#: .\adventora\templates\hotel\register_hotel.html:82 .\hotel\forms.py:54
+msgid "Register Hotel"
+msgstr "Зарегистрировать отель"
 
 #: .\adventora\templates\partnerships.html:9
 msgid "For partnerships contact us at"
@@ -219,7 +275,7 @@ msgstr "Пароль должен быть не менее 8 символов. "
 
 #: .\authentication\forms.py:42
 msgid "Confirm password"
-msgstr "Подтвержденный"
+msgstr "Подтвердите пароль"
 
 #: .\authentication\forms.py:43
 msgid "Enter the same password as above, for verification."
@@ -233,11 +289,11 @@ msgstr ""
 
 #: .\authentication\forms.py:58 .\authentication\forms.py:99
 msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own "
-"hotel."
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
 msgstr ""
-"Менеджер отеля - наблюдайте за операциями и предоставляйте отличный сервис в "
-"вашем собственном отеле."
+"Менеджер отеля - наблюдайте за операциями и предоставляйте отличный сервис в"
+" вашем собственном отеле."
 
 #: .\authentication\forms.py:59 .\authentication\forms.py:100
 msgid ""
@@ -293,7 +349,7 @@ msgstr "Новый пароль"
 
 #: .\authentication\forms.py:121 .\authentication\forms.py:131
 msgid "Confirm New Password"
-msgstr "Подтвержденный"
+msgstr "Подтвердите новый пароль"
 
 #: .\authentication\forms.py:176 .\authentication\forms.py:185
 #: .\authentication\forms.py:194
@@ -319,10 +375,6 @@ msgstr "Менеджер"
 #: .\authentication\models.py:11
 msgid "Employee"
 msgstr "Сотрудник"
-
-#: .\authentication\models.py:11
-msgid "Admin"
-msgstr "Администратор"
 
 #: .\authentication\views.py:35 .\authentication\views.py:202
 #: .\authentication\views.py:262
@@ -503,13 +555,35 @@ msgstr "Авторизованная личность"
 msgid "Stars"
 msgstr "Звезды"
 
-#: .\hotel\forms.py:37
-msgid "Register Hotel"
-msgstr "Зарегистрировать отель"
+#: .\hotel\forms.py:35
+msgid ""
+"I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
+"policy</a>"
+msgstr ""
+"Я прочитал и согласен с <a href=\"/privacy\" target=\"_blank\">политикой "
+"конфиденциальности</a>"
 
-#: .\hotel\forms.py:44
-msgid "Confirm Address"
-msgstr "Подтвержденный"
+#: .\hotel\forms.py:40
+msgid ""
+"I have read and agree to the <a href=\"/terms-of-use\" "
+"target=\"_blank\">terms and conditions</a>"
+msgstr ""
+"Я прочитал и согласен с <a href=\"/terms-of-use\" "
+"target=\"_blank\">условиями использования</a>"
+
+#: .\hotel\forms.py:46
+msgid ""
+"I hereby certify, under penalty of law, that the information provided about "
+"myself and my hotel is accurate and complete to the best of my "
+"knowledge.<br> I understand that any false or misleading information "
+"provided may result in the immdiate suspesion of my hotel listing from "
+"Adventora and may lead to potential legal consequences."
+msgstr ""
+"Настоящим я подтверждаю под страхом закона, что информация, предоставленная "
+"обо мне и моем отеле, является точной и полной, насколько мне известно.<br> "
+"Я понимаю, что любая предоставленная ложная или вводящая в заблуждение "
+"информация может привести к немедленному приостановлению деятельности моего "
+"отеля. "
 
 #: .\hotel\models.py:19
 msgid "No description provided."
@@ -523,7 +597,7 @@ msgstr "Комната"
 msgid "Rooms"
 msgstr "Номера"
 
-#: .\hotel\views.py:23 .\hotel\views.py:156
+#: .\hotel\views.py:23 .\hotel\views.py:159
 msgid "You do not have permission to view this page"
 msgstr "У вас нет разрешения на просмотр этой страницы"
 
@@ -531,59 +605,30 @@ msgstr "У вас нет разрешения на просмотр этой с�
 msgid "Your hotel is not approved yet"
 msgstr "Ваш отель еще не одобрен"
 
-#: .\hotel\views.py:86
+#: .\hotel\views.py:89
 msgid "Successfully registered hotel"
 msgstr "Успешно зарегистрирован отель"
 
-#: .\hotel\views.py:90
+#: .\hotel\views.py:93
 msgid "Error while registering hotel"
 msgstr "Ошибка при регистрации отеля"
 
-#: .\hotel\views.py:97
+#: .\hotel\views.py:100
 msgid "You have already registered a hotel"
 msgstr "Вы уже зарегистрировали отель"
 
-#: .\hotel\views.py:115
+#: .\hotel\views.py:118
 msgid "You have not registered a hotel yet"
 msgstr "Вы еще не зарегистрировали отель"
 
-#: .\hotel\views.py:133
+#: .\hotel\views.py:136
 msgid "Successfully confirmed address"
 msgstr "Успешно подтвержденный адрес"
 
-#: .\hotel\views.py:136
+#: .\hotel\views.py:139
 msgid "Error while confirming address"
 msgstr "Ошибка при подтверждении адреса"
 
-#: .\hotel\views.py:152
+#: .\hotel\views.py:155
 msgid "No such hotel"
 msgstr "Нет такого отеля"
-
-#, fuzzy
-#~| msgid "Privacy"
-#~ msgid "Privacy Policy"
-#~ msgstr "Конфиденциальность"
-
-#, fuzzy
-#~| msgid "First name"
-#~ msgid "First and last name"
-#~ msgstr "Имя"
-
-#, fuzzy
-#~| msgid "Email address must be valid"
-#~ msgid "Email address"
-#~ msgstr "Адрес электронной почты должен быть действительным"
-
-#, fuzzy
-#~| msgid "Hotel Name"
-#~ msgid "Hotel name"
-#~ msgstr "Название отеля"
-
-#, fuzzy
-#~| msgid "Manager"
-#~ msgid "Manager's name"
-#~ msgstr "Менеджер"
-
-#, fuzzy
-#~ msgid "Delete account"
-#~ msgstr "Удалить аккаунт"

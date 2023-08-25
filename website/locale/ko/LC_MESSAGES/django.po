@@ -3,11 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-14 18:21+0300\n"
+"POT-Creation-Date: 2023-08-16 20:19+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,124 +47,181 @@ msgid "Turn on"
 msgstr "켜다"
 
 #: .\adventora\templates\auth\edit_profile.html:25
-#, fuzzy
-#| msgid "Confirm password"
 msgid "Change password"
-msgstr "비밀번호 확인"
+msgstr "비밀번호 변경"
 
 #: .\adventora\templates\auth\edit_profile.html:28
 #: .\authentication\forms.py:143
 msgid "Delete Account"
 msgstr "계정 삭제"
 
-#: .\adventora\templates\auth\sign_in.html:27
+#: .\adventora\templates\auth\sign_in.html:28
 #: .\adventora\templates\auth\sign_up.html:28
 msgid "Login with Google"
 msgstr "Google로 로그인"
 
-#: .\adventora\templates\auth\sign_in.html:33
+#: .\adventora\templates\auth\sign_in.html:34
 #: .\adventora\templates\auth\sign_up.html:34
 msgid "Login with Trello"
 msgstr "트렐로로 로그인"
 
-#: .\adventora\templates\auth\sign_in.html:41
+#: .\adventora\templates\auth\sign_in.html:42
 #: .\adventora\templates\auth\sign_up.html:42
 msgid "Login with GitHub"
 msgstr "GitHub로 로그인"
 
-#: .\adventora\templates\auth\sign_in.html:47
+#: .\adventora\templates\auth\sign_in.html:48
 #: .\adventora\templates\auth\sign_up.html:48
 msgid "Login with Patreon"
 msgstr "Patreon으로 로그인"
 
-#: .\adventora\templates\auth\sign_in.html:53
+#: .\adventora\templates\auth\sign_in.html:54
 #: .\adventora\templates\auth\sign_up.html:54
 msgid "Login with Amazon"
 msgstr "아마존으로 로그인"
 
-#: .\adventora\templates\auth\sign_in.html:62
+#: .\adventora\templates\auth\sign_in.html:63
 #: .\adventora\templates\auth\sign_up.html:63
 msgid "Login with Reddit"
 msgstr "레딧으로 로그인"
 
-#: .\adventora\templates\auth\sign_in.html:68
+#: .\adventora\templates\auth\sign_in.html:69
 #: .\adventora\templates\auth\sign_up.html:69
 msgid "Login with Steam"
 msgstr "Steam으로 로그인"
 
-#: .\adventora\templates\auth\sign_in.html:77
+#: .\adventora\templates\auth\sign_in.html:78
 #: .\adventora\templates\auth\sign_up.html:78
 msgid "Login with Spotify."
 msgstr "Spotify로 로그인하십시오."
 
-#: .\adventora\templates\auth\sign_in.html:83
+#: .\adventora\templates\auth\sign_in.html:84
 #: .\adventora\templates\auth\sign_up.html:84
 msgid "Login with VK"
 msgstr "VK로 로그인"
 
-#: .\adventora\templates\base.html:148
-msgid "Panel"
-msgstr "패널"
+#: .\adventora\templates\base.html:135
+msgid "Hotel"
+msgstr "호텔"
 
-#: .\adventora\templates\base.html:152
+#: .\adventora\templates\base.html:141
+#: .\adventora\templates\hotel\confirm_address.html:43
+#: .\adventora\templates\hotel\confirm_address.html:64
+#: .\adventora\templates\hotel\dashboard.html:63
+#: .\adventora\templates\hotel\dashboard.html:84
+#: .\adventora\templates\hotel\dashboard.html:101
+#: .\adventora\templates\hotel\register_hotel.html:43
+#: .\adventora\templates\hotel\register_hotel.html:64
+msgid "Dashboard"
+msgstr "계기반"
+
+#: .\adventora\templates\base.html:159
 msgid "Profile"
 msgstr "프로필"
 
-#: .\adventora\templates\base.html:155
-msgid "Logout"
+#: .\adventora\templates\base.html:164 .\adventora\templates\base.html:174
+#: .\adventora\templates\base.html:176
+msgid "Log out"
 msgstr "로그 아웃"
 
-#: .\adventora\templates\base.html:160 .\authentication\forms.py:52
-msgid "Sign up"
-msgstr "가입하기"
-
-#: .\adventora\templates\base.html:163 .\authentication\forms.py:24
+#: .\adventora\templates\base.html:181 .\authentication\forms.py:24
 msgid "Login"
 msgstr "로그인"
 
-#: .\adventora\templates\base.html:180
+#: .\adventora\templates\base.html:185 .\authentication\forms.py:52
+msgid "Sign up"
+msgstr "가입하기"
+
+#: .\adventora\templates\base.html:191
+msgid "Language"
+msgstr "언어"
+
+#: .\adventora\templates\base.html:230
 msgid "Error"
 msgstr "오류"
 
-#: .\adventora\templates\base.html:192
+#: .\adventora\templates\base.html:242
 msgid "Success"
 msgstr "성공"
 
-#: .\adventora\templates\base.html:203
+#: .\adventora\templates\base.html:253
 msgid "Warning"
 msgstr "경고"
 
-#: .\adventora\templates\base.html:227
+#: .\adventora\templates\base.html:277
 msgid "Adventora supports small, medium and large businesses"
 msgstr "Adventora는 중소기업 및 대기업을 지원합니다."
 
-#: .\adventora\templates\base.html:252
+#: .\adventora\templates\base.html:302
 msgid "All Rights Reserved"
 msgstr "판권 소유"
 
-#: .\adventora\templates\base.html:254
+#: .\adventora\templates\base.html:304
 msgid "Homepage"
 msgstr "홈페이지"
 
-#: .\adventora\templates\base.html:255
+#: .\adventora\templates\base.html:305
 msgid "About us"
 msgstr "회사 소개"
 
-#: .\adventora\templates\base.html:256
+#: .\adventora\templates\base.html:306
 msgid "Privacy"
 msgstr "은둔"
 
-#: .\adventora\templates\base.html:257
+#: .\adventora\templates\base.html:307
 msgid "Terms of use"
 msgstr "이용약관"
 
-#: .\adventora\templates\base.html:258
+#: .\adventora\templates\base.html:308
 msgid "Contacts"
 msgstr "콘택트 렌즈"
 
-#: .\adventora\templates\base.html:259
+#: .\adventora\templates\base.html:309
 msgid "Partnerships"
 msgstr "파트너십"
+
+#: .\adventora\templates\hotel\confirm_address.html:33
+#: .\adventora\templates\hotel\dashboard.html:53
+#: .\adventora\templates\hotel\dashboard.html:527
+#: .\adventora\templates\hotel\register_hotel.html:33
+msgid "You don't have a hotel"
+msgstr "당신은 호텔이 없습니다"
+
+#: .\adventora\templates\hotel\confirm_address.html:38
+#: .\adventora\templates\hotel\dashboard.html:58
+#: .\adventora\templates\hotel\register_hotel.html:38
+msgid "General Settings"
+msgstr "일반 설정"
+
+#: .\adventora\templates\hotel\confirm_address.html:47
+#: .\adventora\templates\hotel\dashboard.html:67
+#: .\adventora\templates\hotel\register_hotel.html:47
+msgid "Management"
+msgstr "관리"
+
+#: .\adventora\templates\hotel\confirm_address.html:63
+#: .\adventora\templates\hotel\dashboard.html:83
+#: .\adventora\templates\hotel\register_hotel.html:63
+#: .\authentication\models.py:11
+msgid "Admin"
+msgstr "관리자"
+
+#: .\adventora\templates\hotel\confirm_address.html:65
+#: .\adventora\templates\hotel\confirm_address.html:82 .\hotel\forms.py:61
+msgid "Confirm Address"
+msgstr "주소 확인"
+
+#: .\adventora\templates\hotel\dashboard.html:521
+msgid ""
+"Your hotel is not yet approved. Allow us to confirm your info within 48 "
+"hours."
+msgstr "호텔이 아직 승인되지 않았습니다. "
+
+#: .\adventora\templates\hotel\dashboard.html:529
+#: .\adventora\templates\hotel\register_hotel.html:65
+#: .\adventora\templates\hotel\register_hotel.html:82 .\hotel\forms.py:54
+msgid "Register Hotel"
+msgstr "호텔 등록"
 
 #: .\adventora\templates\partnerships.html:9
 msgid "For partnerships contact us at"
@@ -229,18 +287,15 @@ msgstr "Vacationer - 이상적인 휴가 활동을 탐색, 계획 및 예약하�
 
 #: .\authentication\forms.py:58 .\authentication\forms.py:99
 msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own "
-"hotel."
-msgstr ""
-"호텔 매니저 - 운영을 감독하고 자신의 호텔에서 훌륭한 서비스를 제공합니다."
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
+msgstr "호텔 매니저 - 귀하의 호텔에서 운영을 감독하고 훌륭한 서비스를 제공합니다."
 
 #: .\authentication\forms.py:59 .\authentication\forms.py:100
 msgid ""
 "Employee - Contribute your expertise to a thriving workplace, such as a "
 "hotel or guest house."
-msgstr ""
-"직원 - 호텔이나 게스트 하우스와 같이 번성하는 직장에 전문 지식을 제공하십시"
-"오."
+msgstr "직원 - 호텔이나 게스트 하우스와 같이 번성하는 직장에 전문 지식을 제공하십시오."
 
 #: .\authentication\forms.py:65
 msgid "Submit"
@@ -314,10 +369,6 @@ msgstr "관리자"
 #: .\authentication\models.py:11
 msgid "Employee"
 msgstr "직원"
-
-#: .\authentication\models.py:11
-msgid "Admin"
-msgstr "관리자"
 
 #: .\authentication\views.py:35 .\authentication\views.py:202
 #: .\authentication\views.py:262
@@ -498,13 +549,28 @@ msgstr "권한이 있는 사람"
 msgid "Stars"
 msgstr "별"
 
-#: .\hotel\forms.py:37
-msgid "Register Hotel"
-msgstr "호텔 등록"
+#: .\hotel\forms.py:35
+msgid ""
+"I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
+"policy</a>"
+msgstr "<a href=\"/privacy\" target=\"_blank\">개인정보 보호정책</a>을 읽었으며 이에 동의합니다."
 
-#: .\hotel\forms.py:44
-msgid "Confirm Address"
-msgstr "주소 확인"
+#: .\hotel\forms.py:40
+msgid ""
+"I have read and agree to the <a href=\"/terms-of-use\" "
+"target=\"_blank\">terms and conditions</a>"
+msgstr "<a href=\"/terms-of-use\" target=\"_blank\">이용약관</a>을 읽었으며 이에 동의합니다."
+
+#: .\hotel\forms.py:46
+msgid ""
+"I hereby certify, under penalty of law, that the information provided about "
+"myself and my hotel is accurate and complete to the best of my "
+"knowledge.<br> I understand that any false or misleading information "
+"provided may result in the immdiate suspesion of my hotel listing from "
+"Adventora and may lead to potential legal consequences."
+msgstr ""
+"본인은 본인과 본인의 호텔에 대해 제공한 정보가 본인이 아는 한 정확하고 완전함을 법적 처벌 하에 확인합니다.<br> 본인은 제공된 모든"
+" 허위 정보 또는 오해의 소지가 있는 정보가 본인의 호텔에 즉각적인 정지를 초래할 수 있음을 이해합니다. "
 
 #: .\hotel\models.py:19
 msgid "No description provided."
@@ -518,7 +584,7 @@ msgstr "방"
 msgid "Rooms"
 msgstr "객실"
 
-#: .\hotel\views.py:23 .\hotel\views.py:156
+#: .\hotel\views.py:23 .\hotel\views.py:159
 msgid "You do not have permission to view this page"
 msgstr "이 페이지를 볼 수 있는 권한이 없습니다."
 
@@ -526,59 +592,30 @@ msgstr "이 페이지를 볼 수 있는 권한이 없습니다."
 msgid "Your hotel is not approved yet"
 msgstr "호텔이 아직 승인되지 않았습니다."
 
-#: .\hotel\views.py:86
+#: .\hotel\views.py:89
 msgid "Successfully registered hotel"
-msgstr "성공적으로 등록된 호텔"
+msgstr "등록된 호텔"
 
-#: .\hotel\views.py:90
+#: .\hotel\views.py:93
 msgid "Error while registering hotel"
 msgstr "호텔 등록 중 오류 발생"
 
-#: .\hotel\views.py:97
+#: .\hotel\views.py:100
 msgid "You have already registered a hotel"
 msgstr "이미 호텔을 등록하셨습니다."
 
-#: .\hotel\views.py:115
+#: .\hotel\views.py:118
 msgid "You have not registered a hotel yet"
 msgstr "아직 호텔을 등록하지 않았습니다."
 
-#: .\hotel\views.py:133
+#: .\hotel\views.py:136
 msgid "Successfully confirmed address"
 msgstr "성공적으로 확인된 주소"
 
-#: .\hotel\views.py:136
+#: .\hotel\views.py:139
 msgid "Error while confirming address"
 msgstr "주소 확인 중 오류"
 
-#: .\hotel\views.py:152
+#: .\hotel\views.py:155
 msgid "No such hotel"
 msgstr "해당 호텔 없음"
-
-#, fuzzy
-#~| msgid "Privacy"
-#~ msgid "Privacy Policy"
-#~ msgstr "은둔"
-
-#, fuzzy
-#~| msgid "First name"
-#~ msgid "First and last name"
-#~ msgstr "이름"
-
-#, fuzzy
-#~| msgid "Email address must be valid"
-#~ msgid "Email address"
-#~ msgstr "이메일 주소는 유효해야 합니다."
-
-#, fuzzy
-#~| msgid "Hotel Name"
-#~ msgid "Hotel name"
-#~ msgstr "호텔 이름"
-
-#, fuzzy
-#~| msgid "Manager"
-#~ msgid "Manager's name"
-#~ msgstr "관리자"
-
-#, fuzzy
-#~ msgid "Delete account"
-#~ msgstr "계정 삭제"
