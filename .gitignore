@@ -6,3 +6,8 @@
 website/db.sqlite3
 website/static/qr
 **/migrations/
+
+.env*
+.flaskenv*
+!.env.project
+!.env.vault
