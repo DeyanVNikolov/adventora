@@ -1,4 +1,4 @@
-from captcha.fields import CaptchaField
+
 from crispy_bulma.layout import Submit
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout
@@ -7,6 +7,8 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm, PasswordChangeForm
 from django_countries.fields import CountryField, LazyTypedChoiceField
 from django_countries.widgets import CountrySelectWidget
+from turnstile.fields import TurnstileField
+
 from .models import CustomUser
 from django.utils.translation import gettext_lazy as _
 
@@ -14,7 +16,7 @@ from django.utils.translation import gettext_lazy as _
 class LoginForm(forms.Form):
     username = forms.CharField(max_length=100, label=_("Username or email"), required=True)
     password = forms.CharField(max_length=65, widget=forms.PasswordInput, label=_("Password"), required=True)
-    captcha = CaptchaField()
+    captcha = TurnstileField()
 
     class Meta:
         model = User
@@ -42,7 +44,7 @@ class RegisterForm(UserCreationForm):
     password2 = forms.CharField(max_length=65, label=_("Confirm password"), widget=forms.PasswordInput, required=True,
                                 help_text=_("Enter the same password as above, for verification.")
                                 )
-    captcha = CaptchaField()
+    captcha = TurnstileField()
 
     class Meta:
         model = User

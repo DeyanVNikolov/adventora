@@ -1,4 +1,4 @@
-from captcha.fields import CaptchaField
+
 from crispy_bulma.layout import Submit
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout
@@ -12,6 +12,8 @@ from django_countries.fields import CountryField, LazyTypedChoiceField
 from django_countries.widgets import CountrySelectWidget
 from location_field.forms.plain import PlainLocationField
 from location_field.forms.spatial import LocationField
+from turnstile.fields import TurnstileField
+
 from .models import Room, LuxuryOption
 from phonenumber_field.formfields import PhoneNumberField
 from phonenumber_field.widgets import PhoneNumberPrefixWidget
@@ -30,7 +32,7 @@ class RegisterHotelForm(forms.Form):
     EIK = forms.CharField(max_length=50, label=_('EIK'))
     mol_name = forms.CharField(max_length=100, label=_('Authorized Person'))
     stars = forms.IntegerField(label=_('Stars'), min_value=1, max_value=6)
-    captcha = CaptchaField()
+    captcha = TurnstileField()
     read_privacy_policy = forms.BooleanField(
         label=mark_safe(_('I have read and agree to the <a href="/privacy" target="_blank">privacy policy</a>')),
         required=True,

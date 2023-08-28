@@ -25,6 +25,10 @@ CSRF_TRUSTED_ORIGINS = [
 CSRF_COOKIE_PATH = '/'
 CSRF_COOKIE_SECURE = True
 
+
+TURNSTILE_SITEKEY = '0x4AAAAAAAJSq6v1EobXsWMD'
+TURNSTILE_SECRET = '0x4AAAAAAAJSq87MRdrVr-BULhd4cBk-dgs'
+
 INSTALLED_APPS = [
     'jazzmin',
     'django.contrib.admin',
@@ -35,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_countries',
     'rest_framework',
+    'turnstile',
     'captcha',
     "phonenumber_field",
     'crispy_forms',
