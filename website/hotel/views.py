@@ -17,8 +17,9 @@ def security_check(view_func):
                 value = request.COOKIES.get('clearance')
                 if not value.startswith(f'SECURITY_CLEARANCE_COOKIE-DO-NOT-EDIT-OR-DELETE--{request.user.id}--SECURITY_PASSED--DO-NOT-SHARE-COOKIES'):
                     messages.error(request, _('Malformed security token'))
-                    request.COOKIES.pop('clearance')
-                    return redirect('/')
+                    response = redirect(f'/security-check?url={request.path}')
+                    response.delete_cookie('clearance')
+                    return response
 
         return view_func(request, *args, **kwargs)
 
