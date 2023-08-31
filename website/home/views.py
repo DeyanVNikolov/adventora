@@ -32,7 +32,6 @@ def security_check(request):
     else:
         form = SecurityCheckForm()
         if request.method == 'POST':
-            print("url is: ", url)
             form = SecurityCheckForm(request.POST)
             if form.is_valid():
                 unix_now = int(datetime.datetime.now().timestamp())

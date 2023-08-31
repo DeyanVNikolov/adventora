@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-16 20:19+0300\n"
+"POT-Creation-Date: 2023-08-31 11:38+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgid "Change password"
 msgstr "Vaihda salasana"
 
 #: .\adventora\templates\auth\edit_profile.html:28
-#: .\authentication\forms.py:143
+#: .\authentication\forms.py:151
 msgid "Delete Account"
 msgstr "Poista tili"
 
@@ -100,11 +100,15 @@ msgstr "Kirjaudu sisään Spotifylla."
 msgid "Login with VK"
 msgstr "Kirjaudu sisään VK:lla"
 
-#: .\adventora\templates\base.html:135
+#: .\adventora\templates\base.html:127 .\adventora\templates\base.html:323
+msgid "Homepage"
+msgstr "Kotisivu"
+
+#: .\adventora\templates\base.html:142
 msgid "Hotel"
 msgstr "Hotelli"
 
-#: .\adventora\templates\base.html:141
+#: .\adventora\templates\base.html:148
 #: .\adventora\templates\hotel\confirm_address.html:43
 #: .\adventora\templates\hotel\confirm_address.html:64
 #: .\adventora\templates\hotel\dashboard.html:63
@@ -115,68 +119,72 @@ msgstr "Hotelli"
 msgid "Dashboard"
 msgstr "Kojelauta"
 
-#: .\adventora\templates\base.html:159
+#: .\adventora\templates\base.html:166
 msgid "Profile"
 msgstr "Profiili"
 
-#: .\adventora\templates\base.html:164 .\adventora\templates\base.html:174
-#: .\adventora\templates\base.html:176
+#: .\adventora\templates\base.html:172
+#: .\adventora\templates\hotel\confirm_address.html:63
+#: .\adventora\templates\hotel\dashboard.html:83
+#: .\adventora\templates\hotel\register_hotel.html:63
+#: .\authentication\models.py:11
+msgid "Admin"
+msgstr "Admin"
+
+#: .\adventora\templates\base.html:178 .\adventora\templates\base.html:188
+#: .\adventora\templates\base.html:190
 msgid "Log out"
 msgstr "Kirjautua ulos"
 
-#: .\adventora\templates\base.html:181 .\authentication\forms.py:24
+#: .\adventora\templates\base.html:195 .\authentication\forms.py:26
 msgid "Login"
 msgstr "Kirjaudu sisään"
 
-#: .\adventora\templates\base.html:185 .\authentication\forms.py:52
+#: .\adventora\templates\base.html:199 .\authentication\forms.py:54
 msgid "Sign up"
 msgstr "Kirjaudu"
 
-#: .\adventora\templates\base.html:191
+#: .\adventora\templates\base.html:205
 msgid "Language"
 msgstr "Kieli"
 
-#: .\adventora\templates\base.html:230
+#: .\adventora\templates\base.html:244
 msgid "Error"
 msgstr "Virhe"
 
-#: .\adventora\templates\base.html:242
+#: .\adventora\templates\base.html:256
 msgid "Success"
 msgstr "Menestys"
 
-#: .\adventora\templates\base.html:253
+#: .\adventora\templates\base.html:267
 msgid "Warning"
 msgstr "Varoitus"
 
-#: .\adventora\templates\base.html:277
+#: .\adventora\templates\base.html:291
 msgid "Adventora supports small, medium and large businesses"
 msgstr "Adventora tukee pieniä, keskisuuria ja suuria yrityksiä"
 
-#: .\adventora\templates\base.html:302
+#: .\adventora\templates\base.html:321
 msgid "All Rights Reserved"
 msgstr "Kaikki oikeudet pidätetään"
 
-#: .\adventora\templates\base.html:304
-msgid "Homepage"
-msgstr "Kotisivu"
-
-#: .\adventora\templates\base.html:305
+#: .\adventora\templates\base.html:324
 msgid "About us"
 msgstr "Meistä"
 
-#: .\adventora\templates\base.html:306
+#: .\adventora\templates\base.html:325
 msgid "Privacy"
 msgstr "Yksityisyys"
 
-#: .\adventora\templates\base.html:307
+#: .\adventora\templates\base.html:326
 msgid "Terms of use"
 msgstr "Käyttöehdot"
 
-#: .\adventora\templates\base.html:308
+#: .\adventora\templates\base.html:327
 msgid "Contacts"
 msgstr "Yhteystiedot"
 
-#: .\adventora\templates\base.html:309
+#: .\adventora\templates\base.html:328
 msgid "Partnerships"
 msgstr "Kumppanuudet"
 
@@ -199,15 +207,8 @@ msgstr "Yleiset asetukset"
 msgid "Management"
 msgstr "Hallinto"
 
-#: .\adventora\templates\hotel\confirm_address.html:63
-#: .\adventora\templates\hotel\dashboard.html:83
-#: .\adventora\templates\hotel\register_hotel.html:63
-#: .\authentication\models.py:11
-msgid "Admin"
-msgstr "Admin"
-
 #: .\adventora\templates\hotel\confirm_address.html:65
-#: .\adventora\templates\hotel\confirm_address.html:82 .\hotel\forms.py:61
+#: .\adventora\templates\hotel\confirm_address.html:82 .\hotel\forms.py:66
 msgid "Confirm Address"
 msgstr "Vahvista osoite"
 
@@ -219,7 +220,7 @@ msgstr "Hotelliasi ei ole vielä hyväksytty. "
 
 #: .\adventora\templates\hotel\dashboard.html:529
 #: .\adventora\templates\hotel\register_hotel.html:65
-#: .\adventora\templates\hotel\register_hotel.html:82 .\hotel\forms.py:54
+#: .\adventora\templates\hotel\register_hotel.html:82 .\hotel\forms.py:57
 msgid "Register Hotel"
 msgstr "Rekisteröidy hotelli"
 
@@ -227,44 +228,44 @@ msgstr "Rekisteröidy hotelli"
 msgid "For partnerships contact us at"
 msgstr "Yhteistyökumppanuuksia varten ota yhteyttä osoitteeseen"
 
-#: .\authentication\forms.py:15
+#: .\authentication\forms.py:17
 msgid "Username or email"
 msgstr "Käyttäjätunnus tai sähköpostiosoite"
 
-#: .\authentication\forms.py:16 .\authentication\forms.py:35
-#: .\authentication\forms.py:140 .\authentication\forms.py:173
-#: .\authentication\forms.py:200
+#: .\authentication\forms.py:18 .\authentication\forms.py:37
+#: .\authentication\forms.py:146 .\authentication\forms.py:181
+#: .\authentication\forms.py:215
 msgid "Password"
 msgstr "Salasana"
 
-#: .\authentication\forms.py:29 .\authentication\forms.py:87
-#: .\authentication\forms.py:105
+#: .\authentication\forms.py:31 .\authentication\forms.py:89
+#: .\authentication\forms.py:107
 msgid "Username"
 msgstr "Käyttäjätunnus"
 
-#: .\authentication\forms.py:30 .\authentication\forms.py:88
-#: .\authentication\forms.py:106
+#: .\authentication\forms.py:32 .\authentication\forms.py:90
+#: .\authentication\forms.py:108
 msgid "The username must contain at least 8 characters."
 msgstr "Käyttäjätunnuksessa on oltava vähintään 8 merkkiä."
 
-#: .\authentication\forms.py:32
+#: .\authentication\forms.py:34
 msgid "First name"
 msgstr "Etunimi"
 
-#: .\authentication\forms.py:33
+#: .\authentication\forms.py:35
 msgid "Last name"
 msgstr "Sukunimi"
 
-#: .\authentication\forms.py:34 .\authentication\forms.py:78
-#: .\authentication\forms.py:104 .\hotel\forms.py:27
+#: .\authentication\forms.py:36 .\authentication\forms.py:80
+#: .\authentication\forms.py:106 .\hotel\forms.py:29
 msgid "Email"
 msgstr "Sähköposti"
 
-#: .\authentication\forms.py:34
+#: .\authentication\forms.py:36
 msgid "Email address must be valid"
 msgstr "Sähköpostiosoitteen on oltava kelvollinen"
 
-#: .\authentication\forms.py:36
+#: .\authentication\forms.py:38
 msgid ""
 "The password must be at least 8 characters long. <br> The password should "
 "not contain only digits. <br> The password should not contain only letters. "
@@ -273,20 +274,20 @@ msgid ""
 "commonly used password."
 msgstr "Salasanan tulee olla vähintään 8 merkkiä pitkä. "
 
-#: .\authentication\forms.py:42
+#: .\authentication\forms.py:44
 msgid "Confirm password"
 msgstr "Vahvista salasana"
 
-#: .\authentication\forms.py:43
+#: .\authentication\forms.py:45
 msgid "Enter the same password as above, for verification."
 msgstr "Syötä sama salasana kuin yllä vahvistusta varten."
 
-#: .\authentication\forms.py:57 .\authentication\forms.py:98
+#: .\authentication\forms.py:59 .\authentication\forms.py:100
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
 msgstr ""
 "Lomailija - Tutki, suunnittele ja varaa ihanteelliset lomaaktiviteetit."
 
-#: .\authentication\forms.py:58 .\authentication\forms.py:99
+#: .\authentication\forms.py:60 .\authentication\forms.py:101
 msgid ""
 "Hotel Manager - Oversee operations and provide excellent service in your own"
 " hotel."
@@ -294,7 +295,7 @@ msgstr ""
 "Hotel Manager - Valvo toimintaa ja tarjoa erinomaista palvelua omassa "
 "hotellissasi."
 
-#: .\authentication\forms.py:59 .\authentication\forms.py:100
+#: .\authentication\forms.py:61 .\authentication\forms.py:102
 msgid ""
 "Employee - Contribute your expertise to a thriving workplace, such as a "
 "hotel or guest house."
@@ -302,64 +303,64 @@ msgstr ""
 "Työntekijä – Anna asiantuntemuksesi menestyvän työpaikan, kuten hotellin tai"
 " guesthousen, luomiseen."
 
-#: .\authentication\forms.py:65
+#: .\authentication\forms.py:67
 msgid "Submit"
 msgstr "Lähetä"
 
-#: .\authentication\forms.py:69 .\authentication\forms.py:102
+#: .\authentication\forms.py:71 .\authentication\forms.py:104
 msgid "First Name"
 msgstr "Etunimi"
 
-#: .\authentication\forms.py:70 .\authentication\forms.py:103
+#: .\authentication\forms.py:72 .\authentication\forms.py:105
 msgid "Last Name"
 msgstr "Sukunimi"
 
-#: .\authentication\forms.py:73 .\authentication\forms.py:81
-#: .\authentication\forms.py:92 .\authentication\forms.py:113
-#: .\authentication\forms.py:124 .\authentication\forms.py:134
-#: .\authentication\forms.py:158 .\authentication\forms.py:167
+#: .\authentication\forms.py:75 .\authentication\forms.py:83
+#: .\authentication\forms.py:94 .\authentication\forms.py:115
+#: .\authentication\forms.py:128 .\authentication\forms.py:140
+#: .\authentication\forms.py:166 .\authentication\forms.py:175
 msgid "Save"
 msgstr "Tallentaa"
 
-#: .\authentication\forms.py:78 .\authentication\forms.py:104
+#: .\authentication\forms.py:80 .\authentication\forms.py:106
 msgid "The email must be valid."
 msgstr "Sähköpostin tulee olla voimassa."
 
-#: .\authentication\forms.py:108 .\authentication\forms.py:155
+#: .\authentication\forms.py:110 .\authentication\forms.py:163
 msgid "Citizenship"
 msgstr "Kansalaisuus"
 
-#: .\authentication\forms.py:109 .\authentication\forms.py:164
-#: .\hotel\forms.py:26
+#: .\authentication\forms.py:111 .\authentication\forms.py:172
+#: .\hotel\forms.py:28
 msgid "Phone"
 msgstr "Puhelin"
 
-#: .\authentication\forms.py:110
+#: .\authentication\forms.py:112
 msgid "Choose a Role"
 msgstr "Valitse rooli"
 
-#: .\authentication\forms.py:119
+#: .\authentication\forms.py:121
 msgid "Old Password"
 msgstr "vanha salasana"
 
-#: .\authentication\forms.py:120 .\authentication\forms.py:130
+#: .\authentication\forms.py:122 .\authentication\forms.py:134
 msgid "New Password"
 msgstr "uusi salasana"
 
-#: .\authentication\forms.py:121 .\authentication\forms.py:131
+#: .\authentication\forms.py:123 .\authentication\forms.py:135
 msgid "Confirm New Password"
 msgstr "Vahvista uusi salasana"
 
-#: .\authentication\forms.py:176 .\authentication\forms.py:185
-#: .\authentication\forms.py:194
+#: .\authentication\forms.py:186 .\authentication\forms.py:197
+#: .\authentication\forms.py:209
 msgid "Enable"
 msgstr "ota käyttöön"
 
-#: .\authentication\forms.py:182 .\authentication\forms.py:191
+#: .\authentication\forms.py:192 .\authentication\forms.py:203
 msgid "Code"
 msgstr "Koodi"
 
-#: .\authentication\forms.py:203
+#: .\authentication\forms.py:220
 msgid "Disable"
 msgstr "Poista käytöstä"
 
@@ -375,186 +376,190 @@ msgstr "Manager"
 msgid "Employee"
 msgstr "Työntekijä"
 
-#: .\authentication\views.py:35 .\authentication\views.py:202
-#: .\authentication\views.py:262
+#: .\authentication\views.py:28 .\hotel\views.py:19
+msgid "Malformed security token"
+msgstr "Väärin muotoiltu suojaustunnus"
+
+#: .\authentication\views.py:53 .\authentication\views.py:220
+#: .\authentication\views.py:281
 msgid "A user with that email already exists."
 msgstr "Tällä sähköpostiosoitteella on jo käyttäjä."
 
-#: .\authentication\views.py:39
+#: .\authentication\views.py:57
 msgid "Password must be at least 8 characters long."
 msgstr "Salasanan tulee olla vähintään 8 merkkiä pitkä."
 
-#: .\authentication\views.py:43 .\authentication\views.py:327
-#: .\authentication\views.py:346
+#: .\authentication\views.py:61 .\authentication\views.py:347
+#: .\authentication\views.py:366
 msgid "Passwords do not match."
 msgstr "Salasanat eivät täsmää."
 
-#: .\authentication\views.py:47
+#: .\authentication\views.py:65
 msgid "Username must be at least 4 characters long."
 msgstr "Käyttäjätunnuksen tulee olla vähintään 4 merkkiä pitkä."
 
-#: .\authentication\views.py:52
+#: .\authentication\views.py:70
 msgid "Username should only contain letters and numbers."
 msgstr "Käyttäjätunnus saa sisältää vain kirjaimia ja numeroita."
 
-#: .\authentication\views.py:57
+#: .\authentication\views.py:75
 msgid "Invalid email."
 msgstr "Virheellinen sähköpostiosoite."
 
-#: .\authentication\views.py:61 .\authentication\views.py:229
-#: .\authentication\views.py:268
+#: .\authentication\views.py:79 .\authentication\views.py:247
+#: .\authentication\views.py:287
 msgid "A user with that username already exists."
 msgstr "Kyseinen käyttäjänimi on jo käytössä toisella käyttäjällä."
 
-#: .\authentication\views.py:69
+#: .\authentication\views.py:87
 msgid "Successfully registration."
 msgstr "Rekisteröinti onnistui."
 
-#: .\authentication\views.py:72 .\authentication\views.py:129
-#: .\authentication\views.py:160 .\authentication\views.py:182
-#: .\authentication\views.py:211 .\authentication\views.py:242
-#: .\authentication\views.py:294 .\authentication\views.py:336
-#: .\authentication\views.py:355 .\authentication\views.py:379
-#: .\authentication\views.py:399 .\authentication\views.py:421
-#: .\authentication\views.py:529 .\authentication\views.py:560
-#: .\authentication\views.py:590 .\authentication\views.py:618
+#: .\authentication\views.py:90 .\authentication\views.py:147
+#: .\authentication\views.py:178 .\authentication\views.py:200
+#: .\authentication\views.py:229 .\authentication\views.py:260
+#: .\authentication\views.py:313 .\authentication\views.py:356
+#: .\authentication\views.py:375 .\authentication\views.py:400
+#: .\authentication\views.py:420 .\authentication\views.py:442
+#: .\authentication\views.py:550 .\authentication\views.py:583
+#: .\authentication\views.py:614 .\authentication\views.py:644
 msgid "Invalid data."
 msgstr "Virheellinen tieto."
 
-#: .\authentication\views.py:98
+#: .\authentication\views.py:116
 msgid "A user with that email does not exist."
 msgstr "Käyttäjää, jolla on kyseinen sähköpostiosoite, ei ole olemassa."
 
-#: .\authentication\views.py:108 .\authentication\views.py:122
+#: .\authentication\views.py:126 .\authentication\views.py:140
 msgid "Successfully logged in."
 msgstr "Sisäänkirjautuminen onnistui."
 
-#: .\authentication\views.py:111 .\authentication\views.py:125
+#: .\authentication\views.py:129 .\authentication\views.py:143
 msgid "Invalid password."
 msgstr "Väärä salasana."
 
-#: .\authentication\views.py:116
+#: .\authentication\views.py:134
 msgid "A user with that username does not exist."
 msgstr "Käyttäjää tällä käyttäjätunnuksella ei ole olemassa."
 
-#: .\authentication\views.py:139
+#: .\authentication\views.py:157
 msgid "Successfully logged out."
 msgstr "Uloskirjautuminen onnistui."
 
-#: .\authentication\views.py:152 .\authentication\views.py:277
+#: .\authentication\views.py:170 .\authentication\views.py:296
 msgid "Invalid role."
 msgstr "Virheellinen rooli."
 
-#: .\authentication\views.py:157
+#: .\authentication\views.py:175
 msgid "Successfully chosen role."
 msgstr "Onnistuneesti valittu rooli."
 
-#: .\authentication\views.py:179
+#: .\authentication\views.py:197
 msgid "Successfully confirmed name."
 msgstr "Nimi vahvistettiin onnistuneesti."
 
-#: .\authentication\views.py:208
+#: .\authentication\views.py:226
 msgid "Successfully confirmed email."
 msgstr "Sähköpostin vahvistus onnistui."
 
-#: .\authentication\views.py:233 .\authentication\views.py:271
+#: .\authentication\views.py:251 .\authentication\views.py:290
 msgid "Invalid username. At least 5 characters."
 msgstr "Virheellinen käyttäjätunnus. "
 
-#: .\authentication\views.py:239
+#: .\authentication\views.py:257
 msgid "Successfully confirmed username."
 msgstr "Käyttäjätunnus vahvistettu."
 
-#: .\authentication\views.py:291
+#: .\authentication\views.py:310
 msgid "Successfully edited profile."
 msgstr "Profiilin muokkaus onnistui."
 
-#: .\authentication\views.py:323
+#: .\authentication\views.py:343
 msgid "Incorrect old password."
 msgstr "Väärä vanha salasana."
 
-#: .\authentication\views.py:333 .\authentication\views.py:352
+#: .\authentication\views.py:353 .\authentication\views.py:372
 msgid "Successfully changed password."
 msgstr "Salasanan vaihto onnistui."
 
-#: .\authentication\views.py:372 .\authentication\views.py:547
-#: .\authentication\views.py:608
+#: .\authentication\views.py:393 .\authentication\views.py:570
+#: .\authentication\views.py:634
 msgid "Incorrect password."
 msgstr "Väärä salasana."
 
-#: .\authentication\views.py:376
+#: .\authentication\views.py:397
 msgid "Successfully deleted account."
 msgstr "Tilin poistaminen onnistui."
 
-#: .\authentication\views.py:396
+#: .\authentication\views.py:417
 msgid "Successfully confirmed citizenship."
 msgstr "Kansalaisuus on vahvistettu."
 
-#: .\authentication\views.py:418
+#: .\authentication\views.py:439
 msgid "Successfully confirmed phone number."
 msgstr "Puhelinnumeron vahvistus onnistui."
 
-#: .\authentication\views.py:507 .\authentication\views.py:599
+#: .\authentication\views.py:528 .\authentication\views.py:625
 msgid "Two factor authentication is not enabled."
 msgstr "Kaksivaiheinen todennus ei ole käytössä."
 
-#: .\authentication\views.py:511
+#: .\authentication\views.py:532
 msgid "Two factor authentication is already passed."
 msgstr "Kaksivaiheinen todennus on jo läpäissyt."
 
-#: .\authentication\views.py:523
+#: .\authentication\views.py:544
 msgid "Successfully passed two factor authentication"
 msgstr "Kaksivaiheinen todennus läpäissyt onnistuneesti"
 
-#: .\authentication\views.py:526 .\authentication\views.py:587
+#: .\authentication\views.py:547 .\authentication\views.py:611
 msgid "Invalid code."
 msgstr "Virheellinen koodi."
 
-#: .\authentication\views.py:539 .\authentication\views.py:569
+#: .\authentication\views.py:562 .\authentication\views.py:593
 msgid "Two factor authentication is already enabled."
 msgstr "Kaksivaiheinen todennus on jo käytössä."
 
-#: .\authentication\views.py:557 .\authentication\views.py:584
+#: .\authentication\views.py:580 .\authentication\views.py:608
 msgid "Successfully enabled two factor authentication."
 msgstr "Kaksivaiheinen todennus otettiin käyttöön."
 
-#: .\authentication\views.py:615
+#: .\authentication\views.py:641
 msgid "Successfully disabled two factor authentication."
 msgstr "Kaksivaiheinen todennus on poistettu käytöstä."
 
-#: .\hotel\forms.py:23
+#: .\hotel\forms.py:25
 msgid "Hotel Name"
 msgstr "Hotellin nimi"
 
-#: .\hotel\forms.py:24
+#: .\hotel\forms.py:26
 msgid "Address"
 msgstr "Osoite"
 
-#: .\hotel\forms.py:25
+#: .\hotel\forms.py:27
 msgid "City"
 msgstr "Kaupunki"
 
-#: .\hotel\forms.py:28
+#: .\hotel\forms.py:30
 msgid "Website"
 msgstr "Verkkosivusto"
 
-#: .\hotel\forms.py:29
+#: .\hotel\forms.py:31
 msgid "Description"
 msgstr "Kuvaus"
 
-#: .\hotel\forms.py:30
+#: .\hotel\forms.py:32
 msgid "EIK"
 msgstr "EIK"
 
-#: .\hotel\forms.py:31
+#: .\hotel\forms.py:33
 msgid "Authorized Person"
 msgstr "Valtuutettu henkilö"
 
-#: .\hotel\forms.py:32
+#: .\hotel\forms.py:34
 msgid "Stars"
 msgstr "Tähdet"
 
-#: .\hotel\forms.py:35
+#: .\hotel\forms.py:37
 msgid ""
 "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
 "policy</a>"
@@ -562,7 +567,7 @@ msgstr ""
 "Olen lukenut ja hyväksyn <a href=\"/privacy\" "
 "target=\"_blank\">tietosuojakäytännön</a>"
 
-#: .\hotel\forms.py:40
+#: .\hotel\forms.py:42
 msgid ""
 "I have read and agree to the <a href=\"/terms-of-use\" "
 "target=\"_blank\">terms and conditions</a>"
@@ -570,7 +575,7 @@ msgstr ""
 "Olen lukenut ja hyväksyn <a href=\"/terms-of-use\" "
 "target=\"_blank\">käyttöehdot</a>"
 
-#: .\hotel\forms.py:46
+#: .\hotel\forms.py:48
 msgid ""
 "I hereby certify, under penalty of law, that the information provided about "
 "myself and my hotel is accurate and complete to the best of my "
@@ -595,38 +600,38 @@ msgstr "Huone"
 msgid "Rooms"
 msgstr "Huoneet"
 
-#: .\hotel\views.py:23 .\hotel\views.py:159
+#: .\hotel\views.py:39 .\hotel\views.py:179
 msgid "You do not have permission to view this page"
 msgstr "Sinulla ei ole lupaa tarkastella tätä sivua"
 
-#: .\hotel\views.py:32
+#: .\hotel\views.py:48
 msgid "Your hotel is not approved yet"
 msgstr "Hotelliasi ei ole vielä hyväksytty"
 
-#: .\hotel\views.py:89
+#: .\hotel\views.py:107
 msgid "Successfully registered hotel"
 msgstr "Hotelli rekisteröitiin onnistuneesti"
 
-#: .\hotel\views.py:93
+#: .\hotel\views.py:111
 msgid "Error while registering hotel"
 msgstr "Virhe hotellia rekisteröitäessä"
 
-#: .\hotel\views.py:100
+#: .\hotel\views.py:118
 msgid "You have already registered a hotel"
 msgstr "Olet jo rekisteröinyt hotellin"
 
-#: .\hotel\views.py:118
+#: .\hotel\views.py:137
 msgid "You have not registered a hotel yet"
 msgstr "Et ole vielä rekisteröinyt hotellia"
 
-#: .\hotel\views.py:136
+#: .\hotel\views.py:155
 msgid "Successfully confirmed address"
 msgstr "Osoite vahvistettu"
 
-#: .\hotel\views.py:139
+#: .\hotel\views.py:158
 msgid "Error while confirming address"
 msgstr "Virhe vahvistettaessa osoitetta"
 
-#: .\hotel\views.py:155
+#: .\hotel\views.py:175
 msgid "No such hotel"
 msgstr "Ei sellaista hotellia"
