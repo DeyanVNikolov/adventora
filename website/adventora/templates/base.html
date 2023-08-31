@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
     <script src="{% static 'js/main.js' %}"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
     <style>
         /* Custom styling for the footer */
         .footer {
@@ -121,8 +122,7 @@
             <img onclick="window.open('/', '_self');" style="cursor: pointer" src="{% static 'img/logo/adv-redplane-transparent.png' %}" alt="Adventora Logo">
         </div>
         <div class="navbar-item has-control">
-            <a class="navbar-item" href="{% url 'home
-            ' %}">
+            <a class="navbar-item" href="{% url 'home' %}">
                 <span class="mdi mdi-home-account icon"></span>
                 <span>{% trans "Homepage" %}</span>
             </a>
@@ -303,12 +303,17 @@
                         </div>
                         <div class="column is-6">
                             <div class="image-container">
-                                <img onclick="window.open('https://toprentacar.bg/?partner=adventora', '_blank');" style="cursor: pointer;" src="{% static 'img/logo/top-rent-a-car.png' %}"
+                                <img onclick="window.open({% if LANGUAGE_CODE == "bg" %}'https://toprentacar.bg/?partner=adventora'{% else %}'https://toprentacar.bg/en?partner=adventora'{% endif %}, '_blank');" style="cursor: pointer;" src="{% static 'img/logo/top-rent-a-car.png' %}"
                                      alt="Top Rent A Car Logo">
                             </div>
                         </div>
                         <!-- Add more columns for additional images -->
                     </div>
+                    {% if LANGUAGE_CODE == "bg" %}
+                    <a href="https://toprentacar.bg/?partner=adventora&channel=banner"><img src="https://toprentacar.bg/images/toprentacar-320x100-bg.png" alt="Top-Rent-a-Car Banner"></a>
+                    {% else %}
+                        <a href="https://toprentacar.bg/en?partner=adventora&channel=banner"><img src="https://toprentacar.bg/images/toprentacar-320x100-en.png" alt="Top-Rent-a-Car Banner"></a>
+                    {% endif %}
                 </div>
             </section>
             <br>

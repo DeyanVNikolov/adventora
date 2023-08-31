@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+
+{% csrf_token %}
+        {% crispy form %}
+
+    <script>
+    function processturn() {
+        // submit the form
+        document.getElementsByTagName("form")[1].submit();
+    }
+
+    </script>
+
+{% endblock %}

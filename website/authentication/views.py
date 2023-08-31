@@ -16,6 +16,24 @@ from django.utils.translation import gettext as _
 from .models import CustomUser
 
 
+def security_check(view_func):
+    def wrapper(request, *args, **kwargs):
+        has_clearance_cookie = request.COOKIES.get('clearance', None)
+        if not has_clearance_cookie:
+            return redirect(f'/security-check?url={request.path}')
+        else:
+            if has_clearance_cookie:
+                value = request.COOKIES.get('clearance')
+                if not value.startswith(f'SECURITY_CLEARANCE_COOKIE-DO-NOT-EDIT-OR-DELETE--{request.user.id}--SECURITY_PASSED--DO-NOT-SHARE-COOKIES'):
+                    messages.error(request, _('Malformed security token'))
+                    response = redirect(f'/security-check?url={request.path}')
+                    response.delete_cookie('clearance')
+                    return response
+
+        return view_func(request, *args, **kwargs)
+
+    return wrapper
+
 def sign_up(request):
     # if user is already logged in, redirect to home page
     if request.user.is_authenticated:
@@ -249,6 +267,7 @@ def complete_username(request):
 
 
 @login_required
+@security_check
 def edit_profile(request):
     if request.method == 'POST':
         form = EditProfileForm(request.POST)
@@ -310,6 +329,7 @@ def edit_profile(request):
 
 
 @login_required
+@security_check
 def change_password(request):
     if request.method == 'POST':
         if request.user.has_usable_password():
@@ -362,6 +382,7 @@ def change_password(request):
 
 
 @login_required
+@security_check
 def delete_account(request):
     if request.method == 'POST':
         form = DeleteAccountForm(request.POST)
@@ -534,6 +555,8 @@ def two_factor(request):
     return render(request, 'auth/two_factor.html', context)
 
 
+@login_required
+@security_check
 def two_factor_enable(request):
     if request.user.two_fa_enabled is True:
         messages.error(request, _('Two factor authentication is already enabled.'))
@@ -563,7 +586,8 @@ def two_factor_enable(request):
     form = TwoFactorEnableForm()
     return render(request, 'auth/two_factor_enable.html', {'form': form})
 
-
+@login_required
+@security_check
 def two_factor_enable_confirm(request):
     if request.user.two_fa_enabled is True:
         messages.error(request, _('Two factor authentication is already enabled.'))
@@ -594,6 +618,8 @@ def two_factor_enable_confirm(request):
     return render(request, 'auth/two_factor_enable_confirm.html', {'form': form})
 
 
+@login_required
+@security_check
 def two_factor_disable(request):
     if request.user.two_fa_enabled is False:
         messages.error(request, _('Two factor authentication is not enabled.'))

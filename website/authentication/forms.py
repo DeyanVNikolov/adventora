@@ -122,6 +122,8 @@ class ChangePasswordForm(forms.Form):
     new_password1 = forms.CharField(max_length=65, label=_("New Password"), widget=forms.PasswordInput, required=True)
     new_password2 = forms.CharField(max_length=65, label=_("Confirm New Password"), widget=forms.PasswordInput, required=True)
 
+    captcha = TurnstileField()
+
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Save'), css_class='button is-link'))
     helper.form_method = 'POST'
@@ -132,6 +134,8 @@ class SetPasswordFromSocialLogin(forms.Form):
     new_password1 = forms.CharField(max_length=65, label=_("New Password"), widget=forms.PasswordInput, required=True)
     new_password2 = forms.CharField(max_length=65, label=_("Confirm New Password"), widget=forms.PasswordInput, required=True)
 
+    captcha = TurnstileField()
+
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Save'), css_class='button is-link'))
     helper.form_method = 'POST'
@@ -140,6 +144,8 @@ class SetPasswordFromSocialLogin(forms.Form):
 
 class DeleteAccountForm(forms.Form):
     password = forms.CharField(max_length=65, label=_("Password"), widget=forms.PasswordInput, required=True)
+
+    captcha = TurnstileField()
 
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Delete Account'), css_class='button is-link'))
@@ -174,6 +180,8 @@ class PhoneForm(forms.Form):
 class TwoFactorEnableForm(forms.Form):
     password = forms.CharField(max_length=65, label=_("Password"), widget=forms.PasswordInput, required=True)
 
+    captcha = TurnstileField()
+
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Enable'), css_class='button is-link'))
     helper.form_method = 'POST'
@@ -182,6 +190,8 @@ class TwoFactorEnableForm(forms.Form):
 
 class TwoFactorEnableConfirmForm(forms.Form):
     code = forms.CharField(max_length=65, label=_("Code"), required=True)
+
+    captcha = TurnstileField()
 
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Enable'), css_class='button is-link'))
@@ -192,6 +202,9 @@ class TwoFactorEnableConfirmForm(forms.Form):
 class TwoFactorForm(forms.Form):
     code = forms.CharField(max_length=65, label=_("Code"), required=True)
 
+    captcha = TurnstileField()
+
+
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Enable'), css_class='button is-link'))
     helper.form_method = 'POST'
@@ -200,6 +213,8 @@ class TwoFactorForm(forms.Form):
 
 class TwoFactorDisableForm(forms.Form):
     password = forms.CharField(max_length=65, label=_("Password"), widget=forms.PasswordInput, required=True)
+
+    captcha = TurnstileField()
 
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Disable'), css_class='button is-link'))

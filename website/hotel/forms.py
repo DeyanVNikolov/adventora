@@ -49,6 +49,7 @@ class RegisterHotelForm(forms.Form):
         required=True,
         widget=forms.CheckboxInput(attrs={'class': 'form-check-input'})
     )
+    captcha = TurnstileField()
 
 
     helper=FormHelper()
@@ -58,6 +59,8 @@ class RegisterHotelForm(forms.Form):
 
 class ConfirmAddressForm(forms.Form):
     address = forms.CharField(max_length=1000, label='Адрес', widget=forms.TextInput(attrs={'class': 'form-control'}))
+
+    captcha = TurnstileField()
     helper = FormHelper()
     helper.form_method = 'POST'
     helper.add_input(Submit('submit', _('Confirm Address')))

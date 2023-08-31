@@ -7,6 +7,22 @@ from .models import Hotel
 from .forms import RegisterHotelForm, ConfirmAddressForm
 from django.utils.translation import gettext as _
 
+def security_check(view_func):
+    def wrapper(request, *args, **kwargs):
+        has_clearance_cookie = request.COOKIES.get('clearance', None)
+        if not has_clearance_cookie:
+            return redirect(f'/security-check?url={request.path}')
+        else:
+            if has_clearance_cookie:
+                value = request.COOKIES.get('clearance')
+                if not value.startswith(f'SECURITY_CLEARANCE_COOKIE-DO-NOT-EDIT-OR-DELETE--{request.user.id}--SECURITY_PASSED--DO-NOT-SHARE-COOKIES'):
+                    messages.error(request, _('Malformed security token'))
+                    request.COOKIES.pop('clearance')
+                    return redirect('/')
+
+        return view_func(request, *args, **kwargs)
+
+    return wrapper
 
 def is_address_confirmed(func):
     def wrapper(request, *args, **kwargs):
@@ -43,6 +59,7 @@ def mainpage(request):
 @login_required
 @is_current_user_role_manager
 @is_address_confirmed
+@security_check
 def dashboard(request):
     context = {}
     hotel = Hotel.objects.filter(owner=request.user.id).first()
@@ -54,6 +71,7 @@ def dashboard(request):
 
 @login_required
 @is_current_user_role_manager
+@security_check
 def register_hotel(request):
     context = {}
 
@@ -110,6 +128,7 @@ def register_hotel(request):
 
 @login_required
 @is_current_user_role_manager
+@security_check
 def confirm_address(request):
     context = {}
 
@@ -149,13 +168,14 @@ def confirm_address(request):
 @is_current_user_role_manager
 @is_address_confirmed
 @is_hotel_confirmed
+@security_check
 def hotel(request, hotel_id):
     data = Hotel.objects.filter(uid=hotel_id).first()
     if not data:
         messages.warning(request, _('No such hotel'))
         return redirect('dashboard')
 
-    if int(data.owner.id) != int(request.user.id):
+    if data.owner.id != request.user.id:
         messages.warning(request, _('You do not have permission to view this page'))
         return redirect('dashboard')
 

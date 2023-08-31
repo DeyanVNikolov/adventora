@@ -70,6 +70,21 @@ MIDDLEWARE = [
 
 ]
 
+TURNSTILE_DEFAULT_CONFIG = {
+
+    'callback': 'processturn',
+    'render': 'explicit',
+    'theme': 'dark',
+
+
+}
+
+LANGUAGE_COOKIE_NAME = 'lang'
+LANGUAGE_COOKIE_SECURE = True
+
+
+LANGUAGE_COOKIE_AGE = 60 * 60 * 24 * 365
+
 INTERNAL_IPS = [
     '127.0.0.1',
 ]
