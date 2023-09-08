@@ -9,9 +9,11 @@
         {% crispy form %}
 
     <script>
-    function processturn() {
-        // submit the form
-        document.getElementsByTagName("form")[1].submit();
+    function processturn(){
+        console.log("Clearance granted!");
+        let button = document.getElementsByClassName("disabledbuttonforsecurity")
+        button[0].disabled = false;
+        button[0].click();
     }
 
     </script>

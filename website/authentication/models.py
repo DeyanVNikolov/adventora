@@ -8,7 +8,7 @@ from django.utils.translation import gettext_lazy as _
 
 class CustomUser(AbstractUser):
 
-    ROLE_CHOICES = (('user', _('User')), ('manager', _('Manager')), ("employee", _("Employee")), ("admin", _("Admin")),)
+    ROLE_CHOICES = (('user', _('User')), ('hotel_manager', _('Manager')), ("employee", _("Employee")), ("admin", _("Admin")),)
 
     id = models.UUIDField(default=uuid.uuid4, editable=False, unique=True, primary_key=True)
     banned = models.BooleanField(default=False, null=True, blank=True)

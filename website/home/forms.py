@@ -12,4 +12,21 @@ from django.utils.translation import gettext_lazy as _
 
 
 class SecurityCheckForm(forms.Form):
+    comment = forms.CharField(
+        widget=forms.TextInput(attrs={'readonly': 'readonly'}),
+        label="",
+        initial="За да продължите, трябва да преминете автоматизирана проверка на сигурността.",
+    )
     captcha = TurnstileField(attrs={'onchange': 'this.form.submit()'})
+
+
+    helper = FormHelper()
+    helper.form_method = 'POST'
+    helper.layout = Layout(
+        'comment',
+        'captcha',
+
+    )
+    # disabled
+    helper.add_input(Submit('submit', 'Продължи', css_class='is-success disabledbuttonforsecurity', disabled=True))
+
