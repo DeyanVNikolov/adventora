@@ -1,4 +1,3 @@
-
 from crispy_bulma.layout import Submit
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout
@@ -57,8 +56,8 @@ class RegisterForm(UserCreationForm):
 
 class RoleChoiceForm(forms.Form):
     ROLE_CHOICES = (('user', _('Vacationer - Explore, plan, and book your ideal vacation activities.')),
-                     ('hotel_manager', _('Hotel Manager - Oversee operations and provide excellent service in your own hotel.')),
-                     ('employee', _('Employee - Contribute your expertise to a thriving workplace, such as a hotel or guest house.')))
+                    ('hotel_manager', _('Hotel Manager - Oversee operations and provide excellent service in your own hotel.')),
+                    ('employee', _('Employee - Contribute your expertise to a thriving workplace, such as a hotel or guest house.')))
 
     role = forms.ChoiceField(choices=ROLE_CHOICES, widget=forms.RadioSelect, label='Choose a Role')
 
@@ -84,7 +83,6 @@ class CompleteEmailForm(forms.Form):
     helper.form_method = 'POST'
 
 
-
 class CompleteUserNameForm(forms.Form):
     username = forms.CharField(max_length=65, label=_("Username"), required=True,
                                help_text=_("The username must contain at least 8 characters.")
@@ -95,11 +93,10 @@ class CompleteUserNameForm(forms.Form):
     helper.form_method = 'POST'
 
 
-
 class EditProfileForm(forms.Form):
     ROLE_CHOICES = (('user', _('Vacationer - Explore, plan, and book your ideal vacation activities.')),
-                     ('hotel_manager', _('Hotel Manager - Oversee operations and provide excellent service in your own hotel.')),
-                     ('employee', _('Employee - Contribute your expertise to a thriving workplace, such as a hotel or guest house.')))
+                    ('hotel_manager', _('Hotel Manager - Oversee operations and provide excellent service in your own hotel.')),
+                    ('employee', _('Employee - Contribute your expertise to a thriving workplace, such as a hotel or guest house.')))
 
     first_name = forms.CharField(max_length=65, label=_("First Name"), required=True)
     last_name = forms.CharField(max_length=65, label=_("Last Name"), required=True)
@@ -116,7 +113,6 @@ class EditProfileForm(forms.Form):
     helper.form_method = 'POST'
 
 
-
 class ChangePasswordForm(forms.Form):
     old_password = forms.CharField(max_length=65, label=_("Old Password"), widget=forms.PasswordInput, required=True)
     new_password1 = forms.CharField(max_length=65, label=_("New Password"), widget=forms.PasswordInput, required=True)
@@ -127,7 +123,6 @@ class ChangePasswordForm(forms.Form):
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Save'), css_class='button is-link'))
     helper.form_method = 'POST'
-
 
 
 class SetPasswordFromSocialLogin(forms.Form):
@@ -141,7 +136,6 @@ class SetPasswordFromSocialLogin(forms.Form):
     helper.form_method = 'POST'
 
 
-
 class DeleteAccountForm(forms.Form):
     password = forms.CharField(max_length=65, label=_("Password"), widget=forms.PasswordInput, required=True)
 
@@ -150,7 +144,6 @@ class DeleteAccountForm(forms.Form):
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Delete Account'), css_class='button is-link'))
     helper.form_method = 'POST'
-
 
 
 class CitizenshipForm(forms.Form):
@@ -167,14 +160,12 @@ class CitizenshipForm(forms.Form):
     helper.form_method = 'POST'
 
 
-
 class PhoneForm(forms.Form):
     phone = forms.CharField(label=_("Phone"), required=True, widget=forms.TextInput(attrs={'placeholder': '+359 888 888 888'}))
 
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Save'), css_class='button is-link'))
     helper.form_method = 'POST'
-
 
 
 class TwoFactorEnableForm(forms.Form):
@@ -187,7 +178,6 @@ class TwoFactorEnableForm(forms.Form):
     helper.form_method = 'POST'
 
 
-
 class TwoFactorEnableConfirmForm(forms.Form):
     code = forms.CharField(max_length=65, label=_("Code"), required=True)
 
@@ -198,17 +188,14 @@ class TwoFactorEnableConfirmForm(forms.Form):
     helper.form_method = 'POST'
 
 
-
 class TwoFactorForm(forms.Form):
     code = forms.CharField(max_length=65, label=_("Code"), required=True)
 
     captcha = TurnstileField()
 
-
     helper = FormHelper()
-    helper.add_input(Submit('submit', _('Enable'), css_class='button is-link'))
+    helper.add_input(Submit('submit', _('Submit'), css_class='button is-link'))
     helper.form_method = 'POST'
-
 
 
 class TwoFactorDisableForm(forms.Form):
@@ -219,4 +206,3 @@ class TwoFactorDisableForm(forms.Form):
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Disable'), css_class='button is-link'))
     helper.form_method = 'POST'
-
