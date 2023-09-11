@@ -25,7 +25,6 @@ CSRF_TRUSTED_ORIGINS = [
 CSRF_COOKIE_PATH = '/'
 CSRF_COOKIE_SECURE = True
 
-
 TURNSTILE_SITEKEY = os.getenv("TURNSTILE_SITE")
 TURNSTILE_SECRET = os.getenv("TURNSTILE_SECRET")
 
@@ -55,6 +54,22 @@ INSTALLED_APPS = [
     'corsheaders',
 ]
 
+
+
+
+
+SOCIAL_AUTH_PIPELINE = (
+    'social_core.pipeline.social_auth.social_details',
+    'social_core.pipeline.social_auth.social_uid',
+    'social_core.pipeline.social_auth.auth_allowed',
+    'social_core.pipeline.social_auth.social_user',
+    'social_core.pipeline.social_auth.associate_user',
+    'social_core.pipeline.social_auth.load_extra_data',
+    'social_core.pipeline.user.user_details',
+    'authentication.pipeline.enable_two_factor',
+)
+
+
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -76,7 +91,6 @@ TURNSTILE_DEFAULT_CONFIG = {
     'render': 'explicit',
     'theme': 'dark',
 
-
 }
 
 SESSION_COOKIE_SECURE = True
@@ -87,7 +101,6 @@ SESSION_COOKIE_AGE = 60 * 60 * 3
 
 LANGUAGE_COOKIE_NAME = 'lang'
 LANGUAGE_COOKIE_SECURE = True
-
 
 LANGUAGE_COOKIE_AGE = 60 * 60 * 24 * 365
 
@@ -283,7 +296,6 @@ JAZZMIN_SETTINGS = {
     "changeform_format_overrides": {"auth.user": "collapsible", "auth.group": "vertical_tabs"},
 }
 
-
 TIME_ZONE = 'EET'
 
 USE_I18N = True
@@ -321,7 +333,6 @@ LOCATION_FIELD = {
     'search.provider': 'google',
     'provider.openstreetmap.max_zoom': 2,
 }
-
 
 LANGUAGE_CODE = 'bg-bg'
 

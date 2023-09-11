@@ -4,8 +4,9 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
-{#    img to qr/USERID#}
-    <img src="/static/qr/{{ request.user.id }}.png" alt="QR Code" width="300">
+
+    <h1 class="title is-3">{% translate "Please enter your two-factor verification code" %}</h1>
+    <br>
 
 
 {% csrf_token %}
