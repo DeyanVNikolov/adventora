@@ -198,13 +198,13 @@ def complete_name(request):
             return redirect('home')
         else:
             messages.error(request, _('Invalid data.'))
-            return render(request, 'auth/complete_name.html', {'form': form})
+            return render(request, 'auth/completeprofile.html', {'form': form})
 
     form = CompleteNameForm(initial={'first_name': request.user.first_name, 'last_name': request.user.last_name})
     first_name = request.user.first_name
     last_name = request.user.last_name
     context = {'form': form, 'first_name': first_name, 'last_name': last_name}
-    return render(request, 'auth/complete_name.html', context)
+    return render(request, 'auth/completeprofile.html', context)
 
 
 @login_required
@@ -218,7 +218,7 @@ def complete_email(request):
             if existing_user is not None:
                 if existing_user != request.user:
                     messages.error(request, _('A user with that email already exists.'))
-                    return render(request, 'auth/complete_email.html', {'form': form})
+                    return render(request, 'auth/completeprofile.html', {'form': form})
 
             request.user.email = email
             request.user.confirmedemail = True
@@ -227,12 +227,12 @@ def complete_email(request):
             return redirect('home')
         else:
             messages.error(request, _('Invalid data.'))
-            return render(request, 'auth/complete_email.html', {'form': form})
+            return render(request, 'auth/completeprofile.html', {'form': form})
 
     form = CompleteEmailForm(initial={'email': request.user.email})
     email = request.user.email
     context = {'form': form, 'email': email, }
-    return render(request, 'auth/complete_email.html', context)
+    return render(request, 'auth/completeprofile.html', context)
 
 
 @login_required
@@ -245,11 +245,11 @@ def complete_username(request):
             existing_user = CustomUser.objects.filter(username=username).first()
             if existing_user is not None and existing_user != request.user:
                 messages.error(request, _('A user with that username already exists.'))
-                return render(request, 'auth/complete_username.html', {'form': form})
+                return render(request, 'auth/completeprofile.html', {'form': form})
 
             if username.strip() == '' or username is None or len(username) < 5:
                 messages.error(request, _('Invalid username. At least 5 characters.'))
-                return render(request, 'auth/complete_username.html', {'form': form})
+                return render(request, 'auth/completeprofile.html', {'form': form})
 
             request.user.username = username
             request.user.confirmedusername = True
@@ -258,12 +258,12 @@ def complete_username(request):
             return redirect('home')
         else:
             messages.error(request, _('Invalid data.'))
-            return render(request, 'auth/complete_username.html', {'form': form})
+            return render(request, 'auth/completeprofile.html', {'form': form})
 
     form = CompleteUserNameForm(initial={'username': request.user.username})
     username = request.user.username
     context = {'form': form, 'username': username, }
-    return render(request, 'auth/complete_username.html', context)
+    return render(request, 'auth/completeprofile.html', context)
 
 
 @login_required
@@ -418,12 +418,12 @@ def complete_citizenship(request):
             return redirect('home')
         else:
             messages.error(request, _('Invalid data.'))
-            return render(request, 'auth/complete_citizenship.html', {'form': form})
+            return render(request, 'auth/completeprofile.html', {'form': form})
 
     form = CitizenshipForm(initial={'citizenship': request.user.citizenship})
     citizenship = request.user.citizenship
     context = {'form': form, 'citizenship': citizenship, }
-    return render(request, 'auth/complete_citizenship.html', context)
+    return render(request, 'auth/completeprofile.html', context)
 
 
 @login_required
@@ -440,12 +440,12 @@ def complete_phone(request):
             return redirect('home')
         else:
             messages.error(request, _('Invalid data.'))
-            return render(request, 'auth/complete_phonenumber.html', {'form': form})
+            return render(request, 'auth/completeprofile.html', {'form': form})
 
     form = PhoneForm(initial={'phone': request.user.phone})
     phone = request.user.phone
     context = {'form': form, 'phone': phone, }
-    return render(request, 'auth/complete_phonenumber.html', context)
+    return render(request, 'auth/completeprofile.html', context)
 
 
 @login_required
@@ -536,7 +536,7 @@ def two_factor(request):
         form = TwoFactorForm(request.POST)
         if form.is_valid():
             code = form.cleaned_data.get('code')
-            verification = verifyuser(request.user, request.user.id, request.user.uniqueid, code)
+            verification = verifyuser(request.user, request.user.id, request.user.id, code)
 
             if verification.status == 'approved':
                 request.user.factor_passed = True
@@ -561,6 +561,12 @@ def two_factor_enable(request):
     if request.user.two_fa_enabled is True:
         messages.error(request, _('Two factor authentication is already enabled.'))
         return redirect('home')
+
+    if request.user.password.startswith('!'):
+        messages.error(request, _('You cannot enable two factor authentication with a social login.'))
+        return redirect('edit-profile')
+
+
     if request.method == 'POST':
         form = TwoFactorEnableForm(request.POST)
         if form.is_valid():
@@ -570,7 +576,7 @@ def two_factor_enable(request):
                 messages.error(request, _('Incorrect password.'))
                 return redirect('two-factor-enable')
 
-            uuid = request.user.uniqueid
+            uuid = request.user.id
 
             new_factor = generate_new_factor(request.user, uuid)
 
@@ -596,15 +602,19 @@ def two_factor_enable_confirm(request):
         form = TwoFactorEnableConfirmForm(request.POST)
         if form.is_valid():
             code = form.cleaned_data.get('code')
-
-            uuid = request.user.uniqueid
+            uuid = request.user.id
             id = request.user.id
 
             verifiedfactor = verifyfactor(request.user, id, uuid, code)
 
             if verifiedfactor.status == "verified":
                 request.user.two_fa_enabled = True
+                request.user.factor_passed = True
                 request.user.save()
+                # delete qr code
+                file = f"static/qr/{uuid}.png"
+                if os.path.exists(file):
+                    os.remove(file)
                 messages.success(request, _('Successfully enabled two factor authentication.'))
                 return redirect('home')
             else:
