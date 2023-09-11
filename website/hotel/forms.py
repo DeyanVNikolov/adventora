@@ -23,7 +23,7 @@ from django.utils.translation import gettext_lazy as _
 
 class RegisterHotelForm(forms.Form):
     name = forms.CharField(max_length=100, label=_('Hotel Name'))
-    address = PlainLocationField(based_fields=['city'], zoom=6, label=_('Address'), initial=Point(25.355996814032515, 42.71891178252764), widget=forms.TextInput(attrs={'class': 'form-control'}))
+    address = PlainLocationField(based_fields=['city'], zoom=6, label=_('Location'), initial=Point(25.355996814032515, 42.71891178252764), widget=forms.TextInput(attrs={'class': 'form-control'}))
     city = forms.CharField(max_length=50, label=_('City'))
     phone = forms.CharField(label=_("Phone"), required=True, widget=forms.TextInput(attrs={'placeholder': '+359 888 888 888'}))
     email = forms.EmailField(max_length=254, label=_('Email'))
