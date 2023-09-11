@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-31 11:38+0300\n"
+"POT-Creation-Date: 2023-09-11 21:12+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgid "Change password"
 msgstr "Breyta lykilorði"
 
 #: .\adventora\templates\auth\edit_profile.html:28
-#: .\authentication\forms.py:151
+#: .\authentication\forms.py:145
 msgid "Delete Account"
 msgstr "Eyða reikningi"
 
@@ -100,6 +100,10 @@ msgstr "Skráðu þig inn með Spotify."
 msgid "Login with VK"
 msgstr "Skráðu þig inn með VK"
 
+#: .\adventora\templates\auth\two_factor.html:8
+msgid "Please enter your two-factor verification code"
+msgstr "Vinsamlegast sláðu inn tveggja þátta staðfestingarkóðann þinn"
+
 #: .\adventora\templates\base.html:127 .\adventora\templates\base.html:323
 msgid "Homepage"
 msgstr "Heimasíða"
@@ -114,8 +118,8 @@ msgstr "Hótel"
 #: .\adventora\templates\hotel\dashboard.html:63
 #: .\adventora\templates\hotel\dashboard.html:84
 #: .\adventora\templates\hotel\dashboard.html:101
-#: .\adventora\templates\hotel\register_hotel.html:43
-#: .\adventora\templates\hotel\register_hotel.html:64
+#: .\adventora\templates\hotel\register_hotel.html:49
+#: .\adventora\templates\hotel\register_hotel.html:70
 msgid "Dashboard"
 msgstr "Mælaborð"
 
@@ -126,7 +130,7 @@ msgstr "Prófíll"
 #: .\adventora\templates\base.html:172
 #: .\adventora\templates\hotel\confirm_address.html:63
 #: .\adventora\templates\hotel\dashboard.html:83
-#: .\adventora\templates\hotel\register_hotel.html:63
+#: .\adventora\templates\hotel\register_hotel.html:69
 #: .\authentication\models.py:11
 msgid "Admin"
 msgstr "Admin"
@@ -136,11 +140,11 @@ msgstr "Admin"
 msgid "Log out"
 msgstr "Að skrá þig út"
 
-#: .\adventora\templates\base.html:195 .\authentication\forms.py:26
+#: .\adventora\templates\base.html:195 .\authentication\forms.py:25
 msgid "Login"
 msgstr "Skrá inn"
 
-#: .\adventora\templates\base.html:199 .\authentication\forms.py:54
+#: .\adventora\templates\base.html:199 .\authentication\forms.py:53
 msgid "Sign up"
 msgstr "Skráðu þig"
 
@@ -191,19 +195,19 @@ msgstr "Samstarf"
 #: .\adventora\templates\hotel\confirm_address.html:33
 #: .\adventora\templates\hotel\dashboard.html:53
 #: .\adventora\templates\hotel\dashboard.html:527
-#: .\adventora\templates\hotel\register_hotel.html:33
+#: .\adventora\templates\hotel\register_hotel.html:39
 msgid "You don't have a hotel"
 msgstr "Þú ert ekki með hótel"
 
 #: .\adventora\templates\hotel\confirm_address.html:38
 #: .\adventora\templates\hotel\dashboard.html:58
-#: .\adventora\templates\hotel\register_hotel.html:38
+#: .\adventora\templates\hotel\register_hotel.html:44
 msgid "General Settings"
 msgstr "Almennar stillingar"
 
 #: .\adventora\templates\hotel\confirm_address.html:47
 #: .\adventora\templates\hotel\dashboard.html:67
-#: .\adventora\templates\hotel\register_hotel.html:47
+#: .\adventora\templates\hotel\register_hotel.html:53
 msgid "Management"
 msgstr "Stjórnun"
 
@@ -219,8 +223,8 @@ msgid ""
 msgstr "Hótelið þitt er ekki enn samþykkt. "
 
 #: .\adventora\templates\hotel\dashboard.html:529
-#: .\adventora\templates\hotel\register_hotel.html:65
-#: .\adventora\templates\hotel\register_hotel.html:82 .\hotel\forms.py:57
+#: .\adventora\templates\hotel\register_hotel.html:71
+#: .\adventora\templates\hotel\register_hotel.html:88 .\hotel\forms.py:57
 msgid "Register Hotel"
 msgstr "Skrá hótel"
 
@@ -228,44 +232,44 @@ msgstr "Skrá hótel"
 msgid "For partnerships contact us at"
 msgstr "Fyrir samstarf hafðu samband við okkur á"
 
-#: .\authentication\forms.py:17
+#: .\authentication\forms.py:16
 msgid "Username or email"
 msgstr "Notendanafn eða tölvupóstur"
 
-#: .\authentication\forms.py:18 .\authentication\forms.py:37
-#: .\authentication\forms.py:146 .\authentication\forms.py:181
-#: .\authentication\forms.py:215
+#: .\authentication\forms.py:17 .\authentication\forms.py:36
+#: .\authentication\forms.py:140 .\authentication\forms.py:172
+#: .\authentication\forms.py:202
 msgid "Password"
 msgstr "Lykilorð"
 
-#: .\authentication\forms.py:31 .\authentication\forms.py:89
-#: .\authentication\forms.py:107
+#: .\authentication\forms.py:30 .\authentication\forms.py:87
+#: .\authentication\forms.py:104
 msgid "Username"
 msgstr "Notendanafn"
 
-#: .\authentication\forms.py:32 .\authentication\forms.py:90
-#: .\authentication\forms.py:108
+#: .\authentication\forms.py:31 .\authentication\forms.py:88
+#: .\authentication\forms.py:105
 msgid "The username must contain at least 8 characters."
 msgstr "Notandanafnið verður að innihalda að minnsta kosti 8 stafi."
 
-#: .\authentication\forms.py:34
+#: .\authentication\forms.py:33
 msgid "First name"
 msgstr "Fyrsta nafn"
 
-#: .\authentication\forms.py:35
+#: .\authentication\forms.py:34
 msgid "Last name"
 msgstr "Eftirnafn"
 
-#: .\authentication\forms.py:36 .\authentication\forms.py:80
-#: .\authentication\forms.py:106 .\hotel\forms.py:29
+#: .\authentication\forms.py:35 .\authentication\forms.py:79
+#: .\authentication\forms.py:103 .\hotel\forms.py:29
 msgid "Email"
 msgstr "Tölvupóstur"
 
-#: .\authentication\forms.py:36
+#: .\authentication\forms.py:35
 msgid "Email address must be valid"
 msgstr "Netfang verður að vera gilt"
 
-#: .\authentication\forms.py:38
+#: .\authentication\forms.py:37
 msgid ""
 "The password must be at least 8 characters long. <br> The password should "
 "not contain only digits. <br> The password should not contain only letters. "
@@ -274,19 +278,19 @@ msgid ""
 "commonly used password."
 msgstr "Lykilorðið verður að vera að minnsta kosti 8 stafir að lengd. "
 
-#: .\authentication\forms.py:44
+#: .\authentication\forms.py:43
 msgid "Confirm password"
 msgstr "Staðfesta lykilorð"
 
-#: .\authentication\forms.py:45
+#: .\authentication\forms.py:44
 msgid "Enter the same password as above, for verification."
 msgstr "Sláðu inn sama lykilorð og hér að ofan, til staðfestingar."
 
-#: .\authentication\forms.py:59 .\authentication\forms.py:100
+#: .\authentication\forms.py:58 .\authentication\forms.py:97
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
 msgstr "Vacationer - Skoðaðu, skipuleggðu og bókaðu fullkomna fríið þitt."
 
-#: .\authentication\forms.py:60 .\authentication\forms.py:101
+#: .\authentication\forms.py:59 .\authentication\forms.py:98
 msgid ""
 "Hotel Manager - Oversee operations and provide excellent service in your own"
 " hotel."
@@ -294,7 +298,7 @@ msgstr ""
 "Hótelstjóri - Hafa umsjón með rekstrinum og veita framúrskarandi þjónustu á "
 "þínu eigin hóteli."
 
-#: .\authentication\forms.py:61 .\authentication\forms.py:102
+#: .\authentication\forms.py:60 .\authentication\forms.py:99
 msgid ""
 "Employee - Contribute your expertise to a thriving workplace, such as a "
 "hotel or guest house."
@@ -302,64 +306,63 @@ msgstr ""
 "Starfsmaður - Leggðu til þekkingu þína á blómlegum vinnustað, svo sem hóteli"
 " eða gistiheimili."
 
-#: .\authentication\forms.py:67
+#: .\authentication\forms.py:66 .\authentication\forms.py:197
 msgid "Submit"
 msgstr "Sendu inn"
 
-#: .\authentication\forms.py:71 .\authentication\forms.py:104
+#: .\authentication\forms.py:70 .\authentication\forms.py:101
 msgid "First Name"
 msgstr "Fyrsta nafn"
 
-#: .\authentication\forms.py:72 .\authentication\forms.py:105
+#: .\authentication\forms.py:71 .\authentication\forms.py:102
 msgid "Last Name"
 msgstr "Eftirnafn"
 
-#: .\authentication\forms.py:75 .\authentication\forms.py:83
-#: .\authentication\forms.py:94 .\authentication\forms.py:115
-#: .\authentication\forms.py:128 .\authentication\forms.py:140
-#: .\authentication\forms.py:166 .\authentication\forms.py:175
+#: .\authentication\forms.py:74 .\authentication\forms.py:82
+#: .\authentication\forms.py:92 .\authentication\forms.py:112
+#: .\authentication\forms.py:124 .\authentication\forms.py:135
+#: .\authentication\forms.py:159 .\authentication\forms.py:167
 msgid "Save"
 msgstr "Vista"
 
-#: .\authentication\forms.py:80 .\authentication\forms.py:106
+#: .\authentication\forms.py:79 .\authentication\forms.py:103
 msgid "The email must be valid."
 msgstr "Netfangið verður að vera gilt."
 
-#: .\authentication\forms.py:110 .\authentication\forms.py:163
+#: .\authentication\forms.py:107 .\authentication\forms.py:156
 msgid "Citizenship"
 msgstr "Ríkisborgararéttur"
 
-#: .\authentication\forms.py:111 .\authentication\forms.py:172
+#: .\authentication\forms.py:108 .\authentication\forms.py:164
 #: .\hotel\forms.py:28
 msgid "Phone"
 msgstr "Sími"
 
-#: .\authentication\forms.py:112
+#: .\authentication\forms.py:109
 msgid "Choose a Role"
 msgstr "Veldu hlutverk"
 
-#: .\authentication\forms.py:121
+#: .\authentication\forms.py:117
 msgid "Old Password"
 msgstr "gamalt lykilorð"
 
-#: .\authentication\forms.py:122 .\authentication\forms.py:134
+#: .\authentication\forms.py:118 .\authentication\forms.py:129
 msgid "New Password"
 msgstr "nýtt lykilorð"
 
-#: .\authentication\forms.py:123 .\authentication\forms.py:135
+#: .\authentication\forms.py:119 .\authentication\forms.py:130
 msgid "Confirm New Password"
 msgstr "Staðfestu nýtt lykilorð"
 
-#: .\authentication\forms.py:186 .\authentication\forms.py:197
-#: .\authentication\forms.py:209
+#: .\authentication\forms.py:177 .\authentication\forms.py:187
 msgid "Enable"
 msgstr "Virkja"
 
-#: .\authentication\forms.py:192 .\authentication\forms.py:203
+#: .\authentication\forms.py:182 .\authentication\forms.py:192
 msgid "Code"
 msgstr "Kóði"
 
-#: .\authentication\forms.py:220
+#: .\authentication\forms.py:207
 msgid "Disable"
 msgstr "Slökkva"
 
@@ -420,8 +423,8 @@ msgstr "Skráning tókst."
 #: .\authentication\views.py:313 .\authentication\views.py:356
 #: .\authentication\views.py:375 .\authentication\views.py:400
 #: .\authentication\views.py:420 .\authentication\views.py:442
-#: .\authentication\views.py:550 .\authentication\views.py:583
-#: .\authentication\views.py:614 .\authentication\views.py:644
+#: .\authentication\views.py:550 .\authentication\views.py:589
+#: .\authentication\views.py:624 .\authentication\views.py:654
 msgid "Invalid data."
 msgstr "Ógild gögn."
 
@@ -481,8 +484,8 @@ msgstr "Rangt gamalt lykilorð."
 msgid "Successfully changed password."
 msgstr "Lykilorðinu var breytt."
 
-#: .\authentication\views.py:393 .\authentication\views.py:570
-#: .\authentication\views.py:634
+#: .\authentication\views.py:393 .\authentication\views.py:576
+#: .\authentication\views.py:644
 msgid "Incorrect password."
 msgstr "Rangt lykilorð."
 
@@ -498,7 +501,7 @@ msgstr "Ríkisfang staðfestist."
 msgid "Successfully confirmed phone number."
 msgstr "Símanúmer hefur verið staðfest."
 
-#: .\authentication\views.py:528 .\authentication\views.py:625
+#: .\authentication\views.py:528 .\authentication\views.py:635
 msgid "Two factor authentication is not enabled."
 msgstr "Tveggja þátta auðkenning er ekki virkjuð."
 
@@ -510,19 +513,25 @@ msgstr "Tveggja þátta auðkenning er þegar samþykkt."
 msgid "Successfully passed two factor authentication"
 msgstr "Stóðst tveggja þátta auðkenningu"
 
-#: .\authentication\views.py:547 .\authentication\views.py:611
+#: .\authentication\views.py:547 .\authentication\views.py:621
 msgid "Invalid code."
 msgstr "Vitlaus kóði."
 
-#: .\authentication\views.py:562 .\authentication\views.py:593
+#: .\authentication\views.py:562 .\authentication\views.py:599
 msgid "Two factor authentication is already enabled."
 msgstr "Tveggja þátta auðkenning er þegar virkjuð."
 
-#: .\authentication\views.py:580 .\authentication\views.py:608
+#: .\authentication\views.py:566
+#, fuzzy
+#| msgid "Successfully enabled two factor authentication."
+msgid "You cannot enable two factor authentication with a social login."
+msgstr "Tvíþætt auðkenning tókst að virkja."
+
+#: .\authentication\views.py:586 .\authentication\views.py:618
 msgid "Successfully enabled two factor authentication."
 msgstr "Tvíþætt auðkenning tókst að virkja."
 
-#: .\authentication\views.py:641
+#: .\authentication\views.py:651
 msgid "Successfully disabled two factor authentication."
 msgstr "Tvíþætt auðkenning hefur verið gerð óvirk."
 
@@ -531,8 +540,8 @@ msgid "Hotel Name"
 msgstr "Hótel nafn"
 
 #: .\hotel\forms.py:26
-msgid "Address"
-msgstr "Heimilisfang"
+msgid "Location"
+msgstr "Staðsetning"
 
 #: .\hotel\forms.py:27
 msgid "City"
@@ -599,38 +608,41 @@ msgstr "Herbergi"
 msgid "Rooms"
 msgstr "Herbergi"
 
-#: .\hotel\views.py:39 .\hotel\views.py:179
+#: .\hotel\views.py:40 .\hotel\views.py:180
 msgid "You do not have permission to view this page"
 msgstr "Þú hefur ekki leyfi til að skoða þessa síðu"
 
-#: .\hotel\views.py:48
+#: .\hotel\views.py:49
 msgid "Your hotel is not approved yet"
 msgstr "Hótelið þitt er ekki samþykkt ennþá"
 
-#: .\hotel\views.py:107
+#: .\hotel\views.py:108
 msgid "Successfully registered hotel"
 msgstr "Tókst að skrá hótel"
 
-#: .\hotel\views.py:111
+#: .\hotel\views.py:112
 msgid "Error while registering hotel"
 msgstr "Villa við að skrá hótel"
 
-#: .\hotel\views.py:118
+#: .\hotel\views.py:119
 msgid "You have already registered a hotel"
 msgstr "Þú hefur þegar skráð hótel"
 
-#: .\hotel\views.py:137
+#: .\hotel\views.py:138
 msgid "You have not registered a hotel yet"
 msgstr "Þú hefur ekki skráð hótel ennþá"
 
-#: .\hotel\views.py:155
+#: .\hotel\views.py:156
 msgid "Successfully confirmed address"
 msgstr "Heimilisfang hefur verið staðfest"
 
-#: .\hotel\views.py:158
+#: .\hotel\views.py:159
 msgid "Error while confirming address"
 msgstr "Villa við að staðfesta heimilisfang"
 
-#: .\hotel\views.py:175
+#: .\hotel\views.py:176
 msgid "No such hotel"
 msgstr "Ekkert slíkt hótel"
+
+#~ msgid "Address"
+#~ msgstr "Heimilisfang"

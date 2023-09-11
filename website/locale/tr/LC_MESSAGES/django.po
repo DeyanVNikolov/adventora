@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-31 11:38+0300\n"
+"POT-Creation-Date: 2023-09-11 21:12+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgid "Change password"
 msgstr "Şifre değiştir"
 
 #: .\adventora\templates\auth\edit_profile.html:28
-#: .\authentication\forms.py:151
+#: .\authentication\forms.py:145
 msgid "Delete Account"
 msgstr "Hesabı sil"
 
@@ -100,6 +100,10 @@ msgstr "Spotify ile giriş yap."
 msgid "Login with VK"
 msgstr "VK ile giriş yap"
 
+#: .\adventora\templates\auth\two_factor.html:8
+msgid "Please enter your two-factor verification code"
+msgstr "Lütfen iki faktörlü doğrulama kodunuzu girin"
+
 #: .\adventora\templates\base.html:127 .\adventora\templates\base.html:323
 msgid "Homepage"
 msgstr "Anasayfa"
@@ -114,8 +118,8 @@ msgstr "Otel"
 #: .\adventora\templates\hotel\dashboard.html:63
 #: .\adventora\templates\hotel\dashboard.html:84
 #: .\adventora\templates\hotel\dashboard.html:101
-#: .\adventora\templates\hotel\register_hotel.html:43
-#: .\adventora\templates\hotel\register_hotel.html:64
+#: .\adventora\templates\hotel\register_hotel.html:49
+#: .\adventora\templates\hotel\register_hotel.html:70
 msgid "Dashboard"
 msgstr "Gösterge Paneli"
 
@@ -126,7 +130,7 @@ msgstr "Profil"
 #: .\adventora\templates\base.html:172
 #: .\adventora\templates\hotel\confirm_address.html:63
 #: .\adventora\templates\hotel\dashboard.html:83
-#: .\adventora\templates\hotel\register_hotel.html:63
+#: .\adventora\templates\hotel\register_hotel.html:69
 #: .\authentication\models.py:11
 msgid "Admin"
 msgstr "yönetici"
@@ -136,11 +140,11 @@ msgstr "yönetici"
 msgid "Log out"
 msgstr "Çıkış Yap"
 
-#: .\adventora\templates\base.html:195 .\authentication\forms.py:26
+#: .\adventora\templates\base.html:195 .\authentication\forms.py:25
 msgid "Login"
 msgstr "Giriş yapmak"
 
-#: .\adventora\templates\base.html:199 .\authentication\forms.py:54
+#: .\adventora\templates\base.html:199 .\authentication\forms.py:53
 msgid "Sign up"
 msgstr "Üye olmak"
 
@@ -191,19 +195,19 @@ msgstr "ortaklıklar"
 #: .\adventora\templates\hotel\confirm_address.html:33
 #: .\adventora\templates\hotel\dashboard.html:53
 #: .\adventora\templates\hotel\dashboard.html:527
-#: .\adventora\templates\hotel\register_hotel.html:33
+#: .\adventora\templates\hotel\register_hotel.html:39
 msgid "You don't have a hotel"
 msgstr "bir oteliniz yok"
 
 #: .\adventora\templates\hotel\confirm_address.html:38
 #: .\adventora\templates\hotel\dashboard.html:58
-#: .\adventora\templates\hotel\register_hotel.html:38
+#: .\adventora\templates\hotel\register_hotel.html:44
 msgid "General Settings"
 msgstr "Genel Ayarlar"
 
 #: .\adventora\templates\hotel\confirm_address.html:47
 #: .\adventora\templates\hotel\dashboard.html:67
-#: .\adventora\templates\hotel\register_hotel.html:47
+#: .\adventora\templates\hotel\register_hotel.html:53
 msgid "Management"
 msgstr "Yönetmek"
 
@@ -219,8 +223,8 @@ msgid ""
 msgstr "Oteliniz henüz onaylanmadı. "
 
 #: .\adventora\templates\hotel\dashboard.html:529
-#: .\adventora\templates\hotel\register_hotel.html:65
-#: .\adventora\templates\hotel\register_hotel.html:82 .\hotel\forms.py:57
+#: .\adventora\templates\hotel\register_hotel.html:71
+#: .\adventora\templates\hotel\register_hotel.html:88 .\hotel\forms.py:57
 msgid "Register Hotel"
 msgstr "Otele Kayıt Ol"
 
@@ -228,44 +232,44 @@ msgstr "Otele Kayıt Ol"
 msgid "For partnerships contact us at"
 msgstr "Ortaklıklar için bize ulaşın"
 
-#: .\authentication\forms.py:17
+#: .\authentication\forms.py:16
 msgid "Username or email"
 msgstr "Kullanıcı adı ya da email"
 
-#: .\authentication\forms.py:18 .\authentication\forms.py:37
-#: .\authentication\forms.py:146 .\authentication\forms.py:181
-#: .\authentication\forms.py:215
+#: .\authentication\forms.py:17 .\authentication\forms.py:36
+#: .\authentication\forms.py:140 .\authentication\forms.py:172
+#: .\authentication\forms.py:202
 msgid "Password"
 msgstr "Şifre"
 
-#: .\authentication\forms.py:31 .\authentication\forms.py:89
-#: .\authentication\forms.py:107
+#: .\authentication\forms.py:30 .\authentication\forms.py:87
+#: .\authentication\forms.py:104
 msgid "Username"
 msgstr "Kullanıcı adı"
 
-#: .\authentication\forms.py:32 .\authentication\forms.py:90
-#: .\authentication\forms.py:108
+#: .\authentication\forms.py:31 .\authentication\forms.py:88
+#: .\authentication\forms.py:105
 msgid "The username must contain at least 8 characters."
 msgstr "Kullanıcı adı en az 8 karakter içermelidir."
 
-#: .\authentication\forms.py:34
+#: .\authentication\forms.py:33
 msgid "First name"
 msgstr "İlk adı"
 
-#: .\authentication\forms.py:35
+#: .\authentication\forms.py:34
 msgid "Last name"
 msgstr "Soy isim"
 
-#: .\authentication\forms.py:36 .\authentication\forms.py:80
-#: .\authentication\forms.py:106 .\hotel\forms.py:29
+#: .\authentication\forms.py:35 .\authentication\forms.py:79
+#: .\authentication\forms.py:103 .\hotel\forms.py:29
 msgid "Email"
 msgstr "E-posta"
 
-#: .\authentication\forms.py:36
+#: .\authentication\forms.py:35
 msgid "Email address must be valid"
 msgstr "E-posta adresi geçerli olmalıdır"
 
-#: .\authentication\forms.py:38
+#: .\authentication\forms.py:37
 msgid ""
 "The password must be at least 8 characters long. <br> The password should "
 "not contain only digits. <br> The password should not contain only letters. "
@@ -274,20 +278,20 @@ msgid ""
 "commonly used password."
 msgstr "Parola en az 8 karakter uzunluğunda olmalıdır. "
 
-#: .\authentication\forms.py:44
+#: .\authentication\forms.py:43
 msgid "Confirm password"
 msgstr "Şifreyi Onayla"
 
-#: .\authentication\forms.py:45
+#: .\authentication\forms.py:44
 msgid "Enter the same password as above, for verification."
 msgstr "Doğrulama için yukarıdakiyle aynı parolayı girin."
 
-#: .\authentication\forms.py:59 .\authentication\forms.py:100
+#: .\authentication\forms.py:58 .\authentication\forms.py:97
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
 msgstr ""
 "Tatilci - İdeal tatil aktivitelerinizi keşfedin, planlayın ve ayırtın."
 
-#: .\authentication\forms.py:60 .\authentication\forms.py:101
+#: .\authentication\forms.py:59 .\authentication\forms.py:98
 msgid ""
 "Hotel Manager - Oversee operations and provide excellent service in your own"
 " hotel."
@@ -295,7 +299,7 @@ msgstr ""
 "Otel Müdürü - Kendi otelinizde operasyonları denetleyin ve mükemmel hizmet "
 "sağlayın."
 
-#: .\authentication\forms.py:61 .\authentication\forms.py:102
+#: .\authentication\forms.py:60 .\authentication\forms.py:99
 msgid ""
 "Employee - Contribute your expertise to a thriving workplace, such as a "
 "hotel or guest house."
@@ -303,64 +307,63 @@ msgstr ""
 "Çalışan - Uzmanlığınızı otel veya misafirhane gibi gelişen bir işyerine "
 "katkıda bulunun."
 
-#: .\authentication\forms.py:67
+#: .\authentication\forms.py:66 .\authentication\forms.py:197
 msgid "Submit"
 msgstr "Göndermek"
 
-#: .\authentication\forms.py:71 .\authentication\forms.py:104
+#: .\authentication\forms.py:70 .\authentication\forms.py:101
 msgid "First Name"
 msgstr "İlk adı"
 
-#: .\authentication\forms.py:72 .\authentication\forms.py:105
+#: .\authentication\forms.py:71 .\authentication\forms.py:102
 msgid "Last Name"
 msgstr "Soy isim"
 
-#: .\authentication\forms.py:75 .\authentication\forms.py:83
-#: .\authentication\forms.py:94 .\authentication\forms.py:115
-#: .\authentication\forms.py:128 .\authentication\forms.py:140
-#: .\authentication\forms.py:166 .\authentication\forms.py:175
+#: .\authentication\forms.py:74 .\authentication\forms.py:82
+#: .\authentication\forms.py:92 .\authentication\forms.py:112
+#: .\authentication\forms.py:124 .\authentication\forms.py:135
+#: .\authentication\forms.py:159 .\authentication\forms.py:167
 msgid "Save"
 msgstr "Kaydetmek"
 
-#: .\authentication\forms.py:80 .\authentication\forms.py:106
+#: .\authentication\forms.py:79 .\authentication\forms.py:103
 msgid "The email must be valid."
 msgstr "E-posta geçerli olmalıdır."
 
-#: .\authentication\forms.py:110 .\authentication\forms.py:163
+#: .\authentication\forms.py:107 .\authentication\forms.py:156
 msgid "Citizenship"
 msgstr "Vatandaşlık"
 
-#: .\authentication\forms.py:111 .\authentication\forms.py:172
+#: .\authentication\forms.py:108 .\authentication\forms.py:164
 #: .\hotel\forms.py:28
 msgid "Phone"
 msgstr "Telefon"
 
-#: .\authentication\forms.py:112
+#: .\authentication\forms.py:109
 msgid "Choose a Role"
 msgstr "Bir Rol Seçin"
 
-#: .\authentication\forms.py:121
+#: .\authentication\forms.py:117
 msgid "Old Password"
 msgstr "eski Şifre"
 
-#: .\authentication\forms.py:122 .\authentication\forms.py:134
+#: .\authentication\forms.py:118 .\authentication\forms.py:129
 msgid "New Password"
 msgstr "Yeni Şifre"
 
-#: .\authentication\forms.py:123 .\authentication\forms.py:135
+#: .\authentication\forms.py:119 .\authentication\forms.py:130
 msgid "Confirm New Password"
 msgstr "Yeni şifreyi onayla"
 
-#: .\authentication\forms.py:186 .\authentication\forms.py:197
-#: .\authentication\forms.py:209
+#: .\authentication\forms.py:177 .\authentication\forms.py:187
 msgid "Enable"
 msgstr "Olanak vermek"
 
-#: .\authentication\forms.py:192 .\authentication\forms.py:203
+#: .\authentication\forms.py:182 .\authentication\forms.py:192
 msgid "Code"
 msgstr "kod"
 
-#: .\authentication\forms.py:220
+#: .\authentication\forms.py:207
 msgid "Disable"
 msgstr "Devre dışı bırakmak"
 
@@ -421,8 +424,8 @@ msgstr "Başarıyla kayıt."
 #: .\authentication\views.py:313 .\authentication\views.py:356
 #: .\authentication\views.py:375 .\authentication\views.py:400
 #: .\authentication\views.py:420 .\authentication\views.py:442
-#: .\authentication\views.py:550 .\authentication\views.py:583
-#: .\authentication\views.py:614 .\authentication\views.py:644
+#: .\authentication\views.py:550 .\authentication\views.py:589
+#: .\authentication\views.py:624 .\authentication\views.py:654
 msgid "Invalid data."
 msgstr "Geçersiz veri."
 
@@ -482,8 +485,8 @@ msgstr "Yanlış eski şifre."
 msgid "Successfully changed password."
 msgstr "Parola başarıyla değiştirildi."
 
-#: .\authentication\views.py:393 .\authentication\views.py:570
-#: .\authentication\views.py:634
+#: .\authentication\views.py:393 .\authentication\views.py:576
+#: .\authentication\views.py:644
 msgid "Incorrect password."
 msgstr "Yanlış parola."
 
@@ -499,7 +502,7 @@ msgstr "Vatandaşlık başarıyla onaylandı."
 msgid "Successfully confirmed phone number."
 msgstr "Telefon numarası başarıyla onaylandı."
 
-#: .\authentication\views.py:528 .\authentication\views.py:625
+#: .\authentication\views.py:528 .\authentication\views.py:635
 msgid "Two factor authentication is not enabled."
 msgstr "İki faktörlü kimlik doğrulama etkin değil."
 
@@ -511,19 +514,25 @@ msgstr "İki faktörlü kimlik doğrulama zaten geçildi."
 msgid "Successfully passed two factor authentication"
 msgstr "İki faktörlü kimlik doğrulamayı başarıyla geçti"
 
-#: .\authentication\views.py:547 .\authentication\views.py:611
+#: .\authentication\views.py:547 .\authentication\views.py:621
 msgid "Invalid code."
 msgstr "Geçersiz kod."
 
-#: .\authentication\views.py:562 .\authentication\views.py:593
+#: .\authentication\views.py:562 .\authentication\views.py:599
 msgid "Two factor authentication is already enabled."
 msgstr "İki faktörlü kimlik doğrulama zaten etkin."
 
-#: .\authentication\views.py:580 .\authentication\views.py:608
+#: .\authentication\views.py:566
+#, fuzzy
+#| msgid "Successfully enabled two factor authentication."
+msgid "You cannot enable two factor authentication with a social login."
+msgstr "İki faktörlü kimlik doğrulama başarıyla etkinleştirildi."
+
+#: .\authentication\views.py:586 .\authentication\views.py:618
 msgid "Successfully enabled two factor authentication."
 msgstr "İki faktörlü kimlik doğrulama başarıyla etkinleştirildi."
 
-#: .\authentication\views.py:641
+#: .\authentication\views.py:651
 msgid "Successfully disabled two factor authentication."
 msgstr "İki faktörlü kimlik doğrulama başarıyla devre dışı bırakıldı."
 
@@ -532,8 +541,8 @@ msgid "Hotel Name"
 msgstr "Otel Adı"
 
 #: .\hotel\forms.py:26
-msgid "Address"
-msgstr "Adres"
+msgid "Location"
+msgstr "Konum"
 
 #: .\hotel\forms.py:27
 msgid "City"
@@ -600,38 +609,41 @@ msgstr "Oda"
 msgid "Rooms"
 msgstr "Odalar"
 
-#: .\hotel\views.py:39 .\hotel\views.py:179
+#: .\hotel\views.py:40 .\hotel\views.py:180
 msgid "You do not have permission to view this page"
 msgstr "Bu sayfayı görüntüleme izniniz yok"
 
-#: .\hotel\views.py:48
+#: .\hotel\views.py:49
 msgid "Your hotel is not approved yet"
 msgstr "Oteliniz henüz onaylanmadı"
 
-#: .\hotel\views.py:107
+#: .\hotel\views.py:108
 msgid "Successfully registered hotel"
 msgstr "Başarıyla kayıtlı otel"
 
-#: .\hotel\views.py:111
+#: .\hotel\views.py:112
 msgid "Error while registering hotel"
 msgstr "Otel kaydı yapılırken hata oluştu"
 
-#: .\hotel\views.py:118
+#: .\hotel\views.py:119
 msgid "You have already registered a hotel"
 msgstr "Zaten bir otel kaydettiniz"
 
-#: .\hotel\views.py:137
+#: .\hotel\views.py:138
 msgid "You have not registered a hotel yet"
 msgstr "Henüz bir otel kaydı yaptırmadınız"
 
-#: .\hotel\views.py:155
+#: .\hotel\views.py:156
 msgid "Successfully confirmed address"
 msgstr "Adres başarıyla doğrulandı"
 
-#: .\hotel\views.py:158
+#: .\hotel\views.py:159
 msgid "Error while confirming address"
 msgstr "Adres onaylanırken hata oluştu"
 
-#: .\hotel\views.py:175
+#: .\hotel\views.py:176
 msgid "No such hotel"
 msgstr "Böyle bir otel yok"
+
+#~ msgid "Address"
+#~ msgstr "Adres"

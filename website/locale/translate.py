@@ -38,7 +38,6 @@ def translate_folder(folder, source, target):
             print("Translated " + file)
 
 
-
 def defuzzier():
     # run this command 'msgattrib --clear-fuzzy --empty -o locale/bg/LC_MESSAGES/django.po locale/bg/LC_MESSAGES/django.po'
 
@@ -55,10 +54,16 @@ def defuzzier():
                 if os.path.isdir("C:/Users/Deyan/Desktop/adventora/website/locale/" + file + "/" + file2):
                     for file3 in os.listdir("C:/Users/Deyan/Desktop/adventora/website/locale/" + file + "/" + file2):
                         if file3.endswith(".po"):
-                            subprocess.call("msgattrib --clear-fuzzy --empty -o C:/Users/Deyan/Desktop/adventora/website/locale/" + file + "/" + file2 + "/" + file3 + " C:/Users/Deyan/Desktop/adventora/website/locale/" + file + "/" + file2 + "/" + file3, shell=True)
+                            subprocess.call(
+                                "msgattrib --clear-fuzzy --empty -o C:/Users/Deyan/Desktop/adventora/website/locale/" + file + "/" + file2 + "/" + file3 + " C:/Users/Deyan/Desktop/adventora/website/locale/" + file + "/" + file2 + "/" + file3,
+                                shell=True
+                            )
                             print("Defuzzied " + file3)
                 if file2.endswith(".po"):
-                    subprocess.call("msgattrib --clear-fuzzy --empty -o C:/Users/Deyan/Desktop/adventora/website/locale/" + file + "/" + file2 + " C:/Users/Deyan/Desktop/adventora/website/locale/" + file + "/" + file2, shell=True)
+                    subprocess.call(
+                        "msgattrib --clear-fuzzy --empty -o C:/Users/Deyan/Desktop/adventora/website/locale/" + file + "/" + file2 + " C:/Users/Deyan/Desktop/adventora/website/locale/" + file + "/" + file2,
+                        shell=True
+                    )
                     print("Defuzzied " + file2)
         if file.endswith(".po"):
             subprocess.call("msgattrib --clear-fuzzy --empty -o C:/Users/Deyan/Desktop/adventora/website/locale/" + file + " C:/Users/Deyan/Desktop/adventora/website/locale/" + file, shell=True)
@@ -73,7 +78,6 @@ def compilemessages():
     subprocess.call("python manage.py compilemessages", shell=True)
 
 
-
 def generatemessages():
     import subprocess
     script_directory = os.path.dirname(os.path.abspath(__file__))
@@ -82,16 +86,12 @@ def generatemessages():
     subprocess.call("python manage.py makemessages -a", shell=True)
 
 
-
 def onlycompilemessages():
     compilemessages()
 
 
 def onlygenerate():
     generatemessages()
-
-
-
 
 
 def all():
