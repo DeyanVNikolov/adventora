@@ -21,6 +21,8 @@ class CustomUser(AbstractUser):
 
     verifiedemail = models.BooleanField(default=False, null=True, blank=True)
 
+    welcome_email_sent = models.BooleanField(default=False, null=True, blank=True)
+
     two_fa_enabled = models.BooleanField(default=False, null=True, blank=True)
     factor = models.CharField(max_length=120, null=True, blank=True)
     factor_passed = models.BooleanField(default=False, null=True, blank=True)

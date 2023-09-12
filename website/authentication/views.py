@@ -223,6 +223,12 @@ def complete_email(request):
             request.user.email = email
             request.user.confirmedemail = True
             request.user.save()
+            from .email import sendregisterationemail
+            if request.user.welcome_email_sent is False or request.user.welcome_email_sent is None:
+                name = request.user.first_name + " " + request.user.last_name
+                sendregisterationemail(request.user.email, name)
+                request.user.welcome_email_sent = True
+                request.user.save()
             messages.success(request, _('Successfully confirmed email.'))
             return redirect('home')
         else:

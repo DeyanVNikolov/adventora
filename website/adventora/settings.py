@@ -67,6 +67,7 @@ SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.user.get_username',
     'social_core.pipeline.user.create_user',
     'authentication.pipeline.enable_two_factor',
+    'authentication.pipeline.send_welcome_email',
     'social_core.pipeline.social_auth.associate_user',
     'social_core.pipeline.social_auth.load_extra_data',
     'social_core.pipeline.user.user_details',
