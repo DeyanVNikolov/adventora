@@ -34,6 +34,8 @@ class CheckRole:
                         return redirect("/authentication/complete-phone")
                     elif request.user.username.strip() == "" or request.user.username is None or request.user.confirmedusername is False:
                         return redirect("/authentication/complete-username")
+        else:
+            pass
 
 
         response = self.get_response(request)

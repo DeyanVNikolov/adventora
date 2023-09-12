@@ -656,3 +656,7 @@ def two_factor_disable(request):
 
     form = TwoFactorDisableForm()
     return render(request, 'auth/two_factor_disable.html', {'form': form})
+
+
+def login_error(request):
+    return render(request, 'auth/login_error.html')

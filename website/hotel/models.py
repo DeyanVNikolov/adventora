@@ -6,7 +6,7 @@ from django.utils.translation import gettext_lazy as _
 
 
 class Hotel(models.Model):
-    uid = models.CharField(max_length=100, null=True, blank=True, default=uuid.uuid4, unique=True)
+    id = models.UUIDField(max_length=100, default=uuid.uuid4, unique=True, primary_key=True)
     name = models.CharField(max_length=100, null=True, blank=True)
     address = models.CharField(max_length=100, null=True, blank=True)
     address_text = models.CharField(max_length=100, null=True, blank=True, default="NONE")
@@ -34,7 +34,7 @@ class Hotel(models.Model):
 
 class Room(models.Model):
 
-    uid = models.CharField(max_length=100, null=True, blank=True, default=uuid.uuid4, unique=True)
+    id = models.UUIDField(max_length=100, default=uuid.uuid4, unique=True,primary_key=True)
     hotel = models.ForeignKey('hotel.Hotel', on_delete=models.CASCADE, null=True, blank=True, default=None, related_name='hotel_room')
     name = models.CharField(max_length=100, null=True, blank=True)
     description = models.TextField(null=True, blank=True)

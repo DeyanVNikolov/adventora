@@ -59,14 +59,17 @@ INSTALLED_APPS = [
 
 
 SOCIAL_AUTH_PIPELINE = (
+
     'social_core.pipeline.social_auth.social_details',
     'social_core.pipeline.social_auth.social_uid',
     'social_core.pipeline.social_auth.auth_allowed',
     'social_core.pipeline.social_auth.social_user',
+    'social_core.pipeline.user.get_username',
+    'social_core.pipeline.user.create_user',
+    'authentication.pipeline.enable_two_factor',
     'social_core.pipeline.social_auth.associate_user',
     'social_core.pipeline.social_auth.load_extra_data',
     'social_core.pipeline.user.user_details',
-    'authentication.pipeline.enable_two_factor',
 )
 
 
@@ -81,6 +84,7 @@ MIDDLEWARE = [
     'restrictedsessions.middleware.RestrictedSessionsMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'social_django.middleware.SocialAuthExceptionMiddleware',
     'adventora.middleware.CheckRole',
 
 ]
@@ -175,6 +179,8 @@ SOCIAL_AUTH_REDDIT_KEY = os.getenv("SOCIAL_AUTH_REDDIT_KEY")
 SOCIAL_AUTH_REDDIT_SECRET = os.getenv("SOCIAL_AUTH_REDDIT_SECRET")
 SOCIAL_AUTH_REDDIT_AUTH_EXTRA_ARGUMENTS = {'duration': 'permanent'}
 
+SOCIAL_AUTH_LOGIN_ERROR_URL = '/authentication/login-error/'
+
 SOCIAL_AUTH_SPOTIFY_KEY = os.getenv("SOCIAL_AUTH_SPOTIFY_KEY")
 SOCIAL_AUTH_SPOTIFY_SECRET = os.getenv("SOCIAL_AUTH_SPOTIFY_SECRET")
 
@@ -194,9 +200,9 @@ SOCIAL_AUTH_AMAZON_KEY = os.getenv("SOCIAL_AUTH_AMAZON_KEY")
 SOCIAL_AUTH_AMAZON_SECRET = os.getenv("SOCIAL_AUTH_AMAZON_SECRET")
 
 SOCIAL_AUTH_URL_NAMESPACE = 'social'
-URL_NAMESPACE = 'social'
 
 SOCIAL_AUTH_IMMUTABLE_USER_FIELDS = ['email', 'first_name', 'last_name', 'username']
+SOCIAL_AUTH_PROTECTED_USER_FIELDS = ['id']
 
 SOCIAL_AUTH_USER_MODEL = 'authentication.CustomUser'
 

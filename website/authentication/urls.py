@@ -20,5 +20,6 @@ urlpatterns = [
     path('two-factor/enable', views.two_factor_enable, name='two-factor-enable'),
     path('two-factor/disable', views.two_factor_disable, name='two-factor-disable'),
     path('two-factor/enable/verify', views.two_factor_enable_confirm, name='two-factor-verify'),
+    path('login-error/', views.login_error, name='login-error'),
 
 ]
