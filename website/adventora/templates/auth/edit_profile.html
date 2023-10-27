@@ -3,7 +3,8 @@
 {% load i18n %}
 {% load crispy_forms_tags %}
 {% block content %}
-
+<div class="columns is-centered">
+<div class="column is-two-thirds">
     <div class="container is-fluid">
         <h2 class="title is-2">Статус</h2>
         <br>
@@ -34,6 +35,9 @@
 
     {% csrf_token %}
     {% crispy form %}
+
+</div>
+</div>
 
 
 {% endblock %}

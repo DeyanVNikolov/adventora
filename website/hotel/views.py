@@ -215,3 +215,59 @@ def room(request, hotel_id, room_id):
     pass
 
 
+def edit_hotel(request):
+    hotel = Hotel.objects.filter(owner=request.user.id).first()
+    if not hotel:
+        messages.warning(request, _('You have not registered a hotel yet'))
+        return redirect('register-hotel')
+
+    if request.method == 'POST':
+        form = RegisterHotelForm(request.POST)
+        if form.is_valid():
+            hotel.name = form.cleaned_data['name']
+            hotel.address = form.cleaned_data['address']
+            latlon = hotel.address.split(",")
+            lat = latlon[0]
+            lon = latlon[1]
+            url = f"https://nominatim.openstreetmap.org/reverse?lat={lat}&lon={lon}&format=json"
+            response = requests.get(url)
+            data = response.json()
+            hotel.address_text = data['display_name']
+
+            hotel.city = form.cleaned_data['city']
+            hotel.country = "BG"
+            hotel.phone = form.cleaned_data['phone']
+            hotel.email = form.cleaned_data['email']
+            hotel.website = form.cleaned_data['website']
+            hotel.description = form.cleaned_data['description']
+            hotel.EIK = form.cleaned_data['EIK']
+            hotel.mol_name = form.cleaned_data['mol_name']
+            hotel.owner = request.user
+            hotel.stars = form.cleaned_data['stars']
+            hotel.save()
+
+            messages.success(request, _('Successfully updated hotel'))
+            return redirect('dashboard')
+        else:
+            print(form.errors.as_data())
+            messages.error(request, _('Error while updating hotel'))
+            context = {'form': form}
+
+            return render(request, 'hotel/edit_hotel.html', context)
+
+    form = RegisterHotelForm(initial={
+        'name': hotel.name,
+        'address': hotel.address,
+        'city': hotel.city,
+        'phone': hotel.phone,
+        'email': hotel.email,
+        'website': hotel.website,
+        'description': hotel.description,
+        'EIK': hotel.EIK,
+        'mol_name': hotel.mol_name,
+        'stars': hotel.stars,
+    })
+
+    context = {'form': form}
+
+    return render(request, 'hotel/edit_hotel.html', context)

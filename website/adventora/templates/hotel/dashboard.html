@@ -44,37 +44,7 @@
     </style>
     <div id="app" style="padding-left: 15px; padding-right: 15px">
 
-        <aside class="aside is-placed-left is-expanded">
-            <div class="aside-tools">
-                <div class="aside-tools-label">
-                    {% if hotel and hotel.approved %}
-                        {{ hotel.name }}
-                    {% else %}
-                        {% trans "You don't have a hotel" %}
-                    {% endif %}
-                </div>
-            </div>
-            <div class="menu is-menu-main">
-                <p class="menu-label">{% trans "General Settings" %}</p>
-                <ul class="menu-list">
-                    <li>
-                        <a href="{% url 'dashboard' %}" class="is-active router-link-active has-icon">
-                            <span class="icon"><i class="mdi mdi-desktop-mac"></i></span>
-                            <span class="menu-item-label">{% trans "Dashboard" %}</span>
-                        </a>
-                    </li>
-                </ul>
-                <p class="menu-label">{% trans "Management" %}</p>
-                <ul class="menu-list">
-                    <li>
-                        <a href="tables.html" class="has-icon">
-                            <span class="icon has-update-mark"><i class="mdi mdi-table"></i></span>
-                            <span class="menu-item-label">Tables</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </aside>
+        {% include "hotel/hotel_base.html" %}
         <section class="section is-title-bar">
             <div class="level">
                 <div class="level-left">

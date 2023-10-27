@@ -1,0 +1,34 @@
+{% load static %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+<aside class="aside is-placed-left is-expanded">
+            <div class="aside-tools">
+                <div class="aside-tools-label">
+                    {% if hotel and hotel.approved %}
+                        {{ hotel.name }}
+                    {% else %}
+                        {% trans "You don't have a hotel" %}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="menu is-menu-main">
+                <p class="menu-label">{% trans "General Settings" %}</p>
+                <ul class="menu-list">
+                    <li>
+                        <a href="{% url 'dashboard' %}" class="is-active router-link-active has-icon">
+                            <span class="icon"><i class="mdi mdi-desktop-mac"></i></span>
+                            <span class="menu-item-label">{% trans "Dashboard" %}</span>
+                        </a>
+                    </li>
+                </ul>
+                <p class="menu-label">{% trans "Management" %}</p>
+                <ul class="menu-list">
+                    <li>
+                        <a href="/hotel/dashboard/info" class="has-icon">
+                            <span class="icon"><span class="mdi mdi-account-box"></span></span>
+                            <span class="menu-item-label">{% trans "Information" %}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>

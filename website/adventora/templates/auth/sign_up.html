@@ -4,7 +4,8 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
-
+<div class="columns is-centered">
+<div class="column is-half">
 
 {% csrf_token %}
         {% crispy form %}
@@ -88,5 +89,7 @@
     {% else %}
     <h2 class="title is-5">Социален вход е изключен в тестовия сървър. Използвайте 127.0.0.1 или adventora.net</h2>
     {% endif %}
-
+</div>
+</div>
 {% endblock %}
+

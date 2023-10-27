@@ -3,10 +3,14 @@
 {% load i18n %}
 {% load crispy_forms_tags %}
 {% block content %}
-
+<div class="columns is-centered">
+<div class="column is-half">
 
 {% csrf_token %}
         {% crispy form %}
+
+</div>
+</div>
 
 
 {% endblock %}
