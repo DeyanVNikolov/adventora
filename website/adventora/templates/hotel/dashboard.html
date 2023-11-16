@@ -87,10 +87,10 @@
                                     <div class="level is-mobile">
                                         <div class="level-item">
                                             <div class="is-widget-label"><h3 class="subtitle is-spaced">
-                                                Clients
+                                                {% trans "Rooms" %}
                                             </h3>
                                                 <h1 class="title">
-                                                    512
+                                                    {{ hotel.rooms.count | default:"0"}}
                                                 </h1>
                                             </div>
                                         </div>
@@ -109,38 +109,16 @@
                                     <div class="level is-mobile">
                                         <div class="level-item">
                                             <div class="is-widget-label"><h3 class="subtitle is-spaced">
-                                                Sales
+                                                {% trans "Reservations" %}
                                             </h3>
                                                 <h1 class="title">
-                                                    $7,770
-                                                </h1>
-                                            </div>
-                                        </div>
-                                        <div class="level-item has-widget-icon">
-                                            <div class="is-widget-icon"><span class="icon has-text-info is-large"><i
-                                                    class="mdi mdi-cart-outline mdi-48px"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tile is-parent">
-                            <div class="card tile is-child">
-                                <div class="card-content">
-                                    <div class="level is-mobile">
-                                        <div class="level-item">
-                                            <div class="is-widget-label"><h3 class="subtitle is-spaced">
-                                                Performance
-                                            </h3>
-                                                <h1 class="title">
-                                                    256%
+                                                    {{ hotel.reservations.count | default:"Не е налично" }}
                                                 </h1>
                                             </div>
                                         </div>
                                         <div class="level-item has-widget-icon">
                                             <div class="is-widget-icon"><span class="icon has-text-success is-large"><i
-                                                    class="mdi mdi-finance mdi-48px"></i></span>
+                                                    class="mdi mdi-bed mdi-48px"></i></span>
                                             </div>
                                         </div>
                                     </div>
@@ -148,37 +126,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <header class="card-header">
-                            <p class="card-header-title">
-                                <span class="icon"><i class="mdi mdi-finance"></i></span>
-                                Performance
-                            </p>
-                            <a href="#" class="card-header-icon">
-                                <span class="icon"><i class="mdi mdi-reload"></i></span>
-                            </a>
-                        </header>
-                        <div class="card-content">
-                            <div class="chart-area">
-                                <div style="height: 100%;">
-                                    <div class="chartjs-size-monitor">
-                                        <div class="chartjs-size-monitor-expand">
-                                            <div></div>
-                                        </div>
-                                        <div class="chartjs-size-monitor-shrink">
-                                            <div></div>
-                                        </div>
-                                    </div>
-                                    <canvas id="big-line-chart" width="2992" height="1000" class="chartjs-render-monitor" style="display: block; height: 400px; width: 1197px;"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                     <div class="card has-table has-mobile-sort-spaced">
                         <header class="card-header">
                             <p class="card-header-title">
                                 <span class="icon"><i class="mdi mdi-account-multiple"></i></span>
-                                Clients
+                                {% trans "Reservations" %}
                             </p>
                             <a href="#" class="card-header-icon">
                                 <span class="icon"><i class="mdi mdi-reload"></i></span>

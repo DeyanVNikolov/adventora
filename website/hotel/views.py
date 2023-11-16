@@ -1,3 +1,5 @@
+import os
+
 from django.contrib import messages
 import requests
 from django.contrib.auth.decorators import login_required
@@ -6,6 +8,11 @@ from django.shortcuts import render, redirect
 from .models import Hotel
 from .forms import RegisterHotelForm, ConfirmAddressForm
 from django.utils.translation import gettext as _
+from django.contrib.gis.geos import Point
+from django.contrib.gis import gdal
+
+from authentication.models import CustomUser
+
 
 def security_check(view_func):
     def wrapper(request, *args, **kwargs):
@@ -25,12 +32,14 @@ def security_check(view_func):
 
     return wrapper
 
+
 def is_address_confirmed(func):
     def wrapper(request, *args, **kwargs):
-        hotel = Hotel.objects.filter(owner=request.user.id).first()
+        hotel = request.user.hotel
         if hotel and hotel.address_confirmed is False:
             return redirect('confirm-address')
         return func(request, *args, **kwargs)
+
     return wrapper
 
 
@@ -40,11 +49,13 @@ def is_current_user_role_manager(func):
             messages.warning(request, _('You do not have permission to view this page'))
             return redirect('/')
         return func(request, *args, **kwargs)
+
     return wrapper
+
 
 def is_hotel_confirmed(func):
     def wrapper(request, *args, **kwargs):
-        hotel = Hotel.objects.filter(owner=request.user.id).first()
+        hotel = request.user.hotel
         if hotel and hotel.approved is False:
             messages.warning(request, _('Your hotel is not approved yet'))
             return redirect('dashboard')
@@ -63,11 +74,14 @@ def mainpage(request):
 @security_check
 def dashboard(request):
     context = {}
-    hotel = Hotel.objects.filter(owner=request.user.id).first()
+    hotel = request.user.hotel
+    if hotel:
+        rooms = hotel.rooms.all()
+        context['rooms'] = rooms
+
     context['hotel'] = hotel
 
     return render(request, 'hotel/dashboard.html', context)
-
 
 
 @login_required
@@ -79,16 +93,24 @@ def register_hotel(request):
     if request.method == 'POST':
         form = RegisterHotelForm(request.POST)
         if form.is_valid():
+            from opencage.geocoder import OpenCageGeocode
+            from pyproj import Transformer
             hotel = Hotel()
             hotel.name = form.cleaned_data['name']
-            hotel.address = form.cleaned_data['address']
-            latlon = hotel.address.split(",")
-            lat = latlon[0]
-            lon = latlon[1]
-            url = f"https://nominatim.openstreetmap.org/reverse?lat={lat}&lon={lon}&format=json"
-            response = requests.get(url)
-            data = response.json()
-            hotel.address_text = data['display_name']
+            point = form.cleaned_data['address']
+            latitude = point.y
+            longitude = point.x
+
+            transformer = Transformer.from_crs("EPSG:3857", "EPSG:4326")
+            latitude, longitude = transformer.transform(longitude, latitude)
+
+            geocoder = OpenCageGeocode(f'{os.getenv("OPENCAGE_API_KEY")}')
+            result = geocoder.reverse_geocode(latitude, longitude)
+            hotel.address = f"{latitude},{longitude}"
+            if result and result[0]['formatted']:
+                hotel.address_text = result[0]['formatted']
+            else:
+                hotel.address_text = "Address not found"
 
             hotel.city = form.cleaned_data['city']
             hotel.country = "BG"
@@ -114,7 +136,7 @@ def register_hotel(request):
 
             return render(request, 'hotel/register_hotel.html', context)
 
-    hotel = Hotel.objects.filter(owner=request.user.id).first()
+    hotel = request.user.hotel
     if hotel:
         messages.warning(request, _('You have already registered a hotel'))
         return redirect('dashboard')
@@ -122,7 +144,6 @@ def register_hotel(request):
     form = RegisterHotelForm()
 
     context['form'] = form
-
 
     return render(request, 'hotel/register_hotel.html', context)
 
@@ -133,7 +154,7 @@ def register_hotel(request):
 def confirm_address(request):
     context = {}
 
-    hotel = Hotel.objects.filter(owner=request.user.id).first()
+    hotel = request.user.hotel
     if not hotel:
         messages.warning(request, _('You have not registered a hotel yet'))
         return redirect('register-hotel')
@@ -180,7 +201,6 @@ def hotel(request, hotel_id):
         messages.warning(request, _('You do not have permission to view this page'))
         return redirect('dashboard')
 
-
     context = {'hotel': data}
 
     return render(request, 'hotel/hotel.html', context)
@@ -216,7 +236,7 @@ def room(request, hotel_id, room_id):
 
 
 def edit_hotel(request):
-    hotel = Hotel.objects.filter(owner=request.user.id).first()
+    hotel = request.user.hotel
     if not hotel:
         messages.warning(request, _('You have not registered a hotel yet'))
         return redirect('register-hotel')
@@ -266,7 +286,8 @@ def edit_hotel(request):
         'EIK': hotel.EIK,
         'mol_name': hotel.mol_name,
         'stars': hotel.stars,
-    })
+    }
+    )
 
     context = {'form': form}
 

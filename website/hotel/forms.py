@@ -1,29 +1,18 @@
 
+from ckeditor.widgets import CKEditorWidget
 from crispy_bulma.layout import Submit
 from crispy_forms.helper import FormHelper
-from crispy_forms.layout import Layout
 from django import forms
-from django.contrib.auth.models import User
-from django.contrib.auth.forms import UserCreationForm, PasswordChangeForm
-from django.contrib.gis.geos import Point
-from django.urls import reverse_lazy
 from django.utils.safestring import mark_safe
-from django_countries.fields import CountryField, LazyTypedChoiceField
-from django_countries.widgets import CountrySelectWidget
-from location_field.forms.plain import PlainLocationField
-from location_field.forms.spatial import LocationField
-from turnstile.fields import TurnstileField
-
-from .models import Room, LuxuryOption
-from phonenumber_field.formfields import PhoneNumberField
-from phonenumber_field.widgets import PhoneNumberPrefixWidget
-from ckeditor.widgets import CKEditorWidget
 from django.utils.translation import gettext_lazy as _
+from turnstile.fields import TurnstileField
+from django.contrib.gis import forms as gis_forms
+
 
 
 class RegisterHotelForm(forms.Form):
     name = forms.CharField(max_length=100, label=_('Hotel Name'))
-    address = PlainLocationField(based_fields=['city'], zoom=6, label=_('Location'), initial=Point(25.355996814032515, 42.71891178252764), widget=forms.TextInput(attrs={'class': 'form-control'}))
+    address = gis_forms.PointField(widget=gis_forms.OSMWidget(attrs={'map_height': 600, 'default_zoom': 7.5, 'default_lon': '25.8652148', 'default_lat':'42.5183673'}), label=_('Address'))
     city = forms.CharField(max_length=50, label=_('City'))
     phone = forms.CharField(label=_("Phone"), required=True, widget=forms.TextInput(attrs={'placeholder': '+359 888 888 888'}))
     email = forms.EmailField(max_length=254, label=_('Email'))
@@ -32,7 +21,6 @@ class RegisterHotelForm(forms.Form):
     EIK = forms.CharField(max_length=50, label=_('EIK'))
     mol_name = forms.CharField(max_length=100, label=_('Authorized Person'))
     stars = forms.IntegerField(label=_('Stars'), min_value=1, max_value=6)
-    captcha = TurnstileField()
     read_privacy_policy = forms.BooleanField(
         label=mark_safe(_('I have read and agree to the <a href="/privacy" target="_blank">privacy policy</a>')),
         required=True,
@@ -49,7 +37,7 @@ class RegisterHotelForm(forms.Form):
         required=True,
         widget=forms.CheckboxInput(attrs={'class': 'form-check-input'})
     )
-    captcha = TurnstileField()
+    # captcha = TurnstileField()
 
 
     helper=FormHelper()

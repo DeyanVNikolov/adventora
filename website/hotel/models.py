@@ -8,7 +8,7 @@ from django.utils.translation import gettext_lazy as _
 class Hotel(models.Model):
     id = models.UUIDField(max_length=100, default=uuid.uuid4, unique=True, primary_key=True)
     name = models.CharField(max_length=100, null=True, blank=True)
-    address = models.CharField(max_length=100, null=True, blank=True)
+    address = models.CharField(max_length=5000, null=True, blank=True)
     address_text = models.CharField(max_length=100, null=True, blank=True, default="NONE")
     address_confirmed = models.BooleanField(default=False)
     city = models.CharField(max_length=50, null=True, blank=True)
@@ -18,7 +18,6 @@ class Hotel(models.Model):
     website = models.CharField(max_length=100, null=True, blank=True)
     description = models.TextField(null=True, blank=True, max_length=50000, default=_("No description provided."))
     EIK = models.CharField(max_length=50, null=True, blank=True)
-    owner = models.ForeignKey('authentication.CustomUser', on_delete=models.CASCADE, null=True, blank=True, default=None, related_name='owner')
     mol_name = models.CharField(max_length=100, null=True, blank=True)
     stars = models.IntegerField(null=True)
     approved = models.BooleanField(default=False, null=False)
@@ -34,8 +33,8 @@ class Hotel(models.Model):
 
 class Room(models.Model):
 
-    id = models.UUIDField(max_length=100, default=uuid.uuid4, unique=True,primary_key=True)
-    hotel = models.ForeignKey('hotel.Hotel', on_delete=models.CASCADE, null=True, blank=True, default=None, related_name='hotel_room')
+    id = models.UUIDField(max_length=100, default=uuid.uuid4, unique=True, primary_key=True)
+    hotel = models.ForeignKey('hotel.Hotel', on_delete=models.CASCADE, null=True, blank=True, default=None, related_name='rooms')
     name = models.CharField(max_length=100, null=True, blank=True)
     description = models.TextField(null=True, blank=True)
     price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)

@@ -30,7 +30,7 @@ class CustomUser(AbstractUser):
     phone = models.CharField(max_length=100, null=True, blank=True)
     citizenship = CountryField(blank_label='(select country)', null=True, blank=True)
     role = models.CharField(max_length=20, choices=ROLE_CHOICES, null=True, blank=True)
-    hotel = models.ForeignKey('hotel.Hotel', on_delete=models.CASCADE, null=True, blank=True, default=None, related_name='hotel')
+    hotel = models.ForeignKey('hotel.Hotel', on_delete=models.SET_NULL, null=True, blank=True, default=None, related_name='hotel')
 
     def __str__(self):
         return self.username
