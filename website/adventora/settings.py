@@ -52,11 +52,8 @@ INSTALLED_APPS = [
     'multiselectfield',
     'ckeditor',
     'corsheaders',
+    'django.contrib.gis',
 ]
-
-
-
-
 
 SOCIAL_AUTH_PIPELINE = (
 
@@ -72,7 +69,6 @@ SOCIAL_AUTH_PIPELINE = (
     'social_core.pipeline.social_auth.load_extra_data',
     'social_core.pipeline.user.user_details',
 )
-
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
@@ -141,7 +137,7 @@ DATABASES = {
     # TODO PRODUCTION
     # AWS RDS
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'postgres',
         'USER': os.getenv("DB_USER"),
         'PASSWORD': os.getenv("DB_PASSWORD"),
@@ -349,15 +345,12 @@ LANGUAGES = (
     ('ro', 'Romanian'),
     ('de', 'German'),
     ('cs', 'Czech'),
-    ('da', 'Danish'),
     ('el', 'Greek'),
     ('fi', 'Finnish'),
     ('hu', 'Hungarian'),
     ('is', 'Icelandic'),
     ('hr', 'Croatian'),
-    ('mk', 'Macedonian'),
     ('sr', 'Serbian'),
-    ('ko', 'Korean'),
     ('nl', 'Dutch'),
     ('no', 'Norwegian'),
     ('sv', 'Swedish'),
@@ -368,7 +361,6 @@ LANGUAGES = (
     ('it', 'Italian'),
     ('pt', 'Portuguese'),
     ('tr', 'Turkish'),
-    ('ja', 'Japanese'),
 )
 
 LOCALE_PATHS = (
