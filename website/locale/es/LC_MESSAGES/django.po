@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 13:49+0200\n"
+"POT-Creation-Date: 2023-11-17 15:07+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,291 +18,212 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\adventora\templates\auth\edit_profile.html:11
 msgid "Not confirmed"
 msgstr "No confirmado"
 
-#: .\adventora\templates\auth\edit_profile.html:12
 msgid "Send confirmation email again."
 msgstr "Enviar correo electrónico de confirmación nuevamente."
 
-#: .\adventora\templates\auth\edit_profile.html:13
 msgid "Confirmed"
 msgstr "Confirmado"
 
-#: .\adventora\templates\auth\edit_profile.html:15
 msgid "Turned On"
 msgstr "encendido"
 
-#: .\adventora\templates\auth\edit_profile.html:16
 msgid "Turn off"
 msgstr "Apagar"
 
-#: .\adventora\templates\auth\edit_profile.html:17
 msgid "Turned Off"
 msgstr "Apagado"
 
-#: .\adventora\templates\auth\edit_profile.html:18
 msgid "Turn on"
 msgstr "Encender"
 
-#: .\adventora\templates\auth\edit_profile.html:26
 msgid "Change password"
 msgstr "Cambiar la contraseña"
 
-#: .\adventora\templates\auth\edit_profile.html:29
-#: .\authentication\forms.py:145
 msgid "Delete Account"
 msgstr "Borrar cuenta"
 
-#: .\adventora\templates\auth\sign_in.html:29
-#: .\adventora\templates\auth\sign_up.html:29
 msgid "Login with Google"
 msgstr "Iniciar sesión con Google"
 
-#: .\adventora\templates\auth\sign_in.html:35
-#: .\adventora\templates\auth\sign_up.html:35
 msgid "Login with Trello"
 msgstr "Iniciar sesión con Trello"
 
-#: .\adventora\templates\auth\sign_in.html:43
-#: .\adventora\templates\auth\sign_up.html:43
 msgid "Login with GitHub"
 msgstr "Iniciar sesión con GitHub"
 
-#: .\adventora\templates\auth\sign_in.html:49
-#: .\adventora\templates\auth\sign_up.html:49
 msgid "Login with Patreon"
 msgstr "Iniciar sesión con Patreon"
 
-#: .\adventora\templates\auth\sign_in.html:55
-#: .\adventora\templates\auth\sign_up.html:55
 msgid "Login with Amazon"
 msgstr "Iniciar sesión con Amazon"
 
-#: .\adventora\templates\auth\sign_in.html:64
-#: .\adventora\templates\auth\sign_up.html:64
 msgid "Login with Reddit"
 msgstr "Iniciar sesión con Reddit"
 
-#: .\adventora\templates\auth\sign_in.html:70
-#: .\adventora\templates\auth\sign_up.html:70
 msgid "Login with Steam"
 msgstr "Iniciar sesión con Steam"
 
-#: .\adventora\templates\auth\sign_in.html:79
-#: .\adventora\templates\auth\sign_up.html:79
 msgid "Login with Spotify."
 msgstr "Inicia sesión con Spotify."
 
-#: .\adventora\templates\auth\sign_in.html:85
-#: .\adventora\templates\auth\sign_up.html:85
 msgid "Login with VK"
 msgstr "Iniciar sesión con VK"
 
-#: .\adventora\templates\auth\two_factor.html:8
 msgid "Please enter your two-factor verification code"
 msgstr "Por favor ingresa tu código de verificación de dos factores"
 
-#: .\adventora\templates\base.html:127 .\adventora\templates\base.html:326
 msgid "Homepage"
 msgstr "Página principal"
 
-#: .\adventora\templates\base.html:142
 msgid "Hotel"
 msgstr "Hotel"
 
-#: .\adventora\templates\base.html:148
-#: .\adventora\templates\hotel\confirm_address.html:34
-#: .\adventora\templates\hotel\dashboard.html:54
-#: .\adventora\templates\hotel\dashboard.html:71
-#: .\adventora\templates\hotel\edit_hotel.html:41
-#: .\adventora\templates\hotel\hotel_base.html:20
-#: .\adventora\templates\hotel\register_hotel.html:40
 msgid "Dashboard"
 msgstr "Panel"
 
-#: .\adventora\templates\base.html:166
 msgid "Profile"
 msgstr "Perfil"
 
-#: .\adventora\templates\base.html:172
-#: .\adventora\templates\hotel\confirm_address.html:33
-#: .\adventora\templates\hotel\dashboard.html:53
-#: .\adventora\templates\hotel\edit_hotel.html:40
-#: .\adventora\templates\hotel\register_hotel.html:39
-#: .\authentication\models.py:11
 msgid "Admin"
 msgstr "Administración"
 
-#: .\adventora\templates\base.html:178 .\adventora\templates\base.html:188
-#: .\adventora\templates\base.html:190
 msgid "Log out"
 msgstr "Cerrar sesión"
 
-#: .\adventora\templates\base.html:195 .\authentication\forms.py:25
 msgid "Login"
 msgstr "Acceso"
 
-#: .\adventora\templates\base.html:199 .\authentication\forms.py:53
 msgid "Sign up"
 msgstr "Inscribirse"
 
-#: .\adventora\templates\base.html:205
 msgid "Language"
 msgstr "Idioma"
 
-#: .\adventora\templates\base.html:244
 msgid "Error"
 msgstr "Error"
 
-#: .\adventora\templates\base.html:256
 msgid "Success"
 msgstr "Éxito"
 
-#: .\adventora\templates\base.html:267
 msgid "Warning"
 msgstr "Advertencia"
 
-#: .\adventora\templates\base.html:291
 msgid "Adventora supports small, medium and large businesses"
 msgstr "Adventora apoya a las pequeñas, medianas y grandes empresas"
 
-#: .\adventora\templates\base.html:324
 msgid "All Rights Reserved"
 msgstr "Reservados todos los derechos"
 
-#: .\adventora\templates\base.html:327
 msgid "About us"
 msgstr "Sobre nosotros"
 
-#: .\adventora\templates\base.html:328
 msgid "Privacy"
 msgstr "Privacidad"
 
-#: .\adventora\templates\base.html:329
 msgid "Terms of use"
 msgstr "Condiciones de uso"
 
-#: .\adventora\templates\base.html:330
 msgid "Contacts"
 msgstr "Contactos"
 
-#: .\adventora\templates\base.html:331
 msgid "Partnerships"
 msgstr "Asociaciones"
 
-#: .\adventora\templates\base.html:333
 msgid "Emergency"
 msgstr "Emergencia"
 
-#: .\adventora\templates\base.html:334
 msgid "Stranded Abroad"
 msgstr "Varado en el extranjero"
 
-#: .\adventora\templates\hotel\confirm_address.html:35
-#: .\adventora\templates\hotel\confirm_address.html:52 .\hotel\forms.py:54
-msgid "Confirm Address"
-msgstr "Confirmar dirección"
+msgid "Disabled"
+msgstr "Desactivado"
 
-#: .\adventora\templates\hotel\dashboard.html:90
-#: .\adventora\templates\hotel\dashboard.html:134 .\hotel\models.py:52
 msgid "Rooms"
 msgstr "Habitaciones"
 
-#: .\adventora\templates\hotel\dashboard.html:112
-msgid "Reservations"
-msgstr "Reservas"
+msgid "Add"
+msgstr "Agregar"
 
-#: .\adventora\templates\hotel\dashboard.html:147
-msgid "Capacity"
-msgstr "Capacidad"
-
-#: .\adventora\templates\hotel\dashboard.html:148
-msgid "Price"
-msgstr "Precio"
-
-#: .\adventora\templates\hotel\dashboard.html:148
-msgid "Night"
-msgstr "Noche"
-
-#: .\adventora\templates\hotel\dashboard.html:149
-msgid "Occupied"
-msgstr "Ocupado"
-
-#: .\adventora\templates\hotel\dashboard.html:181
 msgid ""
 "Your hotel is not yet approved. Allow us to confirm your info within 48 "
 "hours."
 msgstr "Su hotel aún no está aprobado. "
 
-#: .\adventora\templates\hotel\dashboard.html:187
-#: .\adventora\templates\hotel\hotel_base.html:10
 msgid "You don't have a hotel"
 msgstr "no tienes hotel"
 
-#: .\adventora\templates\hotel\dashboard.html:189
-#: .\adventora\templates\hotel\edit_hotel.html:42
-#: .\adventora\templates\hotel\edit_hotel.html:59
-#: .\adventora\templates\hotel\register_hotel.html:41
-#: .\adventora\templates\hotel\register_hotel.html:58 .\hotel\forms.py:45
 msgid "Register Hotel"
 msgstr "Registrar Hotel"
 
-#: .\adventora\templates\hotel\hotel_base.html:15
+msgid "Confirm Address"
+msgstr "Confirmar dirección"
+
+msgid "Reservations"
+msgstr "Reservas"
+
+msgid "Capacity"
+msgstr "Capacidad"
+
+msgid "Price"
+msgstr "Precio"
+
+msgid "Night"
+msgstr "Noche"
+
+msgid "Occupied"
+msgstr "Ocupado"
+
+msgid "Status"
+msgstr "Estado"
+
+msgid "Available"
+msgstr "Disponible"
+
+msgid "To be cleaned"
+msgstr "para ser limpiado"
+
 msgid "General Settings"
 msgstr "Configuración general"
 
-#: .\adventora\templates\hotel\hotel_base.html:24
 msgid "Management"
 msgstr "Gestión"
 
-#: .\adventora\templates\hotel\hotel_base.html:29
 msgid "Information"
 msgstr "Información"
 
-#: .\adventora\templates\partnerships.html:9
+msgid "Room"
+msgstr "Habitación"
+
 msgid "For partnerships contact us at"
 msgstr "Para asociaciones contáctenos en"
 
-#: .\authentication\forms.py:16
 msgid "Username or email"
 msgstr "Nombre de usuario o correo electrónico"
 
-#: .\authentication\forms.py:17 .\authentication\forms.py:36
-#: .\authentication\forms.py:140 .\authentication\forms.py:172
-#: .\authentication\forms.py:202
 msgid "Password"
 msgstr "Contraseña"
 
-#: .\authentication\forms.py:30 .\authentication\forms.py:87
-#: .\authentication\forms.py:104
 msgid "Username"
 msgstr "Nombre de usuario"
 
-#: .\authentication\forms.py:31 .\authentication\forms.py:88
-#: .\authentication\forms.py:105
 msgid "The username must contain at least 8 characters."
 msgstr "El nombre de usuario debe contener al menos 8 caracteres."
 
-#: .\authentication\forms.py:33
 msgid "First name"
 msgstr "Nombre de pila"
 
-#: .\authentication\forms.py:34
 msgid "Last name"
 msgstr "Apellido"
 
-#: .\authentication\forms.py:35 .\authentication\forms.py:79
-#: .\authentication\forms.py:103 .\hotel\forms.py:18
 msgid "Email"
 msgstr "Correo electrónico"
 
-#: .\authentication\forms.py:35
 msgid "Email address must be valid"
 msgstr "La dirección de correo electrónico debe ser válida."
 
-#: .\authentication\forms.py:37
 msgid ""
 "The password must be at least 8 characters long. <br> The password should "
 "not contain only digits. <br> The password should not contain only letters. "
@@ -311,21 +232,17 @@ msgid ""
 "commonly used password."
 msgstr "La contraseña debe tener al menos 8 caracteres. "
 
-#: .\authentication\forms.py:43
 msgid "Confirm password"
 msgstr "Confirmar Contraseña"
 
-#: .\authentication\forms.py:44
 msgid "Enter the same password as above, for verification."
 msgstr "Ingrese la misma contraseña que arriba, para verificación."
 
-#: .\authentication\forms.py:58 .\authentication\forms.py:97
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
 msgstr ""
 "Vacationer: explore, planifique y reserve sus actividades vacacionales "
 "ideales."
 
-#: .\authentication\forms.py:59 .\authentication\forms.py:98
 msgid ""
 "Hotel Manager - Oversee operations and provide excellent service in your own"
 " hotel."
@@ -333,7 +250,6 @@ msgstr ""
 "Gerente de hotel: supervise las operaciones y brinde un excelente servicio "
 "en su propio hotel."
 
-#: .\authentication\forms.py:60 .\authentication\forms.py:99
 msgid ""
 "Employee - Contribute your expertise to a thriving workplace, such as a "
 "hotel or guest house."
@@ -341,268 +257,191 @@ msgstr ""
 "Empleado: contribuya con su experiencia a un lugar de trabajo próspero, como"
 " un hotel o una casa de huéspedes."
 
-#: .\authentication\forms.py:66 .\authentication\forms.py:197
 msgid "Submit"
 msgstr "Entregar"
 
-#: .\authentication\forms.py:70 .\authentication\forms.py:101
 msgid "First Name"
 msgstr "Nombre de pila"
 
-#: .\authentication\forms.py:71 .\authentication\forms.py:102
 msgid "Last Name"
 msgstr "Apellido"
 
-#: .\authentication\forms.py:74 .\authentication\forms.py:82
-#: .\authentication\forms.py:92 .\authentication\forms.py:112
-#: .\authentication\forms.py:124 .\authentication\forms.py:135
-#: .\authentication\forms.py:159 .\authentication\forms.py:167
 msgid "Save"
 msgstr "Ahorrar"
 
-#: .\authentication\forms.py:79 .\authentication\forms.py:103
 msgid "The email must be valid."
 msgstr "El correo electrónico debe ser válido."
 
-#: .\authentication\forms.py:107 .\authentication\forms.py:156
 msgid "Citizenship"
 msgstr "Ciudadanía"
 
-#: .\authentication\forms.py:108 .\authentication\forms.py:164
-#: .\hotel\forms.py:17
 msgid "Phone"
 msgstr "Teléfono"
 
-#: .\authentication\forms.py:109
 msgid "Choose a Role"
 msgstr "Elegir un papel"
 
-#: .\authentication\forms.py:117
 msgid "Old Password"
 msgstr "Contraseña anterior"
 
-#: .\authentication\forms.py:118 .\authentication\forms.py:129
 msgid "New Password"
 msgstr "Nueva contraseña"
 
-#: .\authentication\forms.py:119 .\authentication\forms.py:130
 msgid "Confirm New Password"
 msgstr "Confirmar nueva contraseña"
 
-#: .\authentication\forms.py:177 .\authentication\forms.py:187
 msgid "Enable"
 msgstr "Permitir"
 
-#: .\authentication\forms.py:182 .\authentication\forms.py:192
 msgid "Code"
 msgstr "Código"
 
-#: .\authentication\forms.py:207
 msgid "Disable"
 msgstr "Desactivar"
 
-#: .\authentication\models.py:11
 msgid "User"
 msgstr "Usuario"
 
-#: .\authentication\models.py:11
 msgid "Manager"
 msgstr "Gerente"
 
-#: .\authentication\models.py:11
 msgid "Employee"
 msgstr "Empleado"
 
-#: .\authentication\views.py:28 .\hotel\views.py:26
 msgid "Malformed security token"
 msgstr "Token de seguridad mal formado"
 
-#: .\authentication\views.py:53 .\authentication\views.py:220
-#: .\authentication\views.py:287
 msgid "A user with that email already exists."
 msgstr "Un usuario con ese email ya existe."
 
-#: .\authentication\views.py:57
 msgid "Password must be at least 8 characters long."
 msgstr "La contraseña debe tener al menos 8 caracteres."
 
-#: .\authentication\views.py:61 .\authentication\views.py:353
-#: .\authentication\views.py:372
 msgid "Passwords do not match."
 msgstr "Las contraseñas no coinciden."
 
-#: .\authentication\views.py:65
 msgid "Username must be at least 4 characters long."
 msgstr "El nombre de usuario debe tener al menos 4 caracteres."
 
-#: .\authentication\views.py:70
 msgid "Username should only contain letters and numbers."
 msgstr "El nombre de usuario solo debe contener letras y números."
 
-#: .\authentication\views.py:75
 msgid "Invalid email."
 msgstr "Email inválido."
 
-#: .\authentication\views.py:79 .\authentication\views.py:253
-#: .\authentication\views.py:293
 msgid "A user with that username already exists."
 msgstr "Un usuario con ese nombre ya existe."
 
-#: .\authentication\views.py:87
 msgid "Successfully registration."
 msgstr "Registro exitoso."
 
-#: .\authentication\views.py:90 .\authentication\views.py:147
-#: .\authentication\views.py:178 .\authentication\views.py:200
-#: .\authentication\views.py:235 .\authentication\views.py:266
-#: .\authentication\views.py:319 .\authentication\views.py:362
-#: .\authentication\views.py:381 .\authentication\views.py:406
-#: .\authentication\views.py:426 .\authentication\views.py:448
-#: .\authentication\views.py:556 .\authentication\views.py:595
-#: .\authentication\views.py:630 .\authentication\views.py:660
 msgid "Invalid data."
 msgstr "Datos inválidos."
 
-#: .\authentication\views.py:116
 msgid "A user with that email does not exist."
 msgstr "No existe un usuario con ese correo electrónico."
 
-#: .\authentication\views.py:126 .\authentication\views.py:140
 msgid "Successfully logged in."
 msgstr "Inicie sesión exitosamente."
 
-#: .\authentication\views.py:129 .\authentication\views.py:143
 msgid "Invalid password."
 msgstr "Contraseña invalida."
 
-#: .\authentication\views.py:134
 msgid "A user with that username does not exist."
 msgstr "No existe un usuario con ese nombre de usuario."
 
-#: .\authentication\views.py:157
 msgid "Successfully logged out."
 msgstr "Cerró sesión exitosamente."
 
-#: .\authentication\views.py:170 .\authentication\views.py:302
 msgid "Invalid role."
 msgstr "Rol no válido."
 
-#: .\authentication\views.py:175
 msgid "Successfully chosen role."
 msgstr "Rol elegido con éxito."
 
-#: .\authentication\views.py:197
 msgid "Successfully confirmed name."
 msgstr "Nombre confirmado exitosamente."
 
-#: .\authentication\views.py:232
 msgid "Successfully confirmed email."
 msgstr "Correo electrónico confirmado exitosamente."
 
-#: .\authentication\views.py:257 .\authentication\views.py:296
 msgid "Invalid username. At least 5 characters."
 msgstr "Nombre de usuario no válido. "
 
-#: .\authentication\views.py:263
 msgid "Successfully confirmed username."
 msgstr "Nombre de usuario confirmado exitosamente."
 
-#: .\authentication\views.py:316
 msgid "Successfully edited profile."
 msgstr "Perfil editado exitosamente."
 
-#: .\authentication\views.py:349
 msgid "Incorrect old password."
 msgstr "Contraseña antigua incorrecta."
 
-#: .\authentication\views.py:359 .\authentication\views.py:378
 msgid "Successfully changed password."
 msgstr "Contraseña cambiada exitosamente."
 
-#: .\authentication\views.py:399 .\authentication\views.py:582
-#: .\authentication\views.py:650
 msgid "Incorrect password."
 msgstr "Contraseña incorrecta."
 
-#: .\authentication\views.py:403
 msgid "Successfully deleted account."
 msgstr "Cuenta eliminada exitosamente."
 
-#: .\authentication\views.py:423
 msgid "Successfully confirmed citizenship."
 msgstr "Ciudadanía confirmada exitosamente."
 
-#: .\authentication\views.py:445
 msgid "Successfully confirmed phone number."
 msgstr "Número de teléfono confirmado exitosamente."
 
-#: .\authentication\views.py:534 .\authentication\views.py:641
 msgid "Two factor authentication is not enabled."
 msgstr "La autenticación de dos factores no está habilitada."
 
-#: .\authentication\views.py:538
 msgid "Two factor authentication is already passed."
 msgstr "Ya se pasó la autenticación de dos factores."
 
-#: .\authentication\views.py:550
 msgid "Successfully passed two factor authentication"
 msgstr "Pasó con éxito la autenticación de dos factores"
 
-#: .\authentication\views.py:553 .\authentication\views.py:627
 msgid "Invalid code."
 msgstr "Codigo invalido."
 
-#: .\authentication\views.py:568 .\authentication\views.py:605
 msgid "Two factor authentication is already enabled."
 msgstr "La autenticación de dos factores ya está habilitada."
 
-#: .\authentication\views.py:572
 msgid "You cannot enable two factor authentication with a social login."
 msgstr ""
 "No puede habilitar la autenticación de dos factores con un inicio de sesión "
 "social."
 
-#: .\authentication\views.py:592 .\authentication\views.py:624
 msgid "Successfully enabled two factor authentication."
 msgstr "Se habilitó con éxito la autenticación de dos factores."
 
-#: .\authentication\views.py:657
 msgid "Successfully disabled two factor authentication."
 msgstr "Se deshabilitó con éxito la autenticación de dos factores."
 
-#: .\hotel\forms.py:14
 msgid "Hotel Name"
 msgstr "Nombre del hotel"
 
-#: .\hotel\forms.py:15
 msgid "Address"
 msgstr "DIRECCIÓN"
 
-#: .\hotel\forms.py:16
 msgid "City"
 msgstr "Ciudad"
 
-#: .\hotel\forms.py:19
 msgid "Website"
 msgstr "Sitio web"
 
-#: .\hotel\forms.py:20
 msgid "Description"
 msgstr "Descripción"
 
-#: .\hotel\forms.py:21
 msgid "EIK"
 msgstr "EIK"
 
-#: .\hotel\forms.py:22
 msgid "Authorized Person"
 msgstr "Persona autorizada"
 
-#: .\hotel\forms.py:23
 msgid "Stars"
 msgstr "Estrellas"
 
-#: .\hotel\forms.py:25
 msgid ""
 "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
 "policy</a>"
@@ -610,7 +449,6 @@ msgstr ""
 "He leído y acepto la <a href=\"/privacy\" target=\"_blank\">política de "
 "privacidad</a>"
 
-#: .\hotel\forms.py:30
 msgid ""
 "I have read and agree to the <a href=\"/terms-of-use\" "
 "target=\"_blank\">terms and conditions</a>"
@@ -618,7 +456,6 @@ msgstr ""
 "He leído y acepto los <a href=\"/terms-of-use\" target=\"_blank\">términos y"
 " condiciones</a>"
 
-#: .\hotel\forms.py:36
 msgid ""
 "I hereby certify, under penalty of law, that the information provided about "
 "myself and my hotel is accurate and complete to the best of my "
@@ -631,57 +468,59 @@ msgstr ""
 "entender.<br> Entiendo que cualquier información falsa o engañosa "
 "proporcionada puede resultar en la suspensión inmediata de mi hotel. "
 
-#: .\hotel\models.py:19
+msgid "Room Number"
+msgstr "Número de habitación"
+
+msgid "Price / Night"
+msgstr "Precio / Noche"
+
+msgid "Create Room"
+msgstr "Crear habitación"
+
 msgid "No description provided."
 msgstr "No se proporciona descripción."
 
-#: .\hotel\models.py:51
-msgid "Room"
-msgstr "Habitación"
-
-#: .\hotel\views.py:49 .\hotel\views.py:201
 msgid "You do not have permission to view this page"
 msgstr "No tienes permiso para ver esta página."
 
-#: .\hotel\views.py:60
 msgid "Your hotel is not approved yet"
 msgstr "Tu hotel aún no está aprobado"
 
-#: .\hotel\views.py:130
 msgid "Successfully registered hotel"
 msgstr "Hotel registrado exitosamente"
 
-#: .\hotel\views.py:134
 msgid "Error while registering hotel"
 msgstr "Error al registrar el hotel"
 
-#: .\hotel\views.py:141
 msgid "You have already registered a hotel"
 msgstr "Ya has registrado un hotel"
 
-#: .\hotel\views.py:159 .\hotel\views.py:241
 msgid "You have not registered a hotel yet"
 msgstr "Aún no has registrado un hotel"
 
-#: .\hotel\views.py:177
 msgid "Successfully confirmed address"
 msgstr "Dirección confirmada exitosamente"
 
-#: .\hotel\views.py:180
 msgid "Error while confirming address"
 msgstr "Error al confirmar la dirección"
 
-#: .\hotel\views.py:197
 msgid "No such hotel"
 msgstr "No existe tal hotel"
 
-#: .\hotel\views.py:269
+msgid "We cannot find the hotel you are looking for"
+msgstr "No encontramos el hotel que buscas"
+
+msgid "Successfully added room"
+msgstr "Sala agregada exitosamente"
+
+msgid "Error while adding room"
+msgstr "Error al agregar espacio"
+
+msgid "We cannot find the room you are looking for"
+msgstr "No podemos encontrar la habitación que buscas."
+
 msgid "Successfully updated hotel"
 msgstr "Hotel actualizado con éxito"
 
-#: .\hotel\views.py:273
 msgid "Error while updating hotel"
 msgstr "Error al actualizar el hotel"
-
-#~ msgid "Нощ"
-#~ msgstr "No"

@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+{% load crispy_forms_tags %}
+
+    {#    <div class="has-text-centered">#}
+    {#        {% if hotel == None %}#}
+    {#            Нямате хотел.#}
+    {##}
+    {#            Регистрирайте нов тук: <a href="{% url 'register-hotel' %}">Регистрация</a>#}
+    {##}
+    {#        {% else %}#}
+    {##}
+    {#            {% if hotel.approved == True %}#}
+    {#                Вашият хотел очаква одобрение, това може да отнеме до 2 работни дни.<br<br>#}
+    {#                Ако желаете да промените данните за хотела си, моля свържете се с нас в страницата за <a href="{% url 'contact' %}">контакти</a>.#}
+    {#                {% else %}#}
+    {##}
+    {#            Имате хотел#}
+    {#            <br><br>#}
+    {#            <button class="button is-primary" onclick="window.location.href='/hotel/dashboard/{{ hotel.uid }}'">Детайли</button>#}
+    {#        {% endif %}#}
+    {#        {% endif %}#}
+    {#    </div>#}
+
+    {% block addhead %}
+
+
+    {% endblock %}
+
+    <p style="display: none">
+        {% block show %}true;{% endblock %}
+    </p>
+
+    {% trans "Disabled" %}
+
+    <script>
+        // add tags has-aside-left has-aside-mobile-transition has-navbar-fixed-top has-aside-expanded to html
+        document.getElementsByTagName("html")[0].classList.add("has-aside-left", "has-aside-mobile-transition", "has-navbar-fixed-top", "has-aside-expanded");
+    </script>
+    <style>
+        .container.is-fluid {
+            padding: 0;
+        }
+    </style>
+    <div id="app" style="padding-left: 15px; padding-right: 15px">
+
+        {% include "hotel/hotel_base.html" %}
+        <section class="section is-title-bar">
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <ul>
+                            <li>{% trans "Admin" %}</li>
+                            <li>{% trans "Dashboard" %}</li>
+                            <li>{% trans "Rooms" %}</li>
+                            <li>{% trans "Add" %}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="buttons is-right">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero is-hero-bar">
+            <div class="hero-body">
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item"><h1 class="title">
+                            {% trans "Rooms" %}
+                        </h1></div>
+                    </div>
+                    <div class="level-right" style="display: none;">
+                        <div class="level-item"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% if hotel %}
+            {% if hotel.approved == True %}
+                <section class="section is-main-section">
+
+                {% crispy form %}
+
+
+                </section>
+            {% else %}
+                <br><br><br>
+                <div class="container is-fluid has-text-centered">
+                    <h1 class="title is-1">{% trans "Your hotel is not yet approved. Allow us to confirm your info within 48 hours." %}</h1>
+                </div>
+            {% endif %}
+        {% else %}
+            <br><br><br>
+            <div class="container is-fluid has-text-centered">
+                <h1 class="title is-1">{% trans "You don't have a hotel" %}</h1>
+                <br><br>
+                <button class="button is-primary" onclick="window.location.href='{% url 'register-hotel' %}'">{% trans "Register Hotel" %}</button>
+            </div>
+
+        {% endif %}
+    </div>
+
+
+{% endblock %}

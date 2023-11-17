@@ -43,7 +43,7 @@ class Room(models.Model):
     status = models.CharField(max_length=100, null=True, blank=True)
     price = models.DecimalField(max_digits=11, decimal_places=2, null=True, blank=True)
     capacity = models.IntegerField(null=True, blank=True)
-    image = models.ImageField(upload_to='room_images', null=True, blank=True)
+    images = models.ImageField(upload_to='room_images/', null=True, blank=True)
     def __str__(self):
         return self.name
 
@@ -52,8 +52,3 @@ class Room(models.Model):
         verbose_name_plural = _("Rooms")
 
 
-class LuxuryOption(models.Model):
-    name = models.CharField(max_length=50)
-
-    def __str__(self):
-        return self.name

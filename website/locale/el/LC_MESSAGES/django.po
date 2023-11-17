@@ -1,308 +1,229 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Copyright (C) 2023
+# This file is distributed under the same license as the Adventora package.
+# DEYAN NIKOLOV <didonikolovbg@gmail.com>, 2023.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 13:49+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: Adventora Beta-Release 1.0\n"
+"Report-Msgid-Bugs-To: hello@adventora.net\n"
+"POT-Creation-Date: 2023-11-17 15:07+0200\n"
+"PO-Revision-Date: 2023-11-17 15:08+0200\n"
+"Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
+"Language-Team: ADVENTORA INTERNATIONAL <international>\n"
+"Language: international\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\adventora\templates\auth\edit_profile.html:11
 msgid "Not confirmed"
 msgstr "Δεν έχει επιβεβαιωθεί"
 
-#: .\adventora\templates\auth\edit_profile.html:12
 msgid "Send confirmation email again."
 msgstr "Στείλτε ξανά email επιβεβαίωσης."
 
-#: .\adventora\templates\auth\edit_profile.html:13
 msgid "Confirmed"
 msgstr "Επιβεβαιωμένος"
 
-#: .\adventora\templates\auth\edit_profile.html:15
 msgid "Turned On"
 msgstr "Αναψε"
 
-#: .\adventora\templates\auth\edit_profile.html:16
 msgid "Turn off"
 msgstr "Σβήνω"
 
-#: .\adventora\templates\auth\edit_profile.html:17
 msgid "Turned Off"
 msgstr "Απενεργοποιημένο"
 
-#: .\adventora\templates\auth\edit_profile.html:18
 msgid "Turn on"
 msgstr "Ανάβω"
 
-#: .\adventora\templates\auth\edit_profile.html:26
 msgid "Change password"
 msgstr "Αλλαξε κωδικό"
 
-#: .\adventora\templates\auth\edit_profile.html:29
-#: .\authentication\forms.py:145
 msgid "Delete Account"
 msgstr "Διαγραφή λογαριασμού"
 
-#: .\adventora\templates\auth\sign_in.html:29
-#: .\adventora\templates\auth\sign_up.html:29
 msgid "Login with Google"
 msgstr "Συνδεθείτε με το Google"
 
-#: .\adventora\templates\auth\sign_in.html:35
-#: .\adventora\templates\auth\sign_up.html:35
 msgid "Login with Trello"
 msgstr "Συνδεθείτε με το Trello"
 
-#: .\adventora\templates\auth\sign_in.html:43
-#: .\adventora\templates\auth\sign_up.html:43
 msgid "Login with GitHub"
 msgstr "Συνδεθείτε με το GitHub"
 
-#: .\adventora\templates\auth\sign_in.html:49
-#: .\adventora\templates\auth\sign_up.html:49
 msgid "Login with Patreon"
 msgstr "Είσοδος με Patreon"
 
-#: .\adventora\templates\auth\sign_in.html:55
-#: .\adventora\templates\auth\sign_up.html:55
 msgid "Login with Amazon"
 msgstr "Συνδεθείτε με το Amazon"
 
-#: .\adventora\templates\auth\sign_in.html:64
-#: .\adventora\templates\auth\sign_up.html:64
 msgid "Login with Reddit"
 msgstr "Συνδεθείτε με το Reddit"
 
-#: .\adventora\templates\auth\sign_in.html:70
-#: .\adventora\templates\auth\sign_up.html:70
 msgid "Login with Steam"
 msgstr "Συνδεθείτε με το Steam"
 
-#: .\adventora\templates\auth\sign_in.html:79
-#: .\adventora\templates\auth\sign_up.html:79
 msgid "Login with Spotify."
 msgstr "Συνδεθείτε με το Spotify."
 
-#: .\adventora\templates\auth\sign_in.html:85
-#: .\adventora\templates\auth\sign_up.html:85
 msgid "Login with VK"
 msgstr "Συνδεθείτε με VK"
 
-#: .\adventora\templates\auth\two_factor.html:8
 msgid "Please enter your two-factor verification code"
 msgstr "Εισαγάγετε τον κωδικό επαλήθευσης δύο παραγόντων"
 
-#: .\adventora\templates\base.html:127 .\adventora\templates\base.html:326
 msgid "Homepage"
 msgstr "Αρχική σελίδα"
 
-#: .\adventora\templates\base.html:142
 msgid "Hotel"
 msgstr "Ξενοδοχειο"
 
-#: .\adventora\templates\base.html:148
-#: .\adventora\templates\hotel\confirm_address.html:34
-#: .\adventora\templates\hotel\dashboard.html:54
-#: .\adventora\templates\hotel\dashboard.html:71
-#: .\adventora\templates\hotel\edit_hotel.html:41
-#: .\adventora\templates\hotel\hotel_base.html:20
-#: .\adventora\templates\hotel\register_hotel.html:40
 msgid "Dashboard"
 msgstr "Ταμπλό"
 
-#: .\adventora\templates\base.html:166
 msgid "Profile"
 msgstr "Προφίλ"
 
-#: .\adventora\templates\base.html:172
-#: .\adventora\templates\hotel\confirm_address.html:33
-#: .\adventora\templates\hotel\dashboard.html:53
-#: .\adventora\templates\hotel\edit_hotel.html:40
-#: .\adventora\templates\hotel\register_hotel.html:39
-#: .\authentication\models.py:11
 msgid "Admin"
 msgstr "διαχειριστής"
 
-#: .\adventora\templates\base.html:178 .\adventora\templates\base.html:188
-#: .\adventora\templates\base.html:190
 msgid "Log out"
 msgstr "Αποσύνδεση"
 
-#: .\adventora\templates\base.html:195 .\authentication\forms.py:25
 msgid "Login"
 msgstr "Σύνδεση"
 
-#: .\adventora\templates\base.html:199 .\authentication\forms.py:53
 msgid "Sign up"
 msgstr "Εγγραφείτε"
 
-#: .\adventora\templates\base.html:205
 msgid "Language"
 msgstr "Γλώσσα"
 
-#: .\adventora\templates\base.html:244
 msgid "Error"
 msgstr "Λάθος"
 
-#: .\adventora\templates\base.html:256
 msgid "Success"
 msgstr "Επιτυχία"
 
-#: .\adventora\templates\base.html:267
 msgid "Warning"
 msgstr "Προειδοποίηση"
 
-#: .\adventora\templates\base.html:291
 msgid "Adventora supports small, medium and large businesses"
 msgstr "Η Adventora υποστηρίζει μικρές, μεσαίες και μεγάλες επιχειρήσεις"
 
-#: .\adventora\templates\base.html:324
 msgid "All Rights Reserved"
 msgstr "Όλα τα δικαιώματα διατηρούνται"
 
-#: .\adventora\templates\base.html:327
 msgid "About us"
 msgstr "Σχετικά με εμάς"
 
-#: .\adventora\templates\base.html:328
 msgid "Privacy"
 msgstr "Μυστικότητα"
 
-#: .\adventora\templates\base.html:329
 msgid "Terms of use"
 msgstr "Οροι χρήσης"
 
-#: .\adventora\templates\base.html:330
 msgid "Contacts"
 msgstr "Επαφές"
 
-#: .\adventora\templates\base.html:331
 msgid "Partnerships"
 msgstr "Συνεργασίες"
 
-#: .\adventora\templates\base.html:333
 msgid "Emergency"
 msgstr "Επείγον"
 
-#: .\adventora\templates\base.html:334
 msgid "Stranded Abroad"
 msgstr "Απομονωμένος στο Εξωτερικό"
 
-#: .\adventora\templates\hotel\confirm_address.html:35
-#: .\adventora\templates\hotel\confirm_address.html:52 .\hotel\forms.py:54
-msgid "Confirm Address"
-msgstr "Επιβεβαίωση διεύθυνσης"
+msgid "Disabled"
+msgstr "άτομα με ειδικές ανάγκες"
 
-#: .\adventora\templates\hotel\dashboard.html:90
-#: .\adventora\templates\hotel\dashboard.html:134 .\hotel\models.py:52
 msgid "Rooms"
 msgstr "Δωμάτια"
 
-#: .\adventora\templates\hotel\dashboard.html:112
-msgid "Reservations"
-msgstr "κρατήσεις"
+msgid "Add"
+msgstr "Προσθήκη"
 
-#: .\adventora\templates\hotel\dashboard.html:147
-msgid "Capacity"
-msgstr "Χωρητικότητα"
-
-#: .\adventora\templates\hotel\dashboard.html:148
-msgid "Price"
-msgstr "Τιμή"
-
-#: .\adventora\templates\hotel\dashboard.html:148
-msgid "Night"
-msgstr "Νύχτα"
-
-#: .\adventora\templates\hotel\dashboard.html:149
-msgid "Occupied"
-msgstr "Κατειλημμένος"
-
-#: .\adventora\templates\hotel\dashboard.html:181
 msgid ""
 "Your hotel is not yet approved. Allow us to confirm your info within 48 "
 "hours."
 msgstr "Το ξενοδοχείο σας δεν έχει εγκριθεί ακόμη. "
 
-#: .\adventora\templates\hotel\dashboard.html:187
-#: .\adventora\templates\hotel\hotel_base.html:10
 msgid "You don't have a hotel"
 msgstr "Δεν έχεις ξενοδοχείο"
 
-#: .\adventora\templates\hotel\dashboard.html:189
-#: .\adventora\templates\hotel\edit_hotel.html:42
-#: .\adventora\templates\hotel\edit_hotel.html:59
-#: .\adventora\templates\hotel\register_hotel.html:41
-#: .\adventora\templates\hotel\register_hotel.html:58 .\hotel\forms.py:45
 msgid "Register Hotel"
 msgstr "Εγγραφή ξενοδοχείου"
 
-#: .\adventora\templates\hotel\hotel_base.html:15
+msgid "Confirm Address"
+msgstr "Επιβεβαίωση διεύθυνσης"
+
+msgid "Reservations"
+msgstr "κρατήσεις"
+
+msgid "Capacity"
+msgstr "Χωρητικότητα"
+
+msgid "Price"
+msgstr "Τιμή"
+
+msgid "Night"
+msgstr "Νύχτα"
+
+msgid "Occupied"
+msgstr "Κατειλημμένος"
+
+msgid "Status"
+msgstr "Κατάσταση"
+
+msgid "Available"
+msgstr "Διαθέσιμος"
+
+msgid "To be cleaned"
+msgstr "Να καθαριστεί"
+
 msgid "General Settings"
 msgstr "Γενικές Ρυθμίσεις"
 
-#: .\adventora\templates\hotel\hotel_base.html:24
 msgid "Management"
 msgstr "Διαχείριση"
 
-#: .\adventora\templates\hotel\hotel_base.html:29
 msgid "Information"
 msgstr "Πληροφορίες"
 
-#: .\adventora\templates\partnerships.html:9
+msgid "Room"
+msgstr "Δωμάτιο"
+
 msgid "For partnerships contact us at"
 msgstr "Για συνεργασίες επικοινωνήστε μαζί μας στο"
 
-#: .\authentication\forms.py:16
 msgid "Username or email"
 msgstr "Ονομα χρήστη ή διεύθυνση ηλεκτρονικού ταχυδρομίου"
 
-#: .\authentication\forms.py:17 .\authentication\forms.py:36
-#: .\authentication\forms.py:140 .\authentication\forms.py:172
-#: .\authentication\forms.py:202
 msgid "Password"
 msgstr "Κωδικός πρόσβασης"
 
-#: .\authentication\forms.py:30 .\authentication\forms.py:87
-#: .\authentication\forms.py:104
 msgid "Username"
 msgstr "Όνομα χρήστη"
 
-#: .\authentication\forms.py:31 .\authentication\forms.py:88
-#: .\authentication\forms.py:105
 msgid "The username must contain at least 8 characters."
 msgstr "Το όνομα χρήστη πρέπει να περιέχει τουλάχιστον 8 χαρακτήρες."
 
-#: .\authentication\forms.py:33
 msgid "First name"
 msgstr "Ονομα"
 
-#: .\authentication\forms.py:34
 msgid "Last name"
 msgstr "Επίθετο"
 
-#: .\authentication\forms.py:35 .\authentication\forms.py:79
-#: .\authentication\forms.py:103 .\hotel\forms.py:18
 msgid "Email"
 msgstr "ΗΛΕΚΤΡΟΝΙΚΗ ΔΙΕΥΘΥΝΣΗ"
 
-#: .\authentication\forms.py:35
 msgid "Email address must be valid"
 msgstr "Η διεύθυνση email πρέπει να είναι έγκυρη"
 
-#: .\authentication\forms.py:37
 msgid ""
 "The password must be at least 8 characters long. <br> The password should "
 "not contain only digits. <br> The password should not contain only letters. "
@@ -312,21 +233,17 @@ msgid ""
 msgstr ""
 "Ο κωδικός πρόσβασης πρέπει να αποτελείται από τουλάχιστον 8 χαρακτήρες. "
 
-#: .\authentication\forms.py:43
 msgid "Confirm password"
 msgstr "Επιβεβαίωση Κωδικού"
 
-#: .\authentication\forms.py:44
 msgid "Enter the same password as above, for verification."
 msgstr "Εισαγάγετε τον ίδιο κωδικό πρόσβασης όπως παραπάνω, για επαλήθευση."
 
-#: .\authentication\forms.py:58 .\authentication\forms.py:97
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
 msgstr ""
 "Vacationer - Εξερευνήστε, προγραμματίστε και κάντε κράτηση για τις ιδανικές "
 "σας δραστηριότητες διακοπών."
 
-#: .\authentication\forms.py:59 .\authentication\forms.py:98
 msgid ""
 "Hotel Manager - Oversee operations and provide excellent service in your own"
 " hotel."
@@ -334,7 +251,6 @@ msgstr ""
 "Διευθυντής ξενοδοχείου - Επιβλέπετε τις λειτουργίες και παρέχετε άριστες "
 "υπηρεσίες στο δικό σας ξενοδοχείο."
 
-#: .\authentication\forms.py:60 .\authentication\forms.py:99
 msgid ""
 "Employee - Contribute your expertise to a thriving workplace, such as a "
 "hotel or guest house."
@@ -342,269 +258,192 @@ msgstr ""
 "Υπάλληλος - Συνεισφέρετε την τεχνογνωσία σας σε έναν ακμάζοντα χώρο "
 "εργασίας, όπως ένα ξενοδοχείο ή ξενώνας."
 
-#: .\authentication\forms.py:66 .\authentication\forms.py:197
 msgid "Submit"
 msgstr "υποβάλλουν"
 
-#: .\authentication\forms.py:70 .\authentication\forms.py:101
 msgid "First Name"
 msgstr "Ονομα"
 
-#: .\authentication\forms.py:71 .\authentication\forms.py:102
 msgid "Last Name"
 msgstr "Επίθετο"
 
-#: .\authentication\forms.py:74 .\authentication\forms.py:82
-#: .\authentication\forms.py:92 .\authentication\forms.py:112
-#: .\authentication\forms.py:124 .\authentication\forms.py:135
-#: .\authentication\forms.py:159 .\authentication\forms.py:167
 msgid "Save"
 msgstr "Αποθηκεύσετε"
 
-#: .\authentication\forms.py:79 .\authentication\forms.py:103
 msgid "The email must be valid."
 msgstr "Το email πρέπει να είναι έγκυρο."
 
-#: .\authentication\forms.py:107 .\authentication\forms.py:156
 msgid "Citizenship"
 msgstr "Ιθαγένεια"
 
-#: .\authentication\forms.py:108 .\authentication\forms.py:164
-#: .\hotel\forms.py:17
 msgid "Phone"
 msgstr "Τηλέφωνο"
 
-#: .\authentication\forms.py:109
 msgid "Choose a Role"
 msgstr "Επιλέξτε έναν ρόλο"
 
-#: .\authentication\forms.py:117
 msgid "Old Password"
 msgstr "ΠΑΛΙΟΣ ΚΩΔΙΚΟΣ"
 
-#: .\authentication\forms.py:118 .\authentication\forms.py:129
 msgid "New Password"
 msgstr "Νέος Κωδικός"
 
-#: .\authentication\forms.py:119 .\authentication\forms.py:130
 msgid "Confirm New Password"
 msgstr "Επιβεβαιώστε τον καινούριο σας κωδικό"
 
-#: .\authentication\forms.py:177 .\authentication\forms.py:187
 msgid "Enable"
 msgstr "επιτρέπω"
 
-#: .\authentication\forms.py:182 .\authentication\forms.py:192
 msgid "Code"
 msgstr "Κώδικας"
 
-#: .\authentication\forms.py:207
 msgid "Disable"
 msgstr "Καθιστώ ανίκανο"
 
-#: .\authentication\models.py:11
 msgid "User"
 msgstr "Χρήστης"
 
-#: .\authentication\models.py:11
 msgid "Manager"
 msgstr "Διευθυντής"
 
-#: .\authentication\models.py:11
 msgid "Employee"
 msgstr "Υπάλληλος"
 
-#: .\authentication\views.py:28 .\hotel\views.py:26
 msgid "Malformed security token"
 msgstr "Λανθασμένο διακριτικό ασφαλείας"
 
-#: .\authentication\views.py:53 .\authentication\views.py:220
-#: .\authentication\views.py:287
 msgid "A user with that email already exists."
 msgstr "Ενας χρήστης με αυτή την ηλεκτρονική διεύθυνση υπάρχει ήδη."
 
-#: .\authentication\views.py:57
 msgid "Password must be at least 8 characters long."
 msgstr ""
 "Ο κωδικός πρόσβασης πρέπει να αποτελείται από τουλάχιστον 8 χαρακτήρες."
 
-#: .\authentication\views.py:61 .\authentication\views.py:353
-#: .\authentication\views.py:372
 msgid "Passwords do not match."
 msgstr "Οι κωδικοί πρόσβασης δεν ταιριάζουν."
 
-#: .\authentication\views.py:65
 msgid "Username must be at least 4 characters long."
 msgstr "Το όνομα χρήστη πρέπει να αποτελείται από τουλάχιστον 4 χαρακτήρες."
 
-#: .\authentication\views.py:70
 msgid "Username should only contain letters and numbers."
 msgstr "Το όνομα χρήστη πρέπει να περιέχει μόνο γράμματα και αριθμούς."
 
-#: .\authentication\views.py:75
 msgid "Invalid email."
 msgstr "Ακυρη διεύθυνση ηλεκτρονικού ταχυδρομείου."
 
-#: .\authentication\views.py:79 .\authentication\views.py:253
-#: .\authentication\views.py:293
 msgid "A user with that username already exists."
 msgstr "Υπάρχει ήδη ένας χρήστης με αυτό το όνομα χρήστη."
 
-#: .\authentication\views.py:87
 msgid "Successfully registration."
 msgstr "Η εγγραφή ολοκληρώθηκε με επιτυχία."
 
-#: .\authentication\views.py:90 .\authentication\views.py:147
-#: .\authentication\views.py:178 .\authentication\views.py:200
-#: .\authentication\views.py:235 .\authentication\views.py:266
-#: .\authentication\views.py:319 .\authentication\views.py:362
-#: .\authentication\views.py:381 .\authentication\views.py:406
-#: .\authentication\views.py:426 .\authentication\views.py:448
-#: .\authentication\views.py:556 .\authentication\views.py:595
-#: .\authentication\views.py:630 .\authentication\views.py:660
 msgid "Invalid data."
 msgstr "Μη έγκυρα δεδομένα."
 
-#: .\authentication\views.py:116
 msgid "A user with that email does not exist."
 msgstr "Χρήστης με αυτό το email δεν υπάρχει."
 
-#: .\authentication\views.py:126 .\authentication\views.py:140
 msgid "Successfully logged in."
 msgstr "Έγινε επιτυχής σύνδεση."
 
-#: .\authentication\views.py:129 .\authentication\views.py:143
 msgid "Invalid password."
 msgstr "Λανθασμένος κωδικός."
 
-#: .\authentication\views.py:134
 msgid "A user with that username does not exist."
 msgstr "Χρήστης με αυτό το όνομα χρήστη δεν υπάρχει."
 
-#: .\authentication\views.py:157
 msgid "Successfully logged out."
 msgstr "Έγινε επιτυχής αποσύνδεση."
 
-#: .\authentication\views.py:170 .\authentication\views.py:302
 msgid "Invalid role."
 msgstr "Μη έγκυρος ρόλος."
 
-#: .\authentication\views.py:175
 msgid "Successfully chosen role."
 msgstr "Επιτυχώς επιλεγμένος ρόλος."
 
-#: .\authentication\views.py:197
 msgid "Successfully confirmed name."
 msgstr "Το όνομα επιβεβαιώθηκε με επιτυχία."
 
-#: .\authentication\views.py:232
 msgid "Successfully confirmed email."
 msgstr "Το email επιβεβαιώθηκε με επιτυχία."
 
-#: .\authentication\views.py:257 .\authentication\views.py:296
 msgid "Invalid username. At least 5 characters."
 msgstr "Μη έγκυρο όνομα χρήστη. "
 
-#: .\authentication\views.py:263
 msgid "Successfully confirmed username."
 msgstr "Το όνομα χρήστη επιβεβαιώθηκε με επιτυχία."
 
-#: .\authentication\views.py:316
 msgid "Successfully edited profile."
 msgstr "Το προφίλ επεξεργάστηκε με επιτυχία."
 
-#: .\authentication\views.py:349
 msgid "Incorrect old password."
 msgstr "Λανθασμένος παλιός κωδικός πρόσβασης."
 
-#: .\authentication\views.py:359 .\authentication\views.py:378
 msgid "Successfully changed password."
 msgstr "Ο κωδικός πρόσβασης άλλαξε με επιτυχία."
 
-#: .\authentication\views.py:399 .\authentication\views.py:582
-#: .\authentication\views.py:650
 msgid "Incorrect password."
 msgstr "Λάθος κωδικός."
 
-#: .\authentication\views.py:403
 msgid "Successfully deleted account."
 msgstr "Ο λογαριασμός διαγράφηκε με επιτυχία."
 
-#: .\authentication\views.py:423
 msgid "Successfully confirmed citizenship."
 msgstr "Επιβεβαιώθηκε με επιτυχία η υπηκοότητα."
 
-#: .\authentication\views.py:445
 msgid "Successfully confirmed phone number."
 msgstr "Ο αριθμός τηλεφώνου επιβεβαιώθηκε με επιτυχία."
 
-#: .\authentication\views.py:534 .\authentication\views.py:641
 msgid "Two factor authentication is not enabled."
 msgstr "Ο έλεγχος ταυτότητας δύο παραγόντων δεν είναι ενεργοποιημένος."
 
-#: .\authentication\views.py:538
 msgid "Two factor authentication is already passed."
 msgstr "Ο έλεγχος ταυτότητας δύο παραγόντων έχει ήδη περάσει."
 
-#: .\authentication\views.py:550
 msgid "Successfully passed two factor authentication"
 msgstr "Περάστηκε με επιτυχία ο έλεγχος ταυτότητας δύο παραγόντων"
 
-#: .\authentication\views.py:553 .\authentication\views.py:627
 msgid "Invalid code."
 msgstr "Μη έγκυρος κωδικός."
 
-#: .\authentication\views.py:568 .\authentication\views.py:605
 msgid "Two factor authentication is already enabled."
 msgstr "Ο έλεγχος ταυτότητας δύο παραγόντων είναι ήδη ενεργοποιημένος."
 
-#: .\authentication\views.py:572
 msgid "You cannot enable two factor authentication with a social login."
 msgstr ""
 "Δεν μπορείτε να ενεργοποιήσετε τον έλεγχο ταυτότητας δύο παραγόντων με μια "
 "κοινωνική σύνδεση."
 
-#: .\authentication\views.py:592 .\authentication\views.py:624
 msgid "Successfully enabled two factor authentication."
 msgstr "Ενεργοποιήθηκε με επιτυχία ο έλεγχος ταυτότητας δύο παραγόντων."
 
-#: .\authentication\views.py:657
 msgid "Successfully disabled two factor authentication."
 msgstr "Απενεργοποιήθηκε με επιτυχία ο έλεγχος ταυτότητας δύο παραγόντων."
 
-#: .\hotel\forms.py:14
 msgid "Hotel Name"
 msgstr "Όνομα ξενοδοχείου"
 
-#: .\hotel\forms.py:15
 msgid "Address"
 msgstr "Διεύθυνση"
 
-#: .\hotel\forms.py:16
 msgid "City"
 msgstr "Πόλη"
 
-#: .\hotel\forms.py:19
 msgid "Website"
 msgstr "Δικτυακός τόπος"
 
-#: .\hotel\forms.py:20
 msgid "Description"
 msgstr "Περιγραφή"
 
-#: .\hotel\forms.py:21
 msgid "EIK"
 msgstr "ΕΙΚ"
 
-#: .\hotel\forms.py:22
 msgid "Authorized Person"
 msgstr "Εξουσιοδοτημένο άτομο"
 
-#: .\hotel\forms.py:23
 msgid "Stars"
 msgstr "αστέρια"
 
-#: .\hotel\forms.py:25
 msgid ""
 "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
 "policy</a>"
@@ -612,7 +451,6 @@ msgstr ""
 "Έχω διαβάσει και συμφωνώ με την <a href=\"/privacy\" "
 "target=\"_blank\">πολιτική απορρήτου</a>"
 
-#: .\hotel\forms.py:30
 msgid ""
 "I have read and agree to the <a href=\"/terms-of-use\" "
 "target=\"_blank\">terms and conditions</a>"
@@ -620,7 +458,6 @@ msgstr ""
 "Έχω διαβάσει και συμφωνώ με τους <a href=\"/terms-of-use\" "
 "target=\"_blank\">όρους και προϋποθέσεις</a>"
 
-#: .\hotel\forms.py:36
 msgid ""
 "I hereby certify, under penalty of law, that the information provided about "
 "myself and my hotel is accurate and complete to the best of my "
@@ -634,54 +471,59 @@ msgstr ""
 "παρέχονται ενδέχεται να έχουν ως αποτέλεσμα την άμεση αναστολή του "
 "ξενοδοχείου μου "
 
-#: .\hotel\models.py:19
+msgid "Room Number"
+msgstr "Αριθμός δωματίου"
+
+msgid "Price / Night"
+msgstr "Τιμή / Διανυκτέρευση"
+
+msgid "Create Room"
+msgstr "Δημιουργία δωματίου"
+
 msgid "No description provided."
 msgstr "Δεν παρέχεται περιγραφή."
 
-#: .\hotel\models.py:51
-msgid "Room"
-msgstr "Δωμάτιο"
-
-#: .\hotel\views.py:49 .\hotel\views.py:201
 msgid "You do not have permission to view this page"
 msgstr "Δεν έχετε άδεια προβολής αυτής της σελίδας"
 
-#: .\hotel\views.py:60
 msgid "Your hotel is not approved yet"
 msgstr "Το ξενοδοχείο σας δεν έχει εγκριθεί ακόμη"
 
-#: .\hotel\views.py:130
 msgid "Successfully registered hotel"
 msgstr "Το ξενοδοχείο εγγράφηκε με επιτυχία"
 
-#: .\hotel\views.py:134
 msgid "Error while registering hotel"
 msgstr "Σφάλμα κατά την εγγραφή του ξενοδοχείου"
 
-#: .\hotel\views.py:141
 msgid "You have already registered a hotel"
 msgstr "Έχετε ήδη δηλώσει ένα ξενοδοχείο"
 
-#: .\hotel\views.py:159 .\hotel\views.py:241
 msgid "You have not registered a hotel yet"
 msgstr "Δεν έχετε εγγράψει ακόμη ξενοδοχείο"
 
-#: .\hotel\views.py:177
 msgid "Successfully confirmed address"
 msgstr "Η διεύθυνση επιβεβαιώθηκε με επιτυχία"
 
-#: .\hotel\views.py:180
 msgid "Error while confirming address"
 msgstr "Σφάλμα κατά την επιβεβαίωση της διεύθυνσης"
 
-#: .\hotel\views.py:197
 msgid "No such hotel"
 msgstr "Δεν υπάρχει τέτοιο ξενοδοχείο"
 
-#: .\hotel\views.py:269
+msgid "We cannot find the hotel you are looking for"
+msgstr "Δεν μπορούμε να βρούμε το ξενοδοχείο που ψάχνετε"
+
+msgid "Successfully added room"
+msgstr "Το δωμάτιο προστέθηκε με επιτυχία"
+
+msgid "Error while adding room"
+msgstr "Σφάλμα κατά την προσθήκη δωματίου"
+
+msgid "We cannot find the room you are looking for"
+msgstr "Δεν μπορούμε να βρούμε το δωμάτιο που ψάχνετε"
+
 msgid "Successfully updated hotel"
 msgstr "Το ξενοδοχείο ενημερώθηκε με επιτυχία"
 
-#: .\hotel\views.py:273
 msgid "Error while updating hotel"
 msgstr "Σφάλμα κατά την ενημέρωση του ξενοδοχείου"

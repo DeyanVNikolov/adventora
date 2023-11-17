@@ -1,308 +1,229 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Copyright (C) 2023
+# This file is distributed under the same license as the Adventora package.
+# DEYAN NIKOLOV <didonikolovbg@gmail.com>, 2023.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 13:49+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Project-Id-Version: Adventora Beta-Release 1.0\n"
+"Report-Msgid-Bugs-To: hello@adventora.net\n"
+"POT-Creation-Date: 2023-11-17 15:07+0200\n"
+"PO-Revision-Date: 2023-11-17 15:08+0200\n"
+"Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
+"Language-Team: ADVENTORA INTERNATIONAL <international>\n"
+"Language: international\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\adventora\templates\auth\edit_profile.html:11
 msgid "Not confirmed"
 msgstr "Nem megerősített"
 
-#: .\adventora\templates\auth\edit_profile.html:12
 msgid "Send confirmation email again."
 msgstr "Küldjön újra megerősítő e-mailt."
 
-#: .\adventora\templates\auth\edit_profile.html:13
 msgid "Confirmed"
 msgstr "Megerősített"
 
-#: .\adventora\templates\auth\edit_profile.html:15
 msgid "Turned On"
 msgstr "Bekapcsolva"
 
-#: .\adventora\templates\auth\edit_profile.html:16
 msgid "Turn off"
 msgstr "Kikapcsolni"
 
-#: .\adventora\templates\auth\edit_profile.html:17
 msgid "Turned Off"
 msgstr "Kikapcsolt"
 
-#: .\adventora\templates\auth\edit_profile.html:18
 msgid "Turn on"
 msgstr "Bekapcsol"
 
-#: .\adventora\templates\auth\edit_profile.html:26
 msgid "Change password"
 msgstr "Jelszó módosítása"
 
-#: .\adventora\templates\auth\edit_profile.html:29
-#: .\authentication\forms.py:145
 msgid "Delete Account"
 msgstr "Fiók törlése"
 
-#: .\adventora\templates\auth\sign_in.html:29
-#: .\adventora\templates\auth\sign_up.html:29
 msgid "Login with Google"
 msgstr "Jelentkezzen be a Google-lal"
 
-#: .\adventora\templates\auth\sign_in.html:35
-#: .\adventora\templates\auth\sign_up.html:35
 msgid "Login with Trello"
 msgstr "Jelentkezzen be a Trellóval"
 
-#: .\adventora\templates\auth\sign_in.html:43
-#: .\adventora\templates\auth\sign_up.html:43
 msgid "Login with GitHub"
 msgstr "Jelentkezzen be a GitHub segítségével"
 
-#: .\adventora\templates\auth\sign_in.html:49
-#: .\adventora\templates\auth\sign_up.html:49
 msgid "Login with Patreon"
 msgstr "Jelentkezzen be a Patreonnal"
 
-#: .\adventora\templates\auth\sign_in.html:55
-#: .\adventora\templates\auth\sign_up.html:55
 msgid "Login with Amazon"
 msgstr "Jelentkezzen be az Amazon segítségével"
 
-#: .\adventora\templates\auth\sign_in.html:64
-#: .\adventora\templates\auth\sign_up.html:64
 msgid "Login with Reddit"
 msgstr "Jelentkezzen be a Reddit segítségével"
 
-#: .\adventora\templates\auth\sign_in.html:70
-#: .\adventora\templates\auth\sign_up.html:70
 msgid "Login with Steam"
 msgstr "Jelentkezzen be a Steam segítségével"
 
-#: .\adventora\templates\auth\sign_in.html:79
-#: .\adventora\templates\auth\sign_up.html:79
 msgid "Login with Spotify."
 msgstr "Jelentkezzen be a Spotify-val."
 
-#: .\adventora\templates\auth\sign_in.html:85
-#: .\adventora\templates\auth\sign_up.html:85
 msgid "Login with VK"
 msgstr "Jelentkezzen be a VK-val"
 
-#: .\adventora\templates\auth\two_factor.html:8
 msgid "Please enter your two-factor verification code"
 msgstr "Kérjük, adja meg kéttényezős ellenőrző kódját"
 
-#: .\adventora\templates\base.html:127 .\adventora\templates\base.html:326
 msgid "Homepage"
 msgstr "Kezdőlap"
 
-#: .\adventora\templates\base.html:142
 msgid "Hotel"
 msgstr "Szálloda"
 
-#: .\adventora\templates\base.html:148
-#: .\adventora\templates\hotel\confirm_address.html:34
-#: .\adventora\templates\hotel\dashboard.html:54
-#: .\adventora\templates\hotel\dashboard.html:71
-#: .\adventora\templates\hotel\edit_hotel.html:41
-#: .\adventora\templates\hotel\hotel_base.html:20
-#: .\adventora\templates\hotel\register_hotel.html:40
 msgid "Dashboard"
 msgstr "Irányítópult"
 
-#: .\adventora\templates\base.html:166
 msgid "Profile"
 msgstr "Profil"
 
-#: .\adventora\templates\base.html:172
-#: .\adventora\templates\hotel\confirm_address.html:33
-#: .\adventora\templates\hotel\dashboard.html:53
-#: .\adventora\templates\hotel\edit_hotel.html:40
-#: .\adventora\templates\hotel\register_hotel.html:39
-#: .\authentication\models.py:11
 msgid "Admin"
 msgstr "Admin"
 
-#: .\adventora\templates\base.html:178 .\adventora\templates\base.html:188
-#: .\adventora\templates\base.html:190
 msgid "Log out"
 msgstr "Kijelentkezés"
 
-#: .\adventora\templates\base.html:195 .\authentication\forms.py:25
 msgid "Login"
 msgstr "Belépés"
 
-#: .\adventora\templates\base.html:199 .\authentication\forms.py:53
 msgid "Sign up"
 msgstr "Regisztrálj"
 
-#: .\adventora\templates\base.html:205
 msgid "Language"
 msgstr "Nyelv"
 
-#: .\adventora\templates\base.html:244
 msgid "Error"
 msgstr "Hiba"
 
-#: .\adventora\templates\base.html:256
 msgid "Success"
 msgstr "Siker"
 
-#: .\adventora\templates\base.html:267
 msgid "Warning"
 msgstr "Figyelem"
 
-#: .\adventora\templates\base.html:291
 msgid "Adventora supports small, medium and large businesses"
 msgstr "Az Adventora kis-, közép- és nagyvállalkozásokat támogat"
 
-#: .\adventora\templates\base.html:324
 msgid "All Rights Reserved"
 msgstr "Minden jog fenntartva"
 
-#: .\adventora\templates\base.html:327
 msgid "About us"
 msgstr "Rólunk"
 
-#: .\adventora\templates\base.html:328
 msgid "Privacy"
 msgstr "Magánélet"
 
-#: .\adventora\templates\base.html:329
 msgid "Terms of use"
 msgstr "Használati feltételek"
 
-#: .\adventora\templates\base.html:330
 msgid "Contacts"
 msgstr "Kapcsolatok"
 
-#: .\adventora\templates\base.html:331
 msgid "Partnerships"
 msgstr "Partnerségek"
 
-#: .\adventora\templates\base.html:333
 msgid "Emergency"
 msgstr "Vészhelyzet"
 
-#: .\adventora\templates\base.html:334
 msgid "Stranded Abroad"
 msgstr "Megfeneklett külföldön"
 
-#: .\adventora\templates\hotel\confirm_address.html:35
-#: .\adventora\templates\hotel\confirm_address.html:52 .\hotel\forms.py:54
-msgid "Confirm Address"
-msgstr "Erősítse meg címét"
+msgid "Disabled"
+msgstr "Tiltva"
 
-#: .\adventora\templates\hotel\dashboard.html:90
-#: .\adventora\templates\hotel\dashboard.html:134 .\hotel\models.py:52
 msgid "Rooms"
 msgstr "Szobák"
 
-#: .\adventora\templates\hotel\dashboard.html:112
-msgid "Reservations"
-msgstr "Fenntartások"
+msgid "Add"
+msgstr "Hozzáadás"
 
-#: .\adventora\templates\hotel\dashboard.html:147
-msgid "Capacity"
-msgstr "Kapacitás"
-
-#: .\adventora\templates\hotel\dashboard.html:148
-msgid "Price"
-msgstr "Ár"
-
-#: .\adventora\templates\hotel\dashboard.html:148
-msgid "Night"
-msgstr "Éjszaka"
-
-#: .\adventora\templates\hotel\dashboard.html:149
-msgid "Occupied"
-msgstr "Megszállt"
-
-#: .\adventora\templates\hotel\dashboard.html:181
 msgid ""
 "Your hotel is not yet approved. Allow us to confirm your info within 48 "
 "hours."
 msgstr "Szállodája még nincs jóváhagyva. "
 
-#: .\adventora\templates\hotel\dashboard.html:187
-#: .\adventora\templates\hotel\hotel_base.html:10
 msgid "You don't have a hotel"
 msgstr "Nincs szállodád"
 
-#: .\adventora\templates\hotel\dashboard.html:189
-#: .\adventora\templates\hotel\edit_hotel.html:42
-#: .\adventora\templates\hotel\edit_hotel.html:59
-#: .\adventora\templates\hotel\register_hotel.html:41
-#: .\adventora\templates\hotel\register_hotel.html:58 .\hotel\forms.py:45
 msgid "Register Hotel"
 msgstr "Regisztráljon szállodát"
 
-#: .\adventora\templates\hotel\hotel_base.html:15
+msgid "Confirm Address"
+msgstr "Erősítse meg címét"
+
+msgid "Reservations"
+msgstr "Fenntartások"
+
+msgid "Capacity"
+msgstr "Kapacitás"
+
+msgid "Price"
+msgstr "Ár"
+
+msgid "Night"
+msgstr "Éjszaka"
+
+msgid "Occupied"
+msgstr "Megszállt"
+
+msgid "Status"
+msgstr "Állapot"
+
+msgid "Available"
+msgstr "Elérhető"
+
+msgid "To be cleaned"
+msgstr "Takarítandó"
+
 msgid "General Settings"
 msgstr "Általános beállítások"
 
-#: .\adventora\templates\hotel\hotel_base.html:24
 msgid "Management"
 msgstr "Menedzsment"
 
-#: .\adventora\templates\hotel\hotel_base.html:29
 msgid "Information"
 msgstr "Információ"
 
-#: .\adventora\templates\partnerships.html:9
+msgid "Room"
+msgstr "Szoba"
+
 msgid "For partnerships contact us at"
 msgstr "Partnerkapcsolatokért vegye fel velünk a kapcsolatot a telefonszámon"
 
-#: .\authentication\forms.py:16
 msgid "Username or email"
 msgstr "Felhasználónév vagy e-mail"
 
-#: .\authentication\forms.py:17 .\authentication\forms.py:36
-#: .\authentication\forms.py:140 .\authentication\forms.py:172
-#: .\authentication\forms.py:202
 msgid "Password"
 msgstr "Jelszó"
 
-#: .\authentication\forms.py:30 .\authentication\forms.py:87
-#: .\authentication\forms.py:104
 msgid "Username"
 msgstr "Felhasználónév"
 
-#: .\authentication\forms.py:31 .\authentication\forms.py:88
-#: .\authentication\forms.py:105
 msgid "The username must contain at least 8 characters."
 msgstr "A felhasználónévnek legalább 8 karakterből kell állnia."
 
-#: .\authentication\forms.py:33
 msgid "First name"
 msgstr "Keresztnév"
 
-#: .\authentication\forms.py:34
 msgid "Last name"
 msgstr "Vezetéknév"
 
-#: .\authentication\forms.py:35 .\authentication\forms.py:79
-#: .\authentication\forms.py:103 .\hotel\forms.py:18
 msgid "Email"
 msgstr "Email"
 
-#: .\authentication\forms.py:35
 msgid "Email address must be valid"
 msgstr "Az e-mail címnek érvényesnek kell lennie"
 
-#: .\authentication\forms.py:37
 msgid ""
 "The password must be at least 8 characters long. <br> The password should "
 "not contain only digits. <br> The password should not contain only letters. "
@@ -311,21 +232,17 @@ msgid ""
 "commonly used password."
 msgstr "A jelszónak legalább 8 karakter hosszúnak kell lennie. "
 
-#: .\authentication\forms.py:43
 msgid "Confirm password"
 msgstr "Jelszó megerősítése"
 
-#: .\authentication\forms.py:44
 msgid "Enter the same password as above, for verification."
 msgstr "Az ellenőrzéshez adja meg a fenti jelszót."
 
-#: .\authentication\forms.py:58 .\authentication\forms.py:97
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
 msgstr ""
 "Nyaraló – Fedezze fel, tervezze meg és foglalja le ideális nyaralási "
 "tevékenységeit."
 
-#: .\authentication\forms.py:59 .\authentication\forms.py:98
 msgid ""
 "Hotel Manager - Oversee operations and provide excellent service in your own"
 " hotel."
@@ -333,7 +250,6 @@ msgstr ""
 "Szállodamenedzser – Felügyeli a működést, és kiváló szolgáltatást nyújt "
 "saját szállodájában."
 
-#: .\authentication\forms.py:60 .\authentication\forms.py:99
 msgid ""
 "Employee - Contribute your expertise to a thriving workplace, such as a "
 "hotel or guest house."
@@ -341,267 +257,190 @@ msgstr ""
 "Alkalmazott – Hozzájárulhat szakértelmével egy virágzó munkahelyhez, például"
 " egy szállodához vagy vendégházhoz."
 
-#: .\authentication\forms.py:66 .\authentication\forms.py:197
 msgid "Submit"
 msgstr "Beküldés"
 
-#: .\authentication\forms.py:70 .\authentication\forms.py:101
 msgid "First Name"
 msgstr "Keresztnév"
 
-#: .\authentication\forms.py:71 .\authentication\forms.py:102
 msgid "Last Name"
 msgstr "Vezetéknév"
 
-#: .\authentication\forms.py:74 .\authentication\forms.py:82
-#: .\authentication\forms.py:92 .\authentication\forms.py:112
-#: .\authentication\forms.py:124 .\authentication\forms.py:135
-#: .\authentication\forms.py:159 .\authentication\forms.py:167
 msgid "Save"
 msgstr "Megment"
 
-#: .\authentication\forms.py:79 .\authentication\forms.py:103
 msgid "The email must be valid."
 msgstr "Az e-mailnek érvényesnek kell lennie."
 
-#: .\authentication\forms.py:107 .\authentication\forms.py:156
 msgid "Citizenship"
 msgstr "Polgárság"
 
-#: .\authentication\forms.py:108 .\authentication\forms.py:164
-#: .\hotel\forms.py:17
 msgid "Phone"
 msgstr "Telefon"
 
-#: .\authentication\forms.py:109
 msgid "Choose a Role"
 msgstr "Válasszon egy szerepet"
 
-#: .\authentication\forms.py:117
 msgid "Old Password"
 msgstr "régi jelszó"
 
-#: .\authentication\forms.py:118 .\authentication\forms.py:129
 msgid "New Password"
 msgstr "új jelszó"
 
-#: .\authentication\forms.py:119 .\authentication\forms.py:130
 msgid "Confirm New Password"
 msgstr "Erősítsd meg az új jelszót"
 
-#: .\authentication\forms.py:177 .\authentication\forms.py:187
 msgid "Enable"
 msgstr "Engedélyezze"
 
-#: .\authentication\forms.py:182 .\authentication\forms.py:192
 msgid "Code"
 msgstr "Kód"
 
-#: .\authentication\forms.py:207
 msgid "Disable"
 msgstr "Letiltás"
 
-#: .\authentication\models.py:11
 msgid "User"
 msgstr "Felhasználó"
 
-#: .\authentication\models.py:11
 msgid "Manager"
 msgstr "Menedzser"
 
-#: .\authentication\models.py:11
 msgid "Employee"
 msgstr "Munkavállaló"
 
-#: .\authentication\views.py:28 .\hotel\views.py:26
 msgid "Malformed security token"
 msgstr "Rosszul formázott biztonsági token"
 
-#: .\authentication\views.py:53 .\authentication\views.py:220
-#: .\authentication\views.py:287
 msgid "A user with that email already exists."
 msgstr "Ezzel a az emailcímmel már regisztráltak."
 
-#: .\authentication\views.py:57
 msgid "Password must be at least 8 characters long."
 msgstr "A jelszónak legalább 8 karakter hosszúnak kell lennie."
 
-#: .\authentication\views.py:61 .\authentication\views.py:353
-#: .\authentication\views.py:372
 msgid "Passwords do not match."
 msgstr "A jelszavak nem egyeznek."
 
-#: .\authentication\views.py:65
 msgid "Username must be at least 4 characters long."
 msgstr "A felhasználónévnek legalább 4 karakter hosszúnak kell lennie."
 
-#: .\authentication\views.py:70
 msgid "Username should only contain letters and numbers."
 msgstr "A felhasználónév csak betűket és számokat tartalmazhat."
 
-#: .\authentication\views.py:75
 msgid "Invalid email."
 msgstr "Érvénytelen e-mail."
 
-#: .\authentication\views.py:79 .\authentication\views.py:253
-#: .\authentication\views.py:293
 msgid "A user with that username already exists."
 msgstr "Ezzel a felhasználónévvel már létezik felhasználó."
 
-#: .\authentication\views.py:87
 msgid "Successfully registration."
 msgstr "Sikeres regisztráció."
 
-#: .\authentication\views.py:90 .\authentication\views.py:147
-#: .\authentication\views.py:178 .\authentication\views.py:200
-#: .\authentication\views.py:235 .\authentication\views.py:266
-#: .\authentication\views.py:319 .\authentication\views.py:362
-#: .\authentication\views.py:381 .\authentication\views.py:406
-#: .\authentication\views.py:426 .\authentication\views.py:448
-#: .\authentication\views.py:556 .\authentication\views.py:595
-#: .\authentication\views.py:630 .\authentication\views.py:660
 msgid "Invalid data."
 msgstr "Érvénytelen adat."
 
-#: .\authentication\views.py:116
 msgid "A user with that email does not exist."
 msgstr "Nem létezik ilyen e-mail-címmel rendelkező felhasználó."
 
-#: .\authentication\views.py:126 .\authentication\views.py:140
 msgid "Successfully logged in."
 msgstr "Sikeres bejelentkezés."
 
-#: .\authentication\views.py:129 .\authentication\views.py:143
 msgid "Invalid password."
 msgstr "Érvénytelen jelszó."
 
-#: .\authentication\views.py:134
 msgid "A user with that username does not exist."
 msgstr "Nem létezik ilyen felhasználónévvel rendelkező felhasználó."
 
-#: .\authentication\views.py:157
 msgid "Successfully logged out."
 msgstr "Sikeresen kijelentkezett."
 
-#: .\authentication\views.py:170 .\authentication\views.py:302
 msgid "Invalid role."
 msgstr "Érvénytelen szerepkör."
 
-#: .\authentication\views.py:175
 msgid "Successfully chosen role."
 msgstr "Sikeresen választott szerep."
 
-#: .\authentication\views.py:197
 msgid "Successfully confirmed name."
 msgstr "A név sikeresen megerősítve."
 
-#: .\authentication\views.py:232
 msgid "Successfully confirmed email."
 msgstr "Az e-mail sikeresen megerősítve."
 
-#: .\authentication\views.py:257 .\authentication\views.py:296
 msgid "Invalid username. At least 5 characters."
 msgstr "Érvénytelen felhasználónév. "
 
-#: .\authentication\views.py:263
 msgid "Successfully confirmed username."
 msgstr "Felhasználónév sikeresen megerősítve."
 
-#: .\authentication\views.py:316
 msgid "Successfully edited profile."
 msgstr "A profil sikeresen szerkesztve."
 
-#: .\authentication\views.py:349
 msgid "Incorrect old password."
 msgstr "Helytelen régi jelszó."
 
-#: .\authentication\views.py:359 .\authentication\views.py:378
 msgid "Successfully changed password."
 msgstr "Sikeres jelszómódosítás."
 
-#: .\authentication\views.py:399 .\authentication\views.py:582
-#: .\authentication\views.py:650
 msgid "Incorrect password."
 msgstr "Hibás jelszó."
 
-#: .\authentication\views.py:403
 msgid "Successfully deleted account."
 msgstr "A fiók sikeresen törölve."
 
-#: .\authentication\views.py:423
 msgid "Successfully confirmed citizenship."
 msgstr "Sikeres állampolgárság megerősítése."
 
-#: .\authentication\views.py:445
 msgid "Successfully confirmed phone number."
 msgstr "A telefonszám sikeresen megerősítve."
 
-#: .\authentication\views.py:534 .\authentication\views.py:641
 msgid "Two factor authentication is not enabled."
 msgstr "A kéttényezős hitelesítés nincs engedélyezve."
 
-#: .\authentication\views.py:538
 msgid "Two factor authentication is already passed."
 msgstr "A kétfaktoros hitelesítés már átment."
 
-#: .\authentication\views.py:550
 msgid "Successfully passed two factor authentication"
 msgstr "Sikeresen átment a kétfaktoros hitelesítésen"
 
-#: .\authentication\views.py:553 .\authentication\views.py:627
 msgid "Invalid code."
 msgstr "Érvénytelen kód."
 
-#: .\authentication\views.py:568 .\authentication\views.py:605
 msgid "Two factor authentication is already enabled."
 msgstr "A kétfaktoros hitelesítés már engedélyezve van."
 
-#: .\authentication\views.py:572
 msgid "You cannot enable two factor authentication with a social login."
 msgstr ""
 "Közösségi bejelentkezéssel nem engedélyezheti a kéttényezős hitelesítést."
 
-#: .\authentication\views.py:592 .\authentication\views.py:624
 msgid "Successfully enabled two factor authentication."
 msgstr "A kéttényezős hitelesítés sikeresen engedélyezve."
 
-#: .\authentication\views.py:657
 msgid "Successfully disabled two factor authentication."
 msgstr "A kéttényezős hitelesítés letiltása sikerült."
 
-#: .\hotel\forms.py:14
 msgid "Hotel Name"
 msgstr "Szálloda neve"
 
-#: .\hotel\forms.py:15
 msgid "Address"
 msgstr "Cím"
 
-#: .\hotel\forms.py:16
 msgid "City"
 msgstr "Város"
 
-#: .\hotel\forms.py:19
 msgid "Website"
 msgstr "Weboldal"
 
-#: .\hotel\forms.py:20
 msgid "Description"
 msgstr "Leírás"
 
-#: .\hotel\forms.py:21
 msgid "EIK"
 msgstr "EIK"
 
-#: .\hotel\forms.py:22
 msgid "Authorized Person"
 msgstr "Meghatalmazott személy"
 
-#: .\hotel\forms.py:23
 msgid "Stars"
 msgstr "Csillagok"
 
-#: .\hotel\forms.py:25
 msgid ""
 "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
 "policy</a>"
@@ -609,7 +448,6 @@ msgstr ""
 "Elolvastam és elfogadom az <a href=\"/privacy\" "
 "target=\"_blank\">adatvédelmi irányelveket</a>"
 
-#: .\hotel\forms.py:30
 msgid ""
 "I have read and agree to the <a href=\"/terms-of-use\" "
 "target=\"_blank\">terms and conditions</a>"
@@ -617,7 +455,6 @@ msgstr ""
 "Elolvastam és elfogadom az <a href=\"/terms-of-use\" "
 "target=\"_blank\">Általános Szerződési Feltételeket</a>"
 
-#: .\hotel\forms.py:36
 msgid ""
 "I hereby certify, under penalty of law, that the information provided about "
 "myself and my hotel is accurate and complete to the best of my "
@@ -630,54 +467,59 @@ msgstr ""
 "teljesek.<br> Tudomásul veszem, hogy bármely hamis vagy félrevezető "
 "információ szállodám azonnali gyanúját vonhatja maga után. "
 
-#: .\hotel\models.py:19
+msgid "Room Number"
+msgstr "Szoba szám"
+
+msgid "Price / Night"
+msgstr "Ár / Éjszaka"
+
+msgid "Create Room"
+msgstr "Szoba létrehozása"
+
 msgid "No description provided."
 msgstr "Nincs leírás."
 
-#: .\hotel\models.py:51
-msgid "Room"
-msgstr "Szoba"
-
-#: .\hotel\views.py:49 .\hotel\views.py:201
 msgid "You do not have permission to view this page"
 msgstr "Nincs engedélye ennek az oldalnak a megtekintéséhez"
 
-#: .\hotel\views.py:60
 msgid "Your hotel is not approved yet"
 msgstr "Szállodája még nincs jóváhagyva"
 
-#: .\hotel\views.py:130
 msgid "Successfully registered hotel"
 msgstr "Sikeresen regisztrált szálloda"
 
-#: .\hotel\views.py:134
 msgid "Error while registering hotel"
 msgstr "Hiba történt a szálloda regisztrálásakor"
 
-#: .\hotel\views.py:141
 msgid "You have already registered a hotel"
 msgstr "Már regisztrált egy szállodát"
 
-#: .\hotel\views.py:159 .\hotel\views.py:241
 msgid "You have not registered a hotel yet"
 msgstr "Még nem regisztrált szállodát"
 
-#: .\hotel\views.py:177
 msgid "Successfully confirmed address"
 msgstr "A cím sikeresen megerősítve"
 
-#: .\hotel\views.py:180
 msgid "Error while confirming address"
 msgstr "Hiba a cím megerősítése közben"
 
-#: .\hotel\views.py:197
 msgid "No such hotel"
 msgstr "Nincs ilyen szálloda"
 
-#: .\hotel\views.py:269
+msgid "We cannot find the hotel you are looking for"
+msgstr "Nem találjuk a keresett szállodát"
+
+msgid "Successfully added room"
+msgstr "A szoba sikeresen hozzáadva"
+
+msgid "Error while adding room"
+msgstr "Hiba történt a szoba hozzáadása közben"
+
+msgid "We cannot find the room you are looking for"
+msgstr "Nem találjuk a keresett szobát"
+
 msgid "Successfully updated hotel"
 msgstr "Sikeresen felújított szálloda"
 
-#: .\hotel\views.py:273
 msgid "Error while updating hotel"
 msgstr "Hiba történt a szálloda frissítésekor"

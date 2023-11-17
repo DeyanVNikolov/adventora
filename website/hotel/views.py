@@ -6,8 +6,8 @@ import requests
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 # import CustomUser model
-from .models import Hotel
-from .forms import RegisterHotelForm, ConfirmAddressForm
+from .models import Hotel, Room
+from .forms import RegisterHotelForm, ConfirmAddressForm, CreateRoom
 from django.utils.translation import gettext as _
 from django.contrib.gis.geos import Point
 from django.contrib.gis import gdal
@@ -212,8 +212,48 @@ def hotel(request, hotel_id):
 @is_address_confirmed
 @is_hotel_confirmed
 def add_room(request, hotel_id):
-    # TODO Room adding
-    pass
+
+    try:
+        uuid.UUID(hotel_id)
+    except ValueError:
+        messages.warning(request, _('We cannot find the hotel you are looking for'))
+        return redirect('dashboard')
+
+    hotel = Hotel.objects.filter(id=hotel_id).first()
+
+    if not hotel:
+        messages.warning(request, _('We cannot find the hotel you are looking for'))
+        return redirect('dashboard')
+
+    if request.user.hotel != hotel:
+        messages.warning(request, _('You do not have permission to view this page'))
+        return redirect('dashboard')
+
+    if request.method == 'POST':
+        form = CreateRoom(request.POST)
+        if form.is_valid():
+            room = Room()
+            room.hotel = hotel
+            room.description = form.cleaned_data['description']
+            room.number = form.cleaned_data['number']
+            room.capacity = form.cleaned_data['capacity']
+            room.price = form.cleaned_data['price']
+            room.status = "Available"
+
+            room.save()
+            messages.success(request, _('Successfully added room'))
+            return redirect('dashboard')
+        else:
+            messages.error(request, _('Error while adding room'))
+            return render(request, 'hotel/add_room.html', {'hotel': hotel, 'form': form})
+
+
+    context = {
+        'hotel': hotel,
+        'form': CreateRoom()
+    }
+
+    return render(request, 'hotel/add_room.html', context)
 
 
 @login_required

@@ -1,4 +1,3 @@
-
 from ckeditor.widgets import CKEditorWidget
 from crispy_bulma.layout import Submit
 from crispy_forms.helper import FormHelper
@@ -9,10 +8,9 @@ from turnstile.fields import TurnstileField
 from django.contrib.gis import forms as gis_forms
 
 
-
 class RegisterHotelForm(forms.Form):
     name = forms.CharField(max_length=100, label=_('Hotel Name'))
-    address = gis_forms.PointField(widget=gis_forms.OSMWidget(attrs={'map_height': 600, 'default_zoom': 7.5, 'default_lon': '25.8652148', 'default_lat':'42.5183673'}), label=_('Address'))
+    address = gis_forms.PointField(widget=gis_forms.OSMWidget(attrs={'map_height': 600, 'default_zoom': 7.5, 'default_lon': '25.8652148', 'default_lat': '42.5183673'}), label=_('Address'))
     city = forms.CharField(max_length=50, label=_('City'))
     phone = forms.CharField(label=_("Phone"), required=True, widget=forms.TextInput(attrs={'placeholder': '+359 888 888 888'}))
     email = forms.EmailField(max_length=254, label=_('Email'))
@@ -33,14 +31,14 @@ class RegisterHotelForm(forms.Form):
     )
     liability = forms.BooleanField(
         label=mark_safe(
-            _('I hereby certify, under penalty of law, that the information provided about myself and my hotel is accurate and complete to the best of my knowledge.<br> I understand that any false or misleading information provided may result in the immdiate suspesion of my hotel listing from Adventora and may lead to potential legal consequences.')),
+            _('I hereby certify, under penalty of law, that the information provided about myself and my hotel is accurate and complete to the best of my knowledge.<br> I understand that any false or misleading information provided may result in the immdiate suspesion of my hotel listing from Adventora and may lead to potential legal consequences.')
+        ),
         required=True,
         widget=forms.CheckboxInput(attrs={'class': 'form-check-input'})
     )
     # captcha = TurnstileField()
 
-
-    helper=FormHelper()
+    helper = FormHelper()
     helper.form_method = 'POST'
     helper.add_input(Submit('submit', _('Register Hotel')))
 
@@ -53,31 +51,17 @@ class ConfirmAddressForm(forms.Form):
     helper.form_method = 'POST'
     helper.add_input(Submit('submit', _('Confirm Address')))
 
-# class Room(models.Model):
-#     types_of_luxuries_choices = (
-#         ('ac', 'Климатик'), ('tv', 'Телевизор'), ('wifi', 'Wi-Fi'), ('fridge', 'Хладилник'), ('bathroom', 'Баня'),
-#         ('balcony', 'Балкон'), ('kitchen', 'Кухня'), ('iron', 'Ютия'), ('hairdryer', 'Сешоар'), ('safe', 'Сейф'),
-#         ('phone', 'Телефон'), ('desk', 'Бюро'), ('sofa', 'Диван'), ('fireplace', 'Камина'),
-#         ('ventilation', 'Вентилация'),)
-#     unique_id = models.CharField(max_length=100, null=True, blank=True, default=str(uuid.uuid4()))
-#     hotel = models.ForeignKey('hotel.Hotel', on_delete=models.CASCADE, null=True, blank=True, default=None, related_name='hotel_room')
-#     name = models.CharField(max_length=100, null=True, blank=True)
-#     description = models.TextField(null=True, blank=True)
-#     price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
-#     capacity = models.IntegerField(null=True, blank=True)
-#     image = models.ImageField(upload_to='room_images', null=True, blank=True)
-#     luxuries = MultiSelectField(choices=types_of_luxuries_choices, null=True, blank=True, default='ac', widget=forms.CheckboxSelectMultiple, label='Удобства')
+
+class MultipleFileInput(forms.ClearableFileInput):
+    allow_multiple_selected = True
 
 
-# class RegisterRoomForm(forms.Form):
-#     name = forms.CharField(max_length=100, label='Име на стаята')
-#     description = forms.CharField(widget=forms.Textarea, label='Описание')
-#     price = forms.DecimalField(max_digits=10, decimal_places=2, label='Цена')
-#     capacity = forms.IntegerField(label='Капацитет')
-#     image = forms.ImageField(label='Снимка', required=False)
-#     luxuries = forms.ModelMultipleChoiceField(queryset=LuxuryOption.objects.all(),
-#                                               widget=forms.CheckboxSelectMultiple, label='Удобства')
-#
-#     helper = FormHelper()
-#     helper.form_method = 'POST'
-#     helper.add_input(Submit('submit', 'Регистрирай стаята'))
+class CreateRoom(forms.Form):
+    description = forms.CharField(widget=CKEditorWidget(), label=_('Description'))
+    number = forms.IntegerField(label=_('Room Number'))
+    price = forms.DecimalField(max_digits=11, decimal_places=2, label=_('Price / Night'))
+    capacity = forms.IntegerField(label=_('Capacity'))
+
+    helper = FormHelper()
+    helper.form_method = 'POST'
+    helper.add_input(Submit('submit', _('Create Room')))

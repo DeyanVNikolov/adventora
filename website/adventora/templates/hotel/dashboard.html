@@ -131,7 +131,9 @@
                         <header class="card-header">
                             <p class="card-header-title">
                                 <span class="icon"><i class="mdi mdi-bed"></i></span>
-                                {% trans "Rooms" %}
+                                {% trans "Rooms" %}&nbsp;&nbsp;<button onclick="window.location.href='/hotel/dashboard/{{ hotel.id }}/rooms/add'" class="button is-small is-primary" type="button">
+                                                        <span class="icon"><i class="mdi mdi-plus"></i></span>
+                                                    </button>
                             </p>
                             <a onclick="window.location.reload()" class="card-header-icon">
                                 <span class="icon"><i class="mdi mdi-reload"></i></span>
@@ -147,6 +149,7 @@
                                             <th>{% trans "Capacity" %}</th>
                                             <th>{% trans "Price" %} / {% trans "Night" %}</th>
                                             <th>{% trans "Occupied" %}</th>
+                                            <th>{% trans "Status" %}</th>
                                             <th></th>
                                         </tr>
                                         </thead>
@@ -157,6 +160,15 @@
                                             <td data-label="Capacity">{{ room.capacity }}</td>
                                             <td data-label="Price">{{ room.price }} BGN</td>
                                             <td data-label="Occupied">{% if room.occupied == True %}Да{% else %}Не{% endif %}</td>
+                                            <td data-label="Status">{% if room.status == "Available" %}
+                                                        {% trans "Available" %}
+                                                    {% elif room.status == "ForCleaning" %}
+                                                        {% trans "To be cleaned" %}
+                                                    {% elif room.status == "Occupied" %}
+                                                        {% trans "Occupied" %}
+                                                    {% else %}
+                                                        Не е налично
+                                                    {% endif %}</td>
                                             <td class="is-actions-cell">
                                                 <div class="buttons is-right">
                                                     <button onclick="window.location.href='/hotel/dashboard/{{ hotel.id }}/rooms/{{ room.id }}'" class="button is-small is-primary" type="button">

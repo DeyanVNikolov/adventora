@@ -69,9 +69,14 @@
             <div class="hero-body">
                 <div class="level">
                     <div class="level-left">
-                        <div class="level-item"><h1 class="title">
-                            {% trans "Room" %} {{ room.number }}
-                        </h1></div>
+                        <div class="level-item">
+                            <h1 class="title">
+                                {% trans "Room" %} {{ room.number }}
+                                <button onclick="" class="button is-small is-danger" type="button">
+                                    <span class="icon"><i style="font-size: 20px" class="mdi mdi-delete"></i></span>
+                                </button>
+                            </h1>
+                        </div>
                     </div>
                     <div class="level-right" style="display: none;">
                         <div class="level-item"></div>
@@ -92,7 +97,7 @@
                                                 {% trans "Capacity" %}
                                             </h3>
                                                 <h1 class="title">
-                                                    {{room.capacity}}
+                                                    {{ room.capacity }}
                                                 </h1>
                                             </div>
                                         </div>
@@ -127,6 +132,36 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="tile is-parent">
+                            <div class="card tile is-child">
+                                <div class="card-content">
+                                    <div class="level is-mobile">
+                                        <div class="level-item">
+                                            <div class="is-widget-label"><h3 class="subtitle is-spaced">
+                                                {% trans "Status" %}
+                                            </h3>
+                                                <h1 class="title">
+                                                    {% if room.status == "Available" %}
+                                                        {% trans "Available" %}
+                                                    {% elif room.status == "ForCleaning" %}
+                                                        {% trans "To be cleaned" %}
+                                                    {% elif room.status == "Occupied" %}
+                                                        {% trans "Occupied" %}
+                                                    {% else %}
+                                                        Не е налично
+                                                    {% endif %}
+                                                </h1>
+                                            </div>
+                                        </div>
+                                        <div class="level-item has-widget-icon">
+                                            <div class="is-widget-icon"><span class="icon has-text-primary is-large"><i
+                                                    class="mdi mdi-account-multiple mdi-48px"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="card has-table has-mobile-sort-spaced">
@@ -154,20 +189,20 @@
                                         </thead>
                                         <tbody>
                                         {% for room in rooms %}
-                                        <tr>
-                                            <td data-label="Name">{{ room.number }}</td>
-                                            <td data-label="Capacity">{{ room.capacity }}</td>
-                                            <td data-label="Price">{{ room.price }} BGN</td>
-                                            <td data-label="Occupied">{% if room.occupied == True %}Да{% else %}Не{% endif %}</td>
-                                            <td class="is-actions-cell">
-                                                <div class="buttons is-right">
-                                                    <button onclick="window.location.href='/hotel/dashboard/{{ hotel.id }}/rooms/{{ room.id }}'" class="button is-small is-primary" type="button">
-                                                        <span class="icon"><i class="mdi mdi-eye"></i></span>
-                                                    </button>
-                                                </div>
-                                            </td>
+                                            <tr>
+                                                <td data-label="Name">{{ room.number }}</td>
+                                                <td data-label="Capacity">{{ room.capacity }}</td>
+                                                <td data-label="Price">{{ room.price }} BGN</td>
+                                                <td data-label="Occupied">{% if room.occupied == True %}Да{% else %}Не{% endif %}</td>
+                                                <td class="is-actions-cell">
+                                                    <div class="buttons is-right">
+                                                        <button onclick="window.location.href='/hotel/dashboard/{{ hotel.id }}/rooms/{{ room.id }}'" class="button is-small is-primary" type="button">
+                                                            <span class="icon"><i class="mdi mdi-eye"></i></span>
+                                                        </button>
+                                                    </div>
+                                                </td>
 
-                                        </tr>
+                                            </tr>
                                         {% endfor %}
 
                                         </tbody>
