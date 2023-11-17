@@ -5,7 +5,6 @@
 .env.me
 website/db.sqlite3
 website/static/qr
-**/migrations/
 
 .env*
 .flaskenv*

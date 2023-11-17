@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 11:06+0200\n"
+"POT-Creation-Date: 2023-11-17 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,8 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
-"2:1));\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
 #: .\adventora\templates\auth\edit_profile.html:11
 msgid "Not confirmed"
@@ -217,19 +216,19 @@ msgstr "Rezervări"
 
 #: .\adventora\templates\hotel\dashboard.html:147
 msgid "Capacity"
-msgstr ""
+msgstr "Capacitate"
 
 #: .\adventora\templates\hotel\dashboard.html:148
 msgid "Price"
-msgstr ""
+msgstr "Preț"
 
 #: .\adventora\templates\hotel\dashboard.html:148
-msgid "Нощ"
-msgstr ""
+msgid "Night"
+msgstr "Noapte"
 
 #: .\adventora\templates\hotel\dashboard.html:149
 msgid "Occupied"
-msgstr ""
+msgstr "Ocupat"
 
 #: .\adventora\templates\hotel\dashboard.html:181
 msgid ""
@@ -328,11 +327,11 @@ msgstr ""
 
 #: .\authentication\forms.py:59 .\authentication\forms.py:98
 msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own "
-"hotel."
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
 msgstr ""
-"Manager de hotel - Supraveghează operațiunile și oferă servicii excelente în "
-"propriul tău hotel."
+"Manager de hotel - Supraveghează operațiunile și oferă servicii excelente în"
+" propriul tău hotel."
 
 #: .\authentication\forms.py:60 .\authentication\forms.py:99
 msgid ""
@@ -607,29 +606,29 @@ msgid ""
 "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
 "policy</a>"
 msgstr ""
-"Am citit și sunt de acord cu <a href=\"/privacy\" target=\"_blank\">politica "
-"de confidențialitate</a>"
+"Am citit și sunt de acord cu <a href=\"/privacy\" target=\"_blank\">politica"
+" de confidențialitate</a>"
 
 #: .\hotel\forms.py:30
 msgid ""
-"I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank"
-"\">terms and conditions</a>"
+"I have read and agree to the <a href=\"/terms-of-use\" "
+"target=\"_blank\">terms and conditions</a>"
 msgstr ""
-"Am citit și sunt de acord cu <a href=\"/terms-of-use\" target=\"_blank"
-"\">termenii și condițiile</a>"
+"Am citit și sunt de acord cu <a href=\"/terms-of-use\" "
+"target=\"_blank\">termenii și condițiile</a>"
 
 #: .\hotel\forms.py:36
 msgid ""
 "I hereby certify, under penalty of law, that the information provided about "
-"myself and my hotel is accurate and complete to the best of my knowledge."
-"<br> I understand that any false or misleading information provided may "
-"result in the immdiate suspesion of my hotel listing from Adventora and may "
-"lead to potential legal consequences."
+"myself and my hotel is accurate and complete to the best of my "
+"knowledge.<br> I understand that any false or misleading information "
+"provided may result in the immdiate suspesion of my hotel listing from "
+"Adventora and may lead to potential legal consequences."
 msgstr ""
 "Prin prezenta, certific, sub sancțiunea legii, că informațiile furnizate "
-"despre mine și despre hotelul meu sunt exacte și complete, după cunoștințele "
-"mele.<br> Înțeleg că orice informație falsă sau înșelătoare furnizată poate "
-"duce la suspiciunea imediată a hotelului meu. "
+"despre mine și despre hotelul meu sunt exacte și complete, după cunoștințele"
+" mele.<br> Înțeleg că orice informație falsă sau înșelătoare furnizată poate"
+" duce la suspiciunea imediată a hotelului meu. "
 
 #: .\hotel\models.py:19
 msgid "No description provided."

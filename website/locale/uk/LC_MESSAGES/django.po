@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 11:06+0200\n"
+"POT-Creation-Date: 2023-11-17 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,10 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
-"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
-"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
-"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 #: .\adventora\templates\auth\edit_profile.html:11
 msgid "Not confirmed"
@@ -219,19 +216,19 @@ msgstr "Бронювання"
 
 #: .\adventora\templates\hotel\dashboard.html:147
 msgid "Capacity"
-msgstr ""
+msgstr "Ємність"
 
 #: .\adventora\templates\hotel\dashboard.html:148
 msgid "Price"
-msgstr ""
+msgstr "Ціна"
 
 #: .\adventora\templates\hotel\dashboard.html:148
-msgid "Нощ"
-msgstr ""
+msgid "Night"
+msgstr "ніч"
 
 #: .\adventora\templates\hotel\dashboard.html:149
 msgid "Occupied"
-msgstr ""
+msgstr "Зайнятий"
 
 #: .\adventora\templates\hotel\dashboard.html:181
 msgid ""
@@ -330,8 +327,8 @@ msgstr ""
 
 #: .\authentication\forms.py:59 .\authentication\forms.py:98
 msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own "
-"hotel."
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
 msgstr ""
 "Менеджер готелю - нагляд за операціями та надання чудових послуг у вашому "
 "власному готелі."
@@ -615,8 +612,8 @@ msgstr ""
 
 #: .\hotel\forms.py:30
 msgid ""
-"I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank"
-"\">terms and conditions</a>"
+"I have read and agree to the <a href=\"/terms-of-use\" "
+"target=\"_blank\">terms and conditions</a>"
 msgstr ""
 "Я прочитав і приймаю <a href=\"/terms-of-use\" target=\"_blank\">умови "
 "використання</a>"
@@ -624,10 +621,10 @@ msgstr ""
 #: .\hotel\forms.py:36
 msgid ""
 "I hereby certify, under penalty of law, that the information provided about "
-"myself and my hotel is accurate and complete to the best of my knowledge."
-"<br> I understand that any false or misleading information provided may "
-"result in the immdiate suspesion of my hotel listing from Adventora and may "
-"lead to potential legal consequences."
+"myself and my hotel is accurate and complete to the best of my "
+"knowledge.<br> I understand that any false or misleading information "
+"provided may result in the immdiate suspesion of my hotel listing from "
+"Adventora and may lead to potential legal consequences."
 msgstr ""
 "Цим я засвідчую під страхом закону, що інформація, надана про мене та мій "
 "готель, є точною та повною, наскільки мені відомо.<br> Я розумію, що будь-"

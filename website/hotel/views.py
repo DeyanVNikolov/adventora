@@ -1,4 +1,5 @@
 import os
+import uuid
 
 from django.contrib import messages
 import requests
@@ -210,15 +211,6 @@ def hotel(request, hotel_id):
 @is_current_user_role_manager
 @is_address_confirmed
 @is_hotel_confirmed
-def rooms(request, hotel_id):
-    # TODO Room preview, all rooms
-    pass
-
-
-@login_required
-@is_current_user_role_manager
-@is_address_confirmed
-@is_hotel_confirmed
 def add_room(request, hotel_id):
     # TODO Room adding
     pass
@@ -228,13 +220,49 @@ def add_room(request, hotel_id):
 @is_current_user_role_manager
 @is_address_confirmed
 @is_hotel_confirmed
+@security_check
 def room(request, hotel_id, room_id):
-    # TODO Room editing, deleting, etc.
-    # TODO Room images
-    # TODO Room reservations
-    pass
+    try:
+        uuid.UUID(hotel_id)
+    except ValueError:
+        messages.warning(request, _('We cannot find the hotel you are looking for'))
+        return redirect('dashboard')
+
+    hotel = Hotel.objects.filter(id=hotel_id).first()
+    if not hotel:
+        messages.warning(request, _('We cannot find the hotel you are looking for'))
+        return redirect('dashboard')
+
+    if request.user.hotel != hotel:
+        messages.warning(request, _('You do not have permission to view this page'))
+        return redirect('dashboard')
+
+    # check if valid UUID
+    try:
+        uuid.UUID(room_id)
+    except ValueError:
+        messages.warning(request, _('We cannot find the room you are looking for'))
+        return redirect('dashboard')
+
+    room = hotel.rooms.filter(id=room_id).first()
+
+    if not room:
+        messages.warning(request, _('We cannot find the room you are looking for'))
+        return redirect('dashboard')
+
+    context = {
+        'hotel': hotel,
+        'room': room
+    }
+
+    return render(request, 'hotel/room.html', context)
 
 
+@login_required
+@is_current_user_role_manager
+@is_address_confirmed
+@is_hotel_confirmed
+@security_check
 def edit_hotel(request):
     hotel = request.user.hotel
     if not hotel:

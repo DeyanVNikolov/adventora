@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 11:06+0200\n"
+"POT-Creation-Date: 2023-11-17 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,8 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #: .\adventora\templates\auth\edit_profile.html:11
 msgid "Not confirmed"
@@ -217,19 +216,19 @@ msgstr "Резервације"
 
 #: .\adventora\templates\hotel\dashboard.html:147
 msgid "Capacity"
-msgstr ""
+msgstr "Капацитет"
 
 #: .\adventora\templates\hotel\dashboard.html:148
 msgid "Price"
-msgstr ""
+msgstr "Цена"
 
 #: .\adventora\templates\hotel\dashboard.html:148
-msgid "Нощ"
-msgstr ""
+msgid "Night"
+msgstr "ноћ"
 
 #: .\adventora\templates\hotel\dashboard.html:149
 msgid "Occupied"
-msgstr ""
+msgstr "Заузето"
 
 #: .\adventora\templates\hotel\dashboard.html:181
 msgid ""
@@ -328,11 +327,11 @@ msgstr ""
 
 #: .\authentication\forms.py:59 .\authentication\forms.py:98
 msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own "
-"hotel."
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
 msgstr ""
-"Менаџер хотела - Надгледајте пословање и пружите одличну услугу у сопственом "
-"хотелу."
+"Менаџер хотела - Надгледајте пословање и пружите одличну услугу у сопственом"
+" хотелу."
 
 #: .\authentication\forms.py:60 .\authentication\forms.py:99
 msgid ""
@@ -612,8 +611,8 @@ msgstr ""
 
 #: .\hotel\forms.py:30
 msgid ""
-"I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank"
-"\">terms and conditions</a>"
+"I have read and agree to the <a href=\"/terms-of-use\" "
+"target=\"_blank\">terms and conditions</a>"
 msgstr ""
 "Прочитао сам и прихватам <а хреф=\"/термс-оф-усе\" таргет=\"_бланк\">услове "
 "и одредбе</а>"
@@ -621,10 +620,10 @@ msgstr ""
 #: .\hotel\forms.py:36
 msgid ""
 "I hereby certify, under penalty of law, that the information provided about "
-"myself and my hotel is accurate and complete to the best of my knowledge."
-"<br> I understand that any false or misleading information provided may "
-"result in the immdiate suspesion of my hotel listing from Adventora and may "
-"lead to potential legal consequences."
+"myself and my hotel is accurate and complete to the best of my "
+"knowledge.<br> I understand that any false or misleading information "
+"provided may result in the immdiate suspesion of my hotel listing from "
+"Adventora and may lead to potential legal consequences."
 msgstr ""
 "Овим потврђујем, под казном закона, да су информације које сам дао о мени и "
 "мом хотелу тачне и потпуне према мом најбољем сазнању.<бр> Разумем да свака "

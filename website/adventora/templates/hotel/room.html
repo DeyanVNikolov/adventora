@@ -52,6 +52,8 @@
                         <ul>
                             <li>{% trans "Admin" %}</li>
                             <li>{% trans "Dashboard" %}</li>
+                            <li>{% trans "Room" %}</li>
+                            <li>{{ room.number }}</li>
                         </ul>
                     </div>
                 </div>
@@ -68,7 +70,7 @@
                 <div class="level">
                     <div class="level-left">
                         <div class="level-item"><h1 class="title">
-                            {% trans "Dashboard" %}
+                            {% trans "Room" %} {{ room.number }}
                         </h1></div>
                     </div>
                     <div class="level-right" style="display: none;">
@@ -87,10 +89,10 @@
                                     <div class="level is-mobile">
                                         <div class="level-item">
                                             <div class="is-widget-label"><h3 class="subtitle is-spaced">
-                                                {% trans "Rooms" %}
+                                                {% trans "Capacity" %}
                                             </h3>
                                                 <h1 class="title">
-                                                    {{ hotel.rooms.count | default:"0"}}
+                                                    {{room.capacity}}
                                                 </h1>
                                             </div>
                                         </div>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 11:06+0200\n"
+"POT-Creation-Date: 2023-11-17 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -216,19 +216,19 @@ msgstr "Reserveringen"
 
 #: .\adventora\templates\hotel\dashboard.html:147
 msgid "Capacity"
-msgstr ""
+msgstr "Capaciteit"
 
 #: .\adventora\templates\hotel\dashboard.html:148
 msgid "Price"
-msgstr ""
+msgstr "Prijs"
 
 #: .\adventora\templates\hotel\dashboard.html:148
-msgid "Нощ"
-msgstr ""
+msgid "Night"
+msgstr "Nacht"
 
 #: .\adventora\templates\hotel\dashboard.html:149
 msgid "Occupied"
-msgstr ""
+msgstr "Bezet"
 
 #: .\adventora\templates\hotel\dashboard.html:181
 msgid ""
@@ -321,12 +321,13 @@ msgstr "Voer ter verificatie hetzelfde wachtwoord in als hierboven."
 
 #: .\authentication\forms.py:58 .\authentication\forms.py:97
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
-msgstr "Vakantieganger - Ontdek, plan en boek uw ideale vakantie-activiteiten."
+msgstr ""
+"Vakantieganger - Ontdek, plan en boek uw ideale vakantie-activiteiten."
 
 #: .\authentication\forms.py:59 .\authentication\forms.py:98
 msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own "
-"hotel."
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
 msgstr ""
 "Hotelmanager - houdt toezicht op de activiteiten en biedt uitstekende "
 "service in uw eigen hotel."
@@ -556,7 +557,8 @@ msgstr "Tweefactorauthenticatie is al ingeschakeld."
 
 #: .\authentication\views.py:572
 msgid "You cannot enable two factor authentication with a social login."
-msgstr "U kunt tweefactorauthenticatie niet inschakelen met een sociale login."
+msgstr ""
+"U kunt tweefactorauthenticatie niet inschakelen met een sociale login."
 
 #: .\authentication\views.py:592 .\authentication\views.py:624
 msgid "Successfully enabled two factor authentication."
@@ -608,24 +610,24 @@ msgstr ""
 
 #: .\hotel\forms.py:30
 msgid ""
-"I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank"
-"\">terms and conditions</a>"
+"I have read and agree to the <a href=\"/terms-of-use\" "
+"target=\"_blank\">terms and conditions</a>"
 msgstr ""
-"Ik heb de <a href=\"/terms-of-use\" target=\"_blank\">algemene voorwaarden</"
-"a> gelezen en ga ermee akkoord"
+"Ik heb de <a href=\"/terms-of-use\" target=\"_blank\">algemene "
+"voorwaarden</a> gelezen en ga ermee akkoord"
 
 #: .\hotel\forms.py:36
 msgid ""
 "I hereby certify, under penalty of law, that the information provided about "
-"myself and my hotel is accurate and complete to the best of my knowledge."
-"<br> I understand that any false or misleading information provided may "
-"result in the immdiate suspesion of my hotel listing from Adventora and may "
-"lead to potential legal consequences."
+"myself and my hotel is accurate and complete to the best of my "
+"knowledge.<br> I understand that any false or misleading information "
+"provided may result in the immdiate suspesion of my hotel listing from "
+"Adventora and may lead to potential legal consequences."
 msgstr ""
 "Ik verklaar hierbij, op straffe van de wet, dat de verstrekte informatie "
-"over mijzelf en mijn hotel naar mijn beste weten accuraat en volledig is."
-"<br> Ik begrijp dat eventuele verstrekte valse of misleidende informatie kan "
-"resulteren in de onmiddellijke schorsing van mijn hotel "
+"over mijzelf en mijn hotel naar mijn beste weten accuraat en volledig "
+"is.<br> Ik begrijp dat eventuele verstrekte valse of misleidende informatie "
+"kan resulteren in de onmiddellijke schorsing van mijn hotel "
 
 #: .\hotel\models.py:19
 msgid "No description provided."

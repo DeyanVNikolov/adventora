@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 11:06+0200\n"
+"POT-Creation-Date: 2023-11-17 13:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -216,19 +216,19 @@ msgstr "Prenotazioni"
 
 #: .\adventora\templates\hotel\dashboard.html:147
 msgid "Capacity"
-msgstr ""
+msgstr "Capacità"
 
 #: .\adventora\templates\hotel\dashboard.html:148
 msgid "Price"
-msgstr ""
+msgstr "Prezzo"
 
 #: .\adventora\templates\hotel\dashboard.html:148
-msgid "Нощ"
-msgstr ""
+msgid "Night"
+msgstr "Notte"
 
 #: .\adventora\templates\hotel\dashboard.html:149
 msgid "Occupied"
-msgstr ""
+msgstr "Occupato"
 
 #: .\adventora\templates\hotel\dashboard.html:181
 msgid ""
@@ -326,8 +326,8 @@ msgstr ""
 
 #: .\authentication\forms.py:59 .\authentication\forms.py:98
 msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own "
-"hotel."
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
 msgstr ""
 "Direttore dell'hotel: supervisiona le operazioni e fornisce un servizio "
 "eccellente nel tuo hotel."
@@ -611,8 +611,8 @@ msgstr ""
 
 #: .\hotel\forms.py:30
 msgid ""
-"I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank"
-"\">terms and conditions</a>"
+"I have read and agree to the <a href=\"/terms-of-use\" "
+"target=\"_blank\">terms and conditions</a>"
 msgstr ""
 "Ho letto e accetto i <a href=\"/terms-of-use\" target=\"_blank\">termini e "
 "condizioni</a>"
@@ -620,13 +620,13 @@ msgstr ""
 #: .\hotel\forms.py:36
 msgid ""
 "I hereby certify, under penalty of law, that the information provided about "
-"myself and my hotel is accurate and complete to the best of my knowledge."
-"<br> I understand that any false or misleading information provided may "
-"result in the immdiate suspesion of my hotel listing from Adventora and may "
-"lead to potential legal consequences."
+"myself and my hotel is accurate and complete to the best of my "
+"knowledge.<br> I understand that any false or misleading information "
+"provided may result in the immdiate suspesion of my hotel listing from "
+"Adventora and may lead to potential legal consequences."
 msgstr ""
-"Con la presente certifico, ai sensi della legge, che le informazioni fornite "
-"su di me e sul mio hotel sono accurate e complete per quanto di mia "
+"Con la presente certifico, ai sensi della legge, che le informazioni fornite"
+" su di me e sul mio hotel sono accurate e complete per quanto di mia "
 "conoscenza.<br> Comprendo che qualsiasi informazione falsa o fuorviante "
 "fornita può comportare l'immediata sospensione del mio hotel "
 
