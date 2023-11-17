@@ -3,7 +3,7 @@ import datetime
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 
-from website.home.forms import SecurityCheckForm
+from .forms import SecurityCheckForm
 
 
 def home(request):
