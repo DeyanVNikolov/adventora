@@ -13,6 +13,7 @@ ALLOWED_HOSTS = [
     'localhost',
     'dev.adventora.net',
     'adventora.net',
+    'deyanvnikolov.eu.pythonanywhere.com'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
@@ -20,6 +21,7 @@ CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',
     'https://dev.adventora.net',
     'https://adventora.net',
+    'https://deyanvnikolov.eu.pythonanywhere.com'
 ]
 
 CSRF_COOKIE_PATH = '/'
