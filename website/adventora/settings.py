@@ -121,7 +121,7 @@ ROOT_URLCONF = 'adventora.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["adventora/templates"],
+        'DIRS': ["adventora/website/adventora/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
