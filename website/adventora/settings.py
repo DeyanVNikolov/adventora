@@ -1,9 +1,12 @@
 import os.path
 from pathlib import Path
-from dotenv_vault import load_dotenv
+# import load_env from os
+from os import getenv
+import os
+from dotenv import load_dotenv
 
-BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv()
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = True
