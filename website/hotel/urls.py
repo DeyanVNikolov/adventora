@@ -7,8 +7,8 @@ urlpatterns = [
     path('confirm-address/', views.confirm_address, name='confirm-address'),
     path('dashboard/', views.dashboard, name='dashboard'),
     path('dashboard/info/', views.edit_hotel, name='edit-hotel'),
-    path('dashboard/<hotel_id>/rooms/', views.rooms, name='edit-hotel'),
-    path('dashboard/<hotel_id>/rooms/add/', views.add_room, name='add-room'),
     path('dashboard/<hotel_id>/rooms/<room_id>/', views.room, name='room'),
+    path('dashboard/<hotel_id>/rooms/add/', views.add_room, name='add-room'),
+
 
 ]

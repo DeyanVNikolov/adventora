@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-16 19:10+0200\n"
+"POT-Creation-Date: 2023-11-17 11:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -205,27 +205,43 @@ msgstr "Jäi ulkomaille"
 msgid "Confirm Address"
 msgstr "Vahvista osoite"
 
-#: .\adventora\templates\hotel\dashboard.html:90 .\hotel\models.py:49
+#: .\adventora\templates\hotel\dashboard.html:90
+#: .\adventora\templates\hotel\dashboard.html:134 .\hotel\models.py:52
 msgid "Rooms"
 msgstr "Huoneet"
 
 #: .\adventora\templates\hotel\dashboard.html:112
-#: .\adventora\templates\hotel\dashboard.html:134
 msgid "Reservations"
 msgstr "Varaukset"
 
-#: .\adventora\templates\hotel\dashboard.html:444
+#: .\adventora\templates\hotel\dashboard.html:147
+msgid "Capacity"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:148
+msgid "Price"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:148
+msgid "Нощ"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:149
+msgid "Occupied"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:181
 msgid ""
 "Your hotel is not yet approved. Allow us to confirm your info within 48 "
 "hours."
 msgstr "Hotelliasi ei ole vielä hyväksytty. "
 
-#: .\adventora\templates\hotel\dashboard.html:450
+#: .\adventora\templates\hotel\dashboard.html:187
 #: .\adventora\templates\hotel\hotel_base.html:10
 msgid "You don't have a hotel"
 msgstr "Sinulla ei ole hotellia"
 
-#: .\adventora\templates\hotel\dashboard.html:452
+#: .\adventora\templates\hotel\dashboard.html:189
 #: .\adventora\templates\hotel\edit_hotel.html:42
 #: .\adventora\templates\hotel\edit_hotel.html:59
 #: .\adventora\templates\hotel\register_hotel.html:41
@@ -310,8 +326,8 @@ msgstr ""
 
 #: .\authentication\forms.py:59 .\authentication\forms.py:98
 msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own"
-" hotel."
+"Hotel Manager - Oversee operations and provide excellent service in your own "
+"hotel."
 msgstr ""
 "Hotel Manager - Valvo toimintaa ja tarjoa erinomaista palvelua omassa "
 "hotellissasi."
@@ -321,8 +337,8 @@ msgid ""
 "Employee - Contribute your expertise to a thriving workplace, such as a "
 "hotel or guest house."
 msgstr ""
-"Työntekijä – Anna asiantuntemuksesi menestyvän työpaikan, kuten hotellin tai"
-" guesthousen, luomiseen."
+"Työntekijä – Anna asiantuntemuksesi menestyvän työpaikan, kuten hotellin tai "
+"guesthousen, luomiseen."
 
 #: .\authentication\forms.py:66 .\authentication\forms.py:197
 msgid "Submit"
@@ -396,7 +412,7 @@ msgstr "Manager"
 msgid "Employee"
 msgstr "Työntekijä"
 
-#: .\authentication\views.py:28 .\hotel\views.py:24
+#: .\authentication\views.py:28 .\hotel\views.py:26
 msgid "Malformed security token"
 msgstr "Väärin muotoiltu suojaustunnus"
 
@@ -590,78 +606,78 @@ msgid ""
 "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
 "policy</a>"
 msgstr ""
-"Olen lukenut ja hyväksyn <a href=\"/privacy\" "
-"target=\"_blank\">tietosuojakäytännön</a>"
+"Olen lukenut ja hyväksyn <a href=\"/privacy\" target=\"_blank"
+"\">tietosuojakäytännön</a>"
 
 #: .\hotel\forms.py:30
 msgid ""
-"I have read and agree to the <a href=\"/terms-of-use\" "
-"target=\"_blank\">terms and conditions</a>"
+"I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank"
+"\">terms and conditions</a>"
 msgstr ""
-"Olen lukenut ja hyväksyn <a href=\"/terms-of-use\" "
-"target=\"_blank\">käyttöehdot</a>"
+"Olen lukenut ja hyväksyn <a href=\"/terms-of-use\" target=\"_blank"
+"\">käyttöehdot</a>"
 
 #: .\hotel\forms.py:36
 msgid ""
 "I hereby certify, under penalty of law, that the information provided about "
-"myself and my hotel is accurate and complete to the best of my "
-"knowledge.<br> I understand that any false or misleading information "
-"provided may result in the immdiate suspesion of my hotel listing from "
-"Adventora and may lead to potential legal consequences."
+"myself and my hotel is accurate and complete to the best of my knowledge."
+"<br> I understand that any false or misleading information provided may "
+"result in the immdiate suspesion of my hotel listing from Adventora and may "
+"lead to potential legal consequences."
 msgstr ""
 "Vakuutan täten lain rangaistuksen alaisena, että itsestäni ja hotellistani "
-"antamani tiedot ovat parhaan tietämykseni mukaan tarkkoja ja "
-"täydellisiä.<br> Ymmärrän, että kaikki antamani väärät tai harhaanjohtavat "
-"tiedot voivat johtaa välittömään hotellieni epäilyyn. "
+"antamani tiedot ovat parhaan tietämykseni mukaan tarkkoja ja täydellisiä."
+"<br> Ymmärrän, että kaikki antamani väärät tai harhaanjohtavat tiedot voivat "
+"johtaa välittömään hotellieni epäilyyn. "
 
 #: .\hotel\models.py:19
 msgid "No description provided."
 msgstr "Ei kuvausta."
 
-#: .\hotel\models.py:48
+#: .\hotel\models.py:51
 msgid "Room"
 msgstr "Huone"
 
-#: .\hotel\views.py:45 .\hotel\views.py:199
+#: .\hotel\views.py:49 .\hotel\views.py:201
 msgid "You do not have permission to view this page"
 msgstr "Sinulla ei ole lupaa tarkastella tätä sivua"
 
-#: .\hotel\views.py:54
+#: .\hotel\views.py:60
 msgid "Your hotel is not approved yet"
 msgstr "Hotelliasi ei ole vielä hyväksytty"
 
-#: .\hotel\views.py:127
+#: .\hotel\views.py:130
 msgid "Successfully registered hotel"
 msgstr "Hotelli rekisteröitiin onnistuneesti"
 
-#: .\hotel\views.py:131
+#: .\hotel\views.py:134
 msgid "Error while registering hotel"
 msgstr "Virhe hotellia rekisteröitäessä"
 
-#: .\hotel\views.py:138
+#: .\hotel\views.py:141
 msgid "You have already registered a hotel"
 msgstr "Olet jo rekisteröinyt hotellin"
 
-#: .\hotel\views.py:157 .\hotel\views.py:240
+#: .\hotel\views.py:159 .\hotel\views.py:241
 msgid "You have not registered a hotel yet"
 msgstr "Et ole vielä rekisteröinyt hotellia"
 
-#: .\hotel\views.py:175
+#: .\hotel\views.py:177
 msgid "Successfully confirmed address"
 msgstr "Osoitteen vahvistus onnistui"
 
-#: .\hotel\views.py:178
+#: .\hotel\views.py:180
 msgid "Error while confirming address"
 msgstr "Virhe vahvistettaessa osoitetta"
 
-#: .\hotel\views.py:195
+#: .\hotel\views.py:197
 msgid "No such hotel"
 msgstr "Ei sellaista hotellia"
 
-#: .\hotel\views.py:268
+#: .\hotel\views.py:269
 msgid "Successfully updated hotel"
 msgstr "Hotelli päivitetty onnistuneesti"
 
-#: .\hotel\views.py:272
+#: .\hotel\views.py:273
 msgid "Error while updating hotel"
 msgstr "Virhe päivitettäessä hotellia"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-16 19:10+0200\n"
+"POT-Creation-Date: 2023-11-17 11:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -205,27 +205,43 @@ msgstr "Strandsatt utomlands"
 msgid "Confirm Address"
 msgstr "Bekräfta adress"
 
-#: .\adventora\templates\hotel\dashboard.html:90 .\hotel\models.py:49
+#: .\adventora\templates\hotel\dashboard.html:90
+#: .\adventora\templates\hotel\dashboard.html:134 .\hotel\models.py:52
 msgid "Rooms"
 msgstr "Rum"
 
 #: .\adventora\templates\hotel\dashboard.html:112
-#: .\adventora\templates\hotel\dashboard.html:134
 msgid "Reservations"
 msgstr "Bokningar"
 
-#: .\adventora\templates\hotel\dashboard.html:444
+#: .\adventora\templates\hotel\dashboard.html:147
+msgid "Capacity"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:148
+msgid "Price"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:148
+msgid "Нощ"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:149
+msgid "Occupied"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:181
 msgid ""
 "Your hotel is not yet approved. Allow us to confirm your info within 48 "
 "hours."
 msgstr "Ditt hotell är inte godkänt ännu. "
 
-#: .\adventora\templates\hotel\dashboard.html:450
+#: .\adventora\templates\hotel\dashboard.html:187
 #: .\adventora\templates\hotel\hotel_base.html:10
 msgid "You don't have a hotel"
 msgstr "Du har inget hotell"
 
-#: .\adventora\templates\hotel\dashboard.html:452
+#: .\adventora\templates\hotel\dashboard.html:189
 #: .\adventora\templates\hotel\edit_hotel.html:42
 #: .\adventora\templates\hotel\edit_hotel.html:59
 #: .\adventora\templates\hotel\register_hotel.html:41
@@ -310,8 +326,8 @@ msgstr ""
 
 #: .\authentication\forms.py:59 .\authentication\forms.py:98
 msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own"
-" hotel."
+"Hotel Manager - Oversee operations and provide excellent service in your own "
+"hotel."
 msgstr ""
 "Hotellchef - Övervaka verksamheten och ge utmärkt service på ditt eget "
 "hotell."
@@ -396,7 +412,7 @@ msgstr "Chef"
 msgid "Employee"
 msgstr "Anställd"
 
-#: .\authentication\views.py:28 .\hotel\views.py:24
+#: .\authentication\views.py:28 .\hotel\views.py:26
 msgid "Malformed security token"
 msgstr "Felformat säkerhetstoken"
 
@@ -541,8 +557,7 @@ msgstr "Tvåfaktorsautentisering är redan aktiverad."
 
 #: .\authentication\views.py:572
 msgid "You cannot enable two factor authentication with a social login."
-msgstr ""
-"Du kan inte aktivera tvåfaktorsautentisering med en social inloggning."
+msgstr "Du kan inte aktivera tvåfaktorsautentisering med en social inloggning."
 
 #: .\authentication\views.py:592 .\authentication\views.py:624
 msgid "Successfully enabled two factor authentication."
@@ -589,24 +604,24 @@ msgid ""
 "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
 "policy</a>"
 msgstr ""
-"Jag har läst och godkänner <a href=\"/privacy\" "
-"target=\"_blank\">sekretesspolicyn</a>"
+"Jag har läst och godkänner <a href=\"/privacy\" target=\"_blank"
+"\">sekretesspolicyn</a>"
 
 #: .\hotel\forms.py:30
 msgid ""
-"I have read and agree to the <a href=\"/terms-of-use\" "
-"target=\"_blank\">terms and conditions</a>"
+"I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank"
+"\">terms and conditions</a>"
 msgstr ""
-"Jag har läst och godkänner <a href=\"/terms-of-use\" "
-"target=\"_blank\">användarvillkoren</a>"
+"Jag har läst och godkänner <a href=\"/terms-of-use\" target=\"_blank"
+"\">användarvillkoren</a>"
 
 #: .\hotel\forms.py:36
 msgid ""
 "I hereby certify, under penalty of law, that the information provided about "
-"myself and my hotel is accurate and complete to the best of my "
-"knowledge.<br> I understand that any false or misleading information "
-"provided may result in the immdiate suspesion of my hotel listing from "
-"Adventora and may lead to potential legal consequences."
+"myself and my hotel is accurate and complete to the best of my knowledge."
+"<br> I understand that any false or misleading information provided may "
+"result in the immdiate suspesion of my hotel listing from Adventora and may "
+"lead to potential legal consequences."
 msgstr ""
 "Jag intygar härmed, enligt lag, att informationen som tillhandahålls om mig "
 "själv och mitt hotell är korrekt och fullständig såvitt jag vet.<br> Jag "
@@ -617,50 +632,50 @@ msgstr ""
 msgid "No description provided."
 msgstr "Ingen beskrivning tillhandahålls."
 
-#: .\hotel\models.py:48
+#: .\hotel\models.py:51
 msgid "Room"
 msgstr "Rum"
 
-#: .\hotel\views.py:45 .\hotel\views.py:199
+#: .\hotel\views.py:49 .\hotel\views.py:201
 msgid "You do not have permission to view this page"
 msgstr "Du har inte behörighet att visa den här sidan"
 
-#: .\hotel\views.py:54
+#: .\hotel\views.py:60
 msgid "Your hotel is not approved yet"
 msgstr "Ditt hotell är inte godkänt ännu"
 
-#: .\hotel\views.py:127
+#: .\hotel\views.py:130
 msgid "Successfully registered hotel"
 msgstr "Registrerat hotell framgångsrikt"
 
-#: .\hotel\views.py:131
+#: .\hotel\views.py:134
 msgid "Error while registering hotel"
 msgstr "Fel vid registrering av hotell"
 
-#: .\hotel\views.py:138
+#: .\hotel\views.py:141
 msgid "You have already registered a hotel"
 msgstr "Du har redan registrerat ett hotell"
 
-#: .\hotel\views.py:157 .\hotel\views.py:240
+#: .\hotel\views.py:159 .\hotel\views.py:241
 msgid "You have not registered a hotel yet"
 msgstr "Du har inte registrerat ett hotell ännu"
 
-#: .\hotel\views.py:175
+#: .\hotel\views.py:177
 msgid "Successfully confirmed address"
 msgstr "Adressen har bekräftats"
 
-#: .\hotel\views.py:178
+#: .\hotel\views.py:180
 msgid "Error while confirming address"
 msgstr "Ett fel uppstod när adressen skulle bekräftas"
 
-#: .\hotel\views.py:195
+#: .\hotel\views.py:197
 msgid "No such hotel"
 msgstr "Inget sådant hotell"
 
-#: .\hotel\views.py:268
+#: .\hotel\views.py:269
 msgid "Successfully updated hotel"
 msgstr "Hotellet har uppdaterats framgångsrikt"
 
-#: .\hotel\views.py:272
+#: .\hotel\views.py:273
 msgid "Error while updating hotel"
 msgstr "Fel vid uppdatering av hotellet"

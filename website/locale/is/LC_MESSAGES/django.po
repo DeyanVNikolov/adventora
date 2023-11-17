@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-16 19:10+0200\n"
+"POT-Creation-Date: 2023-11-17 11:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -205,27 +205,43 @@ msgstr "Strandaði í útlöndum"
 msgid "Confirm Address"
 msgstr "Staðfestið heimilisfang"
 
-#: .\adventora\templates\hotel\dashboard.html:90 .\hotel\models.py:49
+#: .\adventora\templates\hotel\dashboard.html:90
+#: .\adventora\templates\hotel\dashboard.html:134 .\hotel\models.py:52
 msgid "Rooms"
 msgstr "Herbergi"
 
 #: .\adventora\templates\hotel\dashboard.html:112
-#: .\adventora\templates\hotel\dashboard.html:134
 msgid "Reservations"
 msgstr "Bókanir"
 
-#: .\adventora\templates\hotel\dashboard.html:444
+#: .\adventora\templates\hotel\dashboard.html:147
+msgid "Capacity"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:148
+msgid "Price"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:148
+msgid "Нощ"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:149
+msgid "Occupied"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:181
 msgid ""
 "Your hotel is not yet approved. Allow us to confirm your info within 48 "
 "hours."
 msgstr "Hótelið þitt er ekki enn samþykkt. "
 
-#: .\adventora\templates\hotel\dashboard.html:450
+#: .\adventora\templates\hotel\dashboard.html:187
 #: .\adventora\templates\hotel\hotel_base.html:10
 msgid "You don't have a hotel"
 msgstr "Þú ert ekki með hótel"
 
-#: .\adventora\templates\hotel\dashboard.html:452
+#: .\adventora\templates\hotel\dashboard.html:189
 #: .\adventora\templates\hotel\edit_hotel.html:42
 #: .\adventora\templates\hotel\edit_hotel.html:59
 #: .\adventora\templates\hotel\register_hotel.html:41
@@ -309,8 +325,8 @@ msgstr "Vacationer - Skoðaðu, skipuleggðu og bókaðu fullkomna fríið þitt
 
 #: .\authentication\forms.py:59 .\authentication\forms.py:98
 msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own"
-" hotel."
+"Hotel Manager - Oversee operations and provide excellent service in your own "
+"hotel."
 msgstr ""
 "Hótelstjóri - Hafa umsjón með rekstrinum og veita framúrskarandi þjónustu á "
 "þínu eigin hóteli."
@@ -320,8 +336,8 @@ msgid ""
 "Employee - Contribute your expertise to a thriving workplace, such as a "
 "hotel or guest house."
 msgstr ""
-"Starfsmaður - Leggðu til þekkingu þína á blómlegum vinnustað, svo sem hóteli"
-" eða gistiheimili."
+"Starfsmaður - Leggðu til þekkingu þína á blómlegum vinnustað, svo sem hóteli "
+"eða gistiheimili."
 
 #: .\authentication\forms.py:66 .\authentication\forms.py:197
 msgid "Submit"
@@ -395,7 +411,7 @@ msgstr "Framkvæmdastjóri"
 msgid "Employee"
 msgstr "Starfsmaður"
 
-#: .\authentication\views.py:28 .\hotel\views.py:24
+#: .\authentication\views.py:28 .\hotel\views.py:26
 msgid "Malformed security token"
 msgstr "Gallaður öryggislykill"
 
@@ -541,8 +557,7 @@ msgstr "Tveggja þátta auðkenning er þegar virkjuð."
 #: .\authentication\views.py:572
 msgid "You cannot enable two factor authentication with a social login."
 msgstr ""
-"Þú getur ekki virkjað tveggja þátta auðkenningu með félagslegri "
-"innskráningu."
+"Þú getur ekki virkjað tveggja þátta auðkenningu með félagslegri innskráningu."
 
 #: .\authentication\views.py:592 .\authentication\views.py:624
 msgid "Successfully enabled two factor authentication."
@@ -589,78 +604,78 @@ msgid ""
 "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
 "policy</a>"
 msgstr ""
-"Ég hef lesið og samþykki <a href=\"/privacy\" "
-"target=\"_blank\">persónuverndarstefnuna</a>"
+"Ég hef lesið og samþykki <a href=\"/privacy\" target=\"_blank"
+"\">persónuverndarstefnuna</a>"
 
 #: .\hotel\forms.py:30
 msgid ""
-"I have read and agree to the <a href=\"/terms-of-use\" "
-"target=\"_blank\">terms and conditions</a>"
+"I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank"
+"\">terms and conditions</a>"
 msgstr ""
-"Ég hef lesið og samþykki <a href=\"/terms-of-use\" "
-"target=\"_blank\">skilmálana</a>"
+"Ég hef lesið og samþykki <a href=\"/terms-of-use\" target=\"_blank"
+"\">skilmálana</a>"
 
 #: .\hotel\forms.py:36
 msgid ""
 "I hereby certify, under penalty of law, that the information provided about "
-"myself and my hotel is accurate and complete to the best of my "
-"knowledge.<br> I understand that any false or misleading information "
-"provided may result in the immdiate suspesion of my hotel listing from "
-"Adventora and may lead to potential legal consequences."
+"myself and my hotel is accurate and complete to the best of my knowledge."
+"<br> I understand that any false or misleading information provided may "
+"result in the immdiate suspesion of my hotel listing from Adventora and may "
+"lead to potential legal consequences."
 msgstr ""
 "Ég votta hér með, að lögum samkvæmt, að upplýsingarnar sem veittar eru um "
 "sjálfan mig og hótelið mitt eru réttar og fullkomnar eftir því sem ég best "
-"veit.<br> Mér skilst að allar rangar eða villandi upplýsingar sem gefnar eru"
-" upp geta leitt til tafarlausrar gruns um hótelið mitt. "
+"veit.<br> Mér skilst að allar rangar eða villandi upplýsingar sem gefnar eru "
+"upp geta leitt til tafarlausrar gruns um hótelið mitt. "
 
 #: .\hotel\models.py:19
 msgid "No description provided."
 msgstr "Engin lýsing gefin upp."
 
-#: .\hotel\models.py:48
+#: .\hotel\models.py:51
 msgid "Room"
 msgstr "Herbergi"
 
-#: .\hotel\views.py:45 .\hotel\views.py:199
+#: .\hotel\views.py:49 .\hotel\views.py:201
 msgid "You do not have permission to view this page"
 msgstr "Þú hefur ekki leyfi til að skoða þessa síðu"
 
-#: .\hotel\views.py:54
+#: .\hotel\views.py:60
 msgid "Your hotel is not approved yet"
 msgstr "Hótelið þitt er ekki samþykkt ennþá"
 
-#: .\hotel\views.py:127
+#: .\hotel\views.py:130
 msgid "Successfully registered hotel"
 msgstr "Tókst að skrá hótel"
 
-#: .\hotel\views.py:131
+#: .\hotel\views.py:134
 msgid "Error while registering hotel"
 msgstr "Villa við skráningu hótels"
 
-#: .\hotel\views.py:138
+#: .\hotel\views.py:141
 msgid "You have already registered a hotel"
 msgstr "Þú hefur þegar skráð hótel"
 
-#: .\hotel\views.py:157 .\hotel\views.py:240
+#: .\hotel\views.py:159 .\hotel\views.py:241
 msgid "You have not registered a hotel yet"
 msgstr "Þú hefur ekki skráð hótel ennþá"
 
-#: .\hotel\views.py:175
+#: .\hotel\views.py:177
 msgid "Successfully confirmed address"
 msgstr "Heimilisfang hefur verið staðfest"
 
-#: .\hotel\views.py:178
+#: .\hotel\views.py:180
 msgid "Error while confirming address"
 msgstr "Villa við að staðfesta heimilisfang"
 
-#: .\hotel\views.py:195
+#: .\hotel\views.py:197
 msgid "No such hotel"
 msgstr "Ekkert slíkt hótel"
 
-#: .\hotel\views.py:268
+#: .\hotel\views.py:269
 msgid "Successfully updated hotel"
 msgstr "Tókst að uppfæra hótel"
 
-#: .\hotel\views.py:272
+#: .\hotel\views.py:273
 msgid "Error while updating hotel"
 msgstr "Villa við að uppfæra hótel"

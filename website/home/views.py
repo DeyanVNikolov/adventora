@@ -35,7 +35,7 @@ def security_check(request):
             form = SecurityCheckForm(request.POST)
             if form.is_valid():
                 unix_now = int(datetime.datetime.now().timestamp())
-                unix_plus_ten = unix_now + 600
+                unix_plus_ten = unix_now + 3600
                 response = redirect(url)
                 response.set_cookie('clearance', f'SECURITY_CLEARANCE_COOKIE-DO-NOT-EDIT-OR-DELETE--{request.user.id}--SECURITY_PASSED--DO-NOT-SHARE-COOKIES-{unix_now}-_-{unix_plus_ten}', max_age=600, httponly=True, samesite='Strict', secure=True, path='/')
                 return response

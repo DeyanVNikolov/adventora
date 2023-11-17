@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-16 19:10+0200\n"
+"POT-Creation-Date: 2023-11-17 11:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -205,27 +205,43 @@ msgstr "Закъсал в чужбина"
 msgid "Confirm Address"
 msgstr "Потвърдете адреса"
 
-#: .\adventora\templates\hotel\dashboard.html:90 .\hotel\models.py:49
+#: .\adventora\templates\hotel\dashboard.html:90
+#: .\adventora\templates\hotel\dashboard.html:134 .\hotel\models.py:52
 msgid "Rooms"
 msgstr "Стаи"
 
 #: .\adventora\templates\hotel\dashboard.html:112
-#: .\adventora\templates\hotel\dashboard.html:134
 msgid "Reservations"
 msgstr "Резервации"
 
-#: .\adventora\templates\hotel\dashboard.html:444
+#: .\adventora\templates\hotel\dashboard.html:147
+msgid "Capacity"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:148
+msgid "Price"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:148
+msgid "Нощ"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:149
+msgid "Occupied"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:181
 msgid ""
 "Your hotel is not yet approved. Allow us to confirm your info within 48 "
 "hours."
 msgstr "Вашият хотел все още не е одобрен. "
 
-#: .\adventora\templates\hotel\dashboard.html:450
+#: .\adventora\templates\hotel\dashboard.html:187
 #: .\adventora\templates\hotel\hotel_base.html:10
 msgid "You don't have a hotel"
 msgstr "Нямате хотел"
 
-#: .\adventora\templates\hotel\dashboard.html:452
+#: .\adventora\templates\hotel\dashboard.html:189
 #: .\adventora\templates\hotel\edit_hotel.html:42
 #: .\adventora\templates\hotel\edit_hotel.html:59
 #: .\adventora\templates\hotel\register_hotel.html:41
@@ -311,8 +327,8 @@ msgstr ""
 
 #: .\authentication\forms.py:59 .\authentication\forms.py:98
 msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own"
-" hotel."
+"Hotel Manager - Oversee operations and provide excellent service in your own "
+"hotel."
 msgstr ""
 "Мениджър на хотел - Наблюдавайте операциите и предоставяйте отлично "
 "обслужване във вашия собствен хотел."
@@ -397,7 +413,7 @@ msgstr "Управител"
 msgid "Employee"
 msgstr "Служител"
 
-#: .\authentication\views.py:28 .\hotel\views.py:24
+#: .\authentication\views.py:28 .\hotel\views.py:26
 msgid "Malformed security token"
 msgstr "Деформиран маркер за сигурност"
 
@@ -590,78 +606,78 @@ msgid ""
 "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
 "policy</a>"
 msgstr ""
-"Прочетох и съм съгласен с <a href=\"/privacy\" "
-"target=\"_blank\">декларацията за поверителност</a>"
+"Прочетох и съм съгласен с <a href=\"/privacy\" target=\"_blank"
+"\">декларацията за поверителност</a>"
 
 #: .\hotel\forms.py:30
 msgid ""
-"I have read and agree to the <a href=\"/terms-of-use\" "
-"target=\"_blank\">terms and conditions</a>"
+"I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank"
+"\">terms and conditions</a>"
 msgstr ""
-"Прочетох и съм съгласен с <a href=\"/terms-of-use\" "
-"target=\"_blank\">правилата и условията</a>"
+"Прочетох и съм съгласен с <a href=\"/terms-of-use\" target=\"_blank"
+"\">правилата и условията</a>"
 
 #: .\hotel\forms.py:36
 msgid ""
 "I hereby certify, under penalty of law, that the information provided about "
-"myself and my hotel is accurate and complete to the best of my "
-"knowledge.<br> I understand that any false or misleading information "
-"provided may result in the immdiate suspesion of my hotel listing from "
-"Adventora and may lead to potential legal consequences."
+"myself and my hotel is accurate and complete to the best of my knowledge."
+"<br> I understand that any false or misleading information provided may "
+"result in the immdiate suspesion of my hotel listing from Adventora and may "
+"lead to potential legal consequences."
 msgstr ""
 "С настоящото удостоверявам, под наказателна отговорност, че предоставената "
 "информация за мен и моя хотел е точна и пълна, доколкото ми е известно.<br> "
-"Разбирам, че предоставената невярна или подвеждаща информация може да доведе"
-" до незабавното спиране на моя хотел "
+"Разбирам, че предоставената невярна или подвеждаща информация може да доведе "
+"до незабавното спиране на моя хотел "
 
 #: .\hotel\models.py:19
 msgid "No description provided."
 msgstr "Няма предоставено описание."
 
-#: .\hotel\models.py:48
+#: .\hotel\models.py:51
 msgid "Room"
 msgstr "Стая"
 
-#: .\hotel\views.py:45 .\hotel\views.py:199
+#: .\hotel\views.py:49 .\hotel\views.py:201
 msgid "You do not have permission to view this page"
 msgstr "Нямате разрешение да видите тази страница"
 
-#: .\hotel\views.py:54
+#: .\hotel\views.py:60
 msgid "Your hotel is not approved yet"
 msgstr "Вашият хотел все още не е одобрен"
 
-#: .\hotel\views.py:127
+#: .\hotel\views.py:130
 msgid "Successfully registered hotel"
 msgstr "Успешно регистриран хотел"
 
-#: .\hotel\views.py:131
+#: .\hotel\views.py:134
 msgid "Error while registering hotel"
 msgstr "Грешка при регистрация на хотел"
 
-#: .\hotel\views.py:138
+#: .\hotel\views.py:141
 msgid "You have already registered a hotel"
 msgstr "Вече сте регистрирали хотел"
 
-#: .\hotel\views.py:157 .\hotel\views.py:240
+#: .\hotel\views.py:159 .\hotel\views.py:241
 msgid "You have not registered a hotel yet"
 msgstr "Все още не сте регистрирали хотел"
 
-#: .\hotel\views.py:175
+#: .\hotel\views.py:177
 msgid "Successfully confirmed address"
 msgstr "Успешно потвърден адрес"
 
-#: .\hotel\views.py:178
+#: .\hotel\views.py:180
 msgid "Error while confirming address"
 msgstr "Грешка при потвърждаване на адреса"
 
-#: .\hotel\views.py:195
+#: .\hotel\views.py:197
 msgid "No such hotel"
 msgstr "Няма такъв хотел"
 
-#: .\hotel\views.py:268
+#: .\hotel\views.py:269
 msgid "Successfully updated hotel"
 msgstr "Успешно актуализиран хотел"
 
-#: .\hotel\views.py:272
+#: .\hotel\views.py:273
 msgid "Error while updating hotel"
 msgstr "Грешка при актуализирането на хотела"

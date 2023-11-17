@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-16 19:10+0200\n"
+"POT-Creation-Date: 2023-11-17 11:06+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,7 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
+"<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
 #: .\adventora\templates\auth\edit_profile.html:11
 msgid "Not confirmed"
@@ -205,27 +206,43 @@ msgstr "Stranded v zahraničí"
 msgid "Confirm Address"
 msgstr "Potvrďte adresu"
 
-#: .\adventora\templates\hotel\dashboard.html:90 .\hotel\models.py:49
+#: .\adventora\templates\hotel\dashboard.html:90
+#: .\adventora\templates\hotel\dashboard.html:134 .\hotel\models.py:52
 msgid "Rooms"
 msgstr "Pokoje"
 
 #: .\adventora\templates\hotel\dashboard.html:112
-#: .\adventora\templates\hotel\dashboard.html:134
 msgid "Reservations"
 msgstr "Rezervace"
 
-#: .\adventora\templates\hotel\dashboard.html:444
+#: .\adventora\templates\hotel\dashboard.html:147
+msgid "Capacity"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:148
+msgid "Price"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:148
+msgid "Нощ"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:149
+msgid "Occupied"
+msgstr ""
+
+#: .\adventora\templates\hotel\dashboard.html:181
 msgid ""
 "Your hotel is not yet approved. Allow us to confirm your info within 48 "
 "hours."
 msgstr "Váš hotel ještě není schválen. "
 
-#: .\adventora\templates\hotel\dashboard.html:450
+#: .\adventora\templates\hotel\dashboard.html:187
 #: .\adventora\templates\hotel\hotel_base.html:10
 msgid "You don't have a hotel"
 msgstr "Nemáte hotel"
 
-#: .\adventora\templates\hotel\dashboard.html:452
+#: .\adventora\templates\hotel\dashboard.html:189
 #: .\adventora\templates\hotel\edit_hotel.html:42
 #: .\adventora\templates\hotel\edit_hotel.html:59
 #: .\adventora\templates\hotel\register_hotel.html:41
@@ -311,8 +328,8 @@ msgstr ""
 
 #: .\authentication\forms.py:59 .\authentication\forms.py:98
 msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own"
-" hotel."
+"Hotel Manager - Oversee operations and provide excellent service in your own "
+"hotel."
 msgstr ""
 "Hotel Manager - Dohlíží na provoz a poskytuje vynikající služby ve vašem "
 "vlastním hotelu."
@@ -322,8 +339,8 @@ msgid ""
 "Employee - Contribute your expertise to a thriving workplace, such as a "
 "hotel or guest house."
 msgstr ""
-"Zaměstnanec – Přispějte svými odbornými znalostmi prosperujícímu pracovišti,"
-" jako je hotel nebo penzion."
+"Zaměstnanec – Přispějte svými odbornými znalostmi prosperujícímu pracovišti, "
+"jako je hotel nebo penzion."
 
 #: .\authentication\forms.py:66 .\authentication\forms.py:197
 msgid "Submit"
@@ -397,7 +414,7 @@ msgstr "Manažer"
 msgid "Employee"
 msgstr "Zaměstnanec"
 
-#: .\authentication\views.py:28 .\hotel\views.py:24
+#: .\authentication\views.py:28 .\hotel\views.py:26
 msgid "Malformed security token"
 msgstr "Poškozený bezpečnostní token"
 
@@ -594,8 +611,8 @@ msgstr ""
 
 #: .\hotel\forms.py:30
 msgid ""
-"I have read and agree to the <a href=\"/terms-of-use\" "
-"target=\"_blank\">terms and conditions</a>"
+"I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank"
+"\">terms and conditions</a>"
 msgstr ""
 "Přečetl jsem si <a href=\"/terms-of-use\" target=\"_blank\">smluvní "
 "podmínky</a> a souhlasím s nimi"
@@ -603,64 +620,64 @@ msgstr ""
 #: .\hotel\forms.py:36
 msgid ""
 "I hereby certify, under penalty of law, that the information provided about "
-"myself and my hotel is accurate and complete to the best of my "
-"knowledge.<br> I understand that any false or misleading information "
-"provided may result in the immdiate suspesion of my hotel listing from "
-"Adventora and may lead to potential legal consequences."
+"myself and my hotel is accurate and complete to the best of my knowledge."
+"<br> I understand that any false or misleading information provided may "
+"result in the immdiate suspesion of my hotel listing from Adventora and may "
+"lead to potential legal consequences."
 msgstr ""
 "Tímto potvrzuji, pod hrozbou zákona, že informace poskytnuté o mně a mém "
-"hotelu jsou podle mého nejlepšího vědomí přesné a úplné.<br> Beru na vědomí,"
-" že jakékoli nepravdivé nebo zavádějící informace mohou mít za následek "
+"hotelu jsou podle mého nejlepšího vědomí přesné a úplné.<br> Beru na vědomí, "
+"že jakékoli nepravdivé nebo zavádějící informace mohou mít za následek "
 "okamžité pozastavení mého hotelu "
 
 #: .\hotel\models.py:19
 msgid "No description provided."
 msgstr "Nebyl poskytnut žádný popis."
 
-#: .\hotel\models.py:48
+#: .\hotel\models.py:51
 msgid "Room"
 msgstr "Pokoj, místnost"
 
-#: .\hotel\views.py:45 .\hotel\views.py:199
+#: .\hotel\views.py:49 .\hotel\views.py:201
 msgid "You do not have permission to view this page"
 msgstr "K zobrazení této stránky nemáte oprávnění"
 
-#: .\hotel\views.py:54
+#: .\hotel\views.py:60
 msgid "Your hotel is not approved yet"
 msgstr "Váš hotel ještě není schválen"
 
-#: .\hotel\views.py:127
+#: .\hotel\views.py:130
 msgid "Successfully registered hotel"
 msgstr "Hotel byl úspěšně zaregistrován"
 
-#: .\hotel\views.py:131
+#: .\hotel\views.py:134
 msgid "Error while registering hotel"
 msgstr "Chyba při registraci hotelu"
 
-#: .\hotel\views.py:138
+#: .\hotel\views.py:141
 msgid "You have already registered a hotel"
 msgstr "Již jste zaregistrovali hotel"
 
-#: .\hotel\views.py:157 .\hotel\views.py:240
+#: .\hotel\views.py:159 .\hotel\views.py:241
 msgid "You have not registered a hotel yet"
 msgstr "Ještě jste nezaregistrovali hotel"
 
-#: .\hotel\views.py:175
+#: .\hotel\views.py:177
 msgid "Successfully confirmed address"
 msgstr "Adresa byla úspěšně potvrzena"
 
-#: .\hotel\views.py:178
+#: .\hotel\views.py:180
 msgid "Error while confirming address"
 msgstr "Chyba při potvrzování adresy"
 
-#: .\hotel\views.py:195
+#: .\hotel\views.py:197
 msgid "No such hotel"
 msgstr "Žádný takový hotel"
 
-#: .\hotel\views.py:268
+#: .\hotel\views.py:269
 msgid "Successfully updated hotel"
 msgstr "Hotel byl úspěšně aktualizován"
 
-#: .\hotel\views.py:272
+#: .\hotel\views.py:273
 msgid "Error while updating hotel"
 msgstr "Chyba při aktualizaci hotelu"
