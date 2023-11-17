@@ -66,23 +66,6 @@
         </section>
         <div class="container has-text-centered" style="max-width: 50vw !important;">
             <br><br><br>
-            <style>
-                #map_address {
-                    width: 100% !important;
-                    min-height: 400px;
-                }
-
-                .field {
-                    margin-top: 30px !important;
-                }
-
-                #id_address_div_map {
-                    width: 100% !important;
-                }
-                #id_address_map {
-                    width: 100% !important;
-                }
-            </style>
             {% csrf_token %}
             {% crispy form %}
         </div>

@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 # import CustomUser model
 from .models import Hotel, Room
-from .forms import RegisterHotelForm, ConfirmAddressForm, CreateRoom
+from .forms import RegisterHotelForm, ConfirmAddressForm, CreateRoom, EditHotelInfoForm
 from django.utils.translation import gettext as _
 from django.contrib.gis.geos import Point
 from django.contrib.gis import gdal
@@ -247,7 +247,6 @@ def add_room(request, hotel_id):
             messages.error(request, _('Error while adding room'))
             return render(request, 'hotel/add_room.html', {'hotel': hotel, 'form': form})
 
-
     context = {
         'hotel': hotel,
         'form': CreateRoom()
@@ -310,17 +309,10 @@ def edit_hotel(request):
         return redirect('register-hotel')
 
     if request.method == 'POST':
-        form = RegisterHotelForm(request.POST)
+        form = EditHotelInfoForm(request.POST)
         if form.is_valid():
             hotel.name = form.cleaned_data['name']
-            hotel.address = form.cleaned_data['address']
-            latlon = hotel.address.split(",")
-            lat = latlon[0]
-            lon = latlon[1]
-            url = f"https://nominatim.openstreetmap.org/reverse?lat={lat}&lon={lon}&format=json"
-            response = requests.get(url)
-            data = response.json()
-            hotel.address_text = data['display_name']
+            hotel.address_text = form.cleaned_data['address']
 
             hotel.city = form.cleaned_data['city']
             hotel.country = "BG"
@@ -343,9 +335,9 @@ def edit_hotel(request):
 
             return render(request, 'hotel/edit_hotel.html', context)
 
-    form = RegisterHotelForm(initial={
+    form = EditHotelInfoForm(initial={
         'name': hotel.name,
-        'address': hotel.address,
+        'address': hotel.address_text,
         'city': hotel.city,
         'phone': hotel.phone,
         'email': hotel.email,
@@ -360,3 +352,97 @@ def edit_hotel(request):
     context = {'form': form}
 
     return render(request, 'hotel/edit_hotel.html', context)
+
+
+@login_required
+@is_current_user_role_manager
+@is_address_confirmed
+@is_hotel_confirmed
+def updateroomstatus(request, hotel_id, room_id, status):
+    try:
+        uuid.UUID(hotel_id)
+    except ValueError:
+        messages.warning(request, _('We cannot find the hotel you are looking for'))
+        return redirect('dashboard')
+
+
+    hotel = Hotel .objects.filter(id=hotel_id).first()
+    if not hotel:
+        messages.warning(request, _('We cannot find the hotel you are looking for'))
+        return redirect('dashboard')
+
+    if request.user.hotel != hotel:
+        messages.warning(request, _('You do not have permission to view this page'))
+        return redirect('dashboard')
+
+    try:
+        uuid.UUID(room_id)
+    except ValueError:
+        messages.warning(request, _('We cannot find the room you are looking for'))
+        return redirect('dashboard')
+
+    room = hotel.rooms.filter(id=room_id).first()
+
+    if not room:
+        messages.warning(request, _('We cannot find the room you are looking for'))
+        return redirect('dashboard')
+
+    if status == 'ava':
+        room.status = 'Available'
+        room.save()
+        messages.success(request, _('Successfully updated room status'))
+        return redirect('room', hotel_id=hotel_id, room_id=room_id)
+
+    elif status == 'occ':
+        room.status = 'Occupied'
+        room.save()
+        messages.success(request, _('Successfully updated room status'))
+        return redirect('room', hotel_id=hotel_id, room_id=room_id)
+
+    elif status == 'tbc':
+        room.status = 'ForCleaning'
+        room.save()
+        messages.success(request, _('Successfully updated room status'))
+        return redirect('room', hotel_id=hotel_id, room_id=room_id)
+
+    else:
+        messages.warning(request, _('Invalid status'))
+        return redirect('room', hotel_id=hotel_id, room_id=room_id)
+
+
+def occupy(request, hotel_id, room_id):
+    try:
+        uuid.UUID(hotel_id)
+    except ValueError:
+        messages.warning(request, _('We cannot find the hotel you are looking for'))
+        return redirect('dashboard')
+
+    hotel = Hotel.objects.filter(id=hotel_id).first()
+    if not hotel:
+        messages.warning(request, _('We cannot find the hotel you are looking for'))
+        return redirect('dashboard')
+
+    if request.user.hotel != hotel:
+        messages.warning(request, _('You do not have permission to view this page'))
+        return redirect('dashboard')
+
+    try:
+        uuid.UUID(room_id)
+    except ValueError:
+        messages.warning(request, _('We cannot find the room you are looking for'))
+        return redirect('dashboard')
+
+    room = hotel.rooms.filter(id=room_id).first()
+    if not room:
+        messages.warning(request, _('We cannot find the room you are looking for'))
+        return redirect('dashboard')
+
+    if room.occupied:
+        messages.warning(request, _('This room is already occupied'))
+        return redirect('room', hotel_id=hotel_id, room_id=room_id)
+
+    context = {
+        'hotel': hotel,
+        'room': room
+    }
+    return render(request, 'hotel/occupy.html', context=context)

@@ -1,7 +1,25 @@
 {% load static %}
 {% load i18n %}
 {% load crispy_forms_tags %}
+            <style>
+                #map_address {
+                    width: 100% !important;
+                    min-height: 400px;
+                }
+
+                .field {
+                    margin-top: 30px !important;
+                }
+
+                #id_address_div_map {
+                    width: 100% !important;
+                }
+                #id_address_map {
+                    width: 100% !important;
+                }
+            </style>
 <aside class="aside is-placed-left is-expanded">
+
             <div class="aside-tools">
                 <div class="aside-tools-label">
                     {% if hotel and hotel.approved %}

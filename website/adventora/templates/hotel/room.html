@@ -72,161 +72,224 @@
                         <div class="level-item">
                             <h1 class="title">
                                 {% trans "Room" %} {{ room.number }}
-                                <button onclick="" class="button is-small is-danger" type="button">
+                                <button onclick="" class="button is-danger" type="button">
+
                                     <span class="icon"><i style="font-size: 20px" class="mdi mdi-delete"></i></span>
                                 </button>
+                                &nbsp;
+
                             </h1>
                         </div>
                     </div>
-                    <div class="level-right" style="display: none;">
-                        <div class="level-item"></div>
+                    <div class="level-right">
+                        <div class="level-item">
+                            <script>
+                                function updatestatus(status) {
+                                    let buttonava = document.getElementById("ava");
+                                    let buttontbc = document.getElementById("tbc");
+                                    let buttonocc = document.getElementById("occ");
+
+
+                                    var roomid = '{{ room.id }}';
+                                    var hotelid = '{{ hotel.id }}';
+                                    var url = "/hotel/dashboard/" + hotelid + "/rooms/" + roomid + "/updatestatus/" + status + "/";
+
+                                    // to the pressed button add is-loading, to the others disable the button
+
+                                    if (status == "ava") {
+                                        buttonava.classList.add("is-loading");
+                                        buttontbc.disabled = true;
+                                        buttonocc.disabled = true;
+                                        $.ajax({
+                                            url: url,
+                                            type: "GET",
+                                            success: function (data) {
+                                                console.log(data);
+                                                window.location.reload();
+                                            },
+                                            error: function (data) {
+                                                console.log(data);
+                                                alert("Не успяхме да променим статуса на стаята");
+                                            }
+                                        });
+                                    } else if (status == "tbc") {
+                                        buttontbc.classList.add("is-loading");
+                                        buttonava.disabled = true;
+                                        buttonocc.disabled = true;
+                                        $.ajax({
+                                            url: url,
+                                            type: "GET",
+                                            success: function (data) {
+                                                console.log(data);
+                                                window.location.reload();
+                                            },
+                                            error: function (data) {
+                                                console.log(data);
+                                                alert("Не успяхме да променим статуса на стаята");
+                                            }
+                                        });
+                                    } else if (status == "occ") {
+                                        window.location.href = "/hotel/dashboard/" + hotelid + "/rooms/" + roomid + "/occupy/";
+                                    }
+
+                                    // ajax
+
+                                }
+                            </script>
+                            <button id="ava" onclick="updatestatus('ava')" class="button is-primary">{% trans "Available" %}</button>
+                            &nbsp;
+                            <button id="tbc" onclick="updatestatus('tbc')" class="button is-warning">{% trans "To be cleaned" %}</button>
+                            &nbsp;
+                            <button id="occ" onclick="updatestatus('occ')" class="button is-danger">{% trans "Occupied" %}</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        {% if hotel %}
-            {% if hotel.approved == True %}
-                <section class="section is-main-section">
-                    <div class="tile is-ancestor">
-                        <div class="tile is-parent">
-                            <div class="card tile is-child">
-                                <div class="card-content">
-                                    <div class="level is-mobile">
-                                        <div class="level-item">
-                                            <div class="is-widget-label"><h3 class="subtitle is-spaced">
-                                                {% trans "Capacity" %}
-                                            </h3>
-                                                <h1 class="title">
-                                                    {{ room.capacity }}
-                                                </h1>
-                                            </div>
-                                        </div>
-                                        <div class="level-item has-widget-icon">
-                                            <div class="is-widget-icon"><span class="icon has-text-primary is-large"><i
-                                                    class="mdi mdi-account-multiple mdi-48px"></i></span>
-                                            </div>
+    </div>
+    </section>
+    {% if hotel %}
+        {% if hotel.approved == True %}
+            <section class="section is-main-section">
+                <div class="tile is-ancestor">
+                    <div class="tile is-parent">
+                        <div class="card tile is-child">
+                            <div class="card-content">
+                                <div class="level is-mobile">
+                                    <div class="level-item">
+                                        <div class="is-widget-label"><h3 class="subtitle is-spaced">
+                                            {% trans "Capacity" %}
+                                        </h3>
+                                            <h1 class="title">
+                                                {{ room.capacity }}
+                                            </h1>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tile is-parent">
-                            <div class="card tile is-child">
-                                <div class="card-content">
-                                    <div class="level is-mobile">
-                                        <div class="level-item">
-                                            <div class="is-widget-label"><h3 class="subtitle is-spaced">
-                                                {% trans "Reservations" %}
-                                            </h3>
-                                                <h1 class="title">
-                                                    {{ hotel.reservations.count | default:"Не е налично" }}
-                                                </h1>
-                                            </div>
-                                        </div>
-                                        <div class="level-item has-widget-icon">
-                                            <div class="is-widget-icon"><span class="icon has-text-success is-large"><i
-                                                    class="mdi mdi-bed mdi-48px"></i></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tile is-parent">
-                            <div class="card tile is-child">
-                                <div class="card-content">
-                                    <div class="level is-mobile">
-                                        <div class="level-item">
-                                            <div class="is-widget-label"><h3 class="subtitle is-spaced">
-                                                {% trans "Status" %}
-                                            </h3>
-                                                <h1 class="title">
-                                                    {% if room.status == "Available" %}
-                                                        {% trans "Available" %}
-                                                    {% elif room.status == "ForCleaning" %}
-                                                        {% trans "To be cleaned" %}
-                                                    {% elif room.status == "Occupied" %}
-                                                        {% trans "Occupied" %}
-                                                    {% else %}
-                                                        Не е налично
-                                                    {% endif %}
-                                                </h1>
-                                            </div>
-                                        </div>
-                                        <div class="level-item has-widget-icon">
-                                            <div class="is-widget-icon"><span class="icon has-text-primary is-large"><i
-                                                    class="mdi mdi-account-multiple mdi-48px"></i></span>
-                                            </div>
+                                    <div class="level-item has-widget-icon">
+                                        <div class="is-widget-icon"><span class="icon has-text-primary is-large"><i
+                                                class="mdi mdi-account-multiple mdi-48px"></i></span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="card has-table has-mobile-sort-spaced">
-                        <header class="card-header">
-                            <p class="card-header-title">
-                                <span class="icon"><i class="mdi mdi-bed"></i></span>
-                                {% trans "Rooms" %}
-                            </p>
-                            <a onclick="window.location.reload()" class="card-header-icon">
-                                <span class="icon"><i class="mdi mdi-reload"></i></span>
-                            </a>
-                        </header>
-                        <div class="card-content">
-                            <div class="b-table has-pagination">
-                                <div class="table-wrapper has-mobile-cards">
-                                    <table class="table is-fullwidth is-striped is-hoverable is-sortable is-fullwidth">
-                                        <thead>
-                                        <tr>
-                                            <th>№</th>
-                                            <th>{% trans "Capacity" %}</th>
-                                            <th>{% trans "Price" %} / {% trans "Night" %}</th>
-                                            <th>{% trans "Occupied" %}</th>
-                                            <th></th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        {% for room in rooms %}
-                                            <tr>
-                                                <td data-label="Name">{{ room.number }}</td>
-                                                <td data-label="Capacity">{{ room.capacity }}</td>
-                                                <td data-label="Price">{{ room.price }} BGN</td>
-                                                <td data-label="Occupied">{% if room.occupied == True %}Да{% else %}Не{% endif %}</td>
-                                                <td class="is-actions-cell">
-                                                    <div class="buttons is-right">
-                                                        <button onclick="window.location.href='/hotel/dashboard/{{ hotel.id }}/rooms/{{ room.id }}'" class="button is-small is-primary" type="button">
-                                                            <span class="icon"><i class="mdi mdi-eye"></i></span>
-                                                        </button>
-                                                    </div>
-                                                </td>
-
-                                            </tr>
-                                        {% endfor %}
-
-                                        </tbody>
-                                    </table>
+                    <div class="tile is-parent">
+                        <div class="card tile is-child">
+                            <div class="card-content">
+                                <div class="level is-mobile">
+                                    <div class="level-item">
+                                        <div class="is-widget-label"><h3 class="subtitle is-spaced">
+                                            {% trans "Reservations" %}
+                                        </h3>
+                                            <h1 class="title">
+                                                {{ hotel.reservations.count | default:"Грешка" }}
+                                            </h1>
+                                        </div>
+                                    </div>
+                                    <div class="level-item has-widget-icon">
+                                        <div class="is-widget-icon"><span class="icon has-text-success is-large"><i
+                                                class="mdi mdi-bed mdi-48px"></i></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-            {% else %}
-                <br><br><br>
-                <div class="container is-fluid has-text-centered">
-                    <h1 class="title is-1">{% trans "Your hotel is not yet approved. Allow us to confirm your info within 48 hours." %}</h1>
+                    <div class="tile is-parent">
+                        <div class="card tile is-child">
+                            <div class="card-content">
+                                <div class="level is-mobile">
+                                    <div class="level-item">
+                                        <div class="is-widget-label"><h3 class="subtitle is-spaced">
+                                            {% trans "Status" %}
+                                        </h3>
+                                            <h1 class="title">
+                                                {% if room.status == "Available" %}
+                                                    {% trans "Available" %}
+                                                {% elif room.status == "ForCleaning" %}
+                                                    {% trans "To be cleaned" %}
+                                                {% elif room.status == "Occupied" %}
+                                                    {% trans "Occupied" %}
+                                                {% else %}
+                                                    Не е налично
+                                                {% endif %}
+                                            </h1>
+                                        </div>
+                                    </div>
+                                    <div class="level-item has-widget-icon">
+                                        <div class="is-widget-icon"><span class="icon has-text-primary is-large"><i
+                                                class="mdi mdi-account-multiple mdi-48px"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            {% endif %}
+
+                <div class="card has-table has-mobile-sort-spaced">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            <span class="icon"><i class="mdi mdi-bed"></i></span>
+                            {% trans "Rooms" %}
+                        </p>
+                        <a onclick="window.location.reload()" class="card-header-icon">
+                            <span class="icon"><i class="mdi mdi-reload"></i></span>
+                        </a>
+                    </header>
+                    <div class="card-content">
+                        <div class="b-table has-pagination">
+                            <div class="table-wrapper has-mobile-cards">
+                                <table class="table is-fullwidth is-striped is-hoverable is-sortable is-fullwidth">
+                                    <thead>
+                                    <tr>
+                                        <th>№</th>
+                                        <th>{% trans "Capacity" %}</th>
+                                        <th>{% trans "Price" %} / {% trans "Night" %}</th>
+                                        <th>{% trans "Occupied" %}</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for room in rooms %}
+                                        <tr>
+                                            <td data-label="Name">{{ room.number }}</td>
+                                            <td data-label="Capacity">{{ room.capacity }}</td>
+                                            <td data-label="Price">{{ room.price }} BGN</td>
+                                            <td data-label="Occupied">{% if room.occupied == True %}Да{% else %}Не{% endif %}</td>
+                                            <td class="is-actions-cell">
+                                                <div class="buttons is-right">
+                                                    <button onclick="window.location.href='/hotel/dashboard/{{ hotel.id }}/rooms/{{ room.id }}'" class="button is-small is-primary" type="button">
+                                                        <span class="icon"><i class="mdi mdi-eye"></i></span>
+                                                    </button>
+                                                </div>
+                                            </td>
+
+                                        </tr>
+                                    {% endfor %}
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         {% else %}
             <br><br><br>
             <div class="container is-fluid has-text-centered">
-                <h1 class="title is-1">{% trans "You don't have a hotel" %}</h1>
-                <br><br>
-                <button class="button is-primary" onclick="window.location.href='{% url 'register-hotel' %}'">{% trans "Register Hotel" %}</button>
+                <h1 class="title is-1">{% trans "Your hotel is not yet approved. Allow us to confirm your info within 48 hours." %}</h1>
             </div>
-
         {% endif %}
+    {% else %}
+        <br><br><br>
+        <div class="container is-fluid has-text-centered">
+            <h1 class="title is-1">{% trans "You don't have a hotel" %}</h1>
+            <br><br>
+            <button class="button is-primary" onclick="window.location.href='{% url 'register-hotel' %}'">{% trans "Register Hotel" %}</button>
+        </div>
+
+    {% endif %}
     </div>
 
 

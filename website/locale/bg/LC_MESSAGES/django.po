@@ -76,10 +76,10 @@ msgid "Please enter your two-factor verification code"
 msgstr "Моля, въведете вашия двуфакторен код за потвърждение"
 
 msgid "Homepage"
-msgstr "Начална страница"
+msgstr "Начало"
 
 msgid "Hotel"
-msgstr "хотел"
+msgstr "Хотел"
 
 msgid "Dashboard"
 msgstr "Табло"
@@ -100,7 +100,7 @@ msgid "Sign up"
 msgstr "Регистрирай се"
 
 msgid "Language"
-msgstr "език"
+msgstr "Език"
 
 msgid "Error"
 msgstr "Грешка"
@@ -121,7 +121,7 @@ msgid "About us"
 msgstr "За нас"
 
 msgid "Privacy"
-msgstr "поверителност"
+msgstr "Поверителност"
 
 msgid "Terms of use"
 msgstr "Условия за ползване"
@@ -139,7 +139,7 @@ msgid "Stranded Abroad"
 msgstr "Закъсал в чужбина"
 
 msgid "Disabled"
-msgstr "хора с увреждания"
+msgstr "Изключено"
 
 msgid "Rooms"
 msgstr "Стаи"
@@ -171,7 +171,7 @@ msgid "Price"
 msgstr "Цена"
 
 msgid "Night"
-msgstr "нощ"
+msgstr "Нощ"
 
 msgid "Occupied"
 msgstr "Заето"
@@ -180,10 +180,10 @@ msgid "Status"
 msgstr "Статус"
 
 msgid "Available"
-msgstr "На разположение"
+msgstr "Свободна"
 
 msgid "To be cleaned"
-msgstr "Да се ​​почисти"
+msgstr "За почистване"
 
 msgid "General Settings"
 msgstr "Основни настройки"
@@ -219,7 +219,7 @@ msgid "Last name"
 msgstr "Фамилия"
 
 msgid "Email"
-msgstr "електронна поща"
+msgstr "Електронна поща"
 
 msgid "Email address must be valid"
 msgstr "Имейл адресът трябва да е валиден"
@@ -230,7 +230,12 @@ msgid ""
 "<br> The password should not contain only special characters. <br> The "
 "password should not contain the username. <br> The password should not be a "
 "commonly used password."
-msgstr "Паролата трябва да е с дължина поне 8 знака. "
+msgstr ""
+"Паролата трябва да е дълга поне 8 знака. <br> Паролата трябва да "
+"не трябва да съдържа само цифри. <br> Паролата не трябва да съдържа само букви."
+"<br> Паролата не трябва да съдържа само специални знаци. <br> "
+"паролата не трябва да съдържа потребителското име. <br> Паролата не трябва да е "
+"често използвана парола."
 
 msgid "Confirm password"
 msgstr "Потвърди парола"
@@ -309,7 +314,7 @@ msgid "Employee"
 msgstr "Служител"
 
 msgid "Malformed security token"
-msgstr "Деформиран маркер за сигурност"
+msgstr "Деформиран ключ за сигурност"
 
 msgid "A user with that email already exists."
 msgstr "Потребител с този имейл вече съществува."
@@ -427,7 +432,7 @@ msgid "City"
 msgstr "град"
 
 msgid "Website"
-msgstr "уебсайт"
+msgstr "Уебсайт"
 
 msgid "Description"
 msgstr "Описание"

@@ -52,8 +52,21 @@ class ConfirmAddressForm(forms.Form):
     helper.add_input(Submit('submit', _('Confirm Address')))
 
 
-class MultipleFileInput(forms.ClearableFileInput):
-    allow_multiple_selected = True
+class EditHotelInfoForm(forms.Form):
+    name = forms.CharField(max_length=100, label=_('Hotel Name'))
+    address = forms.CharField(max_length=5000, label=_('Address'))
+    city = forms.CharField(max_length=50, label=_('City'))
+    phone = forms.CharField(label=_("Phone"), required=True, widget=forms.TextInput(attrs={'placeholder': '+359 888 888 888'}))
+    email = forms.EmailField(max_length=254, label=_('Email'))
+    website = forms.CharField(max_length=100, label=_('Website'))
+    description = forms.CharField(widget=CKEditorWidget(), label=_('Description'))
+    EIK = forms.CharField(max_length=50, label=_('EIK'))
+    mol_name = forms.CharField(max_length=100, label=_('Authorized Person'))
+    stars = forms.IntegerField(label=_('Stars'), min_value=1, max_value=6)
+
+    helper = FormHelper()
+    helper.form_method = 'POST'
+    helper.add_input(Submit('submit', _('Save Changes')))
 
 
 class CreateRoom(forms.Form):
