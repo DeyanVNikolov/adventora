@@ -16,7 +16,7 @@ class Hotel(models.Model):
     phone = models.CharField(max_length=50, null=True, blank=True)
     email = models.EmailField(max_length=254, null=True, blank=True)
     website = models.CharField(max_length=100, null=True, blank=True)
-    description = models.TextField(null=True, blank=True, max_length=50000, default=_("No description provided."))
+    description = models.TextField(null=True, blank=True, max_length=50001, default=_("No description provided."))
     EIK = models.CharField(max_length=50, null=True, blank=True)
     mol_name = models.CharField(max_length=100, null=True, blank=True)
     stars = models.IntegerField(null=True)
@@ -41,7 +41,7 @@ class Room(models.Model):
     occupied = models.BooleanField(default=False)
     occupied_by = models.CharField(max_length=5000, null=True, blank=True)
     status = models.CharField(max_length=100, null=True, blank=True)
-    price = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)
+    price = models.DecimalField(max_digits=11, decimal_places=2, null=True, blank=True)
     capacity = models.IntegerField(null=True, blank=True)
     image = models.ImageField(upload_to='room_images', null=True, blank=True)
     def __str__(self):
