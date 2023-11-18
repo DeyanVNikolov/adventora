@@ -11,3 +11,4 @@ website/static/qr
 !.env.project
 !.env.vault
 settings.py
+website/adventora/settings.py
