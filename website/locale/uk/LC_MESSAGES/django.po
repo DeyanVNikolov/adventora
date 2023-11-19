@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
-"Report-Msgid-Bugs-To: hello@adventora.net\n"
-"POT-Creation-Date: 2023-11-17 15:07+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 12:37+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -53,12 +53,6 @@ msgstr "Увійдіть за допомогою Trello"
 
 msgid "Login with GitHub"
 msgstr "Увійдіть за допомогою GitHub"
-
-msgid "Login with Patreon"
-msgstr "Увійдіть за допомогою Patreon"
-
-msgid "Login with Amazon"
-msgstr "Увійдіть через Amazon"
 
 msgid "Login with Reddit"
 msgstr "Увійдіть за допомогою Reddit"
@@ -138,9 +132,6 @@ msgstr "Надзвичайна ситуація"
 msgid "Stranded Abroad"
 msgstr "Застрягли за кордоном"
 
-msgid "Disabled"
-msgstr "Вимкнено"
-
 msgid "Rooms"
 msgstr "Кімнати"
 
@@ -185,6 +176,11 @@ msgstr "в наявності"
 msgid "To be cleaned"
 msgstr "Підлягає очищенню"
 
+#, fuzzy
+#| msgid "Information"
+msgid "Edit Hotel Information"
+msgstr "Інформація"
+
 msgid "General Settings"
 msgstr "Загальні налаштування"
 
@@ -196,6 +192,28 @@ msgstr "Інформація"
 
 msgid "Room"
 msgstr "Кімната"
+
+msgid "Set room as occupied"
+msgstr "Встановити кімнату як зайняту"
+
+msgid "Select from reservations for room"
+msgstr "Виберіть із заброньованих номерів"
+
+#, fuzzy
+#| msgid "Select from reservations for room"
+msgid "No reservations for this room"
+msgstr "Виберіть із заброньованих номерів"
+
+#, fuzzy
+#| msgid "Reservations"
+msgid "Reservation"
+msgstr "Бронювання"
+
+msgid "Select"
+msgstr "Виберіть"
+
+msgid "Custom Customer"
+msgstr "Спеціальний клієнт"
 
 msgid "For partnerships contact us at"
 msgstr "Для партнерства зв'яжіться з нами за адресою"
@@ -468,6 +486,9 @@ msgstr ""
 "яка надана неправдива або оманлива інформація може призвести до негайного "
 "призупинення діяльності мого готелю "
 
+msgid "Save Changes"
+msgstr "Зберегти зміни"
+
 msgid "Room Number"
 msgstr "Номер кімнати"
 
@@ -524,3 +545,37 @@ msgstr "Успішно оновлений готель"
 
 msgid "Error while updating hotel"
 msgstr "Помилка під час оновлення готелю"
+
+#, fuzzy
+#| msgid "Successfully updated hotel"
+msgid "Successfully updated room status"
+msgstr "Успішно оновлений готель"
+
+#, fuzzy
+#| msgid "Invalid data."
+msgid "Invalid status"
+msgstr "Недійсні дані."
+
+msgid "This room is already occupied"
+msgstr "Ця кімната вже зайнята"
+
+#, fuzzy
+#~ msgid "Reservation #"
+#~ msgstr "Бронювання"
+
+#, fuzzy
+#~ msgid "Custom Client"
+#~ msgstr "Спеціальний клієнт"
+
+#, fuzzy
+#~ msgid "Custom Clients"
+#~ msgstr "Спеціальний клієнт"
+
+#~ msgid "Login with Patreon"
+#~ msgstr "Увійдіть за допомогою Patreon"
+
+#~ msgid "Login with Amazon"
+#~ msgstr "Увійдіть через Amazon"
+
+#~ msgid "Disabled"
+#~ msgstr "Вимкнено"

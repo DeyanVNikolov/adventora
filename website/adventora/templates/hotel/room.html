@@ -182,7 +182,7 @@
                                             {% trans "Reservations" %}
                                         </h3>
                                             <h1 class="title">
-                                                {{ hotel.reservations.count | default:"Грешка" }}
+                                                {{ hotel.reservations.count | default_if_none:"Грешка" }}
                                             </h1>
                                         </div>
                                     </div>

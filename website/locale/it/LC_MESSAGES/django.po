@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
-"Report-Msgid-Bugs-To: hello@adventora.net\n"
-"POT-Creation-Date: 2023-11-17 15:07+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 12:37+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -53,12 +53,6 @@ msgstr "Accedi con Trello"
 
 msgid "Login with GitHub"
 msgstr "Accedi con GitHub"
-
-msgid "Login with Patreon"
-msgstr "Accedi con Patreon"
-
-msgid "Login with Amazon"
-msgstr "Accedi con Amazon"
 
 msgid "Login with Reddit"
 msgstr "Accedi con Reddit"
@@ -138,9 +132,6 @@ msgstr "Emergenza"
 msgid "Stranded Abroad"
 msgstr "Bloccato all'estero"
 
-msgid "Disabled"
-msgstr "Disabilitato"
-
 msgid "Rooms"
 msgstr "Camere"
 
@@ -185,6 +176,11 @@ msgstr "Disponibile"
 msgid "To be cleaned"
 msgstr "Da pulire"
 
+#, fuzzy
+#| msgid "Information"
+msgid "Edit Hotel Information"
+msgstr "Informazione"
+
 msgid "General Settings"
 msgstr "impostazioni generali"
 
@@ -196,6 +192,28 @@ msgstr "Informazione"
 
 msgid "Room"
 msgstr "Camera"
+
+msgid "Set room as occupied"
+msgstr "Imposta la stanza come occupata"
+
+msgid "Select from reservations for room"
+msgstr "Seleziona dalle prenotazioni per la camera"
+
+#, fuzzy
+#| msgid "Select from reservations for room"
+msgid "No reservations for this room"
+msgstr "Seleziona dalle prenotazioni per la camera"
+
+#, fuzzy
+#| msgid "Reservations"
+msgid "Reservation"
+msgstr "Prenotazioni"
+
+msgid "Select"
+msgstr "Selezionare"
+
+msgid "Custom Customer"
+msgstr "Cliente personalizzato"
 
 msgid "For partnerships contact us at"
 msgstr "Per partnership contattateci a"
@@ -467,6 +485,9 @@ msgstr ""
 "conoscenza.<br> Comprendo che qualsiasi informazione falsa o fuorviante "
 "fornita può comportare l'immediata sospensione del mio hotel "
 
+msgid "Save Changes"
+msgstr "Salvare le modifiche"
+
 msgid "Room Number"
 msgstr "Numero di Camera"
 
@@ -523,3 +544,37 @@ msgstr "Hotel aggiornato con successo"
 
 msgid "Error while updating hotel"
 msgstr "Errore durante l'aggiornamento dell'hotel"
+
+#, fuzzy
+#| msgid "Successfully updated hotel"
+msgid "Successfully updated room status"
+msgstr "Hotel aggiornato con successo"
+
+#, fuzzy
+#| msgid "Invalid data."
+msgid "Invalid status"
+msgstr "Dati non validi."
+
+msgid "This room is already occupied"
+msgstr "Questa stanza è già occupata"
+
+#, fuzzy
+#~ msgid "Reservation #"
+#~ msgstr "Prenotazioni"
+
+#, fuzzy
+#~ msgid "Custom Client"
+#~ msgstr "Cliente personalizzato"
+
+#, fuzzy
+#~ msgid "Custom Clients"
+#~ msgstr "Cliente personalizzato"
+
+#~ msgid "Login with Patreon"
+#~ msgstr "Accedi con Patreon"
+
+#~ msgid "Login with Amazon"
+#~ msgstr "Accedi con Amazon"
+
+#~ msgid "Disabled"
+#~ msgstr "Disabilitato"

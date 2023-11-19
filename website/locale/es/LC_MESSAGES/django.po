@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-17 15:07+0200\n"
+"POT-Creation-Date: 2023-11-19 12:37+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,12 +53,6 @@ msgstr "Iniciar sesión con Trello"
 
 msgid "Login with GitHub"
 msgstr "Iniciar sesión con GitHub"
-
-msgid "Login with Patreon"
-msgstr "Iniciar sesión con Patreon"
-
-msgid "Login with Amazon"
-msgstr "Iniciar sesión con Amazon"
 
 msgid "Login with Reddit"
 msgstr "Iniciar sesión con Reddit"
@@ -138,9 +132,6 @@ msgstr "Emergencia"
 msgid "Stranded Abroad"
 msgstr "Varado en el extranjero"
 
-msgid "Disabled"
-msgstr "Desactivado"
-
 msgid "Rooms"
 msgstr "Habitaciones"
 
@@ -185,6 +176,11 @@ msgstr "Disponible"
 msgid "To be cleaned"
 msgstr "para ser limpiado"
 
+#, fuzzy
+#| msgid "Information"
+msgid "Edit Hotel Information"
+msgstr "Información"
+
 msgid "General Settings"
 msgstr "Configuración general"
 
@@ -196,6 +192,28 @@ msgstr "Información"
 
 msgid "Room"
 msgstr "Habitación"
+
+msgid "Set room as occupied"
+msgstr "Establecer habitación como ocupada"
+
+msgid "Select from reservations for room"
+msgstr "Seleccionar entre reservas de habitación"
+
+#, fuzzy
+#| msgid "Select from reservations for room"
+msgid "No reservations for this room"
+msgstr "Seleccionar entre reservas de habitación"
+
+#, fuzzy
+#| msgid "Reservations"
+msgid "Reservation"
+msgstr "Reservas"
+
+msgid "Select"
+msgstr "Seleccionar"
+
+msgid "Custom Customer"
+msgstr "Cliente personalizado"
 
 msgid "For partnerships contact us at"
 msgstr "Para asociaciones contáctenos en"
@@ -468,6 +486,9 @@ msgstr ""
 "entender.<br> Entiendo que cualquier información falsa o engañosa "
 "proporcionada puede resultar en la suspensión inmediata de mi hotel. "
 
+msgid "Save Changes"
+msgstr "Guardar cambios"
+
 msgid "Room Number"
 msgstr "Número de habitación"
 
@@ -524,3 +545,22 @@ msgstr "Hotel actualizado con éxito"
 
 msgid "Error while updating hotel"
 msgstr "Error al actualizar el hotel"
+
+#, fuzzy
+#| msgid "Successfully updated hotel"
+msgid "Successfully updated room status"
+msgstr "Hotel actualizado con éxito"
+
+#, fuzzy
+#| msgid "Invalid data."
+msgid "Invalid status"
+msgstr "Datos inválidos."
+
+#, fuzzy
+#| msgid "Set room as occupied"
+msgid "This room is already occupied"
+msgstr "Establecer habitación como ocupada"
+
+#, fuzzy
+#~ msgid "Reservation #"
+#~ msgstr "Reservas"

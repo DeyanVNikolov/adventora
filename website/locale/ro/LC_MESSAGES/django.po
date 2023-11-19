@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
-"Report-Msgid-Bugs-To: hello@adventora.net\n"
-"POT-Creation-Date: 2023-11-17 15:07+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 12:37+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -53,12 +53,6 @@ msgstr "Conectați-vă cu Trello"
 
 msgid "Login with GitHub"
 msgstr "Conectați-vă cu GitHub"
-
-msgid "Login with Patreon"
-msgstr "Conectați-vă cu Patreon"
-
-msgid "Login with Amazon"
-msgstr "Conectați-vă cu Amazon"
 
 msgid "Login with Reddit"
 msgstr "Conectați-vă cu Reddit"
@@ -138,9 +132,6 @@ msgstr "De urgență"
 msgid "Stranded Abroad"
 msgstr "Blocat în străinătate"
 
-msgid "Disabled"
-msgstr "Dezactivat"
-
 msgid "Rooms"
 msgstr "Camerele"
 
@@ -185,6 +176,11 @@ msgstr "Disponibil"
 msgid "To be cleaned"
 msgstr "De curățat"
 
+#, fuzzy
+#| msgid "Information"
+msgid "Edit Hotel Information"
+msgstr "informație"
+
 msgid "General Settings"
 msgstr "setari generale"
 
@@ -196,6 +192,28 @@ msgstr "informație"
 
 msgid "Room"
 msgstr "Cameră"
+
+msgid "Set room as occupied"
+msgstr "Setați camera ca ocupată"
+
+msgid "Select from reservations for room"
+msgstr "Selectați din rezervări pentru cameră"
+
+#, fuzzy
+#| msgid "Select from reservations for room"
+msgid "No reservations for this room"
+msgstr "Selectați din rezervări pentru cameră"
+
+#, fuzzy
+#| msgid "Reservations"
+msgid "Reservation"
+msgstr "Rezervări"
+
+msgid "Select"
+msgstr "Selectați"
+
+msgid "Custom Customer"
+msgstr "Client personalizat"
 
 msgid "For partnerships contact us at"
 msgstr "Pentru parteneriate contactati-ne la"
@@ -467,6 +485,9 @@ msgstr ""
 " mele.<br> Înțeleg că orice informație falsă sau înșelătoare furnizată poate"
 " duce la suspiciunea imediată a hotelului meu. "
 
+msgid "Save Changes"
+msgstr "Salvează modificările"
+
 msgid "Room Number"
 msgstr "Numărul de cameră"
 
@@ -523,3 +544,37 @@ msgstr "Hotel actualizat cu succes"
 
 msgid "Error while updating hotel"
 msgstr "Eroare la actualizarea hotelului"
+
+#, fuzzy
+#| msgid "Successfully updated hotel"
+msgid "Successfully updated room status"
+msgstr "Hotel actualizat cu succes"
+
+#, fuzzy
+#| msgid "Invalid data."
+msgid "Invalid status"
+msgstr "Date invalide."
+
+msgid "This room is already occupied"
+msgstr "Această cameră este deja ocupată"
+
+#, fuzzy
+#~ msgid "Reservation #"
+#~ msgstr "Rezervări"
+
+#, fuzzy
+#~ msgid "Custom Client"
+#~ msgstr "Client personalizat"
+
+#, fuzzy
+#~ msgid "Custom Clients"
+#~ msgstr "Client personalizat"
+
+#~ msgid "Login with Patreon"
+#~ msgstr "Conectați-vă cu Patreon"
+
+#~ msgid "Login with Amazon"
+#~ msgstr "Conectați-vă cu Amazon"
+
+#~ msgid "Disabled"
+#~ msgstr "Dezactivat"

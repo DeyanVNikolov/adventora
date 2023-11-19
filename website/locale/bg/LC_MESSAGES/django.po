@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
-"Report-Msgid-Bugs-To: hello@adventora.net\n"
-"POT-Creation-Date: 2023-11-17 15:07+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 12:37+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -53,12 +53,6 @@ msgstr "Влезте с Trello"
 
 msgid "Login with GitHub"
 msgstr "Влезте с GitHub"
-
-msgid "Login with Patreon"
-msgstr "Влезте с Patreon"
-
-msgid "Login with Amazon"
-msgstr "Влезте с Amazon"
 
 msgid "Login with Reddit"
 msgstr "Влезте с Reddit"
@@ -138,9 +132,6 @@ msgstr "Спешен случай"
 msgid "Stranded Abroad"
 msgstr "Закъсал в чужбина"
 
-msgid "Disabled"
-msgstr "Изключено"
-
 msgid "Rooms"
 msgstr "Стаи"
 
@@ -160,9 +151,6 @@ msgstr "Регистрирайте хотел"
 
 msgid "Confirm Address"
 msgstr "Потвърдете адреса"
-
-msgid "Reservations"
-msgstr "Резервации"
 
 msgid "Capacity"
 msgstr "Капацитет"
@@ -185,6 +173,11 @@ msgstr "Свободна"
 msgid "To be cleaned"
 msgstr "За почистване"
 
+#, fuzzy
+#| msgid "Information"
+msgid "Edit Hotel Information"
+msgstr "Информация"
+
 msgid "General Settings"
 msgstr "Основни настройки"
 
@@ -196,6 +189,27 @@ msgstr "Информация"
 
 msgid "Room"
 msgstr "Стая"
+
+msgid "Set room as occupied"
+msgstr "Задайте стаята като заета"
+
+msgid "Select from reservations for room"
+msgstr "Изберете от резервации за стая"
+
+msgid "No reservations for this room"
+msgstr "Няма резервации за тази стая"
+
+msgid "Reservations"
+msgstr "Резервации"
+
+msgid "Reservation"
+msgstr "Резервация"
+
+msgid "Select"
+msgstr "Изберете"
+
+msgid "Custom Customer"
+msgstr "Персонализиран клиент"
 
 msgid "For partnerships contact us at"
 msgstr "За партньорство се свържете с нас на"
@@ -231,11 +245,11 @@ msgid ""
 "password should not contain the username. <br> The password should not be a "
 "commonly used password."
 msgstr ""
-"Паролата трябва да е дълга поне 8 знака. <br> Паролата трябва да "
-"не трябва да съдържа само цифри. <br> Паролата не трябва да съдържа само букви."
-"<br> Паролата не трябва да съдържа само специални знаци. <br> "
-"паролата не трябва да съдържа потребителското име. <br> Паролата не трябва да е "
-"често използвана парола."
+"Паролата трябва да е дълга поне 8 знака. <br> Паролата трябва да не трябва "
+"да съдържа само цифри. <br> Паролата не трябва да съдържа само букви.<br> "
+"Паролата не трябва да съдържа само специални знаци. <br> паролата не трябва "
+"да съдържа потребителското име. <br> Паролата не трябва да е често "
+"използвана парола."
 
 msgid "Confirm password"
 msgstr "Потвърди парола"
@@ -472,6 +486,9 @@ msgstr ""
 "Разбирам, че предоставената невярна или подвеждаща информация може да доведе"
 " до незабавното спиране на моя хотел "
 
+msgid "Save Changes"
+msgstr "Запазите промените"
+
 msgid "Room Number"
 msgstr "Номер на стая"
 
@@ -528,3 +545,16 @@ msgstr "Успешно актуализиран хотел"
 
 msgid "Error while updating hotel"
 msgstr "Грешка при актуализирането на хотела"
+
+#, fuzzy
+#| msgid "Successfully updated hotel"
+msgid "Successfully updated room status"
+msgstr "Успешно актуализиран хотел"
+
+#, fuzzy
+#| msgid "Invalid data."
+msgid "Invalid status"
+msgstr "Невалидни данни."
+
+msgid "This room is already occupied"
+msgstr "Тази стая вече е заета"

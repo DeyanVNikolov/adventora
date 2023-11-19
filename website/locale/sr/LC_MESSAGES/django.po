@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
-"Report-Msgid-Bugs-To: hello@adventora.net\n"
-"POT-Creation-Date: 2023-11-17 15:07+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 12:37+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -53,12 +53,6 @@ msgstr "Пријавите се са Треллом"
 
 msgid "Login with GitHub"
 msgstr "Пријавите се са ГитХуб-ом"
-
-msgid "Login with Patreon"
-msgstr "Пријавите се са Патреоном"
-
-msgid "Login with Amazon"
-msgstr "Пријавите се на Амазон"
 
 msgid "Login with Reddit"
 msgstr "Пријавите се са Реддит-ом"
@@ -138,9 +132,6 @@ msgstr "Хитан"
 msgid "Stranded Abroad"
 msgstr "Страндед Аброад"
 
-msgid "Disabled"
-msgstr "Онемогућено"
-
 msgid "Rooms"
 msgstr "Собе"
 
@@ -185,6 +176,11 @@ msgstr "Доступан"
 msgid "To be cleaned"
 msgstr "Да се ​​очисти"
 
+#, fuzzy
+#| msgid "Information"
+msgid "Edit Hotel Information"
+msgstr "Информације"
+
 msgid "General Settings"
 msgstr "Општа подешавања"
 
@@ -196,6 +192,28 @@ msgstr "Информације"
 
 msgid "Room"
 msgstr "Соба"
+
+msgid "Set room as occupied"
+msgstr "Поставите собу као заузету"
+
+msgid "Select from reservations for room"
+msgstr "Изаберите једну од резервација за собу"
+
+#, fuzzy
+#| msgid "Select from reservations for room"
+msgid "No reservations for this room"
+msgstr "Изаберите једну од резервација за собу"
+
+#, fuzzy
+#| msgid "Reservations"
+msgid "Reservation"
+msgstr "Резервације"
+
+msgid "Select"
+msgstr "Изаберите"
+
+msgid "Custom Customer"
+msgstr "Цустом Цустомер"
 
 msgid "For partnerships contact us at"
 msgstr "За партнерства нас контактирајте на"
@@ -467,6 +485,9 @@ msgstr ""
 "лажна или обмањујућа информација може довести до моменталне суспензије мог "
 "хотела "
 
+msgid "Save Changes"
+msgstr "Сачувај измене"
+
 msgid "Room Number"
 msgstr "Број собе"
 
@@ -523,3 +544,37 @@ msgstr "Хотел је успешно ажуриран"
 
 msgid "Error while updating hotel"
 msgstr "Грешка при ажурирању хотела"
+
+#, fuzzy
+#| msgid "Successfully updated hotel"
+msgid "Successfully updated room status"
+msgstr "Хотел је успешно ажуриран"
+
+#, fuzzy
+#| msgid "Invalid data."
+msgid "Invalid status"
+msgstr "Неважећи подаци."
+
+msgid "This room is already occupied"
+msgstr "Ова соба је већ заузета"
+
+#, fuzzy
+#~ msgid "Reservation #"
+#~ msgstr "Резервације"
+
+#, fuzzy
+#~ msgid "Custom Client"
+#~ msgstr "Цустом Цустомер"
+
+#, fuzzy
+#~ msgid "Custom Clients"
+#~ msgstr "Цустом Цустомер"
+
+#~ msgid "Login with Patreon"
+#~ msgstr "Пријавите се са Патреоном"
+
+#~ msgid "Login with Amazon"
+#~ msgstr "Пријавите се на Амазон"
+
+#~ msgid "Disabled"
+#~ msgstr "Онемогућено"

@@ -15,6 +15,8 @@ from django.contrib.gis import gdal
 from authentication.models import CustomUser
 
 
+
+
 def security_check(view_func):
     def wrapper(request, *args, **kwargs):
         has_clearance_cookie = request.COOKIES.get('clearance', None)
@@ -365,8 +367,7 @@ def updateroomstatus(request, hotel_id, room_id, status):
         messages.warning(request, _('We cannot find the hotel you are looking for'))
         return redirect('dashboard')
 
-
-    hotel = Hotel .objects.filter(id=hotel_id).first()
+    hotel = Hotel.objects.filter(id=hotel_id).first()
     if not hotel:
         messages.warning(request, _('We cannot find the hotel you are looking for'))
         return redirect('dashboard')
@@ -441,8 +442,32 @@ def occupy(request, hotel_id, room_id):
         messages.warning(request, _('This room is already occupied'))
         return redirect('room', hotel_id=hotel_id, room_id=room_id)
 
+    room_reservations = room.reservations.all()
+
+    removed_reservations = []
+
+    for reservation in room_reservations:
+        if reservation.status == 'Completed':
+            removed_reservations.append(reservation)
+            continue
+        if reservation.status == 'Cancelled':
+            removed_reservations.append(reservation)
+            continue
+        if reservation.status == 'Expired':
+            removed_reservations.append(reservation)
+            continue
+        if reservation.status == 'Rejected':
+            removed_reservations.append(reservation)
+            continue
+
+    for reservation in removed_reservations:
+        room_reservations.remove(reservation)
+
+
     context = {
         'hotel': hotel,
-        'room': room
+        'room': room,
+        'reservations': room_reservations,
     }
+
     return render(request, 'hotel/occupy.html', context=context)

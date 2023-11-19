@@ -44,6 +44,7 @@ class Room(models.Model):
     price = models.DecimalField(max_digits=11, decimal_places=2, null=True, blank=True)
     capacity = models.IntegerField(null=True, blank=True)
     images = models.ImageField(upload_to='room_images/', null=True, blank=True)
+
     def __str__(self):
         return self.name
 
@@ -52,3 +53,26 @@ class Room(models.Model):
         verbose_name_plural = _("Rooms")
 
 
+class Reservation(models.Model):
+    id = models.UUIDField(max_length=100, default=uuid.uuid4, unique=True, primary_key=True)
+    hotel = models.ForeignKey('hotel.Hotel', on_delete=models.CASCADE, null=True, blank=True, default=None, related_name='reservations')
+    room = models.ForeignKey('hotel.Room', on_delete=models.CASCADE, null=True, blank=True, default=None, related_name='reservations')
+    reserved_by = models.CharField(max_length=5000, null=True, blank=True)
+    checkin = models.DateField(null=True, blank=True)
+    checkout = models.DateField(null=True, blank=True)
+    price = models.DecimalField(max_digits=11, decimal_places=2, null=True, blank=True)
+    status = models.CharField(max_length=100, null=True, blank=True)
+
+    type = models.CharField(max_length=100, null=True, blank=True)
+    first_name = models.CharField(max_length=100, null=True, blank=True)
+    last_name = models.CharField(max_length=5000, null=True, blank=True)
+    phone = models.CharField(max_length=100, null=True, blank=True)
+    email = models.EmailField(max_length=254, null=True, blank=True)
+    citizenship = models.CharField(max_length=100, null=True, blank=True)
+
+    def __str__(self):
+        return self.reserved_by
+
+    class Meta:
+        verbose_name = _("Reservation")
+        verbose_name_plural = _("Reservations")

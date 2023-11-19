@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
-"Report-Msgid-Bugs-To: hello@adventora.net\n"
-"POT-Creation-Date: 2023-11-17 15:07+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 12:37+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -53,12 +53,6 @@ msgstr "Jelentkezzen be a Trellóval"
 
 msgid "Login with GitHub"
 msgstr "Jelentkezzen be a GitHub segítségével"
-
-msgid "Login with Patreon"
-msgstr "Jelentkezzen be a Patreonnal"
-
-msgid "Login with Amazon"
-msgstr "Jelentkezzen be az Amazon segítségével"
 
 msgid "Login with Reddit"
 msgstr "Jelentkezzen be a Reddit segítségével"
@@ -138,9 +132,6 @@ msgstr "Vészhelyzet"
 msgid "Stranded Abroad"
 msgstr "Megfeneklett külföldön"
 
-msgid "Disabled"
-msgstr "Tiltva"
-
 msgid "Rooms"
 msgstr "Szobák"
 
@@ -185,6 +176,11 @@ msgstr "Elérhető"
 msgid "To be cleaned"
 msgstr "Takarítandó"
 
+#, fuzzy
+#| msgid "Information"
+msgid "Edit Hotel Information"
+msgstr "Információ"
+
 msgid "General Settings"
 msgstr "Általános beállítások"
 
@@ -196,6 +192,28 @@ msgstr "Információ"
 
 msgid "Room"
 msgstr "Szoba"
+
+msgid "Set room as occupied"
+msgstr "Állítsa be a szobát foglaltnak"
+
+msgid "Select from reservations for room"
+msgstr "Válasszon a szobafoglalások közül"
+
+#, fuzzy
+#| msgid "Select from reservations for room"
+msgid "No reservations for this room"
+msgstr "Válasszon a szobafoglalások közül"
+
+#, fuzzy
+#| msgid "Reservations"
+msgid "Reservation"
+msgstr "Fenntartások"
+
+msgid "Select"
+msgstr "Válassza ki"
+
+msgid "Custom Customer"
+msgstr "Egyedi Ügyfél"
 
 msgid "For partnerships contact us at"
 msgstr "Partnerkapcsolatokért vegye fel velünk a kapcsolatot a telefonszámon"
@@ -467,6 +485,9 @@ msgstr ""
 "teljesek.<br> Tudomásul veszem, hogy bármely hamis vagy félrevezető "
 "információ szállodám azonnali gyanúját vonhatja maga után. "
 
+msgid "Save Changes"
+msgstr "Változtatások mentése"
+
 msgid "Room Number"
 msgstr "Szoba szám"
 
@@ -523,3 +544,37 @@ msgstr "Sikeresen felújított szálloda"
 
 msgid "Error while updating hotel"
 msgstr "Hiba történt a szálloda frissítésekor"
+
+#, fuzzy
+#| msgid "Successfully updated hotel"
+msgid "Successfully updated room status"
+msgstr "Sikeresen felújított szálloda"
+
+#, fuzzy
+#| msgid "Invalid data."
+msgid "Invalid status"
+msgstr "Érvénytelen adat."
+
+msgid "This room is already occupied"
+msgstr "Ez a szoba már foglalt"
+
+#, fuzzy
+#~ msgid "Reservation #"
+#~ msgstr "Fenntartások"
+
+#, fuzzy
+#~ msgid "Custom Client"
+#~ msgstr "Egyedi Ügyfél"
+
+#, fuzzy
+#~ msgid "Custom Clients"
+#~ msgstr "Egyedi Ügyfél"
+
+#~ msgid "Login with Patreon"
+#~ msgstr "Jelentkezzen be a Patreonnal"
+
+#~ msgid "Login with Amazon"
+#~ msgstr "Jelentkezzen be az Amazon segítségével"
+
+#~ msgid "Disabled"
+#~ msgstr "Tiltva"

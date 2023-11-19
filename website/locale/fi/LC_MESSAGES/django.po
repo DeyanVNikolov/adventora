@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
-"Report-Msgid-Bugs-To: hello@adventora.net\n"
-"POT-Creation-Date: 2023-11-17 15:07+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 12:37+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -53,12 +53,6 @@ msgstr "Kirjaudu sisään Trellolla"
 
 msgid "Login with GitHub"
 msgstr "Kirjaudu sisään GitHubilla"
-
-msgid "Login with Patreon"
-msgstr "Kirjaudu Patreonilla"
-
-msgid "Login with Amazon"
-msgstr "Kirjaudu sisään Amazonilla"
 
 msgid "Login with Reddit"
 msgstr "Kirjaudu sisään Redditillä"
@@ -138,9 +132,6 @@ msgstr "Hätä"
 msgid "Stranded Abroad"
 msgstr "Jäi ulkomaille"
 
-msgid "Disabled"
-msgstr "Liikuntarajoitteinen"
-
 msgid "Rooms"
 msgstr "Huoneet"
 
@@ -185,6 +176,11 @@ msgstr "Saatavilla"
 msgid "To be cleaned"
 msgstr "Puhdistettavaksi"
 
+#, fuzzy
+#| msgid "Information"
+msgid "Edit Hotel Information"
+msgstr "Tiedot"
+
 msgid "General Settings"
 msgstr "Yleiset asetukset"
 
@@ -196,6 +192,28 @@ msgstr "Tiedot"
 
 msgid "Room"
 msgstr "Huone"
+
+msgid "Set room as occupied"
+msgstr "Aseta huone varatuksi"
+
+msgid "Select from reservations for room"
+msgstr "Valitse huonevarauksista"
+
+#, fuzzy
+#| msgid "Select from reservations for room"
+msgid "No reservations for this room"
+msgstr "Valitse huonevarauksista"
+
+#, fuzzy
+#| msgid "Reservations"
+msgid "Reservation"
+msgstr "Varaukset"
+
+msgid "Select"
+msgstr "Valitse"
+
+msgid "Custom Customer"
+msgstr "Mukautettu asiakas"
 
 msgid "For partnerships contact us at"
 msgstr "Yhteistyökumppanuuksia varten ota yhteyttä osoitteeseen"
@@ -467,6 +485,9 @@ msgstr ""
 "täydellisiä.<br> Ymmärrän, että kaikki antamani väärät tai harhaanjohtavat "
 "tiedot voivat johtaa välittömään hotellieni epäilyyn. "
 
+msgid "Save Changes"
+msgstr "Tallenna muutokset"
+
 msgid "Room Number"
 msgstr "Huoneen numero"
 
@@ -523,3 +544,37 @@ msgstr "Hotelli päivitetty onnistuneesti"
 
 msgid "Error while updating hotel"
 msgstr "Virhe päivitettäessä hotellia"
+
+#, fuzzy
+#| msgid "Successfully updated hotel"
+msgid "Successfully updated room status"
+msgstr "Hotelli päivitetty onnistuneesti"
+
+#, fuzzy
+#| msgid "Invalid data."
+msgid "Invalid status"
+msgstr "Virheellinen tieto."
+
+msgid "This room is already occupied"
+msgstr "Tämä huone on jo varattu"
+
+#, fuzzy
+#~ msgid "Reservation #"
+#~ msgstr "Varaukset"
+
+#, fuzzy
+#~ msgid "Custom Client"
+#~ msgstr "Mukautettu asiakas"
+
+#, fuzzy
+#~ msgid "Custom Clients"
+#~ msgstr "Mukautettu asiakas"
+
+#~ msgid "Login with Patreon"
+#~ msgstr "Kirjaudu Patreonilla"
+
+#~ msgid "Login with Amazon"
+#~ msgstr "Kirjaudu sisään Amazonilla"
+
+#~ msgid "Disabled"
+#~ msgstr "Liikuntarajoitteinen"

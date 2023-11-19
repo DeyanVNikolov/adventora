@@ -35,7 +35,7 @@ def translate_folder(folder, source, target):
             translate_folder(folder + "\\" + file, source, target)
         if file.endswith(".po"):
             translate_file(folder + "\\" + file, source, target)
-            print("Translated " + file)
+            print("Translated " + file + " " + target)
 
 
 def defuzzier():

@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
-"Report-Msgid-Bugs-To: hello@adventora.net\n"
-"POT-Creation-Date: 2023-11-17 15:07+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 12:37+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -53,12 +53,6 @@ msgstr "Logg inn med Trello"
 
 msgid "Login with GitHub"
 msgstr "Logg på med GitHub"
-
-msgid "Login with Patreon"
-msgstr "Logg inn med Patreon"
-
-msgid "Login with Amazon"
-msgstr "Logg inn med Amazon"
 
 msgid "Login with Reddit"
 msgstr "Logg inn med Reddit"
@@ -138,9 +132,6 @@ msgstr "Nødsituasjon"
 msgid "Stranded Abroad"
 msgstr "Strandet i utlandet"
 
-msgid "Disabled"
-msgstr "Funksjonshemmet"
-
 msgid "Rooms"
 msgstr "Rom"
 
@@ -185,6 +176,11 @@ msgstr "Tilgjengelig"
 msgid "To be cleaned"
 msgstr "Skal rengjøres"
 
+#, fuzzy
+#| msgid "Information"
+msgid "Edit Hotel Information"
+msgstr "Informasjon"
+
 msgid "General Settings"
 msgstr "Generelle innstillinger"
 
@@ -196,6 +192,28 @@ msgstr "Informasjon"
 
 msgid "Room"
 msgstr "Rom"
+
+msgid "Set room as occupied"
+msgstr "Angi rommet som opptatt"
+
+msgid "Select from reservations for room"
+msgstr "Velg fra reservasjoner for rom"
+
+#, fuzzy
+#| msgid "Select from reservations for room"
+msgid "No reservations for this room"
+msgstr "Velg fra reservasjoner for rom"
+
+#, fuzzy
+#| msgid "Reservations"
+msgid "Reservation"
+msgstr "Reservasjoner"
+
+msgid "Select"
+msgstr "Plukke ut"
+
+msgid "Custom Customer"
+msgstr "Tilpasset kunde"
 
 msgid "For partnerships contact us at"
 msgstr "For partnerskap kontakt oss på"
@@ -463,6 +481,9 @@ msgstr ""
 "vet.<br> Jeg forstår at all falsk eller villedende informasjon som gis kan "
 "resultere i umiddelbar mistanke om hotellet mitt. "
 
+msgid "Save Changes"
+msgstr "Lagre endringer"
+
 msgid "Room Number"
 msgstr "Romnummer"
 
@@ -519,3 +540,37 @@ msgstr "Vellykket oppdatert hotell"
 
 msgid "Error while updating hotel"
 msgstr "Feil under oppdatering av hotellet"
+
+#, fuzzy
+#| msgid "Successfully updated hotel"
+msgid "Successfully updated room status"
+msgstr "Vellykket oppdatert hotell"
+
+#, fuzzy
+#| msgid "Invalid data."
+msgid "Invalid status"
+msgstr "Ugyldig data."
+
+msgid "This room is already occupied"
+msgstr "Dette rommet er allerede opptatt"
+
+#, fuzzy
+#~ msgid "Reservation #"
+#~ msgstr "Reservasjoner"
+
+#, fuzzy
+#~ msgid "Custom Client"
+#~ msgstr "Tilpasset kunde"
+
+#, fuzzy
+#~ msgid "Custom Clients"
+#~ msgstr "Tilpasset kunde"
+
+#~ msgid "Login with Patreon"
+#~ msgstr "Logg inn med Patreon"
+
+#~ msgid "Login with Amazon"
+#~ msgstr "Logg inn med Amazon"
+
+#~ msgid "Disabled"
+#~ msgstr "Funksjonshemmet"

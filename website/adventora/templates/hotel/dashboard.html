@@ -112,7 +112,7 @@
                                                 {% trans "Reservations" %}
                                             </h3>
                                                 <h1 class="title">
-                                                    {{ hotel.reservations.count | default:"Не е налично" }}
+                                                    {{ hotel.reservations.count | default_if_none:"Не е налично" }}
                                                 </h1>
                                             </div>
                                         </div>

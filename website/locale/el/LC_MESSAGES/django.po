@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
-"Report-Msgid-Bugs-To: hello@adventora.net\n"
-"POT-Creation-Date: 2023-11-17 15:07+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 12:37+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -53,12 +53,6 @@ msgstr "Συνδεθείτε με το Trello"
 
 msgid "Login with GitHub"
 msgstr "Συνδεθείτε με το GitHub"
-
-msgid "Login with Patreon"
-msgstr "Είσοδος με Patreon"
-
-msgid "Login with Amazon"
-msgstr "Συνδεθείτε με το Amazon"
 
 msgid "Login with Reddit"
 msgstr "Συνδεθείτε με το Reddit"
@@ -138,9 +132,6 @@ msgstr "Επείγον"
 msgid "Stranded Abroad"
 msgstr "Απομονωμένος στο Εξωτερικό"
 
-msgid "Disabled"
-msgstr "άτομα με ειδικές ανάγκες"
-
 msgid "Rooms"
 msgstr "Δωμάτια"
 
@@ -185,6 +176,11 @@ msgstr "Διαθέσιμος"
 msgid "To be cleaned"
 msgstr "Να καθαριστεί"
 
+#, fuzzy
+#| msgid "Information"
+msgid "Edit Hotel Information"
+msgstr "Πληροφορίες"
+
 msgid "General Settings"
 msgstr "Γενικές Ρυθμίσεις"
 
@@ -196,6 +192,28 @@ msgstr "Πληροφορίες"
 
 msgid "Room"
 msgstr "Δωμάτιο"
+
+msgid "Set room as occupied"
+msgstr "Ορίστε το δωμάτιο ως κατειλημμένο"
+
+msgid "Select from reservations for room"
+msgstr "Επιλέξτε από τις κρατήσεις για δωμάτιο"
+
+#, fuzzy
+#| msgid "Select from reservations for room"
+msgid "No reservations for this room"
+msgstr "Επιλέξτε από τις κρατήσεις για δωμάτιο"
+
+#, fuzzy
+#| msgid "Reservations"
+msgid "Reservation"
+msgstr "κρατήσεις"
+
+msgid "Select"
+msgstr "Επιλέγω"
+
+msgid "Custom Customer"
+msgstr "Πελάτης"
 
 msgid "For partnerships contact us at"
 msgstr "Για συνεργασίες επικοινωνήστε μαζί μας στο"
@@ -471,6 +489,9 @@ msgstr ""
 "παρέχονται ενδέχεται να έχουν ως αποτέλεσμα την άμεση αναστολή του "
 "ξενοδοχείου μου "
 
+msgid "Save Changes"
+msgstr "Αποθήκευσε τις αλλαγές"
+
 msgid "Room Number"
 msgstr "Αριθμός δωματίου"
 
@@ -527,3 +548,37 @@ msgstr "Το ξενοδοχείο ενημερώθηκε με επιτυχία"
 
 msgid "Error while updating hotel"
 msgstr "Σφάλμα κατά την ενημέρωση του ξενοδοχείου"
+
+#, fuzzy
+#| msgid "Successfully updated hotel"
+msgid "Successfully updated room status"
+msgstr "Το ξενοδοχείο ενημερώθηκε με επιτυχία"
+
+#, fuzzy
+#| msgid "Invalid data."
+msgid "Invalid status"
+msgstr "Μη έγκυρα δεδομένα."
+
+msgid "This room is already occupied"
+msgstr "Αυτό το δωμάτιο είναι ήδη κατειλημμένο"
+
+#, fuzzy
+#~ msgid "Reservation #"
+#~ msgstr "κρατήσεις"
+
+#, fuzzy
+#~ msgid "Custom Client"
+#~ msgstr "Πελάτης"
+
+#, fuzzy
+#~ msgid "Custom Clients"
+#~ msgstr "Πελάτης"
+
+#~ msgid "Login with Patreon"
+#~ msgstr "Είσοδος με Patreon"
+
+#~ msgid "Login with Amazon"
+#~ msgstr "Συνδεθείτε με το Amazon"
+
+#~ msgid "Disabled"
+#~ msgstr "άτομα με ειδικές ανάγκες"

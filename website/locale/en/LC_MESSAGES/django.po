@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
-"Report-Msgid-Bugs-To: hello@adventora.net\n"
-"POT-Creation-Date: 2023-11-17 15:07+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 12:37+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -52,12 +52,6 @@ msgid "Login with Trello"
 msgstr ""
 
 msgid "Login with GitHub"
-msgstr ""
-
-msgid "Login with Patreon"
-msgstr ""
-
-msgid "Login with Amazon"
 msgstr ""
 
 msgid "Login with Reddit"
@@ -138,9 +132,6 @@ msgstr ""
 msgid "Stranded Abroad"
 msgstr ""
 
-msgid "Disabled"
-msgstr ""
-
 msgid "Rooms"
 msgstr ""
 
@@ -185,6 +176,9 @@ msgstr ""
 msgid "To be cleaned"
 msgstr ""
 
+msgid "Edit Hotel Information"
+msgstr ""
+
 msgid "General Settings"
 msgstr ""
 
@@ -195,6 +189,24 @@ msgid "Information"
 msgstr ""
 
 msgid "Room"
+msgstr ""
+
+msgid "Set room as occupied"
+msgstr ""
+
+msgid "Select from reservations for room"
+msgstr ""
+
+msgid "No reservations for this room"
+msgstr ""
+
+msgid "Reservation"
+msgstr ""
+
+msgid "Select"
+msgstr ""
+
+msgid "Custom Customer"
 msgstr ""
 
 msgid "For partnerships contact us at"
@@ -452,6 +464,9 @@ msgid ""
 "lead to potential legal consequences."
 msgstr ""
 
+msgid "Save Changes"
+msgstr ""
+
 msgid "Room Number"
 msgstr ""
 
@@ -507,4 +522,13 @@ msgid "Successfully updated hotel"
 msgstr ""
 
 msgid "Error while updating hotel"
+msgstr ""
+
+msgid "Successfully updated room status"
+msgstr ""
+
+msgid "Invalid status"
+msgstr ""
+
+msgid "This room is already occupied"
 msgstr ""

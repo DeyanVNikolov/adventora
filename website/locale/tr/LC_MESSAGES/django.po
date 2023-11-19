@@ -7,8 +7,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
-"Report-Msgid-Bugs-To: hello@adventora.net\n"
-"POT-Creation-Date: 2023-11-17 15:07+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-19 12:37+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -53,12 +53,6 @@ msgstr "Trello'ya giriş yapın"
 
 msgid "Login with GitHub"
 msgstr "GitHub'la oturum açın"
-
-msgid "Login with Patreon"
-msgstr "Patreon'a giriş yap"
-
-msgid "Login with Amazon"
-msgstr "Amazon'la giriş yap"
 
 msgid "Login with Reddit"
 msgstr "Reddit'le giriş yap"
@@ -138,9 +132,6 @@ msgstr "Acil durum"
 msgid "Stranded Abroad"
 msgstr "Yurtdışında Mahsur Kalmak"
 
-msgid "Disabled"
-msgstr "Engelli"
-
 msgid "Rooms"
 msgstr "Odalar"
 
@@ -185,6 +176,11 @@ msgstr "Mevcut"
 msgid "To be cleaned"
 msgstr "Temizlenecek"
 
+#, fuzzy
+#| msgid "Information"
+msgid "Edit Hotel Information"
+msgstr "Bilgi"
+
 msgid "General Settings"
 msgstr "Genel Ayarlar"
 
@@ -196,6 +192,28 @@ msgstr "Bilgi"
 
 msgid "Room"
 msgstr "Oda"
+
+msgid "Set room as occupied"
+msgstr "Odayı dolu olarak ayarla"
+
+msgid "Select from reservations for room"
+msgstr "Oda rezervasyonları arasından seçim yapın"
+
+#, fuzzy
+#| msgid "Select from reservations for room"
+msgid "No reservations for this room"
+msgstr "Oda rezervasyonları arasından seçim yapın"
+
+#, fuzzy
+#| msgid "Reservations"
+msgid "Reservation"
+msgstr "Rezervasyonlar"
+
+msgid "Select"
+msgstr "Seçme"
+
+msgid "Custom Customer"
+msgstr "Özel Müşteri"
 
 msgid "For partnerships contact us at"
 msgstr "Ortaklıklar için bizimle şu adresten iletişime geçin:"
@@ -467,6 +485,9 @@ msgstr ""
 "veya yanıltıcı bilginin otelimin derhal askıya alınmasıyla "
 "sonuçlanabileceğini anlıyorum. "
 
+msgid "Save Changes"
+msgstr "Değişiklikleri Kaydet"
+
 msgid "Room Number"
 msgstr "Oda numarası"
 
@@ -523,3 +544,37 @@ msgstr "Otel başarıyla güncellendi"
 
 msgid "Error while updating hotel"
 msgstr "Otel güncellenirken hata oluştu"
+
+#, fuzzy
+#| msgid "Successfully updated hotel"
+msgid "Successfully updated room status"
+msgstr "Otel başarıyla güncellendi"
+
+#, fuzzy
+#| msgid "Invalid data."
+msgid "Invalid status"
+msgstr "Geçersiz veri."
+
+msgid "This room is already occupied"
+msgstr "Bu oda zaten dolu"
+
+#, fuzzy
+#~ msgid "Reservation #"
+#~ msgstr "Rezervasyonlar"
+
+#, fuzzy
+#~ msgid "Custom Client"
+#~ msgstr "Özel Müşteri"
+
+#, fuzzy
+#~ msgid "Custom Clients"
+#~ msgstr "Özel Müşteri"
+
+#~ msgid "Login with Patreon"
+#~ msgstr "Patreon'a giriş yap"
+
+#~ msgid "Login with Amazon"
+#~ msgstr "Amazon'la giriş yap"
+
+#~ msgid "Disabled"
+#~ msgstr "Engelli"
