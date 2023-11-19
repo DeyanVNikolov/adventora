@@ -15,8 +15,6 @@ from django.contrib.gis import gdal
 from authentication.models import CustomUser
 
 
-
-
 def security_check(view_func):
     def wrapper(request, *args, **kwargs):
         has_clearance_cookie = request.COOKIES.get('clearance', None)
@@ -291,9 +289,34 @@ def room(request, hotel_id, room_id):
         messages.warning(request, _('We cannot find the room you are looking for'))
         return redirect('dashboard')
 
+    room_reservations = room.reservations.all()
+    removed_reservations = []
+
+    for reservation in room_reservations:
+        if reservation.status == 'Completed':
+            removed_reservations.append(reservation)
+            continue
+        if reservation.status == 'Cancelled':
+            removed_reservations.append(reservation)
+            continue
+        if reservation.status == 'Expired':
+            removed_reservations.append(reservation)
+            continue
+        if reservation.status == 'Rejected':
+            removed_reservations.append(reservation)
+            continue
+        if reservation.status == 'CheckIn':
+            removed_reservations.append(reservation)
+            continue
+
+    for reservation in removed_reservations:
+        # remove reservation from queryset
+        room_reservations = room_reservations.exclude(id=reservation.id)
+
     context = {
         'hotel': hotel,
-        'room': room
+        'room': room,
+        'reservations': room_reservations,
     }
 
     return render(request, 'hotel/room.html', context)
@@ -390,6 +413,13 @@ def updateroomstatus(request, hotel_id, room_id, status):
 
     if status == 'ava':
         room.status = 'Available'
+        reservation = room.reservations.filter(status='CheckIn').first()
+        if reservation:
+            reservation.status = 'Completed'
+            reservation.save()
+
+        room.occupied = False
+        room.occupied_by = None
         room.save()
         messages.success(request, _('Successfully updated room status'))
         return redirect('room', hotel_id=hotel_id, room_id=room_id)
@@ -401,6 +431,13 @@ def updateroomstatus(request, hotel_id, room_id, status):
         return redirect('room', hotel_id=hotel_id, room_id=room_id)
 
     elif status == 'tbc':
+        reservation = room.reservations.filter(status='CheckIn').first()
+        if reservation:
+            reservation.status = 'Completed'
+            reservation.save()
+
+        room.occupied = False
+        room.occupied_by = None
         room.status = 'ForCleaning'
         room.save()
         messages.success(request, _('Successfully updated room status'))
@@ -459,10 +496,13 @@ def occupy(request, hotel_id, room_id):
         if reservation.status == 'Rejected':
             removed_reservations.append(reservation)
             continue
+        if reservation.status == 'CheckIn':
+            removed_reservations.append(reservation)
+            continue
 
     for reservation in removed_reservations:
-        room_reservations.remove(reservation)
-
+        # remove reservation from queryset
+        room_reservations = room_reservations.exclude(id=reservation.id)
 
     context = {
         'hotel': hotel,
@@ -471,3 +511,70 @@ def occupy(request, hotel_id, room_id):
     }
 
     return render(request, 'hotel/occupy.html', context=context)
+
+
+def occupyreversed(request, hotel_id, room_id, reservationid):
+    try:
+        uuid.UUID(hotel_id)
+    except ValueError:
+        messages.warning(request, _('We cannot find the hotel you are looking for'))
+        return redirect('dashboard')
+
+    hotel = Hotel.objects.filter(id=hotel_id).first()
+    if not hotel:
+        messages.warning(request, _('We cannot find the hotel you are looking for'))
+        return redirect('dashboard')
+
+    if request.user.hotel != hotel:
+        messages.warning(request, _('You do not have permission to view this page'))
+        return redirect('dashboard')
+
+    try:
+        uuid.UUID(room_id)
+    except ValueError:
+        messages.warning(request, _('We cannot find the room you are looking for'))
+        return redirect('dashboard')
+
+    room = hotel.rooms.filter(id=room_id).first()
+    if not room:
+        messages.warning(request, _('We cannot find the room you are looking for'))
+        return redirect('dashboard')
+
+    if room.occupied:
+        messages.warning(request, _('This room is already occupied'))
+        return redirect('room', hotel_id=hotel_id, room_id=room_id)
+
+    room_reservations = room.reservations.all()
+    reservation = room_reservations.filter(id=reservationid).first()
+    if not reservation:
+        messages.warning(request, _('We cannot find the reservation you are looking for'))
+        return redirect('room', hotel_id=hotel_id, room_id=room_id)
+
+    if reservation.status == 'Completed':
+        messages.warning(request, _('This reservation is already completed'))
+        return redirect('room', hotel_id=hotel_id, room_id=room_id)
+
+    if reservation.status == 'Cancelled':
+        messages.warning(request, _('This reservation is already cancelled'))
+        return redirect('room', hotel_id=hotel_id, room_id=room_id)
+
+    if reservation.status == 'Expired':
+        messages.warning(request, _('This reservation is already expired'))
+        return redirect('room', hotel_id=hotel_id, room_id=room_id)
+
+    if reservation.status == 'Rejected':
+        messages.warning(request, _('This reservation is already rejected'))
+        return redirect('room', hotel_id=hotel_id, room_id=room_id)
+
+    reservation.status = 'CheckIn'
+    reservation.save()
+    room.occupied = True
+    room.status = 'Occupied'
+    if reservation.reserved_by:
+        room.occupied_by = reservation.reserved_by
+    else:
+        room.occupied_by = "[CCI]"
+    room.save()
+
+    messages.success(request, _('Successfully occupied room'))
+    return redirect('room', hotel_id=hotel_id, room_id=room_id)

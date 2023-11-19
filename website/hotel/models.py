@@ -63,13 +63,6 @@ class Reservation(models.Model):
     price = models.DecimalField(max_digits=11, decimal_places=2, null=True, blank=True)
     status = models.CharField(max_length=100, null=True, blank=True)
 
-    type = models.CharField(max_length=100, null=True, blank=True)
-    first_name = models.CharField(max_length=100, null=True, blank=True)
-    last_name = models.CharField(max_length=5000, null=True, blank=True)
-    phone = models.CharField(max_length=100, null=True, blank=True)
-    email = models.EmailField(max_length=254, null=True, blank=True)
-    citizenship = models.CharField(max_length=100, null=True, blank=True)
-
     def __str__(self):
         return self.reserved_by
 

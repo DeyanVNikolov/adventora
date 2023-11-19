@@ -94,45 +94,92 @@
                                     var hotelid = '{{ hotel.id }}';
                                     var url = "/hotel/dashboard/" + hotelid + "/rooms/" + roomid + "/updatestatus/" + status + "/";
 
-                                    // to the pressed button add is-loading, to the others disable the button
 
-                                    if (status == "ava") {
-                                        buttonava.classList.add("is-loading");
-                                        buttontbc.disabled = true;
-                                        buttonocc.disabled = true;
-                                        $.ajax({
-                                            url: url,
-                                            type: "GET",
-                                            success: function (data) {
-                                                console.log(data);
-                                                window.location.reload();
-                                            },
-                                            error: function (data) {
-                                                console.log(data);
-                                                alert("Не успяхме да променим статуса на стаята");
+                                    if (status === "ava" || status === "tbc") {
+                                        if (status === "ava") {
+                                            buttonava.classList.add("is-loading");
+
+                                            buttontbc.classList.remove("is-loading");
+                                            buttontbc.disabled = true;
+
+                                            buttonocc.classList.remove("is-loading");
+                                            buttonocc.disabled = true;
+                                        } else if (status === "tbc") {
+                                            buttontbc.classList.add("is-loading");
+
+                                            buttonava.classList.remove("is-loading");
+                                            buttonava.disabled = true;
+
+                                            buttonocc.classList.remove("is-loading");
+                                            buttonocc.disabled = true;
+                                        }
+
+                                        if ('{{ room.occupied | lower }}' === 'true') {
+                                            r = confirm("Промяната на статуса ще освободи стаята. Уверете се, че резервацията е приключила. Продължавате ли?");
+                                            if (r === false) {
+                                                buttonava.classList.remove("is-loading");
+                                                buttontbc.classList.remove("is-loading");
+                                                buttonocc.classList.remove("is-loading");
+
+                                                buttonava.disabled = false;
+                                                buttontbc.disabled = false;
+                                                buttonocc.disabled = false;
+                                                return;
+                                            } else {
+                                                setTimeout(function () {
+                                                    $.ajax({
+                                                        url: url,
+                                                        type: 'GET',
+                                                        success: function (data) {
+                                                            window.location.reload();
+                                                        },
+                                                        error: function (data) {
+                                                            alert("{% trans "Error" %}")
+                                                            buttonava.classList.remove("is-loading");
+                                                            buttontbc.classList.remove("is-loading");
+                                                            buttonocc.classList.remove("is-loading");
+
+                                                            buttonava.disabled = false;
+                                                            buttontbc.disabled = false;
+                                                            buttonocc.disabled = false;
+
+                                                        }
+                                                    });
+                                                }, 0);
                                             }
-                                        });
-                                    } else if (status == "tbc") {
-                                        buttontbc.classList.add("is-loading");
+                                        } else {
+
+                                             setTimeout(function () {
+                                                    $.ajax({
+                                                        url: url,
+                                                        type: 'GET',
+                                                        success: function (data) {
+                                                            window.location.reload();
+                                                        },
+                                                        error: function (data) {
+                                                            alert("{% trans "Error" %}")
+                                                            buttonava.classList.remove("is-loading");
+                                                            buttontbc.classList.remove("is-loading");
+                                                            buttonocc.classList.remove("is-loading");
+
+                                                            buttonava.disabled = false;
+                                                            buttontbc.disabled = false;
+                                                            buttonocc.disabled = false;
+
+                                                        }
+                                                    });
+                                                }, 0);
+                                        }
+
+
+                                    } else if (status === "occ") {
                                         buttonava.disabled = true;
-                                        buttonocc.disabled = true;
-                                        $.ajax({
-                                            url: url,
-                                            type: "GET",
-                                            success: function (data) {
-                                                console.log(data);
-                                                window.location.reload();
-                                            },
-                                            error: function (data) {
-                                                console.log(data);
-                                                alert("Не успяхме да променим статуса на стаята");
-                                            }
-                                        });
-                                    } else if (status == "occ") {
+                                        buttontbc.disabled = true;
+                                        buttonocc.disabled = false;
+
+                                        buttonocc.classList.add("is-loading");
                                         window.location.href = "/hotel/dashboard/" + hotelid + "/rooms/" + roomid + "/occupy/";
                                     }
-
-                                    // ajax
 
                                 }
                             </script>
@@ -145,8 +192,8 @@
                     </div>
                 </div>
             </div>
+        </section>
     </div>
-    </section>
     {% if hotel %}
         {% if hotel.approved == True %}
             <section class="section is-main-section">
@@ -182,7 +229,7 @@
                                             {% trans "Reservations" %}
                                         </h3>
                                             <h1 class="title">
-                                                {{ hotel.reservations.count | default_if_none:"Грешка" }}
+                                                {{ reservations.count | default_if_none:"Грешка" }}
                                             </h1>
                                         </div>
                                     </div>
