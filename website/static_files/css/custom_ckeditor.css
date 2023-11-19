@@ -1,0 +1,11 @@
+
+
+#cke_id_description {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.django-ckeditor-widget {
+    width: 100% !important;
+    max-width: 100% !important;
+}

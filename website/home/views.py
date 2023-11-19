@@ -22,7 +22,6 @@ def privacy(request):
     return render(request, 'privacy.html')
 
 
-
 def security_check(request):
     has_clearance_cookie = request.COOKIES.get('clearance', None)
 
