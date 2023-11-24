@@ -39,3 +39,7 @@ def security_check(request):
                 response.set_cookie('clearance', f'SECURITY_CLEARANCE_COOKIE-DO-NOT-EDIT-OR-DELETE--{request.user.id}--SECURITY_PASSED--DO-NOT-SHARE-COOKIES-{unix_now}-_-{unix_plus_ten}', max_age=3600, httponly=True, samesite='Strict', secure=True, path='/')
                 return response
         return render(request, 'security_check.html', {'form': form})
+
+
+def emergency_in_bg(request):
+    return render(request, 'emergency_in_bg.html')
