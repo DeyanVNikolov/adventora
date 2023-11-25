@@ -182,10 +182,6 @@
                 {% endif %}
             </div>
             {% if request.user.is_authenticated %}
-                <a href="https://justboil.me/bulma-admin-template/free-html-dashboard/" title="About" class="navbar-item has-divider is-desktop-icon-only">
-                    <span class="icon"><i class="mdi mdi-help-circle-outline"></i></span>
-                    <span>About</span>
-                </a>
                 <a title="{% trans "Log out" %}" class="navbar-item is-desktop-icon-only" href="{% url 'logout' %}">
                     <span class="icon"><i class="mdi mdi-logout"></i></span>
                     <span>{% trans "Log out" %}</span>
