@@ -6,6 +6,7 @@ import os
 from dotenv import load_dotenv
 
 from dotenv import load_dotenv
+
 load_dotenv('.env')
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -123,7 +124,8 @@ ROOT_URLCONF = 'adventora.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["adventora/templates"],
+        'DIRS': ["adventora/templates", "adventora/website/adventora/templates", "adventora/website/home/templates", "adventora/website/authentication/templates", "adventora/website/hotel/templates",
+                 "adventora/website/promocode/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -334,9 +336,10 @@ LOGIN_URL = 'sign-in'
 
 LOGOUT_URL = 'logout'
 
-GDAL_LIBRARY_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), '..', 'venv', 'Lib', 'site-packages', 'osgeo', 'gdal304.dll')
-GDAL_DATA_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), '..', 'venv', 'Lib', 'site-packages', 'osgeo', 'data')
-GEOS_LIBRARY_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), '..', 'venv', 'Lib', 'site-packages', 'osgeo', 'geos_c.dll')
+if not os.getenv("PYTHONANYWHERE_SITE"):
+    GDAL_LIBRARY_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), '..', 'venv', 'Lib', 'site-packages', 'osgeo', 'gdal304.dll')
+    GDAL_DATA_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), '..', 'venv', 'Lib', 'site-packages', 'osgeo', 'data')
+    GEOS_LIBRARY_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), '..', 'venv', 'Lib', 'site-packages', 'osgeo', 'geos_c.dll')
 
 LOCATION_FIELD = {
     'map.provider': 'openstreetmap',
