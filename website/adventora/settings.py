@@ -9,7 +9,7 @@ if not os.getenv("PYTHONANYWHERE_SITE"):
     print("LOCAL ENVIRONMENT")
     load_dotenv()
 else:
-    project_folder = os.path.expanduser('~/adventora')  # adjust as appropriate
+    project_folder = os.path.expanduser('~/adventora')
     print("PROJECT FOLDER: " + project_folder)
     load_dotenv(os.path.join(project_folder, '.env'))
 
@@ -115,7 +115,7 @@ SESSION_COOKIE_AGE = 60 * 60 * 3
 LANGUAGE_COOKIE_NAME = 'lang'
 LANGUAGE_COOKIE_SECURE = True
 
-LANGUAGE_COOKIE_AGE = 60 * 60 * 24 * 365
+LANGUAGE_COOKIE_AGE = 60 * 60 * 24 * 365 * 10
 
 INTERNAL_IPS = [
     '127.0.0.1',
