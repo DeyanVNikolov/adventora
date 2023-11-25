@@ -9,7 +9,7 @@ if not os.getenv("PYTHONANYWHERE_SITE"):
     print("LOCAL ENVIRONMENT")
     load_dotenv()
 else:
-    project_folder = os.path.expanduser('~/home/deyanvnikolov/adventora')  # adjust as appropriate
+    project_folder = os.path.expanduser('~/adventora')  # adjust as appropriate
     print("PROJECT FOLDER: " + project_folder)
     load_dotenv(os.path.join(project_folder, '.env'))
 
