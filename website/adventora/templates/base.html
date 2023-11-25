@@ -135,6 +135,7 @@
     </div>
     <div class="navbar-menu fadeIn animated faster" id="navbar-menu">
         <div class="navbar-end">
+
             {% if request.user.role == "hotel_manager" %}
                 <div class="navbar-item has-dropdown has-dropdown-with-icons has-divider is-hoverable">
                     <a class="navbar-link is-arrowless">
@@ -199,33 +200,39 @@
                     <span>{% trans "Sign up" %}</span>
                 </a>
             {% endif %}
-            <div class="navbar-item has-dropdown has-dropdown-with-icons has-divider is-hoverable">
-                <a class="navbar-link is-arrowless">
-                    <span class="mdi mdi-office-building-cog icon"></span>
-                    <span>{% trans "Language" %}</span>
-                    <i class="mdi mdi-chevron-down"></i>
+            <div class="navbar-item has-dropdown is-hoverable lang-dropdown">
+                {% get_current_language as LANGUAGE_CODE %}
+                {% get_available_languages as LANGUAGES %}
+                {% get_language_info_list for LANGUAGES as languages %}
+                <a class="navbar-link is-arrowless" id="current-language-indicator">
+                    <img src="https://flagcdn.com/w40/{% if LANGUAGE_CODE == "sv" %}se{% elif LANGUAGE_CODE == "uk" %}ua{% elif LANGUAGE_CODE == "en" %}gb{% elif LANGUAGE_CODE == "el" %}gr{% else %}{{ LANGUAGE_CODE | lower }}{% endif %}.png"
+                                 alt="" class="image" style="border-radius: 25px; border: 1px solid black; width: 85%; margin: auto">
                 </a>
-                <div class="navbar-dropdown">
-                    {% get_current_language as LANGUAGE_CODE %}
-                    {% get_available_languages as LANGUAGES %}
-                    {% get_language_info_list for LANGUAGES as languages %}
-                    <form action="{% url 'set_language' %}" method="post" class="select">{% csrf_token %}
-                        <input name="next" type="hidden" value="{{ redirect_to }}">
-                        <select name="language">
+<script>
+                    function loadinglanguageongoing() {
 
-                            {% for language in languages %}
-                                <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
-                                    {{ language.name_local }} ({{ language.code }})
-                                </option>
-                            {% endfor %}
-                        </select>
-                        <script>
-                            // when new option is selected, post
-                            document.querySelector('.select select').addEventListener('change', function () {
-                                this.form.submit();
-                            });
-                        </script>
-                    </form>
+                        let element = document.getElementById("current-language-indicator");
+                        element.innerHTML = '<progress class="progress is-success" style="width: 40px" max="100">30%</progress>';
+                    }
+                </script>
+                <div class="navbar-dropdown is-boxed is-right language-selector-div" style="min-width: 130px !important;">
+
+
+                    {% for language in languages %}
+                        <a class="navbar-item" id="{{ language.code }}-CHANGER" onclick="loadinglanguageongoing('{{ language.code }}')" hx-post="{% url 'set_language' %}" hx-include="this" hx-swap="none">
+                            <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+                            <input type="hidden" name="language" value="{{ language.code }}">
+                            <img src="https://flagcdn.com/w40/{% if language.code == "sv" %}se{% elif language.code == "uk" %}ua{% elif language.code == "en" %}gb{% elif language.code == "el" %}gr{% else %}{{ language.code | lower }}{% endif %}.png"
+                                 alt="" class="image" style="border-radius: 25px; border: 1px solid black; width: 30px;">
+                            <span>&nbsp;{{ language.name_local | capfirst }}</span>
+
+                        </a>
+                    {% endfor %}
+                    <script>
+                        document.addEventListener('htmx:afterRequest', function (evt) {
+                            window.location.reload();
+                        });
+                    </script>
                 </div>
             </div>
         </div>
