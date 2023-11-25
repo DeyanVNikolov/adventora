@@ -10,5 +10,3 @@ website/static/qr
 .flaskenv*
 !.env.project
 !.env.vault
-settings.py
-website/adventora/settings.py
