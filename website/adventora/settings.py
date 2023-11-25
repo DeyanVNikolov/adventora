@@ -5,10 +5,11 @@ from os import getenv
 import os
 from dotenv import load_dotenv
 
-from dotenv import load_dotenv
-
-
-load_dotenv()
+if not os.getenv("PYTHONANYWHERE_SITE"):
+    load_dotenv()
+else:
+    project_folder = os.path.expanduser('~/home/deyanvnikolov/adventora')  # adjust as appropriate
+    load_dotenv(os.path.join(project_folder, '.env'))
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
