@@ -83,6 +83,7 @@
                     </div>
                     <div class="level-right">
                         <div class="level-item">
+
                             <script>
                                 function updatestatus(status) {
                                     let buttonava = document.getElementById("ava");
@@ -188,6 +189,25 @@
                             <button id="tbc" onclick="updatestatus('tbc')" class="button is-warning">{% trans "To be cleaned" %}</button>
                             &nbsp;
                             <button id="occ" onclick="updatestatus('occ')" class="button is-danger">{% trans "Occupied" %}</button>
+
+                                                        <script>
+
+                                let status = '{{ room.status | lower }}';
+                                let buttonava = document.getElementById("ava");
+                                let buttontbc = document.getElementById("tbc");
+                                let buttonocc = document.getElementById("occ");
+
+                                console.log(status)
+
+                                if (status === "available") {
+                                    buttonava.disabled = true;
+                                } else if (status === "forcleaning") {
+                                    buttontbc.disabled = true;
+                                } else if (status === "occupied") {
+                                    buttonocc.disabled = true;
+                                }
+
+                            </script>
                         </div>
                     </div>
                 </div>
