@@ -201,8 +201,8 @@
                 {% get_available_languages as LANGUAGES %}
                 {% get_language_info_list for LANGUAGES as languages %}
                 <a class="navbar-link is-arrowless" id="current-language-indicator">
-                    <img src="https://flagcdn.com/w40/{% if LANGUAGE_CODE == "sv" %}se{% elif LANGUAGE_CODE == "uk" %}ua{% elif LANGUAGE_CODE == "en" %}gb{% elif LANGUAGE_CODE == "el" %}gr{% else %}{{ LANGUAGE_CODE | lower }}{% endif %}.png"
-                         alt="" class="image" style="border-radius: 25px; border: 1px solid black; margin:auto">
+                    <img src="https://flagcdn.com/w40/{% if LANGUAGE_CODE == "sv" %}se{% elif LANGUAGE_CODE == "sr" %}rs{% elif LANGUAGE_CODE == "uk" %}ua{% elif LANGUAGE_CODE == "en" %}gb{% elif LANGUAGE_CODE == "el" %}gr{% else %}{{ LANGUAGE_CODE | lower }}{% endif %}.png"
+                         alt="" class="image" style="border-radius: 25px; border: 1px solid black; width: 85%; margin: auto">
                 </a>
                 <script>
                     function loadinglanguageongoing() {
@@ -219,7 +219,7 @@
                            hx-swap="none">
                             <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
                             <input type="hidden" name="language" value="{{ language.code }}">
-                            <img src="https://flagcdn.com/w40/{% if language.code == "sv" %}se{% elif language.code == "uk" %}ua{% elif language.code == "en" %}gb{% elif language.code == "el" %}gr{% else %}{{ language.code | lower }}{% endif %}.png"
+                            <img src="https://flagcdn.com/w40/{% if language.code == "sv" %}se{% elif language.code == "sr" %}rs{% elif language.code == "uk" %}ua{% elif language.code == "en" %}gb{% elif language.code == "el" %}gr{% else %}{{ language.code | lower }}{% endif %}.png"
                                  alt="" class="image" style="border-radius: 25px; border: 1px solid black; width: 30px;">
                             <span>&nbsp;{{ language.name_local | capfirst }}</span>
 
@@ -246,7 +246,6 @@
             <article class="message is-danger">
                 <div class="message-header">
                     <p>{% trans "Error" %}</p>
-                    {#                    on click delete the parent article#}
                     <button class="delete" aria-label="delete"
                             onclick="this.parentElement.parentElement.remove();"></button>
                 </div>
@@ -291,12 +290,8 @@
 <footer class="footer is-fluid">
     <div class="container is-fluid">
         <div class="content has-text-centered is-fluid">
-
             <b><p>{% trans "Adventora supports small, medium and large businesses" %}</p></b>
-
             <br>
-
-
             <section class="section">
                 <div class="container">
                     <div class="columns is-multiline">
@@ -312,7 +307,7 @@
                                      alt="Top Rent A Car Logo">
                             </div>
                         </div>
-                        <!-- Add more columns for additional images -->
+
                     </div>
                     {% if LANGUAGE_CODE == "bg" %}
                         <a href="https://toprentacar.bg/?partner=adventora&channel=banner"><img style="width: 400px" src="https://toprentacar.bg/images/toprentacar-320x100-bg.png"
