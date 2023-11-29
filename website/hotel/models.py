@@ -46,7 +46,7 @@ class Room(models.Model):
     images = models.ImageField(upload_to='room_images/', null=True, blank=True)
 
     def __str__(self):
-        return str(self.id) + " #"+ str(self.number)
+        return str(self.number) + " (" + str(self.id) + ")"
 
     class Meta:
         verbose_name = _("Room")

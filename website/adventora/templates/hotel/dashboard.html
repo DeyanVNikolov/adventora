@@ -171,7 +171,17 @@
                                                     {% endif %}</td>
                                             <td class="is-actions-cell">
                                                 <div class="buttons is-right">
-                                                    <button onclick="window.location.href='/hotel/dashboard/{{ hotel.id }}/rooms/{{ room.id }}'" class="button is-small is-primary" type="button">
+                                                    <script>
+                                                        function seeroombtn() {
+                                                            let btn = document.getElementById("eyebuttonroom-{{ room.id }}");
+
+                                                            btn.classList.toggle("is-loading");
+                                                            // disable
+                                                            btn.disabled = true;
+                                                            window.location.href='/hotel/dashboard/{{ hotel.id }}/rooms/{{ room.id }}'
+                                                        }
+                                                    </script>
+                                                    <button onclick="seeroombtn()" id="eyebuttonroom-{{ room.id }}" class="button is-small is-primary" type="button">
                                                         <span class="icon"><i class="mdi mdi-eye"></i></span>
                                                     </button>
                                                 </div>

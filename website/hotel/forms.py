@@ -6,6 +6,9 @@ from django.utils.safestring import mark_safe
 from django.utils.translation import gettext_lazy as _
 from turnstile.fields import TurnstileField
 from django.contrib.gis import forms as gis_forms
+from django.contrib.admin import widgets
+
+from .models import Room
 
 
 class RegisterHotelForm(forms.Form):
@@ -40,7 +43,10 @@ class RegisterHotelForm(forms.Form):
 
     helper = FormHelper()
     helper.form_method = 'POST'
-    helper.add_input(Submit('submit', _('Register Hotel')))
+    helper.add_input(Submit('submit', _('Register Hotel'),
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
 
 
 class ConfirmAddressForm(forms.Form):
@@ -49,7 +55,10 @@ class ConfirmAddressForm(forms.Form):
     captcha = TurnstileField()
     helper = FormHelper()
     helper.form_method = 'POST'
-    helper.add_input(Submit('submit', _('Confirm Address')))
+    helper.add_input(Submit('submit', _('Confirm Address'),
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
 
 
 class EditHotelInfoForm(forms.Form):
@@ -66,7 +75,11 @@ class EditHotelInfoForm(forms.Form):
 
     helper = FormHelper()
     helper.form_method = 'POST'
-    helper.add_input(Submit('submit', _('Save Changes')))
+    # disable the button then submit the form to prevent double form submission
+    helper.add_input(Submit('submit', _('Save Changes'),
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
 
 
 class CreateRoom(forms.Form):
@@ -77,4 +90,28 @@ class CreateRoom(forms.Form):
 
     helper = FormHelper()
     helper.form_method = 'POST'
-    helper.add_input(Submit('submit', _('Create Room')))
+    helper.add_input(Submit('submit', _('Create Room'),
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
+
+
+class CreateReservationFormHotel(forms.Form):
+    # make room number to be a dropdown with all available rooms, from room model.py
+    room_choies = Room.objects.all()
+    room = forms.ModelChoiceField(queryset=room_choies, label=_('Room'), empty_label=_('Select Room'))
+
+    check_in = forms.DateField(label=_('Check In'), widget=forms.DateInput(attrs={'type': 'date'}))
+    check_out = forms.DateField(label=_('Check Out'), widget=forms.DateInput(attrs={'type': 'date'}))
+    guests = forms.IntegerField(label=_('Guests'))
+    name = forms.CharField(max_length=100, label=_('Name'))
+    email = forms.EmailField(max_length=254, label=_('Email'))
+    phone = forms.CharField(label=_("Phone"), required=True, widget=forms.TextInput(attrs={'placeholder': '+359 888 888 888'}))
+    idcardnumber = forms.CharField(max_length=50, label=_('ID Card Number'))
+
+    helper = FormHelper()
+    helper.form_method = 'POST'
+    helper.add_input(Submit('submit', _('Create Reservation'),
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )

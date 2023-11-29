@@ -2,7 +2,9 @@
 {% load static %}
 {% load i18n %}
 {% block content %}
+    {% load crispy_forms_tags %}
     {% load hotel_filters %}
+
 
 
     {#    <div class="has-text-centered">#}
@@ -170,16 +172,25 @@
                 <div class="card has-mobile-sort-spaced">
                     <div class="card-content">
                         <div class="columns has-text-centered">
-                            <div class="column is-half">
+                            <div class="column is-full">
                                 <div class="card">
                                     <div class="card-header has-text-centered" style="display: block !important;">
-                                        <center><h4 class="card-header-title is-title is-size-4 is-centered has-text-centered"><b>{% trans "Select from reservations for room" %} {{ room.number }}</b>
+                                        <script>
+                                            function addreservation() {
+                                                let button = document.getElementById("addreservebutton");
+                                                button.classList.add("is-loading");
+                                                button.disabled = true
+                                                window.location.href = "/hotel/dashboard/{{ hotel.id }}/add-reservation";
+                                            }
+                                        </script>
+                                        <center><h4 class="card-header-title is-title is-size-4 is-centered has-text-centered"><b>{% trans "Select from reservations for room" %} {{ room.number }} &nbsp;
+                                            <button onclick="addreservation()" id="addreservebutton" class="button is-primary"><span class="icon"><i style="font-size: 20px" class="mdi mdi-plus"></i></span></button></b>
                                         </h4></center>
                                     </div>
                                     <div class="card-body">
                                         <br>
                                         {% if reservations.count <= 0 %}
-                                            {% trans "No reservations for this room" %}
+                                            {% trans "No reservations for this room" %} &nbsp;
                                         {% else %}
                                             <script>
                                                 function showmodal(id) {
@@ -224,14 +235,15 @@
                                                                             <br>
                                                                             <br>
                                                                             Бъдете сигурни, че сте избрали правилната резервация.
-                                                                            <ul>
-                                                                        <li>Проверете внимателно датите и броя на гостите.</li>
-                                                                           <li>Проверете внимателно дали # на резервацията съвпада с тази на клиента.</li>
+                                                                        <ul>
+                                                                            <li>Проверете внимателно датите и броя на гостите.</li>
+                                                                            <li>Проверете внимателно дали # на резервацията съвпада с тази на клиента.</li>
                                                                         </ul>
 
-                                                                            Сигурни ли сте, че искате да изберете тази резервация?<br><br>
-                                                                            <button class="button is-primary" id="yesbutton-{{ reservation.id }}" onclick="occupy_reservation('{{ reservation.id }}')">Да</button>
-                                                                            <button class="button is-danger" id="nobutton-{{ reservation.id }}" onclick="hidemodal('{{ reservation.id }}')">Не</button>
+                                                                        Сигурни ли сте, че искате да изберете тази резервация?<br><br>
+                                                                        <button class="button is-primary" id="yesbutton-{{ reservation.id }}" onclick="occupy_reservation('{{ reservation.id }}')">Да
+                                                                        </button>
+                                                                        <button class="button is-danger" id="nobutton-{{ reservation.id }}" onclick="hidemodal('{{ reservation.id }}')">Не</button>
 
                                                                         </p>
                                                                     </div>
@@ -256,19 +268,7 @@
                                 </div>
 
                             </div>
-                            <div class="column is-half">
-                                <div class="card">
-                                    <div class="card-header has-text-centered" style="display: block !important;">
-                                        <center><h4 class="card-header-title is-title is-size-4 is-centered has-text-centered"><b>{% trans "Custom Customer" %}</b>
-                                        </h4></center>
-                                    </div>
-                                    <div class="card-body">
 
-
-                                    </div>
-                                </div>
-
-                            </div>
                         </div>
                     </div>
                 </div>

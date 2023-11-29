@@ -22,7 +22,10 @@ class LoginForm(forms.Form):
         fields = ('username', 'password')
 
     helper = FormHelper()
-    helper.add_input(Submit('submit', _('Login'), css_class='is-primary'))
+    helper.add_input(Submit('submit', _('Login'), css_class='is-primary',
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
     helper.form_method = 'POST'
 
 
@@ -50,7 +53,10 @@ class RegisterForm(UserCreationForm):
         fields = ('username', "first_name", "last_name", "email", "password1", "password2")
 
     helper = FormHelper()
-    helper.add_input(Submit('submit', _('Sign up'), css_class='button is-link'))
+    helper.add_input(Submit('submit', _('Sign up'), css_class='button is-link',
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
     helper.form_method = 'POST'
 
 
@@ -63,7 +69,10 @@ class RoleChoiceForm(forms.Form):
 
     helper = FormHelper()
     helper.form_method = 'post'
-    helper.layout = Layout('role', Submit('submit', _('Submit'), css_class='btn-primary'))
+    helper.layout = Layout('role', Submit('submit', _('Submit'), css_class='btn-primary',
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
 
 
 class CompleteNameForm(forms.Form):
@@ -71,7 +80,10 @@ class CompleteNameForm(forms.Form):
     last_name = forms.CharField(max_length=65, label=_("Last Name"), required=True)
 
     helper = FormHelper()
-    helper.add_input(Submit('submit', _('Save'), css_class='button is-link'))
+    helper.add_input(Submit('submit', _('Save'), css_class='button is-link',
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
     helper.form_method = 'POST'
 
 
@@ -79,7 +91,10 @@ class CompleteEmailForm(forms.Form):
     email = forms.EmailField(max_length=65, label=_("Email"), help_text=_("The email must be valid."), required=True)
 
     helper = FormHelper()
-    helper.add_input(Submit('submit', _('Save'), css_class='button is-link'))
+    helper.add_input(Submit('submit', _('Save'), css_class='button is-link',
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
     helper.form_method = 'POST'
 
 
@@ -89,7 +104,10 @@ class CompleteUserNameForm(forms.Form):
                                )
 
     helper = FormHelper()
-    helper.add_input(Submit('submit', _('Save'), css_class='button is-link'))
+    helper.add_input(Submit('submit', _('Save'), css_class='button is-link',
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
     helper.form_method = 'POST'
 
 
@@ -109,7 +127,10 @@ class EditProfileForm(forms.Form):
     role = forms.ChoiceField(choices=ROLE_CHOICES, widget=forms.RadioSelect, label=_('Choose a Role'))
 
     helper = FormHelper()
-    helper.add_input(Submit('submit', _('Save'), css_class='button is-link'))
+    helper.add_input(Submit('submit', _('Save'), css_class='button is-link',
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
     helper.form_method = 'POST'
 
 
@@ -121,7 +142,10 @@ class ChangePasswordForm(forms.Form):
     captcha = TurnstileField()
 
     helper = FormHelper()
-    helper.add_input(Submit('submit', _('Save'), css_class='button is-link'))
+    helper.add_input(Submit('submit', _('Save'), css_class='button is-link',
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
     helper.form_method = 'POST'
 
 
@@ -132,7 +156,10 @@ class SetPasswordFromSocialLogin(forms.Form):
     captcha = TurnstileField()
 
     helper = FormHelper()
-    helper.add_input(Submit('submit', _('Save'), css_class='button is-link'))
+    helper.add_input(Submit('submit', _('Save'), css_class='button is-link',
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
     helper.form_method = 'POST'
 
 
@@ -142,7 +169,10 @@ class DeleteAccountForm(forms.Form):
     captcha = TurnstileField()
 
     helper = FormHelper()
-    helper.add_input(Submit('submit', _('Delete Account'), css_class='button is-link'))
+    helper.add_input(Submit('submit', _('Delete Account'), css_class='button is-link',
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
     helper.form_method = 'POST'
 
 
@@ -156,7 +186,10 @@ class CitizenshipForm(forms.Form):
     citizenship = CountryField().formfield(label=_("Citizenship"), required=True)
 
     helper = FormHelper()
-    helper.add_input(Submit('submit', _('Save'), css_class='button is-link'))
+    helper.add_input(Submit('submit', _('Save'), css_class='button is-link',
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
     helper.form_method = 'POST'
 
 
@@ -164,7 +197,10 @@ class PhoneForm(forms.Form):
     phone = forms.CharField(label=_("Phone"), required=True, widget=forms.TextInput(attrs={'placeholder': '+359 888 888 888'}))
 
     helper = FormHelper()
-    helper.add_input(Submit('submit', _('Save'), css_class='button is-link'))
+    helper.add_input(Submit('submit', _('Save'), css_class='button is-link',
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
     helper.form_method = 'POST'
 
 
@@ -174,7 +210,10 @@ class TwoFactorEnableForm(forms.Form):
     captcha = TurnstileField()
 
     helper = FormHelper()
-    helper.add_input(Submit('submit', _('Enable'), css_class='button is-link'))
+    helper.add_input(Submit('submit', _('Enable'), css_class='button is-link',
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
     helper.form_method = 'POST'
 
 
@@ -184,7 +223,10 @@ class TwoFactorEnableConfirmForm(forms.Form):
     captcha = TurnstileField()
 
     helper = FormHelper()
-    helper.add_input(Submit('submit', _('Enable'), css_class='button is-link'))
+    helper.add_input(Submit('submit', _('Enable'), css_class='button is-link',
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
     helper.form_method = 'POST'
 
 
@@ -194,7 +236,10 @@ class TwoFactorForm(forms.Form):
     captcha = TurnstileField()
 
     helper = FormHelper()
-    helper.add_input(Submit('submit', _('Submit'), css_class='button is-link'))
+    helper.add_input(Submit('submit', _('Submit'), css_class='button is-link',
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
     helper.form_method = 'POST'
 
 
@@ -204,5 +249,8 @@ class TwoFactorDisableForm(forms.Form):
     captcha = TurnstileField()
 
     helper = FormHelper()
-    helper.add_input(Submit('submit', _('Disable'), css_class='button is-link'))
+    helper.add_input(Submit('submit', _('Disable'), css_class='button is-link',
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            )
+                     )
     helper.form_method = 'POST'

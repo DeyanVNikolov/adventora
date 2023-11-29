@@ -202,20 +202,21 @@
                 {% get_language_info_list for LANGUAGES as languages %}
                 <a class="navbar-link is-arrowless" id="current-language-indicator">
                     <img src="https://flagcdn.com/w40/{% if LANGUAGE_CODE == "sv" %}se{% elif LANGUAGE_CODE == "uk" %}ua{% elif LANGUAGE_CODE == "en" %}gb{% elif LANGUAGE_CODE == "el" %}gr{% else %}{{ LANGUAGE_CODE | lower }}{% endif %}.png"
-                                 alt="" class="image" style="border-radius: 25px; border: 1px solid black; width: 85%; margin: auto">
+                         alt="" class="image" style="border-radius: 25px; border: 1px solid black; margin:auto">
                 </a>
-<script>
+                <script>
                     function loadinglanguageongoing() {
 
                         let element = document.getElementById("current-language-indicator");
                         element.innerHTML = '<progress class="progress is-success" style="width: 40px" max="100">30%</progress>';
                     }
                 </script>
-                <div class="navbar-dropdown is-boxed is-right language-selector-div" style="min-width: 130px !important;">
+                <div class="navbar-dropdown is-boxed is-right language-selector-div" style="min-width: 130px !important; max-height: 50vh`; overflow:auto">
 
 
                     {% for language in languages %}
-                        <a class="navbar-item" id="{{ language.code }}-CHANGER" onclick="loadinglanguageongoing('{{ language.code }}')" hx-post="{% url 'set_language' %}" hx-include="this" hx-swap="none">
+                        <a class="navbar-item" id="{{ language.code }}-CHANGER" onclick="loadinglanguageongoing('{{ language.code }}')" hx-post="{% url 'set_language' %}" hx-include="this"
+                           hx-swap="none">
                             <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
                             <input type="hidden" name="language" value="{{ language.code }}">
                             <img src="https://flagcdn.com/w40/{% if language.code == "sv" %}se{% elif language.code == "uk" %}ua{% elif language.code == "en" %}gb{% elif language.code == "el" %}gr{% else %}{{ language.code | lower }}{% endif %}.png"

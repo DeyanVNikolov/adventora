@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 # import CustomUser model
 from .models import Hotel, Room
-from .forms import RegisterHotelForm, ConfirmAddressForm, CreateRoom, EditHotelInfoForm
+from .forms import RegisterHotelForm, ConfirmAddressForm, CreateRoom, EditHotelInfoForm, CreateReservationFormHotel
 from django.utils.translation import gettext as _
 from django.contrib.gis.geos import Point
 from django.contrib.gis import gdal
@@ -578,3 +578,86 @@ def occupyreversed(request, hotel_id, room_id, reservationid):
 
     messages.success(request, _('Successfully occupied room'))
     return redirect('room', hotel_id=hotel_id, room_id=room_id)
+
+
+def deleteroom(request, hotel_id, room_id):
+    try:
+        uuid.UUID(hotel_id)
+    except ValueError:
+        messages.warning(request, _('We cannot find the hotel you are looking for'))
+        return redirect('dashboard')
+
+    hotel = Hotel.objects.filter(id=hotel_id).first()
+    if not hotel:
+        messages.warning(request, _('We cannot find the hotel you are looking for'))
+        return redirect('dashboard')
+
+    if request.user.hotel != hotel:
+        messages.warning(request, _('You do not have permission to view this page'))
+        return redirect('dashboard')
+
+    try:
+        uuid.UUID(room_id)
+    except ValueError:
+        messages.warning(request, _('We cannot find the room you are looking for'))
+        return redirect('dashboard')
+
+    room = hotel.rooms.filter(id=room_id).first()
+    if not room:
+        messages.warning(request, _('We cannot find the room you are looking for'))
+        return redirect('dashboard')
+
+    room.delete()
+    messages.success(request, _('Successfully deleted room'))
+    return redirect('dashboard')
+
+
+def add_reservation(request, hotel_id):
+    try:
+        uuid.UUID(hotel_id)
+    except ValueError:
+        messages.warning(request, _('We cannot find the hotel you are looking for'))
+        return redirect('dashboard')
+
+    hotel = Hotel.objects.filter(id=hotel_id).first()
+    if not hotel:
+        messages.warning(request, _('We cannot find the hotel you are looking for'))
+        return redirect('dashboard')
+
+    if request.user.hotel != hotel:
+        messages.warning(request, _('You do not have permission to view this page'))
+        return redirect('dashboard')
+
+    if request.method == 'POST':
+        reserveform = CreateReservationFormHotel(request.POST)
+        if reserveform.is_valid():
+            room = reserveform.cleaned_data['room']
+            checkin = reserveform.cleaned_data['check_in']
+            checkout = reserveform.cleaned_data['check_out']
+            name = reserveform.cleaned_data['name']
+            guests = reserveform.cleaned_data['guests']
+            idcardnumber = reserveform.cleaned_data['idcardnumber']
+
+            days = (checkout - checkin).days
+            price = days * room.price
+
+            reservation = room.reservations.create(
+                hotel=hotel,
+                room=room,
+                reserved_by=f"{name} / {idcardnumber}",
+                checkin=checkin,
+                checkout=checkout,
+                price=price,
+                status='Pending'
+            )
+            reservation.save()
+            messages.success(request, _('Successfully added reservation'))
+            return redirect('dashboard')
+
+
+    context = {
+        'hotel': hotel,
+        'reserveform': CreateReservationFormHotel(request.POST)
+    }
+
+    return render(request, 'hotel/add_reservation.html', context=context)

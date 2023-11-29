@@ -72,7 +72,37 @@
                         <div class="level-item">
                             <h1 class="title">
                                 {% trans "Room" %} {{ room.number }}
-                                <button onclick="" class="button is-danger" type="button">
+                                <script>
+                                    function deleteroom() {
+                                        let roomid = '{{ room.id }}';
+                                        let hotelid = '{{ hotel.id }}';
+
+                                        r = confirm("Сигурни ли сте, че искате да изтриете стаята? Това действие е необратимо.");
+                                        if (r === true) {
+
+                                            let buttonava = document.getElementById("ava");
+                                            let buttontbc = document.getElementById("tbc");
+                                            let buttonocc = document.getElementById("occ");
+
+                                            buttontbc.disabled = true;
+                                            buttonocc.disabled = true;
+                                            buttonava.disabled = true;
+
+                                            buttonava.classList.add("is-loading");
+                                            buttontbc.classList.add("is-loading");
+                                            buttonocc.classList.add("is-loading");
+
+                                            let deletebutton = document.getElementById("deletebutton");
+                                            deletebutton.disabled = true;
+                                            deletebutton.classList.add("is-loading");
+
+
+
+                                            window.location.href = "/hotel/dashboard/" + hotelid + "/rooms/" + roomid + "/delete/";
+                                        }
+                                    }
+                                </script>
+                                <button onclick="deleteroom()" class="button is-danger" type="button" id="deletebutton">
 
                                     <span class="icon"><i style="font-size: 20px" class="mdi mdi-delete"></i></span>
                                 </button>
@@ -125,7 +155,17 @@
                                                 buttonava.disabled = false;
                                                 buttontbc.disabled = false;
                                                 buttonocc.disabled = false;
-                                                return;
+
+                                                let status = '{{ room.status | lower }}';
+
+
+                                                if (status === "available") {
+                                                    buttonava.disabled = true;
+                                                } else if (status === "forcleaning") {
+                                                    buttontbc.disabled = true;
+                                                } else if (status === "occupied") {
+                                                    buttonocc.disabled = true;
+                                                }
                                             } else {
                                                 setTimeout(function () {
                                                     $.ajax({
@@ -150,26 +190,26 @@
                                             }
                                         } else {
 
-                                             setTimeout(function () {
-                                                    $.ajax({
-                                                        url: url,
-                                                        type: 'GET',
-                                                        success: function (data) {
-                                                            window.location.reload();
-                                                        },
-                                                        error: function (data) {
-                                                            alert("{% trans "Error" %}")
-                                                            buttonava.classList.remove("is-loading");
-                                                            buttontbc.classList.remove("is-loading");
-                                                            buttonocc.classList.remove("is-loading");
+                                            setTimeout(function () {
+                                                $.ajax({
+                                                    url: url,
+                                                    type: 'GET',
+                                                    success: function (data) {
+                                                        window.location.reload();
+                                                    },
+                                                    error: function (data) {
+                                                        alert("{% trans "Error" %}")
+                                                        buttonava.classList.remove("is-loading");
+                                                        buttontbc.classList.remove("is-loading");
+                                                        buttonocc.classList.remove("is-loading");
 
-                                                            buttonava.disabled = false;
-                                                            buttontbc.disabled = false;
-                                                            buttonocc.disabled = false;
+                                                        buttonava.disabled = false;
+                                                        buttontbc.disabled = false;
+                                                        buttonocc.disabled = false;
 
-                                                        }
-                                                    });
-                                                }, 0);
+                                                    }
+                                                });
+                                            }, 0);
                                         }
 
 
@@ -190,7 +230,7 @@
                             &nbsp;
                             <button id="occ" onclick="updatestatus('occ')" class="button is-danger">{% trans "Occupied" %}</button>
 
-                                                        <script>
+                            <script>
 
                                 let status = '{{ room.status | lower }}';
                                 let buttonava = document.getElementById("ava");

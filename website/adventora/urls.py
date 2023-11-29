@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls.i18n import i18n_patterns
+from django.views.i18n import JavaScriptCatalog
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,4 +28,5 @@ urlpatterns = [
     path('hotel/', include('hotel.urls')),
 
     path('lang/', include('django.conf.urls.i18n')),
+    path('jsi18n', JavaScriptCatalog.as_view(), name='js-catlog'),
 ]

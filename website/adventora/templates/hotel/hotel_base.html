@@ -1,6 +1,30 @@
 {% load static %}
 {% load i18n %}
 {% load crispy_forms_tags %}
+<script>
+
+            function pageShown(evt){
+                if (evt.persisted) {
+                    // reload
+                    console.log("pageshow event handler called.  The page was just restored from the Page Cache.");
+                    window.location.reload();
+                } else {
+                    console.log("pageshow event handler called for the initial load.  This is the same as the load event.");
+                }
+            }
+
+            function pageHidden(evt){
+                if (evt.persisted) {
+                    console.log("pagehide event handler called.  The page was suspended and placed into the Page Cache.");
+                } else {
+                    console.log("pagehide event handler called for page destruction.  This is the same as the unload event.");
+                }
+            }
+
+            window.addEventListener("pageshow", pageShown, false);
+            window.addEventListener("pagehide", pageHidden, false);
+
+        </script>
             <style>
                 #map_address {
                     width: 100% !important;
