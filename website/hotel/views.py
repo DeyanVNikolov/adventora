@@ -661,3 +661,7 @@ def add_reservation(request, hotel_id):
     }
 
     return render(request, 'hotel/add_reservation.html', context=context)
+
+
+def photos(request):
+    return render(request, 'hotel/photos.html')

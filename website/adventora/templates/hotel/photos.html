@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+    <style>
+    .locationwidget {
+        display: none !important;
+    }
+    </style>
+
+
+    {% block addhead %}
+
+    {% endblock %}
+
+    <p style="display: none">
+        {% block show %}true;{% endblock %}
+    </p>
+
+    <script>
+        // add tags has-aside-left has-aside-mobile-transition has-navbar-fixed-top has-aside-expanded to html
+        document.getElementsByTagName("html")[0].classList.add("has-aside-left", "has-aside-mobile-transition", "has-navbar-fixed-top", "has-aside-expanded");
+    </script>
+    <style>
+        .container.is-fluid {
+            padding: 0;
+        }
+    </style>
+    <div id="app" style="padding-left: 15px; padding-right: 15px">
+
+        {% include "hotel/hotel_base.html" %}
+        <section class="section is-title-bar">
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <ul>
+                            <li>{% trans "Admin" %}</li>
+                            <li>{% trans "Dashboard" %}</li>
+                            <li>{% trans "Photos" %}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="buttons is-right">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero is-hero-bar">
+            <div class="hero-body">
+                <div class="level">
+                    <div class="level-left">
+                        <div class="level-item"><h1 class="title">
+                            {% trans "Add Photos" %}
+                        </h1></div>
+                    </div>
+                    <div class="level-right" style="display: none;">
+                        <div class="level-item"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container has-text-centered" style="max-width: 50vw !important;">
+
+
+            <form method="post" enctype="multipart/form-data">
+
+{#                input for photos#}
+
+                <input type="file" name="photos" multiple>
+                {% csrf_token %}
+                <br>
+
+                <button class="button is-primary" type="submit">{% trans "Upload" %}</button>
+
+            </form>
+
+
+
+
+
+        </div>
+
+    </div>
+
+    <script>
+        {#    change cursor when hovering#}
+        $('.captcha').hover(function () {
+            $(this).css('cursor', 'pointer');
+        }, function () {
+            $(this).css('cursor', 'auto');
+        });
+
+        $('.captcha').click(function () {
+            $.getJSON("/captcha/refresh/", function (result) {
+                $('.captcha').attr('src', result['image_url']);
+                $('#id_captcha_0').val(result['key'])
+            });
+        });
+    </script>
+{% endblock %}
