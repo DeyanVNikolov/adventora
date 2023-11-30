@@ -27,6 +27,7 @@
     <script src="{% static 'js/main.js' %}"></script>
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css">
     <style>
         /* Custom styling for the footer */
         .footer {
@@ -125,6 +126,10 @@
             <a class="navbar-item" href="{% url 'home' %}">
                 <span class="mdi mdi-home-account icon"></span>
                 <span>{% trans "Homepage" %}</span>
+            </a>
+            <a class="navbar-item" href="/hotels">
+                <span class="mdi mdi-bed icon"></span>
+                <span>{% trans "Hotels" %}</span>
             </a>
         </div>
     </div>

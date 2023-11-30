@@ -1,0 +1,148 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+    <style>
+
+
+        .flex-column-card {
+            display: flex !important;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card-header {
+            width: 100%;
+        }
+
+        .card-footer {
+            width: 100%;
+        }
+
+        .carousel {
+            overflow: hidden;
+        }
+
+        .rating {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rating input {
+            display: none;
+        }
+
+        .rating label {
+            font-size: 2rem;
+            color: #ccc;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .rating input:disabled ~ label {
+            color: #ffdd57;
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid;
+            width: 100%;
+        }
+    </style>
+
+    <section class="section">
+        <div class="columns box ">
+            <div id="carousel-demo" class="carousel column">
+                {% if hotel_images %}
+                    {% for image in hotel_images %}
+                        <div class="item-1">
+                            <figure class="image is-3by2">
+                                <img src="{{ image }}">
+                            </figure>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="item-1">
+                        <figure class="image is-3by2">
+                            <img src="https://via.placeholder.com/1920x1080">
+                        </figure>
+                    </div>
+                {% endif %}
+
+            </div>
+            <div class="column is-1"></div>
+
+            <div class="column is-4 card flex-column-card">
+                <header class="card-header">
+                    <p class="card-header-title is-size-2" id="card-header-title-main">
+                        {{ hotel.name }} &nbsp;
+                    </p>
+                    <a href="#" class="card-header-icon" aria-label="more options">
+            <span class="icon">
+              <i class="fas fa-info-circle" aria-hidden="true"></i>
+            </span>
+                    </a>
+
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        <p>{{ hotel.description | safe }}</p>
+                    </div>
+                </div>
+                <footer class="card-footer">
+
+                </footer>
+            </div>
+
+        </div>
+    </section>
+    <!--End of carousel box-->
+
+    <!--Start of list box-->
+    <section class="section">
+    <style>
+        .columns-rooms {
+            margin: 10px;
+            border-radius: 25px;
+        }
+    </style>
+        {% for room in rooms %}
+        <div class="column is-one-quarter">
+                <div class="card">
+                    <div class="card-header">
+                        <h1 style="margin: 10px auto;" class="title is-size-5 has-text-weight-bold">{% trans "Room" %} #{{ room.number }}</h1>
+                    </div>
+                    <div class="card-image has-img">
+                        <figure class="image is-4by3">
+                            <img src="/static/hotels/rooms/{{ room.id }}.png" style="object-fit: cover" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-body">
+                        {{ room.description | safe }}
+                    </div>
+                    <div class="card-footer">
+                        <button style="margin: 10px auto; width: 70%; border-radius: 20px" onclick="window.location.href='/room/{{ room.id }}'"
+                                class="button is-primary">{% trans "Reserve" %}</button>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script>
+        bulmaCarousel.attach('#carousel-demo', {
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            loop: true,
+        });
+    </script>
+
+
+{% endblock %}

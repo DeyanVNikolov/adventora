@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="columns is-8 is-variable ">
+                    <div class="column is-two-thirds has-text-left">
+                        <h1 class="title is-1">{% trans "Reserve Room" %} #{{ room.number }} @<br> {{ hotel.name }}</h1>
+                        <hr>
+                        <p class="is-size-4">{{ room.description | safe }}</p>
+                    </div>
+                    <div class="column is-one-third has-text-left">
+                        {% trans "Price / Night" %}
+                        <h2 class="title is-2 has-text-primary">{{ room.price }} BGN</h2>
+                        <br>
+                    <form method="post">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+                        <div class="field">
+                            <label class="label">{% trans "Name" %}</label>
+                            <div class="control">
+                                <input class="input is-medium" type="text" value="{% if request.user.is_authenticated %}{{ request.user.first_name }} {{ request.user.last_name }}" readonly
+                                       style="cursor:not-allowed " {% else %}"{% endif %}>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">{% trans "Email" %}</label>
+                            <div class="control">
+                                <input class="input is-medium" type="text" value="{% if request.user.is_authenticated %}{{ request.user.email }}" readonly
+                                       style="cursor:not-allowed"{% else %}"{% endif %}>
+                            </div>
+                        </div>
+                        <div class="field">
+
+                            <label class="label">{% trans "How many nights?" %}</label>
+                            <div class="control">
+                                <input class="input is-medium" type="number" name="nights" min="1" value="1">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">{% trans "How many people?" %}</label>
+                            <div class="control">
+                                <input class="input is-medium" type="number" name="people" min="1" value="1">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">{% trans "Check-in" %}</label>
+                            <div class="control">
+                                <input class="input is-medium" type="date" name="checkin" min="1" value="1"/>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">{% trans "Check-out" %}</label>
+                            <div class="control">
+                                <input class="input is-medium" type="date" name="checkout" min="1" value="1"/>
+                            </div>
+                        </div>
+
+                        <br><br>
+                        {% trans "TOTAL" %}
+                        <h2 class="title is-2 has-text-primary" id="total">LOADING..</h2>
+
+                        <script>
+                            // on page load
+                            window.addEventListener("load", function () {
+                                var price = parseFloat("{{ room.price }}")
+                                var nights = document.getElementsByName("nights")[0];
+                                var total = document.getElementById("total");
+                                total.innerHTML = price * nights.value + " BGN";
+                            });
+                            //
+                            var price = parseFloat("{{ room.price }}")
+
+                            var nights = document.getElementsByName("nights")[0];
+                            var total = document.getElementById("total");
+                            nights.addEventListener("change", function () {
+                                total.innerHTML = price * nights.value + " BGN";
+                            });
+                        </script>
+                        <div class="control">
+                            <button type="submit" class="button is-link is-fullwidth has-text-weight-medium is-medium">{% trans "Reserve" %}</button>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
