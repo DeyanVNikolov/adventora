@@ -6,46 +6,202 @@
     {% get_available_languages as LANGUAGES %}
     {% get_language_info_list for LANGUAGES as languages %}
 
+<style>
+    body {
+      background-color: #f8f8f8;
+    }
 
-    <div id="description" class="description"><p>Good morning!</p></div>
+    .images-container {
+      margin-top: -80px;
 
-    <script>
-        const translatedContent = document.getElementById('.description p');
-        const contentToTranslate = document.querySelector('.description p').textContent;
+    }
 
-        window.addEventListener('load', () => {
-            {% get_current_language as LANGUAGE_CODE %}
-            const targetLanguage = '{{ LANGUAGE_CODE }}'
+    .hero {
+      background-image: url('hotel-image.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+    }
 
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
 
-            // Call the translation API
-            fetch(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=bg&tl=${targetLanguage}&dt=t&q=${contentToTranslate}`, {
-                method: 'POST',
-                headers:
-                    {
-                        'Content-Type':
-                            'application/json'
-                    }
-                ,
-                body: JSON.stringify({
-                    q: contentToTranslate,
-                    target: targetLanguage
-                })
-            })
-                .then(response => response.json())
-                .then(data => {
-                    const translatedText = data.data.translations[0].translatedText;
-                    translatedContent.textContent = translatedText;
-                })
-                .catch(error => {
-                    console.error('Translation error:', error);
-                });
-        })
-        ;
-    </script>
+    .search-box {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .button.is-primary {
+      background-color: #ff3860;
+      border-color: #ff3860;
+    }
 
 
-    <img src="{% static 'example.jpg' %}" alt="My image">
+    .tile-content {
+      color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .tile-content h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    .tile-content p {
+      font-size: 1em;
+      margin: 0;
+      color: black;
+    }
+
+    .tile-section {
+      margin-top: -150px;
+    }
+
+    .tile-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .tile-child{
+      height: 500px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url("https://bulma.io/images/placeholders/640x480.png");
+    }
+    @media (max-width: 768px){
+      .tile-child{
+        height: 400px;
+      }
+    }
+  </style>
+
+
+  <section class="hero is-medium is-primary">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+         Welcome to Adventora
+        </h1>
+        <p class="subtitle">
+          Find your perfect stay with us
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tile-section">
+    <div class="tile is-ancestor tile-container">
+      <div class="tile is-vertical is-8">
+        <div class="tile">
+          <div class="tile is-parent is-vertical">
+            <article class="tile is-child notification tile-child">
+              <p class="title">Vertical...</p>
+            </article>
+            <article class="tile is-child notification  tile-child">
+              <p class="title">...tiles</p>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification tile-child">
+              <p class="title">Middle tile</p>
+            </article>
+          </div>
+        </div>
+        <div class="tile is-parent">
+          <article class="tile is-child notification tile-child">
+            <p class="title">Wide tile</p>
+            <div class="content">
+              <!-- Content -->
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section notification is-primary">
+  <div class="level ">
+    <div class="level-item has-text-centered">
+      <div>
+        <p class="heading is-size-2">Регистрирани хотелa</p>
+        <p class="title is-size-1">47</p>
+      </div>
+    </div>
+    <div class="level-item has-text-centered">
+      <div>
+        <p class="heading is-size-4">Доволни клиента</p>
+        <p class="title">102</p>
+      </div>
+    </div>
+
+    <div class="level-item has-text-centered">
+      <div>
+        <p class="heading is-size-4">Направени резервации</p>
+        <p class="title">57</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <div class="search-box">
+          <h2 class="title is-4">Book Your Stay</h2>
+          <div class="field">
+            <label class="label">Location</label>
+            <div class="control">
+              <input class="input" type="text" placeholder="City, Country">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Check-in Date</label>
+            <div class="control">
+              <input class="input" type="date">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Check-out Date</label>
+            <div class="control">
+              <input class="input" type="date">
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+              <button class="button is-primary is-fullwidth">Search Hotels</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+  <script>
+    // const carouselContainers = document.querySelectorAll(".carousel-item")
+
+    // carouselContainers.forEach(container => {
+    //   container.innerHTML = container.innerHTML + ` <figure class="image is-3by2">
+    //         <img src="https://bulma.io/images/placeholders/256x256.png">
+    //       </figure>`
+    // })
+
+    // bulmaCarousel.attach('#carousel-demo', {
+    //   slidesToScroll: 1,
+    //   slidesToShow: 1,
+    //   loop: true,
+    //   infinite: true,
+    // });
+  </script>
 
 
 

@@ -41,7 +41,7 @@ class Room(models.Model):
     occupied = models.BooleanField(default=False)
     occupied_by = models.CharField(max_length=5000, null=True, blank=True)
     status = models.CharField(max_length=100, null=True, blank=True)
-    price = models.DecimalField(max_digits=11, decimal_places=2, null=True, blank=True)
+    price = models.IntegerField(null=True, blank=True)
     capacity = models.IntegerField(null=True, blank=True)
     images = models.ImageField(upload_to='room_images/', null=True, blank=True)
 
@@ -62,6 +62,7 @@ class Reservation(models.Model):
     checkout = models.DateField(null=True, blank=True)
     price = models.DecimalField(max_digits=11, decimal_places=2, null=True, blank=True)
     status = models.CharField(max_length=100, null=True, blank=True)
+    people = models.IntegerField(null=True, blank=True)
 
     def __str__(self):
         return self.reserved_by
