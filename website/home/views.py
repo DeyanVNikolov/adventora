@@ -1,5 +1,7 @@
 import datetime
+import os
 import uuid
+from pathlib import Path
 
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -79,6 +81,12 @@ def hotel(request, hotel_id):
         return redirect('hotels')
 
     hotel_images = []
+    BASE_DIR = Path(__file__).resolve().parent.parent
+
+    image_dir = f'{BASE_DIR}/static/cover/hotel/{hotel.id}'
+    if os.path.isdir(image_dir):
+        for filename in os.listdir(image_dir):
+            hotel_images.append(filename)
 
     rooms = Room.objects.filter(hotel=hotel)
 

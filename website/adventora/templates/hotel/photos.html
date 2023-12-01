@@ -6,9 +6,9 @@
 {% block content %}
 
     <style>
-    .locationwidget {
-        display: none !important;
-    }
+        .locationwidget {
+            display: none !important;
+        }
     </style>
 
 
@@ -70,18 +70,51 @@
 
             <form method="post" enctype="multipart/form-data">
 
-{#                input for photos#}
+                {#                input for photos#}
 
                 <input type="file" name="photos" multiple>
                 {% csrf_token %}
-                <br>
+                <br><br>
 
                 <button class="button is-primary" type="submit">{% trans "Upload" %}</button>
 
             </form>
 
+            <div class="columns is-multiline">
+            <script>
+                function deletephoto(id) {
+                    // disable each button with class delbtn and set class to is-loading
+                    $('.delbtn').each(function () {
+                        $(this).attr('disabled', true);
+                        $(this).addClass('is-loading');
+                    });
 
-
+                    $.ajax({
+                        url: '/hotel/dashboard/{{ hotel.id }}/deletephoto/' + id,
+                        type: 'get',
+                        success: function (data) {
+                            location.reload();
+                        }
+                    });
+                }
+            </script>
+                {% for image in hotel_images %}
+                <div class="column is-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="/static/cover/hotel/{{ hotel.id }}/{{ image }}" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                               <button class="button is-danger delbtn" onclick="deletephoto('{{ image }}')">ИЗТРИЙ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
 
 
         </div>

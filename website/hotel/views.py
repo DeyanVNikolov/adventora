@@ -11,8 +11,12 @@ from .forms import RegisterHotelForm, ConfirmAddressForm, CreateRoom, EditHotelI
 from django.utils.translation import gettext as _
 from django.contrib.gis.geos import Point
 from django.contrib.gis import gdal
+from pathlib import Path
+
 
 from authentication.models import CustomUser
+
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 def security_check(view_func):
@@ -663,5 +667,76 @@ def add_reservation(request, hotel_id):
     return render(request, 'hotel/add_reservation.html', context=context)
 
 
+@login_required
+@is_current_user_role_manager
+@is_address_confirmed
+@is_hotel_confirmed
+@security_check
 def photos(request):
-    return render(request, 'hotel/photos.html')
+    hotel = request.user.hotel
+    hotel_images = []
+    BASE_DIR = Path(__file__).resolve().parent.parent
+
+    image_dir = f'{BASE_DIR}/static/cover/hotel/{hotel.id}'
+    if os.path.isdir(image_dir):
+        for filename in os.listdir(image_dir):
+            hotel_images.append(filename)
+
+    if request.method == "POST":
+        photos = request.FILES.getlist('photos')
+        # save each photo with hotel id in folder /static/cover/hotel/HOTELID/HOTELID-1.png HOTELID-2.png etc.
+        hotel = request.user.hotel
+        if not hotel:
+            messages.warning(request, _('You have not registered a hotel yet'))
+            return redirect('register-hotel')
+
+        # take each of the files and save them in the folder /static/cover/hotel/HOTELID/ with name HOTEL_ID and index from 1
+        # if hotel fodler does not exist, create it
+        if not os.path.exists(f"{BASE_DIR}/static/cover/hotel/{hotel.id}"):
+            os.makedirs(f"{BASE_DIR}/static/cover/hotel/{hotel.id}")
+        # start the index from the number of files in the folder, if there are 3 files, start from 3
+        index = len(os.listdir(f"{BASE_DIR}/static/cover/hotel/{hotel.id}"))
+        for photo in photos:
+            with open(f"{BASE_DIR}/static/cover/hotel/{hotel.id}/{hotel.id}-{index}.png", 'wb+') as destination:
+                for chunk in photo.chunks():
+                    destination.write(chunk)
+            index += 1
+
+        messages.success(request, _('Successfully uploaded photos'))
+        return redirect('photos')
+
+
+
+    context = {
+        'hotel': hotel,
+        'hotel_images': hotel_images,
+    }
+
+    return render(request, 'hotel/photos.html', context)
+
+
+def deletephoto(request, hotel_id, photo_id):
+    try:
+        uuid.UUID(hotel_id)
+    except ValueError:
+        messages.warning(request, _('We cannot find the hotel you are looking for'))
+        return redirect('dashboard')
+
+    hotel = Hotel.objects.filter(id=hotel_id).first()
+    if not hotel:
+        messages.warning(request, _('We cannot find the hotel you are looking for'))
+        return redirect('dashboard')
+
+    if request.user.hotel != hotel:
+        messages.warning(request, _('You do not have permission to view this page'))
+        return redirect('dashboard')
+
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    photo_path = f"{BASE_DIR}/static/cover/hotel/{hotel.id}/{photo_id}"
+    if os.path.exists(photo_path):
+        os.remove(photo_path)
+        messages.success(request, _('Successfully deleted photo'))
+        return redirect('photos')
+    else:
+        messages.warning(request, _('Photo not found'))
+        return redirect('photos')

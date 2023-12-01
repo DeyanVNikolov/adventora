@@ -59,21 +59,13 @@
     <section class="section">
         <div class="columns box ">
             <div id="carousel-demo" class="carousel column">
-                {% if hotel_images %}
                     {% for image in hotel_images %}
                         <div class="item-1">
                             <figure class="image is-3by2">
-                                <img src="{{ image }}">
+                                <img src="/static/cover/hotel/{{ hotel.id }}/{{ image }}">
                             </figure>
                         </div>
                     {% endfor %}
-                {% else %}
-                    <div class="item-1">
-                        <figure class="image is-3by2">
-                            <img src="https://via.placeholder.com/1920x1080">
-                        </figure>
-                    </div>
-                {% endif %}
 
             </div>
             <div class="column is-1"></div>
