@@ -207,7 +207,7 @@
                 {% get_language_info_list for LANGUAGES as languages %}
                 <a class="navbar-link is-arrowless" id="current-language-indicator">
                     <img src="https://flagcdn.com/w40/{% if LANGUAGE_CODE == "sv" %}se{% elif LANGUAGE_CODE == "sr" %}rs{% elif LANGUAGE_CODE == "uk" %}ua{% elif LANGUAGE_CODE == "en" %}gb{% elif LANGUAGE_CODE == "el" %}gr{% else %}{{ LANGUAGE_CODE | lower }}{% endif %}.png"
-                         alt="" class="image" style="border-radius: 25px; border: 1px solid black; width: 85%; margin: auto">
+                         alt="" class="image" style="border-radius: 25px; border: 1px solid black; margin: auto">
                 </a>
                 <script>
                     function loadinglanguageongoing() {
