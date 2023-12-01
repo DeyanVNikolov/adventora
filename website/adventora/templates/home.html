@@ -87,103 +87,40 @@
   </style>
 
 
-  <section class="hero is-medium is-primary">
+  <section class="hero is-medium is-primary" style="background-image: url('/static/img/logo/maxresdefault.png'); border-radius: 15px">
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
-         Welcome to Adventora
+         {% trans "Welcome to Adventora" %}
         </h1>
         <p class="subtitle">
-          Find your perfect stay with us
+          {% trans "Find your perfect stay with us" %}
         </p>
       </div>
     </div>
-  </section>
-
-  <section class="section tile-section">
-    <div class="tile is-ancestor tile-container">
-      <div class="tile is-vertical is-8">
-        <div class="tile">
-          <div class="tile is-parent is-vertical">
-            <article class="tile is-child notification tile-child">
-              <p class="title">Vertical...</p>
-            </article>
-            <article class="tile is-child notification  tile-child">
-              <p class="title">...tiles</p>
-            </article>
-          </div>
-          <div class="tile is-parent">
-            <article class="tile is-child notification tile-child">
-              <p class="title">Middle tile</p>
-            </article>
-          </div>
-        </div>
-        <div class="tile is-parent">
-          <article class="tile is-child notification tile-child">
-            <p class="title">Wide tile</p>
-            <div class="content">
-              <!-- Content -->
-            </div>
-          </article>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section notification is-primary">
+      <hr>
   <div class="level ">
     <div class="level-item has-text-centered">
       <div>
-        <p class="heading is-size-2">Регистрирани хотелa</p>
-        <p class="title is-size-1">47</p>
+        <p class="heading is-size-2">{% trans "Registered hotels" %}</p>
+        <p class="title is-size-1">XX</p>
       </div>
     </div>
     <div class="level-item has-text-centered">
       <div>
-        <p class="heading is-size-4">Доволни клиента</p>
-        <p class="title">102</p>
+        <p class="heading is-size-4">{% trans "Happy Customers" %}</p>
+        <p class="title">XX</p>
       </div>
     </div>
 
     <div class="level-item has-text-centered">
       <div>
-        <p class="heading is-size-4">Направени резервации</p>
-        <p class="title">57</p>
+        <p class="heading is-size-4">{% trans "Total Reservations" %}</p>
+        <p class="title">XX</p>
       </div>
     </div>
   </div>
 </section>
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-half">
-        <div class="search-box">
-          <h2 class="title is-4">Book Your Stay</h2>
-          <div class="field">
-            <label class="label">Location</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="City, Country">
-            </div>
-          </div>
-          <div class="field">
-            <label class="label">Check-in Date</label>
-            <div class="control">
-              <input class="input" type="date">
-            </div>
-          </div>
-          <div class="field">
-            <label class="label">Check-out Date</label>
-            <div class="control">
-              <input class="input" type="date">
-            </div>
-          </div>
-          <div class="field">
-            <div class="control">
-              <button class="button is-primary is-fullwidth">Search Hotels</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
   <script>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-30 22:17+0200\n"
+"POT-Creation-Date: 2023-12-01 18:32+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -72,11 +72,11 @@ msgstr "Моля, въведете вашия двуфакторен код за
 msgid "Homepage"
 msgstr "Начало"
 
-msgid "Hotel"
-msgstr "Хотел"
-
 msgid "Hotels"
 msgstr "Хотели"
+
+msgid "Hotel"
+msgstr "Хотел"
 
 msgid "Dashboard"
 msgstr "Табло"
@@ -132,6 +132,27 @@ msgstr "Спешен случай"
 msgid "Stranded Abroad"
 msgstr "Закъсал в чужбина"
 
+msgid "Welcome to Adventora"
+msgstr "Добре дошли в Adventora"
+
+msgid "Find your perfect stay with us"
+msgstr "Намерете перфектното място за настаняване с нас"
+
+msgid "Register Hotel"
+msgstr "Регистрирайте хотел"
+
+msgid "Registered hotels"
+msgstr "Регистрирани хотели"
+
+msgid "Happy Customers"
+msgstr "Щастливи клиенти"
+
+msgid "Reservations"
+msgstr "Резервации"
+
+msgid "Total Reservations"
+msgstr "Резервации"
+
 msgid "Room"
 msgstr "Стая"
 
@@ -141,16 +162,11 @@ msgstr "Резервирайте"
 msgid "Add Reservation"
 msgstr "Добавяне на резервация"
 
-msgid ""
-"Your hotel is not yet approved. Allow us to confirm your info within 48 "
-"hours."
+msgid "Your hotel is not yet approved. Allow us to confirm your info within 48 hours."
 msgstr "Вашият хотел все още не е одобрен. "
 
 msgid "You don't have a hotel"
 msgstr "Нямате хотел"
-
-msgid "Register Hotel"
-msgstr "Регистрирайте хотел"
 
 msgid "Rooms"
 msgstr "Стаи"
@@ -160,9 +176,6 @@ msgstr "Добавете"
 
 msgid "Confirm Address"
 msgstr "Потвърдете адреса"
-
-msgid "Reservations"
-msgstr "Резервации"
 
 msgid "Capacity"
 msgstr "Капацитет"
@@ -185,9 +198,6 @@ msgstr "Свободна"
 msgid "To be cleaned"
 msgstr "За почистване"
 
-msgid "Information"
-msgstr "Информация"
-
 msgid "Edit Hotel Information"
 msgstr "Редактиране на информацията за хотела"
 
@@ -196,6 +206,9 @@ msgstr "Основни настройки"
 
 msgid "Management"
 msgstr "Управление"
+
+msgid "Information"
+msgstr "Информация"
 
 msgid "Photos"
 msgstr "Снимки"
@@ -269,21 +282,16 @@ msgstr "Потребителското име трябва да съдържа �
 msgid "First name"
 msgstr "Първо име"
 
+#, fuzzy
+#| msgid "Last Name"
+msgid "Last name"
+msgstr "Фамилия"
+
 msgid "Email address must be valid"
 msgstr "Имейл адресът трябва да е валиден"
 
-msgid ""
-"The password must be at least 8 characters long. <br> The password should "
-"not contain only digits. <br> The password should not contain only letters. "
-"<br> The password should not contain only special characters. <br> The "
-"password should not contain the username. <br> The password should not be a "
-"commonly used password."
-msgstr ""
-"Паролата трябва да е дълга поне 8 знака. <br> Паролата трябва да не трябва "
-"да съдържа само цифри. <br> Паролата не трябва да съдържа само букви.<br> "
-"Паролата не трябва да съдържа само специални знаци. <br> паролата не трябва "
-"да съдържа потребителското име. <br> Паролата не трябва да е често "
-"използвана парола."
+msgid "The password must be at least 8 characters long. <br> The password should not contain only digits. <br> The password should not contain only letters. <br> The password should not contain only special characters. <br> The password should not contain the username. <br> The password should not be a commonly used password."
+msgstr "Паролата трябва да е дълга поне 8 знака. <br> Паролата трябва да не трябва да съдържа само цифри. <br> Паролата не трябва да съдържа само букви.<br> Паролата не трябва да съдържа само специални знаци. <br> паролата не трябва да съдържа потребителското име. <br> Паролата не трябва да е често използвана парола."
 
 msgid "Confirm password"
 msgstr "Потвърди парола"
@@ -292,23 +300,13 @@ msgid "Enter the same password as above, for verification."
 msgstr "Въведете същата парола, както по-горе, за проверка."
 
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
-msgstr ""
-"Турист - Разгледайте, планирайте и резервирайте вашите идеални ваканционни "
-"дейности."
+msgstr "Турист - Разгледайте, планирайте и резервирайте вашите идеални ваканционни дейности."
 
-msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own"
-" hotel."
-msgstr ""
-"Мениджър на хотел - Наблюдавайте операциите и предоставяйте отлично "
-"обслужване във вашия собствен хотел."
+msgid "Hotel Manager - Oversee operations and provide excellent service in your own hotel."
+msgstr "Мениджър на хотел - Наблюдавайте операциите и предоставяйте отлично обслужване във вашия собствен хотел."
 
-msgid ""
-"Employee - Contribute your expertise to a thriving workplace, such as a "
-"hotel or guest house."
-msgstr ""
-"Служител - Допринесете с вашия опит за процъфтяващо работно място, като "
-"хотел или къща за гости."
+msgid "Employee - Contribute your expertise to a thriving workplace, such as a hotel or guest house."
+msgstr "Служител - Допринесете с вашия опит за процъфтяващо работно място, като хотел или къща за гости."
 
 msgid "Submit"
 msgstr "Изпращане"
@@ -388,6 +386,9 @@ msgstr "Един потребител с това име вече съществ
 msgid "Successfully registration."
 msgstr "Успешна регистрация."
 
+msgid "Invalid data."
+msgstr "Невалидни данни."
+
 msgid "A user with that email does not exist."
 msgstr "Потребител с този имейл не съществува."
 
@@ -458,8 +459,7 @@ msgid "Two factor authentication is already enabled."
 msgstr "Двуфакторното удостоверяване вече е активирано."
 
 msgid "You cannot enable two factor authentication with a social login."
-msgstr ""
-"Не можете да активирате двуфакторно удостоверяване със социално влизане."
+msgstr "Не можете да активирате двуфакторно удостоверяване със социално влизане."
 
 msgid "Successfully enabled two factor authentication."
 msgstr "Успешно активирано двуфакторно удостоверяване."
@@ -518,31 +518,14 @@ msgstr "Упълномощено лице"
 msgid "Stars"
 msgstr "Звезди"
 
-msgid ""
-"I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
-"policy</a>"
-msgstr ""
-"Прочетох и съм съгласен с <a href=\"/privacy\" "
-"target=\"_blank\">декларацията за поверителност</a>"
+msgid "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy policy</a>"
+msgstr "Прочетох и съм съгласен с <a href=\"/privacy\" target=\"_blank\">декларацията за поверителност</a>"
 
-msgid ""
-"I have read and agree to the <a href=\"/terms-of-use\" "
-"target=\"_blank\">terms and conditions</a>"
-msgstr ""
-"Прочетох и съм съгласен с <a href=\"/terms-of-use\" "
-"target=\"_blank\">правилата и условията</a>"
+msgid "I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank\">terms and conditions</a>"
+msgstr "Прочетох и съм съгласен с <a href=\"/terms-of-use\" target=\"_blank\">правилата и условията</a>"
 
-msgid ""
-"I hereby certify, under penalty of law, that the information provided about "
-"myself and my hotel is accurate and complete to the best of my "
-"knowledge.<br> I understand that any false or misleading information "
-"provided may result in the immdiate suspesion of my hotel listing from "
-"Adventora and may lead to potential legal consequences."
-msgstr ""
-"С настоящото удостоверявам, под наказателна отговорност, че предоставената "
-"информация за мен и моя хотел е точна и пълна, доколкото ми е известно.<br> "
-"Разбирам, че предоставената невярна или подвеждаща информация може да доведе"
-" до незабавното спиране на моя хотел "
+msgid "I hereby certify, under penalty of law, that the information provided about myself and my hotel is accurate and complete to the best of my knowledge.<br> I understand that any false or misleading information provided may result in the immdiate suspesion of my hotel listing from Adventora and may lead to potential legal consequences."
+msgstr "С настоящото удостоверявам, под наказателна отговорност, че предоставената информация за мен и моя хотел е точна и пълна, доколкото ми е известно.<br> Разбирам, че предоставената невярна или подвеждаща информация може да доведе до незабавното спиране на моя хотел "
 
 msgid "Save Changes"
 msgstr "Запазите промените"
@@ -604,11 +587,14 @@ msgstr "Няма такъв хотел"
 msgid "We cannot find the hotel you are looking for"
 msgstr "Не можем да намерим хотела, който търсите"
 
+msgid "Successfully added room"
+msgstr "Стаята е добавена успешно"
+
 msgid "Error while adding room"
 msgstr "Грешка при добавяне на стая"
 
-msgid "Successfully updated hotel"
-msgstr "Успешно актуализиран хотел"
+msgid "We cannot find the room you are looking for"
+msgstr "Не можем да намерим стаята, която търсите"
 
 msgid "Error while updating hotel"
 msgstr "Грешка при актуализирането на хотела"
@@ -616,17 +602,11 @@ msgstr "Грешка при актуализирането на хотела"
 msgid "Successfully updated room status"
 msgstr "Успешно актуализиран статус на стаята"
 
-msgid "Invalid data."
-msgstr "Невалидни данни."
-
 msgid "Invalid status"
 msgstr "Невалиден статус"
 
 msgid "This room is already occupied"
 msgstr "Тази стая вече е заета"
-
-msgid "We cannot find the room you are looking for"
-msgstr "Не можем да намерим стаята, която търсите"
 
 msgid "We cannot find the reservation you are looking for"
 msgstr "Не можем да намерим резервацията, която търсите"
@@ -647,9 +627,6 @@ msgstr "Двуфакторното удостоверяване вече е пр
 msgid "This reservation is already rejected"
 msgstr "Тази резервация вече е отхвърлена"
 
-msgid "Successfully added room"
-msgstr "Стаята е добавена успешно"
-
 msgid "Successfully occupied room"
 msgstr "Стаята е зададена като заета успешно"
 
@@ -658,3 +635,15 @@ msgstr "Стаята е изтрита успешно"
 
 msgid "Successfully added reservation"
 msgstr "Резервацияа е добавена успешно"
+
+msgid "Successfully updated hotel"
+msgstr "Успешно актуализиран хотел"
+
+msgid "Successfully uploaded photos"
+msgstr "Успешно качена снимка"
+
+msgid "Successfully deleted photo"
+msgstr "Снимката е изтрита успешно"
+
+msgid "Photo not found"
+msgstr "Снимката не е намерена"

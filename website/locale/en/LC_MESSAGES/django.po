@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-30 22:16+0200\n"
+"POT-Creation-Date: 2023-12-01 18:32+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -132,6 +132,21 @@ msgstr ""
 msgid "Stranded Abroad"
 msgstr ""
 
+msgid "Welcome to Adventora"
+msgstr ""
+
+msgid "Find your perfect stay with us"
+msgstr ""
+
+msgid "Registered hotels"
+msgstr ""
+
+msgid "Happy Customers"
+msgstr ""
+
+msgid "Total Reservations"
+msgstr ""
+
 msgid "Room"
 msgstr ""
 
@@ -141,9 +156,7 @@ msgstr ""
 msgid "Add Reservation"
 msgstr ""
 
-msgid ""
-"Your hotel is not yet approved. Allow us to confirm your info within 48 "
-"hours."
+msgid "Your hotel is not yet approved. Allow us to confirm your info within 48 hours."
 msgstr ""
 
 msgid "You don't have a hotel"
@@ -275,12 +288,7 @@ msgstr ""
 msgid "Email address must be valid"
 msgstr ""
 
-msgid ""
-"The password must be at least 8 characters long. <br> The password should "
-"not contain only digits. <br> The password should not contain only letters. "
-"<br> The password should not contain only special characters. <br> The "
-"password should not contain the username. <br> The password should not be a "
-"commonly used password."
+msgid "The password must be at least 8 characters long. <br> The password should not contain only digits. <br> The password should not contain only letters. <br> The password should not contain only special characters. <br> The password should not contain the username. <br> The password should not be a commonly used password."
 msgstr ""
 
 msgid "Confirm password"
@@ -292,14 +300,10 @@ msgstr ""
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
 msgstr ""
 
-msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own "
-"hotel."
+msgid "Hotel Manager - Oversee operations and provide excellent service in your own hotel."
 msgstr ""
 
-msgid ""
-"Employee - Contribute your expertise to a thriving workplace, such as a "
-"hotel or guest house."
+msgid "Employee - Contribute your expertise to a thriving workplace, such as a hotel or guest house."
 msgstr ""
 
 msgid "Submit"
@@ -512,22 +516,13 @@ msgstr ""
 msgid "Stars"
 msgstr ""
 
-msgid ""
-"I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
-"policy</a>"
+msgid "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy policy</a>"
 msgstr ""
 
-msgid ""
-"I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank"
-"\">terms and conditions</a>"
+msgid "I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank\">terms and conditions</a>"
 msgstr ""
 
-msgid ""
-"I hereby certify, under penalty of law, that the information provided about "
-"myself and my hotel is accurate and complete to the best of my knowledge."
-"<br> I understand that any false or misleading information provided may "
-"result in the immdiate suspesion of my hotel listing from Adventora and may "
-"lead to potential legal consequences."
+msgid "I hereby certify, under penalty of law, that the information provided about myself and my hotel is accurate and complete to the best of my knowledge.<br> I understand that any false or misleading information provided may result in the immdiate suspesion of my hotel listing from Adventora and may lead to potential legal consequences."
 msgstr ""
 
 msgid "Save Changes"
@@ -636,4 +631,13 @@ msgid "Successfully deleted room"
 msgstr ""
 
 msgid "Successfully added reservation"
+msgstr ""
+
+msgid "Successfully uploaded photos"
+msgstr ""
+
+msgid "Successfully deleted photo"
+msgstr ""
+
+msgid "Photo not found"
 msgstr ""
