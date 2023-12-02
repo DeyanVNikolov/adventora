@@ -1,6 +1,20 @@
 {% extends "base.html" %}
-
-
+{% load static %}
+{% load i18n %}
 {% block content %}
+<br><br><br>
 
-{% endblock %}
+    <div class="container is-fluid has-text-centered">
+
+    {%  trans "In case of fire, medical or police emergency" %},<br>
+        {% trans "contact the single european emergency nunmber" %}<br>
+    <h2 class="title is-2"><a href="tel:112">112</a></h2><br><br>
+    {% trans "It is dial without code, just 112 when in any country of the EU" %}
+
+    </div>
+
+
+
+
+
+ {% endblock %}

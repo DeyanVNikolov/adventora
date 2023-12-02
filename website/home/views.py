@@ -156,3 +156,6 @@ def room(request, room_id):
 
     return render(request, 'room.html', context)
 
+
+def handle404(request, exception):
+    return render(request, '404.html', status=404)

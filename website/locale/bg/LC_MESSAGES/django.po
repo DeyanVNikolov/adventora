@@ -647,3 +647,12 @@ msgstr "Снимката е изтрита успешно"
 
 msgid "Photo not found"
 msgstr "Снимката не е намерена"
+
+msgid "In case of fire, medical or police emergency"
+msgstr "В случай на пожар, медицинска или полицейска спешност"
+
+msgid "It is dial without code, just 112 when in any country of the EU"
+msgstr "Набиране без код, просто 112, когато сте във всяка страна от ЕС"
+
+msgid "contact the single european emergency nunmber"
+msgstr "свържете се с единния европейски спешен номер"
