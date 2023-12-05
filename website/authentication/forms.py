@@ -70,9 +70,9 @@ class RoleChoiceForm(forms.Form):
     helper = FormHelper()
     helper.form_method = 'post'
     helper.layout = Layout('role', Submit('submit', _('Submit'), css_class='btn-primary',
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
-                            )
-                     )
+                                          onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                                          )
+                           )
 
 
 class CompleteNameForm(forms.Form):
@@ -250,7 +250,7 @@ class TwoFactorDisableForm(forms.Form):
 
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Disable'), css_class='button is-link',
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.classList.add('is-loading'; }, 10);"
                             )
                      )
     helper.form_method = 'POST'
