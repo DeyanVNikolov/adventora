@@ -1,19 +1,15 @@
-from django.http import HttpResponse
-from django.template.loader import get_template
-from xhtml2pdf import pisa
+import datetime
 import os
-import uuid
-from email.utils import formataddr
 import os.path
-from pathlib import Path
-import os
 import smtplib
-import imghdr
+import uuid
 from email.message import EmailMessage
+from email.utils import formataddr
+from pathlib import Path
 
-from django.utils.translation import gettext as _
-
+from django.template.loader import get_template, render_to_string
 from dotenv import load_dotenv
+import pdfkit
 
 if not os.getenv("PYTHONANYWHERE_SITE"):
     load_dotenv()
@@ -23,7 +19,6 @@ else:
     load_dotenv(os.path.join(project_folder, '.env'))
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 
 def sendreservationsuccess(email, name, checkin, checkout, people, nights, total, reservation, hotel, room):
@@ -50,37 +45,24 @@ def sendreservationsuccess(email, name, checkin, checkout, people, nights, total
     msg["X-Email-Category"] = "Welcome Email"
     msg["X-Email-Category-Id"] = "1"
 
-    message_1 = _("Your reservation is successful.")
-    message_2 = _("Your invoice is below.")
-    message_3 = _("The invoice is also available in your dashboard.")
-    message_4 = _("The invoice acts as ticket.")
-    message_5 = _("Please show the invoice to the hotel staff upon arrival.")
-    message_6 = _("Thank you for using Adventora.")
+    # format: January 6th, 2024
+    date_today = datetime.datetime.now().strftime("%B %d, %Y")
 
-    # Add a plain text alternative
-    msg.set_content(f'''
-            {message_1}
-            {message_2}
-            {message_3}
-            {message_4} {message_5}
+    # get the html template, and use it as email
+    template = get_template('email/reservation-success.html')
+    html = template.render(
+        {'name': name, 'checkin': checkin, 'checkout': checkout, 'people': people, 'nights': nights, 'total': total, 'reservation': reservation, 'hotel': hotel, 'room': room, 'datetoday': date_today}
+        )
+    html_string = render_to_string('email/reservation-success.html', {'name': name, 'checkin': checkin, 'checkout': checkout, 'people': people, 'nights': nights, 'total': total, 'reservation': reservation, 'hotel': hotel, 'room': room, 'datetoday': date_today})
+    msg.add_alternative(html, subtype='html')
 
-            {message_6}
-            
-            # # # # #
-            
-            RESERVATION #{reservation.id}
-            HOTEL - {hotel.name}
-            ROOM #{room.number}
-            CHECK-IN - {checkin.strftime("%d %B %Y")}
-            CHECK-OUT - {checkout.strftime("%d %B %Y")}
-            PEOPLE - {people}
-            NIGHTS - {nights}
-            
-            TOTAL # {total} BGN
-            
-            # # # # #
-        ''', subtype='plain', charset='utf-8'
-                    )
+    with open(f'{BASE_DIR}/static/invoices/reservation-{reservation.id}.html', 'w+', encoding='utf-8') as f:
+        f.write(str(html_string))
+    # save to .html file
+
+
+
+
 
     with smtplib.SMTP_SSL('smtppro.zoho.eu', 465) as smtp:
         smtp.login(email_address, email_password)
