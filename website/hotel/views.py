@@ -451,7 +451,10 @@ def updateroomstatus(request, hotel_id, room_id, status):
         messages.warning(request, _('Invalid status'))
         return redirect('room', hotel_id=hotel_id, room_id=room_id)
 
-
+@login_required
+@is_current_user_role_manager
+@is_address_confirmed
+@is_hotel_confirmed
 def occupy(request, hotel_id, room_id):
     try:
         uuid.UUID(hotel_id)
@@ -516,7 +519,10 @@ def occupy(request, hotel_id, room_id):
 
     return render(request, 'hotel/occupy.html', context=context)
 
-
+@login_required
+@is_current_user_role_manager
+@is_address_confirmed
+@is_hotel_confirmed
 def occupyreversed(request, hotel_id, room_id, reservationid):
     try:
         uuid.UUID(hotel_id)
@@ -583,7 +589,10 @@ def occupyreversed(request, hotel_id, room_id, reservationid):
     messages.success(request, _('Successfully occupied room'))
     return redirect('room', hotel_id=hotel_id, room_id=room_id)
 
-
+@login_required
+@is_current_user_role_manager
+@is_address_confirmed
+@is_hotel_confirmed
 def deleteroom(request, hotel_id, room_id):
     try:
         uuid.UUID(hotel_id)
@@ -615,7 +624,10 @@ def deleteroom(request, hotel_id, room_id):
     messages.success(request, _('Successfully deleted room'))
     return redirect('dashboard')
 
-
+@login_required
+@is_current_user_role_manager
+@is_address_confirmed
+@is_hotel_confirmed
 def add_reservation(request, hotel_id):
     try:
         uuid.UUID(hotel_id)
@@ -714,7 +726,10 @@ def photos(request):
 
     return render(request, 'hotel/photos.html', context)
 
-
+@login_required
+@is_current_user_role_manager
+@is_address_confirmed
+@is_hotel_confirmed
 def deletephoto(request, hotel_id, photo_id):
     try:
         uuid.UUID(hotel_id)

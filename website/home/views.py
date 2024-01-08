@@ -157,5 +157,28 @@ def room(request, room_id):
     return render(request, 'room.html', context)
 
 
+def invoice(request, reservation_id):
+    try:
+        uuid.UUID(reservation_id)
+    except ValueError:
+        messages.error(request, _('Reservation not available'))
+        return redirect('hotels')
+
+    reservation = Reservation.objects.get(id=reservation_id)
+    if not reservation:
+        messages.error(request, _('Reservation not available'))
+        return redirect('hotels')
+
+    if reservation.reserved_by != request.user.id:
+        messages.error(request, _('Reservation not available'))
+        return redirect('hotels')
+
+    context = {
+        'reservation': reservation
+    }
+
+    return render(request, 'invoice.html', context)
+
+
 def handle404(request, exception):
     return render(request, '404.html', status=404)
