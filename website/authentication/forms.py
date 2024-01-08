@@ -2,14 +2,14 @@ from crispy_bulma.layout import Submit
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout
 from django import forms
+from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
-from django.contrib.auth.forms import UserCreationForm, PasswordChangeForm
-from django_countries.fields import CountryField, LazyTypedChoiceField
+from django.utils.translation import gettext_lazy as _
+from django_countries.fields import CountryField
 from django_countries.widgets import CountrySelectWidget
 from turnstile.fields import TurnstileField
 
 from .models import CustomUser
-from django.utils.translation import gettext_lazy as _
 
 
 class LoginForm(forms.Form):
@@ -23,7 +23,7 @@ class LoginForm(forms.Form):
 
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Login'), css_class='is-primary',
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                             )
                      )
     helper.form_method = 'POST'
@@ -54,7 +54,7 @@ class RegisterForm(UserCreationForm):
 
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Sign up'), css_class='button is-link',
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                             )
                      )
     helper.form_method = 'POST'
@@ -70,7 +70,7 @@ class RoleChoiceForm(forms.Form):
     helper = FormHelper()
     helper.form_method = 'post'
     helper.layout = Layout('role', Submit('submit', _('Submit'), css_class='btn-primary',
-                                          onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                                           )
                            )
 
@@ -81,7 +81,7 @@ class CompleteNameForm(forms.Form):
 
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Save'), css_class='button is-link',
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                             )
                      )
     helper.form_method = 'POST'
@@ -92,7 +92,7 @@ class CompleteEmailForm(forms.Form):
 
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Save'), css_class='button is-link',
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                             )
                      )
     helper.form_method = 'POST'
@@ -105,7 +105,7 @@ class CompleteUserNameForm(forms.Form):
 
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Save'), css_class='button is-link',
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                             )
                      )
     helper.form_method = 'POST'
@@ -128,7 +128,7 @@ class EditProfileForm(forms.Form):
 
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Save'), css_class='button is-link',
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                             )
                      )
     helper.form_method = 'POST'
@@ -143,7 +143,7 @@ class ChangePasswordForm(forms.Form):
 
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Save'), css_class='button is-link',
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                             )
                      )
     helper.form_method = 'POST'
@@ -157,7 +157,7 @@ class SetPasswordFromSocialLogin(forms.Form):
 
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Save'), css_class='button is-link',
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                             )
                      )
     helper.form_method = 'POST'
@@ -170,7 +170,7 @@ class DeleteAccountForm(forms.Form):
 
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Delete Account'), css_class='button is-link',
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                             )
                      )
     helper.form_method = 'POST'
@@ -187,7 +187,7 @@ class CitizenshipForm(forms.Form):
 
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Save'), css_class='button is-link',
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                             )
                      )
     helper.form_method = 'POST'
@@ -198,7 +198,7 @@ class PhoneForm(forms.Form):
 
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Save'), css_class='button is-link',
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                             )
                      )
     helper.form_method = 'POST'
@@ -211,7 +211,7 @@ class TwoFactorEnableForm(forms.Form):
 
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Enable'), css_class='button is-link',
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                             )
                      )
     helper.form_method = 'POST'
@@ -224,7 +224,7 @@ class TwoFactorEnableConfirmForm(forms.Form):
 
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Enable'), css_class='button is-link',
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                             )
                      )
     helper.form_method = 'POST'
@@ -237,7 +237,7 @@ class TwoFactorForm(forms.Form):
 
     helper = FormHelper()
     helper.add_input(Submit('submit', _('Submit'), css_class='button is-link',
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                             )
                      )
     helper.form_method = 'POST'
