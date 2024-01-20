@@ -28,6 +28,31 @@
 
 
     {% endblock %}
+    <style>
+        #div_id_luxuries {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #div_id_luxuries > label {
+            flex: 0 0 100%;
+        }
+
+        {#make #div_id_luxuries > .control to be on own row #}
+
+        #div_id_luxuries .control {
+            flex: 0 0 20%; /* Each control takes up 20% of the container width */
+            box-sizing: border-box;
+            padding: 5px; /* Adjust as necessary for spacing */
+        }
+
+        /* You may also want to ensure the checkboxes align nicely if the texts vary in length */
+        #div_id_luxuries .control .checkbox {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
 
     <p style="display: none">
         {% block show %}true;{% endblock %}

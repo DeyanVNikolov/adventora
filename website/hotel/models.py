@@ -31,26 +31,8 @@ class Hotel(models.Model):
         verbose_name_plural = "Hotels"
 
 
-class Room(models.Model):
 
-    id = models.UUIDField(max_length=100, default=uuid.uuid4, unique=True, primary_key=True)
-    hotel = models.ForeignKey('hotel.Hotel', on_delete=models.CASCADE, null=True, blank=True, default=None, related_name='rooms')
-    name = models.CharField(max_length=100, null=True, blank=True)
-    description = models.TextField(null=True, blank=True)
-    number = models.IntegerField(null=True, blank=True)
-    occupied = models.BooleanField(default=False)
-    occupied_by = models.CharField(max_length=5000, null=True, blank=True)
-    status = models.CharField(max_length=100, null=True, blank=True)
-    price = models.IntegerField(null=True, blank=True)
-    capacity = models.IntegerField(null=True, blank=True)
-    images = models.ImageField(upload_to='room_images/', null=True, blank=True)
 
-    def __str__(self):
-        return str(self.number) + " (" + str(self.id) + ")"
-
-    class Meta:
-        verbose_name = _("Room")
-        verbose_name_plural = _("Rooms")
 
 
 class Reservation(models.Model):
@@ -65,8 +47,44 @@ class Reservation(models.Model):
     people = models.IntegerField(null=True, blank=True)
 
     def __str__(self):
-        return self.reserved_by
+        return self.id
 
     class Meta:
         verbose_name = _("Reservation")
         verbose_name_plural = _("Reservations")
+
+
+class Luxury(models.Model):
+
+# auto increment integer id
+
+    id = models.IntegerField(primary_key=True, unique=True, null=False, default=0)
+    name = models.CharField(max_length=200, null=False, blank=False)
+    icon = models.CharField(max_length=200, null=False, blank=False)
+    deleted = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.name
+
+
+class Room(models.Model):
+
+    id = models.UUIDField(max_length=100, default=uuid.uuid4, unique=True, primary_key=True)
+    hotel = models.ForeignKey('hotel.Hotel', on_delete=models.CASCADE, null=True, blank=True, default=None, related_name='rooms')
+    name = models.CharField(max_length=100, null=True, blank=True)
+    description = models.TextField(null=True, blank=True)
+    number = models.IntegerField(null=True, blank=True)
+    occupied = models.BooleanField(default=False)
+    occupied_by = models.CharField(max_length=5000, null=True, blank=True)
+    status = models.CharField(max_length=100, null=True, blank=True)
+    price = models.IntegerField(null=True, blank=True)
+    capacity = models.IntegerField(null=True, blank=True)
+    images = models.ImageField(upload_to='room_images/', null=True, blank=True)
+    luxuries = models.ManyToManyField(Luxury)
+
+    def __str__(self):
+        return str(self.number) + " (" + str(self.id) + ")"
+
+    class Meta:
+        verbose_name = _("Room")
+        verbose_name_plural = _("Rooms")

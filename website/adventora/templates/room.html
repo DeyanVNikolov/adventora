@@ -33,13 +33,7 @@
                                        style="cursor:not-allowed"{% else %}"{% endif %}>
                             </div>
                         </div>
-                        <div class="field">
 
-                            <label class="label">{% trans "How many nights?" %}</label>
-                            <div class="control">
-                                <input class="input is-medium" type="number" name="nights" min="1" value="1">
-                            </div>
-                        </div>
                         <div class="field">
                             <label class="label">{% trans "How many people?" %}</label>
                             <div class="control">
@@ -59,10 +53,50 @@
                                 <input class="input is-medium" type="date" name="checkout" min="1" value="1"/>
                             </div>
                         </div>
+                        <div class="field">
+
+                            <label class="label">{% trans "How many nights?" %}</label>
+                            <div class="control">
+                                <input class="input is-medium" readonly type="number" name="nights" min="0" value="0">
+                            </div>
+                        </div>
+                    
+
 
                         <br><br>
                         {% trans "TOTAL" %}
                         <h2 class="title is-2 has-text-primary" id="total">LOADING..</h2>
+
+                        <script>
+                            // automatically calculate nights using checkin and checkout, dynamically
+                            var checkin = document.getElementsByName("checkin")[0];
+                            var checkout = document.getElementsByName("checkout")[0];
+                            var nights = document.getElementsByName("nights")[0];
+
+                            // if negative or zero, set to 1 and change checkout date accordingly
+                            checkin.addEventListener("change", function () {
+                                if (checkin.value >= checkout.value) {
+                                    checkout.value = checkin.value;
+                                }
+                                nights.value = Math.ceil((checkout.valueAsNumber - checkin.valueAsNumber) / (1000 * 3600 * 24));
+                                var total = document.getElementById("total");
+                                var price = parseFloat("{{ room.price }}")
+                                total.innerHTML = price * nights.value + " BGN";
+                            });
+                            checkout.addEventListener("change", function () {
+                                if (checkout.value <= checkin.value) {
+                                    checkin.value = checkout.value;
+                                }
+                                nights.value = Math.ceil((checkout.valueAsNumber - checkin.valueAsNumber) / (1000 * 3600 * 24));
+                                var total = document.getElementById("total");
+                                var price = parseFloat("{{ room.price }}")
+                                total.innerHTML = price * nights.value + " BGN";
+                            });
+
+                            
+
+
+                        </script>
 
                         <script>
                             // on page load

@@ -6,7 +6,22 @@
 website/db.sqlite3
 website/static/qr
 
+.history/
+.history/*
+*/.history/website/*
+*/.history/website/migrations/*
+*/.history/website/migrations/versions/*
+*/.history/website/migrations/versions/0a0a0a0a0a0a_*.py
+*/.history/website/migrations/versions/0a0a0a0a0a0a_*.pyc
+.history/website/migrations/versions/0a0a0a0a0a0a_*.py
+.history/*.html
+
+
 .env*
 .flaskenv*
 !.env.project
 !.env.vault
+/.history/
+.history/website/adventora/templates/email/reservation-success_20240106120824.html
+website/static/invoices/
+website/static/pdf

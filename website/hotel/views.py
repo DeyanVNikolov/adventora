@@ -6,7 +6,7 @@ import requests
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 # import CustomUser model
-from .models import Hotel, Room
+from .models import Hotel, Room, Luxury
 from .forms import RegisterHotelForm, ConfirmAddressForm, CreateRoom, EditHotelInfoForm, CreateReservationFormHotel
 from django.utils.translation import gettext as _
 from django.contrib.gis.geos import Point
@@ -243,6 +243,13 @@ def add_room(request, hotel_id):
             room.capacity = form.cleaned_data['capacity']
             room.price = form.cleaned_data['price']
             room.status = "Available"
+            room.save()
+
+            luxuries = form.cleaned_data['luxuries']
+            for luxury in luxuries:
+                lux = Luxury.objects.filter(id=luxury).first()
+                if lux:
+                    room.luxuries.add(lux)
 
             room.save()
             messages.success(request, _('Successfully added room'))
@@ -755,3 +762,89 @@ def deletephoto(request, hotel_id, photo_id):
     else:
         messages.warning(request, _('Photo not found'))
         return redirect('photos')
+
+@login_required
+@is_current_user_role_manager
+@is_address_confirmed
+@is_hotel_confirmed
+def editroom(request, hotel_id, room_id):
+    try:
+        uuid.UUID(hotel_id)
+    except ValueError:
+        messages.warning(request, _('We cannot find the hotel you are looking for'))
+        return redirect('dashboard')
+
+    hotel = Hotel.objects.filter(id=hotel_id).first()
+    if not hotel:
+        messages.warning(request, _('We cannot find the hotel you are looking for'))
+        return redirect('dashboard')
+
+    if request.user.hotel != hotel:
+        messages.warning(request, _('You do not have permission to view this page'))
+        return redirect('dashboard')
+
+    try:
+        uuid.UUID(room_id)
+    except ValueError:
+        messages.warning(request, _('We cannot find the room you are looking for'))
+        return redirect('dashboard')
+
+    room = hotel.rooms.filter(id=room_id).first()
+    if not room:
+        messages.warning(request, _('We cannot find the room you are looking for'))
+        return redirect('dashboard')
+
+
+    print(room.luxuries.count())
+
+    if request.method == "POST":
+        form = CreateRoom(request.POST)
+        if form.is_valid():
+            room.description = form.cleaned_data['description']
+            room.number = form.cleaned_data['number']
+            room.price = form.cleaned_data['price']
+            room.capacity = form.cleaned_data['capacity']
+            luxuries = form.cleaned_data['luxuries']
+            room.save()
+            for luxury in luxuries:
+                lux = Luxury.objects.filter(id=luxury).first()
+                if lux:
+                    room.luxuries.add(lux)
+
+                for lux in room.luxuries.all():
+                    if str(lux.id) not in luxuries:
+                        room.luxuries.remove(lux)
+
+
+            room.save()
+
+            messages.success(request, _('Successfully updated room'))
+            return redirect('room', hotel_id=hotel_id, room_id=room_id)
+
+
+
+
+    # list of room.luxuries ['0', '1', '2', etc]
+    luxuries = []
+    for luxury in room.luxuries.all():
+        luxuries.append(str(luxury.id))
+
+
+    CreateRoomForm = CreateRoom(initial={
+        'description': room.description,
+        'number': room.number,
+        'price': room.price,
+        'capacity': room.capacity,
+        'luxuries': luxuries
+    })
+
+
+
+    context = {
+        'hotel': hotel,
+        'room': room,
+        'form': CreateRoomForm
+    }
+
+
+    return render(request, 'hotel/edit_room.html', context=context)

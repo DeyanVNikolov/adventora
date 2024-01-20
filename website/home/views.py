@@ -13,6 +13,8 @@ from hotel.models import Hotel, Room, Reservation
 
 from django.utils.translation import gettext as _
 
+from hotel.models import Luxury
+
 
 def home(request):
     return render(request, 'home.html', {'name': 'Deyan'})
@@ -116,7 +118,6 @@ def room(request, room_id):
     if request.method == 'POST':
         name = request.user.first_name + " " + request.user.last_name
         email = request.user.email
-        nights = request.POST.get('nights', 1)
         people = request.POST.get('people', 1)
         checkin = request.POST.get('checkin', None)
         checkout = request.POST.get('checkout', None)
@@ -127,6 +128,8 @@ def room(request, room_id):
 
         checkin = datetime.datetime.strptime(checkin, '%Y-%m-%d')
         checkout = datetime.datetime.strptime(checkout, '%Y-%m-%d')
+        nights = (checkout - checkin).days
+
         price = room.price * int(nights)
 
         reservation = Reservation()

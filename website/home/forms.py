@@ -29,7 +29,6 @@ class SecurityCheckForm(forms.Form):
     )
     # disabled
     helper.add_input(Submit('submit', 'Продължи', css_class='is-success disabledbuttonforsecurity', disabled=True,
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
                             )
                      )
 

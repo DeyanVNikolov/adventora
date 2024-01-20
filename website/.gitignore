@@ -3,3 +3,7 @@
 .flaskenv*
 !.env.project
 !.env.vault
+.history/*
+/.history/*
+/.history/
+\invoices\*

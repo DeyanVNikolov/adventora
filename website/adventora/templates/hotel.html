@@ -57,7 +57,7 @@
     </style>
 
     <section class="section">
-        <div class="columns box">
+        <div class="columns box is-multiline">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
             <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet"/>
 
@@ -87,7 +87,7 @@
 
             </style>
 
-            <div class="column is-three-quarters">
+            <div class="column is-full">
             <section class="section is-unselectable">
                 <div class="container">
                     <div class="swiper mySwiper" style="height: 700px; border-radius: 15px">
@@ -143,6 +143,19 @@
             </div>
 
         </div>
+    <div class="columns is-multiline is-centered is-vcentered has-text-centered">
+            <div class="column is-one-third">
+                d
+            </div>
+            <div class="column is-one-third">
+                d
+            </div>
+            <div class="column is-one-third">
+                d
+            </div>
+    </div>
+
+
     </section>
     <!--End of carousel box-->
 
@@ -153,10 +166,37 @@
             margin: 10px;
             border-radius: 25px;
         }
+
+
     </style>
     <div class="columns is-multiline has-text-centered">
+
+        <script>
+            function toggleCollapse(id) {
+                var container = document.getElementById('collapsible-container-' + id);
+                container.classList.toggle('expanded');
+            }
+        </script>
+    <style>
+
+    </style>
         {% for room in rooms %}
-        <div class="column is-one-quarter">
+
+        <div class="column is-one-third">
+            <style>
+                .collapsible-container-{{ forloop.counter }} {
+                    max-height: 60px;
+                    overflow: hidden;
+                    transition: max-height 0.2s ease-out;
+                    transition: height 0.2s ease-out;
+                }
+
+                .collapsible-container-{{ forloop.counter }}.expanded {
+                    max-height: fit-content;
+                }
+
+
+            </style>
                 <div class="card">
                     <div class="card-header">
                         <h1 style="margin: 10px auto;" class="title is-size-5 has-text-weight-bold">{% trans "Room" %} #{{ room.number }}</h1>
@@ -168,6 +208,27 @@
                     </div>
                     <div class="card-body">
                         {{ room.description | safe }}
+                        <hr>
+
+                        {% if room.luxuries.count > 0 %}
+
+                        <div class="columns is-multiline collapsible-container-{{ forloop.counter }}" id="collapsible-container-{{ forloop.counter }}" style="margin: 0">
+                        {% for lux in room.luxuries.all %}
+                            <div class="column is-one-quarter column-cc" style="border: 1px #2f2f2f solid; border-radius: 20px; margin: 5px">
+                                <span class="icon"><i style="font-size: 20px" class="mdi {{ lux.icon }}"></i></span><small>{{ lux.name }}</small>
+                            </div>
+
+                        {% endfor %}
+
+                        </div>
+                        <button class="button is-success-passive" onclick="toggleCollapse({{ forloop.counter }})">{% trans "View more" %}</button>
+
+                        {% endif %}
+                    <br>
+                    <br>
+
+
+
                     </div>
                     <div class="card-footer">
                         <button style="margin: 10px auto; width: 70%; border-radius: 20px" onclick="window.location.href='/room/{{ room.id }}'"

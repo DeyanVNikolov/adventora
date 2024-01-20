@@ -9,8 +9,8 @@ if not os.getenv("PYTHONANYWHERE_SITE"):
     print("LOCAL ENVIRONMENT")
     load_dotenv()
 else:
+    print("PYTHONANYWHERE ENVIRONMENT")
     project_folder = os.path.expanduser('~/adventora')
-    print("PROJECT FOLDER: " + project_folder)
     load_dotenv(os.path.join(project_folder, '.env'))
 
 BASE_DIR = Path(__file__).resolve().parent.parent

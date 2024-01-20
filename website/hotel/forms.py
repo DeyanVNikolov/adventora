@@ -2,13 +2,12 @@ from ckeditor.widgets import CKEditorWidget
 from crispy_bulma.layout import Submit
 from crispy_forms.helper import FormHelper
 from django import forms
+from django.contrib.gis import forms as gis_forms
 from django.utils.safestring import mark_safe
 from django.utils.translation import gettext_lazy as _
 from turnstile.fields import TurnstileField
-from django.contrib.gis import forms as gis_forms
-from django.contrib.admin import widgets
 
-from .models import Room
+from .models import Room, Luxury
 
 
 class RegisterHotelForm(forms.Form):
@@ -44,7 +43,7 @@ class RegisterHotelForm(forms.Form):
     helper = FormHelper()
     helper.form_method = 'POST'
     helper.add_input(Submit('submit', _('Register Hotel'),
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                             )
                      )
 
@@ -56,7 +55,7 @@ class ConfirmAddressForm(forms.Form):
     helper = FormHelper()
     helper.form_method = 'POST'
     helper.add_input(Submit('submit', _('Confirm Address'),
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                             )
                      )
 
@@ -77,7 +76,7 @@ class EditHotelInfoForm(forms.Form):
     helper.form_method = 'POST'
     # disable the button then submit the form to prevent double form submission
     helper.add_input(Submit('submit', _('Save Changes'),
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                             )
                      )
 
@@ -87,11 +86,20 @@ class CreateRoom(forms.Form):
     number = forms.IntegerField(label=_('Room Number'))
     price = forms.DecimalField(max_digits=11, decimal_places=2, label=_('Price / Night'))
     capacity = forms.IntegerField(label=_('Capacity'))
+    OPTIONS = (
+
+    )
+    for luxury in Luxury.objects.all().filter(deleted=False):
+        OPTIONS += ((luxury.id, luxury.name),)
+
+
+
+    luxuries = forms.MultipleChoiceField(widget=forms.CheckboxSelectMultiple, choices=OPTIONS, label=_('Luxuries'))
 
     helper = FormHelper()
     helper.form_method = 'POST'
     helper.add_input(Submit('submit', _('Create Room'),
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                             )
                      )
 
@@ -112,6 +120,6 @@ class CreateReservationFormHotel(forms.Form):
     helper = FormHelper()
     helper.form_method = 'POST'
     helper.add_input(Submit('submit', _('Create Reservation'),
-                            onclick="event.preventDefault(); var form = event.target.form; form.dispatchEvent(new Event('submit', { bubbles: true })); setTimeout(function() { event.target.disabled = true; }, 10);"
+
                             )
                      )
