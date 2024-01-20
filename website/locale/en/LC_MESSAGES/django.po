@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-01 18:32+0200\n"
+"POT-Creation-Date: 2023-12-28 22:35+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -130,6 +130,15 @@ msgid "Emergency"
 msgstr ""
 
 msgid "Stranded Abroad"
+msgstr ""
+
+msgid "In case of fire, medical or police emergency"
+msgstr ""
+
+msgid "contact the single european emergency nunmber"
+msgstr ""
+
+msgid "It is dial without code, just 112 when in any country of the EU"
 msgstr ""
 
 msgid "Welcome to Adventora"
