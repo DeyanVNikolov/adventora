@@ -13,10 +13,12 @@ else:
     project_folder = os.path.expanduser('~/adventora')
     load_dotenv(os.path.join(project_folder, '.env'))
 
+DEBUG = False if os.getenv("PYTHONANYWHERE_SITE") else True
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = os.getenv("SECRET_KEY")
-DEBUG = True
+
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
