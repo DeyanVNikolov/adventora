@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-28 22:35+0200\n"
+"POT-Creation-Date: 2024-01-20 16:18+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -167,6 +167,9 @@ msgstr "Reservas"
 msgid "Room"
 msgstr "Sala"
 
+msgid "View more"
+msgstr "Veja mais"
+
 #, fuzzy
 #| msgid "Reservations"
 msgid "Reserve"
@@ -263,9 +266,6 @@ msgstr "Adicionar fotos"
 msgid "Upload"
 msgstr "Carregar"
 
-msgid "View more"
-msgstr "Veja mais"
-
 msgid "For partnerships contact us at"
 msgstr "Para parcerias contacte-nos em"
 
@@ -285,9 +285,6 @@ msgstr "Sobrenome"
 msgid "Email"
 msgstr "E-mail"
 
-msgid "How many nights?"
-msgstr "Quantas noites?"
-
 msgid "How many people?"
 msgstr "Quantas pessoas?"
 
@@ -296,6 +293,9 @@ msgstr "Check-in"
 
 msgid "Check-out"
 msgstr "Confira"
+
+msgid "How many nights?"
+msgstr "Quantas noites?"
 
 msgid "TOTAL"
 msgstr "TOTAL"
@@ -513,26 +513,6 @@ msgstr "Autenticação de dois fatores habilitada com sucesso."
 msgid "Successfully disabled two factor authentication."
 msgstr "Autenticação de dois fatores desativada com sucesso."
 
-msgid "Your reservation is successful."
-msgstr "Sua reserva foi realizada com sucesso."
-
-msgid "Your invoice is below."
-msgstr "Sua fatura está abaixo."
-
-msgid "The invoice is also available in your dashboard."
-msgstr "A fatura também está disponível em seu painel."
-
-msgid "The invoice acts as ticket."
-msgstr "A fatura funciona como ticket."
-
-msgid "Please show the invoice to the hotel staff upon arrival."
-msgstr ""
-"Por favor, apresente a fatura aos funcionários do hotel no momento da "
-"chegada."
-
-msgid "Thank you for using Adventora."
-msgstr "Obrigado por usar Adventora."
-
 msgid "Room not available"
 msgstr "Quarto não disponível"
 
@@ -545,6 +525,11 @@ msgstr "Dados inválidos."
 #| msgid "Reservations"
 msgid "Reservation successful"
 msgstr "Reservas"
+
+#, fuzzy
+#| msgid "Room not available"
+msgid "Reservation not available"
+msgstr "Quarto não disponível"
 
 msgid "Hotel Name"
 msgstr "Nome do hotel"
@@ -601,6 +586,9 @@ msgstr "Salvar alterações"
 
 msgid "Room Number"
 msgstr "Número do quarto"
+
+msgid "Luxuries"
+msgstr "Luxos"
 
 msgid "Create Room"
 msgstr "Criar quarto"
@@ -740,6 +728,31 @@ msgstr "Sala adicionada com sucesso"
 
 msgid "Photo not found"
 msgstr "Foto não encontrada"
+
+#, fuzzy
+#| msgid "Successfully added room"
+msgid "Successfully updated room"
+msgstr "Sala adicionada com sucesso"
+
+#~ msgid "Your reservation is successful."
+#~ msgstr "Sua reserva foi realizada com sucesso."
+
+#~ msgid "Your invoice is below."
+#~ msgstr "Sua fatura está abaixo."
+
+#~ msgid "The invoice is also available in your dashboard."
+#~ msgstr "A fatura também está disponível em seu painel."
+
+#~ msgid "The invoice acts as ticket."
+#~ msgstr "A fatura funciona como ticket."
+
+#~ msgid "Please show the invoice to the hotel staff upon arrival."
+#~ msgstr ""
+#~ "Por favor, apresente a fatura aos funcionários do hotel no momento da "
+#~ "chegada."
+
+#~ msgid "Thank you for using Adventora."
+#~ msgstr "Obrigado por usar Adventora."
 
 #~ msgid "Language"
 #~ msgstr "Linguagem"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-28 22:35+0200\n"
+"POT-Creation-Date: 2024-01-20 16:18+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -168,6 +168,9 @@ msgstr "Reservasjoner"
 msgid "Room"
 msgstr "Rom"
 
+msgid "View more"
+msgstr "Se mer"
+
 #, fuzzy
 #| msgid "Reservations"
 msgid "Reserve"
@@ -264,9 +267,6 @@ msgstr "Legg til bilder"
 msgid "Upload"
 msgstr "Laste opp"
 
-msgid "View more"
-msgstr "Se mer"
-
 msgid "For partnerships contact us at"
 msgstr "For partnerskap kontakt oss på"
 
@@ -286,9 +286,6 @@ msgstr "Etternavn"
 msgid "Email"
 msgstr "E-post"
 
-msgid "How many nights?"
-msgstr "Hvor mange netter?"
-
 msgid "How many people?"
 msgstr "Hvor mange folk?"
 
@@ -297,6 +294,9 @@ msgstr "Innsjekking"
 
 msgid "Check-out"
 msgstr "Sjekk ut"
+
+msgid "How many nights?"
+msgstr "Hvor mange netter?"
 
 msgid "TOTAL"
 msgstr "TOTAL"
@@ -511,24 +511,6 @@ msgstr "Vellykket aktivert tofaktorautentisering."
 msgid "Successfully disabled two factor authentication."
 msgstr "Deaktivert tofaktorautentisering."
 
-msgid "Your reservation is successful."
-msgstr "Reservasjonen din er vellykket."
-
-msgid "Your invoice is below."
-msgstr "Din faktura er nedenfor."
-
-msgid "The invoice is also available in your dashboard."
-msgstr "Fakturaen er også tilgjengelig i dashbordet ditt."
-
-msgid "The invoice acts as ticket."
-msgstr "Fakturaen fungerer som billett."
-
-msgid "Please show the invoice to the hotel staff upon arrival."
-msgstr "Vennligst vis fakturaen til hotellpersonalet ved ankomst."
-
-msgid "Thank you for using Adventora."
-msgstr "Takk for at du bruker Adventora."
-
 msgid "Room not available"
 msgstr "Rom ikke tilgjengelig"
 
@@ -541,6 +523,11 @@ msgstr "Ugyldig data."
 #| msgid "Reservations"
 msgid "Reservation successful"
 msgstr "Reservasjoner"
+
+#, fuzzy
+#| msgid "Room not available"
+msgid "Reservation not available"
+msgstr "Rom ikke tilgjengelig"
 
 msgid "Hotel Name"
 msgstr "Hotellnavn"
@@ -597,6 +584,9 @@ msgstr "Lagre endringer"
 
 msgid "Room Number"
 msgstr "Romnummer"
+
+msgid "Luxuries"
+msgstr "Luksus"
 
 msgid "Create Room"
 msgstr "Lag rom"
@@ -736,6 +726,29 @@ msgstr "Rommet er lagt til"
 
 msgid "Photo not found"
 msgstr "Bildet ble ikke funnet"
+
+#, fuzzy
+#| msgid "Successfully added room"
+msgid "Successfully updated room"
+msgstr "Rommet er lagt til"
+
+#~ msgid "Your reservation is successful."
+#~ msgstr "Reservasjonen din er vellykket."
+
+#~ msgid "Your invoice is below."
+#~ msgstr "Din faktura er nedenfor."
+
+#~ msgid "The invoice is also available in your dashboard."
+#~ msgstr "Fakturaen er også tilgjengelig i dashbordet ditt."
+
+#~ msgid "The invoice acts as ticket."
+#~ msgstr "Fakturaen fungerer som billett."
+
+#~ msgid "Please show the invoice to the hotel staff upon arrival."
+#~ msgstr "Vennligst vis fakturaen til hotellpersonalet ved ankomst."
+
+#~ msgid "Thank you for using Adventora."
+#~ msgstr "Takk for at du bruker Adventora."
 
 #~ msgid "Language"
 #~ msgstr "Språk"

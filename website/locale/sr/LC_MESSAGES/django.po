@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-28 22:35+0200\n"
+"POT-Creation-Date: 2024-01-20 16:18+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -167,6 +167,9 @@ msgstr "Резервације"
 msgid "Room"
 msgstr "Соба"
 
+msgid "View more"
+msgstr "Погледај још"
+
 #, fuzzy
 #| msgid "Reservations"
 msgid "Reserve"
@@ -263,9 +266,6 @@ msgstr "Додај фотографије"
 msgid "Upload"
 msgstr "Отпремити"
 
-msgid "View more"
-msgstr "Погледај још"
-
 msgid "For partnerships contact us at"
 msgstr "За партнерства нас контактирајте на"
 
@@ -285,9 +285,6 @@ msgstr "Презиме"
 msgid "Email"
 msgstr "Емаил"
 
-msgid "How many nights?"
-msgstr "Колико ноћи?"
-
 msgid "How many people?"
 msgstr "Колико људи?"
 
@@ -296,6 +293,9 @@ msgstr "Пријавити"
 
 msgid "Check-out"
 msgstr "Провери"
+
+msgid "How many nights?"
+msgstr "Колико ноћи?"
 
 msgid "TOTAL"
 msgstr "ТОТАЛ"
@@ -514,24 +514,6 @@ msgstr "Успешно је омогућена аутентификација с
 msgid "Successfully disabled two factor authentication."
 msgstr "Успешно је онемогућена аутентификација са два фактора."
 
-msgid "Your reservation is successful."
-msgstr "Ваша резервација је успела."
-
-msgid "Your invoice is below."
-msgstr "Ваша фактура је испод."
-
-msgid "The invoice is also available in your dashboard."
-msgstr "Фактура је такође доступна на вашој контролној табли."
-
-msgid "The invoice acts as ticket."
-msgstr "Фактура служи као карта."
-
-msgid "Please show the invoice to the hotel staff upon arrival."
-msgstr "Молимо покажите рачун особљу хотела по доласку."
-
-msgid "Thank you for using Adventora."
-msgstr "Хвала вам што користите Адвентора."
-
 msgid "Room not available"
 msgstr "Соба није доступна"
 
@@ -544,6 +526,11 @@ msgstr "Неважећи подаци."
 #| msgid "Reservations"
 msgid "Reservation successful"
 msgstr "Резервације"
+
+#, fuzzy
+#| msgid "Room not available"
+msgid "Reservation not available"
+msgstr "Соба није доступна"
 
 msgid "Hotel Name"
 msgstr "Име хотела"
@@ -600,6 +587,9 @@ msgstr "Сачувај измене"
 
 msgid "Room Number"
 msgstr "Број собе"
+
+msgid "Luxuries"
+msgstr "Луксузни"
 
 msgid "Create Room"
 msgstr "Цреате Роом"
@@ -739,6 +729,29 @@ msgstr "Просторија је додата"
 
 msgid "Photo not found"
 msgstr "Фотографија није пронађена"
+
+#, fuzzy
+#| msgid "Successfully added room"
+msgid "Successfully updated room"
+msgstr "Просторија је додата"
+
+#~ msgid "Your reservation is successful."
+#~ msgstr "Ваша резервација је успела."
+
+#~ msgid "Your invoice is below."
+#~ msgstr "Ваша фактура је испод."
+
+#~ msgid "The invoice is also available in your dashboard."
+#~ msgstr "Фактура је такође доступна на вашој контролној табли."
+
+#~ msgid "The invoice acts as ticket."
+#~ msgstr "Фактура служи као карта."
+
+#~ msgid "Please show the invoice to the hotel staff upon arrival."
+#~ msgstr "Молимо покажите рачун особљу хотела по доласку."
+
+#~ msgid "Thank you for using Adventora."
+#~ msgstr "Хвала вам што користите Адвентора."
 
 #~ msgid "Language"
 #~ msgstr "Језик"

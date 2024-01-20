@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-28 22:35+0200\n"
+"POT-Creation-Date: 2024-01-20 16:18+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -168,6 +168,9 @@ msgstr "κρατήσεις"
 msgid "Room"
 msgstr "Δωμάτιο"
 
+msgid "View more"
+msgstr "Δείτε περισσότερα"
+
 #, fuzzy
 #| msgid "Reservations"
 msgid "Reserve"
@@ -264,9 +267,6 @@ msgstr "Πρόσθεσε φωτογραφίες"
 msgid "Upload"
 msgstr "Μεταφόρτωση"
 
-msgid "View more"
-msgstr "Δείτε περισσότερα"
-
 msgid "For partnerships contact us at"
 msgstr "Για συνεργασίες επικοινωνήστε μαζί μας στο"
 
@@ -286,9 +286,6 @@ msgstr "Επίθετο"
 msgid "Email"
 msgstr "ΗΛΕΚΤΡΟΝΙΚΗ ΔΙΕΥΘΥΝΣΗ"
 
-msgid "How many nights?"
-msgstr "Πόσες νύχτες;"
-
 msgid "How many people?"
 msgstr "Πόσοι άνθρωποι?"
 
@@ -297,6 +294,9 @@ msgstr "Check-in"
 
 msgid "Check-out"
 msgstr "Ολοκλήρωση αγοράς"
+
+msgid "How many nights?"
+msgstr "Πόσες νύχτες;"
 
 msgid "TOTAL"
 msgstr "ΣΥΝΟΛΟ"
@@ -518,26 +518,6 @@ msgstr "Ενεργοποιήθηκε με επιτυχία ο έλεγχος τ�
 msgid "Successfully disabled two factor authentication."
 msgstr "Απενεργοποιήθηκε με επιτυχία ο έλεγχος ταυτότητας δύο παραγόντων."
 
-msgid "Your reservation is successful."
-msgstr "Η κράτησή σας είναι επιτυχής."
-
-msgid "Your invoice is below."
-msgstr "Το τιμολόγιό σας είναι παρακάτω."
-
-msgid "The invoice is also available in your dashboard."
-msgstr "Το τιμολόγιο είναι επίσης διαθέσιμο στον πίνακα ελέγχου σας."
-
-msgid "The invoice acts as ticket."
-msgstr "Το τιμολόγιο λειτουργεί ως εισιτήριο."
-
-msgid "Please show the invoice to the hotel staff upon arrival."
-msgstr ""
-"Παρακαλείστε να επιδείξετε το τιμολόγιο στο προσωπικό του ξενοδοχείου κατά "
-"την άφιξη."
-
-msgid "Thank you for using Adventora."
-msgstr "Σας ευχαριστούμε που χρησιμοποιείτε το Adventora."
-
 msgid "Room not available"
 msgstr "Το δωμάτιο δεν είναι διαθέσιμο"
 
@@ -550,6 +530,11 @@ msgstr "Μη έγκυρα δεδομένα."
 #| msgid "Reservations"
 msgid "Reservation successful"
 msgstr "κρατήσεις"
+
+#, fuzzy
+#| msgid "Room not available"
+msgid "Reservation not available"
+msgstr "Το δωμάτιο δεν είναι διαθέσιμο"
 
 msgid "Hotel Name"
 msgstr "Όνομα ξενοδοχείου"
@@ -607,6 +592,9 @@ msgstr "Αποθήκευσε τις αλλαγές"
 
 msgid "Room Number"
 msgstr "Αριθμός δωματίου"
+
+msgid "Luxuries"
+msgstr "Πολυτέλειες"
 
 msgid "Create Room"
 msgstr "Δημιουργία δωματίου"
@@ -746,6 +734,31 @@ msgstr "Το δωμάτιο προστέθηκε με επιτυχία"
 
 msgid "Photo not found"
 msgstr "Η φωτογραφία δεν βρέθηκε"
+
+#, fuzzy
+#| msgid "Successfully added room"
+msgid "Successfully updated room"
+msgstr "Το δωμάτιο προστέθηκε με επιτυχία"
+
+#~ msgid "Your reservation is successful."
+#~ msgstr "Η κράτησή σας είναι επιτυχής."
+
+#~ msgid "Your invoice is below."
+#~ msgstr "Το τιμολόγιό σας είναι παρακάτω."
+
+#~ msgid "The invoice is also available in your dashboard."
+#~ msgstr "Το τιμολόγιο είναι επίσης διαθέσιμο στον πίνακα ελέγχου σας."
+
+#~ msgid "The invoice acts as ticket."
+#~ msgstr "Το τιμολόγιο λειτουργεί ως εισιτήριο."
+
+#~ msgid "Please show the invoice to the hotel staff upon arrival."
+#~ msgstr ""
+#~ "Παρακαλείστε να επιδείξετε το τιμολόγιο στο προσωπικό του ξενοδοχείου κατά "
+#~ "την άφιξη."
+
+#~ msgid "Thank you for using Adventora."
+#~ msgstr "Σας ευχαριστούμε που χρησιμοποιείτε το Adventora."
 
 #~ msgid "Language"
 #~ msgstr "Γλώσσα"

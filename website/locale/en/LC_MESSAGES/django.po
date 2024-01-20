@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-28 22:35+0200\n"
+"POT-Creation-Date: 2024-01-20 16:18+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -159,6 +159,9 @@ msgstr ""
 msgid "Room"
 msgstr ""
 
+msgid "View more"
+msgstr ""
+
 msgid "Reserve"
 msgstr ""
 
@@ -243,9 +246,6 @@ msgstr ""
 msgid "Upload"
 msgstr ""
 
-msgid "View more"
-msgstr ""
-
 msgid "For partnerships contact us at"
 msgstr ""
 
@@ -261,9 +261,6 @@ msgstr ""
 msgid "Email"
 msgstr ""
 
-msgid "How many nights?"
-msgstr ""
-
 msgid "How many people?"
 msgstr ""
 
@@ -271,6 +268,9 @@ msgid "Check-in"
 msgstr ""
 
 msgid "Check-out"
+msgstr ""
+
+msgid "How many nights?"
 msgstr ""
 
 msgid "TOTAL"
@@ -474,24 +474,6 @@ msgstr ""
 msgid "Successfully disabled two factor authentication."
 msgstr ""
 
-msgid "Your reservation is successful."
-msgstr ""
-
-msgid "Your invoice is below."
-msgstr ""
-
-msgid "The invoice is also available in your dashboard."
-msgstr ""
-
-msgid "The invoice acts as ticket."
-msgstr ""
-
-msgid "Please show the invoice to the hotel staff upon arrival."
-msgstr ""
-
-msgid "Thank you for using Adventora."
-msgstr ""
-
 msgid "Room not available"
 msgstr ""
 
@@ -499,6 +481,9 @@ msgid "Invalid dates"
 msgstr ""
 
 msgid "Reservation successful"
+msgstr ""
+
+msgid "Reservation not available"
 msgstr ""
 
 msgid "Hotel Name"
@@ -538,6 +523,9 @@ msgid "Save Changes"
 msgstr ""
 
 msgid "Room Number"
+msgstr ""
+
+msgid "Luxuries"
 msgstr ""
 
 msgid "Create Room"
@@ -649,4 +637,7 @@ msgid "Successfully deleted photo"
 msgstr ""
 
 msgid "Photo not found"
+msgstr ""
+
+msgid "Successfully updated room"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-28 22:35+0200\n"
+"POT-Creation-Date: 2024-01-20 16:18+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -168,6 +168,9 @@ msgstr "Bokningar"
 msgid "Room"
 msgstr "Rum"
 
+msgid "View more"
+msgstr "Visa mer"
+
 #, fuzzy
 #| msgid "Reservations"
 msgid "Reserve"
@@ -264,9 +267,6 @@ msgstr "Lägg till foton"
 msgid "Upload"
 msgstr "Ladda upp"
 
-msgid "View more"
-msgstr "Visa mer"
-
 msgid "For partnerships contact us at"
 msgstr "För partnerskap kontakta oss på"
 
@@ -286,9 +286,6 @@ msgstr "Efternamn"
 msgid "Email"
 msgstr "E-post"
 
-msgid "How many nights?"
-msgstr "Hur många nätter?"
-
 msgid "How many people?"
 msgstr "Hur många personer?"
 
@@ -297,6 +294,9 @@ msgstr "Checka in"
 
 msgid "Check-out"
 msgstr "Kolla upp"
+
+msgid "How many nights?"
+msgstr "Hur många nätter?"
 
 msgid "TOTAL"
 msgstr "TOTAL"
@@ -514,24 +514,6 @@ msgstr "Tvåfaktorsautentisering har aktiverats."
 msgid "Successfully disabled two factor authentication."
 msgstr "Tvåfaktorsautentisering har inaktiverats."
 
-msgid "Your reservation is successful."
-msgstr "Din bokning har lyckats."
-
-msgid "Your invoice is below."
-msgstr "Din faktura finns nedan."
-
-msgid "The invoice is also available in your dashboard."
-msgstr "Fakturan finns även tillgänglig i din instrumentpanel."
-
-msgid "The invoice acts as ticket."
-msgstr "Fakturan fungerar som biljett."
-
-msgid "Please show the invoice to the hotel staff upon arrival."
-msgstr "Vänligen visa upp fakturan för hotellpersonalen vid ankomst."
-
-msgid "Thank you for using Adventora."
-msgstr "Tack för att du använder Adventora."
-
 msgid "Room not available"
 msgstr "Rum ej tillgängligt"
 
@@ -544,6 +526,11 @@ msgstr "Ogiltiga data."
 #| msgid "Reservations"
 msgid "Reservation successful"
 msgstr "Bokningar"
+
+#, fuzzy
+#| msgid "Room not available"
+msgid "Reservation not available"
+msgstr "Rum ej tillgängligt"
 
 msgid "Hotel Name"
 msgstr "Hotellnamn"
@@ -600,6 +587,9 @@ msgstr "Spara ändringar"
 
 msgid "Room Number"
 msgstr "Rumsnummer"
+
+msgid "Luxuries"
+msgstr "Lyx"
 
 msgid "Create Room"
 msgstr "Skapa rum"
@@ -739,6 +729,29 @@ msgstr "Rummet har lagts till"
 
 msgid "Photo not found"
 msgstr "Bilden hittades inte"
+
+#, fuzzy
+#| msgid "Successfully added room"
+msgid "Successfully updated room"
+msgstr "Rummet har lagts till"
+
+#~ msgid "Your reservation is successful."
+#~ msgstr "Din bokning har lyckats."
+
+#~ msgid "Your invoice is below."
+#~ msgstr "Din faktura finns nedan."
+
+#~ msgid "The invoice is also available in your dashboard."
+#~ msgstr "Fakturan finns även tillgänglig i din instrumentpanel."
+
+#~ msgid "The invoice acts as ticket."
+#~ msgstr "Fakturan fungerar som biljett."
+
+#~ msgid "Please show the invoice to the hotel staff upon arrival."
+#~ msgstr "Vänligen visa upp fakturan för hotellpersonalen vid ankomst."
+
+#~ msgid "Thank you for using Adventora."
+#~ msgstr "Tack för att du använder Adventora."
 
 #~ msgid "Language"
 #~ msgstr "Språk"

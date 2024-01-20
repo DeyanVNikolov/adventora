@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-28 22:35+0200\n"
+"POT-Creation-Date: 2024-01-20 16:18+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -167,6 +167,9 @@ msgstr "Rezervasyonlar"
 msgid "Room"
 msgstr "Oda"
 
+msgid "View more"
+msgstr "Daha fazla göster"
+
 #, fuzzy
 #| msgid "Reservations"
 msgid "Reserve"
@@ -263,9 +266,6 @@ msgstr "Fotoğraf ekle"
 msgid "Upload"
 msgstr "Yüklemek"
 
-msgid "View more"
-msgstr "Daha fazla göster"
-
 msgid "For partnerships contact us at"
 msgstr "Ortaklıklar için bizimle şu adresten iletişime geçin:"
 
@@ -285,9 +285,6 @@ msgstr "Soy isim"
 msgid "Email"
 msgstr "E-posta"
 
-msgid "How many nights?"
-msgstr "Kaç gece?"
-
 msgid "How many people?"
 msgstr "Kaç insan?"
 
@@ -296,6 +293,9 @@ msgstr "Giriş"
 
 msgid "Check-out"
 msgstr "Çıkış yapmak"
+
+msgid "How many nights?"
+msgstr "Kaç gece?"
 
 msgid "TOTAL"
 msgstr "TOPLAM"
@@ -514,24 +514,6 @@ msgstr "İki faktörlü kimlik doğrulama başarıyla etkinleştirildi."
 msgid "Successfully disabled two factor authentication."
 msgstr "İki faktörlü kimlik doğrulama başarıyla devre dışı bırakıldı."
 
-msgid "Your reservation is successful."
-msgstr "Rezervasyonunuz başarılı."
-
-msgid "Your invoice is below."
-msgstr "Faturanız aşağıdadır."
-
-msgid "The invoice is also available in your dashboard."
-msgstr "Fatura aynı zamanda kontrol panelinizde de mevcuttur."
-
-msgid "The invoice acts as ticket."
-msgstr "Fatura bilet görevi görür."
-
-msgid "Please show the invoice to the hotel staff upon arrival."
-msgstr "Lütfen varışta otel personeline faturayı gösterin."
-
-msgid "Thank you for using Adventora."
-msgstr "Adventora'yı kullandığınız için teşekkür ederiz."
-
 msgid "Room not available"
 msgstr "Oda mevcut değil"
 
@@ -544,6 +526,11 @@ msgstr "Geçersiz veri."
 #| msgid "Reservations"
 msgid "Reservation successful"
 msgstr "Rezervasyonlar"
+
+#, fuzzy
+#| msgid "Room not available"
+msgid "Reservation not available"
+msgstr "Oda mevcut değil"
 
 msgid "Hotel Name"
 msgstr "Otel Adı"
@@ -600,6 +587,9 @@ msgstr "Değişiklikleri Kaydet"
 
 msgid "Room Number"
 msgstr "Oda numarası"
+
+msgid "Luxuries"
+msgstr "Lüksler"
 
 msgid "Create Room"
 msgstr "Oda yarat"
@@ -739,6 +729,29 @@ msgstr "Oda başarıyla eklendi"
 
 msgid "Photo not found"
 msgstr "Fotoğraf bulunamadı"
+
+#, fuzzy
+#| msgid "Successfully added room"
+msgid "Successfully updated room"
+msgstr "Oda başarıyla eklendi"
+
+#~ msgid "Your reservation is successful."
+#~ msgstr "Rezervasyonunuz başarılı."
+
+#~ msgid "Your invoice is below."
+#~ msgstr "Faturanız aşağıdadır."
+
+#~ msgid "The invoice is also available in your dashboard."
+#~ msgstr "Fatura aynı zamanda kontrol panelinizde de mevcuttur."
+
+#~ msgid "The invoice acts as ticket."
+#~ msgstr "Fatura bilet görevi görür."
+
+#~ msgid "Please show the invoice to the hotel staff upon arrival."
+#~ msgstr "Lütfen varışta otel personeline faturayı gösterin."
+
+#~ msgid "Thank you for using Adventora."
+#~ msgstr "Adventora'yı kullandığınız için teşekkür ederiz."
 
 #~ msgid "Language"
 #~ msgstr "Dil"

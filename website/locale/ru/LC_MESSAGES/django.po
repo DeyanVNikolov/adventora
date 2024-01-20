@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-28 22:35+0200\n"
+"POT-Creation-Date: 2024-01-20 16:18+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -167,6 +167,9 @@ msgstr "Бронирование"
 msgid "Room"
 msgstr "Комната"
 
+msgid "View more"
+msgstr "Посмотреть больше"
+
 #, fuzzy
 #| msgid "Reservations"
 msgid "Reserve"
@@ -263,9 +266,6 @@ msgstr "Добавить фотографии"
 msgid "Upload"
 msgstr "Загрузить"
 
-msgid "View more"
-msgstr "Посмотреть больше"
-
 msgid "For partnerships contact us at"
 msgstr "По вопросам партнерства свяжитесь с нами по тел."
 
@@ -285,9 +285,6 @@ msgstr "Фамилия"
 msgid "Email"
 msgstr "Электронная почта"
 
-msgid "How many nights?"
-msgstr "Сколько ночей?"
-
 msgid "How many people?"
 msgstr "Сколько людей?"
 
@@ -296,6 +293,9 @@ msgstr "Регистрироваться"
 
 msgid "Check-out"
 msgstr "Проверить"
+
+msgid "How many nights?"
+msgstr "Сколько ночей?"
 
 msgid "TOTAL"
 msgstr "ОБЩИЙ"
@@ -515,24 +515,6 @@ msgstr "Двухфакторная аутентификация успешно �
 msgid "Successfully disabled two factor authentication."
 msgstr "Двухфакторная аутентификация успешно отключена."
 
-msgid "Your reservation is successful."
-msgstr "Ваше бронирование успешно."
-
-msgid "Your invoice is below."
-msgstr "Ваш счет ниже."
-
-msgid "The invoice is also available in your dashboard."
-msgstr "Счет-фактура также доступен в личном кабинете."
-
-msgid "The invoice acts as ticket."
-msgstr "Счет-фактура действует как билет."
-
-msgid "Please show the invoice to the hotel staff upon arrival."
-msgstr "Пожалуйста, предъявите счет сотрудникам отеля по прибытии."
-
-msgid "Thank you for using Adventora."
-msgstr "Благодарим вас за использование Адвенторы."
-
 msgid "Room not available"
 msgstr "Комната недоступна"
 
@@ -545,6 +527,11 @@ msgstr "Неверные данные."
 #| msgid "Reservations"
 msgid "Reservation successful"
 msgstr "Бронирование"
+
+#, fuzzy
+#| msgid "Room not available"
+msgid "Reservation not available"
+msgstr "Комната недоступна"
 
 msgid "Hotel Name"
 msgstr "Название отеля"
@@ -602,6 +589,9 @@ msgstr "Сохранить изменения"
 
 msgid "Room Number"
 msgstr "Номер комнаты"
+
+msgid "Luxuries"
+msgstr "Роскошь"
 
 msgid "Create Room"
 msgstr "Создать комнату"
@@ -741,6 +731,29 @@ msgstr "Комната успешно добавлена"
 
 msgid "Photo not found"
 msgstr "Фото не найдено"
+
+#, fuzzy
+#| msgid "Successfully added room"
+msgid "Successfully updated room"
+msgstr "Комната успешно добавлена"
+
+#~ msgid "Your reservation is successful."
+#~ msgstr "Ваше бронирование успешно."
+
+#~ msgid "Your invoice is below."
+#~ msgstr "Ваш счет ниже."
+
+#~ msgid "The invoice is also available in your dashboard."
+#~ msgstr "Счет-фактура также доступен в личном кабинете."
+
+#~ msgid "The invoice acts as ticket."
+#~ msgstr "Счет-фактура действует как билет."
+
+#~ msgid "Please show the invoice to the hotel staff upon arrival."
+#~ msgstr "Пожалуйста, предъявите счет сотрудникам отеля по прибытии."
+
+#~ msgid "Thank you for using Adventora."
+#~ msgstr "Благодарим вас за использование Адвенторы."
 
 #~ msgid "Language"
 #~ msgstr "Язык"

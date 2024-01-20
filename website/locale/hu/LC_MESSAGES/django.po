@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-28 22:35+0200\n"
+"POT-Creation-Date: 2024-01-20 16:18+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -167,6 +167,9 @@ msgstr "Fenntartások"
 msgid "Room"
 msgstr "Szoba"
 
+msgid "View more"
+msgstr "Mutass többet"
+
 #, fuzzy
 #| msgid "Reservations"
 msgid "Reserve"
@@ -263,9 +266,6 @@ msgstr "Fényképek hozzáadása"
 msgid "Upload"
 msgstr "Feltöltés"
 
-msgid "View more"
-msgstr "Mutass többet"
-
 msgid "For partnerships contact us at"
 msgstr "Partnerkapcsolatokért vegye fel velünk a kapcsolatot a telefonszámon"
 
@@ -285,9 +285,6 @@ msgstr "Vezetéknév"
 msgid "Email"
 msgstr "Email"
 
-msgid "How many nights?"
-msgstr "Hány éjszaka?"
-
 msgid "How many people?"
 msgstr "Hány ember?"
 
@@ -296,6 +293,9 @@ msgstr "Becsekkolás"
 
 msgid "Check-out"
 msgstr "Kijelentkezés"
+
+msgid "How many nights?"
+msgstr "Hány éjszaka?"
 
 msgid "TOTAL"
 msgstr "TELJES"
@@ -514,24 +514,6 @@ msgstr "A kéttényezős hitelesítés sikeresen engedélyezve."
 msgid "Successfully disabled two factor authentication."
 msgstr "A kéttényezős hitelesítés letiltása sikerült."
 
-msgid "Your reservation is successful."
-msgstr "A foglalás sikeres."
-
-msgid "Your invoice is below."
-msgstr "Az Ön számlája lent található."
-
-msgid "The invoice is also available in your dashboard."
-msgstr "A számla a műszerfalon is elérhető."
-
-msgid "The invoice acts as ticket."
-msgstr "A számla jegyként működik."
-
-msgid "Please show the invoice to the hotel staff upon arrival."
-msgstr "Kérjük, érkezéskor mutassa be a számlát a szálloda személyzetének."
-
-msgid "Thank you for using Adventora."
-msgstr "Köszönjük, hogy az Adventora szolgáltatást használja."
-
 msgid "Room not available"
 msgstr "A szoba nem elérhető"
 
@@ -544,6 +526,11 @@ msgstr "Érvénytelen adat."
 #| msgid "Reservations"
 msgid "Reservation successful"
 msgstr "Fenntartások"
+
+#, fuzzy
+#| msgid "Room not available"
+msgid "Reservation not available"
+msgstr "A szoba nem elérhető"
 
 msgid "Hotel Name"
 msgstr "Szálloda neve"
@@ -600,6 +587,9 @@ msgstr "Változtatások mentése"
 
 msgid "Room Number"
 msgstr "Szoba szám"
+
+msgid "Luxuries"
+msgstr "Luxusok"
 
 msgid "Create Room"
 msgstr "Szoba létrehozása"
@@ -739,6 +729,29 @@ msgstr "A szoba sikeresen hozzáadva"
 
 msgid "Photo not found"
 msgstr "A fénykép nem található"
+
+#, fuzzy
+#| msgid "Successfully added room"
+msgid "Successfully updated room"
+msgstr "A szoba sikeresen hozzáadva"
+
+#~ msgid "Your reservation is successful."
+#~ msgstr "A foglalás sikeres."
+
+#~ msgid "Your invoice is below."
+#~ msgstr "Az Ön számlája lent található."
+
+#~ msgid "The invoice is also available in your dashboard."
+#~ msgstr "A számla a műszerfalon is elérhető."
+
+#~ msgid "The invoice acts as ticket."
+#~ msgstr "A számla jegyként működik."
+
+#~ msgid "Please show the invoice to the hotel staff upon arrival."
+#~ msgstr "Kérjük, érkezéskor mutassa be a számlát a szálloda személyzetének."
+
+#~ msgid "Thank you for using Adventora."
+#~ msgstr "Köszönjük, hogy az Adventora szolgáltatást használja."
 
 #~ msgid "Language"
 #~ msgstr "Nyelv"
