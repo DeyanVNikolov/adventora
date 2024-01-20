@@ -57,20 +57,70 @@
     </style>
 
     <section class="section">
-        <div class="columns box ">
-            <div id="carousel-demo" class="carousel column">
-                    {% for image in hotel_images %}
-                        <div class="item-1">
-                            <figure class="image is-3by2">
-                                <img style="object-fit: cover" src="/static/cover/hotel/{{ hotel.id }}/{{ image }}">
-                            </figure>
+        <div class="columns box">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+            <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet"/>
+
+            <style>
+
+                .swiper {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .swiper-slide {
+                    text-align: center;
+                    font-size: 18px;
+                    background: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .swiper-slide img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+
+            </style>
+
+            <div class="column is-three-quarters">
+            <section class="section is-unselectable">
+                <div class="container">
+                    <div class="swiper mySwiper" style="height: 700px; border-radius: 15px">
+                        <div class="swiper-wrapper swpmitkodidko" style="overflow: visible !important;">
+                            {% for image in hotel_images %}
+                                <div class="swiper-slide"><img src="/static/cover/hotel/{{ hotel.id }}/{{ image }}" alt="" style="width: 100%; height: 100%"></div>
+                            {% endfor %}
+
+
                         </div>
-                    {% endfor %}
+                        <div class="swiper-button-next" style="background-color:rgba(0,0,0,0.66)"></div>
+                        <div class="swiper-button-prev" style="background-color:rgba(0,0,0,0.66)"></div>
+                    </div>
+                </div>
+            </section>
 
+            <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+            <script>
+
+                var swiper = new Swiper(".mySwiper", {
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+
+                    },
+                    loop: true,
+
+                });
+            </script>
             </div>
-            <div class="column is-1"></div>
 
-            <div class="column is-4 card flex-column-card">
+            <div class="column card flex-column-card">
                 <header class="card-header">
                     <p class="card-header-title is-size-2" id="card-header-title-main">
                         {{ hotel.name }} &nbsp;
