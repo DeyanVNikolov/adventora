@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 16:18+0200\n"
+"POT-Creation-Date: 2024-01-21 12:41+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -39,11 +39,39 @@ msgstr "Oprit"
 msgid "Turn on"
 msgstr "Porniți"
 
+#, fuzzy
+#| msgid "Reservations"
+msgid "My Reservations"
+msgstr "Rezervări"
+
 msgid "Change password"
 msgstr "Schimbaţi parola"
 
 msgid "Delete Account"
 msgstr "Șterge cont"
+
+msgid "Room"
+msgstr "Cameră"
+
+#, fuzzy
+#| msgid "Night"
+msgid "Nights"
+msgstr "Noapte"
+
+msgid "Check-in"
+msgstr "Check-in"
+
+msgid "Check-out"
+msgstr "Verifică"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "Invoice"
+msgstr "Factura fiscala"
+
+msgid "Hotel"
+msgstr "Hotel"
 
 msgid "Login with Google"
 msgstr "Conectați-vă cu Google"
@@ -75,9 +103,6 @@ msgstr "Pagina principala"
 #, fuzzy
 #| msgid "Hotel"
 msgid "Hotels"
-msgstr "Hotel"
-
-msgid "Hotel"
 msgstr "Hotel"
 
 msgid "Dashboard"
@@ -163,9 +188,6 @@ msgstr "Client personalizat"
 #| msgid "Reservations"
 msgid "Total Reservations"
 msgstr "Rezervări"
-
-msgid "Room"
-msgstr "Cameră"
 
 msgid "View more"
 msgstr "Vezi mai mult"
@@ -287,12 +309,6 @@ msgstr "E-mail"
 
 msgid "How many people?"
 msgstr "Cati oameni?"
-
-msgid "Check-in"
-msgstr "Check-in"
-
-msgid "Check-out"
-msgstr "Verifică"
 
 msgid "How many nights?"
 msgstr "Cate nopti?"
@@ -530,6 +546,11 @@ msgstr "Rezervări"
 #, fuzzy
 #| msgid "Room not available"
 msgid "Reservation not available"
+msgstr "Camera nu este disponibilă"
+
+#, fuzzy
+#| msgid "Room not available"
+msgid "Invoice not available"
 msgstr "Camera nu este disponibilă"
 
 msgid "Hotel Name"

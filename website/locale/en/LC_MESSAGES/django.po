@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 16:18+0200\n"
+"POT-Creation-Date: 2024-01-21 12:41+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -39,10 +39,34 @@ msgstr ""
 msgid "Turn on"
 msgstr ""
 
+msgid "My Reservations"
+msgstr ""
+
 msgid "Change password"
 msgstr ""
 
 msgid "Delete Account"
+msgstr ""
+
+msgid "Room"
+msgstr ""
+
+msgid "Nights"
+msgstr ""
+
+msgid "Check-in"
+msgstr ""
+
+msgid "Check-out"
+msgstr ""
+
+msgid "Total"
+msgstr ""
+
+msgid "Invoice"
+msgstr ""
+
+msgid "Hotel"
 msgstr ""
 
 msgid "Login with Google"
@@ -73,9 +97,6 @@ msgid "Homepage"
 msgstr ""
 
 msgid "Hotels"
-msgstr ""
-
-msgid "Hotel"
 msgstr ""
 
 msgid "Dashboard"
@@ -154,9 +175,6 @@ msgid "Happy Customers"
 msgstr ""
 
 msgid "Total Reservations"
-msgstr ""
-
-msgid "Room"
 msgstr ""
 
 msgid "View more"
@@ -262,12 +280,6 @@ msgid "Email"
 msgstr ""
 
 msgid "How many people?"
-msgstr ""
-
-msgid "Check-in"
-msgstr ""
-
-msgid "Check-out"
 msgstr ""
 
 msgid "How many nights?"
@@ -484,6 +496,9 @@ msgid "Reservation successful"
 msgstr ""
 
 msgid "Reservation not available"
+msgstr ""
+
+msgid "Invoice not available"
 msgstr ""
 
 msgid "Hotel Name"

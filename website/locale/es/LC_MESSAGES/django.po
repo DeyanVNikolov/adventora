@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 16:18+0200\n"
+"POT-Creation-Date: 2024-01-21 12:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,11 +39,39 @@ msgstr "Apagado"
 msgid "Turn on"
 msgstr "Encender"
 
+#, fuzzy
+#| msgid "Reservations"
+msgid "My Reservations"
+msgstr "Reservas"
+
 msgid "Change password"
 msgstr "Cambiar la contraseña"
 
 msgid "Delete Account"
 msgstr "Borrar cuenta"
+
+msgid "Room"
+msgstr "Habitación"
+
+#, fuzzy
+#| msgid "Night"
+msgid "Nights"
+msgstr "Noche"
+
+msgid "Check-in"
+msgstr "Registrarse"
+
+msgid "Check-out"
+msgstr "Verificar"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "Invoice"
+msgstr "Factura"
+
+msgid "Hotel"
+msgstr "Hotel"
 
 msgid "Login with Google"
 msgstr "Iniciar sesión con Google"
@@ -75,9 +103,6 @@ msgstr "Página principal"
 #, fuzzy
 #| msgid "Hotel"
 msgid "Hotels"
-msgstr "Hotel"
-
-msgid "Hotel"
 msgstr "Hotel"
 
 msgid "Dashboard"
@@ -164,9 +189,6 @@ msgstr "Cliente personalizado"
 #| msgid "Reservations"
 msgid "Total Reservations"
 msgstr "Reservas"
-
-msgid "Room"
-msgstr "Habitación"
 
 msgid "View more"
 msgstr "Ver más"
@@ -288,12 +310,6 @@ msgstr "Correo electrónico"
 
 msgid "How many people?"
 msgstr "¿Cuanta gente?"
-
-msgid "Check-in"
-msgstr "Registrarse"
-
-msgid "Check-out"
-msgstr "Verificar"
 
 msgid "How many nights?"
 msgstr "¿Cuántas noches?"
@@ -532,6 +548,11 @@ msgstr "Reservas"
 #, fuzzy
 #| msgid "Room not available"
 msgid "Reservation not available"
+msgstr "Habitación no disponible"
+
+#, fuzzy
+#| msgid "Room not available"
+msgid "Invoice not available"
 msgstr "Habitación no disponible"
 
 msgid "Hotel Name"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 16:18+0200\n"
+"POT-Creation-Date: 2024-01-21 12:41+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -39,11 +39,39 @@ msgstr "Éteindre"
 msgid "Turn on"
 msgstr "Allumer"
 
+#, fuzzy
+#| msgid "Reservations"
+msgid "My Reservations"
+msgstr "Réservations"
+
 msgid "Change password"
 msgstr "Changer le mot de passe"
 
 msgid "Delete Account"
 msgstr "Supprimer le compte"
+
+msgid "Room"
+msgstr "Chambre"
+
+#, fuzzy
+#| msgid "Night"
+msgid "Nights"
+msgstr "Nuit"
+
+msgid "Check-in"
+msgstr "Enregistrement"
+
+msgid "Check-out"
+msgstr "Vérifier"
+
+msgid "Total"
+msgstr "Total"
+
+msgid "Invoice"
+msgstr "Facture"
+
+msgid "Hotel"
+msgstr "Hôtel"
 
 msgid "Login with Google"
 msgstr "Connectez-vous avec Google"
@@ -75,9 +103,6 @@ msgstr "Page d'accueil"
 #, fuzzy
 #| msgid "Hotel"
 msgid "Hotels"
-msgstr "Hôtel"
-
-msgid "Hotel"
 msgstr "Hôtel"
 
 msgid "Dashboard"
@@ -165,9 +190,6 @@ msgstr "Client personnalisé"
 #| msgid "Reservations"
 msgid "Total Reservations"
 msgstr "Réservations"
-
-msgid "Room"
-msgstr "Chambre"
 
 msgid "View more"
 msgstr "Voir plus"
@@ -289,12 +311,6 @@ msgstr "E-mail"
 
 msgid "How many people?"
 msgstr "Combien de personnes?"
-
-msgid "Check-in"
-msgstr "Enregistrement"
-
-msgid "Check-out"
-msgstr "Vérifier"
 
 msgid "How many nights?"
 msgstr "Combien de nuits?"
@@ -534,6 +550,11 @@ msgstr "Réservations"
 #, fuzzy
 #| msgid "Room not available"
 msgid "Reservation not available"
+msgstr "Chambre non disponible"
+
+#, fuzzy
+#| msgid "Room not available"
+msgid "Invoice not available"
 msgstr "Chambre non disponible"
 
 msgid "Hotel Name"

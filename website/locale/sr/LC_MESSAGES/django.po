@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 16:18+0200\n"
+"POT-Creation-Date: 2024-01-21 12:41+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -39,11 +39,39 @@ msgstr "Искључен"
 msgid "Turn on"
 msgstr "Укључити"
 
+#, fuzzy
+#| msgid "Reservations"
+msgid "My Reservations"
+msgstr "Резервације"
+
 msgid "Change password"
 msgstr "Промени лозинку"
 
 msgid "Delete Account"
 msgstr "Обрисати налог"
+
+msgid "Room"
+msgstr "Соба"
+
+#, fuzzy
+#| msgid "Night"
+msgid "Nights"
+msgstr "ноћ"
+
+msgid "Check-in"
+msgstr "Пријавити"
+
+msgid "Check-out"
+msgstr "Провери"
+
+msgid "Total"
+msgstr "Укупно"
+
+msgid "Invoice"
+msgstr "Фактура"
+
+msgid "Hotel"
+msgstr "Хотел"
 
 msgid "Login with Google"
 msgstr "Пријавите се помоћу Гоогле-а"
@@ -75,9 +103,6 @@ msgstr "Почетна страница"
 #, fuzzy
 #| msgid "Hotel"
 msgid "Hotels"
-msgstr "Хотел"
-
-msgid "Hotel"
 msgstr "Хотел"
 
 msgid "Dashboard"
@@ -163,9 +188,6 @@ msgstr "Цустом Цустомер"
 #| msgid "Reservations"
 msgid "Total Reservations"
 msgstr "Резервације"
-
-msgid "Room"
-msgstr "Соба"
 
 msgid "View more"
 msgstr "Погледај још"
@@ -287,12 +309,6 @@ msgstr "Емаил"
 
 msgid "How many people?"
 msgstr "Колико људи?"
-
-msgid "Check-in"
-msgstr "Пријавити"
-
-msgid "Check-out"
-msgstr "Провери"
 
 msgid "How many nights?"
 msgstr "Колико ноћи?"
@@ -530,6 +546,11 @@ msgstr "Резервације"
 #, fuzzy
 #| msgid "Room not available"
 msgid "Reservation not available"
+msgstr "Соба није доступна"
+
+#, fuzzy
+#| msgid "Room not available"
+msgid "Invoice not available"
 msgstr "Соба није доступна"
 
 msgid "Hotel Name"

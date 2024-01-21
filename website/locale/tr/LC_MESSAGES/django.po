@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 16:18+0200\n"
+"POT-Creation-Date: 2024-01-21 12:41+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -39,11 +39,39 @@ msgstr "Kapalı"
 msgid "Turn on"
 msgstr "Aç"
 
+#, fuzzy
+#| msgid "Reservations"
+msgid "My Reservations"
+msgstr "Rezervasyonlar"
+
 msgid "Change password"
 msgstr "Şifre değiştir"
 
 msgid "Delete Account"
 msgstr "Hesabı sil"
+
+msgid "Room"
+msgstr "Oda"
+
+#, fuzzy
+#| msgid "Night"
+msgid "Nights"
+msgstr "Gece"
+
+msgid "Check-in"
+msgstr "Giriş"
+
+msgid "Check-out"
+msgstr "Çıkış yapmak"
+
+msgid "Total"
+msgstr "Toplam"
+
+msgid "Invoice"
+msgstr "Fatura"
+
+msgid "Hotel"
+msgstr "Otel"
 
 msgid "Login with Google"
 msgstr "Google ile giriş yap"
@@ -75,9 +103,6 @@ msgstr "Ana sayfa"
 #, fuzzy
 #| msgid "Hotel"
 msgid "Hotels"
-msgstr "Otel"
-
-msgid "Hotel"
 msgstr "Otel"
 
 msgid "Dashboard"
@@ -163,9 +188,6 @@ msgstr "Özel Müşteri"
 #| msgid "Reservations"
 msgid "Total Reservations"
 msgstr "Rezervasyonlar"
-
-msgid "Room"
-msgstr "Oda"
 
 msgid "View more"
 msgstr "Daha fazla göster"
@@ -287,12 +309,6 @@ msgstr "E-posta"
 
 msgid "How many people?"
 msgstr "Kaç insan?"
-
-msgid "Check-in"
-msgstr "Giriş"
-
-msgid "Check-out"
-msgstr "Çıkış yapmak"
 
 msgid "How many nights?"
 msgstr "Kaç gece?"
@@ -530,6 +546,11 @@ msgstr "Rezervasyonlar"
 #, fuzzy
 #| msgid "Room not available"
 msgid "Reservation not available"
+msgstr "Oda mevcut değil"
+
+#, fuzzy
+#| msgid "Room not available"
+msgid "Invoice not available"
 msgstr "Oda mevcut değil"
 
 msgid "Hotel Name"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 16:18+0200\n"
+"POT-Creation-Date: 2024-01-21 12:41+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -39,11 +39,39 @@ msgstr "Απενεργοποιημένο"
 msgid "Turn on"
 msgstr "Ανάβω"
 
+#, fuzzy
+#| msgid "Reservations"
+msgid "My Reservations"
+msgstr "κρατήσεις"
+
 msgid "Change password"
 msgstr "Αλλαξε κωδικό"
 
 msgid "Delete Account"
 msgstr "Διαγραφή λογαριασμού"
+
+msgid "Room"
+msgstr "Δωμάτιο"
+
+#, fuzzy
+#| msgid "Night"
+msgid "Nights"
+msgstr "Νύχτα"
+
+msgid "Check-in"
+msgstr "Check-in"
+
+msgid "Check-out"
+msgstr "Ολοκλήρωση αγοράς"
+
+msgid "Total"
+msgstr "Σύνολο"
+
+msgid "Invoice"
+msgstr "Τιμολόγιο"
+
+msgid "Hotel"
+msgstr "Ξενοδοχειο"
 
 msgid "Login with Google"
 msgstr "Συνδεθείτε με το Google"
@@ -75,9 +103,6 @@ msgstr "Αρχική σελίδα"
 #, fuzzy
 #| msgid "Hotel"
 msgid "Hotels"
-msgstr "Ξενοδοχειο"
-
-msgid "Hotel"
 msgstr "Ξενοδοχειο"
 
 msgid "Dashboard"
@@ -164,9 +189,6 @@ msgstr "Πελάτης"
 #| msgid "Reservations"
 msgid "Total Reservations"
 msgstr "κρατήσεις"
-
-msgid "Room"
-msgstr "Δωμάτιο"
 
 msgid "View more"
 msgstr "Δείτε περισσότερα"
@@ -288,12 +310,6 @@ msgstr "ΗΛΕΚΤΡΟΝΙΚΗ ΔΙΕΥΘΥΝΣΗ"
 
 msgid "How many people?"
 msgstr "Πόσοι άνθρωποι?"
-
-msgid "Check-in"
-msgstr "Check-in"
-
-msgid "Check-out"
-msgstr "Ολοκλήρωση αγοράς"
 
 msgid "How many nights?"
 msgstr "Πόσες νύχτες;"
@@ -534,6 +550,11 @@ msgstr "κρατήσεις"
 #, fuzzy
 #| msgid "Room not available"
 msgid "Reservation not available"
+msgstr "Το δωμάτιο δεν είναι διαθέσιμο"
+
+#, fuzzy
+#| msgid "Room not available"
+msgid "Invoice not available"
 msgstr "Το δωμάτιο δεν είναι διαθέσιμο"
 
 msgid "Hotel Name"

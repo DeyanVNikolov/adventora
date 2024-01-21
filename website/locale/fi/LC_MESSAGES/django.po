@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Adventora Beta-Release 1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-20 16:18+0200\n"
+"POT-Creation-Date: 2024-01-21 12:41+0200\n"
 "PO-Revision-Date: 2023-11-17 15:08+0200\n"
 "Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
 "Language-Team: ADVENTORA INTERNATIONAL <international>\n"
@@ -39,11 +39,39 @@ msgstr "Sammutettu"
 msgid "Turn on"
 msgstr "Kiihottua"
 
+#, fuzzy
+#| msgid "Reservations"
+msgid "My Reservations"
+msgstr "Varaukset"
+
 msgid "Change password"
 msgstr "Vaihda salasana"
 
 msgid "Delete Account"
 msgstr "Poista tili"
+
+msgid "Room"
+msgstr "Huone"
+
+#, fuzzy
+#| msgid "Night"
+msgid "Nights"
+msgstr "Yö"
+
+msgid "Check-in"
+msgstr "Ilmoittautua"
+
+msgid "Check-out"
+msgstr "Tarkista"
+
+msgid "Total"
+msgstr "Kaikki yhteensä"
+
+msgid "Invoice"
+msgstr "Lasku"
+
+msgid "Hotel"
+msgstr "Hotelli"
 
 msgid "Login with Google"
 msgstr "Kirjaudu sisään Googlella"
@@ -75,9 +103,6 @@ msgstr "Kotisivu"
 #, fuzzy
 #| msgid "Hotel"
 msgid "Hotels"
-msgstr "Hotelli"
-
-msgid "Hotel"
 msgstr "Hotelli"
 
 msgid "Dashboard"
@@ -163,9 +188,6 @@ msgstr "Mukautettu asiakas"
 #| msgid "Reservations"
 msgid "Total Reservations"
 msgstr "Varaukset"
-
-msgid "Room"
-msgstr "Huone"
 
 msgid "View more"
 msgstr "Katso lisää"
@@ -287,12 +309,6 @@ msgstr "Sähköposti"
 
 msgid "How many people?"
 msgstr "Kuinka monta ihmistä?"
-
-msgid "Check-in"
-msgstr "Ilmoittautua"
-
-msgid "Check-out"
-msgstr "Tarkista"
 
 msgid "How many nights?"
 msgstr "Kuinka monta yötä?"
@@ -530,6 +546,11 @@ msgstr "Varaukset"
 #, fuzzy
 #| msgid "Room not available"
 msgid "Reservation not available"
+msgstr "Huone ei ole käytettävissä"
+
+#, fuzzy
+#| msgid "Room not available"
+msgid "Invoice not available"
 msgstr "Huone ei ole käytettävissä"
 
 msgid "Hotel Name"
