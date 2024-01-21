@@ -56,7 +56,7 @@ def sendreservationsuccess(email, name, checkin, checkout, people, nights, total
     html_string = render_to_string('email/reservation-success.html', {'name': name, 'checkin': checkin, 'checkout': checkout, 'people': people, 'nights': nights, 'total': total, 'reservation': reservation, 'hotel': hotel, 'room': room, 'datetoday': date_today})
     msg.add_alternative(html, subtype='html')
 
-    with open(f'{BASE_DIR}/static/invoices/reservation-{reservation.id}.html', 'w+', encoding='utf-8') as f:
+    with open(f'{BASE_DIR}/invoices/reservation-{reservation.id}.html', 'w+', encoding='utf-8') as f:
         f.write(str(html_string))
     # save to .html file
 

@@ -17,8 +17,13 @@
         <span class="tag is-danger">{% trans "Turned Off" %} </span>
         <button class="button is-primary is-small" onclick="window.location.href='{% url 'two-factor-enable' %}'">{% trans "Turn on" %}</button> {% endif %}
 
+    <br><br><br><br>
+        <button class="button is-success" onclick="window.location.href='/authentication/my-reservations'">{% trans "My Reservations" %}</button>
 
-    </div>
+
+<br><br>
+
+
 
 
     <hr>
@@ -36,6 +41,7 @@
     {% csrf_token %}
     {% crispy form %}
 
+</div>
 </div>
 </div>
 

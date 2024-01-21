@@ -40,6 +40,7 @@ class Reservation(models.Model):
     hotel = models.ForeignKey('hotel.Hotel', on_delete=models.CASCADE, null=True, blank=True, default=None, related_name='reservations')
     room = models.ForeignKey('hotel.Room', on_delete=models.CASCADE, null=True, blank=True, default=None, related_name='reservations')
     reserved_by = models.CharField(max_length=5000, null=True, blank=True)
+    reserved_on = models.DateField(null=True, blank=True)
     checkin = models.DateField(null=True, blank=True)
     checkout = models.DateField(null=True, blank=True)
     price = models.DecimalField(max_digits=11, decimal_places=2, null=True, blank=True)
@@ -56,9 +57,8 @@ class Reservation(models.Model):
 
 class Luxury(models.Model):
 
-# auto increment integer id
 
-    id = models.IntegerField(primary_key=True, unique=True, null=False, default=0)
+    id = models.IntegerField(primary_key=True, unique=True, null=False)
     name = models.CharField(max_length=200, null=False, blank=False)
     icon = models.CharField(max_length=200, null=False, blank=False)
     deleted = models.BooleanField(default=False)

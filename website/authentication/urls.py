@@ -10,6 +10,7 @@ urlpatterns = [
     path('complete-email', views.complete_email, name='complete-email'),
     path('complete-username', views.complete_username, name='complete-username'),
     path('edit-profile', views.edit_profile, name='edit-profile'),
+    path('my-reservations', views.my_reservations, name='my-reservations'),
     path('change-password', views.change_password, name='change-password'),
     path('delete-account', views.delete_account, name='delete-account'),
     path('complete-citizenship', views.complete_citizenship, name='complete-citizenship'),

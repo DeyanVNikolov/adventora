@@ -14,6 +14,7 @@ from dotenv import load_dotenv
 from django.utils.translation import gettext as _
 
 from .models import CustomUser
+from hotel.models import Reservation
 
 
 def security_check(view_func):
@@ -332,6 +333,25 @@ def edit_profile(request):
     context = {'form': form, 'first_name': first_name, 'last_name': last_name, 'email': email, 'username': username,
                citizenship: 'citizenship'}
     return render(request, 'auth/edit_profile.html', context)
+
+
+@login_required
+@security_check
+def my_reservations(request):
+    reservations = Reservation.objects.filter(reserved_by=request.user.id)
+
+    for reservation in reservations:
+        reservation.nights = (reservation.checkout - reservation.checkin).days
+
+
+    context = {'reservations': reservations}
+    return render(request, 'auth/my_reservations.html', context)
+
+
+@login_required
+@security_check
+def invoiceviewer(request, invoiceid):
+    return HttpResponse("Not implemented yet.")
 
 
 @login_required

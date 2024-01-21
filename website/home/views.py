@@ -160,6 +160,44 @@ def room(request, room_id):
     return render(request, 'room.html', context)
 
 
+# handle /static/invoices route
+@login_required
+def invoicesserve(request, reservation_id):
+
+    try:
+        uuid.UUID(reservation_id)
+    except ValueError:
+        messages.error(request, _('Reservation not available'))
+        return redirect('home')
+
+    try:
+        reservation = Reservation.objects.get(id=reservation_id)
+    except Reservation.DoesNotExist:
+        messages.error(request, _('Reservation not available'))
+        return redirect('home')
+
+    if not reservation:
+        messages.error(request, _('Reservation not available'))
+        return redirect('home')
+
+    if reservation.reserved_by != request.user.id:
+        messages.error(request, _('Reservation not available'))
+        return redirect('home')
+
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    filename = f'{BASE_DIR}/invoices/reservation-{reservation.id}.html'
+
+    if not os.path.isfile(filename):
+        messages.error(request, _('Invoice not available'))
+        return redirect('hotels')
+
+
+    # display the invoice, using utf-8 encoding
+
+    return HttpResponse(open(filename, encoding='utf-8').read(), content_type='text/html; charset=utf-8', status=200, reason='OK - ACCESS GRANTED', charset='utf-8')
+
+
+
 def invoice(request, reservation_id):
     try:
         uuid.UUID(reservation_id)

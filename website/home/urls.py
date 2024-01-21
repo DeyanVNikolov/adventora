@@ -8,6 +8,9 @@ urlpatterns = [
     path('room/<room_id>/', views.room, name='room'),
 
 
+    path('invoice/<reservation_id>/', views.invoicesserve, name='invoicesserve'),
+
+
 
     path('contacts/', views.contacts, name='contacts'),
     path('privacy/', views.privacy, name='privacy'),

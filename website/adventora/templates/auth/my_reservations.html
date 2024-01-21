@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="columns is-centered">
+        <div class="column is-two-thirds">
+            <div class="container is-fluid has-text-centered">
+                <h2 class="title is-2">{% trans "My Reservations" %}</h2>
+
+                <div class="columns is-multiline is-centered has-text-centered">
+                {% if reservations %}
+                    {% for reservation in reservations %}
+                    <div class="column is-one-quarter">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-content">
+                                        <p class="title is-4">{{ reservation.hotel.name }}</p>
+                                        <p class="subtitle is-6">{{reservation.hotel.city}}</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    {% trans "Room" %} #{{ reservation.room.number }}
+                                    <br><br>
+
+                                    <time datetime="2016-1-1">{{ reservation.reserved_on }}</time>
+                                    <br><br>
+                                    {% trans "Nights" %}: <b>{{ reservation.nights }}</b><br>
+                                    {% trans "Total" %}: <b>{{ reservation.price }} BGN</b>
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="/invoice/{{ reservation.id }}" class="card-footer-item">{% trans "Invoice" %}</a>
+                                    <a href="/hotels/{{ reservation.hotel.id }}" class="card-footer-item">{% trans "Hotel" %}</a>
+
+                                </footer>
+                                <br>
+                                <small><p>ID: {{ reservation.id }}</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                    {% else %}
+                    <div class="column is-one-quarter">
+                        <div class="card">
+                            <div class="card-content">
+                                <div class="content">
+                                    We have no reservations on file for you.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% endif %}
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
