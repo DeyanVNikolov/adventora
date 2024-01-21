@@ -28,7 +28,10 @@
                                     <time datetime="2016-1-1">{{ reservation.reserved_on }}</time>
                                     <br><br>
                                     {% trans "Nights" %}: <b>{{ reservation.nights }}</b><br>
-                                    {% trans "Total" %}: <b>{{ reservation.price }} BGN</b>
+                                    {% trans "Check-in" %}: <b>{{ reservation.checkin }}</b><br>
+                                    {% trans "Check-out" %}: <b>{{ reservation.checkout }}</b><br>
+                                    {% trans "Total" %}: <b>{{ reservation.price }} BGN</b><br>
+                                    
                                 </div>
                                 <footer class="card-footer">
                                     <a href="/invoice/{{ reservation.id }}" class="card-footer-item">{% trans "Invoice" %}</a>
