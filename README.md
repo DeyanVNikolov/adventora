@@ -1,6 +1,6 @@
 [![DeyanVNikolov - adventora](https://img.shields.io/static/v1?label=DeyanVNikolov&message=adventora&color=blue&logo=github)](https://github.com/DeyanVNikolov/adventora "Go to GitHub repo")
 ![GitHub repo size](https://img.shields.io/github/repo-size/deyanvnikolov/adventora)
-![Static Badge](https://img.shields.io/badge/Python_Version-3.11.4-brightgreeb)
+![Static Badge](https://img.shields.io/badge/Python_Version-3.11.5-brightgreeb)
 ![GitHub](https://img.shields.io/github/license/DeyanVNikolov/adventora)
 ![GitHub issues](https://img.shields.io/github/issues/deyanvnikolov/adventora)
 ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/deyanvnikolov/adventora)
