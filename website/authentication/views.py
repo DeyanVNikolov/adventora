@@ -685,4 +685,6 @@ def two_factor_disable(request):
 
 
 def login_error(request):
-    return render(request, 'auth/login_error.html')
+    messages.error(request, _('Invalid login data. Please try again.'))
+
+    return redirect('home')
