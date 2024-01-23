@@ -14,7 +14,21 @@ def translate(text, source, target):
           source + "&tl=" + target + "&dt=t&q=" + text
     r = requests.get(url)
     r = json.loads(r.text)
-    return r[0][0][0]
+    t = len(r[0])
+
+    ready_string = ""
+
+    for i in range(0, t):
+        ready_string += r[0][i][0]
+        ready_string += " "
+
+    # remove any double spaces, remove space at the end of the string, remove space at the beginning of the string, remove space before punctuation
+    ready_string = re.sub(' +', ' ', ready_string)
+    ready_string = ready_string.strip()
+    ready_string = ready_string.lstrip()
+    ready_string = re.sub(' ([.,!?;:])', r'\1', ready_string)
+
+    return ready_string
 
 
 def translate_file(file, source, target):
