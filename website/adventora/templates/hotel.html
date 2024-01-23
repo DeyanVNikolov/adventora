@@ -120,9 +120,9 @@
             </script>
             </div>
 
-            <div class="column card flex-column-card">
-                <header class="card-header">
-                    <p class="card-header-title is-size-2" id="card-header-title-main">
+            <div class="column is-three-fifths card flex-column-card">
+                <header class="card-header has-text-centered">
+                    <p class="card-header-title is-size-2" style="margin: auto !important;" id="card-header-title-main">
                         {{ hotel.name }} &nbsp;
                     </p>
                     <a href="#" class="card-header-icon" aria-label="more options">
@@ -141,6 +141,15 @@
 
                 </footer>
             </div>
+
+        <div class="column card flex-column-card">
+            {% if LANGUAGE_CODE == "bg" %}
+                <script type="text/javascript" src="https://toprentacar.bg/partner_widget?partner=adventora&channel=widget"></script>
+            {% else %}
+                <script type="text/javascript" src="https://toprentacar.bg/en/partner_widget?partner=adventora&channel=widget"></script>
+            {% endif %}
+        </div>
+
 
         </div>
     <div class="columns is-multiline is-centered is-vcentered has-text-centered">

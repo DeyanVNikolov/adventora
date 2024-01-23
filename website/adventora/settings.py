@@ -149,8 +149,6 @@ TEMPLATES = [
 WSGI_APPLICATION = 'adventora.wsgi.application'
 
 DATABASES = {
-    # TODO PRODUCTION
-    # AWS RDS
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'postgres',

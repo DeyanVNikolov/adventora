@@ -18,4 +18,8 @@ urlpatterns = [
     path('security-check/', views.security_check, name='security-check'),
     path('emergency-in-bg/', views.emergency_in_bg, name='emergency-in-bg'),
     path('stranded-abroad/', views.stranded_abroad, name='stranded-abroad'),
+
 ]
+
+handler404 = 'home.views.handle404'
+handler500 = 'home.views.handle500'

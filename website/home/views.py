@@ -223,3 +223,22 @@ def invoice(request, reservation_id):
 
 def handle404(request, exception):
     return render(request, '404.html', status=404)
+
+
+def handle500(request):
+    # ADD HEADER ERR-REF: <uuid>
+
+    response = render(request, '500.html', status=500)
+    response['ERR-REF'] = str(uuid.uuid4())
+    response['ERR-REF-URL'] = str(request.build_absolute_uri())
+    response['ERR-REF-USER'] = str(request.user.id) if request.user.is_authenticated else 'anonymous'
+    response['ERR-EXPLAIN'] = 'Internal Server Error, Adventora encountered an unexpected error while processing your request. Please try again later. Contact it@adventora.net if the problem persists.'
+    response['ERR-GOBACK'] = 'https://adventora.net'
+    response['ERR-CONTACT'] = 'https://adventora.net/contact; it@adventora.net'
+    response['ERR-RETRY'] = 'https://adventora.net'
+    response['ERR-RETRY-TEXT'] = 'Retry'
+    response['ERR-GOBACK-TEXT'] = 'Go Back'
+    response['RETRY-AFTER'] = '3600'
+
+
+    return response
