@@ -4,124 +4,123 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
+    <div class="container is-fluid">
+        <h1><strong>{% trans "Privacy Policy of Adventora" %}</strong></h1>
+        <br>
 
-<div class="container is-fluid">
- <h1><strong>Политика за поверителност на Adventora</strong></h1>
-<br>
+        <p>{% trans "Last updated: August 13, 2023." %}</p>
+        <br>
 
-<p>Последно актуализирано: 13.08.2023 г.</p>
-<br>
+        <p>{% trans "This <strong>Privacy Policy ('Policy')</strong> explains how Adventora ('we', 'us', 'our') collects, uses, protects, and shares the personal information gathered from users ('you', 'your') of the website <strong>https://adventora.net</strong> ('Website'). This Policy highlights our commitment to data privacy, transparency, and compliance with relevant data protection laws and regulations." %}</p>
+        <br>
 
-<p>Тази <strong>Политика за поверителност ("Политика")</strong> обяснява начина, по който Adventora ("ние", "нас", "нашите") събира, използва, защитава и споделя личната информация, събрана от потребителите ("вие", "вашият") на уебсайта <strong>https://adventora.net</strong> ("Уебсайт"). Тази Политика подчертава нашата ангажираност към поверителността на данните, прозрачността и съответствието със съответните закони и регулации за защита на данните.</p>
-<br>
+        <h2><strong>{% trans "1. Information Collection" %}</strong></h2>
+        <br>
 
-<h2><strong>1. Събиране на информация</strong></h2>
-<br>
+        <p>{% trans "We collect a variety of personal data from users to ensure the smooth operation of our booking services. This includes, but is not limited to:" %}</p>
 
-<p>Събираме разнообразни лични данни от потребителите, за да осигурим гладко функциониране на нашите услуги за резервации. Това включва, но не се ограничава до:</p>
+        <ul>
+            <li>{% trans "First and last name" %}</li>
+            <li>{% trans "Email address" %}</li>
+            <li>{% trans "Username" %}</li>
+            <li>{% trans "Phone numbers" %}</li>
+            <li>{% trans "Citizenship" %}</li>
+        </ul>
+        <br>
 
-<ul>
-    <li>Първо и последно име</li>
-    <li>Имейл адрес</li>
-    <li>Потребителско име</li>
-    <li>Телефонни номера</li>
-    <li>Гражданство</li>
-</ul>
-<br>
+        <p>{% trans "For individuals designated as 'hotel manager', we also collect:" %}</p>
 
-<p>За лицата с обозначение "мениджър на хотел", ние събираме също:</p>
+        <ul>
+            <li>{% trans "Hotel name" %}</li>
+            <li>{% trans "Manager's name" %}</li>
+            <li>{% trans "Unique identification number of the hotel's company (EIK)" %}</li>
+            <li>{% trans "Hotel phone number" %}</li>
+            <li>{% trans "Hotel email address" %}</li>
+            <li>{% trans "Physical address of the hotel" %}</li>
+        </ul>
+        <br>
 
-<ul>
-    <li>Име на хотела</li>
-    <li>Име на мениджъра</li>
-    <li>Уникален идентификационен номер на фирмата на хотела (ЕИК)</li>
-    <li>Телефонен номер на хотела</li>
-    <li>Имейл адрес на хотела</li>
-    <li>Физически адрес на хотела</li>
-</ul>
-<br>
+        <h2><strong>{% trans "2. Purpose and Use of Data" %}</strong></h2>
+        <br>
 
-<h2><strong>2. Цел и използване на данни</strong></h2>
-<br>
+        <p>{% trans "The collected personal information serves as a basis for smooth, secure, and efficient booking and reservations. Your data facilitate account management, responsive customer support, and critical communication. If identified as a hotel manager, certain details are shared with the establishment to optimize reservation monitoring." %}</p>
+        <br>
 
-<p>Събраната лична информация служи като основа за гладко, сигурно и ефективно резервиране и резервации. Вашите данни облекчават управлението на акаунта, отзивчивата поддръжка на клиенти и критичната комуникация. Ако бъдете идентифицирани като мениджър на хотел, определени детайли се споделят със заведението, за да се оптимизира наблюдението на резервациите.</p>
-<br>
+        <h2><strong>{% trans "3. Engagement with Third-Party Services" %}</strong></h2>
+        <br>
 
-<h2><strong>3. Ангажимент с услуги от трети страни</strong></h2>
-<br>
+        <p>{% trans "To enhance the user experience and expand our offerings, we engage reputable third-party services, including, but not limited to:" %}</p>
 
-<p>За да подобрим потребителското изживяване и разширим предложенията си, ние ангажираме уважавани услуги от трети страни, включително, но не само:</p>
+        <ul>
+            <li>{% trans "Google Analytics for detailed website analysis" %}</li>
+            <li>{% trans "Top-Rent-A-Car for promotional banners, widgets, and joint promotions" %}</li>
+            <li>{% trans "Social services for login, including Google, GitHub, Reddit, Spotify, Trello, Patreon, Steam, VK, and Amazon" %}</li>
+            <li>{% trans "Payment processing through reputable providers like Stripe and epay.bg for secure financial transactions" %}</li>
+        </ul>
+        <br>
 
-<ul>
-    <li>Google Analytics за подробен анализ на уебсайта</li>
-    <li>Top-Rent-A-Car за промоционални банери, виджети и съвместни промоции</li>
-    <li>Социални услуги за вход, включително Google, GitHub, Reddit, Spotify, Trello, Patreon, Steam, VK и Amazon</li>
-    <li>Обработка на плащания чрез уважавани доставчици като Stripe и epay.bg за сигурни финансови транзакции</li>
-</ul>
-<br>
+        <h2><strong>{% trans "4. Tracking Mechanisms and Cookies" %}</strong></h2>
+        <br>
 
-<h2><strong>4. Механизми за проследяване и бисквитки</strong></h2>
-<br>
+        <p>{% trans "Cookies serve as vital components of our digital architecture, contributing to the seamless retention of sessions and the preservation of data for personalization, such as theme settings and language preferences. In addition, certain third-party cookies may be used in conjunction with our respected partners." %}</p>
+        <br>
 
-<p>Бисквитките служат като важни компоненти на нашата цифрова архитектура, които допринасят за безпроблемното задържане на сесиите и запазването на данни за персонализация, като настройки на темата и езикови настройки. Освен това, определени бисквитки от трети страни могат да бъдат използвани заедно с нашите уважавани партньори.</p>
-<br>
+        <h2><strong>{% trans "5. Data Retention Strategy" %}</strong></h2>
+        <br>
 
-<h2><strong>5. Стратегия за задържане на данни</strong></h2>
-<br>
+        <p>{% trans "User personal data continue to be stored in our systems for the duration of an active account. An option for account deletion is provided, allowing for the voluntary removal of associated data. For hotel managers, data related to the establishment is stored for up to one year to comply with security protocols and possible legal regulations." %}</p>
+        <br>
 
-<p>Личните данни на потребителите продължават да бъдат съхранявани в нашите системи през срока на активен акаунт. Предоставя се опцията за изтриване на акаунта ви, което позволява доброволното премахване на свързаните данни. За хотелските мениджъри данните, свързани с етаблирането, се съхраняват до една година, за да се спазват сигурностните протоколи и възможни законови наредби.</p>
-<br>
+        <h2><strong>{% trans "6. Robust Security Framework" %}</strong></h2>
+        <br>
 
-<h2><strong>6. Здрава рамка за сигурност</strong></h2>
-<br>
+        <p>{% trans "With the help of modern encryption protocols that include a 512-character encryption key, we impose strict measures to protect sensitive data. Data is stored on a remote database server located in the European Union, secured with the comprehensive security infrastructure provided by Amazon Web Services." %}</p>
+        <br>
 
-<p>С помощта на съвременни протоколи за криптиране, които включват 512-знаков криптиращ ключ, ние налагаме стриктни мерки за защита на чувствителните данни. Данните се съхраняват на отдалечен сървър за бази данни, разположен в Европейския съюз, защитен с изчерпателната инфраструктура за сигурност, предоставена от Amazon Web Services.</p>
-<br>
+        <h2><strong>{% trans "7. Data Sharing and Collaborative Efforts" %}</strong></h2>
+        <br>
 
-<h2><strong>7. Споделяне на данни и съвместни усилия</strong></h2>
-<br>
+        <p>{% trans "Certain user data, including email addresses, names, and contact numbers, are shared with hotels to facilitate effective reservation management. Beyond established partnerships, data sharing with external organizations is limited to data automatically collected by Google Analytics and Top-Rent-A-Car." %}</p>
+        <br>
 
-<p>Определени данни на потребителите, включително имейл адреси, имена и контактни номера, се споделят с хотелите, за да се улесни ефективното управление на резервациите. Извън установените партньорства споделянето на данни с външни организации се ограничава до данни, които се събират автоматично от Google Analytics и Top-Rent-A-Car.</p>
-<br>
+        <h2><strong>{% trans "8. Cross-Border Data Transfers" %}</strong></h2>
+        <br>
 
-<h2><strong>8. Трансгранични прехвърляния на данни</strong></h2>
-<br>
+        <p>{% trans "User personal data remain entirely within the European Union. In cases where your citizenship falls outside the EU, data may be transferred internationally for storage within the jurisdiction of the EU." %}</p>
+        <br>
 
-<p>Личните данни на потребителите остават изцяло в рамките на Европейския съюз. В случаи, когато вашето гражданство не се пада в рамките на ЕС, данните могат да бъдат прехвърлени международно с цел съхранение в рамките на юрисдикцията на ЕС.</p>
-<br>
+        <h2><strong>{% trans "9. Protection of Children's Personal Information" %}</strong></h2>
+        <br>
 
-<h2><strong>9. Запазване на личната информация на децата</strong></h2>
-<br>
+        <p>{% trans "Adventora is entirely aimed at legal adults. Due to the mandatory nature of collecting personal data for reservation purposes and payment processing, the platform is not intended for minors. Exceptions may arise when legal adults provide information on minors within the context of their booked vacation." %}</p>
+        <br>
 
-<p>Adventora е изцяло насочена към законните възрастни лица. Поради задължителния характер на събирането на лични данни за целите на резервациите и обработката на плащания, платформата не е предназначена за непълнолетни лица. Изключения може да възникнат, когато законните възрастни лица представят информация за непълнолетни лица в контекста на резервираната от тях ваканция.</p>
-<br>
+        <h2><strong>{% trans "10. Notification of Policy Changes" %}</strong></h2>
+        <br>
 
-<h2><strong>10. Уведомление за изменения в политиката</strong></h2>
-<br>
+        <p>{% trans "Changes or modifications to this Policy will be communicated via email and will be clearly displayed on the Website." %}</p>
+        <br>
 
-<p>Промени или модификации в тази Политика ще бъдат съобщени по имейл и ще бъдат ясно показвани на Уебсайта.</p>
-<br>
+        <h2><strong>{% trans "11. Legitimate Basis for Data Processing" %}</strong></h2>
+        <br>
 
-<h2><strong>11. Легитимна основа за обработка на данни</strong></h2>
-<br>
+        <p>{% trans "The collection and processing of data are based on the mandatory execution of reservations and related reservation activities." %}</p>
+        <br>
 
-<p>Събирането и обработката на данни се основават на задължителното изпълнение на резервациите и свързаните с тях дейности за резервация.</p>
-<br>
+        <h2><strong>{% trans "12. Implied Consent" %}</strong></h2>
+        <br>
 
-<h2><strong>12. Неявно съгласие</strong></h2>
-<br>
+        <p>{% trans "By using our platform and creating an account, you implicitly agree to the collection and processing of personal data, in accordance with this Policy." %}</p>
+        <br>
 
-<p>Използвайки нашата платформа и създавайки акаунт, вие неявно се съгласявате със събирането и обработката на лични данни, в съответствие с тази Политика.</p>
-<br>
+        <h2><strong>{% trans "13. Compliance with Applicable Regulations" %}</strong></h2>
+        <br>
 
-<h2><strong>13. Съответствие с приложимите регулации</strong></h2>
-<br>
+        <p>{% trans "Our data processing procedures strictly adhere to the regulations and provisions set forth by the General Data Protection Regulation (GDPR)." %}</p>
+        <br>
 
-<p>Нашите процедури за обработка на данни стриктно се придържат към регулациите и разпоредбите, установени от Общия регламент за защита на данните (GDPR).</p>
-<br>
+        <p>{% trans "For questions, clarifications, or requests related to your personal data and this Policy, we inform you that you can contact us via the following contact: <a href='mailto:support@adventora.net'>hello@adventora.net</a>." %}</p>
 
-<p>За въпроси, уточнения или искания, свързани с вашите лични данни и тази Политика, ви уведомяваме, че можете да се свържете с нас чрез следния контакт: <a href="mailto:support@adventora.net">hello@adventora.net</a>.</p>
-
-</div>
+    </div>
 
 {% endblock %}
