@@ -15,7 +15,8 @@ class SecurityCheckForm(forms.Form):
     comment = forms.CharField(
         widget=forms.TextInput(attrs={'readonly': 'readonly'}),
         label="",
-        initial="За да продължите, трябва да преминете автоматизирана проверка на сигурността.",
+        initial=_("To continue, you need to pass an automated security check. Please wait. if you are not redirected "
+                    "within 5 seconds, complete the captcha and click continue."),
     )
     captcha = TurnstileField(attrs={'onchange': 'this.form.submit()'})
 
@@ -28,7 +29,7 @@ class SecurityCheckForm(forms.Form):
 
     )
     # disabled
-    helper.add_input(Submit('submit', 'Продължи', css_class='is-success disabledbuttonforsecurity', disabled=True,
+    helper.add_input(Submit('submit', _('Continue'), css_class='is-success disabledbuttonforsecurity', disabled=True,
                             )
                      )
 

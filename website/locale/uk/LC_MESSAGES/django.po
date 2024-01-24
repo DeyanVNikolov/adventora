@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-23 22:35+0200\n"
+"POT-Creation-Date: 2024-01-24 21:43+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -764,6 +764,18 @@ msgstr "Двофакторну автентифікацію успішно ви�
 msgid "Invalid login data. Please try again."
 msgstr "Недійсні дані для входу. Будь ласка спробуйте ще раз."
 
+msgid ""
+"To continue, you need to pass an automated security check. Please wait. if "
+"you are not redirected within 5 seconds, complete the captcha and click "
+"continue."
+msgstr ""
+"Щоб продовжити, вам потрібно пройти автоматичну перевірку безпеки. Будь "
+"ласка, зачекайте. якщо вас не буде перенаправлено протягом 5 секунд, "
+"завершіть код перевірки та натисніть «Продовжити»."
+
+msgid "Continue"
+msgstr "Продовжити"
+
 msgid "Room not available"
 msgstr "Кімната недоступна"
 
@@ -952,3 +964,8 @@ msgstr "Фото не знайдено"
 
 msgid "Successfully updated room"
 msgstr "Успішно оновлено кімнату"
+
+#~ msgid ""
+#~ "За да продължите, трябва да преминете автоматизирана проверка на "
+#~ "сигурността."
+#~ msgstr "Щоб продовжити, потрібно припинити автоматизовану перевірку безпеки."
