@@ -43,6 +43,7 @@ TURNSTILE_SITEKEY = os.getenv("TURNSTILE_SITE")
 TURNSTILE_SECRET = os.getenv("TURNSTILE_SECRET")
 
 INSTALLED_APPS = [
+    'management',
     'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -66,7 +67,8 @@ INSTALLED_APPS = [
     'multiselectfield',
     'ckeditor',
     'corsheaders',
-    'django.contrib.gis',
+    'sri',
+    'fontawesomefree',
 ]
 
 SOCIAL_AUTH_PIPELINE = (

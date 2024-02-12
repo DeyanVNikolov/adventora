@@ -1,1106 +1,795 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2023
-# This file is distributed under the same license as the Adventora package.
-# DEYAN NIKOLOV <didonikolovbg@gmail.com>, 2023.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Adventora Beta-Release 1.0\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-24 21:43+0200\n"
-"PO-Revision-Date: 2023-11-17 15:08+0200\n"
-"Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
-"Language-Team: ADVENTORA INTERNATIONAL <international>\n"
-"Language: international\n"
+"POT-Creation-Date: 2024-02-12 14:54+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
 msgid "Not confirmed"
-msgstr "Δεν έχει επιβεβαιωθεί"
+msgstr ""
 
 msgid "Send confirmation email again."
-msgstr "Στείλτε ξανά email επιβεβαίωσης."
+msgstr ""
 
 msgid "Confirmed"
-msgstr "Επιβεβαιωμένος"
+msgstr ""
 
 msgid "Turned On"
-msgstr "Αναψε"
+msgstr ""
 
 msgid "Turn off"
-msgstr "Σβήνω"
+msgstr ""
 
 msgid "Turned Off"
-msgstr "Απενεργοποιημένο"
+msgstr ""
 
 msgid "Turn on"
-msgstr "Ανάβω"
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "My Reservations"
-msgstr "κρατήσεις"
+msgstr ""
 
 msgid "Change password"
-msgstr "Αλλαξε κωδικό"
+msgstr ""
 
 msgid "Delete Account"
-msgstr "Διαγραφή λογαριασμού"
+msgstr ""
 
 msgid "Room"
-msgstr "Δωμάτιο"
+msgstr ""
 
-#, fuzzy
-#| msgid "Night"
 msgid "Nights"
-msgstr "Νύχτα"
+msgstr ""
 
 msgid "Check-in"
-msgstr "Check-in"
+msgstr ""
 
 msgid "Check-out"
-msgstr "Ολοκλήρωση αγοράς"
+msgstr ""
 
 msgid "Total"
-msgstr "Σύνολο"
+msgstr ""
 
 msgid "Invoice"
-msgstr "Τιμολόγιο"
+msgstr ""
 
 msgid "Hotel"
-msgstr "Ξενοδοχειο"
+msgstr ""
 
 msgid "Login with Google"
-msgstr "Συνδεθείτε με το Google"
+msgstr ""
 
 msgid "Login with Trello"
-msgstr "Συνδεθείτε με το Trello"
+msgstr ""
 
 msgid "Login with GitHub"
-msgstr "Συνδεθείτε με το GitHub"
+msgstr ""
 
 msgid "Login with Reddit"
-msgstr "Συνδεθείτε με το Reddit"
+msgstr ""
 
 msgid "Login with Steam"
-msgstr "Συνδεθείτε με το Steam"
+msgstr ""
 
 msgid "Login with Spotify."
-msgstr "Συνδεθείτε με το Spotify."
+msgstr ""
 
 msgid "Login with VK"
-msgstr "Συνδεθείτε με VK"
+msgstr ""
 
 msgid "Please enter your two-factor verification code"
-msgstr "Εισαγάγετε τον κωδικό επαλήθευσης δύο παραγόντων"
+msgstr ""
 
-msgid "Homepage"
-msgstr "Αρχική σελίδα"
+msgid "Home"
+msgstr ""
 
-#, fuzzy
-#| msgid "Hotel"
 msgid "Hotels"
-msgstr "Ξενοδοχειο"
+msgstr ""
 
 msgid "Dashboard"
-msgstr "Ταμπλό"
-
-msgid "Profile"
-msgstr "Προφίλ"
-
-msgid "Admin"
-msgstr "διαχειριστής"
-
-msgid "Log out"
-msgstr "Αποσύνδεση"
-
-msgid "Login"
-msgstr "Σύνδεση"
-
-msgid "Sign up"
-msgstr "Εγγραφείτε"
+msgstr ""
 
 msgid "Error"
-msgstr "Λάθος"
+msgstr ""
 
 msgid "Success"
-msgstr "Επιτυχία"
+msgstr ""
 
 msgid "Warning"
-msgstr "Προειδοποίηση"
+msgstr ""
 
 msgid "Adventora supports small, medium and large businesses"
-msgstr "Η Adventora υποστηρίζει μικρές, μεσαίες και μεγάλες επιχειρήσεις"
+msgstr ""
 
 msgid "All Rights Reserved"
-msgstr "Όλα τα δικαιώματα διατηρούνται"
+msgstr ""
+
+msgid "Homepage"
+msgstr ""
 
 msgid "About us"
-msgstr "Σχετικά με εμάς"
+msgstr ""
 
 msgid "Privacy"
-msgstr "Μυστικότητα"
+msgstr ""
 
 msgid "Terms of use"
-msgstr "Οροι χρήσης"
+msgstr ""
 
 msgid "Contacts"
-msgstr "Επαφές"
+msgstr ""
 
 msgid "Partnerships"
-msgstr "Συνεργασίες"
+msgstr ""
 
 msgid "Emergency"
-msgstr "Επείγον"
+msgstr ""
 
 msgid "Stranded Abroad"
-msgstr "Απομονωμένος στο Εξωτερικό"
+msgstr ""
 
 msgid "In case of fire, medical or police emergency"
-msgstr "Σε περίπτωση πυρκαγιάς, ιατρικής ή αστυνομικής έκτακτης ανάγκης"
+msgstr ""
 
 msgid "contact the single european emergency nunmber"
-msgstr "επικοινωνήστε με τον ενιαίο ευρωπαϊκό αριθμό έκτακτης ανάγκης"
+msgstr ""
 
 msgid "It is dial without code, just 112 when in any country of the EU"
 msgstr ""
-"Κλήση χωρίς κωδικό, μόλις 112 όταν βρίσκεστε σε οποιαδήποτε χώρα της Ε.Ε"
 
 msgid "Welcome to Adventora"
-msgstr "Καλώς ήρθατε στο Adventora"
+msgstr ""
 
 msgid "Find your perfect stay with us"
-msgstr "Βρείτε την τέλεια διαμονή σας μαζί μας"
+msgstr ""
 
-#, fuzzy
-#| msgid "Register Hotel"
 msgid "Registered hotels"
-msgstr "Εγγραφή ξενοδοχείου"
+msgstr ""
 
-#, fuzzy
-#| msgid "Custom Customer"
 msgid "Happy Customers"
-msgstr "Πελάτης"
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "Total Reservations"
-msgstr "κρατήσεις"
+msgstr ""
 
 msgid "View more"
-msgstr "Δείτε περισσότερα"
-
-#, fuzzy
-#| msgid "Reservations"
-msgid "Reserve"
-msgstr "κρατήσεις"
-
-#, fuzzy
-#| msgid "Reservations"
-msgid "Add Reservation"
-msgstr "κρατήσεις"
-
-msgid ""
-"Your hotel is not yet approved. Allow us to confirm your info within 48 "
-"hours."
 msgstr ""
-"Το ξενοδοχείο σας δεν έχει εγκριθεί ακόμη. Επιτρέψτε μας να επιβεβαιώσουμε "
-"τις πληροφορίες σας εντός 48 ωρών."
+
+msgid "Reserve"
+msgstr ""
+
+msgid "Admin"
+msgstr ""
+
+msgid "Add Reservation"
+msgstr ""
+
+msgid "Your hotel is not yet approved. Allow us to confirm your info within 48 hours."
+msgstr ""
 
 msgid "You don't have a hotel"
-msgstr "Δεν έχεις ξενοδοχείο"
+msgstr ""
 
 msgid "Register Hotel"
-msgstr "Εγγραφή ξενοδοχείου"
+msgstr ""
 
 msgid "Rooms"
-msgstr "Δωμάτια"
+msgstr ""
 
 msgid "Add"
-msgstr "Προσθήκη"
+msgstr ""
 
 msgid "Confirm Address"
-msgstr "Επιβεβαίωση διεύθυνσης"
+msgstr ""
 
 msgid "Reservations"
-msgstr "κρατήσεις"
+msgstr ""
 
 msgid "Capacity"
-msgstr "Χωρητικότητα"
+msgstr ""
 
 msgid "Price"
-msgstr "Τιμή"
+msgstr ""
 
 msgid "Night"
-msgstr "Νύχτα"
+msgstr ""
 
 msgid "Occupied"
-msgstr "Κατειλημμένος"
+msgstr ""
 
 msgid "Status"
-msgstr "Κατάσταση"
+msgstr ""
 
 msgid "Available"
-msgstr "Διαθέσιμος"
+msgstr ""
 
 msgid "To be cleaned"
-msgstr "Να καθαριστεί"
+msgstr ""
 
-#, fuzzy
-#| msgid "Information"
 msgid "Edit Hotel Information"
-msgstr "Πληροφορίες"
+msgstr ""
 
 msgid "General Settings"
-msgstr "Γενικές Ρυθμίσεις"
+msgstr ""
 
 msgid "Management"
-msgstr "Διαχείριση"
+msgstr ""
 
 msgid "Information"
-msgstr "Πληροφορίες"
+msgstr ""
 
 msgid "Photos"
-msgstr "Φωτογραφίες"
+msgstr ""
 
 msgid "Set room as occupied"
-msgstr "Ορίστε το δωμάτιο ως κατειλημμένο"
+msgstr ""
 
 msgid "Select from reservations for room"
-msgstr "Επιλέξτε από τις κρατήσεις για δωμάτιο"
+msgstr ""
 
-#, fuzzy
-#| msgid "Select from reservations for room"
 msgid "No reservations for this room"
-msgstr "Επιλέξτε από τις κρατήσεις για δωμάτιο"
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "Reservation"
-msgstr "κρατήσεις"
+msgstr ""
 
 msgid "Select"
-msgstr "Επιλέγω"
+msgstr ""
 
 msgid "Add Photos"
-msgstr "Πρόσθεσε φωτογραφίες"
+msgstr ""
 
 msgid "Upload"
-msgstr "Μεταφόρτωση"
+msgstr ""
 
 msgid "For partnerships contact us at"
-msgstr "Για συνεργασίες επικοινωνήστε μαζί μας στο"
+msgstr ""
 
 msgid "Privacy Policy of Adventora"
-msgstr "Πολιτική Απορρήτου της Adventora"
+msgstr ""
 
 msgid "Last updated: August 13, 2023."
-msgstr "Τελευταία ενημέρωση: 13 Αυγούστου 2023."
-
-msgid ""
-"This <strong>Privacy Policy ('Policy')</strong> explains how Adventora "
-"('we', 'us', 'our') collects, uses, protects, and shares the personal "
-"information gathered from users ('you', 'your') of the website "
-"<strong>https://adventora.net</strong> ('Website'). This Policy highlights "
-"our commitment to data privacy, transparency, and compliance with relevant "
-"data protection laws and regulations."
 msgstr ""
-"Αυτή η <strong>Πολιτική Απορρήτου (\"Πολιτική\")</strong> εξηγεί πώς η "
-"Adventora (\"εμείς\", \"εμάς\", \"μας\") συλλέγει, χρησιμοποιεί, προστατεύει"
-" και μοιράζεται τις προσωπικές πληροφορίες που συλλέγονται από τους χρήστες "
-"(\"εσείς\", \"δικός σας\") του ιστότοπου "
-"<strong>https://adventora.net</strong> (\"Ιστότοπος\"). Αυτή η Πολιτική "
-"υπογραμμίζει τη δέσμευσή μας για το απόρρητο, τη διαφάνεια και τη συμμόρφωση"
-" με τους σχετικούς νόμους και κανονισμούς προστασίας δεδομένων."
 
-#, fuzzy
-#| msgid "Information"
+msgid "This <strong>Privacy Policy ('Policy')</strong> explains how Adventora ('we', 'us', 'our') collects, uses, protects, and shares the personal information gathered from users ('you', 'your') of the website <strong>https://adventora.net</strong> ('Website'). This Policy highlights our commitment to data privacy, transparency, and compliance with relevant data protection laws and regulations."
+msgstr ""
+
 msgid "1. Information Collection"
-msgstr "Πληροφορίες"
-
-msgid ""
-"We collect a variety of personal data from users to ensure the smooth "
-"operation of our booking services. This includes, but is not limited to:"
 msgstr ""
-"Συλλέγουμε μια ποικιλία προσωπικών δεδομένων από τους χρήστες για να "
-"διασφαλίσουμε την ομαλή λειτουργία των υπηρεσιών κρατήσεών μας. Αυτό "
-"περιλαμβάνει, αλλά δεν περιορίζεται σε:"
 
-#, fuzzy
-#| msgid "First name"
+msgid "We collect a variety of personal data from users to ensure the smooth operation of our booking services. This includes, but is not limited to:"
+msgstr ""
+
 msgid "First and last name"
-msgstr "Ονομα"
+msgstr ""
 
-#, fuzzy
-#| msgid "Email address must be valid"
 msgid "Email address"
-msgstr "Η διεύθυνση email πρέπει να είναι έγκυρη"
+msgstr ""
 
 msgid "Username"
-msgstr "Όνομα χρήστη"
+msgstr ""
 
 msgid "Phone numbers"
-msgstr "Τηλεφωνικοί αριθμοί"
+msgstr ""
 
 msgid "Citizenship"
-msgstr "Ιθαγένεια"
+msgstr ""
 
 msgid "For individuals designated as 'hotel manager', we also collect:"
 msgstr ""
-"Για άτομα που ορίζονται ως «διαχειριστής ξενοδοχείου», συλλέγουμε επίσης:"
 
-#, fuzzy
-#| msgid "Hotel Name"
 msgid "Hotel name"
-msgstr "Όνομα ξενοδοχείου"
+msgstr ""
 
-#, fuzzy
-#| msgid "Manager"
 msgid "Manager's name"
-msgstr "Διευθυντής"
+msgstr ""
 
 msgid "Unique identification number of the hotel's company (EIK)"
-msgstr "Μοναδικός αριθμός αναγνώρισης της εταιρείας του ξενοδοχείου (ΕΙΚ)"
+msgstr ""
 
 msgid "Hotel phone number"
-msgstr "Αριθμός τηλεφώνου ξενοδοχείου"
+msgstr ""
 
 msgid "Hotel email address"
-msgstr "Διεύθυνση ηλεκτρονικού ταχυδρομείου ξενοδοχείου"
+msgstr ""
 
 msgid "Physical address of the hotel"
-msgstr "Φυσική διεύθυνση του ξενοδοχείου"
+msgstr ""
 
 msgid "2. Purpose and Use of Data"
-msgstr "2. Σκοπός και χρήση δεδομένων"
-
-msgid ""
-"The collected personal information serves as a basis for smooth, secure, and"
-" efficient booking and reservations. Your data facilitate account "
-"management, responsive customer support, and critical communication. If "
-"identified as a hotel manager, certain details are shared with the "
-"establishment to optimize reservation monitoring."
 msgstr ""
-"Οι συλλεγόμενες προσωπικές πληροφορίες χρησιμεύουν ως βάση για ομαλή, ασφαλή"
-" και αποτελεσματική κράτηση και κρατήσεις. Τα δεδομένα σας διευκολύνουν τη "
-"διαχείριση λογαριασμού, την ανταποκρινόμενη υποστήριξη πελατών και την "
-"κρίσιμη επικοινωνία. Εάν αναγνωριστεί ως διαχειριστής ξενοδοχείου, ορισμένες"
-" λεπτομέρειες κοινοποιούνται στο ίδρυμα για τη βελτιστοποίηση της "
-"παρακολούθησης των κρατήσεων."
+
+msgid "The collected personal information serves as a basis for smooth, secure, and efficient booking and reservations. Your data facilitate account management, responsive customer support, and critical communication. If identified as a hotel manager, certain details are shared with the establishment to optimize reservation monitoring."
+msgstr ""
 
 msgid "3. Engagement with Third-Party Services"
-msgstr "3. Αλληλεπίδραση με υπηρεσίες τρίτων"
-
-msgid ""
-"To enhance the user experience and expand our offerings, we engage reputable"
-" third-party services, including, but not limited to:"
 msgstr ""
-"Για να βελτιώσουμε την εμπειρία χρήστη και να επεκτείνουμε τις προσφορές "
-"μας, προσλαμβάνουμε αξιόπιστες υπηρεσίες τρίτων, συμπεριλαμβανομένων, "
-"ενδεικτικά, των εξής:"
+
+msgid "To enhance the user experience and expand our offerings, we engage reputable third-party services, including, but not limited to:"
+msgstr ""
 
 msgid "Google Analytics for detailed website analysis"
-msgstr "Google Analytics για λεπτομερή ανάλυση ιστότοπου"
+msgstr ""
 
 msgid "Top-Rent-A-Car for promotional banners, widgets, and joint promotions"
-msgstr "Top-Rent-A-Car για διαφημιστικά banner, widgets και κοινές προσφορές"
-
-msgid ""
-"Social services for login, including Google, GitHub, Reddit, Spotify, "
-"Trello, Patreon, Steam, VK, and Amazon"
 msgstr ""
-"Κοινωνικές υπηρεσίες για σύνδεση, συμπεριλαμβανομένων των Google, GitHub, "
-"Reddit, Spotify, Trello, Patreon, Steam, VK και Amazon"
 
-msgid ""
-"Payment processing through reputable providers like Stripe and epay.bg for "
-"secure financial transactions"
+msgid "Social services for login, including Google, GitHub, Reddit, Spotify, Trello, Patreon, Steam, VK, and Amazon"
 msgstr ""
-"Επεξεργασία πληρωμών μέσω αξιόπιστων παρόχων όπως η Stripe και η epay.bg για"
-" ασφαλείς οικονομικές συναλλαγές"
+
+msgid "Payment processing through reputable providers like Stripe and epay.bg for secure financial transactions"
+msgstr ""
 
 msgid "4. Tracking Mechanisms and Cookies"
-msgstr "4. Μηχανισμοί παρακολούθησης και cookies"
-
-msgid ""
-"Cookies serve as vital components of our digital architecture, contributing "
-"to the seamless retention of sessions and the preservation of data for "
-"personalization, such as theme settings and language preferences. In "
-"addition, certain third-party cookies may be used in conjunction with our "
-"respected partners."
 msgstr ""
-"Τα cookies χρησιμεύουν ως ζωτικά στοιχεία της ψηφιακής μας αρχιτεκτονικής, "
-"συμβάλλοντας στην απρόσκοπτη διατήρηση των περιόδων σύνδεσης και στη "
-"διατήρηση δεδομένων για εξατομίκευση, όπως ρυθμίσεις θεμάτων και προτιμήσεις"
-" γλώσσας. Επιπλέον, ορισμένα cookies τρίτων μπορούν να χρησιμοποιηθούν σε "
-"συνδυασμό με τους αξιοσέβαστους συνεργάτες μας."
+
+msgid "Cookies serve as vital components of our digital architecture, contributing to the seamless retention of sessions and the preservation of data for personalization, such as theme settings and language preferences. In addition, certain third-party cookies may be used in conjunction with our respected partners."
+msgstr ""
 
 msgid "5. Data Retention Strategy"
-msgstr "5. Στρατηγική διατήρησης δεδομένων"
-
-msgid ""
-"User personal data continue to be stored in our systems for the duration of "
-"an active account. An option for account deletion is provided, allowing for "
-"the voluntary removal of associated data. For hotel managers, data related "
-"to the establishment is stored for up to one year to comply with security "
-"protocols and possible legal regulations."
 msgstr ""
-"Τα προσωπικά δεδομένα χρήστη συνεχίζουν να αποθηκεύονται στα συστήματά μας "
-"για τη διάρκεια ενός ενεργού λογαριασμού. Παρέχεται μια επιλογή διαγραφής "
-"λογαριασμού, επιτρέποντας την εθελοντική κατάργηση των σχετικών δεδομένων. "
-"Για τους διαχειριστές ξενοδοχείων, τα δεδομένα που σχετίζονται με την "
-"εγκατάσταση αποθηκεύονται για έως και ένα έτος για συμμόρφωση με τα "
-"πρωτόκολλα ασφαλείας και τους πιθανούς νομικούς κανονισμούς."
+
+msgid "User personal data continue to be stored in our systems for the duration of an active account. An option for account deletion is provided, allowing for the voluntary removal of associated data. For hotel managers, data related to the establishment is stored for up to one year to comply with security protocols and possible legal regulations."
+msgstr ""
 
 msgid "6. Robust Security Framework"
-msgstr "6. Ισχυρό Πλαίσιο Ασφαλείας"
-
-msgid ""
-"With the help of modern encryption protocols that include a 512-character "
-"encryption key, we impose strict measures to protect sensitive data. Data is"
-" stored on a remote database server located in the European Union, secured "
-"with the comprehensive security infrastructure provided by Amazon Web "
-"Services."
 msgstr ""
-"Με τη βοήθεια σύγχρονων πρωτοκόλλων κρυπτογράφησης που περιλαμβάνουν κλειδί "
-"κρυπτογράφησης 512 χαρακτήρων, επιβάλλουμε αυστηρά μέτρα για την προστασία "
-"ευαίσθητων δεδομένων. Τα δεδομένα αποθηκεύονται σε έναν απομακρυσμένο "
-"διακομιστή βάσης δεδομένων που βρίσκεται στην Ευρωπαϊκή Ένωση, ασφαλισμένος "
-"με την ολοκληρωμένη υποδομή ασφαλείας που παρέχεται από την Amazon Web "
-"Services."
+
+msgid "With the help of modern encryption protocols that include a 512-character encryption key, we impose strict measures to protect sensitive data. Data is stored on a remote database server located in the European Union, secured with the comprehensive security infrastructure provided by Amazon Web Services."
+msgstr ""
 
 msgid "7. Data Sharing and Collaborative Efforts"
-msgstr "7. Κοινή χρήση δεδομένων και συνεργατικές προσπάθειες"
-
-msgid ""
-"Certain user data, including email addresses, names, and contact numbers, "
-"are shared with hotels to facilitate effective reservation management. "
-"Beyond established partnerships, data sharing with external organizations is"
-" limited to data automatically collected by Google Analytics and Top-Rent-A-"
-"Car."
 msgstr ""
-"Ορισμένα δεδομένα χρηστών, συμπεριλαμβανομένων των διευθύνσεων ηλεκτρονικού "
-"ταχυδρομείου, των ονομάτων και των αριθμών επικοινωνίας, κοινοποιούνται στα "
-"ξενοδοχεία για τη διευκόλυνση της αποτελεσματικής διαχείρισης των κρατήσεων."
-" Πέρα από τις καθιερωμένες συνεργασίες, η κοινή χρήση δεδομένων με "
-"εξωτερικούς οργανισμούς περιορίζεται σε δεδομένα που συλλέγονται αυτόματα "
-"από το Google Analytics και το Top-Rent-A-Car."
+
+msgid "Certain user data, including email addresses, names, and contact numbers, are shared with hotels to facilitate effective reservation management. Beyond established partnerships, data sharing with external organizations is limited to data automatically collected by Google Analytics and Top-Rent-A-Car."
+msgstr ""
 
 msgid "8. Cross-Border Data Transfers"
-msgstr "8. Διασυνοριακές Μεταφορές Δεδομένων"
-
-msgid ""
-"User personal data remain entirely within the European Union. In cases where"
-" your citizenship falls outside the EU, data may be transferred "
-"internationally for storage within the jurisdiction of the EU."
 msgstr ""
-"Τα προσωπικά δεδομένα χρήστη παραμένουν εξ ολοκλήρου εντός της Ευρωπαϊκής "
-"Ένωσης. Σε περιπτώσεις όπου η υπηκοότητά σας δεν ανήκει στην ΕΕ, τα δεδομένα"
-" ενδέχεται να μεταφερθούν διεθνώς για αποθήκευση εντός της δικαιοδοσίας της "
-"ΕΕ."
+
+msgid "User personal data remain entirely within the European Union. In cases where your citizenship falls outside the EU, data may be transferred internationally for storage within the jurisdiction of the EU."
+msgstr ""
 
 msgid "9. Protection of Children's Personal Information"
-msgstr "9. Προστασία Προσωπικών Δεδομένων Παιδιών"
-
-msgid ""
-"Adventora is entirely aimed at legal adults. Due to the mandatory nature of "
-"collecting personal data for reservation purposes and payment processing, "
-"the platform is not intended for minors. Exceptions may arise when legal "
-"adults provide information on minors within the context of their booked "
-"vacation."
 msgstr ""
-"Το Adventora απευθύνεται αποκλειστικά σε νομικούς ενήλικες. Λόγω του "
-"υποχρεωτικού χαρακτήρα της συλλογής προσωπικών δεδομένων για σκοπούς "
-"κράτησης και επεξεργασίας πληρωμών, η πλατφόρμα δεν προορίζεται για "
-"ανηλίκους. Ενδέχεται να προκύψουν εξαιρέσεις όταν οι νόμιμοι ενήλικες "
-"παρέχουν πληροφορίες για ανηλίκους στο πλαίσιο των κρατήσεων των διακοπών "
-"τους."
+
+msgid "Adventora is entirely aimed at legal adults. Due to the mandatory nature of collecting personal data for reservation purposes and payment processing, the platform is not intended for minors. Exceptions may arise when legal adults provide information on minors within the context of their booked vacation."
+msgstr ""
 
 msgid "10. Notification of Policy Changes"
-msgstr "10. Ειδοποίηση Αλλαγών Πολιτικής"
-
-msgid ""
-"Changes or modifications to this Policy will be communicated via email and "
-"will be clearly displayed on the Website."
 msgstr ""
-"Αλλαγές ή τροποποιήσεις σε αυτήν την Πολιτική θα κοινοποιούνται μέσω email "
-"και θα εμφανίζονται καθαρά στον Ιστότοπο."
+
+msgid "Changes or modifications to this Policy will be communicated via email and will be clearly displayed on the Website."
+msgstr ""
 
 msgid "11. Legitimate Basis for Data Processing"
-msgstr "11. Νόμιμη βάση για την επεξεργασία δεδομένων"
-
-msgid ""
-"The collection and processing of data are based on the mandatory execution "
-"of reservations and related reservation activities."
 msgstr ""
-"Η συλλογή και η επεξεργασία δεδομένων βασίζεται στην υποχρεωτική εκτέλεση "
-"κρατήσεων και σχετικών δραστηριοτήτων κρατήσεων."
+
+msgid "The collection and processing of data are based on the mandatory execution of reservations and related reservation activities."
+msgstr ""
 
 msgid "12. Implied Consent"
-msgstr "12. Σιωπηρή Συναίνεση"
-
-msgid ""
-"By using our platform and creating an account, you implicitly agree to the "
-"collection and processing of personal data, in accordance with this Policy."
 msgstr ""
-"Χρησιμοποιώντας την πλατφόρμα μας και δημιουργώντας έναν λογαριασμό, "
-"συμφωνείτε σιωπηρά με τη συλλογή και επεξεργασία προσωπικών δεδομένων, "
-"σύμφωνα με την παρούσα Πολιτική."
+
+msgid "By using our platform and creating an account, you implicitly agree to the collection and processing of personal data, in accordance with this Policy."
+msgstr ""
 
 msgid "13. Compliance with Applicable Regulations"
-msgstr "13. Συμμόρφωση με τους ισχύοντες κανονισμούς"
-
-msgid ""
-"Our data processing procedures strictly adhere to the regulations and "
-"provisions set forth by the General Data Protection Regulation (GDPR)."
 msgstr ""
-"Οι διαδικασίες επεξεργασίας δεδομένων μας τηρούν αυστηρά τους κανονισμούς "
-"και τις διατάξεις που ορίζονται από τον Γενικό Κανονισμό Προστασίας "
-"Δεδομένων (GDPR)."
 
-msgid ""
-"For questions, clarifications, or requests related to your personal data and"
-" this Policy, we inform you that you can contact us via the following "
-"contact: <a href='mailto:support@adventora.net'>hello@adventora.net</a>."
+msgid "Our data processing procedures strictly adhere to the regulations and provisions set forth by the General Data Protection Regulation (GDPR)."
 msgstr ""
-"Για ερωτήσεις, διευκρινίσεις ή αιτήματα σχετικά με τα προσωπικά σας δεδομένα"
-" και την παρούσα Πολιτική, σας ενημερώνουμε ότι μπορείτε να επικοινωνήσετε "
-"μαζί μας μέσω της ακόλουθης επικοινωνίας: <a "
-"href='mailto:support@adventora.net'>hello@adventora.net</ α>."
 
-#, fuzzy
-#| msgid "Reservations"
+msgid "For questions, clarifications, or requests related to your personal data and this Policy, we inform you that you can contact us via the following contact: <a href='mailto:support@adventora.net'>hello@adventora.net</a>."
+msgstr ""
+
 msgid "Reserve Room"
-msgstr "κρατήσεις"
+msgstr ""
 
 msgid "Price / Night"
-msgstr "Τιμή / Διανυκτέρευση"
+msgstr ""
 
-#, fuzzy
-#| msgid "Last Name"
 msgid "Name"
-msgstr "Επίθετο"
+msgstr ""
 
 msgid "Email"
-msgstr "ΗΛΕΚΤΡΟΝΙΚΗ ΔΙΕΥΘΥΝΣΗ"
+msgstr ""
 
 msgid "How many people?"
-msgstr "Πόσοι άνθρωποι?"
+msgstr ""
 
 msgid "How many nights?"
-msgstr "Πόσες νύχτες;"
+msgstr ""
 
 msgid "TOTAL"
-msgstr "ΣΥΝΟΛΟ"
+msgstr ""
 
 msgid "Username or email"
-msgstr "Ονομα χρήστη ή διεύθυνση ηλεκτρονικού ταχυδρομίου"
+msgstr ""
 
 msgid "Password"
-msgstr "Κωδικός πρόσβασης"
+msgstr ""
+
+msgid "Login"
+msgstr ""
 
 msgid "The username must contain at least 8 characters."
-msgstr "Το όνομα χρήστη πρέπει να περιέχει τουλάχιστον 8 χαρακτήρες."
+msgstr ""
 
 msgid "First name"
-msgstr "Ονομα"
+msgstr ""
 
 msgid "Last name"
-msgstr "Επίθετο"
+msgstr ""
 
 msgid "Email address must be valid"
-msgstr "Η διεύθυνση email πρέπει να είναι έγκυρη"
-
-msgid ""
-"The password must be at least 8 characters long. <br> The password should "
-"not contain only digits. <br> The password should not contain only letters. "
-"<br> The password should not contain only special characters. <br> The "
-"password should not contain the username. <br> The password should not be a "
-"commonly used password."
 msgstr ""
-"Ο κωδικός πρόσβασης πρέπει να αποτελείται από τουλάχιστον 8 χαρακτήρες. <br>"
-" Ο κωδικός πρόσβασης δεν πρέπει να περιέχει μόνο ψηφία. <br> Ο κωδικός "
-"πρόσβασης δεν πρέπει να περιέχει μόνο γράμματα. <br> Ο κωδικός πρόσβασης δεν"
-" πρέπει να περιέχει μόνο ειδικούς χαρακτήρες. <br> Ο κωδικός πρόσβασης δεν "
-"πρέπει να περιέχει το όνομα χρήστη. <br> Ο κωδικός πρόσβασης δεν πρέπει να "
-"είναι κωδικός πρόσβασης που χρησιμοποιείται συνήθως."
+
+msgid "The password must be at least 8 characters long. <br> The password should not contain only digits. <br> The password should not contain only letters. <br> The password should not contain only special characters. <br> The password should not contain the username. <br> The password should not be a commonly used password."
+msgstr ""
 
 msgid "Confirm password"
-msgstr "Επιβεβαίωση Κωδικού"
+msgstr ""
 
 msgid "Enter the same password as above, for verification."
-msgstr "Εισαγάγετε τον ίδιο κωδικό πρόσβασης όπως παραπάνω, για επαλήθευση."
+msgstr ""
+
+msgid "Sign up"
+msgstr ""
 
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
 msgstr ""
-"Vacationer - Εξερευνήστε, προγραμματίστε και κάντε κράτηση για τις ιδανικές "
-"σας δραστηριότητες διακοπών."
 
-msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own"
-" hotel."
+msgid "Hotel Manager - Oversee operations and provide excellent service in your own hotel."
 msgstr ""
-"Διευθυντής ξενοδοχείου - Επιβλέπετε τις λειτουργίες και παρέχετε άριστες "
-"υπηρεσίες στο δικό σας ξενοδοχείο."
 
-msgid ""
-"Employee - Contribute your expertise to a thriving workplace, such as a "
-"hotel or guest house."
+msgid "Employee - Contribute your expertise to a thriving workplace, such as a hotel or guest house."
 msgstr ""
-"Υπάλληλος - Συνεισφέρετε την τεχνογνωσία σας σε έναν ακμάζοντα χώρο "
-"εργασίας, όπως ένα ξενοδοχείο ή ξενώνας."
 
 msgid "Submit"
-msgstr "υποβάλλουν"
+msgstr ""
 
 msgid "First Name"
-msgstr "Ονομα"
+msgstr ""
 
 msgid "Last Name"
-msgstr "Επίθετο"
+msgstr ""
 
 msgid "Save"
-msgstr "Αποθηκεύσετε"
+msgstr ""
 
 msgid "The email must be valid."
-msgstr "Το email πρέπει να είναι έγκυρο."
+msgstr ""
 
 msgid "Phone"
-msgstr "Τηλέφωνο"
+msgstr ""
 
 msgid "Choose a Role"
-msgstr "Επιλέξτε έναν ρόλο"
+msgstr ""
 
 msgid "Old Password"
-msgstr "ΠΑΛΙΟΣ ΚΩΔΙΚΟΣ"
+msgstr ""
 
 msgid "New Password"
-msgstr "Νέος Κωδικός"
+msgstr ""
 
 msgid "Confirm New Password"
-msgstr "Επιβεβαιώστε τον καινούριο σας κωδικό"
+msgstr ""
 
 msgid "Enable"
-msgstr "επιτρέπω"
+msgstr ""
 
 msgid "Code"
-msgstr "Κώδικας"
+msgstr ""
 
 msgid "Disable"
-msgstr "Καθιστώ ανίκανο"
+msgstr ""
 
 msgid "User"
-msgstr "Χρήστης"
+msgstr ""
 
 msgid "Manager"
-msgstr "Διευθυντής"
+msgstr ""
 
 msgid "Employee"
-msgstr "Υπάλληλος"
+msgstr ""
 
 msgid "Malformed security token"
-msgstr "Λανθασμένο διακριτικό ασφαλείας"
+msgstr ""
 
 msgid "A user with that email already exists."
-msgstr "Ενας χρήστης με αυτή την ηλεκτρονική διεύθυνση υπάρχει ήδη."
+msgstr ""
 
 msgid "Password must be at least 8 characters long."
 msgstr ""
-"Ο κωδικός πρόσβασης πρέπει να αποτελείται από τουλάχιστον 8 χαρακτήρες."
 
 msgid "Passwords do not match."
-msgstr "Οι κωδικοί πρόσβασης δεν ταιριάζουν."
+msgstr ""
 
 msgid "Username must be at least 4 characters long."
-msgstr "Το όνομα χρήστη πρέπει να αποτελείται από τουλάχιστον 4 χαρακτήρες."
+msgstr ""
 
 msgid "Username should only contain letters and numbers."
-msgstr "Το όνομα χρήστη πρέπει να περιέχει μόνο γράμματα και αριθμούς."
+msgstr ""
 
 msgid "Invalid email."
-msgstr "Ακυρη διεύθυνση ηλεκτρονικού ταχυδρομείου."
+msgstr ""
 
 msgid "A user with that username already exists."
-msgstr "Υπάρχει ήδη ένας χρήστης με αυτό το όνομα χρήστη."
+msgstr ""
 
 msgid "Successfully registration."
-msgstr "Η εγγραφή ολοκληρώθηκε με επιτυχία."
+msgstr ""
 
 msgid "Invalid data."
-msgstr "Μη έγκυρα δεδομένα."
+msgstr ""
 
 msgid "A user with that email does not exist."
-msgstr "Χρήστης με αυτό το email δεν υπάρχει."
+msgstr ""
 
 msgid "Successfully logged in."
-msgstr "Έγινε επιτυχής σύνδεση."
+msgstr ""
 
 msgid "Invalid password."
-msgstr "Λανθασμένος κωδικός."
+msgstr ""
 
 msgid "A user with that username does not exist."
-msgstr "Χρήστης με αυτό το όνομα χρήστη δεν υπάρχει."
+msgstr ""
 
 msgid "Successfully logged out."
-msgstr "Έγινε επιτυχής αποσύνδεση."
+msgstr ""
 
 msgid "Invalid role."
-msgstr "Μη έγκυρος ρόλος."
+msgstr ""
 
 msgid "Successfully chosen role."
-msgstr "Επιτυχώς επιλεγμένος ρόλος."
+msgstr ""
 
 msgid "Successfully confirmed name."
-msgstr "Το όνομα επιβεβαιώθηκε με επιτυχία."
+msgstr ""
 
 msgid "Successfully confirmed email."
-msgstr "Το email επιβεβαιώθηκε με επιτυχία."
+msgstr ""
 
 msgid "Invalid username. At least 5 characters."
-msgstr "Μη έγκυρο όνομα χρήστη. "
+msgstr ""
 
 msgid "Successfully confirmed username."
-msgstr "Το όνομα χρήστη επιβεβαιώθηκε με επιτυχία."
+msgstr ""
 
 msgid "Successfully edited profile."
-msgstr "Το προφίλ επεξεργάστηκε με επιτυχία."
+msgstr ""
 
 msgid "Incorrect old password."
-msgstr "Λανθασμένος παλιός κωδικός πρόσβασης."
+msgstr ""
 
 msgid "Successfully changed password."
-msgstr "Ο κωδικός πρόσβασης άλλαξε με επιτυχία."
+msgstr ""
 
 msgid "Incorrect password."
-msgstr "Λάθος κωδικός."
+msgstr ""
 
 msgid "Successfully deleted account."
-msgstr "Ο λογαριασμός διαγράφηκε με επιτυχία."
+msgstr ""
 
 msgid "Successfully confirmed citizenship."
-msgstr "Επιβεβαιώθηκε με επιτυχία η υπηκοότητα."
+msgstr ""
 
 msgid "Successfully confirmed phone number."
-msgstr "Ο αριθμός τηλεφώνου επιβεβαιώθηκε με επιτυχία."
+msgstr ""
 
 msgid "Two factor authentication is not enabled."
-msgstr "Ο έλεγχος ταυτότητας δύο παραγόντων δεν είναι ενεργοποιημένος."
+msgstr ""
 
 msgid "Two factor authentication is already passed."
-msgstr "Ο έλεγχος ταυτότητας δύο παραγόντων έχει ήδη περάσει."
+msgstr ""
 
 msgid "Successfully passed two factor authentication"
-msgstr "Περάστηκε με επιτυχία ο έλεγχος ταυτότητας δύο παραγόντων"
+msgstr ""
 
 msgid "Invalid code."
-msgstr "Μη έγκυρος κωδικός."
+msgstr ""
 
 msgid "Two factor authentication is already enabled."
-msgstr "Ο έλεγχος ταυτότητας δύο παραγόντων είναι ήδη ενεργοποιημένος."
+msgstr ""
 
 msgid "You cannot enable two factor authentication with a social login."
 msgstr ""
-"Δεν μπορείτε να ενεργοποιήσετε τον έλεγχο ταυτότητας δύο παραγόντων με μια "
-"κοινωνική σύνδεση."
 
 msgid "Successfully enabled two factor authentication."
-msgstr "Ενεργοποιήθηκε με επιτυχία ο έλεγχος ταυτότητας δύο παραγόντων."
+msgstr ""
 
 msgid "Successfully disabled two factor authentication."
-msgstr "Απενεργοποιήθηκε με επιτυχία ο έλεγχος ταυτότητας δύο παραγόντων."
+msgstr ""
 
 msgid "Invalid login data. Please try again."
-msgstr "Μη έγκυρα δεδομένα σύνδεσης. ΠΑΡΑΚΑΛΩ προσπαθησε ξανα."
-
-msgid ""
-"To continue, you need to pass an automated security check. Please wait. if "
-"you are not redirected within 5 seconds, complete the captcha and click "
-"continue."
 msgstr ""
-"Για να συνεχίσετε, πρέπει να περάσετε έναν αυτοματοποιημένο έλεγχο "
-"ασφαλείας. Παρακαλώ περιμένετε. Εάν δεν ανακατευθυνθείτε εντός 5 "
-"δευτερολέπτων, ολοκληρώστε το captcha και κάντε κλικ στη συνέχεια."
+
+msgid "To continue, you need to pass an automated security check. Please wait. if you are not redirected within 5 seconds, complete the captcha and click continue."
+msgstr ""
 
 msgid "Continue"
-msgstr "Να συνεχίσει"
+msgstr ""
 
 msgid "Room not available"
-msgstr "Το δωμάτιο δεν είναι διαθέσιμο"
+msgstr ""
 
-#, fuzzy
-#| msgid "Invalid data."
 msgid "Invalid dates"
-msgstr "Μη έγκυρα δεδομένα."
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "Reservation successful"
-msgstr "κρατήσεις"
+msgstr ""
 
-#, fuzzy
-#| msgid "Room not available"
 msgid "Reservation not available"
-msgstr "Το δωμάτιο δεν είναι διαθέσιμο"
+msgstr ""
 
-#, fuzzy
-#| msgid "Room not available"
 msgid "Invoice not available"
-msgstr "Το δωμάτιο δεν είναι διαθέσιμο"
+msgstr ""
 
 msgid "Hotel Name"
-msgstr "Όνομα ξενοδοχείου"
+msgstr ""
 
 msgid "Address"
-msgstr "Διεύθυνση"
+msgstr ""
 
 msgid "City"
-msgstr "Πόλη"
+msgstr ""
 
 msgid "Website"
-msgstr "Δικτυακός τόπος"
+msgstr ""
 
 msgid "Description"
-msgstr "Περιγραφή"
+msgstr ""
 
 msgid "EIK"
-msgstr "ΕΙΚ"
+msgstr ""
 
 msgid "Authorized Person"
-msgstr "Εξουσιοδοτημένο άτομο"
+msgstr ""
 
 msgid "Stars"
-msgstr "αστέρια"
-
-msgid ""
-"I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
-"policy</a>"
 msgstr ""
-"Έχω διαβάσει και συμφωνώ με την <a href=\"/privacy\" "
-"target=\"_blank\">πολιτική απορρήτου</a>"
 
-msgid ""
-"I have read and agree to the <a href=\"/terms-of-use\" "
-"target=\"_blank\">terms and conditions</a>"
+msgid "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy policy</a>"
 msgstr ""
-"Έχω διαβάσει και συμφωνώ με τους <a href=\"/terms-of-use\" "
-"target=\"_blank\">όρους και προϋποθέσεις</a>"
 
-msgid ""
-"I hereby certify, under penalty of law, that the information provided about "
-"myself and my hotel is accurate and complete to the best of my "
-"knowledge.<br> I understand that any false or misleading information "
-"provided may result in the immdiate suspesion of my hotel listing from "
-"Adventora and may lead to potential legal consequences."
+msgid "I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank\">terms and conditions</a>"
 msgstr ""
-"Πιστοποιώ με το παρόν, με την ποινή του νόμου, ότι οι πληροφορίες που "
-"παρέχονται για εμένα και το ξενοδοχείο μου είναι ακριβείς και πλήρεις από "
-"όσο γνωρίζω.<br> Κατανοώ ότι τυχόν ψευδείς ή παραπλανητικές πληροφορίες που "
-"παρέχονται ενδέχεται να έχουν ως αποτέλεσμα την άμεση αναστολή του "
-"ξενοδοχείου μου "
+
+msgid "I hereby certify, under penalty of law, that the information provided about myself and my hotel is accurate and complete to the best of my knowledge.<br> I understand that any false or misleading information provided may result in the immdiate suspesion of my hotel listing from Adventora and may lead to potential legal consequences."
+msgstr ""
 
 msgid "Save Changes"
-msgstr "Αποθήκευσε τις αλλαγές"
+msgstr ""
 
 msgid "Room Number"
-msgstr "Αριθμός δωματίου"
+msgstr ""
 
 msgid "Luxuries"
-msgstr "Πολυτέλειες"
+msgstr ""
 
 msgid "Create Room"
-msgstr "Δημιουργία δωματίου"
+msgstr ""
 
-#, fuzzy
-#| msgid "Select"
 msgid "Select Room"
-msgstr "Επιλέγω"
+msgstr ""
 
 msgid "Check In"
-msgstr "Ελεγχος εισιτηρίου"
+msgstr ""
 
 msgid "Check Out"
-msgstr "Ολοκλήρωση αγοράς"
+msgstr ""
 
 msgid "Guests"
-msgstr "Καλεσμένοι"
+msgstr ""
 
 msgid "ID Card Number"
-msgstr "Αριθμός Ταυτότητας"
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "Create Reservation"
-msgstr "κρατήσεις"
+msgstr ""
 
 msgid "No description provided."
-msgstr "Δεν παρέχεται περιγραφή."
+msgstr ""
 
 msgid "You do not have permission to view this page"
-msgstr "Δεν έχετε άδεια προβολής αυτής της σελίδας"
+msgstr ""
 
 msgid "Your hotel is not approved yet"
-msgstr "Το ξενοδοχείο σας δεν έχει εγκριθεί ακόμη"
+msgstr ""
 
 msgid "Successfully registered hotel"
-msgstr "Το ξενοδοχείο εγγράφηκε με επιτυχία"
+msgstr ""
 
 msgid "Error while registering hotel"
-msgstr "Σφάλμα κατά την εγγραφή του ξενοδοχείου"
+msgstr ""
 
 msgid "You have already registered a hotel"
-msgstr "Έχετε ήδη δηλώσει ένα ξενοδοχείο"
+msgstr ""
 
 msgid "You have not registered a hotel yet"
-msgstr "Δεν έχετε εγγράψει ακόμη ξενοδοχείο"
+msgstr ""
 
 msgid "Successfully confirmed address"
-msgstr "Η διεύθυνση επιβεβαιώθηκε με επιτυχία"
+msgstr ""
 
 msgid "Error while confirming address"
-msgstr "Σφάλμα κατά την επιβεβαίωση της διεύθυνσης"
+msgstr ""
 
 msgid "No such hotel"
-msgstr "Δεν υπάρχει τέτοιο ξενοδοχείο"
+msgstr ""
 
 msgid "We cannot find the hotel you are looking for"
-msgstr "Δεν μπορούμε να βρούμε το ξενοδοχείο που ψάχνετε"
+msgstr ""
 
 msgid "Successfully added room"
-msgstr "Το δωμάτιο προστέθηκε με επιτυχία"
+msgstr ""
 
 msgid "Error while adding room"
-msgstr "Σφάλμα κατά την προσθήκη δωματίου"
+msgstr ""
 
 msgid "We cannot find the room you are looking for"
-msgstr "Δεν μπορούμε να βρούμε το δωμάτιο που ψάχνετε"
+msgstr ""
 
 msgid "Successfully updated hotel"
-msgstr "Το ξενοδοχείο ενημερώθηκε με επιτυχία"
+msgstr ""
 
 msgid "Error while updating hotel"
-msgstr "Σφάλμα κατά την ενημέρωση του ξενοδοχείου"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully updated hotel"
 msgid "Successfully updated room status"
-msgstr "Το ξενοδοχείο ενημερώθηκε με επιτυχία"
+msgstr ""
 
-#, fuzzy
-#| msgid "Invalid data."
 msgid "Invalid status"
-msgstr "Μη έγκυρα δεδομένα."
+msgstr ""
 
 msgid "This room is already occupied"
-msgstr "Αυτό το δωμάτιο είναι ήδη κατειλημμένο"
+msgstr ""
 
-#, fuzzy
-#| msgid "We cannot find the room you are looking for"
 msgid "We cannot find the reservation you are looking for"
-msgstr "Δεν μπορούμε να βρούμε το δωμάτιο που ψάχνετε"
+msgstr ""
 
-#, fuzzy
-#| msgid "This room is already occupied"
 msgid "This reservation is already completed"
-msgstr "Αυτό το δωμάτιο είναι ήδη κατειλημμένο"
+msgstr ""
 
-#, fuzzy
-#| msgid "This room is already occupied"
 msgid "This reservation is already cancelled"
-msgstr "Αυτό το δωμάτιο είναι ήδη κατειλημμένο"
+msgstr ""
 
-#, fuzzy
-#| msgid "This room is already occupied"
 msgid "This reservation is already expired"
-msgstr "Αυτό το δωμάτιο είναι ήδη κατειλημμένο"
+msgstr ""
 
-#, fuzzy
-#| msgid "This room is already occupied"
 msgid "This reservation is already rejected"
-msgstr "Αυτό το δωμάτιο είναι ήδη κατειλημμένο"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully occupied room"
-msgstr "Το δωμάτιο προστέθηκε με επιτυχία"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully deleted room"
-msgstr "Το δωμάτιο προστέθηκε με επιτυχία"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully added reservation"
-msgstr "Το δωμάτιο προστέθηκε με επιτυχία"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully updated hotel"
 msgid "Successfully uploaded photos"
-msgstr "Το ξενοδοχείο ενημερώθηκε με επιτυχία"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully deleted photo"
-msgstr "Το δωμάτιο προστέθηκε με επιτυχία"
+msgstr ""
 
 msgid "Photo not found"
-msgstr "Η φωτογραφία δεν βρέθηκε"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully updated room"
-msgstr "Το δωμάτιο προστέθηκε με επιτυχία"
-
-#~ msgid ""
-#~ "За да продължите, трябва да преминете автоматизирана проверка на "
-#~ "сигурността."
-#~ msgstr ""
-#~ "Για να προχωρήσετε, θα πρέπει να μεταβείτε στην αυτοματοποιημένη διαδικασία "
-#~ "της ασφάλειας."
-
-#~ msgid "Your reservation is successful."
-#~ msgstr "Η κράτησή σας είναι επιτυχής."
-
-#~ msgid "Your invoice is below."
-#~ msgstr "Το τιμολόγιό σας είναι παρακάτω."
-
-#~ msgid "The invoice is also available in your dashboard."
-#~ msgstr "Το τιμολόγιο είναι επίσης διαθέσιμο στον πίνακα ελέγχου σας."
-
-#~ msgid "The invoice acts as ticket."
-#~ msgstr "Το τιμολόγιο λειτουργεί ως εισιτήριο."
-
-#~ msgid "Please show the invoice to the hotel staff upon arrival."
-#~ msgstr ""
-#~ "Παρακαλείστε να επιδείξετε το τιμολόγιο στο προσωπικό του ξενοδοχείου κατά "
-#~ "την άφιξη."
-
-#~ msgid "Thank you for using Adventora."
-#~ msgstr "Σας ευχαριστούμε που χρησιμοποιείτε το Adventora."
-
-#~ msgid "Language"
-#~ msgstr "Γλώσσα"
-
-#, fuzzy
-#~ msgid "Reservation #"
-#~ msgstr "κρατήσεις"
-
-#, fuzzy
-#~ msgid "Custom Client"
-#~ msgstr "Πελάτης"
-
-#, fuzzy
-#~ msgid "Custom Clients"
-#~ msgstr "Πελάτης"
-
-#~ msgid "Login with Patreon"
-#~ msgstr "Είσοδος με Patreon"
-
-#~ msgid "Login with Amazon"
-#~ msgstr "Συνδεθείτε με το Amazon"
-
-#~ msgid "Disabled"
-#~ msgstr "άτομα με ειδικές ανάγκες"
+msgstr ""
