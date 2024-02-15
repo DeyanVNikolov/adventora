@@ -1,1089 +1,795 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2023
-# This file is distributed under the same license as the Adventora package.
-# DEYAN NIKOLOV <didonikolovbg@gmail.com>, 2023.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Adventora Beta-Release 1.0\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-24 21:43+0200\n"
-"PO-Revision-Date: 2023-11-17 15:08+0200\n"
-"Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
-"Language-Team: ADVENTORA INTERNATIONAL <international>\n"
-"Language: international\n"
+"POT-Creation-Date: 2024-02-12 14:54+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
 msgid "Not confirmed"
-msgstr "Ei vahvistettu"
+msgstr ""
 
 msgid "Send confirmation email again."
-msgstr "Lähetä vahvistussähköposti uudelleen."
+msgstr ""
 
 msgid "Confirmed"
-msgstr "Vahvistettu"
+msgstr ""
 
 msgid "Turned On"
-msgstr "Käynnistetty"
+msgstr ""
 
 msgid "Turn off"
-msgstr "Sammuttaa"
+msgstr ""
 
 msgid "Turned Off"
-msgstr "Sammutettu"
+msgstr ""
 
 msgid "Turn on"
-msgstr "Kiihottua"
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "My Reservations"
-msgstr "Varaukset"
+msgstr ""
 
 msgid "Change password"
-msgstr "Vaihda salasana"
+msgstr ""
 
 msgid "Delete Account"
-msgstr "Poista tili"
+msgstr ""
 
 msgid "Room"
-msgstr "Huone"
+msgstr ""
 
-#, fuzzy
-#| msgid "Night"
 msgid "Nights"
-msgstr "Yö"
+msgstr ""
 
 msgid "Check-in"
-msgstr "Ilmoittautua"
+msgstr ""
 
 msgid "Check-out"
-msgstr "Tarkista"
+msgstr ""
 
 msgid "Total"
-msgstr "Kaikki yhteensä"
+msgstr ""
 
 msgid "Invoice"
-msgstr "Lasku"
+msgstr ""
 
 msgid "Hotel"
-msgstr "Hotelli"
+msgstr ""
 
 msgid "Login with Google"
-msgstr "Kirjaudu sisään Googlella"
+msgstr ""
 
 msgid "Login with Trello"
-msgstr "Kirjaudu sisään Trellolla"
+msgstr ""
 
 msgid "Login with GitHub"
-msgstr "Kirjaudu sisään GitHubilla"
+msgstr ""
 
 msgid "Login with Reddit"
-msgstr "Kirjaudu sisään Redditillä"
+msgstr ""
 
 msgid "Login with Steam"
-msgstr "Kirjaudu sisään Steamin avulla"
+msgstr ""
 
 msgid "Login with Spotify."
-msgstr "Kirjaudu sisään Spotifylla."
+msgstr ""
 
 msgid "Login with VK"
-msgstr "Kirjaudu sisään VK:lla"
+msgstr ""
 
 msgid "Please enter your two-factor verification code"
-msgstr "Anna kaksivaiheinen vahvistuskoodisi"
+msgstr ""
 
-msgid "Homepage"
-msgstr "Kotisivu"
+msgid "Home"
+msgstr ""
 
-#, fuzzy
-#| msgid "Hotel"
 msgid "Hotels"
-msgstr "Hotelli"
+msgstr ""
 
 msgid "Dashboard"
-msgstr "Kojelauta"
-
-msgid "Profile"
-msgstr "Profiili"
-
-msgid "Admin"
-msgstr "Admin"
-
-msgid "Log out"
-msgstr "Kirjautua ulos"
-
-msgid "Login"
-msgstr "Kirjaudu sisään"
-
-msgid "Sign up"
-msgstr "Kirjaudu"
+msgstr ""
 
 msgid "Error"
-msgstr "Virhe"
+msgstr ""
 
 msgid "Success"
-msgstr "Menestys"
+msgstr ""
 
 msgid "Warning"
-msgstr "Varoitus"
+msgstr ""
 
 msgid "Adventora supports small, medium and large businesses"
-msgstr "Adventora tukee pieniä, keskisuuria ja suuria yrityksiä"
+msgstr ""
 
 msgid "All Rights Reserved"
-msgstr "Kaikki oikeudet pidätetään"
+msgstr ""
+
+msgid "Homepage"
+msgstr ""
 
 msgid "About us"
-msgstr "Meistä"
+msgstr ""
 
 msgid "Privacy"
-msgstr "Yksityisyys"
+msgstr ""
 
 msgid "Terms of use"
-msgstr "Käyttöehdot"
+msgstr ""
 
 msgid "Contacts"
-msgstr "Yhteystiedot"
+msgstr ""
 
 msgid "Partnerships"
-msgstr "Kumppanuudet"
+msgstr ""
 
 msgid "Emergency"
-msgstr "Hätä"
+msgstr ""
 
 msgid "Stranded Abroad"
-msgstr "Jäi ulkomaille"
+msgstr ""
 
 msgid "In case of fire, medical or police emergency"
-msgstr "Tulipalon, lääkärin tai poliisin hätätilanteessa"
+msgstr ""
 
 msgid "contact the single european emergency nunmber"
-msgstr "ota yhteyttä yhteiseen eurooppalaiseen hätänumeroon"
+msgstr ""
 
 msgid "It is dial without code, just 112 when in any country of the EU"
-msgstr "Se on soittaa ilman koodia, vain 112 missä tahansa EU-maassa"
+msgstr ""
 
 msgid "Welcome to Adventora"
-msgstr "Tervetuloa Adventoraan"
+msgstr ""
 
 msgid "Find your perfect stay with us"
-msgstr "Löydä täydellinen oleskelusi kanssamme"
+msgstr ""
 
-#, fuzzy
-#| msgid "Register Hotel"
 msgid "Registered hotels"
-msgstr "Rekisteröidy hotelli"
+msgstr ""
 
-#, fuzzy
-#| msgid "Custom Customer"
 msgid "Happy Customers"
-msgstr "Mukautettu asiakas"
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "Total Reservations"
-msgstr "Varaukset"
+msgstr ""
 
 msgid "View more"
-msgstr "Katso lisää"
-
-#, fuzzy
-#| msgid "Reservations"
-msgid "Reserve"
-msgstr "Varaukset"
-
-#, fuzzy
-#| msgid "Reservations"
-msgid "Add Reservation"
-msgstr "Varaukset"
-
-msgid ""
-"Your hotel is not yet approved. Allow us to confirm your info within 48 "
-"hours."
 msgstr ""
-"Hotelliasi ei ole vielä hyväksytty. Anna meidän vahvistaa tietosi 48 tunnin "
-"kuluessa."
+
+msgid "Reserve"
+msgstr ""
+
+msgid "Admin"
+msgstr ""
+
+msgid "Add Reservation"
+msgstr ""
+
+msgid "Your hotel is not yet approved. Allow us to confirm your info within 48 hours."
+msgstr ""
 
 msgid "You don't have a hotel"
-msgstr "Sinulla ei ole hotellia"
+msgstr ""
 
 msgid "Register Hotel"
-msgstr "Rekisteröidy hotelli"
+msgstr ""
 
 msgid "Rooms"
-msgstr "Huoneet"
+msgstr ""
 
 msgid "Add"
-msgstr "Lisätä"
+msgstr ""
 
 msgid "Confirm Address"
-msgstr "Vahvista osoite"
+msgstr ""
 
 msgid "Reservations"
-msgstr "Varaukset"
+msgstr ""
 
 msgid "Capacity"
-msgstr "Kapasiteetti"
+msgstr ""
 
 msgid "Price"
-msgstr "Hinta"
+msgstr ""
 
 msgid "Night"
-msgstr "Yö"
+msgstr ""
 
 msgid "Occupied"
-msgstr "Miehitetty"
+msgstr ""
 
 msgid "Status"
-msgstr "Tila"
+msgstr ""
 
 msgid "Available"
-msgstr "Saatavilla"
+msgstr ""
 
 msgid "To be cleaned"
-msgstr "Puhdistettavaksi"
+msgstr ""
 
-#, fuzzy
-#| msgid "Information"
 msgid "Edit Hotel Information"
-msgstr "Tiedot"
+msgstr ""
 
 msgid "General Settings"
-msgstr "Yleiset asetukset"
+msgstr ""
 
 msgid "Management"
-msgstr "Hallinto"
+msgstr ""
 
 msgid "Information"
-msgstr "Tiedot"
+msgstr ""
 
 msgid "Photos"
-msgstr "Kuvat"
+msgstr ""
 
 msgid "Set room as occupied"
-msgstr "Aseta huone varatuksi"
+msgstr ""
 
 msgid "Select from reservations for room"
-msgstr "Valitse huonevarauksista"
+msgstr ""
 
-#, fuzzy
-#| msgid "Select from reservations for room"
 msgid "No reservations for this room"
-msgstr "Valitse huonevarauksista"
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "Reservation"
-msgstr "Varaukset"
+msgstr ""
 
 msgid "Select"
-msgstr "Valitse"
+msgstr ""
 
 msgid "Add Photos"
-msgstr "Lisää kuvia"
+msgstr ""
 
 msgid "Upload"
-msgstr "Lataa"
+msgstr ""
 
 msgid "For partnerships contact us at"
-msgstr "Yhteistyökumppanuuksia varten ota yhteyttä osoitteeseen"
+msgstr ""
 
 msgid "Privacy Policy of Adventora"
-msgstr "Adventoran tietosuojakäytäntö"
+msgstr ""
 
 msgid "Last updated: August 13, 2023."
-msgstr "Viimeksi päivitetty: 13. elokuuta 2023."
-
-msgid ""
-"This <strong>Privacy Policy ('Policy')</strong> explains how Adventora "
-"('we', 'us', 'our') collects, uses, protects, and shares the personal "
-"information gathered from users ('you', 'your') of the website "
-"<strong>https://adventora.net</strong> ('Website'). This Policy highlights "
-"our commitment to data privacy, transparency, and compliance with relevant "
-"data protection laws and regulations."
 msgstr ""
-"Tämä <strong>tietosuojakäytäntö (\"käytäntö\")</strong> selittää, kuinka "
-"Adventora (\"me\", \"me\", \"meidän\") kerää, käyttää, suojaa ja jakaa "
-"käyttäjiltä (\"sinä\", \"sinun\") verkkosivustolla "
-"<strong>https://adventora.net</strong> (\"verkkosivusto\"). Tämä käytäntö "
-"korostaa sitoutumistamme tietosuojaan, avoimuuteen ja asiaankuuluvien "
-"tietosuojalakien ja -määräysten noudattamiseen."
 
-#, fuzzy
-#| msgid "Information"
+msgid "This <strong>Privacy Policy ('Policy')</strong> explains how Adventora ('we', 'us', 'our') collects, uses, protects, and shares the personal information gathered from users ('you', 'your') of the website <strong>https://adventora.net</strong> ('Website'). This Policy highlights our commitment to data privacy, transparency, and compliance with relevant data protection laws and regulations."
+msgstr ""
+
 msgid "1. Information Collection"
-msgstr "Tiedot"
-
-msgid ""
-"We collect a variety of personal data from users to ensure the smooth "
-"operation of our booking services. This includes, but is not limited to:"
 msgstr ""
-"Keräämme käyttäjiltä erilaisia ​​henkilötietoja varmistaaksemme "
-"varauspalveluidemme moitteettoman toiminnan. Tämä sisältää, mutta ei rajoitu"
-" näihin:"
 
-#, fuzzy
-#| msgid "First name"
+msgid "We collect a variety of personal data from users to ensure the smooth operation of our booking services. This includes, but is not limited to:"
+msgstr ""
+
 msgid "First and last name"
-msgstr "Etunimi"
+msgstr ""
 
-#, fuzzy
-#| msgid "Email address must be valid"
 msgid "Email address"
-msgstr "Sähköpostiosoitteen on oltava voimassa"
+msgstr ""
 
 msgid "Username"
-msgstr "Käyttäjätunnus"
+msgstr ""
 
 msgid "Phone numbers"
-msgstr "Puhelinnumerot"
+msgstr ""
 
 msgid "Citizenship"
-msgstr "Kansalaisuus"
+msgstr ""
 
 msgid "For individuals designated as 'hotel manager', we also collect:"
-msgstr "Henkilöiltä, ​​jotka on nimetty \"hotellipäälliköksi\", keräämme myös:"
+msgstr ""
 
-#, fuzzy
-#| msgid "Hotel Name"
 msgid "Hotel name"
-msgstr "Hotellin nimi"
+msgstr ""
 
-#, fuzzy
-#| msgid "Manager"
 msgid "Manager's name"
-msgstr "Manager"
+msgstr ""
 
 msgid "Unique identification number of the hotel's company (EIK)"
-msgstr "Hotellin yrityksen yksilöllinen tunnusnumero (EIK)"
+msgstr ""
 
 msgid "Hotel phone number"
-msgstr "Hotellin puhelinnumero"
+msgstr ""
 
 msgid "Hotel email address"
-msgstr "Hotellin sähköpostiosoite"
+msgstr ""
 
 msgid "Physical address of the hotel"
-msgstr "Hotellin fyysinen osoite"
+msgstr ""
 
 msgid "2. Purpose and Use of Data"
-msgstr "2. Tietojen tarkoitus ja käyttö"
-
-msgid ""
-"The collected personal information serves as a basis for smooth, secure, and"
-" efficient booking and reservations. Your data facilitate account "
-"management, responsive customer support, and critical communication. If "
-"identified as a hotel manager, certain details are shared with the "
-"establishment to optimize reservation monitoring."
 msgstr ""
-"Kerätyt henkilötiedot toimivat perustana sujuvalle, turvalliselle ja "
-"tehokkaalle varaukselle ja varauksille. Tietosi helpottavat tilinhallintaa, "
-"reagoivaa asiakastukea ja kriittistä viestintää. Jos tunnistetaan hotellin "
-"johtajaksi, tietyt tiedot jaetaan laitoksen kanssa varausvalvonnan "
-"optimoimiseksi."
+
+msgid "The collected personal information serves as a basis for smooth, secure, and efficient booking and reservations. Your data facilitate account management, responsive customer support, and critical communication. If identified as a hotel manager, certain details are shared with the establishment to optimize reservation monitoring."
+msgstr ""
 
 msgid "3. Engagement with Third-Party Services"
-msgstr "3. Yhteistyö kolmannen osapuolen palvelujen kanssa"
-
-msgid ""
-"To enhance the user experience and expand our offerings, we engage reputable"
-" third-party services, including, but not limited to:"
 msgstr ""
-"Parantaaksemme käyttökokemusta ja laajentaaksemme tarjontaamme otamme "
-"käyttöön hyvämaineiset kolmannen osapuolen palvelut, mukaan lukien, mutta ei"
-" rajoittuen:"
+
+msgid "To enhance the user experience and expand our offerings, we engage reputable third-party services, including, but not limited to:"
+msgstr ""
 
 msgid "Google Analytics for detailed website analysis"
-msgstr "Google Analytics yksityiskohtaista verkkosivustoanalyysiä varten"
+msgstr ""
 
 msgid "Top-Rent-A-Car for promotional banners, widgets, and joint promotions"
 msgstr ""
-"Top-Rent-A-Car mainosbannereita, widgetejä ja yhteisiä kampanjoita varten"
 
-msgid ""
-"Social services for login, including Google, GitHub, Reddit, Spotify, "
-"Trello, Patreon, Steam, VK, and Amazon"
+msgid "Social services for login, including Google, GitHub, Reddit, Spotify, Trello, Patreon, Steam, VK, and Amazon"
 msgstr ""
-"Sisäänkirjautumisen sosiaaliset palvelut, mukaan lukien Google, GitHub, "
-"Reddit, Spotify, Trello, Patreon, Steam, VK ja Amazon"
 
-msgid ""
-"Payment processing through reputable providers like Stripe and epay.bg for "
-"secure financial transactions"
+msgid "Payment processing through reputable providers like Stripe and epay.bg for secure financial transactions"
 msgstr ""
-"Maksujen käsittely hyvämaineisten palveluntarjoajien, kuten Stripen ja "
-"epay.bg:n, kautta turvallisia rahoitustapahtumia varten"
 
 msgid "4. Tracking Mechanisms and Cookies"
-msgstr "4. Seurantamekanismit ja evästeet"
-
-msgid ""
-"Cookies serve as vital components of our digital architecture, contributing "
-"to the seamless retention of sessions and the preservation of data for "
-"personalization, such as theme settings and language preferences. In "
-"addition, certain third-party cookies may be used in conjunction with our "
-"respected partners."
 msgstr ""
-"Evästeet ovat digitaalisen arkkitehtuurimme elintärkeitä osia, ja ne "
-"edistävät istuntojen saumatonta säilyttämistä ja tietojen, kuten "
-"teemaasetusten ja kieliasetusten, personointia varten. Lisäksi tiettyjä "
-"kolmannen osapuolen evästeitä voidaan käyttää yhdessä arvostettujen "
-"kumppaneidemme kanssa."
+
+msgid "Cookies serve as vital components of our digital architecture, contributing to the seamless retention of sessions and the preservation of data for personalization, such as theme settings and language preferences. In addition, certain third-party cookies may be used in conjunction with our respected partners."
+msgstr ""
 
 msgid "5. Data Retention Strategy"
-msgstr "5. Tietojen säilyttämisstrategia"
-
-msgid ""
-"User personal data continue to be stored in our systems for the duration of "
-"an active account. An option for account deletion is provided, allowing for "
-"the voluntary removal of associated data. For hotel managers, data related "
-"to the establishment is stored for up to one year to comply with security "
-"protocols and possible legal regulations."
 msgstr ""
-"Käyttäjien henkilötietoja säilytetään järjestelmiimme aktiivisen tilin ajan."
-" Tilin poistaminen on mahdollista, mikä mahdollistaa siihen liittyvien "
-"tietojen vapaaehtoisen poistamisen. Hotellijohtajien osalta toimipaikkaan "
-"liittyviä tietoja säilytetään enintään vuoden ajan turvallisuusprotokollien "
-"ja mahdollisten lakimääräysten noudattamiseksi."
+
+msgid "User personal data continue to be stored in our systems for the duration of an active account. An option for account deletion is provided, allowing for the voluntary removal of associated data. For hotel managers, data related to the establishment is stored for up to one year to comply with security protocols and possible legal regulations."
+msgstr ""
 
 msgid "6. Robust Security Framework"
-msgstr "6. Vankka suojauskehys"
-
-msgid ""
-"With the help of modern encryption protocols that include a 512-character "
-"encryption key, we impose strict measures to protect sensitive data. Data is"
-" stored on a remote database server located in the European Union, secured "
-"with the comprehensive security infrastructure provided by Amazon Web "
-"Services."
 msgstr ""
-"Nykyaikaisten salausprotokollien avulla, jotka sisältävät 512-merkkisen "
-"salausavaimen, asetamme tiukat toimenpiteet arkaluonteisten tietojen "
-"suojaamiseksi. Tiedot tallennetaan Euroopan unionissa sijaitsevalle "
-"etätietokantapalvelimelle, joka on suojattu Amazon Web Services -palvelun "
-"tarjoamalla kattavalla tietoturvainfrastruktuurilla."
+
+msgid "With the help of modern encryption protocols that include a 512-character encryption key, we impose strict measures to protect sensitive data. Data is stored on a remote database server located in the European Union, secured with the comprehensive security infrastructure provided by Amazon Web Services."
+msgstr ""
 
 msgid "7. Data Sharing and Collaborative Efforts"
-msgstr "7. Tietojen jakaminen ja yhteistyö"
-
-msgid ""
-"Certain user data, including email addresses, names, and contact numbers, "
-"are shared with hotels to facilitate effective reservation management. "
-"Beyond established partnerships, data sharing with external organizations is"
-" limited to data automatically collected by Google Analytics and Top-Rent-A-"
-"Car."
 msgstr ""
-"Tietyt käyttäjätiedot, kuten sähköpostiosoitteet, nimet ja yhteystiedot, "
-"jaetaan hotelleille tehokkaan varaushallinnan helpottamiseksi. "
-"Vakiintuneiden kumppanuuksien lisäksi tietojen jakaminen ulkoisten "
-"organisaatioiden kanssa rajoittuu Google Analyticsin ja Top-Rent-A-Carin "
-"automaattisesti keräämiin tietoihin."
+
+msgid "Certain user data, including email addresses, names, and contact numbers, are shared with hotels to facilitate effective reservation management. Beyond established partnerships, data sharing with external organizations is limited to data automatically collected by Google Analytics and Top-Rent-A-Car."
+msgstr ""
 
 msgid "8. Cross-Border Data Transfers"
-msgstr "8. Rajat ylittävät tiedonsiirrot"
-
-msgid ""
-"User personal data remain entirely within the European Union. In cases where"
-" your citizenship falls outside the EU, data may be transferred "
-"internationally for storage within the jurisdiction of the EU."
 msgstr ""
-"Käyttäjien henkilötiedot pysyvät kokonaisuudessaan Euroopan unionin "
-"alueella. Tapauksissa, joissa kansalaisuutesi on EU:n ulkopuolella, tietoja "
-"voidaan siirtää kansainvälisesti säilytettäväksi EU:n lainkäyttöalueella."
+
+msgid "User personal data remain entirely within the European Union. In cases where your citizenship falls outside the EU, data may be transferred internationally for storage within the jurisdiction of the EU."
+msgstr ""
 
 msgid "9. Protection of Children's Personal Information"
-msgstr "9. Lasten henkilötietojen suojaaminen"
-
-msgid ""
-"Adventora is entirely aimed at legal adults. Due to the mandatory nature of "
-"collecting personal data for reservation purposes and payment processing, "
-"the platform is not intended for minors. Exceptions may arise when legal "
-"adults provide information on minors within the context of their booked "
-"vacation."
 msgstr ""
-"Adventora on suunnattu kokonaan laillisille aikuisille. Varaustarkoituksiin "
-"ja maksujen käsittelyyn liittyvien henkilötietojen keräämisen "
-"pakollisuudesta johtuen alustaa ei ole tarkoitettu alaikäisille. Poikkeuksia"
-" voi syntyä, kun lailliset aikuiset antavat tietoja alaikäisistä varaamansa "
-"loman yhteydessä."
+
+msgid "Adventora is entirely aimed at legal adults. Due to the mandatory nature of collecting personal data for reservation purposes and payment processing, the platform is not intended for minors. Exceptions may arise when legal adults provide information on minors within the context of their booked vacation."
+msgstr ""
 
 msgid "10. Notification of Policy Changes"
-msgstr "10. Ilmoitus käytäntöjen muutoksista"
-
-msgid ""
-"Changes or modifications to this Policy will be communicated via email and "
-"will be clearly displayed on the Website."
 msgstr ""
-"Tämän käytännön muutoksista ilmoitetaan sähköpostitse ja ne näkyvät "
-"selkeästi verkkosivustolla."
+
+msgid "Changes or modifications to this Policy will be communicated via email and will be clearly displayed on the Website."
+msgstr ""
 
 msgid "11. Legitimate Basis for Data Processing"
-msgstr "11. Tietojenkäsittelyn oikeutettu perusta"
-
-msgid ""
-"The collection and processing of data are based on the mandatory execution "
-"of reservations and related reservation activities."
 msgstr ""
-"Tietojen kerääminen ja käsittely perustuu varausten pakolliseen "
-"suorittamiseen ja niihin liittyviin varaustoimintoihin."
+
+msgid "The collection and processing of data are based on the mandatory execution of reservations and related reservation activities."
+msgstr ""
 
 msgid "12. Implied Consent"
-msgstr "12. Implisiittinen suostumus"
-
-msgid ""
-"By using our platform and creating an account, you implicitly agree to the "
-"collection and processing of personal data, in accordance with this Policy."
 msgstr ""
-"Käyttämällä alustaamme ja luomalla tilin hyväksyt implisiittisesti "
-"henkilötietojen keräämisen ja käsittelyn tämän käytännön mukaisesti."
+
+msgid "By using our platform and creating an account, you implicitly agree to the collection and processing of personal data, in accordance with this Policy."
+msgstr ""
 
 msgid "13. Compliance with Applicable Regulations"
-msgstr "13. Sovellettavien määräysten noudattaminen"
-
-msgid ""
-"Our data processing procedures strictly adhere to the regulations and "
-"provisions set forth by the General Data Protection Regulation (GDPR)."
 msgstr ""
-"Tietojenkäsittelymenettelymme noudattavat tiukasti yleisen tietosuoja-"
-"asetuksen (GDPR) säännöksiä ja määräyksiä."
 
-msgid ""
-"For questions, clarifications, or requests related to your personal data and"
-" this Policy, we inform you that you can contact us via the following "
-"contact: <a href='mailto:support@adventora.net'>hello@adventora.net</a>."
+msgid "Our data processing procedures strictly adhere to the regulations and provisions set forth by the General Data Protection Regulation (GDPR)."
 msgstr ""
-"Jos sinulla on kysymyksiä, selvennyksiä tai pyyntöjä, jotka liittyvät "
-"henkilötietoihisi ja tähän käytäntöön, ilmoitamme, että voit ottaa meihin "
-"yhteyttä seuraavalla yhteystiedolla: <a "
-"href='mailto:support@adventora.net'>hello@adventora.net</. a>."
 
-#, fuzzy
-#| msgid "Reservations"
+msgid "For questions, clarifications, or requests related to your personal data and this Policy, we inform you that you can contact us via the following contact: <a href='mailto:support@adventora.net'>hello@adventora.net</a>."
+msgstr ""
+
 msgid "Reserve Room"
-msgstr "Varaukset"
+msgstr ""
 
 msgid "Price / Night"
-msgstr "Hinta / yö"
+msgstr ""
 
-#, fuzzy
-#| msgid "Last Name"
 msgid "Name"
-msgstr "Sukunimi"
+msgstr ""
 
 msgid "Email"
-msgstr "Sähköposti"
+msgstr ""
 
 msgid "How many people?"
-msgstr "Kuinka monta ihmistä?"
+msgstr ""
 
 msgid "How many nights?"
-msgstr "Kuinka monta yötä?"
+msgstr ""
 
 msgid "TOTAL"
-msgstr "KAIKKI YHTEENSÄ"
+msgstr ""
 
 msgid "Username or email"
-msgstr "Käyttäjätunnus tai sähköpostiosoite"
+msgstr ""
 
 msgid "Password"
-msgstr "Salasana"
+msgstr ""
+
+msgid "Login"
+msgstr ""
 
 msgid "The username must contain at least 8 characters."
-msgstr "Käyttäjätunnuksessa on oltava vähintään 8 merkkiä."
+msgstr ""
 
 msgid "First name"
-msgstr "Etunimi"
+msgstr ""
 
 msgid "Last name"
-msgstr "Sukunimi"
+msgstr ""
 
 msgid "Email address must be valid"
-msgstr "Sähköpostiosoitteen on oltava voimassa"
-
-msgid ""
-"The password must be at least 8 characters long. <br> The password should "
-"not contain only digits. <br> The password should not contain only letters. "
-"<br> The password should not contain only special characters. <br> The "
-"password should not contain the username. <br> The password should not be a "
-"commonly used password."
 msgstr ""
-"Salasanan tulee olla vähintään 8 merkkiä pitkä. <br> Salasana ei saa "
-"sisältää vain numeroita. <br> Salasana ei saa sisältää vain kirjaimia. <br> "
-"Salasana ei saa sisältää vain erikoismerkkejä. <br> Salasana ei saa sisältää"
-" käyttäjätunnusta. <br> Salasana ei saa olla yleisesti käytetty salasana."
+
+msgid "The password must be at least 8 characters long. <br> The password should not contain only digits. <br> The password should not contain only letters. <br> The password should not contain only special characters. <br> The password should not contain the username. <br> The password should not be a commonly used password."
+msgstr ""
 
 msgid "Confirm password"
-msgstr "Vahvista salasana"
+msgstr ""
 
 msgid "Enter the same password as above, for verification."
-msgstr "Syötä sama salasana kuin yllä vahvistusta varten."
+msgstr ""
+
+msgid "Sign up"
+msgstr ""
 
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
 msgstr ""
-"Lomailija - Tutki, suunnittele ja varaa ihanteelliset lomaaktiviteetit."
 
-msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own"
-" hotel."
+msgid "Hotel Manager - Oversee operations and provide excellent service in your own hotel."
 msgstr ""
-"Hotel Manager - Valvo toimintaa ja tarjoa erinomaista palvelua omassa "
-"hotellissasi."
 
-msgid ""
-"Employee - Contribute your expertise to a thriving workplace, such as a "
-"hotel or guest house."
+msgid "Employee - Contribute your expertise to a thriving workplace, such as a hotel or guest house."
 msgstr ""
-"Työntekijä – Anna asiantuntemuksesi menestyvän työpaikan, kuten hotellin tai"
-" guesthousen, luomiseen."
 
 msgid "Submit"
-msgstr "Lähetä"
+msgstr ""
 
 msgid "First Name"
-msgstr "Etunimi"
+msgstr ""
 
 msgid "Last Name"
-msgstr "Sukunimi"
+msgstr ""
 
 msgid "Save"
-msgstr "Tallentaa"
+msgstr ""
 
 msgid "The email must be valid."
-msgstr "Sähköpostin tulee olla voimassa."
+msgstr ""
 
 msgid "Phone"
-msgstr "Puhelin"
+msgstr ""
 
 msgid "Choose a Role"
-msgstr "Valitse rooli"
+msgstr ""
 
 msgid "Old Password"
-msgstr "vanha salasana"
+msgstr ""
 
 msgid "New Password"
-msgstr "uusi salasana"
+msgstr ""
 
 msgid "Confirm New Password"
-msgstr "Vahvista uusi salasana"
+msgstr ""
 
 msgid "Enable"
-msgstr "ota käyttöön"
+msgstr ""
 
 msgid "Code"
-msgstr "Koodi"
+msgstr ""
 
 msgid "Disable"
-msgstr "Poista käytöstä"
+msgstr ""
 
 msgid "User"
-msgstr "Käyttäjä"
+msgstr ""
 
 msgid "Manager"
-msgstr "Manager"
+msgstr ""
 
 msgid "Employee"
-msgstr "Työntekijä"
+msgstr ""
 
 msgid "Malformed security token"
-msgstr "Väärin muotoiltu suojaustunnus"
+msgstr ""
 
 msgid "A user with that email already exists."
-msgstr "Tällä sähköpostiosoitteella on jo käyttäjä."
+msgstr ""
 
 msgid "Password must be at least 8 characters long."
-msgstr "Salasanan tulee olla vähintään 8 merkkiä pitkä."
+msgstr ""
 
 msgid "Passwords do not match."
-msgstr "Salasanat eivät täsmää."
+msgstr ""
 
 msgid "Username must be at least 4 characters long."
-msgstr "Käyttäjätunnuksen tulee olla vähintään 4 merkkiä pitkä."
+msgstr ""
 
 msgid "Username should only contain letters and numbers."
-msgstr "Käyttäjätunnus saa sisältää vain kirjaimia ja numeroita."
+msgstr ""
 
 msgid "Invalid email."
-msgstr "Virheellinen sähköpostiosoite."
+msgstr ""
 
 msgid "A user with that username already exists."
-msgstr "Kyseinen käyttäjänimi on jo käytössä toisella käyttäjällä."
+msgstr ""
 
 msgid "Successfully registration."
-msgstr "Rekisteröinti onnistui."
+msgstr ""
 
 msgid "Invalid data."
-msgstr "Virheellinen tieto."
+msgstr ""
 
 msgid "A user with that email does not exist."
-msgstr "Käyttäjää, jolla on kyseinen sähköpostiosoite, ei ole olemassa."
+msgstr ""
 
 msgid "Successfully logged in."
-msgstr "Sisäänkirjautuminen onnistui."
+msgstr ""
 
 msgid "Invalid password."
-msgstr "Väärä salasana."
+msgstr ""
 
 msgid "A user with that username does not exist."
-msgstr "Käyttäjää tällä käyttäjätunnuksella ei ole olemassa."
+msgstr ""
 
 msgid "Successfully logged out."
-msgstr "Uloskirjautuminen onnistui."
+msgstr ""
 
 msgid "Invalid role."
-msgstr "Virheellinen rooli."
+msgstr ""
 
 msgid "Successfully chosen role."
-msgstr "Onnistuneesti valittu rooli."
+msgstr ""
 
 msgid "Successfully confirmed name."
-msgstr "Nimi vahvistettiin onnistuneesti."
+msgstr ""
 
 msgid "Successfully confirmed email."
-msgstr "Sähköpostin vahvistus onnistui."
+msgstr ""
 
 msgid "Invalid username. At least 5 characters."
-msgstr "Virheellinen käyttäjätunnus. "
+msgstr ""
 
 msgid "Successfully confirmed username."
-msgstr "Käyttäjätunnus vahvistettu."
+msgstr ""
 
 msgid "Successfully edited profile."
-msgstr "Profiilin muokkaus onnistui."
+msgstr ""
 
 msgid "Incorrect old password."
-msgstr "Väärä vanha salasana."
+msgstr ""
 
 msgid "Successfully changed password."
-msgstr "Salasanan vaihto onnistui."
+msgstr ""
 
 msgid "Incorrect password."
-msgstr "Väärä salasana."
+msgstr ""
 
 msgid "Successfully deleted account."
-msgstr "Tilin poistaminen onnistui."
+msgstr ""
 
 msgid "Successfully confirmed citizenship."
-msgstr "Kansalaisuus on vahvistettu."
+msgstr ""
 
 msgid "Successfully confirmed phone number."
-msgstr "Puhelinnumeron vahvistus onnistui."
+msgstr ""
 
 msgid "Two factor authentication is not enabled."
-msgstr "Kaksivaiheinen todennus ei ole käytössä."
+msgstr ""
 
 msgid "Two factor authentication is already passed."
-msgstr "Kaksivaiheinen todennus on jo läpäissyt."
+msgstr ""
 
 msgid "Successfully passed two factor authentication"
-msgstr "Kaksivaiheinen todennus läpäissyt onnistuneesti"
+msgstr ""
 
 msgid "Invalid code."
-msgstr "Virheellinen koodi."
+msgstr ""
 
 msgid "Two factor authentication is already enabled."
-msgstr "Kaksivaiheinen todennus on jo käytössä."
+msgstr ""
 
 msgid "You cannot enable two factor authentication with a social login."
 msgstr ""
-"Et voi ottaa kaksivaiheista todennusta käyttöön sosiaalisella "
-"kirjautumisella."
 
 msgid "Successfully enabled two factor authentication."
-msgstr "Kaksivaiheinen todennus otettiin käyttöön."
+msgstr ""
 
 msgid "Successfully disabled two factor authentication."
-msgstr "Kaksivaiheinen todennus on poistettu käytöstä."
+msgstr ""
 
 msgid "Invalid login data. Please try again."
-msgstr "Virheelliset kirjautumistiedot. Yritä uudelleen."
-
-msgid ""
-"To continue, you need to pass an automated security check. Please wait. if "
-"you are not redirected within 5 seconds, complete the captcha and click "
-"continue."
 msgstr ""
-"Jos haluat jatkaa, sinun on läpäistävä automaattinen turvatarkastus. Odota. "
-"Jos sinua ei ohjata uudelleen 5 sekunnin kuluessa, suorita captcha ja "
-"napsauta jatka."
+
+msgid "To continue, you need to pass an automated security check. Please wait. if you are not redirected within 5 seconds, complete the captcha and click continue."
+msgstr ""
 
 msgid "Continue"
-msgstr "Jatkaa"
+msgstr ""
 
 msgid "Room not available"
-msgstr "Huone ei ole käytettävissä"
+msgstr ""
 
-#, fuzzy
-#| msgid "Invalid data."
 msgid "Invalid dates"
-msgstr "Virheellinen tieto."
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "Reservation successful"
-msgstr "Varaukset"
+msgstr ""
 
-#, fuzzy
-#| msgid "Room not available"
 msgid "Reservation not available"
-msgstr "Huone ei ole käytettävissä"
+msgstr ""
 
-#, fuzzy
-#| msgid "Room not available"
 msgid "Invoice not available"
-msgstr "Huone ei ole käytettävissä"
+msgstr ""
 
 msgid "Hotel Name"
-msgstr "Hotellin nimi"
+msgstr ""
 
 msgid "Address"
-msgstr "Osoite"
+msgstr ""
 
 msgid "City"
-msgstr "Kaupunki"
+msgstr ""
 
 msgid "Website"
-msgstr "Verkkosivusto"
+msgstr ""
 
 msgid "Description"
-msgstr "Kuvaus"
+msgstr ""
 
 msgid "EIK"
-msgstr "EIK"
+msgstr ""
 
 msgid "Authorized Person"
-msgstr "Valtuutettu henkilö"
+msgstr ""
 
 msgid "Stars"
-msgstr "Tähdet"
-
-msgid ""
-"I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
-"policy</a>"
 msgstr ""
-"Olen lukenut ja hyväksyn <a href=\"/privacy\" "
-"target=\"_blank\">tietosuojakäytännön</a>"
 
-msgid ""
-"I have read and agree to the <a href=\"/terms-of-use\" "
-"target=\"_blank\">terms and conditions</a>"
+msgid "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy policy</a>"
 msgstr ""
-"Olen lukenut ja hyväksyn <a href=\"/terms-of-use\" "
-"target=\"_blank\">käyttöehdot</a>"
 
-msgid ""
-"I hereby certify, under penalty of law, that the information provided about "
-"myself and my hotel is accurate and complete to the best of my "
-"knowledge.<br> I understand that any false or misleading information "
-"provided may result in the immdiate suspesion of my hotel listing from "
-"Adventora and may lead to potential legal consequences."
+msgid "I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank\">terms and conditions</a>"
 msgstr ""
-"Vakuutan täten lain rangaistuksen alaisena, että itsestäni ja hotellistani "
-"antamani tiedot ovat parhaan tietämykseni mukaan tarkkoja ja "
-"täydellisiä.<br> Ymmärrän, että kaikki antamani väärät tai harhaanjohtavat "
-"tiedot voivat johtaa välittömään hotellieni epäilyyn. "
+
+msgid "I hereby certify, under penalty of law, that the information provided about myself and my hotel is accurate and complete to the best of my knowledge.<br> I understand that any false or misleading information provided may result in the immdiate suspesion of my hotel listing from Adventora and may lead to potential legal consequences."
+msgstr ""
 
 msgid "Save Changes"
-msgstr "Tallenna muutokset"
+msgstr ""
 
 msgid "Room Number"
-msgstr "Huoneen numero"
+msgstr ""
 
 msgid "Luxuries"
-msgstr "Ylellisyys"
+msgstr ""
 
 msgid "Create Room"
-msgstr "Luo huone"
+msgstr ""
 
-#, fuzzy
-#| msgid "Select"
 msgid "Select Room"
-msgstr "Valitse"
+msgstr ""
 
 msgid "Check In"
-msgstr "Ilmoittautua"
+msgstr ""
 
 msgid "Check Out"
-msgstr "Tarkista"
+msgstr ""
 
 msgid "Guests"
-msgstr "Vieraita"
+msgstr ""
 
 msgid "ID Card Number"
-msgstr "Henkilökortin numero"
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "Create Reservation"
-msgstr "Varaukset"
+msgstr ""
 
 msgid "No description provided."
-msgstr "Ei kuvausta."
+msgstr ""
 
 msgid "You do not have permission to view this page"
-msgstr "Sinulla ei ole lupaa tarkastella tätä sivua"
+msgstr ""
 
 msgid "Your hotel is not approved yet"
-msgstr "Hotelliasi ei ole vielä hyväksytty"
+msgstr ""
 
 msgid "Successfully registered hotel"
-msgstr "Hotelli rekisteröitiin onnistuneesti"
+msgstr ""
 
 msgid "Error while registering hotel"
-msgstr "Virhe hotellia rekisteröitäessä"
+msgstr ""
 
 msgid "You have already registered a hotel"
-msgstr "Olet jo rekisteröinyt hotellin"
+msgstr ""
 
 msgid "You have not registered a hotel yet"
-msgstr "Et ole vielä rekisteröinyt hotellia"
+msgstr ""
 
 msgid "Successfully confirmed address"
-msgstr "Osoitteen vahvistus onnistui"
+msgstr ""
 
 msgid "Error while confirming address"
-msgstr "Virhe vahvistettaessa osoitetta"
+msgstr ""
 
 msgid "No such hotel"
-msgstr "Ei sellaista hotellia"
+msgstr ""
 
 msgid "We cannot find the hotel you are looking for"
-msgstr "Emme löydä etsimääsi hotellia"
+msgstr ""
 
 msgid "Successfully added room"
-msgstr "Huoneen lisäys onnistui"
+msgstr ""
 
 msgid "Error while adding room"
-msgstr "Virhe lisättäessä huonetta"
+msgstr ""
 
 msgid "We cannot find the room you are looking for"
-msgstr "Emme löydä etsimääsi huonetta"
+msgstr ""
 
 msgid "Successfully updated hotel"
-msgstr "Hotelli päivitetty onnistuneesti"
+msgstr ""
 
 msgid "Error while updating hotel"
-msgstr "Virhe päivitettäessä hotellia"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully updated hotel"
 msgid "Successfully updated room status"
-msgstr "Hotelli päivitetty onnistuneesti"
+msgstr ""
 
-#, fuzzy
-#| msgid "Invalid data."
 msgid "Invalid status"
-msgstr "Virheellinen tieto."
+msgstr ""
 
 msgid "This room is already occupied"
-msgstr "Tämä huone on jo varattu"
+msgstr ""
 
-#, fuzzy
-#| msgid "We cannot find the room you are looking for"
 msgid "We cannot find the reservation you are looking for"
-msgstr "Emme löydä etsimääsi huonetta"
+msgstr ""
 
-#, fuzzy
-#| msgid "This room is already occupied"
 msgid "This reservation is already completed"
-msgstr "Tämä huone on jo varattu"
+msgstr ""
 
-#, fuzzy
-#| msgid "This room is already occupied"
 msgid "This reservation is already cancelled"
-msgstr "Tämä huone on jo varattu"
+msgstr ""
 
-#, fuzzy
-#| msgid "This room is already occupied"
 msgid "This reservation is already expired"
-msgstr "Tämä huone on jo varattu"
+msgstr ""
 
-#, fuzzy
-#| msgid "This room is already occupied"
 msgid "This reservation is already rejected"
-msgstr "Tämä huone on jo varattu"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully occupied room"
-msgstr "Huoneen lisäys onnistui"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully deleted room"
-msgstr "Huoneen lisäys onnistui"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully added reservation"
-msgstr "Huoneen lisäys onnistui"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully updated hotel"
 msgid "Successfully uploaded photos"
-msgstr "Hotelli päivitetty onnistuneesti"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully deleted photo"
-msgstr "Huoneen lisäys onnistui"
+msgstr ""
 
 msgid "Photo not found"
-msgstr "Valokuvaa ei löydy"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully updated room"
-msgstr "Huoneen lisäys onnistui"
-
-#~ msgid ""
-#~ "За да продължите, трябва да преминете автоматизирана проверка на "
-#~ "сигурността."
-#~ msgstr ""
-#~ "За да продължите, трябва да преминете автоматизирана проверка на "
-#~ "сигурността."
-
-#~ msgid "Your reservation is successful."
-#~ msgstr "Varauksesi on onnistunut."
-
-#~ msgid "Your invoice is below."
-#~ msgstr "Laskusi on alla."
-
-#~ msgid "The invoice is also available in your dashboard."
-#~ msgstr "Lasku löytyy myös kojelautastasi."
-
-#~ msgid "The invoice acts as ticket."
-#~ msgstr "Lasku toimii lippuna."
-
-#~ msgid "Please show the invoice to the hotel staff upon arrival."
-#~ msgstr "Näytä lasku hotellin henkilökunnalle saavuttaessa."
-
-#~ msgid "Thank you for using Adventora."
-#~ msgstr "Kiitos, että käytät Adventoraa."
-
-#~ msgid "Language"
-#~ msgstr "Kieli"
-
-#, fuzzy
-#~ msgid "Reservation #"
-#~ msgstr "Varaukset"
-
-#, fuzzy
-#~ msgid "Custom Client"
-#~ msgstr "Mukautettu asiakas"
-
-#, fuzzy
-#~ msgid "Custom Clients"
-#~ msgstr "Mukautettu asiakas"
-
-#~ msgid "Login with Patreon"
-#~ msgstr "Kirjaudu Patreonilla"
-
-#~ msgid "Login with Amazon"
-#~ msgstr "Kirjaudu sisään Amazonilla"
-
-#~ msgid "Disabled"
-#~ msgstr "Liikuntarajoitteinen"
+msgstr ""

@@ -1,1094 +1,796 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2023
-# This file is distributed under the same license as the Adventora package.
-# DEYAN NIKOLOV <didonikolovbg@gmail.com>, 2023.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Adventora Beta-Release 1.0\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-24 21:43+0200\n"
-"PO-Revision-Date: 2023-11-17 15:08+0200\n"
-"Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
-"Language-Team: ADVENTORA INTERNATIONAL <international>\n"
-"Language: international\n"
+"POT-Creation-Date: 2024-02-12 14:54+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?"
+"2:1));\n"
 msgid "Not confirmed"
-msgstr "Neconfirmat"
+msgstr ""
 
 msgid "Send confirmation email again."
-msgstr "Trimite din nou e-mail de confirmare."
+msgstr ""
 
 msgid "Confirmed"
-msgstr "Confirmat"
+msgstr ""
 
 msgid "Turned On"
-msgstr "Pornit"
+msgstr ""
 
 msgid "Turn off"
-msgstr "Opriți"
+msgstr ""
 
 msgid "Turned Off"
-msgstr "Oprit"
+msgstr ""
 
 msgid "Turn on"
-msgstr "Porniți"
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "My Reservations"
-msgstr "Rezervări"
+msgstr ""
 
 msgid "Change password"
-msgstr "Schimbaţi parola"
+msgstr ""
 
 msgid "Delete Account"
-msgstr "Șterge cont"
+msgstr ""
 
 msgid "Room"
-msgstr "Cameră"
+msgstr ""
 
-#, fuzzy
-#| msgid "Night"
 msgid "Nights"
-msgstr "Noapte"
+msgstr ""
 
 msgid "Check-in"
-msgstr "Check-in"
+msgstr ""
 
 msgid "Check-out"
-msgstr "Verifică"
+msgstr ""
 
 msgid "Total"
-msgstr "Total"
+msgstr ""
 
 msgid "Invoice"
-msgstr "Factura fiscala"
+msgstr ""
 
 msgid "Hotel"
-msgstr "Hotel"
+msgstr ""
 
 msgid "Login with Google"
-msgstr "Conectați-vă cu Google"
+msgstr ""
 
 msgid "Login with Trello"
-msgstr "Conectați-vă cu Trello"
+msgstr ""
 
 msgid "Login with GitHub"
-msgstr "Conectați-vă cu GitHub"
+msgstr ""
 
 msgid "Login with Reddit"
-msgstr "Conectați-vă cu Reddit"
+msgstr ""
 
 msgid "Login with Steam"
-msgstr "Conectați-vă cu Steam"
+msgstr ""
 
 msgid "Login with Spotify."
-msgstr "Conectați-vă cu Spotify."
+msgstr ""
 
 msgid "Login with VK"
-msgstr "Conectați-vă cu VK"
+msgstr ""
 
 msgid "Please enter your two-factor verification code"
-msgstr "Vă rugăm să introduceți codul de verificare cu doi factori"
+msgstr ""
 
-msgid "Homepage"
-msgstr "Pagina principala"
+msgid "Home"
+msgstr ""
 
-#, fuzzy
-#| msgid "Hotel"
 msgid "Hotels"
-msgstr "Hotel"
+msgstr ""
 
 msgid "Dashboard"
-msgstr "Bord"
-
-msgid "Profile"
-msgstr "Profil"
-
-msgid "Admin"
-msgstr "Admin"
-
-msgid "Log out"
-msgstr "Deconectați-vă"
-
-msgid "Login"
-msgstr "Log in"
-
-msgid "Sign up"
-msgstr "Inscrie-te"
+msgstr ""
 
 msgid "Error"
-msgstr "Eroare"
+msgstr ""
 
 msgid "Success"
-msgstr "Succes"
+msgstr ""
 
 msgid "Warning"
-msgstr "Avertizare"
+msgstr ""
 
 msgid "Adventora supports small, medium and large businesses"
-msgstr "Adventora sprijină întreprinderile mici, mijlocii și mari"
+msgstr ""
 
 msgid "All Rights Reserved"
-msgstr "Toate drepturile rezervate"
+msgstr ""
+
+msgid "Homepage"
+msgstr ""
 
 msgid "About us"
-msgstr "Despre noi"
+msgstr ""
 
 msgid "Privacy"
-msgstr "Confidențialitate"
+msgstr ""
 
 msgid "Terms of use"
-msgstr "Termeni de utilizare"
+msgstr ""
 
 msgid "Contacts"
-msgstr "Contacte"
+msgstr ""
 
 msgid "Partnerships"
-msgstr "Parteneriate"
+msgstr ""
 
 msgid "Emergency"
-msgstr "De urgență"
+msgstr ""
 
 msgid "Stranded Abroad"
-msgstr "Blocat în străinătate"
+msgstr ""
 
 msgid "In case of fire, medical or police emergency"
-msgstr "În caz de incendiu, urgență medicală sau de poliție"
+msgstr ""
 
 msgid "contact the single european emergency nunmber"
-msgstr "contactați numărul unic european de urgență"
+msgstr ""
 
 msgid "It is dial without code, just 112 when in any country of the EU"
-msgstr "Se apelează fără cod, doar 112 când se află în orice țară a UE"
+msgstr ""
 
 msgid "Welcome to Adventora"
-msgstr "Bun venit la Adventora"
+msgstr ""
 
 msgid "Find your perfect stay with us"
-msgstr "Găsește-ți șederea perfectă la noi"
+msgstr ""
 
-#, fuzzy
-#| msgid "Register Hotel"
 msgid "Registered hotels"
-msgstr "Înregistrați hotel"
+msgstr ""
 
-#, fuzzy
-#| msgid "Custom Customer"
 msgid "Happy Customers"
-msgstr "Client personalizat"
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "Total Reservations"
-msgstr "Rezervări"
+msgstr ""
 
 msgid "View more"
-msgstr "Vezi mai mult"
-
-#, fuzzy
-#| msgid "Reservations"
-msgid "Reserve"
-msgstr "Rezervări"
-
-#, fuzzy
-#| msgid "Reservations"
-msgid "Add Reservation"
-msgstr "Rezervări"
-
-msgid ""
-"Your hotel is not yet approved. Allow us to confirm your info within 48 "
-"hours."
 msgstr ""
-"Hotelul dvs. nu este încă aprobat. Permiteți-ne să vă confirmăm informațiile"
-" în termen de 48 de ore."
+
+msgid "Reserve"
+msgstr ""
+
+msgid "Admin"
+msgstr ""
+
+msgid "Add Reservation"
+msgstr ""
+
+msgid "Your hotel is not yet approved. Allow us to confirm your info within 48 hours."
+msgstr ""
 
 msgid "You don't have a hotel"
-msgstr "Nu ai un hotel"
+msgstr ""
 
 msgid "Register Hotel"
-msgstr "Înregistrați hotel"
+msgstr ""
 
 msgid "Rooms"
-msgstr "Camerele"
+msgstr ""
 
 msgid "Add"
-msgstr "Adăuga"
+msgstr ""
 
 msgid "Confirm Address"
-msgstr "Confirmați adresa"
+msgstr ""
 
 msgid "Reservations"
-msgstr "Rezervări"
+msgstr ""
 
 msgid "Capacity"
-msgstr "Capacitate"
+msgstr ""
 
 msgid "Price"
-msgstr "Preț"
+msgstr ""
 
 msgid "Night"
-msgstr "Noapte"
+msgstr ""
 
 msgid "Occupied"
-msgstr "Ocupat"
+msgstr ""
 
 msgid "Status"
-msgstr "stare"
+msgstr ""
 
 msgid "Available"
-msgstr "Disponibil"
+msgstr ""
 
 msgid "To be cleaned"
-msgstr "De curățat"
+msgstr ""
 
-#, fuzzy
-#| msgid "Information"
 msgid "Edit Hotel Information"
-msgstr "informație"
+msgstr ""
 
 msgid "General Settings"
-msgstr "setari generale"
+msgstr ""
 
 msgid "Management"
-msgstr "management"
+msgstr ""
 
 msgid "Information"
-msgstr "informație"
+msgstr ""
 
 msgid "Photos"
-msgstr "Fotografii"
+msgstr ""
 
 msgid "Set room as occupied"
-msgstr "Setați camera ca ocupată"
+msgstr ""
 
 msgid "Select from reservations for room"
-msgstr "Selectați din rezervări pentru cameră"
+msgstr ""
 
-#, fuzzy
-#| msgid "Select from reservations for room"
 msgid "No reservations for this room"
-msgstr "Selectați din rezervări pentru cameră"
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "Reservation"
-msgstr "Rezervări"
+msgstr ""
 
 msgid "Select"
-msgstr "Selectați"
+msgstr ""
 
 msgid "Add Photos"
-msgstr "Adauga poze"
+msgstr ""
 
 msgid "Upload"
-msgstr "Încărcați"
+msgstr ""
 
 msgid "For partnerships contact us at"
-msgstr "Pentru parteneriate contactati-ne la"
+msgstr ""
 
 msgid "Privacy Policy of Adventora"
-msgstr "Politica de confidențialitate a Adventora"
+msgstr ""
 
 msgid "Last updated: August 13, 2023."
-msgstr "Ultima actualizare: 13 august 2023."
-
-msgid ""
-"This <strong>Privacy Policy ('Policy')</strong> explains how Adventora "
-"('we', 'us', 'our') collects, uses, protects, and shares the personal "
-"information gathered from users ('you', 'your') of the website "
-"<strong>https://adventora.net</strong> ('Website'). This Policy highlights "
-"our commitment to data privacy, transparency, and compliance with relevant "
-"data protection laws and regulations."
 msgstr ""
-"Această <strong>Politică de confidențialitate („Politica”)</strong> explică "
-"modul în care Adventora („noi”, „noi”, „nostru”) colectează, utilizează, "
-"protejează și partajează informațiile personale colectate de la utilizatori "
-"(„dvs.”, „dvs.”) de pe site-ul <strong>https://adventora.net</strong> "
-"(„Site-ul”). Această politică evidențiază angajamentul nostru față de "
-"confidențialitatea datelor, transparență și conformitatea cu legile și "
-"reglementările relevante privind protecția datelor."
 
-#, fuzzy
-#| msgid "Information"
+msgid "This <strong>Privacy Policy ('Policy')</strong> explains how Adventora ('we', 'us', 'our') collects, uses, protects, and shares the personal information gathered from users ('you', 'your') of the website <strong>https://adventora.net</strong> ('Website'). This Policy highlights our commitment to data privacy, transparency, and compliance with relevant data protection laws and regulations."
+msgstr ""
+
 msgid "1. Information Collection"
-msgstr "informație"
-
-msgid ""
-"We collect a variety of personal data from users to ensure the smooth "
-"operation of our booking services. This includes, but is not limited to:"
 msgstr ""
-"Colectăm o varietate de date personale de la utilizatori pentru a asigura "
-"buna funcționare a serviciilor noastre de rezervare. Aceasta include, dar nu"
-" se limitează la:"
 
-#, fuzzy
-#| msgid "First name"
+msgid "We collect a variety of personal data from users to ensure the smooth operation of our booking services. This includes, but is not limited to:"
+msgstr ""
+
 msgid "First and last name"
-msgstr "Nume"
+msgstr ""
 
-#, fuzzy
-#| msgid "Email address must be valid"
 msgid "Email address"
-msgstr "Adresa de e-mail trebuie să fie validă"
+msgstr ""
 
 msgid "Username"
-msgstr "Nume de utilizator"
+msgstr ""
 
 msgid "Phone numbers"
-msgstr "Numere de telefon"
+msgstr ""
 
 msgid "Citizenship"
-msgstr "Cetățenie"
+msgstr ""
 
 msgid "For individuals designated as 'hotel manager', we also collect:"
-msgstr "Pentru persoanele desemnate drept „manager de hotel”, colectăm și:"
+msgstr ""
 
-#, fuzzy
-#| msgid "Hotel Name"
 msgid "Hotel name"
-msgstr "Numele Hotelului"
+msgstr ""
 
-#, fuzzy
-#| msgid "Manager"
 msgid "Manager's name"
-msgstr "Administrator"
+msgstr ""
 
 msgid "Unique identification number of the hotel's company (EIK)"
-msgstr "Numărul unic de identificare al companiei hotelului (EIK)"
+msgstr ""
 
 msgid "Hotel phone number"
-msgstr "Numărul de telefon al hotelului"
+msgstr ""
 
 msgid "Hotel email address"
-msgstr "Adresa de e-mail a hotelului"
+msgstr ""
 
 msgid "Physical address of the hotel"
-msgstr "Adresa fizică a hotelului"
+msgstr ""
 
 msgid "2. Purpose and Use of Data"
-msgstr "2. Scopul și utilizarea datelor"
-
-msgid ""
-"The collected personal information serves as a basis for smooth, secure, and"
-" efficient booking and reservations. Your data facilitate account "
-"management, responsive customer support, and critical communication. If "
-"identified as a hotel manager, certain details are shared with the "
-"establishment to optimize reservation monitoring."
 msgstr ""
-"Informațiile personale colectate servesc drept bază pentru o rezervare și "
-"rezervări fără probleme, sigure și eficiente. Datele dvs. facilitează "
-"gestionarea contului, asistența pentru clienți receptivă și comunicarea "
-"critică. Dacă este identificat ca manager de hotel, anumite detalii sunt "
-"partajate cu unitatea pentru a optimiza monitorizarea rezervărilor."
+
+msgid "The collected personal information serves as a basis for smooth, secure, and efficient booking and reservations. Your data facilitate account management, responsive customer support, and critical communication. If identified as a hotel manager, certain details are shared with the establishment to optimize reservation monitoring."
+msgstr ""
 
 msgid "3. Engagement with Third-Party Services"
-msgstr "3. Interacțiunea cu serviciile terților"
-
-msgid ""
-"To enhance the user experience and expand our offerings, we engage reputable"
-" third-party services, including, but not limited to:"
 msgstr ""
-"Pentru a îmbunătăți experiența utilizatorului și pentru a ne extinde "
-"ofertele, angajăm servicii de renume terțe, inclusiv, dar fără a se limita "
-"la:"
+
+msgid "To enhance the user experience and expand our offerings, we engage reputable third-party services, including, but not limited to:"
+msgstr ""
 
 msgid "Google Analytics for detailed website analysis"
-msgstr "Google Analytics pentru analiza detaliată a site-ului web"
+msgstr ""
 
 msgid "Top-Rent-A-Car for promotional banners, widgets, and joint promotions"
 msgstr ""
-"Top-Rent-A-Car pentru bannere promoționale, widget-uri și promoții comune"
 
-msgid ""
-"Social services for login, including Google, GitHub, Reddit, Spotify, "
-"Trello, Patreon, Steam, VK, and Amazon"
+msgid "Social services for login, including Google, GitHub, Reddit, Spotify, Trello, Patreon, Steam, VK, and Amazon"
 msgstr ""
-"Servicii sociale pentru conectare, inclusiv Google, GitHub, Reddit, Spotify,"
-" Trello, Patreon, Steam, VK și Amazon"
 
-msgid ""
-"Payment processing through reputable providers like Stripe and epay.bg for "
-"secure financial transactions"
+msgid "Payment processing through reputable providers like Stripe and epay.bg for secure financial transactions"
 msgstr ""
-"Procesarea plăților prin furnizori de renume precum Stripe și epay.bg pentru"
-" tranzacții financiare sigure"
 
 msgid "4. Tracking Mechanisms and Cookies"
-msgstr "4. Mecanisme de urmărire și cookie-uri"
-
-msgid ""
-"Cookies serve as vital components of our digital architecture, contributing "
-"to the seamless retention of sessions and the preservation of data for "
-"personalization, such as theme settings and language preferences. In "
-"addition, certain third-party cookies may be used in conjunction with our "
-"respected partners."
 msgstr ""
-"Cookie-urile servesc ca componente vitale ale arhitecturii noastre digitale,"
-" contribuind la păstrarea fără probleme a sesiunilor și la păstrarea datelor"
-" pentru personalizare, cum ar fi setările temei și preferințele de limbă. În"
-" plus, anumite module cookie de la terți pot fi utilizate împreună cu "
-"partenerii noștri respectați."
+
+msgid "Cookies serve as vital components of our digital architecture, contributing to the seamless retention of sessions and the preservation of data for personalization, such as theme settings and language preferences. In addition, certain third-party cookies may be used in conjunction with our respected partners."
+msgstr ""
 
 msgid "5. Data Retention Strategy"
-msgstr "5. Strategia de păstrare a datelor"
-
-msgid ""
-"User personal data continue to be stored in our systems for the duration of "
-"an active account. An option for account deletion is provided, allowing for "
-"the voluntary removal of associated data. For hotel managers, data related "
-"to the establishment is stored for up to one year to comply with security "
-"protocols and possible legal regulations."
 msgstr ""
-"Datele personale ale utilizatorilor continuă să fie stocate în sistemele "
-"noastre pe durata unui cont activ. Este oferită o opțiune de ștergere a "
-"contului, permițând eliminarea voluntară a datelor asociate. Pentru "
-"managerii hotelurilor, datele legate de stabilire sunt stocate până la un an"
-" pentru a respecta protocoalele de securitate și eventualele reglementări "
-"legale."
+
+msgid "User personal data continue to be stored in our systems for the duration of an active account. An option for account deletion is provided, allowing for the voluntary removal of associated data. For hotel managers, data related to the establishment is stored for up to one year to comply with security protocols and possible legal regulations."
+msgstr ""
 
 msgid "6. Robust Security Framework"
-msgstr "6. Cadru de securitate robust"
-
-msgid ""
-"With the help of modern encryption protocols that include a 512-character "
-"encryption key, we impose strict measures to protect sensitive data. Data is"
-" stored on a remote database server located in the European Union, secured "
-"with the comprehensive security infrastructure provided by Amazon Web "
-"Services."
 msgstr ""
-"Cu ajutorul protocoalelor moderne de criptare care includ o cheie de "
-"criptare de 512 de caractere, impunem măsuri stricte pentru a proteja datele"
-" sensibile. Datele sunt stocate pe un server de baze de date la distanță "
-"situat în Uniunea Europeană, securizat cu infrastructura de securitate "
-"completă furnizată de Amazon Web Services."
+
+msgid "With the help of modern encryption protocols that include a 512-character encryption key, we impose strict measures to protect sensitive data. Data is stored on a remote database server located in the European Union, secured with the comprehensive security infrastructure provided by Amazon Web Services."
+msgstr ""
 
 msgid "7. Data Sharing and Collaborative Efforts"
-msgstr "7. Partajarea datelor și eforturile de colaborare"
-
-msgid ""
-"Certain user data, including email addresses, names, and contact numbers, "
-"are shared with hotels to facilitate effective reservation management. "
-"Beyond established partnerships, data sharing with external organizations is"
-" limited to data automatically collected by Google Analytics and Top-Rent-A-"
-"Car."
 msgstr ""
-"Anumite date despre utilizatori, inclusiv adrese de e-mail, nume și numere "
-"de contact, sunt partajate hotelurilor pentru a facilita gestionarea "
-"eficientă a rezervărilor. Dincolo de parteneriatele stabilite, partajarea "
-"datelor cu organizațiile externe se limitează la datele colectate automat de"
-" Google Analytics și Top-Rent-A-Car."
+
+msgid "Certain user data, including email addresses, names, and contact numbers, are shared with hotels to facilitate effective reservation management. Beyond established partnerships, data sharing with external organizations is limited to data automatically collected by Google Analytics and Top-Rent-A-Car."
+msgstr ""
 
 msgid "8. Cross-Border Data Transfers"
-msgstr "8. Transferuri transfrontaliere de date"
-
-msgid ""
-"User personal data remain entirely within the European Union. In cases where"
-" your citizenship falls outside the EU, data may be transferred "
-"internationally for storage within the jurisdiction of the EU."
 msgstr ""
-"Datele personale ale utilizatorului rămân în întregime în Uniunea Europeană."
-" În cazurile în care cetățenia dumneavoastră se află în afara UE, datele pot"
-" fi transferate la nivel internațional pentru stocare în jurisdicția UE."
+
+msgid "User personal data remain entirely within the European Union. In cases where your citizenship falls outside the EU, data may be transferred internationally for storage within the jurisdiction of the EU."
+msgstr ""
 
 msgid "9. Protection of Children's Personal Information"
-msgstr "9. Protecția informațiilor personale ale copiilor"
-
-msgid ""
-"Adventora is entirely aimed at legal adults. Due to the mandatory nature of "
-"collecting personal data for reservation purposes and payment processing, "
-"the platform is not intended for minors. Exceptions may arise when legal "
-"adults provide information on minors within the context of their booked "
-"vacation."
 msgstr ""
-"Adventora se adresează în întregime adulților legali. Datorită caracterului "
-"obligatoriu al colectării datelor cu caracter personal în scopul rezervării "
-"și procesării plăților, platforma nu este destinată minorilor. Pot apărea "
-"excepții atunci când adulții legali oferă informații despre minori în "
-"contextul vacanței rezervate."
+
+msgid "Adventora is entirely aimed at legal adults. Due to the mandatory nature of collecting personal data for reservation purposes and payment processing, the platform is not intended for minors. Exceptions may arise when legal adults provide information on minors within the context of their booked vacation."
+msgstr ""
 
 msgid "10. Notification of Policy Changes"
-msgstr "10. Notificarea modificărilor politicii"
-
-msgid ""
-"Changes or modifications to this Policy will be communicated via email and "
-"will be clearly displayed on the Website."
 msgstr ""
-"Modificările sau modificările aduse acestei Politici vor fi comunicate prin "
-"e-mail și vor fi afișate clar pe Site."
+
+msgid "Changes or modifications to this Policy will be communicated via email and will be clearly displayed on the Website."
+msgstr ""
 
 msgid "11. Legitimate Basis for Data Processing"
-msgstr "11. Temei legitime pentru prelucrarea datelor"
-
-msgid ""
-"The collection and processing of data are based on the mandatory execution "
-"of reservations and related reservation activities."
 msgstr ""
-"Colectarea și prelucrarea datelor se bazează pe executarea obligatorie a "
-"rezervărilor și activităților de rezervare aferente."
+
+msgid "The collection and processing of data are based on the mandatory execution of reservations and related reservation activities."
+msgstr ""
 
 msgid "12. Implied Consent"
-msgstr "12. Consimțământul implicit"
-
-msgid ""
-"By using our platform and creating an account, you implicitly agree to the "
-"collection and processing of personal data, in accordance with this Policy."
 msgstr ""
-"Prin utilizarea platformei noastre și crearea unui cont, sunteți implicit de"
-" acord cu colectarea și prelucrarea datelor cu caracter personal, în "
-"conformitate cu această Politică."
+
+msgid "By using our platform and creating an account, you implicitly agree to the collection and processing of personal data, in accordance with this Policy."
+msgstr ""
 
 msgid "13. Compliance with Applicable Regulations"
-msgstr "13. Respectarea reglementărilor aplicabile"
-
-msgid ""
-"Our data processing procedures strictly adhere to the regulations and "
-"provisions set forth by the General Data Protection Regulation (GDPR)."
 msgstr ""
-"Procedurile noastre de prelucrare a datelor respectă cu strictețe "
-"reglementările și prevederile prevăzute de Regulamentul general privind "
-"protecția datelor (GDPR)."
 
-msgid ""
-"For questions, clarifications, or requests related to your personal data and"
-" this Policy, we inform you that you can contact us via the following "
-"contact: <a href='mailto:support@adventora.net'>hello@adventora.net</a>."
+msgid "Our data processing procedures strictly adhere to the regulations and provisions set forth by the General Data Protection Regulation (GDPR)."
 msgstr ""
-"Pentru întrebări, clarificări sau solicitări legate de datele dumneavoastră "
-"cu caracter personal și de această Politică, vă informăm că ne puteți "
-"contacta prin următoarea persoană de contact: <a "
-"href='mailto:support@adventora.net'>hello@adventora.net</ a>."
 
-#, fuzzy
-#| msgid "Reservations"
+msgid "For questions, clarifications, or requests related to your personal data and this Policy, we inform you that you can contact us via the following contact: <a href='mailto:support@adventora.net'>hello@adventora.net</a>."
+msgstr ""
+
 msgid "Reserve Room"
-msgstr "Rezervări"
+msgstr ""
 
 msgid "Price / Night"
-msgstr "Pret / Noapte"
+msgstr ""
 
-#, fuzzy
-#| msgid "Last Name"
 msgid "Name"
-msgstr "Nume"
+msgstr ""
 
 msgid "Email"
-msgstr "E-mail"
+msgstr ""
 
 msgid "How many people?"
-msgstr "Cati oameni?"
+msgstr ""
 
 msgid "How many nights?"
-msgstr "Cate nopti?"
+msgstr ""
 
 msgid "TOTAL"
-msgstr "TOTAL"
+msgstr ""
 
 msgid "Username or email"
-msgstr "Nume de utilizator sau email"
+msgstr ""
 
 msgid "Password"
-msgstr "Parola"
+msgstr ""
+
+msgid "Login"
+msgstr ""
 
 msgid "The username must contain at least 8 characters."
-msgstr "Numele de utilizator trebuie să conțină cel puțin 8 caractere."
+msgstr ""
 
 msgid "First name"
-msgstr "Nume"
+msgstr ""
 
 msgid "Last name"
-msgstr "Nume"
+msgstr ""
 
 msgid "Email address must be valid"
-msgstr "Adresa de e-mail trebuie să fie validă"
-
-msgid ""
-"The password must be at least 8 characters long. <br> The password should "
-"not contain only digits. <br> The password should not contain only letters. "
-"<br> The password should not contain only special characters. <br> The "
-"password should not contain the username. <br> The password should not be a "
-"commonly used password."
 msgstr ""
-"Parola trebuie să aibă cel puțin 8 caractere. <br> Parola nu trebuie să "
-"conțină doar cifre. <br> Parola nu trebuie să conțină doar litere. <br> "
-"Parola nu trebuie să conțină doar caractere speciale. <br> Parola nu trebuie"
-" să conțină numele de utilizator. <br> Parola nu ar trebui să fie o parolă "
-"folosită în mod obișnuit."
+
+msgid "The password must be at least 8 characters long. <br> The password should not contain only digits. <br> The password should not contain only letters. <br> The password should not contain only special characters. <br> The password should not contain the username. <br> The password should not be a commonly used password."
+msgstr ""
 
 msgid "Confirm password"
-msgstr "Confirmă parola"
+msgstr ""
 
 msgid "Enter the same password as above, for verification."
-msgstr "Introduceți aceeași parolă ca mai sus, pentru verificare."
+msgstr ""
+
+msgid "Sign up"
+msgstr ""
 
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
 msgstr ""
-"Vacationer - Explorează, planifică și rezervă activitățile tale ideale de "
-"vacanță."
 
-msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own"
-" hotel."
+msgid "Hotel Manager - Oversee operations and provide excellent service in your own hotel."
 msgstr ""
-"Manager de hotel - Supraveghează operațiunile și oferă servicii excelente în"
-" propriul tău hotel."
 
-msgid ""
-"Employee - Contribute your expertise to a thriving workplace, such as a "
-"hotel or guest house."
+msgid "Employee - Contribute your expertise to a thriving workplace, such as a hotel or guest house."
 msgstr ""
-"Angajat - Contribuiți cu experiența dvs. la un loc de muncă înfloritor, cum "
-"ar fi un hotel sau o pensiune."
 
 msgid "Submit"
-msgstr "Trimite"
+msgstr ""
 
 msgid "First Name"
-msgstr "Nume"
+msgstr ""
 
 msgid "Last Name"
-msgstr "Nume"
+msgstr ""
 
 msgid "Save"
-msgstr "Salvați"
+msgstr ""
 
 msgid "The email must be valid."
-msgstr "E-mailul trebuie să fie valid."
+msgstr ""
 
 msgid "Phone"
-msgstr "Telefon"
+msgstr ""
 
 msgid "Choose a Role"
-msgstr "Alegeți un rol"
+msgstr ""
 
 msgid "Old Password"
-msgstr "Parola veche"
+msgstr ""
 
 msgid "New Password"
-msgstr "Parolă Nouă"
+msgstr ""
 
 msgid "Confirm New Password"
-msgstr "Confirmă noua parolă"
+msgstr ""
 
 msgid "Enable"
-msgstr "Permite"
+msgstr ""
 
 msgid "Code"
-msgstr "Cod"
+msgstr ""
 
 msgid "Disable"
-msgstr "Dezactivați"
+msgstr ""
 
 msgid "User"
-msgstr "Utilizator"
+msgstr ""
 
 msgid "Manager"
-msgstr "Administrator"
+msgstr ""
 
 msgid "Employee"
-msgstr "Angajat"
+msgstr ""
 
 msgid "Malformed security token"
-msgstr "Jeton de securitate incorect"
+msgstr ""
 
 msgid "A user with that email already exists."
-msgstr "Utilizatorul cu acest email deja exista."
+msgstr ""
 
 msgid "Password must be at least 8 characters long."
-msgstr "Parola trebuie să aibă cel puțin 8 caractere."
+msgstr ""
 
 msgid "Passwords do not match."
-msgstr "Parolele nu se potrivesc."
+msgstr ""
 
 msgid "Username must be at least 4 characters long."
-msgstr "Numele de utilizator trebuie să aibă cel puțin 4 caractere."
+msgstr ""
 
 msgid "Username should only contain letters and numbers."
-msgstr "Numele de utilizator trebuie să conțină numai litere și cifre."
+msgstr ""
 
 msgid "Invalid email."
-msgstr "E-mail invalid."
+msgstr ""
 
 msgid "A user with that username already exists."
-msgstr "Un utilizator cu acest nume de utilizator există deja."
+msgstr ""
 
 msgid "Successfully registration."
-msgstr "Înregistrare cu succes."
+msgstr ""
 
 msgid "Invalid data."
-msgstr "Date invalide."
+msgstr ""
 
 msgid "A user with that email does not exist."
-msgstr "Un utilizator cu acel e-mail nu există."
+msgstr ""
 
 msgid "Successfully logged in."
-msgstr "Conectat cu succes."
+msgstr ""
 
 msgid "Invalid password."
-msgstr "Parolă Invalidă."
+msgstr ""
 
 msgid "A user with that username does not exist."
-msgstr "Un utilizator cu acel nume de utilizator nu există."
+msgstr ""
 
 msgid "Successfully logged out."
-msgstr "S-a deconectat cu succes."
+msgstr ""
 
 msgid "Invalid role."
-msgstr "Rol nevalid."
+msgstr ""
 
 msgid "Successfully chosen role."
-msgstr "Rolul ales cu succes."
+msgstr ""
 
 msgid "Successfully confirmed name."
-msgstr "Numele a fost confirmat."
+msgstr ""
 
 msgid "Successfully confirmed email."
-msgstr "E-mail confirmat cu succes."
+msgstr ""
 
 msgid "Invalid username. At least 5 characters."
-msgstr "Nume de utilizator invalid. "
+msgstr ""
 
 msgid "Successfully confirmed username."
-msgstr "Nume de utilizator confirmat."
+msgstr ""
 
 msgid "Successfully edited profile."
-msgstr "Profil editat cu succes."
+msgstr ""
 
 msgid "Incorrect old password."
-msgstr "Parolă veche incorectă."
+msgstr ""
 
 msgid "Successfully changed password."
-msgstr "Parola a fost schimbată cu succes."
+msgstr ""
 
 msgid "Incorrect password."
-msgstr "Parola incorecta."
+msgstr ""
 
 msgid "Successfully deleted account."
-msgstr "Contul a fost șters cu succes."
+msgstr ""
 
 msgid "Successfully confirmed citizenship."
-msgstr "Cetățenie confirmată cu succes."
+msgstr ""
 
 msgid "Successfully confirmed phone number."
-msgstr "Numărul de telefon a fost confirmat."
+msgstr ""
 
 msgid "Two factor authentication is not enabled."
-msgstr "Autentificarea cu doi factori nu este activată."
+msgstr ""
 
 msgid "Two factor authentication is already passed."
-msgstr "Autentificarea cu doi factori este deja trecută."
+msgstr ""
 
 msgid "Successfully passed two factor authentication"
-msgstr "S-a trecut cu succes autentificarea cu doi factori"
+msgstr ""
 
 msgid "Invalid code."
-msgstr "Cod invalid."
+msgstr ""
 
 msgid "Two factor authentication is already enabled."
-msgstr "Autentificarea cu doi factori este deja activată."
+msgstr ""
 
 msgid "You cannot enable two factor authentication with a social login."
 msgstr ""
-"Nu puteți activa autentificarea cu doi factori cu o autentificare socială."
 
 msgid "Successfully enabled two factor authentication."
-msgstr "Autentificarea cu doi factori a fost activată."
+msgstr ""
 
 msgid "Successfully disabled two factor authentication."
-msgstr "Autentificarea cu doi factori a fost dezactivată."
+msgstr ""
 
 msgid "Invalid login data. Please try again."
-msgstr "Date de conectare nevalide. Vă rugăm să încercați din nou."
-
-msgid ""
-"To continue, you need to pass an automated security check. Please wait. if "
-"you are not redirected within 5 seconds, complete the captcha and click "
-"continue."
 msgstr ""
-"Pentru a continua, trebuie să treceți un control automat de securitate. Va "
-"rugam asteptati. dacă nu sunteți redirecționat în 5 secunde, completați "
-"captcha și faceți clic pe Continuare."
+
+msgid "To continue, you need to pass an automated security check. Please wait. if you are not redirected within 5 seconds, complete the captcha and click continue."
+msgstr ""
 
 msgid "Continue"
-msgstr "Continua"
+msgstr ""
 
 msgid "Room not available"
-msgstr "Camera nu este disponibilă"
+msgstr ""
 
-#, fuzzy
-#| msgid "Invalid data."
 msgid "Invalid dates"
-msgstr "Date invalide."
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "Reservation successful"
-msgstr "Rezervări"
+msgstr ""
 
-#, fuzzy
-#| msgid "Room not available"
 msgid "Reservation not available"
-msgstr "Camera nu este disponibilă"
+msgstr ""
 
-#, fuzzy
-#| msgid "Room not available"
 msgid "Invoice not available"
-msgstr "Camera nu este disponibilă"
+msgstr ""
 
 msgid "Hotel Name"
-msgstr "Numele Hotelului"
+msgstr ""
 
 msgid "Address"
-msgstr "Abordare"
+msgstr ""
 
 msgid "City"
-msgstr "Oraș"
+msgstr ""
 
 msgid "Website"
-msgstr "Site-ul web"
+msgstr ""
 
 msgid "Description"
-msgstr "Descriere"
+msgstr ""
 
 msgid "EIK"
-msgstr "EIK"
+msgstr ""
 
 msgid "Authorized Person"
-msgstr "Persoană autorizată"
+msgstr ""
 
 msgid "Stars"
-msgstr "Stele"
-
-msgid ""
-"I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
-"policy</a>"
 msgstr ""
-"Am citit și sunt de acord cu <a href=\"/privacy\" target=\"_blank\">politica"
-" de confidențialitate</a>"
 
-msgid ""
-"I have read and agree to the <a href=\"/terms-of-use\" "
-"target=\"_blank\">terms and conditions</a>"
+msgid "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy policy</a>"
 msgstr ""
-"Am citit și sunt de acord cu <a href=\"/terms-of-use\" "
-"target=\"_blank\">termenii și condițiile</a>"
 
-msgid ""
-"I hereby certify, under penalty of law, that the information provided about "
-"myself and my hotel is accurate and complete to the best of my "
-"knowledge.<br> I understand that any false or misleading information "
-"provided may result in the immdiate suspesion of my hotel listing from "
-"Adventora and may lead to potential legal consequences."
+msgid "I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank\">terms and conditions</a>"
 msgstr ""
-"Prin prezenta, certific, sub sancțiunea legii, că informațiile furnizate "
-"despre mine și despre hotelul meu sunt exacte și complete, după cunoștințele"
-" mele.<br> Înțeleg că orice informație falsă sau înșelătoare furnizată poate"
-" duce la suspiciunea imediată a hotelului meu. "
+
+msgid "I hereby certify, under penalty of law, that the information provided about myself and my hotel is accurate and complete to the best of my knowledge.<br> I understand that any false or misleading information provided may result in the immdiate suspesion of my hotel listing from Adventora and may lead to potential legal consequences."
+msgstr ""
 
 msgid "Save Changes"
-msgstr "Salvează modificările"
+msgstr ""
 
 msgid "Room Number"
-msgstr "Numărul de cameră"
+msgstr ""
 
 msgid "Luxuries"
-msgstr "Luxuri"
+msgstr ""
 
 msgid "Create Room"
-msgstr "Creați o cameră"
+msgstr ""
 
-#, fuzzy
-#| msgid "Select"
 msgid "Select Room"
-msgstr "Selectați"
+msgstr ""
 
 msgid "Check In"
-msgstr "Check-in"
+msgstr ""
 
 msgid "Check Out"
-msgstr "Verifică"
+msgstr ""
 
 msgid "Guests"
-msgstr "Vizitatori"
+msgstr ""
 
 msgid "ID Card Number"
-msgstr "Numar card identitate"
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "Create Reservation"
-msgstr "Rezervări"
+msgstr ""
 
 msgid "No description provided."
-msgstr "Nu este furnizată nicio descriere."
+msgstr ""
 
 msgid "You do not have permission to view this page"
-msgstr "Nu aveți permisiunea de a vizualiza această pagină"
+msgstr ""
 
 msgid "Your hotel is not approved yet"
-msgstr "Hotelul dvs. nu este aprobat încă"
+msgstr ""
 
 msgid "Successfully registered hotel"
-msgstr "Hotel înregistrat cu succes"
+msgstr ""
 
 msgid "Error while registering hotel"
-msgstr "Eroare la înregistrarea hotelului"
+msgstr ""
 
 msgid "You have already registered a hotel"
-msgstr "Ați înregistrat deja un hotel"
+msgstr ""
 
 msgid "You have not registered a hotel yet"
-msgstr "Nu ați înregistrat încă un hotel"
+msgstr ""
 
 msgid "Successfully confirmed address"
-msgstr "Adresă confirmată cu succes"
+msgstr ""
 
 msgid "Error while confirming address"
-msgstr "Eroare la confirmarea adresei"
+msgstr ""
 
 msgid "No such hotel"
-msgstr "Nu există un astfel de hotel"
+msgstr ""
 
 msgid "We cannot find the hotel you are looking for"
-msgstr "Nu putem găsi hotelul pe care îl căutați"
+msgstr ""
 
 msgid "Successfully added room"
-msgstr "Camera adăugată cu succes"
+msgstr ""
 
 msgid "Error while adding room"
-msgstr "Eroare la adăugarea camerei"
+msgstr ""
 
 msgid "We cannot find the room you are looking for"
-msgstr "Nu putem găsi camera pe care o căutați"
+msgstr ""
 
 msgid "Successfully updated hotel"
-msgstr "Hotel actualizat cu succes"
+msgstr ""
 
 msgid "Error while updating hotel"
-msgstr "Eroare la actualizarea hotelului"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully updated hotel"
 msgid "Successfully updated room status"
-msgstr "Hotel actualizat cu succes"
+msgstr ""
 
-#, fuzzy
-#| msgid "Invalid data."
 msgid "Invalid status"
-msgstr "Date invalide."
+msgstr ""
 
 msgid "This room is already occupied"
-msgstr "Această cameră este deja ocupată"
+msgstr ""
 
-#, fuzzy
-#| msgid "We cannot find the room you are looking for"
 msgid "We cannot find the reservation you are looking for"
-msgstr "Nu putem găsi camera pe care o căutați"
+msgstr ""
 
-#, fuzzy
-#| msgid "This room is already occupied"
 msgid "This reservation is already completed"
-msgstr "Această cameră este deja ocupată"
+msgstr ""
 
-#, fuzzy
-#| msgid "This room is already occupied"
 msgid "This reservation is already cancelled"
-msgstr "Această cameră este deja ocupată"
+msgstr ""
 
-#, fuzzy
-#| msgid "This room is already occupied"
 msgid "This reservation is already expired"
-msgstr "Această cameră este deja ocupată"
+msgstr ""
 
-#, fuzzy
-#| msgid "This room is already occupied"
 msgid "This reservation is already rejected"
-msgstr "Această cameră este deja ocupată"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully occupied room"
-msgstr "Camera adăugată cu succes"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully deleted room"
-msgstr "Camera adăugată cu succes"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully added reservation"
-msgstr "Camera adăugată cu succes"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully updated hotel"
 msgid "Successfully uploaded photos"
-msgstr "Hotel actualizat cu succes"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully deleted photo"
-msgstr "Camera adăugată cu succes"
+msgstr ""
 
 msgid "Photo not found"
-msgstr "Fotografia nu a fost găsită"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully updated room"
-msgstr "Camera adăugată cu succes"
-
-#~ msgid ""
-#~ "За да продължите, трябва да преминете автоматизирана проверка на "
-#~ "сигурността."
-#~ msgstr ""
-#~ "За да продължите, трябва да преминете автоматизирана проверка на "
-#~ "сигурността."
-
-#~ msgid "Your reservation is successful."
-#~ msgstr "Rezervarea dvs. a avut succes."
-
-#~ msgid "Your invoice is below."
-#~ msgstr "Factura dvs. este mai jos."
-
-#~ msgid "The invoice is also available in your dashboard."
-#~ msgstr "Factura este disponibilă și în tabloul de bord."
-
-#~ msgid "The invoice acts as ticket."
-#~ msgstr "Factura acționează ca bilet."
-
-#~ msgid "Please show the invoice to the hotel staff upon arrival."
-#~ msgstr "Vă rugăm să prezentați factura personalului hotelului la sosire."
-
-#~ msgid "Thank you for using Adventora."
-#~ msgstr "Vă mulțumim că folosiți Advenora."
-
-#~ msgid "Language"
-#~ msgstr "Limba"
-
-#, fuzzy
-#~ msgid "Reservation #"
-#~ msgstr "Rezervări"
-
-#, fuzzy
-#~ msgid "Custom Client"
-#~ msgstr "Client personalizat"
-
-#, fuzzy
-#~ msgid "Custom Clients"
-#~ msgstr "Client personalizat"
-
-#~ msgid "Login with Patreon"
-#~ msgstr "Conectați-vă cu Patreon"
-
-#~ msgid "Login with Amazon"
-#~ msgstr "Conectați-vă cu Amazon"
-
-#~ msgid "Disabled"
-#~ msgstr "Dezactivat"
+msgstr ""

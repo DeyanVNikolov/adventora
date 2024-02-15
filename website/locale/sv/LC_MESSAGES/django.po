@@ -1,1087 +1,795 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2023
-# This file is distributed under the same license as the Adventora package.
-# DEYAN NIKOLOV <didonikolovbg@gmail.com>, 2023.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Adventora Beta-Release 1.0\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-24 21:43+0200\n"
-"PO-Revision-Date: 2023-11-17 15:08+0200\n"
-"Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
-"Language-Team: ADVENTORA INTERNATIONAL <international>\n"
-"Language: international\n"
+"POT-Creation-Date: 2024-02-12 14:54+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
 msgid "Not confirmed"
-msgstr "Inte bekräftat"
+msgstr ""
 
 msgid "Send confirmation email again."
-msgstr "Skicka bekräftelsemail igen."
+msgstr ""
 
 msgid "Confirmed"
-msgstr "Bekräftad"
+msgstr ""
 
 msgid "Turned On"
-msgstr "Påslagen"
+msgstr ""
 
 msgid "Turn off"
-msgstr "Stäng av"
+msgstr ""
 
 msgid "Turned Off"
-msgstr "Avstängd"
+msgstr ""
 
 msgid "Turn on"
-msgstr "Sätta på"
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "My Reservations"
-msgstr "Bokningar"
+msgstr ""
 
 msgid "Change password"
-msgstr "ändra lösenord"
+msgstr ""
 
 msgid "Delete Account"
-msgstr "Radera konto"
+msgstr ""
 
 msgid "Room"
-msgstr "Rum"
+msgstr ""
 
-#, fuzzy
-#| msgid "Night"
 msgid "Nights"
-msgstr "Natt"
+msgstr ""
 
 msgid "Check-in"
-msgstr "Checka in"
+msgstr ""
 
 msgid "Check-out"
-msgstr "Kolla upp"
+msgstr ""
 
 msgid "Total"
-msgstr "Total"
+msgstr ""
 
 msgid "Invoice"
-msgstr "Faktura"
+msgstr ""
 
 msgid "Hotel"
-msgstr "Hotell"
+msgstr ""
 
 msgid "Login with Google"
-msgstr "Logga in med Google"
+msgstr ""
 
 msgid "Login with Trello"
-msgstr "Logga in med Trello"
+msgstr ""
 
 msgid "Login with GitHub"
-msgstr "Logga in med GitHub"
+msgstr ""
 
 msgid "Login with Reddit"
-msgstr "Logga in med Reddit"
+msgstr ""
 
 msgid "Login with Steam"
-msgstr "Logga in med Steam"
+msgstr ""
 
 msgid "Login with Spotify."
-msgstr "Logga in med Spotify."
+msgstr ""
 
 msgid "Login with VK"
-msgstr "Logga in med VK"
+msgstr ""
 
 msgid "Please enter your two-factor verification code"
-msgstr "Ange din tvåfaktorsverifieringskod"
+msgstr ""
 
-msgid "Homepage"
-msgstr "Hemsida"
+msgid "Home"
+msgstr ""
 
-#, fuzzy
-#| msgid "Hotel"
 msgid "Hotels"
-msgstr "Hotell"
+msgstr ""
 
 msgid "Dashboard"
-msgstr "instrumentbräda"
-
-msgid "Profile"
-msgstr "Profil"
-
-msgid "Admin"
-msgstr "Administration"
-
-msgid "Log out"
-msgstr "Logga ut"
-
-msgid "Login"
-msgstr "Logga in"
-
-msgid "Sign up"
-msgstr "Bli Medlem"
+msgstr ""
 
 msgid "Error"
-msgstr "Fel"
+msgstr ""
 
 msgid "Success"
-msgstr "Framgång"
+msgstr ""
 
 msgid "Warning"
-msgstr "Varning"
+msgstr ""
 
 msgid "Adventora supports small, medium and large businesses"
-msgstr "Adventora stödjer små, medelstora och stora företag"
+msgstr ""
 
 msgid "All Rights Reserved"
-msgstr "Alla rättigheter förbehållna"
+msgstr ""
+
+msgid "Homepage"
+msgstr ""
 
 msgid "About us"
-msgstr "Om oss"
+msgstr ""
 
 msgid "Privacy"
-msgstr "Integritet"
+msgstr ""
 
 msgid "Terms of use"
-msgstr "Villkor"
+msgstr ""
 
 msgid "Contacts"
-msgstr "Kontakter"
+msgstr ""
 
 msgid "Partnerships"
-msgstr "Partnerskap"
+msgstr ""
 
 msgid "Emergency"
-msgstr "Nödsituation"
+msgstr ""
 
 msgid "Stranded Abroad"
-msgstr "Strandsatt utomlands"
+msgstr ""
 
 msgid "In case of fire, medical or police emergency"
-msgstr "Vid brand, medicinsk eller polisiär nödsituation"
+msgstr ""
 
 msgid "contact the single european emergency nunmber"
-msgstr "kontakta det gemensamma europeiska larmnumret"
+msgstr ""
 
 msgid "It is dial without code, just 112 when in any country of the EU"
 msgstr ""
-"Det är ringa utan kod, bara 112 när du är i vilket land som helst i EU"
 
 msgid "Welcome to Adventora"
-msgstr "Välkommen till Adventora"
+msgstr ""
 
 msgid "Find your perfect stay with us"
-msgstr "Hitta din perfekta vistelse hos oss"
+msgstr ""
 
-#, fuzzy
-#| msgid "Register Hotel"
 msgid "Registered hotels"
-msgstr "Registrera hotell"
+msgstr ""
 
-#, fuzzy
-#| msgid "Custom Customer"
 msgid "Happy Customers"
-msgstr "Anpassad kund"
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "Total Reservations"
-msgstr "Bokningar"
+msgstr ""
 
 msgid "View more"
-msgstr "Visa mer"
-
-#, fuzzy
-#| msgid "Reservations"
-msgid "Reserve"
-msgstr "Bokningar"
-
-#, fuzzy
-#| msgid "Reservations"
-msgid "Add Reservation"
-msgstr "Bokningar"
-
-msgid ""
-"Your hotel is not yet approved. Allow us to confirm your info within 48 "
-"hours."
 msgstr ""
-"Ditt hotell är inte godkänt ännu. Tillåt oss att bekräfta din information "
-"inom 48 timmar."
+
+msgid "Reserve"
+msgstr ""
+
+msgid "Admin"
+msgstr ""
+
+msgid "Add Reservation"
+msgstr ""
+
+msgid "Your hotel is not yet approved. Allow us to confirm your info within 48 hours."
+msgstr ""
 
 msgid "You don't have a hotel"
-msgstr "Du har inget hotell"
+msgstr ""
 
 msgid "Register Hotel"
-msgstr "Registrera hotell"
+msgstr ""
 
 msgid "Rooms"
-msgstr "Rum"
+msgstr ""
 
 msgid "Add"
-msgstr "Lägg till"
+msgstr ""
 
 msgid "Confirm Address"
-msgstr "Bekräfta adress"
+msgstr ""
 
 msgid "Reservations"
-msgstr "Bokningar"
+msgstr ""
 
 msgid "Capacity"
-msgstr "Kapacitet"
+msgstr ""
 
 msgid "Price"
-msgstr "Pris"
+msgstr ""
 
 msgid "Night"
-msgstr "Natt"
+msgstr ""
 
 msgid "Occupied"
-msgstr "Ockuperade"
+msgstr ""
 
 msgid "Status"
-msgstr "Status"
+msgstr ""
 
 msgid "Available"
-msgstr "Tillgängliga"
+msgstr ""
 
 msgid "To be cleaned"
-msgstr "Ska städas"
+msgstr ""
 
-#, fuzzy
-#| msgid "Information"
 msgid "Edit Hotel Information"
-msgstr "Information"
+msgstr ""
 
 msgid "General Settings"
-msgstr "Allmänna Inställningar"
+msgstr ""
 
 msgid "Management"
-msgstr "Förvaltning"
+msgstr ""
 
 msgid "Information"
-msgstr "Information"
+msgstr ""
 
 msgid "Photos"
-msgstr "Foton"
+msgstr ""
 
 msgid "Set room as occupied"
-msgstr "Ställ in rummet som upptaget"
+msgstr ""
 
 msgid "Select from reservations for room"
-msgstr "Välj från bokningar för rum"
+msgstr ""
 
-#, fuzzy
-#| msgid "Select from reservations for room"
 msgid "No reservations for this room"
-msgstr "Välj från bokningar för rum"
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "Reservation"
-msgstr "Bokningar"
+msgstr ""
 
 msgid "Select"
-msgstr "Välj"
+msgstr ""
 
 msgid "Add Photos"
-msgstr "Lägg till foton"
+msgstr ""
 
 msgid "Upload"
-msgstr "Ladda upp"
+msgstr ""
 
 msgid "For partnerships contact us at"
-msgstr "För partnerskap kontakta oss på"
+msgstr ""
 
 msgid "Privacy Policy of Adventora"
-msgstr "Sekretesspolicy för Adventora"
+msgstr ""
 
 msgid "Last updated: August 13, 2023."
-msgstr "Senast uppdaterad: 13 augusti 2023."
-
-msgid ""
-"This <strong>Privacy Policy ('Policy')</strong> explains how Adventora "
-"('we', 'us', 'our') collects, uses, protects, and shares the personal "
-"information gathered from users ('you', 'your') of the website "
-"<strong>https://adventora.net</strong> ('Website'). This Policy highlights "
-"our commitment to data privacy, transparency, and compliance with relevant "
-"data protection laws and regulations."
 msgstr ""
-"Denna <strong>Sekretesspolicy ('Policy')</strong> förklarar hur Adventora "
-"('vi', 'oss', 'vår') samlar in, använder, skyddar och delar den personliga "
-"information som samlats in från användare ('du', 'din') för webbplatsen "
-"<strong>https://adventora.net</strong> ('Webbplats'). Denna policy belyser "
-"vårt engagemang för datasekretess, transparens och efterlevnad av relevanta "
-"dataskyddslagar och förordningar."
 
-#, fuzzy
-#| msgid "Information"
+msgid "This <strong>Privacy Policy ('Policy')</strong> explains how Adventora ('we', 'us', 'our') collects, uses, protects, and shares the personal information gathered from users ('you', 'your') of the website <strong>https://adventora.net</strong> ('Website'). This Policy highlights our commitment to data privacy, transparency, and compliance with relevant data protection laws and regulations."
+msgstr ""
+
 msgid "1. Information Collection"
-msgstr "Information"
-
-msgid ""
-"We collect a variety of personal data from users to ensure the smooth "
-"operation of our booking services. This includes, but is not limited to:"
 msgstr ""
-"Vi samlar in en mängd olika personuppgifter från användare för att "
-"säkerställa att våra bokningstjänster fungerar smidigt. Detta inkluderar, "
-"men är inte begränsat till:"
 
-#, fuzzy
-#| msgid "First name"
+msgid "We collect a variety of personal data from users to ensure the smooth operation of our booking services. This includes, but is not limited to:"
+msgstr ""
+
 msgid "First and last name"
-msgstr "Förnamn"
+msgstr ""
 
-#, fuzzy
-#| msgid "Email address must be valid"
 msgid "Email address"
-msgstr "E-postadressen måste vara giltig"
+msgstr ""
 
 msgid "Username"
-msgstr "Användarnamn"
+msgstr ""
 
 msgid "Phone numbers"
-msgstr "Telefonnummer"
+msgstr ""
 
 msgid "Citizenship"
-msgstr "Medborgarskap"
+msgstr ""
 
 msgid "For individuals designated as 'hotel manager', we also collect:"
-msgstr "För personer som utsetts till \"hotellchef\" samlar vi också in:"
+msgstr ""
 
-#, fuzzy
-#| msgid "Hotel Name"
 msgid "Hotel name"
-msgstr "Hotellnamn"
+msgstr ""
 
-#, fuzzy
-#| msgid "Manager"
 msgid "Manager's name"
-msgstr "Chef"
+msgstr ""
 
 msgid "Unique identification number of the hotel's company (EIK)"
-msgstr "Unikt identifikationsnummer för hotellets företag (EIK)"
+msgstr ""
 
 msgid "Hotel phone number"
-msgstr "Hotellets telefonnummer"
+msgstr ""
 
 msgid "Hotel email address"
-msgstr "Hotellets e-postadress"
+msgstr ""
 
 msgid "Physical address of the hotel"
-msgstr "Hotellets fysiska adress"
+msgstr ""
 
 msgid "2. Purpose and Use of Data"
-msgstr "2. Syfte och användning av data"
-
-msgid ""
-"The collected personal information serves as a basis for smooth, secure, and"
-" efficient booking and reservations. Your data facilitate account "
-"management, responsive customer support, and critical communication. If "
-"identified as a hotel manager, certain details are shared with the "
-"establishment to optimize reservation monitoring."
 msgstr ""
-"De insamlade personuppgifterna fungerar som en grund för smidig, säker och "
-"effektiv bokning och bokningar. Dina data underlättar kontohantering, lyhörd"
-" kundsupport och kritisk kommunikation. Om den identifieras som hotellchef "
-"delas vissa detaljer med anläggningen för att optimera "
-"bokningsövervakningen."
+
+msgid "The collected personal information serves as a basis for smooth, secure, and efficient booking and reservations. Your data facilitate account management, responsive customer support, and critical communication. If identified as a hotel manager, certain details are shared with the establishment to optimize reservation monitoring."
+msgstr ""
 
 msgid "3. Engagement with Third-Party Services"
-msgstr "3. Engagemang med tredjepartstjänster"
-
-msgid ""
-"To enhance the user experience and expand our offerings, we engage reputable"
-" third-party services, including, but not limited to:"
 msgstr ""
-"För att förbättra användarupplevelsen och utöka våra erbjudanden anlitar vi "
-"välrenommerade tredjepartstjänster, inklusive men inte begränsat till:"
+
+msgid "To enhance the user experience and expand our offerings, we engage reputable third-party services, including, but not limited to:"
+msgstr ""
 
 msgid "Google Analytics for detailed website analysis"
-msgstr "Google Analytics för detaljerad webbplatsanalys"
+msgstr ""
 
 msgid "Top-Rent-A-Car for promotional banners, widgets, and joint promotions"
-msgstr "Top-Rent-A-Car för reklambanners, widgets och gemensamma kampanjer"
-
-msgid ""
-"Social services for login, including Google, GitHub, Reddit, Spotify, "
-"Trello, Patreon, Steam, VK, and Amazon"
 msgstr ""
-"Sociala tjänster för inloggning, inklusive Google, GitHub, Reddit, Spotify, "
-"Trello, Patreon, Steam, VK och Amazon"
 
-msgid ""
-"Payment processing through reputable providers like Stripe and epay.bg for "
-"secure financial transactions"
+msgid "Social services for login, including Google, GitHub, Reddit, Spotify, Trello, Patreon, Steam, VK, and Amazon"
 msgstr ""
-"Betalningshantering genom välrenommerade leverantörer som Stripe och epay.bg"
-" för säkra finansiella transaktioner"
+
+msgid "Payment processing through reputable providers like Stripe and epay.bg for secure financial transactions"
+msgstr ""
 
 msgid "4. Tracking Mechanisms and Cookies"
-msgstr "4. Spårningsmekanismer och cookies"
-
-msgid ""
-"Cookies serve as vital components of our digital architecture, contributing "
-"to the seamless retention of sessions and the preservation of data for "
-"personalization, such as theme settings and language preferences. In "
-"addition, certain third-party cookies may be used in conjunction with our "
-"respected partners."
 msgstr ""
-"Cookies fungerar som viktiga komponenter i vår digitala arkitektur, och "
-"bidrar till sömlös bevarande av sessioner och bevarande av data för "
-"personalisering, såsom temainställningar och språkinställningar. Dessutom "
-"kan vissa tredjepartscookies användas tillsammans med våra respekterade "
-"partners."
+
+msgid "Cookies serve as vital components of our digital architecture, contributing to the seamless retention of sessions and the preservation of data for personalization, such as theme settings and language preferences. In addition, certain third-party cookies may be used in conjunction with our respected partners."
+msgstr ""
 
 msgid "5. Data Retention Strategy"
-msgstr "5. Datalagringsstrategi"
-
-msgid ""
-"User personal data continue to be stored in our systems for the duration of "
-"an active account. An option for account deletion is provided, allowing for "
-"the voluntary removal of associated data. For hotel managers, data related "
-"to the establishment is stored for up to one year to comply with security "
-"protocols and possible legal regulations."
 msgstr ""
-"Användarens personuppgifter fortsätter att lagras i våra system under hela "
-"ett aktivt konto. Ett alternativ för radering av konto tillhandahålls, "
-"vilket möjliggör frivillig borttagning av tillhörande data. För hotellchefer"
-" lagras data relaterade till etableringen i upp till ett år för att följa "
-"säkerhetsprotokoll och eventuella lagbestämmelser."
+
+msgid "User personal data continue to be stored in our systems for the duration of an active account. An option for account deletion is provided, allowing for the voluntary removal of associated data. For hotel managers, data related to the establishment is stored for up to one year to comply with security protocols and possible legal regulations."
+msgstr ""
 
 msgid "6. Robust Security Framework"
-msgstr "6. Robust säkerhetsram"
-
-msgid ""
-"With the help of modern encryption protocols that include a 512-character "
-"encryption key, we impose strict measures to protect sensitive data. Data is"
-" stored on a remote database server located in the European Union, secured "
-"with the comprehensive security infrastructure provided by Amazon Web "
-"Services."
 msgstr ""
-"Med hjälp av moderna krypteringsprotokoll som inkluderar en "
-"krypteringsnyckel på 512 tecken, inför vi strikta åtgärder för att skydda "
-"känslig data. Data lagras på en fjärrdatabasserver belägen i Europeiska "
-"unionen, säkrad med den omfattande säkerhetsinfrastruktur som tillhandahålls"
-" av Amazon Web Services."
+
+msgid "With the help of modern encryption protocols that include a 512-character encryption key, we impose strict measures to protect sensitive data. Data is stored on a remote database server located in the European Union, secured with the comprehensive security infrastructure provided by Amazon Web Services."
+msgstr ""
 
 msgid "7. Data Sharing and Collaborative Efforts"
-msgstr "7. Datadelning och samarbete"
-
-msgid ""
-"Certain user data, including email addresses, names, and contact numbers, "
-"are shared with hotels to facilitate effective reservation management. "
-"Beyond established partnerships, data sharing with external organizations is"
-" limited to data automatically collected by Google Analytics and Top-Rent-A-"
-"Car."
 msgstr ""
-"Vissa användardata, inklusive e-postadresser, namn och kontaktnummer, delas "
-"med hotell för att underlätta effektiv bokningshantering. Utöver etablerade "
-"partnerskap är datadelning med externa organisationer begränsad till data "
-"som automatiskt samlas in av Google Analytics och Top-Rent-A-Car."
+
+msgid "Certain user data, including email addresses, names, and contact numbers, are shared with hotels to facilitate effective reservation management. Beyond established partnerships, data sharing with external organizations is limited to data automatically collected by Google Analytics and Top-Rent-A-Car."
+msgstr ""
 
 msgid "8. Cross-Border Data Transfers"
-msgstr "8. Dataöverföringar över gränserna"
-
-msgid ""
-"User personal data remain entirely within the European Union. In cases where"
-" your citizenship falls outside the EU, data may be transferred "
-"internationally for storage within the jurisdiction of the EU."
 msgstr ""
-"Användarens personuppgifter förblir helt inom Europeiska unionen. I de fall "
-"ditt medborgarskap faller utanför EU kan data överföras internationellt för "
-"lagring inom EU:s jurisdiktion."
+
+msgid "User personal data remain entirely within the European Union. In cases where your citizenship falls outside the EU, data may be transferred internationally for storage within the jurisdiction of the EU."
+msgstr ""
 
 msgid "9. Protection of Children's Personal Information"
-msgstr "9. Skydd av barns personliga information"
-
-msgid ""
-"Adventora is entirely aimed at legal adults. Due to the mandatory nature of "
-"collecting personal data for reservation purposes and payment processing, "
-"the platform is not intended for minors. Exceptions may arise when legal "
-"adults provide information on minors within the context of their booked "
-"vacation."
 msgstr ""
-"Adventora riktar sig helt till juridiska vuxna. På grund av den "
-"obligatoriska karaktären av att samla in personuppgifter för bokningsändamål"
-" och betalningshantering är plattformen inte avsedd för minderåriga. "
-"Undantag kan uppstå när juridiska personer lämnar information om minderåriga"
-" inom ramen för deras bokade semester."
+
+msgid "Adventora is entirely aimed at legal adults. Due to the mandatory nature of collecting personal data for reservation purposes and payment processing, the platform is not intended for minors. Exceptions may arise when legal adults provide information on minors within the context of their booked vacation."
+msgstr ""
 
 msgid "10. Notification of Policy Changes"
-msgstr "10. Meddelande om policyändringar"
-
-msgid ""
-"Changes or modifications to this Policy will be communicated via email and "
-"will be clearly displayed on the Website."
 msgstr ""
-"Ändringar eller modifieringar av denna policy kommer att kommuniceras via "
-"e-post och kommer att visas tydligt på webbplatsen."
+
+msgid "Changes or modifications to this Policy will be communicated via email and will be clearly displayed on the Website."
+msgstr ""
 
 msgid "11. Legitimate Basis for Data Processing"
-msgstr "11. Legitim grund för databehandling"
-
-msgid ""
-"The collection and processing of data are based on the mandatory execution "
-"of reservations and related reservation activities."
 msgstr ""
-"Insamlingen och behandlingen av data baseras på obligatoriskt genomförande "
-"av reservationer och relaterade bokningsaktiviteter."
+
+msgid "The collection and processing of data are based on the mandatory execution of reservations and related reservation activities."
+msgstr ""
 
 msgid "12. Implied Consent"
-msgstr "12. Underförstått samtycke"
-
-msgid ""
-"By using our platform and creating an account, you implicitly agree to the "
-"collection and processing of personal data, in accordance with this Policy."
 msgstr ""
-"Genom att använda vår plattform och skapa ett konto samtycker du implicit "
-"till insamling och behandling av personuppgifter, i enlighet med denna "
-"policy."
+
+msgid "By using our platform and creating an account, you implicitly agree to the collection and processing of personal data, in accordance with this Policy."
+msgstr ""
 
 msgid "13. Compliance with Applicable Regulations"
-msgstr "13. Efterlevnad av tillämpliga bestämmelser"
-
-msgid ""
-"Our data processing procedures strictly adhere to the regulations and "
-"provisions set forth by the General Data Protection Regulation (GDPR)."
 msgstr ""
-"Våra rutiner för databehandling följer strikt de regler och bestämmelser som"
-" anges i den allmänna dataskyddsförordningen (GDPR)."
 
-msgid ""
-"For questions, clarifications, or requests related to your personal data and"
-" this Policy, we inform you that you can contact us via the following "
-"contact: <a href='mailto:support@adventora.net'>hello@adventora.net</a>."
+msgid "Our data processing procedures strictly adhere to the regulations and provisions set forth by the General Data Protection Regulation (GDPR)."
 msgstr ""
-"För frågor, förtydliganden eller förfrågningar relaterade till dina "
-"personuppgifter och denna policy informerar vi dig om att du kan kontakta "
-"oss via följande kontakt: <a "
-"href='mailto:support@adventora.net'>hello@adventora.net</a> a>."
 
-#, fuzzy
-#| msgid "Reservations"
+msgid "For questions, clarifications, or requests related to your personal data and this Policy, we inform you that you can contact us via the following contact: <a href='mailto:support@adventora.net'>hello@adventora.net</a>."
+msgstr ""
+
 msgid "Reserve Room"
-msgstr "Bokningar"
+msgstr ""
 
 msgid "Price / Night"
-msgstr "Pris/natt"
+msgstr ""
 
-#, fuzzy
-#| msgid "Last Name"
 msgid "Name"
-msgstr "Efternamn"
+msgstr ""
 
 msgid "Email"
-msgstr "E-post"
+msgstr ""
 
 msgid "How many people?"
-msgstr "Hur många personer?"
+msgstr ""
 
 msgid "How many nights?"
-msgstr "Hur många nätter?"
+msgstr ""
 
 msgid "TOTAL"
-msgstr "TOTAL"
+msgstr ""
 
 msgid "Username or email"
-msgstr "Användarnamn eller e-mail"
+msgstr ""
 
 msgid "Password"
-msgstr "Lösenord"
+msgstr ""
+
+msgid "Login"
+msgstr ""
 
 msgid "The username must contain at least 8 characters."
-msgstr "Användarnamnet måste innehålla minst 8 tecken."
+msgstr ""
 
 msgid "First name"
-msgstr "Förnamn"
+msgstr ""
 
 msgid "Last name"
-msgstr "Efternamn"
+msgstr ""
 
 msgid "Email address must be valid"
-msgstr "E-postadressen måste vara giltig"
-
-msgid ""
-"The password must be at least 8 characters long. <br> The password should "
-"not contain only digits. <br> The password should not contain only letters. "
-"<br> The password should not contain only special characters. <br> The "
-"password should not contain the username. <br> The password should not be a "
-"commonly used password."
 msgstr ""
-"Lösenordet måste vara minst 8 tecken långt. <br> Lösenordet ska inte bara "
-"innehålla siffror. <br> Lösenordet bör inte bara innehålla bokstäver. <br> "
-"Lösenordet bör inte bara innehålla specialtecken. <br> Lösenordet bör inte "
-"innehålla användarnamnet. <br> Lösenordet bör inte vara ett vanligt använda "
-"lösenord."
+
+msgid "The password must be at least 8 characters long. <br> The password should not contain only digits. <br> The password should not contain only letters. <br> The password should not contain only special characters. <br> The password should not contain the username. <br> The password should not be a commonly used password."
+msgstr ""
 
 msgid "Confirm password"
-msgstr "Bekräfta lösenord"
+msgstr ""
 
 msgid "Enter the same password as above, for verification."
-msgstr "Ange samma lösenord som ovan, för verifiering."
+msgstr ""
+
+msgid "Sign up"
+msgstr ""
 
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
 msgstr ""
-"Semester - Utforska, planera och boka dina perfekta semesteraktiviteter."
 
-msgid ""
-"Hotel Manager - Oversee operations and provide excellent service in your own"
-" hotel."
+msgid "Hotel Manager - Oversee operations and provide excellent service in your own hotel."
 msgstr ""
-"Hotellchef - Övervaka verksamheten och ge utmärkt service på ditt eget "
-"hotell."
 
-msgid ""
-"Employee - Contribute your expertise to a thriving workplace, such as a "
-"hotel or guest house."
+msgid "Employee - Contribute your expertise to a thriving workplace, such as a hotel or guest house."
 msgstr ""
-"Anställd – Bidra med din expertis till en blomstrande arbetsplats, som ett "
-"hotell eller pensionat."
 
 msgid "Submit"
-msgstr "Skicka in"
+msgstr ""
 
 msgid "First Name"
-msgstr "Förnamn"
+msgstr ""
 
 msgid "Last Name"
-msgstr "Efternamn"
+msgstr ""
 
 msgid "Save"
-msgstr "Spara"
+msgstr ""
 
 msgid "The email must be valid."
-msgstr "E-postmeddelandet måste vara giltigt."
+msgstr ""
 
 msgid "Phone"
-msgstr "Telefon"
+msgstr ""
 
 msgid "Choose a Role"
-msgstr "Välj en roll"
+msgstr ""
 
 msgid "Old Password"
-msgstr "Gammalt lösenord"
+msgstr ""
 
 msgid "New Password"
-msgstr "nytt lösenord"
+msgstr ""
 
 msgid "Confirm New Password"
-msgstr "Bekräfta nytt lösenord"
+msgstr ""
 
 msgid "Enable"
-msgstr "Gör det möjligt"
+msgstr ""
 
 msgid "Code"
-msgstr "Koda"
+msgstr ""
 
 msgid "Disable"
-msgstr "Inaktivera"
+msgstr ""
 
 msgid "User"
-msgstr "Användare"
+msgstr ""
 
 msgid "Manager"
-msgstr "Chef"
+msgstr ""
 
 msgid "Employee"
-msgstr "Anställd"
+msgstr ""
 
 msgid "Malformed security token"
-msgstr "Felformat säkerhetstoken"
+msgstr ""
 
 msgid "A user with that email already exists."
-msgstr "En användare med den mailadressen finns redan."
+msgstr ""
 
 msgid "Password must be at least 8 characters long."
-msgstr "Lösenordet måste vara minst 8 tecken långt."
+msgstr ""
 
 msgid "Passwords do not match."
-msgstr "Lösenorden matchar inte."
+msgstr ""
 
 msgid "Username must be at least 4 characters long."
-msgstr "Användarnamnet måste vara minst 4 tecken långt."
+msgstr ""
 
 msgid "Username should only contain letters and numbers."
-msgstr "Användarnamn bör endast innehålla bokstäver och siffror."
+msgstr ""
 
 msgid "Invalid email."
-msgstr "Ogiltig e-postadress."
+msgstr ""
 
 msgid "A user with that username already exists."
-msgstr "En användare med det användarnamnet finns redan."
+msgstr ""
 
 msgid "Successfully registration."
-msgstr "Registrering framgångsrikt."
+msgstr ""
 
 msgid "Invalid data."
-msgstr "Ogiltiga data."
+msgstr ""
 
 msgid "A user with that email does not exist."
-msgstr "En användare med den e-postadressen finns inte."
+msgstr ""
 
 msgid "Successfully logged in."
-msgstr "Inloggad framgångsrikt."
+msgstr ""
 
 msgid "Invalid password."
-msgstr "Felaktigt lösenord."
+msgstr ""
 
 msgid "A user with that username does not exist."
-msgstr "En användare med det användarnamnet finns inte."
+msgstr ""
 
 msgid "Successfully logged out."
-msgstr "Utloggad."
+msgstr ""
 
 msgid "Invalid role."
-msgstr "Ogiltig roll."
+msgstr ""
 
 msgid "Successfully chosen role."
-msgstr "Framgångsrikt vald roll."
+msgstr ""
 
 msgid "Successfully confirmed name."
-msgstr "Namnet har bekräftats."
+msgstr ""
 
 msgid "Successfully confirmed email."
-msgstr "Bekräftat e-postmeddelande."
+msgstr ""
 
 msgid "Invalid username. At least 5 characters."
-msgstr "Ogiltigt användarnamn. "
+msgstr ""
 
 msgid "Successfully confirmed username."
-msgstr "Användarnamnet har bekräftats."
+msgstr ""
 
 msgid "Successfully edited profile."
-msgstr "Profilen har redigerats."
+msgstr ""
 
 msgid "Incorrect old password."
-msgstr "Felaktigt gammalt lösenord."
+msgstr ""
 
 msgid "Successfully changed password."
-msgstr "Lösenordet har ändrats."
+msgstr ""
 
 msgid "Incorrect password."
-msgstr "Fel lösenord."
+msgstr ""
 
 msgid "Successfully deleted account."
-msgstr "Kontot har raderats."
+msgstr ""
 
 msgid "Successfully confirmed citizenship."
-msgstr "Bekräftat medborgarskap."
+msgstr ""
 
 msgid "Successfully confirmed phone number."
-msgstr "Telefonnumret har bekräftats."
+msgstr ""
 
 msgid "Two factor authentication is not enabled."
-msgstr "Tvåfaktorsautentisering är inte aktiverad."
+msgstr ""
 
 msgid "Two factor authentication is already passed."
-msgstr "Tvåfaktorsautentisering är redan godkänd."
+msgstr ""
 
 msgid "Successfully passed two factor authentication"
-msgstr "Godkände tvåfaktorsautentisering"
+msgstr ""
 
 msgid "Invalid code."
-msgstr "Ogiltig kod."
+msgstr ""
 
 msgid "Two factor authentication is already enabled."
-msgstr "Tvåfaktorsautentisering är redan aktiverad."
+msgstr ""
 
 msgid "You cannot enable two factor authentication with a social login."
 msgstr ""
-"Du kan inte aktivera tvåfaktorsautentisering med en social inloggning."
 
 msgid "Successfully enabled two factor authentication."
-msgstr "Tvåfaktorsautentisering har aktiverats."
+msgstr ""
 
 msgid "Successfully disabled two factor authentication."
-msgstr "Tvåfaktorsautentisering har inaktiverats."
+msgstr ""
 
 msgid "Invalid login data. Please try again."
-msgstr "Ogiltiga inloggningsuppgifter. Var god försök igen."
-
-msgid ""
-"To continue, you need to pass an automated security check. Please wait. if "
-"you are not redirected within 5 seconds, complete the captcha and click "
-"continue."
 msgstr ""
-"För att fortsätta måste du klara en automatisk säkerhetskontroll. Vänta. om "
-"du inte omdirigeras inom 5 sekunder, slutför captcha och klicka på fortsätt."
+
+msgid "To continue, you need to pass an automated security check. Please wait. if you are not redirected within 5 seconds, complete the captcha and click continue."
+msgstr ""
 
 msgid "Continue"
-msgstr "Fortsätta"
+msgstr ""
 
 msgid "Room not available"
-msgstr "Rum ej tillgängligt"
+msgstr ""
 
-#, fuzzy
-#| msgid "Invalid data."
 msgid "Invalid dates"
-msgstr "Ogiltiga data."
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "Reservation successful"
-msgstr "Bokningar"
+msgstr ""
 
-#, fuzzy
-#| msgid "Room not available"
 msgid "Reservation not available"
-msgstr "Rum ej tillgängligt"
+msgstr ""
 
-#, fuzzy
-#| msgid "Room not available"
 msgid "Invoice not available"
-msgstr "Rum ej tillgängligt"
+msgstr ""
 
 msgid "Hotel Name"
-msgstr "Hotellnamn"
+msgstr ""
 
 msgid "Address"
-msgstr "Adress"
+msgstr ""
 
 msgid "City"
-msgstr "Stad"
+msgstr ""
 
 msgid "Website"
-msgstr "Hemsida"
+msgstr ""
 
 msgid "Description"
-msgstr "Beskrivning"
+msgstr ""
 
 msgid "EIK"
-msgstr "EIK"
+msgstr ""
 
 msgid "Authorized Person"
-msgstr "Behörig person"
+msgstr ""
 
 msgid "Stars"
-msgstr "Stjärnor"
-
-msgid ""
-"I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
-"policy</a>"
 msgstr ""
-"Jag har läst och godkänner <a href=\"/privacy\" "
-"target=\"_blank\">sekretesspolicyn</a>"
 
-msgid ""
-"I have read and agree to the <a href=\"/terms-of-use\" "
-"target=\"_blank\">terms and conditions</a>"
+msgid "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy policy</a>"
 msgstr ""
-"Jag har läst och godkänner <a href=\"/terms-of-use\" "
-"target=\"_blank\">användarvillkoren</a>"
 
-msgid ""
-"I hereby certify, under penalty of law, that the information provided about "
-"myself and my hotel is accurate and complete to the best of my "
-"knowledge.<br> I understand that any false or misleading information "
-"provided may result in the immdiate suspesion of my hotel listing from "
-"Adventora and may lead to potential legal consequences."
+msgid "I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank\">terms and conditions</a>"
 msgstr ""
-"Jag intygar härmed, enligt lag, att informationen som tillhandahålls om mig "
-"själv och mitt hotell är korrekt och fullständig så vitt jag vet.<br> Jag "
-"förstår att all falsk eller vilseledande information som tillhandahålls kan "
-"leda till omedelbar misstanke om mitt hotell "
+
+msgid "I hereby certify, under penalty of law, that the information provided about myself and my hotel is accurate and complete to the best of my knowledge.<br> I understand that any false or misleading information provided may result in the immdiate suspesion of my hotel listing from Adventora and may lead to potential legal consequences."
+msgstr ""
 
 msgid "Save Changes"
-msgstr "Spara ändringar"
+msgstr ""
 
 msgid "Room Number"
-msgstr "Rumsnummer"
+msgstr ""
 
 msgid "Luxuries"
-msgstr "Lyx"
+msgstr ""
 
 msgid "Create Room"
-msgstr "Skapa rum"
+msgstr ""
 
-#, fuzzy
-#| msgid "Select"
 msgid "Select Room"
-msgstr "Välj"
+msgstr ""
 
 msgid "Check In"
-msgstr "Checka in"
+msgstr ""
 
 msgid "Check Out"
-msgstr "Kolla upp"
+msgstr ""
 
 msgid "Guests"
-msgstr "Gäster"
+msgstr ""
 
 msgid "ID Card Number"
-msgstr "ID kortnummer"
+msgstr ""
 
-#, fuzzy
-#| msgid "Reservations"
 msgid "Create Reservation"
-msgstr "Bokningar"
+msgstr ""
 
 msgid "No description provided."
-msgstr "Ingen beskrivning tillhandahålls."
+msgstr ""
 
 msgid "You do not have permission to view this page"
-msgstr "Du har inte behörighet att visa den här sidan"
+msgstr ""
 
 msgid "Your hotel is not approved yet"
-msgstr "Ditt hotell är inte godkänt ännu"
+msgstr ""
 
 msgid "Successfully registered hotel"
-msgstr "Registrerat hotell framgångsrikt"
+msgstr ""
 
 msgid "Error while registering hotel"
-msgstr "Fel vid registrering av hotell"
+msgstr ""
 
 msgid "You have already registered a hotel"
-msgstr "Du har redan registrerat ett hotell"
+msgstr ""
 
 msgid "You have not registered a hotel yet"
-msgstr "Du har inte registrerat ett hotell ännu"
+msgstr ""
 
 msgid "Successfully confirmed address"
-msgstr "Adressen har bekräftats"
+msgstr ""
 
 msgid "Error while confirming address"
-msgstr "Ett fel uppstod när adressen skulle bekräftas"
+msgstr ""
 
 msgid "No such hotel"
-msgstr "Inget sådant hotell"
+msgstr ""
 
 msgid "We cannot find the hotel you are looking for"
-msgstr "Vi kan inte hitta hotellet du letar efter"
+msgstr ""
 
 msgid "Successfully added room"
-msgstr "Rummet har lagts till"
+msgstr ""
 
 msgid "Error while adding room"
-msgstr "Det gick inte att lägga till rum"
+msgstr ""
 
 msgid "We cannot find the room you are looking for"
-msgstr "Vi kan inte hitta rummet du letar efter"
+msgstr ""
 
 msgid "Successfully updated hotel"
-msgstr "Hotellet har uppdaterats framgångsrikt"
+msgstr ""
 
 msgid "Error while updating hotel"
-msgstr "Fel vid uppdatering av hotellet"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully updated hotel"
 msgid "Successfully updated room status"
-msgstr "Hotellet har uppdaterats framgångsrikt"
+msgstr ""
 
-#, fuzzy
-#| msgid "Invalid data."
 msgid "Invalid status"
-msgstr "Ogiltiga data."
+msgstr ""
 
 msgid "This room is already occupied"
-msgstr "Detta rum är redan upptaget"
+msgstr ""
 
-#, fuzzy
-#| msgid "We cannot find the room you are looking for"
 msgid "We cannot find the reservation you are looking for"
-msgstr "Vi kan inte hitta rummet du letar efter"
+msgstr ""
 
-#, fuzzy
-#| msgid "This room is already occupied"
 msgid "This reservation is already completed"
-msgstr "Detta rum är redan upptaget"
+msgstr ""
 
-#, fuzzy
-#| msgid "This room is already occupied"
 msgid "This reservation is already cancelled"
-msgstr "Detta rum är redan upptaget"
+msgstr ""
 
-#, fuzzy
-#| msgid "This room is already occupied"
 msgid "This reservation is already expired"
-msgstr "Detta rum är redan upptaget"
+msgstr ""
 
-#, fuzzy
-#| msgid "This room is already occupied"
 msgid "This reservation is already rejected"
-msgstr "Detta rum är redan upptaget"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully occupied room"
-msgstr "Rummet har lagts till"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully deleted room"
-msgstr "Rummet har lagts till"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully added reservation"
-msgstr "Rummet har lagts till"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully updated hotel"
 msgid "Successfully uploaded photos"
-msgstr "Hotellet har uppdaterats framgångsrikt"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully deleted photo"
-msgstr "Rummet har lagts till"
+msgstr ""
 
 msgid "Photo not found"
-msgstr "Bilden hittades inte"
+msgstr ""
 
-#, fuzzy
-#| msgid "Successfully added room"
 msgid "Successfully updated room"
-msgstr "Rummet har lagts till"
-
-#~ msgid ""
-#~ "За да продължите, трябва да преминете автоматизирана проверка на "
-#~ "сигурността."
-#~ msgstr ""
-#~ "За да продължите, трябва да преминете автоматизирана проверка на "
-#~ "сигурността."
-
-#~ msgid "Your reservation is successful."
-#~ msgstr "Din bokning har lyckats."
-
-#~ msgid "Your invoice is below."
-#~ msgstr "Din faktura finns nedan."
-
-#~ msgid "The invoice is also available in your dashboard."
-#~ msgstr "Fakturan finns även tillgänglig i din instrumentpanel."
-
-#~ msgid "The invoice acts as ticket."
-#~ msgstr "Fakturan fungerar som biljett."
-
-#~ msgid "Please show the invoice to the hotel staff upon arrival."
-#~ msgstr "Vänligen visa upp fakturan för hotellpersonalen vid ankomst."
-
-#~ msgid "Thank you for using Adventora."
-#~ msgstr "Tack för att du använder Adventora."
-
-#~ msgid "Language"
-#~ msgstr "Språk"
-
-#, fuzzy
-#~ msgid "Reservation #"
-#~ msgstr "Bokningar"
-
-#, fuzzy
-#~ msgid "Custom Client"
-#~ msgstr "Anpassad kund"
-
-#, fuzzy
-#~ msgid "Custom Clients"
-#~ msgstr "Anpassad kund"
-
-#~ msgid "Login with Patreon"
-#~ msgstr "Logga in med Patreon"
-
-#~ msgid "Login with Amazon"
-#~ msgstr "Logga in med Amazon"
-
-#~ msgid "Disabled"
-#~ msgstr "Inaktiverad"
+msgstr ""

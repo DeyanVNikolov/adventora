@@ -1,23 +1,22 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2023
-# This file is distributed under the same license as the Adventora package.
-# DEYAN NIKOLOV <didonikolovbg@gmail.com>, 2023.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Adventora Beta-Release 1.0\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-24 21:43+0200\n"
-"PO-Revision-Date: 2023-11-17 15:08+0200\n"
-"Last-Translator: Deyan Nikolov <didonikolovbg@gmail.com>\n"
-"Language-Team: ADVENTORA INTERNATIONAL <international>\n"
-"Language: international\n"
+"POT-Creation-Date: 2024-02-12 14:54+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
 msgid "Not confirmed"
 msgstr ""
 
@@ -93,28 +92,13 @@ msgstr ""
 msgid "Please enter your two-factor verification code"
 msgstr ""
 
-msgid "Homepage"
+msgid "Home"
 msgstr ""
 
 msgid "Hotels"
 msgstr ""
 
 msgid "Dashboard"
-msgstr ""
-
-msgid "Profile"
-msgstr ""
-
-msgid "Admin"
-msgstr ""
-
-msgid "Log out"
-msgstr ""
-
-msgid "Login"
-msgstr ""
-
-msgid "Sign up"
 msgstr ""
 
 msgid "Error"
@@ -130,6 +114,9 @@ msgid "Adventora supports small, medium and large businesses"
 msgstr ""
 
 msgid "All Rights Reserved"
+msgstr ""
+
+msgid "Homepage"
 msgstr ""
 
 msgid "About us"
@@ -181,6 +168,9 @@ msgid "View more"
 msgstr ""
 
 msgid "Reserve"
+msgstr ""
+
+msgid "Admin"
 msgstr ""
 
 msgid "Add Reservation"
@@ -432,6 +422,9 @@ msgstr ""
 msgid "Password"
 msgstr ""
 
+msgid "Login"
+msgstr ""
+
 msgid "The username must contain at least 8 characters."
 msgstr ""
 
@@ -451,6 +444,9 @@ msgid "Confirm password"
 msgstr ""
 
 msgid "Enter the same password as above, for verification."
+msgstr ""
+
+msgid "Sign up"
 msgstr ""
 
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
@@ -797,6 +793,3 @@ msgstr ""
 
 msgid "Successfully updated room"
 msgstr ""
-
-#~ msgid "За да продължите, трябва да преминете автоматизирана проверка на сигурността."
-#~ msgstr "To continue, you must pass an automated security check."
