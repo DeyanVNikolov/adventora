@@ -18,7 +18,7 @@ class LoginForm(forms.Form):
     captcha = TurnstileField()
 
     class Meta:
-        model = User
+        model = CustomUser
         fields = ('username', 'password')
 
     helper = FormHelper()
@@ -49,7 +49,7 @@ class RegisterForm(UserCreationForm):
     captcha = TurnstileField()
 
     class Meta:
-        model = User
+        model = CustomUser
         fields = ('username', "first_name", "last_name", "email", "password1", "password2")
 
     helper = FormHelper()

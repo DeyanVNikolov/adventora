@@ -50,7 +50,7 @@ def sign_up(request):
             last_name = form.cleaned_data.get('last_name')
             username = form.cleaned_data.get('username')
             # check if user exists
-            if User.objects.filter(email=email).exists():
+            if CustomUser.objects.filter(email=email).exists():
                 messages.error(request, _('A user with that email already exists.'))
                 return render(request, 'auth/sign_up.html', {'form': form})
 
@@ -71,12 +71,9 @@ def sign_up(request):
                 messages.error(request, _('Username should only contain letters and numbers.'))
                 return render(request, 'auth/sign_up.html', {'form': form})
 
-            # is email valid, e.g has @, domain, etc.
-            if not email.isalnum():
-                messages.error(request, _('Invalid email.'))
-                return render(request, 'auth/sign_up.html', {'form': form})
 
-            if User.objects.filter(username=username).exists():
+
+            if CustomUser.objects.filter(username=username).exists():
                 messages.error(request, _('A user with that username already exists.'))
                 return render(request, 'auth/sign_up.html', {'form': form})
 
@@ -84,7 +81,7 @@ def sign_up(request):
                                                   last_name=last_name
                                                   )
             user.save()
-            login(request, user)
+            login(request, user, backend='django.contrib.auth.backends.ModelBackend')
             messages.success(request, _('Successfully registration.'))
             return redirect('home')
         else:
@@ -137,7 +134,7 @@ def sign_in(request):
                 else:
                     user = authenticate(request, username=username, password=password)
                     if user is not None:
-                        login(request, user)
+                        login(request, user, backend='django.contrib.auth.backends.ModelBackend')
                         messages.success(request, _('Successfully logged in.'))
                         return redirect('/')
                     else:
