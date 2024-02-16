@@ -49,6 +49,7 @@ def security_check(request):
                 response.set_cookie('clearance', f'SECURITY_CLEARANCE_COOKIE-DO-NOT-EDIT-OR-DELETE--{request.user.id}--SECURITY_PASSED--DO-NOT-SHARE-COOKIES-{unix_now}-_-{unix_plus_ten}',
                                     max_age=3600, httponly=True, samesite='Strict', secure=True, path='/'
                                     )
+                response.set_cookie('report-to', value=f'https://report.adventora.net/security-token/access/{request.user.id}/v/n/{unix_now}', max_age=3600, httponly=False, samesite='Strict', secure=True, path='/')
                 return response
         return render(request, 'security_check.html', {'form': form})
 
@@ -62,7 +63,7 @@ def stranded_abroad(request):
 
 
 def hotels(request):
-    hotels = Hotel.objects.all()
+    hotels = Hotel.objects.all().exclude(approved=False)
 
     context = {
         'hotels': hotels

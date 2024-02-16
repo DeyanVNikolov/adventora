@@ -128,10 +128,10 @@
     <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
             <a class="navbar-item" href="/">
-                {% trans "Home" %}
+                <i class="fa-solid fa-house"></i>&nbsp; {% trans "Home" %}
             </a>
             <a class="navbar-item" href="/hotels">
-                {% trans "Hotels" %}
+                <i class="fa-solid fa-hotel"></i>&nbsp;{% trans "Hotels" %}
             </a>
 
 
@@ -226,9 +226,11 @@
                             <i class="fa-solid fa-right-to-bracket" style="color: #2f2f2f"></i>
                         </a>
                     {% else %}
+                        {% if request.user.role == "hotel_manager" %}
                         <a class="button" href="/hotel/dashboard" style="border-radius: 100px">
-                            {% trans "Dashboard" %}
+                            <i class="fa-solid fa-toolbox"></i>&nbsp;{% trans "Dashboard" %}
                         </a>
+                        {% endif %}
                         {% if user.is_superuser == True and user.is_staff == True %}
                             <a class="button" href="/admin" style="border-radius: 100px; background-color: #ffdf00">
                                 <i class="fa-solid fa-hammer" style="color: #2f2f2f"></i>

@@ -14,9 +14,7 @@ from .models import CustomUser
 BASE_DIR = Path(__file__).resolve().parent.parent
 load_dotenv()
 
-
-@async_to_sync
-async def sendregisterationemail(emailaddr, accname):
+def sendregisterationemail(emailaddr, accname):
     import os
     import smtplib
     import imghdr
@@ -591,6 +589,9 @@ async def sendregisterationemail(emailaddr, accname):
 
 """, subtype='html')
 
-    with smtplib.SMTP_SSL('smtppro.zoho.eu', 465) as smtp:
-        smtp.login(email_address, email_password)
-        smtp.send_message(msg)
+    try:
+        with smtplib.SMTP_SSL('smtppro.zoho.eu', 465) as smtp:
+            smtp.login(email_address, email_password)
+            smtp.send_message(msg)
+    except Exception as e:
+        print(e)
