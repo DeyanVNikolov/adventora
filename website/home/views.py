@@ -75,7 +75,7 @@ def hotels(request):
             img = None
             for photo in photos:
                 print("CURRENT PHOTO: " + photo)
-                if os.path.isfile(f'static/cover/hotel/{hotel.id}/{photo}'):
+                if os.path.exists(f'static/cover/hotel/{hotel.id}/{photo}'):
                     print("FOUND IMAGE: " + photo)
                     img = photo
                     break
