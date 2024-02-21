@@ -3,6 +3,7 @@ import os
 import uuid
 from pathlib import Path
 
+import requests
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
@@ -69,20 +70,13 @@ def hotels(request):
         # select ONE random image from hotel.photos
         photos = str(hotel.photos).split('|PHOTO|')
         if len(photos) > 0:
-            print("MORE THAN 0")
-            print(photos)
-            # select first image, if not os.exists, select second, if not os.exists, select third, if not os.exists, select fourth, if not os.exists, select fifth
             img = None
             for photo in photos:
-                print("CURRENT PHOTO: " + photo)
-                if os.path.exists(f'static/cover/hotel/{hotel.id}/{photo}'):
-                    print("FOUND IMAGE: " + photo)
+                r = requests.get(f'/static/cover/hotel/{hotel.id}/{photo}')
+                if r.status_code == 200:
                     img = photo
                     break
-            print("IMG: " + str(img))
-            path = f'static/cover/hotel/{hotel.id}/{img}'
-            print("PATH: " + path)
-            if img and os.path.exists(path):
+            if img:
                 print("SELECTED IMAGE: " + img)
                 hotel.main_img = img
             else:
