@@ -69,14 +69,22 @@ def hotels(request):
         # select ONE random image from hotel.photos
         photos = str(hotel.photos).split('|PHOTO|')
         if len(photos) > 0:
+            print("MORE THAN 0")
+            print(photos)
             # select first image, if not os.exists, select second, if not os.exists, select third, if not os.exists, select fourth, if not os.exists, select fifth
             img = None
             for photo in photos:
+                print("CURRENT PHOTO: " + photo)
                 if os.path.isfile(f'static/cover/hotel/{hotel.id}/{photo}'):
+                    print("FOUND IMAGE: " + photo)
                     img = photo
                     break
             if img and os.path.isfile(f'static/cover/hotel/{hotel.id}/{img}'):
+                print("SELECTED IMAGE: " + img)
                 hotel.main_img = img
+            else:
+                print("NO IMAGE FOUND")
+                hotel.main_img = None
 
     context = {
         'hotels': hotels
