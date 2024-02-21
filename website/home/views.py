@@ -79,7 +79,10 @@ def hotels(request):
                     print("FOUND IMAGE: " + photo)
                     img = photo
                     break
-            if img and os.path.isfile(f'static/cover/hotel/{hotel.id}/{img}'):
+            print("IMG: " + str(img))
+            path = f'static/cover/hotel/{hotel.id}/{img}'
+            print("PATH: " + path)
+            if img and os.path.exists(path):
                 print("SELECTED IMAGE: " + img)
                 hotel.main_img = img
             else:
