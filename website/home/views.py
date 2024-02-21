@@ -117,7 +117,7 @@ def hotel(request, hotel_id):
             img = photo
             hotel_images.append(img)
 
-            
+
 
     rooms = Room.objects.filter(hotel=hotel)
 
