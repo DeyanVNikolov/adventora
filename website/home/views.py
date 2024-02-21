@@ -74,7 +74,7 @@ def hotels(request):
             for photo in photos:
                 host = request.get_host()
                 scheme = request.scheme
-                
+
                 r = requests.get(f'{scheme}://{host}/static/cover/hotel/{hotel.id}/{photo}')
                 if r.status_code == 200:
                     img = photo
@@ -107,10 +107,17 @@ def hotel(request, hotel_id):
     hotel_images = []
     BASE_DIR = Path(__file__).resolve().parent.parent
 
-    image_dir = f'{BASE_DIR}/static/cover/hotel/{hotel.id}'
-    if os.path.isdir(image_dir):
-        for filename in os.listdir(image_dir):
-            hotel_images.append(filename)
+    photos = str(hotel.photos).split('|PHOTO|')
+    for photo in photos:
+        img = None
+        scheme = request.scheme
+        host = request.get_host()
+        r = requests.get(f'{scheme}://{host}/static/cover/hotel/{hotel.id}/{photo}')
+        if r.status_code == 200:
+            img = photo
+            hotel_images.append(img)
+
+            
 
     rooms = Room.objects.filter(hotel=hotel)
 
