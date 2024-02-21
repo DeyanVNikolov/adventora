@@ -17,779 +17,966 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
 msgid "Not confirmed"
-msgstr ""
+msgstr "Pas confirmé"
 
 msgid "Send confirmation email again."
-msgstr ""
+msgstr "Envoyez à nouveau l'e-mail de confirmation."
 
 msgid "Confirmed"
-msgstr ""
+msgstr "Confirmé"
 
 msgid "Turned On"
-msgstr ""
+msgstr "Allumé"
 
 msgid "Turn off"
-msgstr ""
+msgstr "Éteindre"
 
 msgid "Turned Off"
-msgstr ""
+msgstr "Éteindre"
 
 msgid "Turn on"
-msgstr ""
+msgstr "Allumer"
 
 msgid "My Reservations"
-msgstr ""
+msgstr "Mes réservations"
 
 msgid "Change password"
-msgstr ""
+msgstr "Changer le mot de passe"
 
 msgid "Delete Account"
-msgstr ""
+msgstr "Supprimer le compte"
 
 msgid "Room"
-msgstr ""
+msgstr "Chambre"
 
 msgid "Nights"
-msgstr ""
+msgstr "Nuits"
 
 msgid "Check-in"
-msgstr ""
+msgstr "Enregistrement"
 
 msgid "Check-out"
-msgstr ""
+msgstr "Vérifier"
 
 msgid "Total"
-msgstr ""
+msgstr "Total"
 
 msgid "Invoice"
-msgstr ""
+msgstr "Facture"
 
 msgid "Hotel"
-msgstr ""
+msgstr "Hôtel"
 
 msgid "Login with Google"
-msgstr ""
+msgstr "Connectez-vous avec Google"
 
 msgid "Login with Trello"
-msgstr ""
+msgstr "Connectez-vous avec Trello"
 
 msgid "Login with GitHub"
-msgstr ""
+msgstr "Connectez-vous avec GitHub"
 
 msgid "Login with Reddit"
-msgstr ""
+msgstr "Connectez-vous avec Reddit"
 
 msgid "Login with Steam"
-msgstr ""
+msgstr "Connectez-vous avec Steam"
 
 msgid "Login with Spotify."
-msgstr ""
+msgstr "Connectez-vous avec Spotify."
 
 msgid "Login with VK"
-msgstr ""
+msgstr "Connectez-vous avec VK"
 
 msgid "Please enter your two-factor verification code"
-msgstr ""
+msgstr "Veuillez saisir votre code de vérification à deux facteurs"
 
 msgid "Home"
-msgstr ""
+msgstr "Maison"
 
 msgid "Hotels"
-msgstr ""
+msgstr "Hôtels"
 
 msgid "Dashboard"
-msgstr ""
+msgstr "Tableau de bord"
 
 msgid "Error"
-msgstr ""
+msgstr "Erreur"
 
 msgid "Success"
-msgstr ""
+msgstr "Succès"
 
 msgid "Warning"
-msgstr ""
+msgstr "Avertissement"
 
 msgid "Adventora supports small, medium and large businesses"
-msgstr ""
+msgstr "Adventora soutient les petites, moyennes et grandes entreprises"
 
 msgid "All Rights Reserved"
-msgstr ""
+msgstr "Tous droits réservés"
 
 msgid "Homepage"
-msgstr ""
+msgstr "Page d'accueil"
 
 msgid "About us"
-msgstr ""
+msgstr "À propos de nous"
 
 msgid "Privacy"
-msgstr ""
+msgstr "Confidentialité"
 
 msgid "Terms of use"
-msgstr ""
+msgstr "Conditions d'utilisation"
 
 msgid "Contacts"
-msgstr ""
+msgstr "Contacts"
 
 msgid "Partnerships"
-msgstr ""
+msgstr "Partenariats"
 
 msgid "Emergency"
-msgstr ""
+msgstr "Urgence"
 
 msgid "Stranded Abroad"
-msgstr ""
+msgstr "Bloqué à l'étranger"
 
 msgid "In case of fire, medical or police emergency"
-msgstr ""
+msgstr "En cas d'incendie, d'urgence médicale ou policière"
 
 msgid "contact the single european emergency nunmber"
-msgstr ""
+msgstr "contacter le numéro d'urgence unique européen"
 
 msgid "It is dial without code, just 112 when in any country of the EU"
 msgstr ""
+"Il s'agit d'un numéro sans code, seulement 112 dans n'importe quel pays de "
+"l'UE."
 
 msgid "Welcome to Adventora"
-msgstr ""
+msgstr "Bienvenue chez Adventora"
 
 msgid "Find your perfect stay with us"
-msgstr ""
+msgstr "Trouvez votre séjour parfait chez nous"
 
 msgid "Registered hotels"
-msgstr ""
+msgstr "Hôtels enregistrés"
 
 msgid "Happy Customers"
-msgstr ""
+msgstr "Clients satisfaits"
 
 msgid "Total Reservations"
-msgstr ""
+msgstr "Réservations totales"
 
 msgid "View more"
-msgstr ""
+msgstr "Voir plus"
 
 msgid "Reserve"
-msgstr ""
+msgstr "Réserve"
 
 msgid "Admin"
-msgstr ""
+msgstr "Administrateur"
 
 msgid "Add Reservation"
-msgstr ""
+msgstr "Ajouter une réservation"
 
-msgid "Your hotel is not yet approved. Allow us to confirm your info within 48 hours."
+msgid ""
+"Your hotel is not yet approved. Allow us to confirm your info within 48 "
+"hours."
 msgstr ""
+"Votre hôtel n'est pas encore approuvé. Permettez-nous de confirmer vos "
+"informations dans les 48 heures."
 
 msgid "You don't have a hotel"
-msgstr ""
+msgstr "Tu n'as pas d'hôtel"
 
 msgid "Register Hotel"
-msgstr ""
+msgstr "Inscrire l'hôtel"
 
 msgid "Rooms"
-msgstr ""
+msgstr "Pièces"
 
 msgid "Add"
-msgstr ""
+msgstr "Ajouter"
 
 msgid "Confirm Address"
-msgstr ""
+msgstr "Confirmer l'adresse"
 
 msgid "Reservations"
-msgstr ""
+msgstr "Réservations"
 
 msgid "Capacity"
-msgstr ""
+msgstr "Capacité"
 
 msgid "Price"
-msgstr ""
+msgstr "Prix"
 
 msgid "Night"
-msgstr ""
+msgstr "Nuit"
 
 msgid "Occupied"
-msgstr ""
+msgstr "Occupé"
 
 msgid "Status"
-msgstr ""
+msgstr "Statut"
 
 msgid "Available"
-msgstr ""
+msgstr "Disponible"
 
 msgid "To be cleaned"
-msgstr ""
+msgstr "A nettoyer"
 
 msgid "Edit Hotel Information"
-msgstr ""
+msgstr "Modifier les informations sur l'hôtel"
 
 msgid "General Settings"
-msgstr ""
+msgstr "réglages généraux"
 
 msgid "Management"
-msgstr ""
+msgstr "Gestion"
 
 msgid "Information"
-msgstr ""
+msgstr "Information"
 
 msgid "Photos"
-msgstr ""
+msgstr "Photos"
 
 msgid "Set room as occupied"
-msgstr ""
+msgstr "Définir la chambre comme occupée"
 
 msgid "Select from reservations for room"
-msgstr ""
+msgstr "Sélectionnez parmi les réservations de chambre"
 
 msgid "No reservations for this room"
-msgstr ""
+msgstr "Aucune réservation pour cette salle"
 
 msgid "Reservation"
-msgstr ""
+msgstr "Réservation"
 
 msgid "Select"
-msgstr ""
+msgstr "Sélectionner"
 
 msgid "Add Photos"
-msgstr ""
+msgstr "Ajouter des photos"
 
 msgid "Upload"
-msgstr ""
+msgstr "Télécharger"
 
 msgid "For partnerships contact us at"
-msgstr ""
+msgstr "Pour des partenariats contactez-nous au"
 
 msgid "Privacy Policy of Adventora"
-msgstr ""
+msgstr "Politique de confidentialité d'Adventora"
 
 msgid "Last updated: August 13, 2023."
-msgstr ""
+msgstr "Dernière mise à jour: 13 août 2023."
 
-msgid "This <strong>Privacy Policy ('Policy')</strong> explains how Adventora ('we', 'us', 'our') collects, uses, protects, and shares the personal information gathered from users ('you', 'your') of the website <strong>https://adventora.net</strong> ('Website'). This Policy highlights our commitment to data privacy, transparency, and compliance with relevant data protection laws and regulations."
+msgid ""
+"This <strong>Privacy Policy ('Policy')</strong> explains how Adventora "
+"('we', 'us', 'our') collects, uses, protects, and shares the personal "
+"information gathered from users ('you', 'your') of the website "
+"<strong>https://adventora.net</strong> ('Website'). This Policy highlights "
+"our commitment to data privacy, transparency, and compliance with relevant "
+"data protection laws and regulations."
 msgstr ""
+"Cette <strong>Politique de confidentialité (« Politique »)</strong> explique"
+" comment Adventora (« nous », « notre », « notre ») collecte, utilise, "
+"protège et partage les informations personnelles recueillies auprès des "
+"utilisateurs (« vous », 'votre') du site Internet "
+"<strong>https://adventora.net</strong> (« Site Internet »). Cette politique "
+"souligne notre engagement en faveur de la confidentialité des données, de la"
+" transparence et du respect des lois et réglementations pertinentes en "
+"matière de protection des données."
 
 msgid "1. Information Collection"
-msgstr ""
+msgstr "1. Collecte d'informations"
 
-msgid "We collect a variety of personal data from users to ensure the smooth operation of our booking services. This includes, but is not limited to:"
+msgid ""
+"We collect a variety of personal data from users to ensure the smooth "
+"operation of our booking services. This includes, but is not limited to:"
 msgstr ""
+"Nous collectons diverses données personnelles auprès des utilisateurs pour "
+"garantir le bon fonctionnement de nos services de réservation. Cela "
+"comprend, sans toutefois s'y limiter :"
 
 msgid "First and last name"
-msgstr ""
+msgstr "Nom et prénom"
 
 msgid "Email address"
-msgstr ""
+msgstr "Adresse e-mail"
 
 msgid "Username"
-msgstr ""
+msgstr "Nom d'utilisateur"
 
 msgid "Phone numbers"
-msgstr ""
+msgstr "Les numéros de téléphone"
 
 msgid "Citizenship"
-msgstr ""
+msgstr "Citoyenneté"
 
 msgid "For individuals designated as 'hotel manager', we also collect:"
 msgstr ""
+"Pour les personnes désignées comme « directeur d'hôtel », nous collectons "
+"également:"
 
 msgid "Hotel name"
-msgstr ""
+msgstr "Nom de l'Hotel"
 
 msgid "Manager's name"
-msgstr ""
+msgstr "Nom du gérant"
 
 msgid "Unique identification number of the hotel's company (EIK)"
-msgstr ""
+msgstr "Numéro d'identification unique de la société de l'hôtel (EIK)"
 
 msgid "Hotel phone number"
-msgstr ""
+msgstr "Numéro de téléphone de l'hôtel"
 
 msgid "Hotel email address"
-msgstr ""
+msgstr "Adresse e-mail de l'hôtel"
 
 msgid "Physical address of the hotel"
-msgstr ""
+msgstr "Adresse physique de l'hôtel"
 
 msgid "2. Purpose and Use of Data"
-msgstr ""
+msgstr "2. Finalité et utilisation des données"
 
-msgid "The collected personal information serves as a basis for smooth, secure, and efficient booking and reservations. Your data facilitate account management, responsive customer support, and critical communication. If identified as a hotel manager, certain details are shared with the establishment to optimize reservation monitoring."
+msgid ""
+"The collected personal information serves as a basis for smooth, secure, and"
+" efficient booking and reservations. Your data facilitate account "
+"management, responsive customer support, and critical communication. If "
+"identified as a hotel manager, certain details are shared with the "
+"establishment to optimize reservation monitoring."
 msgstr ""
+"Les informations personnelles collectées servent de base à une réservation "
+"fluide, sécurisée et efficace. Vos données facilitent la gestion des "
+"comptes, un support client réactif et une communication critique. S’il est "
+"identifié comme hôtelier, certaines informations sont partagées avec "
+"l’établissement pour optimiser le suivi des réservations."
 
 msgid "3. Engagement with Third-Party Services"
-msgstr ""
+msgstr "3. Engagement avec des services tiers"
 
-msgid "To enhance the user experience and expand our offerings, we engage reputable third-party services, including, but not limited to:"
+msgid ""
+"To enhance the user experience and expand our offerings, we engage reputable"
+" third-party services, including, but not limited to:"
 msgstr ""
+"Pour améliorer l'expérience utilisateur et élargir nos offres, nous faisons "
+"appel à des services tiers réputés, notamment, mais sans s'y limiter :"
 
 msgid "Google Analytics for detailed website analysis"
-msgstr ""
+msgstr "Google Analytics pour une analyse détaillée du site Web"
 
 msgid "Top-Rent-A-Car for promotional banners, widgets, and joint promotions"
 msgstr ""
+"Top-Rent-A-Car pour les bannières promotionnelles, les widgets et les "
+"promotions conjointes"
 
-msgid "Social services for login, including Google, GitHub, Reddit, Spotify, Trello, Patreon, Steam, VK, and Amazon"
+msgid ""
+"Social services for login, including Google, GitHub, Reddit, Spotify, "
+"Trello, Patreon, Steam, VK, and Amazon"
 msgstr ""
+"Services sociaux de connexion, notamment Google, GitHub, Reddit, Spotify, "
+"Trello, Patreon, Steam, VK et Amazon"
 
-msgid "Payment processing through reputable providers like Stripe and epay.bg for secure financial transactions"
+msgid ""
+"Payment processing through reputable providers like Stripe and epay.bg for "
+"secure financial transactions"
 msgstr ""
+"Traitement des paiements via des fournisseurs réputés comme Stripe et "
+"epay.bg pour des transactions financières sécurisées"
 
 msgid "4. Tracking Mechanisms and Cookies"
-msgstr ""
+msgstr "4. Mécanismes de suivi et cookies"
 
-msgid "Cookies serve as vital components of our digital architecture, contributing to the seamless retention of sessions and the preservation of data for personalization, such as theme settings and language preferences. In addition, certain third-party cookies may be used in conjunction with our respected partners."
+msgid ""
+"Cookies serve as vital components of our digital architecture, contributing "
+"to the seamless retention of sessions and the preservation of data for "
+"personalization, such as theme settings and language preferences. In "
+"addition, certain third-party cookies may be used in conjunction with our "
+"respected partners."
 msgstr ""
+"Les cookies constituent des composants essentiels de notre architecture "
+"numérique, contribuant à la conservation transparente des sessions et à la "
+"préservation des données à des fins de personnalisation, telles que les "
+"paramètres de thème et les préférences linguistiques. De plus, certains "
+"cookies tiers peuvent être utilisés en collaboration avec nos partenaires "
+"respectés."
 
 msgid "5. Data Retention Strategy"
-msgstr ""
+msgstr "5. Stratégie de conservation des données"
 
-msgid "User personal data continue to be stored in our systems for the duration of an active account. An option for account deletion is provided, allowing for the voluntary removal of associated data. For hotel managers, data related to the establishment is stored for up to one year to comply with security protocols and possible legal regulations."
+msgid ""
+"User personal data continue to be stored in our systems for the duration of "
+"an active account. An option for account deletion is provided, allowing for "
+"the voluntary removal of associated data. For hotel managers, data related "
+"to the establishment is stored for up to one year to comply with security "
+"protocols and possible legal regulations."
 msgstr ""
+"Les données personnelles des utilisateurs continuent d'être stockées dans "
+"nos systèmes pendant toute la durée d'un compte actif. Une option de "
+"suppression de compte est proposée, permettant la suppression volontaire des"
+" données associées. Pour les hôteliers, les données liées à l'établissement "
+"sont conservées jusqu'à un an pour respecter les protocoles de sécurité et "
+"les éventuelles réglementations légales."
 
 msgid "6. Robust Security Framework"
-msgstr ""
+msgstr "6. Cadre de sécurité robuste"
 
-msgid "With the help of modern encryption protocols that include a 512-character encryption key, we impose strict measures to protect sensitive data. Data is stored on a remote database server located in the European Union, secured with the comprehensive security infrastructure provided by Amazon Web Services."
+msgid ""
+"With the help of modern encryption protocols that include a 512-character "
+"encryption key, we impose strict measures to protect sensitive data. Data is"
+" stored on a remote database server located in the European Union, secured "
+"with the comprehensive security infrastructure provided by Amazon Web "
+"Services."
 msgstr ""
+"À l’aide de protocoles de cryptage modernes incluant une clé de cryptage de "
+"512 caractères, nous imposons des mesures strictes pour protéger les données"
+" sensibles. Les données sont stockées sur un serveur de base de données "
+"distant situé dans l'Union européenne, sécurisé par l'infrastructure de "
+"sécurité complète fournie par Amazon Web Services."
 
 msgid "7. Data Sharing and Collaborative Efforts"
-msgstr ""
+msgstr "7. Partage de données et efforts de collaboration"
 
-msgid "Certain user data, including email addresses, names, and contact numbers, are shared with hotels to facilitate effective reservation management. Beyond established partnerships, data sharing with external organizations is limited to data automatically collected by Google Analytics and Top-Rent-A-Car."
+msgid ""
+"Certain user data, including email addresses, names, and contact numbers, "
+"are shared with hotels to facilitate effective reservation management. "
+"Beyond established partnerships, data sharing with external organizations is"
+" limited to data automatically collected by Google Analytics and Top-Rent-A-"
+"Car."
 msgstr ""
+"Certaines données des utilisateurs, notamment les adresses e-mail, les noms "
+"et les numéros de contact, sont partagées avec les hôtels pour faciliter une"
+" gestion efficace des réservations. Au-delà des partenariats établis, le "
+"partage de données avec des organismes externes se limite aux données "
+"collectées automatiquement par Google Analytics et Top-Rent-A-Car."
 
 msgid "8. Cross-Border Data Transfers"
-msgstr ""
+msgstr "8. Transferts de données transfrontaliers"
 
-msgid "User personal data remain entirely within the European Union. In cases where your citizenship falls outside the EU, data may be transferred internationally for storage within the jurisdiction of the EU."
+msgid ""
+"User personal data remain entirely within the European Union. In cases where"
+" your citizenship falls outside the EU, data may be transferred "
+"internationally for storage within the jurisdiction of the EU."
 msgstr ""
+"Les données personnelles des utilisateurs restent entièrement au sein de "
+"l’Union européenne. Dans les cas où votre citoyenneté se situe en dehors de "
+"l'UE, les données peuvent être transférées à l'international pour être "
+"stockées dans la juridiction de l'UE."
 
 msgid "9. Protection of Children's Personal Information"
-msgstr ""
+msgstr "9. Protection des informations personnelles des enfants"
 
-msgid "Adventora is entirely aimed at legal adults. Due to the mandatory nature of collecting personal data for reservation purposes and payment processing, the platform is not intended for minors. Exceptions may arise when legal adults provide information on minors within the context of their booked vacation."
+msgid ""
+"Adventora is entirely aimed at legal adults. Due to the mandatory nature of "
+"collecting personal data for reservation purposes and payment processing, "
+"the platform is not intended for minors. Exceptions may arise when legal "
+"adults provide information on minors within the context of their booked "
+"vacation."
 msgstr ""
+"Adventora s’adresse entièrement aux adultes légaux. En raison du caractère "
+"obligatoire de la collecte des données personnelles à des fins de "
+"réservation et de traitement des paiements, la plateforme n'est pas destinée"
+" aux mineurs. Des exceptions peuvent survenir lorsque des adultes légaux "
+"fournissent des informations sur des mineurs dans le cadre de leurs vacances"
+" réservées."
 
 msgid "10. Notification of Policy Changes"
-msgstr ""
+msgstr "10. Notification des changements de politique"
 
-msgid "Changes or modifications to this Policy will be communicated via email and will be clearly displayed on the Website."
+msgid ""
+"Changes or modifications to this Policy will be communicated via email and "
+"will be clearly displayed on the Website."
 msgstr ""
+"Les changements ou modifications apportés à cette politique seront "
+"communiqués par courrier électronique et seront clairement affichés sur le "
+"site Web."
 
 msgid "11. Legitimate Basis for Data Processing"
-msgstr ""
+msgstr "11. Base légitime du traitement des données"
 
-msgid "The collection and processing of data are based on the mandatory execution of reservations and related reservation activities."
+msgid ""
+"The collection and processing of data are based on the mandatory execution "
+"of reservations and related reservation activities."
 msgstr ""
+"La collecte et le traitement des données sont basés sur l'exécution "
+"obligatoire des réservations et des activités de réservation associées."
 
 msgid "12. Implied Consent"
-msgstr ""
+msgstr "12. Consentement implicite"
 
-msgid "By using our platform and creating an account, you implicitly agree to the collection and processing of personal data, in accordance with this Policy."
+msgid ""
+"By using our platform and creating an account, you implicitly agree to the "
+"collection and processing of personal data, in accordance with this Policy."
 msgstr ""
+"En utilisant notre plateforme et en créant un compte, vous acceptez "
+"implicitement la collecte et le traitement des données personnelles, "
+"conformément à la présente Politique."
 
 msgid "13. Compliance with Applicable Regulations"
-msgstr ""
+msgstr "13. Conformité aux réglementations applicables"
 
-msgid "Our data processing procedures strictly adhere to the regulations and provisions set forth by the General Data Protection Regulation (GDPR)."
+msgid ""
+"Our data processing procedures strictly adhere to the regulations and "
+"provisions set forth by the General Data Protection Regulation (GDPR)."
 msgstr ""
+"Nos procédures de traitement des données respectent strictement les "
+"réglementations et dispositions édictées par le Règlement Général sur la "
+"Protection des Données (RGPD)."
 
-msgid "For questions, clarifications, or requests related to your personal data and this Policy, we inform you that you can contact us via the following contact: <a href='mailto:support@adventora.net'>hello@adventora.net</a>."
+msgid ""
+"For questions, clarifications, or requests related to your personal data and"
+" this Policy, we inform you that you can contact us via the following "
+"contact: <a href='mailto:support@adventora.net'>hello@adventora.net</a>."
 msgstr ""
+"Pour des questions, des éclaircissements ou des demandes liées à vos données"
+" personnelles et à cette Politique, nous vous informons que vous pouvez nous"
+" contacter via le contact suivant : <a "
+"href='mailto:support@adventora.net'>hello@adventora.net</ une>."
 
 msgid "Reserve Room"
-msgstr ""
+msgstr "Réserver une chambre"
 
 msgid "Price / Night"
-msgstr ""
+msgstr "Prix ​​/ Nuit"
 
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 msgid "Email"
-msgstr ""
+msgstr "E-mail"
 
 msgid "How many people?"
-msgstr ""
+msgstr "Combien de personnes?"
 
 msgid "How many nights?"
-msgstr ""
+msgstr "Combien de nuits?"
 
 msgid "TOTAL"
-msgstr ""
+msgstr "TOTAL"
 
 msgid "Username or email"
-msgstr ""
+msgstr "Nom d'utilisateur ou email"
 
 msgid "Password"
-msgstr ""
+msgstr "Mot de passe"
 
 msgid "Login"
-msgstr ""
+msgstr "Se connecter"
 
 msgid "The username must contain at least 8 characters."
-msgstr ""
+msgstr "Le nom d'utilisateur doit contenir au moins 8 caractères."
 
 msgid "First name"
-msgstr ""
+msgstr "Prénom"
 
 msgid "Last name"
-msgstr ""
+msgstr "Nom de famille"
 
 msgid "Email address must be valid"
-msgstr ""
+msgstr "L'adresse e-mail doit être valide"
 
-msgid "The password must be at least 8 characters long. <br> The password should not contain only digits. <br> The password should not contain only letters. <br> The password should not contain only special characters. <br> The password should not contain the username. <br> The password should not be a commonly used password."
+msgid ""
+"The password must be at least 8 characters long. <br> The password should "
+"not contain only digits. <br> The password should not contain only letters. "
+"<br> The password should not contain only special characters. <br> The "
+"password should not contain the username. <br> The password should not be a "
+"commonly used password."
 msgstr ""
+"Le mot de passe doit comporter au moins 8 caractères. <br> Le mot de passe "
+"ne doit pas contenir uniquement des chiffres. <br> Le mot de passe ne doit "
+"pas contenir uniquement des lettres. <br> Le mot de passe ne doit pas "
+"contenir uniquement des caractères spéciaux. <br> Le mot de passe ne doit "
+"pas contenir le nom d'utilisateur. <br> Le mot de passe ne doit pas être un "
+"mot de passe couramment utilisé."
 
 msgid "Confirm password"
-msgstr ""
+msgstr "Confirmez le mot de passe"
 
 msgid "Enter the same password as above, for verification."
-msgstr ""
+msgstr "Entrez le même mot de passe que ci-dessus, pour vérification."
 
 msgid "Sign up"
-msgstr ""
+msgstr "S'inscrire"
 
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
 msgstr ""
+"Vacancier - Explorez, planifiez et réservez vos activités de vacances "
+"idéales."
 
-msgid "Hotel Manager - Oversee operations and provide excellent service in your own hotel."
+msgid ""
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
 msgstr ""
+"Directeur d'hôtel - Supervisez les opérations et fournissez un excellent "
+"service dans votre propre hôtel."
 
-msgid "Employee - Contribute your expertise to a thriving workplace, such as a hotel or guest house."
+msgid ""
+"Employee - Contribute your expertise to a thriving workplace, such as a "
+"hotel or guest house."
 msgstr ""
+"Employé - Apportez votre expertise à un lieu de travail prospère, comme un "
+"hôtel ou une maison d'hôtes."
 
 msgid "Submit"
-msgstr ""
+msgstr "Soumettre"
 
 msgid "First Name"
-msgstr ""
+msgstr "Prénom"
 
 msgid "Last Name"
-msgstr ""
+msgstr "Nom de famille"
 
 msgid "Save"
-msgstr ""
+msgstr "Sauvegarder"
 
 msgid "The email must be valid."
-msgstr ""
+msgstr "L'email doit être valide."
 
 msgid "Phone"
-msgstr ""
+msgstr "Téléphone"
 
 msgid "Choose a Role"
-msgstr ""
+msgstr "Choisissez un rôle"
 
 msgid "Old Password"
-msgstr ""
+msgstr "ancien mot de passe"
 
 msgid "New Password"
-msgstr ""
+msgstr "nouveau mot de passe"
 
 msgid "Confirm New Password"
-msgstr ""
+msgstr "Confirmer le nouveau mot de passe"
 
 msgid "Enable"
-msgstr ""
+msgstr "Activer"
 
 msgid "Code"
-msgstr ""
+msgstr "Code"
 
 msgid "Disable"
-msgstr ""
+msgstr "Désactiver"
 
 msgid "User"
-msgstr ""
+msgstr "Utilisateur"
 
 msgid "Manager"
-msgstr ""
+msgstr "Directeur"
 
 msgid "Employee"
-msgstr ""
+msgstr "Employé"
 
 msgid "Malformed security token"
-msgstr ""
+msgstr "Jeton de sécurité mal formé"
 
 msgid "A user with that email already exists."
-msgstr ""
+msgstr "Un utilisateur avec cet email existe déjà."
 
 msgid "Password must be at least 8 characters long."
-msgstr ""
+msgstr "Le mot de passe doit comporter au moins 8 caractères."
 
 msgid "Passwords do not match."
-msgstr ""
+msgstr "Les mots de passe ne correspondent pas."
 
 msgid "Username must be at least 4 characters long."
-msgstr ""
+msgstr "Le nom d’utilisateur doit comporter au moins 4 caractères."
 
 msgid "Username should only contain letters and numbers."
 msgstr ""
+"Le nom d'utilisateur ne doit contenir que des lettres et des chiffres."
 
 msgid "Invalid email."
-msgstr ""
+msgstr "Email invalide."
 
 msgid "A user with that username already exists."
-msgstr ""
+msgstr "Un utilisateur avec ce pseudo existe déjà."
 
 msgid "Successfully registration."
-msgstr ""
+msgstr "Inscription réussie."
 
 msgid "Invalid data."
-msgstr ""
+msgstr "Données invalides."
 
 msgid "A user with that email does not exist."
-msgstr ""
+msgstr "Un utilisateur avec cette adresse e-mail n'existe pas."
 
 msgid "Successfully logged in."
-msgstr ""
+msgstr "Connecté avec succès."
 
 msgid "Invalid password."
-msgstr ""
+msgstr "Mot de passe incorrect."
 
 msgid "A user with that username does not exist."
-msgstr ""
+msgstr "Un utilisateur avec ce nom d'utilisateur n'existe pas."
 
 msgid "Successfully logged out."
-msgstr ""
+msgstr "Déconnexion réussie."
 
 msgid "Invalid role."
-msgstr ""
+msgstr "Rôle invalide."
 
 msgid "Successfully chosen role."
-msgstr ""
+msgstr "Rôle choisi avec succès."
 
 msgid "Successfully confirmed name."
-msgstr ""
+msgstr "Nom confirmé avec succès."
 
 msgid "Successfully confirmed email."
-msgstr ""
+msgstr "E-mail confirmé avec succès."
 
 msgid "Invalid username. At least 5 characters."
-msgstr ""
+msgstr "Nom d'utilisateur invalide. Au moins 5 caractères."
 
 msgid "Successfully confirmed username."
-msgstr ""
+msgstr "Nom d'utilisateur confirmé avec succès."
 
 msgid "Successfully edited profile."
-msgstr ""
+msgstr "Profil modifié avec succès."
 
 msgid "Incorrect old password."
-msgstr ""
+msgstr "Ancien mot de passe incorrect."
 
 msgid "Successfully changed password."
-msgstr ""
+msgstr "Mot de passe modifié avec succès."
 
 msgid "Incorrect password."
-msgstr ""
+msgstr "Mot de passe incorrect."
 
 msgid "Successfully deleted account."
-msgstr ""
+msgstr "Compte supprimé avec succès."
 
 msgid "Successfully confirmed citizenship."
-msgstr ""
+msgstr "Citoyenneté confirmée avec succès."
 
 msgid "Successfully confirmed phone number."
-msgstr ""
+msgstr "Numéro de téléphone confirmé avec succès."
 
 msgid "Two factor authentication is not enabled."
-msgstr ""
+msgstr "L'authentification à deux facteurs n'est pas activée."
 
 msgid "Two factor authentication is already passed."
-msgstr ""
+msgstr "L'authentification à deux facteurs est déjà réussie."
 
 msgid "Successfully passed two factor authentication"
-msgstr ""
+msgstr "Authentification à deux facteurs réussie"
 
 msgid "Invalid code."
-msgstr ""
+msgstr "Code invalide."
 
 msgid "Two factor authentication is already enabled."
-msgstr ""
+msgstr "L'authentification à deux facteurs est déjà activée."
 
 msgid "You cannot enable two factor authentication with a social login."
 msgstr ""
+"Vous ne pouvez pas activer l'authentification à deux facteurs avec une "
+"connexion sociale."
 
 msgid "Successfully enabled two factor authentication."
-msgstr ""
+msgstr "Activation réussie de l’authentification à deux facteurs."
 
 msgid "Successfully disabled two factor authentication."
-msgstr ""
+msgstr "L'authentification à deux facteurs a été désactivée avec succès."
 
 msgid "Invalid login data. Please try again."
-msgstr ""
+msgstr "Données de connexion invalides. Veuillez réessayer."
 
-msgid "To continue, you need to pass an automated security check. Please wait. if you are not redirected within 5 seconds, complete the captcha and click continue."
+msgid ""
+"To continue, you need to pass an automated security check. Please wait. if "
+"you are not redirected within 5 seconds, complete the captcha and click "
+"continue."
 msgstr ""
+"Pour continuer, vous devez passer un contrôle de sécurité automatisé. S'il "
+"vous plaît, attendez. si vous n'êtes pas redirigé dans les 5 secondes, "
+"complétez le captcha et cliquez sur continuer."
 
 msgid "Continue"
-msgstr ""
+msgstr "Continuer"
 
 msgid "Room not available"
-msgstr ""
+msgstr "Chambre non disponible"
 
 msgid "Invalid dates"
-msgstr ""
+msgstr "Dates invalides"
 
 msgid "Reservation successful"
-msgstr ""
+msgstr "Réservation réussie"
 
 msgid "Reservation not available"
-msgstr ""
+msgstr "Réservation non disponible"
 
 msgid "Invoice not available"
-msgstr ""
+msgstr "Facture non disponible"
 
 msgid "Hotel Name"
-msgstr ""
+msgstr "Nom de l'Hotel"
 
 msgid "Address"
-msgstr ""
+msgstr "Adresse"
 
 msgid "City"
-msgstr ""
+msgstr "Ville"
 
 msgid "Website"
-msgstr ""
+msgstr "Site web"
 
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 msgid "EIK"
-msgstr ""
+msgstr "EIK"
 
 msgid "Authorized Person"
-msgstr ""
+msgstr "Personne autorisée"
 
 msgid "Stars"
-msgstr ""
+msgstr "Étoiles"
 
-msgid "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy policy</a>"
+msgid ""
+"I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
+"policy</a>"
 msgstr ""
+"J'ai lu et j'accepte la <a href=\"/privacy\" target=\"_blank\">politique de "
+"confidentialité</a>"
 
-msgid "I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank\">terms and conditions</a>"
+msgid ""
+"I have read and agree to the <a href=\"/terms-of-use\" "
+"target=\"_blank\">terms and conditions</a>"
 msgstr ""
+"J'ai lu et j'accepte les <a href=\"/terms-of-use\" target=\"_blank\">termes "
+"et conditions</a>"
 
-msgid "I hereby certify, under penalty of law, that the information provided about myself and my hotel is accurate and complete to the best of my knowledge.<br> I understand that any false or misleading information provided may result in the immdiate suspesion of my hotel listing from Adventora and may lead to potential legal consequences."
+msgid ""
+"I hereby certify, under penalty of law, that the information provided about "
+"myself and my hotel is accurate and complete to the best of my "
+"knowledge.<br> I understand that any false or misleading information "
+"provided may result in the immdiate suspesion of my hotel listing from "
+"Adventora and may lead to potential legal consequences."
 msgstr ""
+"Je certifie par la présente, sous peine de poursuites judiciaires, que les "
+"informations fournies sur moi-même et sur mon hôtel sont exactes et "
+"complètes au meilleur de ma connaissance.<br> Je comprends que toute "
+"information fausse ou trompeuse fournie peut entraîner la suspension "
+"immédiate de mon hôtel. liste d'Adventora et peut entraîner des conséquences"
+" juridiques potentielles."
 
 msgid "Save Changes"
-msgstr ""
+msgstr "Sauvegarder les modifications"
 
 msgid "Room Number"
-msgstr ""
+msgstr "Numéro de chambre"
 
 msgid "Luxuries"
-msgstr ""
+msgstr "Luxes"
 
 msgid "Create Room"
-msgstr ""
+msgstr "Créer une chambre"
 
 msgid "Select Room"
-msgstr ""
+msgstr "Sélectionner une chambre"
 
 msgid "Check In"
-msgstr ""
+msgstr "Enregistrement"
 
 msgid "Check Out"
-msgstr ""
+msgstr "Vérifier"
 
 msgid "Guests"
-msgstr ""
+msgstr "Invités"
 
 msgid "ID Card Number"
-msgstr ""
+msgstr "Numéro de carte d'identité"
 
 msgid "Create Reservation"
-msgstr ""
+msgstr "Créer une réservation"
 
 msgid "No description provided."
-msgstr ""
+msgstr "Aucune description fournie."
 
 msgid "You do not have permission to view this page"
-msgstr ""
+msgstr "Vous n'êtes pas autorisé à consulter cette page"
 
 msgid "Your hotel is not approved yet"
-msgstr ""
+msgstr "Votre hôtel n'est pas encore approuvé"
 
 msgid "Successfully registered hotel"
-msgstr ""
+msgstr "Hôtel enregistré avec succès"
 
 msgid "Error while registering hotel"
-msgstr ""
+msgstr "Erreur lors de l'enregistrement de l'hôtel"
 
 msgid "You have already registered a hotel"
-msgstr ""
+msgstr "Vous avez déjà enregistré un hôtel"
 
 msgid "You have not registered a hotel yet"
-msgstr ""
+msgstr "Vous n'avez pas encore enregistré d'hôtel"
 
 msgid "Successfully confirmed address"
-msgstr ""
+msgstr "Adresse confirmée avec succès"
 
 msgid "Error while confirming address"
-msgstr ""
+msgstr "Erreur lors de la confirmation de l'adresse"
 
 msgid "No such hotel"
-msgstr ""
+msgstr "Il n'y a pas d'hôtel de ce type"
 
 msgid "We cannot find the hotel you are looking for"
-msgstr ""
+msgstr "Nous ne trouvons pas l'hôtel que vous recherchez"
 
 msgid "Successfully added room"
-msgstr ""
+msgstr "Salle ajoutée avec succès"
 
 msgid "Error while adding room"
-msgstr ""
+msgstr "Erreur lors de l'ajout de pièce"
 
 msgid "We cannot find the room you are looking for"
-msgstr ""
+msgstr "Nous ne trouvons pas la chambre que vous recherchez"
 
 msgid "Successfully updated hotel"
-msgstr ""
+msgstr "Hôtel mis à jour avec succès"
 
 msgid "Error while updating hotel"
-msgstr ""
+msgstr "Erreur lors de la mise à jour de l'hôtel"
 
 msgid "Successfully updated room status"
-msgstr ""
+msgstr "Statut de la chambre mis à jour avec succès"
 
 msgid "Invalid status"
-msgstr ""
+msgstr "Statut invalide"
 
 msgid "This room is already occupied"
-msgstr ""
+msgstr "Cette chambre est déjà occupée"
 
 msgid "We cannot find the reservation you are looking for"
-msgstr ""
+msgstr "Nous ne trouvons pas la réservation que vous recherchez"
 
 msgid "This reservation is already completed"
-msgstr ""
+msgstr "Cette réservation est déjà complétée"
 
 msgid "This reservation is already cancelled"
-msgstr ""
+msgstr "Cette réservation est déjà annulée"
 
 msgid "This reservation is already expired"
-msgstr ""
+msgstr "Cette réservation est déjà expirée"
 
 msgid "This reservation is already rejected"
-msgstr ""
+msgstr "Cette réserve est déjà rejetée"
 
 msgid "Successfully occupied room"
-msgstr ""
+msgstr "Chambre occupée avec succès"
 
 msgid "Successfully deleted room"
-msgstr ""
+msgstr "Salle supprimée avec succès"
 
 msgid "Successfully added reservation"
-msgstr ""
+msgstr "Réservation ajoutée avec succès"
 
 msgid "Successfully uploaded photos"
-msgstr ""
+msgstr "Photos téléchargées avec succès"
 
 msgid "Successfully deleted photo"
-msgstr ""
+msgstr "Photo supprimée avec succès"
 
 msgid "Photo not found"
-msgstr ""
+msgstr "Photo introuvable"
 
 msgid "Successfully updated room"
-msgstr ""
+msgstr "Chambre mise à jour avec succès"

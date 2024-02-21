@@ -16,782 +16,953 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
 msgid "Not confirmed"
-msgstr ""
+msgstr "Не подтверждено"
 
 msgid "Send confirmation email again."
-msgstr ""
+msgstr "Отправьте электронное письмо с подтверждением еще раз."
 
 msgid "Confirmed"
-msgstr ""
+msgstr "Подтвержденный"
 
 msgid "Turned On"
-msgstr ""
+msgstr "Включенный"
 
 msgid "Turn off"
-msgstr ""
+msgstr "Выключать"
 
 msgid "Turned Off"
-msgstr ""
+msgstr "Выключен"
 
 msgid "Turn on"
-msgstr ""
+msgstr "Включать"
 
 msgid "My Reservations"
-msgstr ""
+msgstr "Мои бронирования"
 
 msgid "Change password"
-msgstr ""
+msgstr "Изменить пароль"
 
 msgid "Delete Account"
-msgstr ""
+msgstr "Удалить аккаунт"
 
 msgid "Room"
-msgstr ""
+msgstr "Комната"
 
 msgid "Nights"
-msgstr ""
+msgstr "Ночи"
 
 msgid "Check-in"
-msgstr ""
+msgstr "Регистрироваться"
 
 msgid "Check-out"
-msgstr ""
+msgstr "Проверить"
 
 msgid "Total"
-msgstr ""
+msgstr "Общий"
 
 msgid "Invoice"
-msgstr ""
+msgstr "Счет"
 
 msgid "Hotel"
-msgstr ""
+msgstr "Гостиница"
 
 msgid "Login with Google"
-msgstr ""
+msgstr "Войти через Google"
 
 msgid "Login with Trello"
-msgstr ""
+msgstr "Войти через Трелло"
 
 msgid "Login with GitHub"
-msgstr ""
+msgstr "Войти через GitHub"
 
 msgid "Login with Reddit"
-msgstr ""
+msgstr "Войти через Reddit"
 
 msgid "Login with Steam"
-msgstr ""
+msgstr "Войти через Steam"
 
 msgid "Login with Spotify."
-msgstr ""
+msgstr "Войдите через Spotify."
 
 msgid "Login with VK"
-msgstr ""
+msgstr "Войти через ВК"
 
 msgid "Please enter your two-factor verification code"
-msgstr ""
+msgstr "Пожалуйста, введите код двухфакторной проверки"
 
 msgid "Home"
-msgstr ""
+msgstr "Дом"
 
 msgid "Hotels"
-msgstr ""
+msgstr "Отели"
 
 msgid "Dashboard"
-msgstr ""
+msgstr "Панель приборов"
 
 msgid "Error"
-msgstr ""
+msgstr "Ошибка"
 
 msgid "Success"
-msgstr ""
+msgstr "Успех"
 
 msgid "Warning"
-msgstr ""
+msgstr "Предупреждение"
 
 msgid "Adventora supports small, medium and large businesses"
-msgstr ""
+msgstr "Adventora поддерживает малый, средний и крупный бизнес"
 
 msgid "All Rights Reserved"
-msgstr ""
+msgstr "Все права защищены"
 
 msgid "Homepage"
-msgstr ""
+msgstr "Домашняя страница"
 
 msgid "About us"
-msgstr ""
+msgstr "О нас"
 
 msgid "Privacy"
-msgstr ""
+msgstr "Конфиденциальность"
 
 msgid "Terms of use"
-msgstr ""
+msgstr "Условия эксплуатации"
 
 msgid "Contacts"
-msgstr ""
+msgstr "Контакты"
 
 msgid "Partnerships"
-msgstr ""
+msgstr "Партнерские отношения"
 
 msgid "Emergency"
-msgstr ""
+msgstr "Чрезвычайная ситуация"
 
 msgid "Stranded Abroad"
-msgstr ""
+msgstr "Застрял за границей"
 
 msgid "In case of fire, medical or police emergency"
-msgstr ""
+msgstr "В случае пожара, медицинской или полицейской чрезвычайной ситуации"
 
 msgid "contact the single european emergency nunmber"
-msgstr ""
+msgstr "позвоните по единому европейскому номеру службы экстренной помощи"
 
 msgid "It is dial without code, just 112 when in any country of the EU"
-msgstr ""
+msgstr "Это набор без кода, всего 112 в любой стране ЕС."
 
 msgid "Welcome to Adventora"
-msgstr ""
+msgstr "Добро пожаловать в Адвентора"
 
 msgid "Find your perfect stay with us"
-msgstr ""
+msgstr "Найдите свой идеальный отдых с нами"
 
 msgid "Registered hotels"
-msgstr ""
+msgstr "Зарегистрированные отели"
 
 msgid "Happy Customers"
-msgstr ""
+msgstr "Счастливые клиенты"
 
 msgid "Total Reservations"
-msgstr ""
+msgstr "Всего бронирований"
 
 msgid "View more"
-msgstr ""
+msgstr "Посмотреть больше"
 
 msgid "Reserve"
-msgstr ""
+msgstr "Бронировать"
 
 msgid "Admin"
-msgstr ""
+msgstr "Админ"
 
 msgid "Add Reservation"
-msgstr ""
+msgstr "Добавить бронирование"
 
-msgid "Your hotel is not yet approved. Allow us to confirm your info within 48 hours."
+msgid ""
+"Your hotel is not yet approved. Allow us to confirm your info within 48 "
+"hours."
 msgstr ""
+"Ваш отель еще не одобрен. Позвольте нам подтвердить вашу информацию в "
+"течение 48 часов."
 
 msgid "You don't have a hotel"
-msgstr ""
+msgstr "У вас нет отеля"
 
 msgid "Register Hotel"
-msgstr ""
+msgstr "Зарегистрировать отель"
 
 msgid "Rooms"
-msgstr ""
+msgstr "Номера"
 
 msgid "Add"
-msgstr ""
+msgstr "Добавлять"
 
 msgid "Confirm Address"
-msgstr ""
+msgstr "Подтвердите адрес"
 
 msgid "Reservations"
-msgstr ""
+msgstr "Бронирование"
 
 msgid "Capacity"
-msgstr ""
+msgstr "Емкость"
 
 msgid "Price"
-msgstr ""
+msgstr "Цена"
 
 msgid "Night"
-msgstr ""
+msgstr "Ночь"
 
 msgid "Occupied"
-msgstr ""
+msgstr "Оккупированный"
 
 msgid "Status"
-msgstr ""
+msgstr "Положение дел"
 
 msgid "Available"
-msgstr ""
+msgstr "Доступный"
 
 msgid "To be cleaned"
-msgstr ""
+msgstr "Быть очищенным"
 
 msgid "Edit Hotel Information"
-msgstr ""
+msgstr "Редактировать информацию об отеле"
 
 msgid "General Settings"
-msgstr ""
+msgstr "общие настройки"
 
 msgid "Management"
-msgstr ""
+msgstr "Управление"
 
 msgid "Information"
-msgstr ""
+msgstr "Информация"
 
 msgid "Photos"
-msgstr ""
+msgstr "Фото"
 
 msgid "Set room as occupied"
-msgstr ""
+msgstr "Установить комнату как занятую"
 
 msgid "Select from reservations for room"
-msgstr ""
+msgstr "Выбрать из бронирования номер"
 
 msgid "No reservations for this room"
-msgstr ""
+msgstr "Нет бронирования для этого номера"
 
 msgid "Reservation"
-msgstr ""
+msgstr "Бронирование"
 
 msgid "Select"
-msgstr ""
+msgstr "Выбирать"
 
 msgid "Add Photos"
-msgstr ""
+msgstr "Добавить фотографии"
 
 msgid "Upload"
-msgstr ""
+msgstr "Загрузить"
 
 msgid "For partnerships contact us at"
-msgstr ""
+msgstr "По вопросам партнерства свяжитесь с нами по тел."
 
 msgid "Privacy Policy of Adventora"
-msgstr ""
+msgstr "Политика конфиденциальности Адвенторы"
 
 msgid "Last updated: August 13, 2023."
-msgstr ""
+msgstr "Последнее обновление: 13 августа 2023 г."
 
-msgid "This <strong>Privacy Policy ('Policy')</strong> explains how Adventora ('we', 'us', 'our') collects, uses, protects, and shares the personal information gathered from users ('you', 'your') of the website <strong>https://adventora.net</strong> ('Website'). This Policy highlights our commitment to data privacy, transparency, and compliance with relevant data protection laws and regulations."
+msgid ""
+"This <strong>Privacy Policy ('Policy')</strong> explains how Adventora "
+"('we', 'us', 'our') collects, uses, protects, and shares the personal "
+"information gathered from users ('you', 'your') of the website "
+"<strong>https://adventora.net</strong> ('Website'). This Policy highlights "
+"our commitment to data privacy, transparency, and compliance with relevant "
+"data protection laws and regulations."
 msgstr ""
+"Эта <strong>Политика конфиденциальности («Политика»)</strong> объясняет, как"
+" Adventora («мы», «нас», «наш») собирает, использует, защищает и передает "
+"личную информацию, полученную от пользователей («вы», «ваш») веб-сайта "
+"<strong>https://adventora.net</strong> («Веб-сайт»). Эта Политика "
+"подчеркивает нашу приверженность конфиденциальности и прозрачности данных, а"
+" также соблюдению соответствующих законов и правил о защите данных."
 
 msgid "1. Information Collection"
-msgstr ""
+msgstr "1. Сбор информации"
 
-msgid "We collect a variety of personal data from users to ensure the smooth operation of our booking services. This includes, but is not limited to:"
+msgid ""
+"We collect a variety of personal data from users to ensure the smooth "
+"operation of our booking services. This includes, but is not limited to:"
 msgstr ""
+"Мы собираем различные персональные данные от пользователей, чтобы обеспечить"
+" бесперебойную работу наших служб бронирования. Это включает, но не "
+"ограничивается:"
 
 msgid "First and last name"
-msgstr ""
+msgstr "Имя и фамилия"
 
 msgid "Email address"
-msgstr ""
+msgstr "Адрес электронной почты"
 
 msgid "Username"
-msgstr ""
+msgstr "Имя пользователя"
 
 msgid "Phone numbers"
-msgstr ""
+msgstr "Телефонные номера"
 
 msgid "Citizenship"
-msgstr ""
+msgstr "Гражданство"
 
 msgid "For individuals designated as 'hotel manager', we also collect:"
-msgstr ""
+msgstr "Для лиц, обозначенных как «управляющий отелем», мы также собираем:"
 
 msgid "Hotel name"
-msgstr ""
+msgstr "Название отеля"
 
 msgid "Manager's name"
-msgstr ""
+msgstr "Имя менеджера"
 
 msgid "Unique identification number of the hotel's company (EIK)"
-msgstr ""
+msgstr "Уникальный идентификационный номер компании отеля (EIK)"
 
 msgid "Hotel phone number"
-msgstr ""
+msgstr "Телефон отеля"
 
 msgid "Hotel email address"
-msgstr ""
+msgstr "Адрес электронной почты отеля"
 
 msgid "Physical address of the hotel"
-msgstr ""
+msgstr "Физический адрес отеля"
 
 msgid "2. Purpose and Use of Data"
-msgstr ""
+msgstr "2. Цель и использование данных"
 
-msgid "The collected personal information serves as a basis for smooth, secure, and efficient booking and reservations. Your data facilitate account management, responsive customer support, and critical communication. If identified as a hotel manager, certain details are shared with the establishment to optimize reservation monitoring."
+msgid ""
+"The collected personal information serves as a basis for smooth, secure, and"
+" efficient booking and reservations. Your data facilitate account "
+"management, responsive customer support, and critical communication. If "
+"identified as a hotel manager, certain details are shared with the "
+"establishment to optimize reservation monitoring."
 msgstr ""
+"Собранная личная информация служит основой для беспрепятственного, "
+"безопасного и эффективного бронирования. Ваши данные облегчают управление "
+"учетными записями, быструю поддержку клиентов и критически важное общение. "
+"Если вы идентифицируетесь как менеджер отеля, определенные сведения "
+"передаются заведению для оптимизации мониторинга бронирования."
 
 msgid "3. Engagement with Third-Party Services"
-msgstr ""
+msgstr "3. Взаимодействие со сторонними сервисами"
 
-msgid "To enhance the user experience and expand our offerings, we engage reputable third-party services, including, but not limited to:"
+msgid ""
+"To enhance the user experience and expand our offerings, we engage reputable"
+" third-party services, including, but not limited to:"
 msgstr ""
+"Чтобы улучшить взаимодействие с пользователем и расширить наши предложения, "
+"мы привлекаем авторитетные сторонние сервисы, включая, помимо прочего:"
 
 msgid "Google Analytics for detailed website analysis"
-msgstr ""
+msgstr "Google Analytics для детального анализа сайта"
 
 msgid "Top-Rent-A-Car for promotional banners, widgets, and joint promotions"
-msgstr ""
+msgstr "Top-Rent-A-Car для рекламных баннеров, виджетов и совместных акций"
 
-msgid "Social services for login, including Google, GitHub, Reddit, Spotify, Trello, Patreon, Steam, VK, and Amazon"
+msgid ""
+"Social services for login, including Google, GitHub, Reddit, Spotify, "
+"Trello, Patreon, Steam, VK, and Amazon"
 msgstr ""
+"Социальные сервисы для входа, включая Google, GitHub, Reddit, Spotify, "
+"Trello, Patreon, Steam, VK и Amazon."
 
-msgid "Payment processing through reputable providers like Stripe and epay.bg for secure financial transactions"
+msgid ""
+"Payment processing through reputable providers like Stripe and epay.bg for "
+"secure financial transactions"
 msgstr ""
+"Обработка платежей через надежных поставщиков, таких как Stripe и epay.bg, "
+"для обеспечения безопасности финансовых транзакций."
 
 msgid "4. Tracking Mechanisms and Cookies"
-msgstr ""
+msgstr "4. Механизмы отслеживания и файлы cookie"
 
-msgid "Cookies serve as vital components of our digital architecture, contributing to the seamless retention of sessions and the preservation of data for personalization, such as theme settings and language preferences. In addition, certain third-party cookies may be used in conjunction with our respected partners."
+msgid ""
+"Cookies serve as vital components of our digital architecture, contributing "
+"to the seamless retention of sessions and the preservation of data for "
+"personalization, such as theme settings and language preferences. In "
+"addition, certain third-party cookies may be used in conjunction with our "
+"respected partners."
 msgstr ""
+"Файлы cookie служат жизненно важными компонентами нашей цифровой "
+"архитектуры, способствуя бесперебойному сохранению сеансов и сохранению "
+"данных для персонализации, таких как настройки темы и языковые настройки. "
+"Кроме того, некоторые сторонние файлы cookie могут использоваться совместно "
+"с нашими уважаемыми партнерами."
 
 msgid "5. Data Retention Strategy"
-msgstr ""
+msgstr "5. Стратегия хранения данных"
 
-msgid "User personal data continue to be stored in our systems for the duration of an active account. An option for account deletion is provided, allowing for the voluntary removal of associated data. For hotel managers, data related to the establishment is stored for up to one year to comply with security protocols and possible legal regulations."
+msgid ""
+"User personal data continue to be stored in our systems for the duration of "
+"an active account. An option for account deletion is provided, allowing for "
+"the voluntary removal of associated data. For hotel managers, data related "
+"to the establishment is stored for up to one year to comply with security "
+"protocols and possible legal regulations."
 msgstr ""
+"Персональные данные пользователя продолжают храниться в наших системах в "
+"течение всего срока действия активной учетной записи. Предусмотрена "
+"возможность удаления учетной записи, позволяющая добровольно удалить "
+"связанные данные. Для менеджеров отелей данные, относящиеся к заведению, "
+"хранятся до одного года в целях соблюдения протоколов безопасности и "
+"возможных правовых норм."
 
 msgid "6. Robust Security Framework"
-msgstr ""
+msgstr "6. Надежная система безопасности"
 
-msgid "With the help of modern encryption protocols that include a 512-character encryption key, we impose strict measures to protect sensitive data. Data is stored on a remote database server located in the European Union, secured with the comprehensive security infrastructure provided by Amazon Web Services."
+msgid ""
+"With the help of modern encryption protocols that include a 512-character "
+"encryption key, we impose strict measures to protect sensitive data. Data is"
+" stored on a remote database server located in the European Union, secured "
+"with the comprehensive security infrastructure provided by Amazon Web "
+"Services."
 msgstr ""
+"С помощью современных протоколов шифрования, включающих 512-значный ключ "
+"шифрования, мы применяем строгие меры по защите конфиденциальных данных. "
+"Данные хранятся на удаленном сервере базы данных, расположенном в "
+"Европейском Союзе, защищенном комплексной инфраструктурой безопасности, "
+"предоставляемой Amazon Web Services."
 
 msgid "7. Data Sharing and Collaborative Efforts"
-msgstr ""
+msgstr "7. Обмен данными и совместные усилия"
 
-msgid "Certain user data, including email addresses, names, and contact numbers, are shared with hotels to facilitate effective reservation management. Beyond established partnerships, data sharing with external organizations is limited to data automatically collected by Google Analytics and Top-Rent-A-Car."
+msgid ""
+"Certain user data, including email addresses, names, and contact numbers, "
+"are shared with hotels to facilitate effective reservation management. "
+"Beyond established partnerships, data sharing with external organizations is"
+" limited to data automatically collected by Google Analytics and Top-Rent-A-"
+"Car."
 msgstr ""
+"Определенные данные пользователей, включая адреса электронной почты, имена и"
+" контактные телефоны, передаются отелям для облегчения эффективного "
+"управления бронированием. Помимо установленных партнерских отношений, обмен "
+"данными с внешними организациями ограничивается данными, автоматически "
+"собираемыми Google Analytics и Top-Rent-A-Car."
 
 msgid "8. Cross-Border Data Transfers"
-msgstr ""
+msgstr "8. Трансграничная передача данных"
 
-msgid "User personal data remain entirely within the European Union. In cases where your citizenship falls outside the EU, data may be transferred internationally for storage within the jurisdiction of the EU."
+msgid ""
+"User personal data remain entirely within the European Union. In cases where"
+" your citizenship falls outside the EU, data may be transferred "
+"internationally for storage within the jurisdiction of the EU."
 msgstr ""
+"Персональные данные пользователя остаются полностью на территории "
+"Европейского Союза. В случаях, когда ваше гражданство выходит за пределы ЕС,"
+" данные могут быть переданы на международном уровне для хранения в пределах "
+"юрисдикции ЕС."
 
 msgid "9. Protection of Children's Personal Information"
-msgstr ""
+msgstr "9. Защита личной информации детей"
 
-msgid "Adventora is entirely aimed at legal adults. Due to the mandatory nature of collecting personal data for reservation purposes and payment processing, the platform is not intended for minors. Exceptions may arise when legal adults provide information on minors within the context of their booked vacation."
+msgid ""
+"Adventora is entirely aimed at legal adults. Due to the mandatory nature of "
+"collecting personal data for reservation purposes and payment processing, "
+"the platform is not intended for minors. Exceptions may arise when legal "
+"adults provide information on minors within the context of their booked "
+"vacation."
 msgstr ""
+"Adventora полностью ориентирована на совершеннолетних законных лиц. В связи "
+"с обязательным характером сбора персональных данных для целей бронирования и"
+" обработки платежей платформа не предназначена для несовершеннолетних. "
+"Исключения могут возникнуть, когда совершеннолетние совершеннолетние "
+"предоставляют информацию о несовершеннолетних в контексте забронированного "
+"ими отпуска."
 
 msgid "10. Notification of Policy Changes"
-msgstr ""
+msgstr "10. Уведомление об изменениях политики"
 
-msgid "Changes or modifications to this Policy will be communicated via email and will be clearly displayed on the Website."
+msgid ""
+"Changes or modifications to this Policy will be communicated via email and "
+"will be clearly displayed on the Website."
 msgstr ""
+"Об изменениях или модификациях настоящей Политики будет сообщено по "
+"электронной почте и будет четко отображено на Веб-сайте."
 
 msgid "11. Legitimate Basis for Data Processing"
-msgstr ""
+msgstr "11. Законное основание для обработки данных"
 
-msgid "The collection and processing of data are based on the mandatory execution of reservations and related reservation activities."
+msgid ""
+"The collection and processing of data are based on the mandatory execution "
+"of reservations and related reservation activities."
 msgstr ""
+"Сбор и обработка данных основаны на обязательном выполнении бронирования и "
+"связанных с ним действиях по бронированию."
 
 msgid "12. Implied Consent"
-msgstr ""
+msgstr "12. Подразумеваемое согласие"
 
-msgid "By using our platform and creating an account, you implicitly agree to the collection and processing of personal data, in accordance with this Policy."
+msgid ""
+"By using our platform and creating an account, you implicitly agree to the "
+"collection and processing of personal data, in accordance with this Policy."
 msgstr ""
+"Используя нашу платформу и создавая учетную запись, вы безоговорочно "
+"соглашаетесь на сбор и обработку персональных данных в соответствии с "
+"настоящей Политикой."
 
 msgid "13. Compliance with Applicable Regulations"
-msgstr ""
+msgstr "13. Соблюдение применимых правил"
 
-msgid "Our data processing procedures strictly adhere to the regulations and provisions set forth by the General Data Protection Regulation (GDPR)."
+msgid ""
+"Our data processing procedures strictly adhere to the regulations and "
+"provisions set forth by the General Data Protection Regulation (GDPR)."
 msgstr ""
+"Наши процедуры обработки данных строго придерживаются правил и положений, "
+"изложенных Общим правилом защиты данных (GDPR)."
 
-msgid "For questions, clarifications, or requests related to your personal data and this Policy, we inform you that you can contact us via the following contact: <a href='mailto:support@adventora.net'>hello@adventora.net</a>."
+msgid ""
+"For questions, clarifications, or requests related to your personal data and"
+" this Policy, we inform you that you can contact us via the following "
+"contact: <a href='mailto:support@adventora.net'>hello@adventora.net</a>."
 msgstr ""
+"По вопросам, разъяснениям или запросам, связанным с вашими личными данными и"
+" настоящей Политикой, мы сообщаем вам, что вы можете связаться с нами по "
+"следующему контакту: <a "
+"href='mailto:support@adventora.net'>hello@adventora.net</ а>."
 
 msgid "Reserve Room"
-msgstr ""
+msgstr "Забронировать номер"
 
 msgid "Price / Night"
-msgstr ""
+msgstr "Цена/Ночь"
 
 msgid "Name"
-msgstr ""
+msgstr "Имя"
 
 msgid "Email"
-msgstr ""
+msgstr "Электронная почта"
 
 msgid "How many people?"
-msgstr ""
+msgstr "Сколько людей?"
 
 msgid "How many nights?"
-msgstr ""
+msgstr "Сколько ночей?"
 
 msgid "TOTAL"
-msgstr ""
+msgstr "ОБЩИЙ"
 
 msgid "Username or email"
-msgstr ""
+msgstr "Имя пользователя или адрес электронной почты"
 
 msgid "Password"
-msgstr ""
+msgstr "Пароль"
 
 msgid "Login"
-msgstr ""
+msgstr "Авторизоваться"
 
 msgid "The username must contain at least 8 characters."
-msgstr ""
+msgstr "Имя пользователя должно содержать не менее 8 символов."
 
 msgid "First name"
-msgstr ""
+msgstr "Имя"
 
 msgid "Last name"
-msgstr ""
+msgstr "Фамилия"
 
 msgid "Email address must be valid"
-msgstr ""
+msgstr "Адрес электронной почты должен быть действительным"
 
-msgid "The password must be at least 8 characters long. <br> The password should not contain only digits. <br> The password should not contain only letters. <br> The password should not contain only special characters. <br> The password should not contain the username. <br> The password should not be a commonly used password."
+msgid ""
+"The password must be at least 8 characters long. <br> The password should "
+"not contain only digits. <br> The password should not contain only letters. "
+"<br> The password should not contain only special characters. <br> The "
+"password should not contain the username. <br> The password should not be a "
+"commonly used password."
 msgstr ""
+"Длина пароля должна быть не менее 8 символов. <br> Пароль не должен "
+"содержать только цифры. <br> Пароль не должен состоять только из букв. <br> "
+"Пароль не должен содержать только специальные символы. <br> Пароль не должен"
+" содержать имя пользователя. <br> Пароль не должен быть широко используемым."
 
 msgid "Confirm password"
-msgstr ""
+msgstr "Подтвердите пароль"
 
 msgid "Enter the same password as above, for verification."
-msgstr ""
+msgstr "Введите тот же пароль, что и выше, для проверки."
 
 msgid "Sign up"
-msgstr ""
+msgstr "Зарегистрироваться"
 
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
 msgstr ""
+"Отдыхающий — исследуйте, планируйте и бронируйте идеальные развлечения для "
+"отпуска."
 
-msgid "Hotel Manager - Oversee operations and provide excellent service in your own hotel."
+msgid ""
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
 msgstr ""
+"Менеджер отеля. Контролируйте работу и обеспечивайте отличный сервис в "
+"собственном отеле."
 
-msgid "Employee - Contribute your expertise to a thriving workplace, such as a hotel or guest house."
+msgid ""
+"Employee - Contribute your expertise to a thriving workplace, such as a "
+"hotel or guest house."
 msgstr ""
+"Сотрудник - внесите свой опыт на процветающее рабочее место, например, отель"
+" или гостевой дом."
 
 msgid "Submit"
-msgstr ""
+msgstr "Представлять на рассмотрение"
 
 msgid "First Name"
-msgstr ""
+msgstr "Имя"
 
 msgid "Last Name"
-msgstr ""
+msgstr "Фамилия"
 
 msgid "Save"
-msgstr ""
+msgstr "Сохранять"
 
 msgid "The email must be valid."
-msgstr ""
+msgstr "Электронная почта должна быть действительной."
 
 msgid "Phone"
-msgstr ""
+msgstr "Телефон"
 
 msgid "Choose a Role"
-msgstr ""
+msgstr "Выберите роль"
 
 msgid "Old Password"
-msgstr ""
+msgstr "Старый пароль"
 
 msgid "New Password"
-msgstr ""
+msgstr "Новый пароль"
 
 msgid "Confirm New Password"
-msgstr ""
+msgstr "Подтвердите новый пароль"
 
 msgid "Enable"
-msgstr ""
+msgstr "Давать возможность"
 
 msgid "Code"
-msgstr ""
+msgstr "Код"
 
 msgid "Disable"
-msgstr ""
+msgstr "Запрещать"
 
 msgid "User"
-msgstr ""
+msgstr "Пользователь"
 
 msgid "Manager"
-msgstr ""
+msgstr "Менеджер"
 
 msgid "Employee"
-msgstr ""
+msgstr "Сотрудник"
 
 msgid "Malformed security token"
-msgstr ""
+msgstr "Токен по узолованию безопасности"
 
 msgid "A user with that email already exists."
-msgstr ""
+msgstr "Пользователь с таким почтовым ящиком уже существует."
 
 msgid "Password must be at least 8 characters long."
-msgstr ""
+msgstr "Пароль должен быть длиной не менее 8 символов."
 
 msgid "Passwords do not match."
-msgstr ""
+msgstr "Пароли не совпадают."
 
 msgid "Username must be at least 4 characters long."
-msgstr ""
+msgstr "Имя пользователя должно быть длиной не менее 4 символов."
 
 msgid "Username should only contain letters and numbers."
-msgstr ""
+msgstr "Имя пользователя должно содержать только буквы и цифры."
 
 msgid "Invalid email."
-msgstr ""
+msgstr "Неверный адрес электронной почты."
 
 msgid "A user with that username already exists."
-msgstr ""
+msgstr "Пользователь с таким именем уже существует."
 
 msgid "Successfully registration."
-msgstr ""
+msgstr "Успешная регистрация."
 
 msgid "Invalid data."
-msgstr ""
+msgstr "Неверные данные."
 
 msgid "A user with that email does not exist."
-msgstr ""
+msgstr "Пользователь с таким адресом электронной почты не существует."
 
 msgid "Successfully logged in."
-msgstr ""
+msgstr "Успешно авторизован."
 
 msgid "Invalid password."
-msgstr ""
+msgstr "Неверный пароль."
 
 msgid "A user with that username does not exist."
-msgstr ""
+msgstr "Пользователь с этим именем пользователя не существует."
 
 msgid "Successfully logged out."
-msgstr ""
+msgstr "Успешно вышел из системы."
 
 msgid "Invalid role."
-msgstr ""
+msgstr "Неверная роль."
 
 msgid "Successfully chosen role."
-msgstr ""
+msgstr "Удачно выбранная роль."
 
 msgid "Successfully confirmed name."
-msgstr ""
+msgstr "Имя успешно подтверждено."
 
 msgid "Successfully confirmed email."
-msgstr ""
+msgstr "Успешно подтверждено электронное письмо."
 
 msgid "Invalid username. At least 5 characters."
-msgstr ""
+msgstr "Неверное имя пользователя. Не менее 5 символов."
 
 msgid "Successfully confirmed username."
-msgstr ""
+msgstr "Имя пользователя успешно подтверждено."
 
 msgid "Successfully edited profile."
-msgstr ""
+msgstr "Успешно отредактированный профиль."
 
 msgid "Incorrect old password."
-msgstr ""
+msgstr "Неправильный старый пароль."
 
 msgid "Successfully changed password."
-msgstr ""
+msgstr "Успешно изменил пароль."
 
 msgid "Incorrect password."
-msgstr ""
+msgstr "Неверный пароль."
 
 msgid "Successfully deleted account."
-msgstr ""
+msgstr "Успешно удалил аккаунт."
 
 msgid "Successfully confirmed citizenship."
-msgstr ""
+msgstr "Успешно подтвердил гражданство."
 
 msgid "Successfully confirmed phone number."
-msgstr ""
+msgstr "Успешно подтвержденный номер телефона."
 
 msgid "Two factor authentication is not enabled."
-msgstr ""
+msgstr "Двухфакторная аутентификация не включена."
 
 msgid "Two factor authentication is already passed."
-msgstr ""
+msgstr "Двухфакторная аутентификация уже пройдена."
 
 msgid "Successfully passed two factor authentication"
-msgstr ""
+msgstr "Успешно пройдена двухфакторная аутентификация"
 
 msgid "Invalid code."
-msgstr ""
+msgstr "Неверный код."
 
 msgid "Two factor authentication is already enabled."
-msgstr ""
+msgstr "Двухфакторная аутентификация уже включена."
 
 msgid "You cannot enable two factor authentication with a social login."
 msgstr ""
+"Вы не можете включить двухфакторную аутентификацию с помощью входа в "
+"социальную сеть."
 
 msgid "Successfully enabled two factor authentication."
-msgstr ""
+msgstr "Двухфакторная аутентификация успешно включена."
 
 msgid "Successfully disabled two factor authentication."
-msgstr ""
+msgstr "Двухфакторная аутентификация успешно отключена."
 
 msgid "Invalid login data. Please try again."
-msgstr ""
+msgstr "Неверные данные для входа. Пожалуйста, попробуйте еще раз."
 
-msgid "To continue, you need to pass an automated security check. Please wait. if you are not redirected within 5 seconds, complete the captcha and click continue."
+msgid ""
+"To continue, you need to pass an automated security check. Please wait. if "
+"you are not redirected within 5 seconds, complete the captcha and click "
+"continue."
 msgstr ""
+"Для продолжения вам необходимо пройти автоматическую проверку безопасности. "
+"Пожалуйста, подождите. если вы не будете перенаправлены в течение 5 секунд, "
+"введите код и нажмите «Продолжить»."
 
 msgid "Continue"
-msgstr ""
+msgstr "Продолжать"
 
 msgid "Room not available"
-msgstr ""
+msgstr "Комната недоступна"
 
 msgid "Invalid dates"
-msgstr ""
+msgstr "Неверные даты"
 
 msgid "Reservation successful"
-msgstr ""
+msgstr "Бронирование успешно"
 
 msgid "Reservation not available"
-msgstr ""
+msgstr "Бронирование недоступно"
 
 msgid "Invoice not available"
-msgstr ""
+msgstr "Счет недоступен"
 
 msgid "Hotel Name"
-msgstr ""
+msgstr "Название отеля"
 
 msgid "Address"
-msgstr ""
+msgstr "Адрес"
 
 msgid "City"
-msgstr ""
+msgstr "Город"
 
 msgid "Website"
-msgstr ""
+msgstr "Веб-сайт"
 
 msgid "Description"
-msgstr ""
+msgstr "Описание"
 
 msgid "EIK"
-msgstr ""
+msgstr "ЭИК"
 
 msgid "Authorized Person"
-msgstr ""
+msgstr "Авторизованная личность"
 
 msgid "Stars"
-msgstr ""
+msgstr "Звезды"
 
-msgid "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy policy</a>"
+msgid ""
+"I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
+"policy</a>"
 msgstr ""
+"Я прочитал и согласен с <a href=\"/privacy\" target=\"_blank\">политикой "
+"конфиденциальности</a>"
 
-msgid "I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank\">terms and conditions</a>"
+msgid ""
+"I have read and agree to the <a href=\"/terms-of-use\" "
+"target=\"_blank\">terms and conditions</a>"
 msgstr ""
+"Я прочитал и согласен с <a href=\"/terms-of-use\" "
+"target=\"_blank\">условиями использования</a>."
 
-msgid "I hereby certify, under penalty of law, that the information provided about myself and my hotel is accurate and complete to the best of my knowledge.<br> I understand that any false or misleading information provided may result in the immdiate suspesion of my hotel listing from Adventora and may lead to potential legal consequences."
+msgid ""
+"I hereby certify, under penalty of law, that the information provided about "
+"myself and my hotel is accurate and complete to the best of my "
+"knowledge.<br> I understand that any false or misleading information "
+"provided may result in the immdiate suspesion of my hotel listing from "
+"Adventora and may lead to potential legal consequences."
 msgstr ""
+"Настоящим я подтверждаю, под страхом наказания по закону, что "
+"предоставленная информация обо мне и моем отеле является точной и полной, "
+"насколько мне известно.<br> Я понимаю, что любая предоставленная ложная или "
+"вводящая в заблуждение информация может привести к немедленному закрытию "
+"моего отеля. листинг Adventora и может привести к потенциальным юридическим "
+"последствиям."
 
 msgid "Save Changes"
-msgstr ""
+msgstr "Сохранить изменения"
 
 msgid "Room Number"
-msgstr ""
+msgstr "Номер комнаты"
 
 msgid "Luxuries"
-msgstr ""
+msgstr "Роскошь"
 
 msgid "Create Room"
-msgstr ""
+msgstr "Создать комнату"
 
 msgid "Select Room"
-msgstr ""
+msgstr "Выберите номер"
 
 msgid "Check In"
-msgstr ""
+msgstr "Регистрироваться"
 
 msgid "Check Out"
-msgstr ""
+msgstr "Проверить"
 
 msgid "Guests"
-msgstr ""
+msgstr "Гости"
 
 msgid "ID Card Number"
-msgstr ""
+msgstr "Номер удостоверения личности"
 
 msgid "Create Reservation"
-msgstr ""
+msgstr "Создать бронирование"
 
 msgid "No description provided."
-msgstr ""
+msgstr "Описание не предоставлено."
 
 msgid "You do not have permission to view this page"
-msgstr ""
+msgstr "У вас нет разрешения на просмотр этой страницы"
 
 msgid "Your hotel is not approved yet"
-msgstr ""
+msgstr "Ваш отель еще не одобрен"
 
 msgid "Successfully registered hotel"
-msgstr ""
+msgstr "Успешно зарегистрирован отель"
 
 msgid "Error while registering hotel"
-msgstr ""
+msgstr "Ошибка при регистрации отеля"
 
 msgid "You have already registered a hotel"
-msgstr ""
+msgstr "Вы уже зарегистрировали отель"
 
 msgid "You have not registered a hotel yet"
-msgstr ""
+msgstr "Вы еще не зарегистрировали отель"
 
 msgid "Successfully confirmed address"
-msgstr ""
+msgstr "Адрес успешно подтвержден"
 
 msgid "Error while confirming address"
-msgstr ""
+msgstr "Ошибка при подтверждении адреса"
 
 msgid "No such hotel"
-msgstr ""
+msgstr "Нет такого отеля"
 
 msgid "We cannot find the hotel you are looking for"
-msgstr ""
+msgstr "Мы не можем найти отель, который вы ищете"
 
 msgid "Successfully added room"
-msgstr ""
+msgstr "Комната успешно добавлена"
 
 msgid "Error while adding room"
-msgstr ""
+msgstr "Ошибка при добавлении комнаты"
 
 msgid "We cannot find the room you are looking for"
-msgstr ""
+msgstr "Мы не можем найти комнату, которую вы ищете"
 
 msgid "Successfully updated hotel"
-msgstr ""
+msgstr "Успешно обновленный отель"
 
 msgid "Error while updating hotel"
-msgstr ""
+msgstr "Ошибка при обновлении отеля."
 
 msgid "Successfully updated room status"
-msgstr ""
+msgstr "Статус комнаты успешно обновлен."
 
 msgid "Invalid status"
-msgstr ""
+msgstr "Неверный статус"
 
 msgid "This room is already occupied"
-msgstr ""
+msgstr "Эта комната уже занята"
 
 msgid "We cannot find the reservation you are looking for"
-msgstr ""
+msgstr "Мы не можем найти бронирование, которое вы ищете."
 
 msgid "This reservation is already completed"
-msgstr ""
+msgstr "Это бронирование уже завершено"
 
 msgid "This reservation is already cancelled"
-msgstr ""
+msgstr "Это бронирование уже отменено"
 
 msgid "This reservation is already expired"
-msgstr ""
+msgstr "Срок действия этого бронирования уже истек"
 
 msgid "This reservation is already rejected"
-msgstr ""
+msgstr "Это бронирование уже отклонено"
 
 msgid "Successfully occupied room"
-msgstr ""
+msgstr "Комната успешно занята"
 
 msgid "Successfully deleted room"
-msgstr ""
+msgstr "Комната успешно удалена"
 
 msgid "Successfully added reservation"
-msgstr ""
+msgstr "Бронирование успешно добавлено."
 
 msgid "Successfully uploaded photos"
-msgstr ""
+msgstr "Фотографии успешно загружены"
 
 msgid "Successfully deleted photo"
-msgstr ""
+msgstr "Фотография успешно удалена."
 
 msgid "Photo not found"
-msgstr ""
+msgstr "Фото не найдено"
 
 msgid "Successfully updated room"
-msgstr ""
+msgstr "Комната успешно обновлена."

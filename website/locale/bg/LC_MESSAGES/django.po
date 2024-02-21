@@ -17,779 +17,950 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
 msgid "Not confirmed"
-msgstr ""
+msgstr "Непотвърдено"
 
 msgid "Send confirmation email again."
-msgstr ""
+msgstr "Изпратете имейл за потвърждение отново."
 
 msgid "Confirmed"
-msgstr ""
+msgstr "Потвърдено"
 
 msgid "Turned On"
-msgstr ""
+msgstr "Включен"
 
 msgid "Turn off"
-msgstr ""
+msgstr "Изключи"
 
 msgid "Turned Off"
-msgstr ""
+msgstr "Изключен"
 
 msgid "Turn on"
-msgstr ""
+msgstr "Включи"
 
 msgid "My Reservations"
-msgstr ""
+msgstr "Моите резервации"
 
 msgid "Change password"
-msgstr ""
+msgstr "Промяна на паролата"
 
 msgid "Delete Account"
-msgstr ""
+msgstr "Изтриване на акаунт"
 
 msgid "Room"
-msgstr ""
+msgstr "Стая"
 
 msgid "Nights"
-msgstr ""
+msgstr "Нощувки"
 
 msgid "Check-in"
-msgstr ""
+msgstr "Настаняване"
 
 msgid "Check-out"
-msgstr ""
+msgstr "Разгледайте"
 
 msgid "Total"
-msgstr ""
+msgstr "Обща сума"
 
 msgid "Invoice"
-msgstr ""
+msgstr "Фактура"
 
 msgid "Hotel"
-msgstr ""
+msgstr "хотел"
 
 msgid "Login with Google"
-msgstr ""
+msgstr "Влезте с Google"
 
 msgid "Login with Trello"
-msgstr ""
+msgstr "Влезте с Trello"
 
 msgid "Login with GitHub"
-msgstr ""
+msgstr "Влезте с GitHub"
 
 msgid "Login with Reddit"
-msgstr ""
+msgstr "Влезте с Reddit"
 
 msgid "Login with Steam"
-msgstr ""
+msgstr "Влезте със Steam"
 
 msgid "Login with Spotify."
-msgstr ""
+msgstr "Влезте със Spotify."
 
 msgid "Login with VK"
-msgstr ""
+msgstr "Влезте с VK"
 
 msgid "Please enter your two-factor verification code"
-msgstr ""
+msgstr "Моля, въведете вашия двуфакторен код за потвърждение"
 
 msgid "Home"
-msgstr ""
+msgstr "У дома"
 
 msgid "Hotels"
-msgstr ""
+msgstr "хотели"
 
 msgid "Dashboard"
-msgstr ""
+msgstr "Табло"
 
 msgid "Error"
-msgstr ""
+msgstr "Грешка"
 
 msgid "Success"
-msgstr ""
+msgstr "Успех"
 
 msgid "Warning"
-msgstr ""
+msgstr "Внимание"
 
 msgid "Adventora supports small, medium and large businesses"
-msgstr ""
+msgstr "Adventora подкрепя малки, средни и големи предприятия"
 
 msgid "All Rights Reserved"
-msgstr ""
+msgstr "Всички права запазени"
 
 msgid "Homepage"
-msgstr ""
+msgstr "Начална страница"
 
 msgid "About us"
-msgstr ""
+msgstr "За нас"
 
 msgid "Privacy"
-msgstr ""
+msgstr "поверителност"
 
 msgid "Terms of use"
-msgstr ""
+msgstr "Условия за ползване"
 
 msgid "Contacts"
-msgstr ""
+msgstr "Контакти"
 
 msgid "Partnerships"
-msgstr ""
+msgstr "Партньорства"
 
 msgid "Emergency"
-msgstr ""
+msgstr "Спешен случай"
 
 msgid "Stranded Abroad"
-msgstr ""
+msgstr "Закъсал в чужбина"
 
 msgid "In case of fire, medical or police emergency"
-msgstr ""
+msgstr "В случай на пожар, медицинска или полицейска спешна помощ"
 
 msgid "contact the single european emergency nunmber"
-msgstr ""
+msgstr "свържете се с единния европейски номер за спешни повиквания"
 
 msgid "It is dial without code, just 112 when in any country of the EU"
-msgstr ""
+msgstr "Набира се без код, само 112, когато сте в която и да е страна от ЕС"
 
 msgid "Welcome to Adventora"
-msgstr ""
+msgstr "Добре дошли в Adventora"
 
 msgid "Find your perfect stay with us"
-msgstr ""
+msgstr "Намерете идеалния си престой при нас"
 
 msgid "Registered hotels"
-msgstr ""
+msgstr "Регистрирани хотели"
 
 msgid "Happy Customers"
-msgstr ""
+msgstr "Щастливи клиенти"
 
 msgid "Total Reservations"
-msgstr ""
+msgstr "Общо резервации"
 
 msgid "View more"
-msgstr ""
+msgstr "Виж повече"
 
 msgid "Reserve"
-msgstr ""
+msgstr "резерва"
 
 msgid "Admin"
-msgstr ""
+msgstr "Админ"
 
 msgid "Add Reservation"
-msgstr ""
+msgstr "Добавяне на резервация"
 
-msgid "Your hotel is not yet approved. Allow us to confirm your info within 48 hours."
+msgid ""
+"Your hotel is not yet approved. Allow us to confirm your info within 48 "
+"hours."
 msgstr ""
+"Вашият хотел все още не е одобрен. Позволете ни да потвърдим вашата "
+"информация в рамките на 48 часа."
 
 msgid "You don't have a hotel"
-msgstr ""
+msgstr "Нямате хотел"
 
 msgid "Register Hotel"
-msgstr ""
+msgstr "Регистрирайте хотел"
 
 msgid "Rooms"
-msgstr ""
+msgstr "Стаи"
 
 msgid "Add"
-msgstr ""
+msgstr "Добавете"
 
 msgid "Confirm Address"
-msgstr ""
+msgstr "Потвърдете адреса"
 
 msgid "Reservations"
-msgstr ""
+msgstr "Резервации"
 
 msgid "Capacity"
-msgstr ""
+msgstr "Капацитет"
 
 msgid "Price"
-msgstr ""
+msgstr "Цена"
 
 msgid "Night"
-msgstr ""
+msgstr "нощ"
 
 msgid "Occupied"
-msgstr ""
+msgstr "Заето"
 
 msgid "Status"
-msgstr ""
+msgstr "Статус"
 
 msgid "Available"
-msgstr ""
+msgstr "На разположение"
 
 msgid "To be cleaned"
-msgstr ""
+msgstr "Да се ​​почисти"
 
 msgid "Edit Hotel Information"
-msgstr ""
+msgstr "Редактиране на информацията за хотела"
 
 msgid "General Settings"
-msgstr ""
+msgstr "Основни настройки"
 
 msgid "Management"
-msgstr ""
+msgstr "Управление"
 
 msgid "Information"
-msgstr ""
+msgstr "Информация"
 
 msgid "Photos"
-msgstr ""
+msgstr "Снимки"
 
 msgid "Set room as occupied"
-msgstr ""
+msgstr "Задайте стаята като заета"
 
 msgid "Select from reservations for room"
-msgstr ""
+msgstr "Изберете от резервации за стая"
 
 msgid "No reservations for this room"
-msgstr ""
+msgstr "Няма резервации за тази стая"
 
 msgid "Reservation"
-msgstr ""
+msgstr "Резервация"
 
 msgid "Select"
-msgstr ""
+msgstr "Изберете"
 
 msgid "Add Photos"
-msgstr ""
+msgstr "Добавяне на снимки"
 
 msgid "Upload"
-msgstr ""
+msgstr "Качване"
 
 msgid "For partnerships contact us at"
-msgstr ""
+msgstr "За партньорство се свържете с нас на"
 
 msgid "Privacy Policy of Adventora"
-msgstr ""
+msgstr "Политика за поверителност на Adventora"
 
 msgid "Last updated: August 13, 2023."
-msgstr ""
+msgstr "Последна актуализация: 13 август 2023 г."
 
-msgid "This <strong>Privacy Policy ('Policy')</strong> explains how Adventora ('we', 'us', 'our') collects, uses, protects, and shares the personal information gathered from users ('you', 'your') of the website <strong>https://adventora.net</strong> ('Website'). This Policy highlights our commitment to data privacy, transparency, and compliance with relevant data protection laws and regulations."
+msgid ""
+"This <strong>Privacy Policy ('Policy')</strong> explains how Adventora "
+"('we', 'us', 'our') collects, uses, protects, and shares the personal "
+"information gathered from users ('you', 'your') of the website "
+"<strong>https://adventora.net</strong> ('Website'). This Policy highlights "
+"our commitment to data privacy, transparency, and compliance with relevant "
+"data protection laws and regulations."
 msgstr ""
+"Тази <strong>Политика за поверителност („Политика“)</strong> обяснява как "
+"Adventora („ние“, „нас“, „наш“) събира, използва, защитава и споделя личната"
+" информация, събрана от потребителите („вие“, „вашият“) на уебсайта "
+"<strong>https://adventora.net</strong> („Уебсайт“). Тази Политика подчертава"
+" нашия ангажимент за поверителност на данните, прозрачност и спазване на "
+"съответните закони и разпоредби за защита на данните."
 
 msgid "1. Information Collection"
-msgstr ""
+msgstr "1. Събиране на информация"
 
-msgid "We collect a variety of personal data from users to ensure the smooth operation of our booking services. This includes, but is not limited to:"
+msgid ""
+"We collect a variety of personal data from users to ensure the smooth "
+"operation of our booking services. This includes, but is not limited to:"
 msgstr ""
+"Ние събираме различни лични данни от потребителите, за да гарантираме "
+"гладкото функциониране на нашите услуги за резервации. Това включва, но не "
+"се ограничава до:"
 
 msgid "First and last name"
-msgstr ""
+msgstr "Първо и последно име"
 
 msgid "Email address"
-msgstr ""
+msgstr "Имейл адрес"
 
 msgid "Username"
-msgstr ""
+msgstr "Потребителско име"
 
 msgid "Phone numbers"
-msgstr ""
+msgstr "Телефонни номера"
 
 msgid "Citizenship"
-msgstr ""
+msgstr "Гражданство"
 
 msgid "For individuals designated as 'hotel manager', we also collect:"
-msgstr ""
+msgstr "За лица, определени като „управител на хотел“, ние също събираме:"
 
 msgid "Hotel name"
-msgstr ""
+msgstr "Име на хотел"
 
 msgid "Manager's name"
-msgstr ""
+msgstr "Име на управителя"
 
 msgid "Unique identification number of the hotel's company (EIK)"
-msgstr ""
+msgstr "Уникален идентификационен номер на фирмата на хотела (EIK)"
 
 msgid "Hotel phone number"
-msgstr ""
+msgstr "Телефонен номер на хотела"
 
 msgid "Hotel email address"
-msgstr ""
+msgstr "Имейл адрес на хотела"
 
 msgid "Physical address of the hotel"
-msgstr ""
+msgstr "Физически адрес на хотела"
 
 msgid "2. Purpose and Use of Data"
-msgstr ""
+msgstr "2. Цел и използване на данните"
 
-msgid "The collected personal information serves as a basis for smooth, secure, and efficient booking and reservations. Your data facilitate account management, responsive customer support, and critical communication. If identified as a hotel manager, certain details are shared with the establishment to optimize reservation monitoring."
+msgid ""
+"The collected personal information serves as a basis for smooth, secure, and"
+" efficient booking and reservations. Your data facilitate account "
+"management, responsive customer support, and critical communication. If "
+"identified as a hotel manager, certain details are shared with the "
+"establishment to optimize reservation monitoring."
 msgstr ""
+"Събраната лична информация служи като основа за плавни, сигурни и ефективни "
+"резервации и резервации. Вашите данни улесняват управлението на акаунта, "
+"отзивчивата поддръжка на клиенти и критичната комуникация. Ако бъде "
+"идентифициран като мениджър на хотел, определени подробности се споделят със"
+" заведението, за да се оптимизира наблюдението на резервациите."
 
 msgid "3. Engagement with Third-Party Services"
-msgstr ""
+msgstr "3. Ангажираност с услуги на трети страни"
 
-msgid "To enhance the user experience and expand our offerings, we engage reputable third-party services, including, but not limited to:"
+msgid ""
+"To enhance the user experience and expand our offerings, we engage reputable"
+" third-party services, including, but not limited to:"
 msgstr ""
+"За да подобрим потребителското изживяване и да разширим нашите предложения, "
+"ние ангажираме реномирани услуги на трети страни, включително, но не само:"
 
 msgid "Google Analytics for detailed website analysis"
-msgstr ""
+msgstr "Google Analytics за подробен анализ на уебсайта"
 
 msgid "Top-Rent-A-Car for promotional banners, widgets, and joint promotions"
-msgstr ""
+msgstr "Top-Rent-A-Car за рекламни банери, уиджети и съвместни промоции"
 
-msgid "Social services for login, including Google, GitHub, Reddit, Spotify, Trello, Patreon, Steam, VK, and Amazon"
+msgid ""
+"Social services for login, including Google, GitHub, Reddit, Spotify, "
+"Trello, Patreon, Steam, VK, and Amazon"
 msgstr ""
+"Социални услуги за влизане, включително Google, GitHub, Reddit, Spotify, "
+"Trello, Patreon, Steam, VK и Amazon"
 
-msgid "Payment processing through reputable providers like Stripe and epay.bg for secure financial transactions"
+msgid ""
+"Payment processing through reputable providers like Stripe and epay.bg for "
+"secure financial transactions"
 msgstr ""
+"Обработка на плащания чрез реномирани доставчици като Stripe и epay.bg за "
+"сигурни финансови транзакции"
 
 msgid "4. Tracking Mechanisms and Cookies"
-msgstr ""
+msgstr "4. Механизми за проследяване и бисквитки"
 
-msgid "Cookies serve as vital components of our digital architecture, contributing to the seamless retention of sessions and the preservation of data for personalization, such as theme settings and language preferences. In addition, certain third-party cookies may be used in conjunction with our respected partners."
+msgid ""
+"Cookies serve as vital components of our digital architecture, contributing "
+"to the seamless retention of sessions and the preservation of data for "
+"personalization, such as theme settings and language preferences. In "
+"addition, certain third-party cookies may be used in conjunction with our "
+"respected partners."
 msgstr ""
+"Бисквитките служат като жизненоважни компоненти на нашата дигитална "
+"архитектура, като допринасят за безпроблемното запазване на сесиите и "
+"запазването на данни за персонализиране, като настройки на теми и езикови "
+"предпочитания. В допълнение, някои бисквитки на трети страни могат да се "
+"използват заедно с нашите уважавани партньори."
 
 msgid "5. Data Retention Strategy"
-msgstr ""
+msgstr "5. Стратегия за запазване на данни"
 
-msgid "User personal data continue to be stored in our systems for the duration of an active account. An option for account deletion is provided, allowing for the voluntary removal of associated data. For hotel managers, data related to the establishment is stored for up to one year to comply with security protocols and possible legal regulations."
+msgid ""
+"User personal data continue to be stored in our systems for the duration of "
+"an active account. An option for account deletion is provided, allowing for "
+"the voluntary removal of associated data. For hotel managers, data related "
+"to the establishment is stored for up to one year to comply with security "
+"protocols and possible legal regulations."
 msgstr ""
+"Личните данни на потребителите продължават да се съхраняват в нашите системи"
+" за продължителността на активен акаунт. Осигурена е опция за изтриване на "
+"акаунт, която позволява доброволно премахване на свързани данни. За "
+"мениджърите на хотели данните, свързани със заведението, се съхраняват до "
+"една година, за да се съобразят с протоколите за сигурност и възможните "
+"правни разпоредби."
 
 msgid "6. Robust Security Framework"
-msgstr ""
+msgstr "6. Здрава рамка за сигурност"
 
-msgid "With the help of modern encryption protocols that include a 512-character encryption key, we impose strict measures to protect sensitive data. Data is stored on a remote database server located in the European Union, secured with the comprehensive security infrastructure provided by Amazon Web Services."
+msgid ""
+"With the help of modern encryption protocols that include a 512-character "
+"encryption key, we impose strict measures to protect sensitive data. Data is"
+" stored on a remote database server located in the European Union, secured "
+"with the comprehensive security infrastructure provided by Amazon Web "
+"Services."
 msgstr ""
+"С помощта на модерни протоколи за криптиране, които включват ключ за "
+"криптиране от 512 знака, ние налагаме строги мерки за защита на чувствителни"
+" данни. Данните се съхраняват на отдалечен сървър на база данни, разположен "
+"в Европейския съюз, защитен с цялостната инфраструктура за сигурност, "
+"предоставена от Amazon Web Services."
 
 msgid "7. Data Sharing and Collaborative Efforts"
-msgstr ""
+msgstr "7. Споделяне на данни и съвместни усилия"
 
-msgid "Certain user data, including email addresses, names, and contact numbers, are shared with hotels to facilitate effective reservation management. Beyond established partnerships, data sharing with external organizations is limited to data automatically collected by Google Analytics and Top-Rent-A-Car."
+msgid ""
+"Certain user data, including email addresses, names, and contact numbers, "
+"are shared with hotels to facilitate effective reservation management. "
+"Beyond established partnerships, data sharing with external organizations is"
+" limited to data automatically collected by Google Analytics and Top-Rent-A-"
+"Car."
 msgstr ""
+"Определени потребителски данни, включително имейл адреси, имена и номера за "
+"контакт, се споделят с хотелите, за да се улесни ефективното управление на "
+"резервациите. Освен установените партньорства, споделянето на данни с външни"
+" организации е ограничено до данни, автоматично събрани от Google Analytics "
+"и Top-Rent-A-Car."
 
 msgid "8. Cross-Border Data Transfers"
-msgstr ""
+msgstr "8. Трансгранични трансфери на данни"
 
-msgid "User personal data remain entirely within the European Union. In cases where your citizenship falls outside the EU, data may be transferred internationally for storage within the jurisdiction of the EU."
+msgid ""
+"User personal data remain entirely within the European Union. In cases where"
+" your citizenship falls outside the EU, data may be transferred "
+"internationally for storage within the jurisdiction of the EU."
 msgstr ""
+"Личните данни на потребителите остават изцяло в рамките на Европейския съюз."
+" В случаите, когато вашето гражданство е извън ЕС, данните може да бъдат "
+"прехвърлени в международен план за съхранение в рамките на юрисдикцията на "
+"ЕС."
 
 msgid "9. Protection of Children's Personal Information"
-msgstr ""
+msgstr "9. Защита на личната информация на децата"
 
-msgid "Adventora is entirely aimed at legal adults. Due to the mandatory nature of collecting personal data for reservation purposes and payment processing, the platform is not intended for minors. Exceptions may arise when legal adults provide information on minors within the context of their booked vacation."
+msgid ""
+"Adventora is entirely aimed at legal adults. Due to the mandatory nature of "
+"collecting personal data for reservation purposes and payment processing, "
+"the platform is not intended for minors. Exceptions may arise when legal "
+"adults provide information on minors within the context of their booked "
+"vacation."
 msgstr ""
+"Adventora е изцяло насочена към пълнолетни лица. Поради задължителния "
+"характер на събирането на лични данни за целите на резервацията и "
+"обработката на плащанията, платформата не е предназначена за непълнолетни. "
+"Изключения могат да възникнат, когато законно пълнолетни лица предоставят "
+"информация за непълнолетни в контекста на тяхната резервирана ваканция."
 
 msgid "10. Notification of Policy Changes"
-msgstr ""
+msgstr "10. Уведомяване за промени в политиката"
 
-msgid "Changes or modifications to this Policy will be communicated via email and will be clearly displayed on the Website."
+msgid ""
+"Changes or modifications to this Policy will be communicated via email and "
+"will be clearly displayed on the Website."
 msgstr ""
+"Промените или модификациите на тази Политика ще бъдат съобщавани по имейл и "
+"ще бъдат ясно показани на уебсайта."
 
 msgid "11. Legitimate Basis for Data Processing"
-msgstr ""
+msgstr "11. Легитимно основание за обработка на данни"
 
-msgid "The collection and processing of data are based on the mandatory execution of reservations and related reservation activities."
+msgid ""
+"The collection and processing of data are based on the mandatory execution "
+"of reservations and related reservation activities."
 msgstr ""
+"Събирането и обработването на данни се основават на задължителното "
+"изпълнение на резервациите и свързаните с тях дейности по резервациите."
 
 msgid "12. Implied Consent"
-msgstr ""
+msgstr "12. Подразбиращо се съгласие"
 
-msgid "By using our platform and creating an account, you implicitly agree to the collection and processing of personal data, in accordance with this Policy."
+msgid ""
+"By using our platform and creating an account, you implicitly agree to the "
+"collection and processing of personal data, in accordance with this Policy."
 msgstr ""
+"Използвайки нашата платформа и създавайки акаунт, вие косвено се съгласявате"
+" със събирането и обработването на лични данни, в съответствие с тази "
+"Политика."
 
 msgid "13. Compliance with Applicable Regulations"
-msgstr ""
+msgstr "13. Съответствие с приложимите разпоредби"
 
-msgid "Our data processing procedures strictly adhere to the regulations and provisions set forth by the General Data Protection Regulation (GDPR)."
+msgid ""
+"Our data processing procedures strictly adhere to the regulations and "
+"provisions set forth by the General Data Protection Regulation (GDPR)."
 msgstr ""
+"Нашите процедури за обработка на данни се придържат стриктно към "
+"разпоредбите и разпоредбите, определени от Общия регламент за защита на "
+"данните (GDPR)."
 
-msgid "For questions, clarifications, or requests related to your personal data and this Policy, we inform you that you can contact us via the following contact: <a href='mailto:support@adventora.net'>hello@adventora.net</a>."
+msgid ""
+"For questions, clarifications, or requests related to your personal data and"
+" this Policy, we inform you that you can contact us via the following "
+"contact: <a href='mailto:support@adventora.net'>hello@adventora.net</a>."
 msgstr ""
+"За въпроси, разяснения или искания, свързани с вашите лични данни и тази "
+"Политика, ви информираме, че можете да се свържете с нас чрез следния "
+"контакт: <a href='mailto:support@adventora.net'>hello@adventora.net</ a>."
 
 msgid "Reserve Room"
-msgstr ""
+msgstr "Резервна стая"
 
 msgid "Price / Night"
-msgstr ""
+msgstr "Цена / Нощувка"
 
 msgid "Name"
-msgstr ""
+msgstr "Име"
 
 msgid "Email"
-msgstr ""
+msgstr "електронна поща"
 
 msgid "How many people?"
-msgstr ""
+msgstr "Колко души?"
 
 msgid "How many nights?"
-msgstr ""
+msgstr "Колко нощувки?"
 
 msgid "TOTAL"
-msgstr ""
+msgstr "ОБЩА СУМА"
 
 msgid "Username or email"
-msgstr ""
+msgstr "Потребителско име или имейл"
 
 msgid "Password"
-msgstr ""
+msgstr "Парола"
 
 msgid "Login"
-msgstr ""
+msgstr "Влизам"
 
 msgid "The username must contain at least 8 characters."
-msgstr ""
+msgstr "Потребителското име трябва да съдържа поне 8 знака."
 
 msgid "First name"
-msgstr ""
+msgstr "Първо име"
 
 msgid "Last name"
-msgstr ""
+msgstr "Фамилия"
 
 msgid "Email address must be valid"
-msgstr ""
+msgstr "Имейл адресът трябва да е валиден"
 
-msgid "The password must be at least 8 characters long. <br> The password should not contain only digits. <br> The password should not contain only letters. <br> The password should not contain only special characters. <br> The password should not contain the username. <br> The password should not be a commonly used password."
+msgid ""
+"The password must be at least 8 characters long. <br> The password should "
+"not contain only digits. <br> The password should not contain only letters. "
+"<br> The password should not contain only special characters. <br> The "
+"password should not contain the username. <br> The password should not be a "
+"commonly used password."
 msgstr ""
+"Паролата трябва да е с дължина поне 8 знака. <br> Паролата не трябва да "
+"съдържа само цифри. <br> Паролата не трябва да съдържа само букви. <br> "
+"Паролата не трябва да съдържа само специални знаци. <br> Паролата не трябва "
+"да съдържа потребителското име. <br> Паролата не трябва да е често "
+"използвана парола."
 
 msgid "Confirm password"
-msgstr ""
+msgstr "Потвърди парола"
 
 msgid "Enter the same password as above, for verification."
-msgstr ""
+msgstr "Въведете същата парола, както по-горе, за проверка."
 
 msgid "Sign up"
-msgstr ""
+msgstr "Регистрирай се"
 
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
 msgstr ""
+"Турист - Разгледайте, планирайте и резервирайте вашите идеални ваканционни "
+"дейности."
 
-msgid "Hotel Manager - Oversee operations and provide excellent service in your own hotel."
+msgid ""
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
 msgstr ""
+"Мениджър на хотел - Наблюдавайте операциите и предоставяйте отлично "
+"обслужване във вашия собствен хотел."
 
-msgid "Employee - Contribute your expertise to a thriving workplace, such as a hotel or guest house."
+msgid ""
+"Employee - Contribute your expertise to a thriving workplace, such as a "
+"hotel or guest house."
 msgstr ""
+"Служител - Допринесете с вашия опит за процъфтяващо работно място, като "
+"хотел или къща за гости."
 
 msgid "Submit"
-msgstr ""
+msgstr "Изпращане"
 
 msgid "First Name"
-msgstr ""
+msgstr "Първо име"
 
 msgid "Last Name"
-msgstr ""
+msgstr "Фамилия"
 
 msgid "Save"
-msgstr ""
+msgstr "Запазване"
 
 msgid "The email must be valid."
-msgstr ""
+msgstr "Имейлът трябва да е валиден."
 
 msgid "Phone"
-msgstr ""
+msgstr "Телефон"
 
 msgid "Choose a Role"
-msgstr ""
+msgstr "Изберете роля"
 
 msgid "Old Password"
-msgstr ""
+msgstr "Стара парола"
 
 msgid "New Password"
-msgstr ""
+msgstr "нова парола"
 
 msgid "Confirm New Password"
-msgstr ""
+msgstr "Потвърждение на новата парола"
 
 msgid "Enable"
-msgstr ""
+msgstr "Активирайте"
 
 msgid "Code"
-msgstr ""
+msgstr "Код"
 
 msgid "Disable"
-msgstr ""
+msgstr "Деактивиране"
 
 msgid "User"
-msgstr ""
+msgstr "Потребител"
 
 msgid "Manager"
-msgstr ""
+msgstr "Управител"
 
 msgid "Employee"
-msgstr ""
+msgstr "служител"
 
 msgid "Malformed security token"
-msgstr ""
+msgstr "Деформиран маркер за сигурност"
 
 msgid "A user with that email already exists."
-msgstr ""
+msgstr "Потребител с този имейл вече съществува."
 
 msgid "Password must be at least 8 characters long."
-msgstr ""
+msgstr "Паролата трябва да е с дължина поне 8 знака."
 
 msgid "Passwords do not match."
-msgstr ""
+msgstr "Паролите не съвпадат."
 
 msgid "Username must be at least 4 characters long."
-msgstr ""
+msgstr "Потребителското име трябва да е дълго поне 4 знака."
 
 msgid "Username should only contain letters and numbers."
-msgstr ""
+msgstr "Потребителското име трябва да съдържа само букви и цифри."
 
 msgid "Invalid email."
-msgstr ""
+msgstr "Грешен имейл."
 
 msgid "A user with that username already exists."
-msgstr ""
+msgstr "Един потребител с това име вече съществува."
 
 msgid "Successfully registration."
-msgstr ""
+msgstr "Успешна регистрация."
 
 msgid "Invalid data."
-msgstr ""
+msgstr "Невалидни данни."
 
 msgid "A user with that email does not exist."
-msgstr ""
+msgstr "Потребител с този имейл не съществува."
 
 msgid "Successfully logged in."
-msgstr ""
+msgstr "Успешно влизане."
 
 msgid "Invalid password."
-msgstr ""
+msgstr "Невалидна парола."
 
 msgid "A user with that username does not exist."
-msgstr ""
+msgstr "Потребител с това потребителско име не съществува."
 
 msgid "Successfully logged out."
-msgstr ""
+msgstr "Успешно излизане."
 
 msgid "Invalid role."
-msgstr ""
+msgstr "Невалидна роля."
 
 msgid "Successfully chosen role."
-msgstr ""
+msgstr "Успешно избрана роля."
 
 msgid "Successfully confirmed name."
-msgstr ""
+msgstr "Успешно потвърдено име."
 
 msgid "Successfully confirmed email."
-msgstr ""
+msgstr "Успешно потвърден имейл."
 
 msgid "Invalid username. At least 5 characters."
-msgstr ""
+msgstr "Невалидно потребителско име. Поне 5 знака."
 
 msgid "Successfully confirmed username."
-msgstr ""
+msgstr "Успешно потвърдено потребителско име."
 
 msgid "Successfully edited profile."
-msgstr ""
+msgstr "Успешно редактиран профил."
 
 msgid "Incorrect old password."
-msgstr ""
+msgstr "Неправилна стара парола."
 
 msgid "Successfully changed password."
-msgstr ""
+msgstr "Паролата е променена успешно."
 
 msgid "Incorrect password."
-msgstr ""
+msgstr "Грешна парола."
 
 msgid "Successfully deleted account."
-msgstr ""
+msgstr "Успешно изтрит акаунт."
 
 msgid "Successfully confirmed citizenship."
-msgstr ""
+msgstr "Успешно потвърдено гражданство."
 
 msgid "Successfully confirmed phone number."
-msgstr ""
+msgstr "Успешно потвърден телефонен номер."
 
 msgid "Two factor authentication is not enabled."
-msgstr ""
+msgstr "Двуфакторното удостоверяване не е активирано."
 
 msgid "Two factor authentication is already passed."
-msgstr ""
+msgstr "Двуфакторното удостоверяване вече е преминато."
 
 msgid "Successfully passed two factor authentication"
-msgstr ""
+msgstr "Успешно премина двуфакторна автентификация"
 
 msgid "Invalid code."
-msgstr ""
+msgstr "Невалиден код."
 
 msgid "Two factor authentication is already enabled."
-msgstr ""
+msgstr "Двуфакторното удостоверяване вече е активирано."
 
 msgid "You cannot enable two factor authentication with a social login."
 msgstr ""
+"Не можете да активирате двуфакторно удостоверяване със социално влизане."
 
 msgid "Successfully enabled two factor authentication."
-msgstr ""
+msgstr "Успешно активирано двуфакторно удостоверяване."
 
 msgid "Successfully disabled two factor authentication."
-msgstr ""
+msgstr "Успешно деактивирано двуфакторно удостоверяване."
 
 msgid "Invalid login data. Please try again."
-msgstr ""
+msgstr "Невалидни данни за вход. Моля, опитайте отново."
 
-msgid "To continue, you need to pass an automated security check. Please wait. if you are not redirected within 5 seconds, complete the captcha and click continue."
+msgid ""
+"To continue, you need to pass an automated security check. Please wait. if "
+"you are not redirected within 5 seconds, complete the captcha and click "
+"continue."
 msgstr ""
+"За да продължите, трябва да преминете автоматизирана проверка за сигурност. "
+"Моля Изчакай. ако не бъдете пренасочени в рамките на 5 секунди, попълнете "
+"captcha и щракнете върху продължи."
 
 msgid "Continue"
-msgstr ""
+msgstr "продължи"
 
 msgid "Room not available"
-msgstr ""
+msgstr "Стаята не е налична"
 
 msgid "Invalid dates"
-msgstr ""
+msgstr "Невалидни дати"
 
 msgid "Reservation successful"
-msgstr ""
+msgstr "Резервацията е успешна"
 
 msgid "Reservation not available"
-msgstr ""
+msgstr "Резервацията не е налична"
 
 msgid "Invoice not available"
-msgstr ""
+msgstr "Няма налична фактура"
 
 msgid "Hotel Name"
-msgstr ""
+msgstr "Име на хотел"
 
 msgid "Address"
-msgstr ""
+msgstr "Адрес"
 
 msgid "City"
-msgstr ""
+msgstr "град"
 
 msgid "Website"
-msgstr ""
+msgstr "уебсайт"
 
 msgid "Description"
-msgstr ""
+msgstr "Описание"
 
 msgid "EIK"
-msgstr ""
+msgstr "EIK"
 
 msgid "Authorized Person"
-msgstr ""
+msgstr "Упълномощено лице"
 
 msgid "Stars"
-msgstr ""
+msgstr "Звезди"
 
-msgid "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy policy</a>"
+msgid ""
+"I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
+"policy</a>"
 msgstr ""
+"Прочетох и съм съгласен с <a href=\"/privacy\" "
+"target=\"_blank\">декларацията за поверителност</a>"
 
-msgid "I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank\">terms and conditions</a>"
+msgid ""
+"I have read and agree to the <a href=\"/terms-of-use\" "
+"target=\"_blank\">terms and conditions</a>"
 msgstr ""
+"Прочетох и съм съгласен с <a href=\"/terms-of-use\" "
+"target=\"_blank\">правилата и условията</a>"
 
-msgid "I hereby certify, under penalty of law, that the information provided about myself and my hotel is accurate and complete to the best of my knowledge.<br> I understand that any false or misleading information provided may result in the immdiate suspesion of my hotel listing from Adventora and may lead to potential legal consequences."
+msgid ""
+"I hereby certify, under penalty of law, that the information provided about "
+"myself and my hotel is accurate and complete to the best of my "
+"knowledge.<br> I understand that any false or misleading information "
+"provided may result in the immdiate suspesion of my hotel listing from "
+"Adventora and may lead to potential legal consequences."
 msgstr ""
+"С настоящото удостоверявам, под наказателна отговорност, че предоставената "
+"информация за мен и моя хотел е точна и пълна, доколкото ми е известно.<br> "
+"Разбирам, че предоставената невярна или подвеждаща информация може да доведе"
+" до незабавното спиране на моя хотел регистрация от Adventora и може да "
+"доведе до потенциални правни последици."
 
 msgid "Save Changes"
-msgstr ""
+msgstr "Запазите промените"
 
 msgid "Room Number"
-msgstr ""
+msgstr "Номер на стая"
 
 msgid "Luxuries"
-msgstr ""
+msgstr "Луксозни предмети"
 
 msgid "Create Room"
-msgstr ""
+msgstr "Създаване на стая"
 
 msgid "Select Room"
-msgstr ""
+msgstr "Изберете стая"
 
 msgid "Check In"
-msgstr ""
+msgstr "Настаняване"
 
 msgid "Check Out"
-msgstr ""
+msgstr "Разгледайте"
 
 msgid "Guests"
-msgstr ""
+msgstr "гости"
 
 msgid "ID Card Number"
-msgstr ""
+msgstr "Номер на лична карта"
 
 msgid "Create Reservation"
-msgstr ""
+msgstr "Създаване на резервация"
 
 msgid "No description provided."
-msgstr ""
+msgstr "Няма предоставено описание."
 
 msgid "You do not have permission to view this page"
-msgstr ""
+msgstr "Нямате разрешение да видите тази страница"
 
 msgid "Your hotel is not approved yet"
-msgstr ""
+msgstr "Вашият хотел все още не е одобрен"
 
 msgid "Successfully registered hotel"
-msgstr ""
+msgstr "Успешно регистриран хотел"
 
 msgid "Error while registering hotel"
-msgstr ""
+msgstr "Грешка при регистрация на хотел"
 
 msgid "You have already registered a hotel"
-msgstr ""
+msgstr "Вече сте регистрирали хотел"
 
 msgid "You have not registered a hotel yet"
-msgstr ""
+msgstr "Все още не сте регистрирали хотел"
 
 msgid "Successfully confirmed address"
-msgstr ""
+msgstr "Успешно потвърден адрес"
 
 msgid "Error while confirming address"
-msgstr ""
+msgstr "Грешка при потвърждаване на адреса"
 
 msgid "No such hotel"
-msgstr ""
+msgstr "Няма такъв хотел"
 
 msgid "We cannot find the hotel you are looking for"
-msgstr ""
+msgstr "Не можем да намерим хотела, който търсите"
 
 msgid "Successfully added room"
-msgstr ""
+msgstr "Стаята е добавена успешно"
 
 msgid "Error while adding room"
-msgstr ""
+msgstr "Грешка при добавяне на стая"
 
 msgid "We cannot find the room you are looking for"
-msgstr ""
+msgstr "Не можем да намерим стаята, която търсите"
 
 msgid "Successfully updated hotel"
-msgstr ""
+msgstr "Успешно актуализиран хотел"
 
 msgid "Error while updating hotel"
-msgstr ""
+msgstr "Грешка при актуализирането на хотела"
 
 msgid "Successfully updated room status"
-msgstr ""
+msgstr "Състоянието на стаята бе актуализирано успешно"
 
 msgid "Invalid status"
-msgstr ""
+msgstr "Невалиден статус"
 
 msgid "This room is already occupied"
-msgstr ""
+msgstr "Тази стая вече е заета"
 
 msgid "We cannot find the reservation you are looking for"
-msgstr ""
+msgstr "Не можем да намерим резервацията, която търсите"
 
 msgid "This reservation is already completed"
-msgstr ""
+msgstr "Тази резервация вече е завършена"
 
 msgid "This reservation is already cancelled"
-msgstr ""
+msgstr "Тази резервация вече е анулирана"
 
 msgid "This reservation is already expired"
-msgstr ""
+msgstr "Тази резервация вече е изтекла"
 
 msgid "This reservation is already rejected"
-msgstr ""
+msgstr "Тази резервация вече е отхвърлена"
 
 msgid "Successfully occupied room"
-msgstr ""
+msgstr "Успешно заета стая"
 
 msgid "Successfully deleted room"
-msgstr ""
+msgstr "Стаята е изтрита успешно"
 
 msgid "Successfully added reservation"
-msgstr ""
+msgstr "Успешно добавена резервация"
 
 msgid "Successfully uploaded photos"
-msgstr ""
+msgstr "Успешно качени снимки"
 
 msgid "Successfully deleted photo"
-msgstr ""
+msgstr "Успешно изтрита снимка"
 
 msgid "Photo not found"
-msgstr ""
+msgstr "Снимката не е намерена"
 
 msgid "Successfully updated room"
-msgstr ""
+msgstr "Успешно актуализирана стая"

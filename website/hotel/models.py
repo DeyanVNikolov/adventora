@@ -21,6 +21,7 @@ class Hotel(models.Model):
     mol_name = models.CharField(max_length=100, null=True, blank=True)
     stars = models.IntegerField(null=True)
     approved = models.BooleanField(default=False, null=False)
+    photos = models.CharField(max_length=50000, null=True, blank=True)
 
     def __str__(self):
         return self.name

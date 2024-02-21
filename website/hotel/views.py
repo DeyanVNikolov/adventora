@@ -696,10 +696,10 @@ def photos(request):
     hotel_images = []
     BASE_DIR = Path(__file__).resolve().parent.parent
 
-    image_dir = f'{BASE_DIR}/static/cover/hotel/{hotel.id}'
-    if os.path.isdir(image_dir):
-        for filename in os.listdir(image_dir):
-            hotel_images.append(filename)
+    images = str(hotel.photos).split("|PHOTO|")
+    for image in images:
+        if os.path.exists(f"{BASE_DIR}/static/cover/hotel/{hotel.id}/{image}"):
+            hotel_images.append(image)
 
     if request.method == "POST":
         photos = request.FILES.getlist('photos')
@@ -714,13 +714,14 @@ def photos(request):
         if not os.path.exists(f"{BASE_DIR}/static/cover/hotel/{hotel.id}"):
             os.makedirs(f"{BASE_DIR}/static/cover/hotel/{hotel.id}")
         # start the index from the number of files in the folder, if there are 3 files, start from 3
-        index = len(os.listdir(f"{BASE_DIR}/static/cover/hotel/{hotel.id}"))
         for photo in photos:
-            with open(f"{BASE_DIR}/static/cover/hotel/{hotel.id}/{hotel.id}-{index}.png", 'wb+') as destination:
+            name = uuid.uuid4()
+            with open(f"{BASE_DIR}/static/cover/hotel/{hotel.id}/{str(name)}.png", 'wb+') as destination:
                 for chunk in photo.chunks():
                     destination.write(chunk)
-            index += 1
+                hotel.photos = str(hotel.photos) + f"|PHOTO|{str(name)}.png"
 
+        hotel.save()
         messages.success(request, _('Successfully uploaded photos'))
         return redirect('photos')
 
@@ -753,10 +754,17 @@ def deletephoto(request, hotel_id, photo_id):
         messages.warning(request, _('You do not have permission to view this page'))
         return redirect('dashboard')
 
-    BASE_DIR = Path(__file__).resolve().parent.parent
+    photos = str(hotel.photos).split("|PHOTO|")
+    if photo_id not in photos:
+        messages.warning(request, _('Photo not found'))
+        return redirect('photos')
+
     photo_path = f"{BASE_DIR}/static/cover/hotel/{hotel.id}/{photo_id}"
+
     if os.path.exists(photo_path):
         os.remove(photo_path)
+        hotel.photos = str(hotel.photos).replace(f"|PHOTO|{photo_id}", "")
+        hotel.save()
         messages.success(request, _('Successfully deleted photo'))
         return redirect('photos')
     else:

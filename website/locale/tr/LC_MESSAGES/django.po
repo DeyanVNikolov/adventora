@@ -17,779 +17,951 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
 msgid "Not confirmed"
-msgstr ""
+msgstr "Onaylanmadı"
 
 msgid "Send confirmation email again."
-msgstr ""
+msgstr "Onay e-postasını tekrar gönderin."
 
 msgid "Confirmed"
-msgstr ""
+msgstr "Onaylanmış"
 
 msgid "Turned On"
-msgstr ""
+msgstr "Açık"
 
 msgid "Turn off"
-msgstr ""
+msgstr "Kapamak"
 
 msgid "Turned Off"
-msgstr ""
+msgstr "Kapalı"
 
 msgid "Turn on"
-msgstr ""
+msgstr "Aç"
 
 msgid "My Reservations"
-msgstr ""
+msgstr "Rezervasyonlarım"
 
 msgid "Change password"
-msgstr ""
+msgstr "Şifre değiştir"
 
 msgid "Delete Account"
-msgstr ""
+msgstr "Hesabı sil"
 
 msgid "Room"
-msgstr ""
+msgstr "Oda"
 
 msgid "Nights"
-msgstr ""
+msgstr "Geceler"
 
 msgid "Check-in"
-msgstr ""
+msgstr "Giriş"
 
 msgid "Check-out"
-msgstr ""
+msgstr "Çıkış yapmak"
 
 msgid "Total"
-msgstr ""
+msgstr "Toplam"
 
 msgid "Invoice"
-msgstr ""
+msgstr "Fatura"
 
 msgid "Hotel"
-msgstr ""
+msgstr "Otel"
 
 msgid "Login with Google"
-msgstr ""
+msgstr "Google ile giriş yap"
 
 msgid "Login with Trello"
-msgstr ""
+msgstr "Trello'ya giriş yapın"
 
 msgid "Login with GitHub"
-msgstr ""
+msgstr "GitHub'la oturum açın"
 
 msgid "Login with Reddit"
-msgstr ""
+msgstr "Reddit'le giriş yap"
 
 msgid "Login with Steam"
-msgstr ""
+msgstr "Steam'le giriş yapın"
 
 msgid "Login with Spotify."
-msgstr ""
+msgstr "Spotify'la giriş yap."
 
 msgid "Login with VK"
-msgstr ""
+msgstr "VK ile giriş yap"
 
 msgid "Please enter your two-factor verification code"
-msgstr ""
+msgstr "Lütfen iki faktörlü doğrulama kodunuzu girin"
 
 msgid "Home"
-msgstr ""
+msgstr "Ev"
 
 msgid "Hotels"
-msgstr ""
+msgstr "Oteller"
 
 msgid "Dashboard"
-msgstr ""
+msgstr "Gösterge Paneli"
 
 msgid "Error"
-msgstr ""
+msgstr "Hata"
 
 msgid "Success"
-msgstr ""
+msgstr "Başarı"
 
 msgid "Warning"
-msgstr ""
+msgstr "Uyarı"
 
 msgid "Adventora supports small, medium and large businesses"
-msgstr ""
+msgstr "Adventora küçük, orta ve büyük işletmeleri destekliyor"
 
 msgid "All Rights Reserved"
-msgstr ""
+msgstr "Her hakkı saklıdır"
 
 msgid "Homepage"
-msgstr ""
+msgstr "Ana sayfa"
 
 msgid "About us"
-msgstr ""
+msgstr "Hakkımızda"
 
 msgid "Privacy"
-msgstr ""
+msgstr "Mahremiyet"
 
 msgid "Terms of use"
-msgstr ""
+msgstr "Kullanım Şartları"
 
 msgid "Contacts"
-msgstr ""
+msgstr "Kişiler"
 
 msgid "Partnerships"
-msgstr ""
+msgstr "ortaklıklar"
 
 msgid "Emergency"
-msgstr ""
+msgstr "Acil durum"
 
 msgid "Stranded Abroad"
-msgstr ""
+msgstr "Yurtdışında Mahsur Kalmak"
 
 msgid "In case of fire, medical or police emergency"
-msgstr ""
+msgstr "Yangın, tıbbi veya polis acil durumlarında"
 
 msgid "contact the single european emergency nunmber"
-msgstr ""
+msgstr "Avrupa'nın tek acil durum numarasıyla iletişime geçin"
 
 msgid "It is dial without code, just 112 when in any country of the EU"
-msgstr ""
+msgstr "AB'nin herhangi bir ülkesinde kodsuz olarak yalnızca 112 aranır."
 
 msgid "Welcome to Adventora"
-msgstr ""
+msgstr "Adventora'ya hoş geldiniz"
 
 msgid "Find your perfect stay with us"
-msgstr ""
+msgstr "Mükemmel konaklamanızı bizimle bulun"
 
 msgid "Registered hotels"
-msgstr ""
+msgstr "Kayıtlı oteller"
 
 msgid "Happy Customers"
-msgstr ""
+msgstr "Memnun müşteriler"
 
 msgid "Total Reservations"
-msgstr ""
+msgstr "Toplam Rezervasyon"
 
 msgid "View more"
-msgstr ""
+msgstr "Daha fazla göster"
 
 msgid "Reserve"
-msgstr ""
+msgstr "Rezerv"
 
 msgid "Admin"
-msgstr ""
+msgstr "Yönetici"
 
 msgid "Add Reservation"
-msgstr ""
+msgstr "Rezervasyon Ekle"
 
-msgid "Your hotel is not yet approved. Allow us to confirm your info within 48 hours."
+msgid ""
+"Your hotel is not yet approved. Allow us to confirm your info within 48 "
+"hours."
 msgstr ""
+"Oteliniz henüz onaylanmadı. Bilgilerinizi 48 saat içinde onaylamamıza izin "
+"verin."
 
 msgid "You don't have a hotel"
-msgstr ""
+msgstr "Oteliniz yok"
 
 msgid "Register Hotel"
-msgstr ""
+msgstr "Otele Kayıt Ol"
 
 msgid "Rooms"
-msgstr ""
+msgstr "Odalar"
 
 msgid "Add"
-msgstr ""
+msgstr "Eklemek"
 
 msgid "Confirm Address"
-msgstr ""
+msgstr "Onay Adresi"
 
 msgid "Reservations"
-msgstr ""
+msgstr "Rezervasyonlar"
 
 msgid "Capacity"
-msgstr ""
+msgstr "Kapasite"
 
 msgid "Price"
-msgstr ""
+msgstr "Fiyat"
 
 msgid "Night"
-msgstr ""
+msgstr "Gece"
 
 msgid "Occupied"
-msgstr ""
+msgstr "Dolu"
 
 msgid "Status"
-msgstr ""
+msgstr "Durum"
 
 msgid "Available"
-msgstr ""
+msgstr "Mevcut"
 
 msgid "To be cleaned"
-msgstr ""
+msgstr "Temizlenecek"
 
 msgid "Edit Hotel Information"
-msgstr ""
+msgstr "Otel Bilgilerini Düzenle"
 
 msgid "General Settings"
-msgstr ""
+msgstr "Genel Ayarlar"
 
 msgid "Management"
-msgstr ""
+msgstr "Yönetmek"
 
 msgid "Information"
-msgstr ""
+msgstr "Bilgi"
 
 msgid "Photos"
-msgstr ""
+msgstr "Fotoğraflar"
 
 msgid "Set room as occupied"
-msgstr ""
+msgstr "Odayı dolu olarak ayarla"
 
 msgid "Select from reservations for room"
-msgstr ""
+msgstr "Oda rezervasyonları arasından seçim yapın"
 
 msgid "No reservations for this room"
-msgstr ""
+msgstr "Bu oda için rezervasyon yok"
 
 msgid "Reservation"
-msgstr ""
+msgstr "Rezervasyon"
 
 msgid "Select"
-msgstr ""
+msgstr "Seçme"
 
 msgid "Add Photos"
-msgstr ""
+msgstr "Fotoğraf ekle"
 
 msgid "Upload"
-msgstr ""
+msgstr "Yüklemek"
 
 msgid "For partnerships contact us at"
-msgstr ""
+msgstr "Ortaklıklar için bizimle şu adresten iletişime geçin:"
 
 msgid "Privacy Policy of Adventora"
-msgstr ""
+msgstr "Adventora'nın Gizlilik Politikası"
 
 msgid "Last updated: August 13, 2023."
-msgstr ""
+msgstr "Son güncelleme: 13 Ağustos 2023."
 
-msgid "This <strong>Privacy Policy ('Policy')</strong> explains how Adventora ('we', 'us', 'our') collects, uses, protects, and shares the personal information gathered from users ('you', 'your') of the website <strong>https://adventora.net</strong> ('Website'). This Policy highlights our commitment to data privacy, transparency, and compliance with relevant data protection laws and regulations."
+msgid ""
+"This <strong>Privacy Policy ('Policy')</strong> explains how Adventora "
+"('we', 'us', 'our') collects, uses, protects, and shares the personal "
+"information gathered from users ('you', 'your') of the website "
+"<strong>https://adventora.net</strong> ('Website'). This Policy highlights "
+"our commitment to data privacy, transparency, and compliance with relevant "
+"data protection laws and regulations."
 msgstr ""
+"Bu <strong>Gizlilik Politikası (\"Politika\")</strong>, Adventora'nın "
+"(\"biz\", \"bize\", \"bizim\") kullanıcılardan ('siz', 'siz') toplanan "
+"kişisel bilgileri nasıl topladığını, kullandığını, koruduğunu ve "
+"paylaştığını açıklar. <strong>https://adventora.net</strong> web sitesinin "
+"('Web Sitesi') 'sizin'). Bu Politika, veri gizliliği, şeffaflık ve ilgili "
+"veri koruma yasa ve düzenlemelerine uyum konusundaki kararlılığımızı "
+"vurgulamaktadır."
 
 msgid "1. Information Collection"
-msgstr ""
+msgstr "1. Bilgi Toplama"
 
-msgid "We collect a variety of personal data from users to ensure the smooth operation of our booking services. This includes, but is not limited to:"
+msgid ""
+"We collect a variety of personal data from users to ensure the smooth "
+"operation of our booking services. This includes, but is not limited to:"
 msgstr ""
+"Rezervasyon hizmetlerimizin sorunsuz çalışmasını sağlamak için "
+"kullanıcılardan çeşitli kişisel veriler topluyoruz. Buna aşağıdakiler "
+"dahildir ancak bunlarla sınırlı değildir:"
 
 msgid "First and last name"
-msgstr ""
+msgstr "Ad ve soyad"
 
 msgid "Email address"
-msgstr ""
+msgstr "E-posta adresi"
 
 msgid "Username"
-msgstr ""
+msgstr "Kullanıcı adı"
 
 msgid "Phone numbers"
-msgstr ""
+msgstr "Telefon numaraları"
 
 msgid "Citizenship"
-msgstr ""
+msgstr "Vatandaşlık"
 
 msgid "For individuals designated as 'hotel manager', we also collect:"
 msgstr ""
+"'Otel müdürü' olarak belirlenen kişiler için ayrıca şunları da topluyoruz:"
 
 msgid "Hotel name"
-msgstr ""
+msgstr "Otel adı"
 
 msgid "Manager's name"
-msgstr ""
+msgstr "Yöneticinin adı"
 
 msgid "Unique identification number of the hotel's company (EIK)"
-msgstr ""
+msgstr "Otel şirketinin benzersiz kimlik numarası (EIK)"
 
 msgid "Hotel phone number"
-msgstr ""
+msgstr "Otelin telefon numarası"
 
 msgid "Hotel email address"
-msgstr ""
+msgstr "Otelin e-posta adresi"
 
 msgid "Physical address of the hotel"
-msgstr ""
+msgstr "Otelin fiziki adresi"
 
 msgid "2. Purpose and Use of Data"
-msgstr ""
+msgstr "2. Verilerin Amacı ve Kullanımı"
 
-msgid "The collected personal information serves as a basis for smooth, secure, and efficient booking and reservations. Your data facilitate account management, responsive customer support, and critical communication. If identified as a hotel manager, certain details are shared with the establishment to optimize reservation monitoring."
+msgid ""
+"The collected personal information serves as a basis for smooth, secure, and"
+" efficient booking and reservations. Your data facilitate account "
+"management, responsive customer support, and critical communication. If "
+"identified as a hotel manager, certain details are shared with the "
+"establishment to optimize reservation monitoring."
 msgstr ""
+"Toplanan kişisel bilgiler sorunsuz, güvenli ve verimli rezervasyon ve "
+"rezervasyonlar için temel oluşturur. Verileriniz hesap yönetimini, duyarlı "
+"müşteri desteğini ve kritik iletişimi kolaylaştırır. Otel yöneticisi olarak "
+"belirtilmesi halinde, rezervasyon takibinin optimize edilmesi amacıyla "
+"belirli ayrıntılar tesisle paylaşılır."
 
 msgid "3. Engagement with Third-Party Services"
-msgstr ""
+msgstr "3. Üçüncü Taraf Hizmetleriyle Etkileşim"
 
-msgid "To enhance the user experience and expand our offerings, we engage reputable third-party services, including, but not limited to:"
+msgid ""
+"To enhance the user experience and expand our offerings, we engage reputable"
+" third-party services, including, but not limited to:"
 msgstr ""
+"Kullanıcı deneyimini geliştirmek ve tekliflerimizi genişletmek için "
+"aşağıdakiler dahil ancak bunlarla sınırlı olmamak üzere saygın üçüncü taraf "
+"hizmetlerinden faydalanıyoruz:"
 
 msgid "Google Analytics for detailed website analysis"
-msgstr ""
+msgstr "Ayrıntılı web sitesi analizi için Google Analytics"
 
 msgid "Top-Rent-A-Car for promotional banners, widgets, and joint promotions"
 msgstr ""
+"Promosyon afişleri, widget'lar ve ortak promosyonlar için Top-Rent-A-Car"
 
-msgid "Social services for login, including Google, GitHub, Reddit, Spotify, Trello, Patreon, Steam, VK, and Amazon"
+msgid ""
+"Social services for login, including Google, GitHub, Reddit, Spotify, "
+"Trello, Patreon, Steam, VK, and Amazon"
 msgstr ""
+"Google, GitHub, Reddit, Spotify, Trello, Patreon, Steam, VK ve Amazon dahil "
+"olmak üzere oturum açmaya yönelik sosyal hizmetler"
 
-msgid "Payment processing through reputable providers like Stripe and epay.bg for secure financial transactions"
+msgid ""
+"Payment processing through reputable providers like Stripe and epay.bg for "
+"secure financial transactions"
 msgstr ""
+"Güvenli finansal işlemler için Stripe ve epay.bg gibi saygın sağlayıcılar "
+"aracılığıyla ödeme işlemleri"
 
 msgid "4. Tracking Mechanisms and Cookies"
-msgstr ""
+msgstr "4. Takip Mekanizmaları ve Çerezler"
 
-msgid "Cookies serve as vital components of our digital architecture, contributing to the seamless retention of sessions and the preservation of data for personalization, such as theme settings and language preferences. In addition, certain third-party cookies may be used in conjunction with our respected partners."
+msgid ""
+"Cookies serve as vital components of our digital architecture, contributing "
+"to the seamless retention of sessions and the preservation of data for "
+"personalization, such as theme settings and language preferences. In "
+"addition, certain third-party cookies may be used in conjunction with our "
+"respected partners."
 msgstr ""
+"Çerezler, dijital mimarimizin hayati bileşenleri olarak görev yapar ve "
+"oturumların kusursuz bir şekilde tutulmasına ve tema ayarları ve dil "
+"tercihleri ​​gibi kişiselleştirme amacıyla verilerin korunmasına katkıda "
+"bulunur. Ayrıca saygın ortaklarımızla birlikte belirli üçüncü taraf "
+"çerezleri de kullanılabilir."
 
 msgid "5. Data Retention Strategy"
-msgstr ""
+msgstr "5. Veri Saklama Stratejisi"
 
-msgid "User personal data continue to be stored in our systems for the duration of an active account. An option for account deletion is provided, allowing for the voluntary removal of associated data. For hotel managers, data related to the establishment is stored for up to one year to comply with security protocols and possible legal regulations."
+msgid ""
+"User personal data continue to be stored in our systems for the duration of "
+"an active account. An option for account deletion is provided, allowing for "
+"the voluntary removal of associated data. For hotel managers, data related "
+"to the establishment is stored for up to one year to comply with security "
+"protocols and possible legal regulations."
 msgstr ""
+"Kullanıcının kişisel verileri, hesabın aktif olduğu süre boyunca "
+"sistemlerimizde saklanmaya devam eder. İlgili verilerin gönüllü olarak "
+"kaldırılmasına olanak tanıyan bir hesap silme seçeneği sağlanmıştır. Otel "
+"yöneticileri için işletmeye ait veriler, güvenlik protokollerine ve olası "
+"yasal düzenlemelere uyum amacıyla bir yıla kadar saklanmaktadır."
 
 msgid "6. Robust Security Framework"
-msgstr ""
+msgstr "6. Sağlam Güvenlik Çerçevesi"
 
-msgid "With the help of modern encryption protocols that include a 512-character encryption key, we impose strict measures to protect sensitive data. Data is stored on a remote database server located in the European Union, secured with the comprehensive security infrastructure provided by Amazon Web Services."
+msgid ""
+"With the help of modern encryption protocols that include a 512-character "
+"encryption key, we impose strict measures to protect sensitive data. Data is"
+" stored on a remote database server located in the European Union, secured "
+"with the comprehensive security infrastructure provided by Amazon Web "
+"Services."
 msgstr ""
+"512 karakterlik şifreleme anahtarını içeren modern şifreleme protokollerinin"
+" yardımıyla hassas verileri korumak için katı önlemler uyguluyoruz. Veriler,"
+" Amazon Web Services'in sağladığı kapsamlı güvenlik altyapısıyla güvenliği "
+"sağlanan, Avrupa Birliği'nde bulunan uzak bir veritabanı sunucusunda "
+"depolanır."
 
 msgid "7. Data Sharing and Collaborative Efforts"
-msgstr ""
+msgstr "7. Veri Paylaşımı ve İşbirliği Çalışmaları"
 
-msgid "Certain user data, including email addresses, names, and contact numbers, are shared with hotels to facilitate effective reservation management. Beyond established partnerships, data sharing with external organizations is limited to data automatically collected by Google Analytics and Top-Rent-A-Car."
+msgid ""
+"Certain user data, including email addresses, names, and contact numbers, "
+"are shared with hotels to facilitate effective reservation management. "
+"Beyond established partnerships, data sharing with external organizations is"
+" limited to data automatically collected by Google Analytics and Top-Rent-A-"
+"Car."
 msgstr ""
+"Etkili rezervasyon yönetimini kolaylaştırmak için e-posta adresleri, isimler"
+" ve iletişim numaraları dahil belirli kullanıcı verileri otellerle "
+"paylaşılır. Kurulu ortaklıkların ötesinde, dış kuruluşlarla veri paylaşımı, "
+"Google Analytics ve Top-Rent-a-Car tarafından otomatik olarak toplanan "
+"verilerle sınırlıdır."
 
 msgid "8. Cross-Border Data Transfers"
-msgstr ""
+msgstr "8. Sınır Ötesi Veri Transferleri"
 
-msgid "User personal data remain entirely within the European Union. In cases where your citizenship falls outside the EU, data may be transferred internationally for storage within the jurisdiction of the EU."
+msgid ""
+"User personal data remain entirely within the European Union. In cases where"
+" your citizenship falls outside the EU, data may be transferred "
+"internationally for storage within the jurisdiction of the EU."
 msgstr ""
+"Kullanıcının kişisel verileri tamamen Avrupa Birliği dahilinde kalır. "
+"Vatandaşlığınızın AB dışında olduğu durumlarda veriler, AB'nin yetki alanı "
+"dahilinde saklanmak üzere uluslararası olarak aktarılabilir."
 
 msgid "9. Protection of Children's Personal Information"
-msgstr ""
+msgstr "9. Çocukların Kişisel Bilgilerinin Korunması"
 
-msgid "Adventora is entirely aimed at legal adults. Due to the mandatory nature of collecting personal data for reservation purposes and payment processing, the platform is not intended for minors. Exceptions may arise when legal adults provide information on minors within the context of their booked vacation."
+msgid ""
+"Adventora is entirely aimed at legal adults. Due to the mandatory nature of "
+"collecting personal data for reservation purposes and payment processing, "
+"the platform is not intended for minors. Exceptions may arise when legal "
+"adults provide information on minors within the context of their booked "
+"vacation."
 msgstr ""
+"Adventora tamamen yasal yetişkinlere yöneliktir. Rezervasyon amaçları ve "
+"ödeme işlemleri için kişisel verilerin toplanmasının zorunlu olması "
+"nedeniyle platform reşit olmayanlara yönelik değildir. Yasal yetişkinlerin "
+"rezervasyon yaptırdıkları tatil bağlamında reşit olmayanlar hakkında bilgi "
+"vermesi durumunda istisnalar ortaya çıkabilir."
 
 msgid "10. Notification of Policy Changes"
-msgstr ""
+msgstr "10. Politika Değişikliklerinin Bildirilmesi"
 
-msgid "Changes or modifications to this Policy will be communicated via email and will be clearly displayed on the Website."
+msgid ""
+"Changes or modifications to this Policy will be communicated via email and "
+"will be clearly displayed on the Website."
 msgstr ""
+"Bu Politikadaki değişiklikler veya modifikasyonlar e-posta yoluyla "
+"iletilecek ve Web Sitesinde açıkça görüntülenecektir."
 
 msgid "11. Legitimate Basis for Data Processing"
-msgstr ""
+msgstr "11. Veri İşlemenin Meşru Dayanağı"
 
-msgid "The collection and processing of data are based on the mandatory execution of reservations and related reservation activities."
+msgid ""
+"The collection and processing of data are based on the mandatory execution "
+"of reservations and related reservation activities."
 msgstr ""
+"Verilerin toplanması ve işlenmesi, rezervasyonların ve ilgili rezervasyon "
+"faaliyetlerinin zorunlu olarak yürütülmesine dayanmaktadır."
 
 msgid "12. Implied Consent"
-msgstr ""
+msgstr "12. Zımni Rıza"
 
-msgid "By using our platform and creating an account, you implicitly agree to the collection and processing of personal data, in accordance with this Policy."
+msgid ""
+"By using our platform and creating an account, you implicitly agree to the "
+"collection and processing of personal data, in accordance with this Policy."
 msgstr ""
+"Platformumuzu kullanarak ve bir hesap oluşturarak, kişisel verilerin bu "
+"Politikaya uygun olarak toplanmasını ve işlenmesini zımnen kabul etmiş "
+"olursunuz."
 
 msgid "13. Compliance with Applicable Regulations"
-msgstr ""
+msgstr "13. Geçerli Yönetmeliklere Uygunluk"
 
-msgid "Our data processing procedures strictly adhere to the regulations and provisions set forth by the General Data Protection Regulation (GDPR)."
+msgid ""
+"Our data processing procedures strictly adhere to the regulations and "
+"provisions set forth by the General Data Protection Regulation (GDPR)."
 msgstr ""
+"Veri işleme prosedürlerimiz, Genel Veri Koruma Yönetmeliği (GDPR) tarafından"
+" belirlenen düzenlemelere ve hükümlere sıkı sıkıya bağlıdır."
 
-msgid "For questions, clarifications, or requests related to your personal data and this Policy, we inform you that you can contact us via the following contact: <a href='mailto:support@adventora.net'>hello@adventora.net</a>."
+msgid ""
+"For questions, clarifications, or requests related to your personal data and"
+" this Policy, we inform you that you can contact us via the following "
+"contact: <a href='mailto:support@adventora.net'>hello@adventora.net</a>."
 msgstr ""
+"Kişisel verileriniz ve bu Politikayla ilgili sorularınız, açıklamalarınız "
+"veya talepleriniz için bizimle şu iletişim yoluyla iletişime "
+"geçebileceğinizi bildiririz: <a "
+"href='mailto:support@adventora.net'>hello@adventora.net</ a>."
 
 msgid "Reserve Room"
-msgstr ""
+msgstr "Rezervasyon Odası"
 
 msgid "Price / Night"
-msgstr ""
+msgstr "Fiyat / Gece"
 
 msgid "Name"
-msgstr ""
+msgstr "İsim"
 
 msgid "Email"
-msgstr ""
+msgstr "E-posta"
 
 msgid "How many people?"
-msgstr ""
+msgstr "Kaç insan?"
 
 msgid "How many nights?"
-msgstr ""
+msgstr "Kaç gece?"
 
 msgid "TOTAL"
-msgstr ""
+msgstr "TOPLAM"
 
 msgid "Username or email"
-msgstr ""
+msgstr "Kullanıcı adı ya da email"
 
 msgid "Password"
-msgstr ""
+msgstr "Şifre"
 
 msgid "Login"
-msgstr ""
+msgstr "Giriş yapmak"
 
 msgid "The username must contain at least 8 characters."
-msgstr ""
+msgstr "Kullanıcı adı en az 8 karakter içermelidir."
 
 msgid "First name"
-msgstr ""
+msgstr "İlk adı"
 
 msgid "Last name"
-msgstr ""
+msgstr "Soy isim"
 
 msgid "Email address must be valid"
-msgstr ""
+msgstr "E-posta adresi geçerli olmalıdır"
 
-msgid "The password must be at least 8 characters long. <br> The password should not contain only digits. <br> The password should not contain only letters. <br> The password should not contain only special characters. <br> The password should not contain the username. <br> The password should not be a commonly used password."
+msgid ""
+"The password must be at least 8 characters long. <br> The password should "
+"not contain only digits. <br> The password should not contain only letters. "
+"<br> The password should not contain only special characters. <br> The "
+"password should not contain the username. <br> The password should not be a "
+"commonly used password."
 msgstr ""
+"Şifre en az 8 karakter uzunluğunda olmalıdır. <br> Şifre yalnızca rakam "
+"içermemelidir. <br> Şifre yalnızca harflerden oluşmamalıdır. <br> Şifre "
+"yalnızca özel karakterler içermemelidir. <br> Şifre kullanıcı adını "
+"içermemelidir. <br> Şifre sık kullanılan bir şifre olmamalıdır."
 
 msgid "Confirm password"
-msgstr ""
+msgstr "Şifreyi Onayla"
 
 msgid "Enter the same password as above, for verification."
-msgstr ""
+msgstr "Doğrulama için yukarıdakiyle aynı şifreyi girin."
 
 msgid "Sign up"
-msgstr ""
+msgstr "Üye olmak"
 
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
 msgstr ""
+"Vacationer - İdeal tatil aktivitelerinizi keşfedin, planlayın ve rezervasyon"
+" yapın."
 
-msgid "Hotel Manager - Oversee operations and provide excellent service in your own hotel."
+msgid ""
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
 msgstr ""
+"Otel Müdürü - Operasyonları denetleyin ve kendi otelinizde mükemmel hizmet "
+"sağlayın."
 
-msgid "Employee - Contribute your expertise to a thriving workplace, such as a hotel or guest house."
+msgid ""
+"Employee - Contribute your expertise to a thriving workplace, such as a "
+"hotel or guest house."
 msgstr ""
+"Çalışan - Uzmanlığınızı otel veya misafirhane gibi gelişen bir işyerine "
+"katkıda bulunun."
 
 msgid "Submit"
-msgstr ""
+msgstr "Göndermek"
 
 msgid "First Name"
-msgstr ""
+msgstr "İlk adı"
 
 msgid "Last Name"
-msgstr ""
+msgstr "Soy isim"
 
 msgid "Save"
-msgstr ""
+msgstr "Kaydetmek"
 
 msgid "The email must be valid."
-msgstr ""
+msgstr "E-posta geçerli olmalıdır."
 
 msgid "Phone"
-msgstr ""
+msgstr "Telefon"
 
 msgid "Choose a Role"
-msgstr ""
+msgstr "Bir Rol Seçin"
 
 msgid "Old Password"
-msgstr ""
+msgstr "eski Şifre"
 
 msgid "New Password"
-msgstr ""
+msgstr "Yeni Şifre"
 
 msgid "Confirm New Password"
-msgstr ""
+msgstr "Yeni şifreyi onayla"
 
 msgid "Enable"
-msgstr ""
+msgstr "Olanak vermek"
 
 msgid "Code"
-msgstr ""
+msgstr "Kod"
 
 msgid "Disable"
-msgstr ""
+msgstr "Devre dışı bırakmak"
 
 msgid "User"
-msgstr ""
+msgstr "Kullanıcı"
 
 msgid "Manager"
-msgstr ""
+msgstr "Müdür"
 
 msgid "Employee"
-msgstr ""
+msgstr "Çalışan"
 
 msgid "Malformed security token"
-msgstr ""
+msgstr "Hatalı biçimlendirilmiş güvenlik belirteci"
 
 msgid "A user with that email already exists."
-msgstr ""
+msgstr "Bu e-posta ile bir kullanıcı zaten var."
 
 msgid "Password must be at least 8 characters long."
-msgstr ""
+msgstr "Şifre en az 8 karakter uzunluğunda olmalıdır."
 
 msgid "Passwords do not match."
-msgstr ""
+msgstr "Parolalar uyuşmuyor."
 
 msgid "Username must be at least 4 characters long."
-msgstr ""
+msgstr "Kullanıcı adı en az 4 karakter uzunluğunda olmalıdır."
 
 msgid "Username should only contain letters and numbers."
-msgstr ""
+msgstr "Kullanıcı adı yalnızca harf ve rakamlardan oluşmalıdır."
 
 msgid "Invalid email."
-msgstr ""
+msgstr "Geçersiz e-posta."
 
 msgid "A user with that username already exists."
-msgstr ""
+msgstr "Bir kullanıcı bu ismi zaten kulanıyor."
 
 msgid "Successfully registration."
-msgstr ""
+msgstr "Başarıyla kayıt."
 
 msgid "Invalid data."
-msgstr ""
+msgstr "Geçersiz veri."
 
 msgid "A user with that email does not exist."
-msgstr ""
+msgstr "Bu e-postaya sahip bir kullanıcı mevcut değil."
 
 msgid "Successfully logged in."
-msgstr ""
+msgstr "Başarıyla oturum açıldı."
 
 msgid "Invalid password."
-msgstr ""
+msgstr "Geçersiz şifre."
 
 msgid "A user with that username does not exist."
-msgstr ""
+msgstr "Bu kullanıcı adına sahip bir kullanıcı mevcut değil."
 
 msgid "Successfully logged out."
-msgstr ""
+msgstr "Başarıyla çıkış yapıldı."
 
 msgid "Invalid role."
-msgstr ""
+msgstr "Geçersiz rol."
 
 msgid "Successfully chosen role."
-msgstr ""
+msgstr "Başarıyla seçilen rol."
 
 msgid "Successfully confirmed name."
-msgstr ""
+msgstr "Ad başarıyla onaylandı."
 
 msgid "Successfully confirmed email."
-msgstr ""
+msgstr "E-posta başarıyla onaylandı."
 
 msgid "Invalid username. At least 5 characters."
-msgstr ""
+msgstr "Geçersiz kullanıcı adı. En az 5 karakter."
 
 msgid "Successfully confirmed username."
-msgstr ""
+msgstr "Kullanıcı adı başarıyla onaylandı."
 
 msgid "Successfully edited profile."
-msgstr ""
+msgstr "Profil başarıyla düzenlendi."
 
 msgid "Incorrect old password."
-msgstr ""
+msgstr "Yanlış eski şifre."
 
 msgid "Successfully changed password."
-msgstr ""
+msgstr "Şifre başarıyla değiştirildi."
 
 msgid "Incorrect password."
-msgstr ""
+msgstr "Yanlış parola."
 
 msgid "Successfully deleted account."
-msgstr ""
+msgstr "Hesap başarıyla silindi."
 
 msgid "Successfully confirmed citizenship."
-msgstr ""
+msgstr "Vatandaşlık başarıyla onaylandı."
 
 msgid "Successfully confirmed phone number."
-msgstr ""
+msgstr "Telefon numarası başarıyla onaylandı."
 
 msgid "Two factor authentication is not enabled."
-msgstr ""
+msgstr "İki faktörlü kimlik doğrulama etkin değil."
 
 msgid "Two factor authentication is already passed."
-msgstr ""
+msgstr "İki faktörlü kimlik doğrulama zaten geçti."
 
 msgid "Successfully passed two factor authentication"
-msgstr ""
+msgstr "İki faktörlü kimlik doğrulamayı başarıyla geçti"
 
 msgid "Invalid code."
-msgstr ""
+msgstr "Geçersiz kod."
 
 msgid "Two factor authentication is already enabled."
-msgstr ""
+msgstr "İki faktörlü kimlik doğrulama zaten etkin."
 
 msgid "You cannot enable two factor authentication with a social login."
 msgstr ""
+"Sosyal oturum açmayla iki faktörlü kimlik doğrulamayı etkinleştiremezsiniz."
 
 msgid "Successfully enabled two factor authentication."
-msgstr ""
+msgstr "İki faktörlü kimlik doğrulama başarıyla etkinleştirildi."
 
 msgid "Successfully disabled two factor authentication."
-msgstr ""
+msgstr "İki faktörlü kimlik doğrulama başarıyla devre dışı bırakıldı."
 
 msgid "Invalid login data. Please try again."
-msgstr ""
+msgstr "Geçersiz oturum açma verileri. Lütfen tekrar deneyin."
 
-msgid "To continue, you need to pass an automated security check. Please wait. if you are not redirected within 5 seconds, complete the captcha and click continue."
+msgid ""
+"To continue, you need to pass an automated security check. Please wait. if "
+"you are not redirected within 5 seconds, complete the captcha and click "
+"continue."
 msgstr ""
+"Devam etmek için otomatik bir güvenlik kontrolünden geçmeniz gerekiyor. "
+"Lütfen bekleyin. 5 saniye içinde yönlendirilmezseniz captcha'yı tamamlayın "
+"ve devam et'i tıklayın."
 
 msgid "Continue"
-msgstr ""
+msgstr "Devam etmek"
 
 msgid "Room not available"
-msgstr ""
+msgstr "Oda mevcut değil"
 
 msgid "Invalid dates"
-msgstr ""
+msgstr "Geçersiz tarihler"
 
 msgid "Reservation successful"
-msgstr ""
+msgstr "Rezervasyon başarılı"
 
 msgid "Reservation not available"
-msgstr ""
+msgstr "Rezervasyon mevcut değil"
 
 msgid "Invoice not available"
-msgstr ""
+msgstr "Fatura mevcut değil"
 
 msgid "Hotel Name"
-msgstr ""
+msgstr "Otel Adı"
 
 msgid "Address"
-msgstr ""
+msgstr "Adres"
 
 msgid "City"
-msgstr ""
+msgstr "Şehir"
 
 msgid "Website"
-msgstr ""
+msgstr "İnternet sitesi"
 
 msgid "Description"
-msgstr ""
+msgstr "Tanım"
 
 msgid "EIK"
-msgstr ""
+msgstr "EIK"
 
 msgid "Authorized Person"
-msgstr ""
+msgstr "Yetkili kişi"
 
 msgid "Stars"
-msgstr ""
+msgstr "Yıldızlar"
 
-msgid "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy policy</a>"
+msgid ""
+"I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
+"policy</a>"
 msgstr ""
+"<a href=\"/privacy\" target=\"_blank\">Gizlilik politikasını</a> okudum ve "
+"kabul ediyorum"
 
-msgid "I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank\">terms and conditions</a>"
+msgid ""
+"I have read and agree to the <a href=\"/terms-of-use\" "
+"target=\"_blank\">terms and conditions</a>"
 msgstr ""
+"<a href=\"/terms-of-use\" target=\"_blank\">şartlar ve koşulları</a> okudum "
+"ve kabul ediyorum"
 
-msgid "I hereby certify, under penalty of law, that the information provided about myself and my hotel is accurate and complete to the best of my knowledge.<br> I understand that any false or misleading information provided may result in the immdiate suspesion of my hotel listing from Adventora and may lead to potential legal consequences."
+msgid ""
+"I hereby certify, under penalty of law, that the information provided about "
+"myself and my hotel is accurate and complete to the best of my "
+"knowledge.<br> I understand that any false or misleading information "
+"provided may result in the immdiate suspesion of my hotel listing from "
+"Adventora and may lead to potential legal consequences."
 msgstr ""
+"Kanunen kendim ve otelim hakkında verilen bilgilerin bildiğim kadarıyla "
+"doğru ve eksiksiz olduğunu tasdik ederim.<br> Sağlanan herhangi bir yanlış "
+"veya yanıltıcı bilginin otelimin derhal askıya alınmasıyla "
+"sonuçlanabileceğini anlıyorum. Adventora'dan listeleme ve potansiyel yasal "
+"sonuçlara yol açabilir."
 
 msgid "Save Changes"
-msgstr ""
+msgstr "Değişiklikleri Kaydet"
 
 msgid "Room Number"
-msgstr ""
+msgstr "Oda numarası"
 
 msgid "Luxuries"
-msgstr ""
+msgstr "Lüksler"
 
 msgid "Create Room"
-msgstr ""
+msgstr "Oda yarat"
 
 msgid "Select Room"
-msgstr ""
+msgstr "Oda Seçiniz"
 
 msgid "Check In"
-msgstr ""
+msgstr "Giriş"
 
 msgid "Check Out"
-msgstr ""
+msgstr "Çıkış yapmak"
 
 msgid "Guests"
-msgstr ""
+msgstr "Misafirler"
 
 msgid "ID Card Number"
-msgstr ""
+msgstr "ID kart numarası"
 
 msgid "Create Reservation"
-msgstr ""
+msgstr "Rezervasyon Oluştur"
 
 msgid "No description provided."
-msgstr ""
+msgstr "Açıklama sağlanmadı."
 
 msgid "You do not have permission to view this page"
-msgstr ""
+msgstr "Bu sayfayı görüntüleme izniniz yok"
 
 msgid "Your hotel is not approved yet"
-msgstr ""
+msgstr "Oteliniz henüz onaylanmadı"
 
 msgid "Successfully registered hotel"
-msgstr ""
+msgstr "Başarıyla kaydedilen otel"
 
 msgid "Error while registering hotel"
-msgstr ""
+msgstr "Otel kaydı sırasında hata oluştu"
 
 msgid "You have already registered a hotel"
-msgstr ""
+msgstr "Zaten bir otele kaydoldunuz"
 
 msgid "You have not registered a hotel yet"
-msgstr ""
+msgstr "Henüz bir otel kaydetmediniz"
 
 msgid "Successfully confirmed address"
-msgstr ""
+msgstr "Başarıyla doğrulanan adres"
 
 msgid "Error while confirming address"
-msgstr ""
+msgstr "Adres onaylanırken hata oluştu"
 
 msgid "No such hotel"
-msgstr ""
+msgstr "Böyle bir otel yok"
 
 msgid "We cannot find the hotel you are looking for"
-msgstr ""
+msgstr "Aradığınız oteli bulamıyoruz"
 
 msgid "Successfully added room"
-msgstr ""
+msgstr "Oda başarıyla eklendi"
 
 msgid "Error while adding room"
-msgstr ""
+msgstr "Oda eklenirken hata oluştu"
 
 msgid "We cannot find the room you are looking for"
-msgstr ""
+msgstr "Aradığınız odayı bulamıyoruz"
 
 msgid "Successfully updated hotel"
-msgstr ""
+msgstr "Otel başarıyla güncellendi"
 
 msgid "Error while updating hotel"
-msgstr ""
+msgstr "Otel güncellenirken hata oluştu"
 
 msgid "Successfully updated room status"
-msgstr ""
+msgstr "Oda durumu başarıyla güncellendi"
 
 msgid "Invalid status"
-msgstr ""
+msgstr "Geçersiz durum"
 
 msgid "This room is already occupied"
-msgstr ""
+msgstr "Bu oda zaten dolu"
 
 msgid "We cannot find the reservation you are looking for"
-msgstr ""
+msgstr "Aradığınız rezervasyonu bulamıyoruz"
 
 msgid "This reservation is already completed"
-msgstr ""
+msgstr "Bu rezervasyon zaten tamamlandı"
 
 msgid "This reservation is already cancelled"
-msgstr ""
+msgstr "Bu rezervasyon zaten iptal edildi"
 
 msgid "This reservation is already expired"
-msgstr ""
+msgstr "Bu rezervasyonun süresi zaten doldu"
 
 msgid "This reservation is already rejected"
-msgstr ""
+msgstr "Bu rezervasyon zaten reddedildi"
 
 msgid "Successfully occupied room"
-msgstr ""
+msgstr "Oda başarıyla işgal edildi"
 
 msgid "Successfully deleted room"
-msgstr ""
+msgstr "Oda başarıyla silindi"
 
 msgid "Successfully added reservation"
-msgstr ""
+msgstr "Rezervasyon başarıyla eklendi"
 
 msgid "Successfully uploaded photos"
-msgstr ""
+msgstr "Fotoğraflar başarıyla yüklendi"
 
 msgid "Successfully deleted photo"
-msgstr ""
+msgstr "Fotoğraf başarıyla silindi"
 
 msgid "Photo not found"
-msgstr ""
+msgstr "Fotoğraf bulunamadı"
 
 msgid "Successfully updated room"
-msgstr ""
+msgstr "Oda başarıyla güncellendi"

@@ -17,779 +17,954 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
 msgid "Not confirmed"
-msgstr ""
+msgstr "Nem megerősített"
 
 msgid "Send confirmation email again."
-msgstr ""
+msgstr "Küldjön újra megerősítő e-mailt."
 
 msgid "Confirmed"
-msgstr ""
+msgstr "Megerősített"
 
 msgid "Turned On"
-msgstr ""
+msgstr "Bekapcsolva"
 
 msgid "Turn off"
-msgstr ""
+msgstr "Kikapcsolni"
 
 msgid "Turned Off"
-msgstr ""
+msgstr "Kikapcsolt"
 
 msgid "Turn on"
-msgstr ""
+msgstr "Bekapcsol"
 
 msgid "My Reservations"
-msgstr ""
+msgstr "Saját foglalásaim"
 
 msgid "Change password"
-msgstr ""
+msgstr "Jelszó módosítása"
 
 msgid "Delete Account"
-msgstr ""
+msgstr "Fiók törlése"
 
 msgid "Room"
-msgstr ""
+msgstr "Szoba"
 
 msgid "Nights"
-msgstr ""
+msgstr "Éjszakák"
 
 msgid "Check-in"
-msgstr ""
+msgstr "Becsekkolás"
 
 msgid "Check-out"
-msgstr ""
+msgstr "Kijelentkezés"
 
 msgid "Total"
-msgstr ""
+msgstr "Teljes"
 
 msgid "Invoice"
-msgstr ""
+msgstr "Számla"
 
 msgid "Hotel"
-msgstr ""
+msgstr "Szálloda"
 
 msgid "Login with Google"
-msgstr ""
+msgstr "Jelentkezzen be a Google-lal"
 
 msgid "Login with Trello"
-msgstr ""
+msgstr "Jelentkezzen be a Trellóval"
 
 msgid "Login with GitHub"
-msgstr ""
+msgstr "Jelentkezzen be a GitHub segítségével"
 
 msgid "Login with Reddit"
-msgstr ""
+msgstr "Jelentkezzen be a Reddit segítségével"
 
 msgid "Login with Steam"
-msgstr ""
+msgstr "Jelentkezzen be a Steam segítségével"
 
 msgid "Login with Spotify."
-msgstr ""
+msgstr "Jelentkezzen be a Spotify-val."
 
 msgid "Login with VK"
-msgstr ""
+msgstr "Jelentkezzen be a VK-val"
 
 msgid "Please enter your two-factor verification code"
-msgstr ""
+msgstr "Kérjük, adja meg kéttényezős ellenőrző kódját"
 
 msgid "Home"
-msgstr ""
+msgstr "itthon"
 
 msgid "Hotels"
-msgstr ""
+msgstr "Szállodák"
 
 msgid "Dashboard"
-msgstr ""
+msgstr "Irányítópult"
 
 msgid "Error"
-msgstr ""
+msgstr "Hiba"
 
 msgid "Success"
-msgstr ""
+msgstr "Siker"
 
 msgid "Warning"
-msgstr ""
+msgstr "Figyelem"
 
 msgid "Adventora supports small, medium and large businesses"
-msgstr ""
+msgstr "Az Adventora kis-, közép- és nagyvállalkozásokat támogat"
 
 msgid "All Rights Reserved"
-msgstr ""
+msgstr "Minden jog fenntartva"
 
 msgid "Homepage"
-msgstr ""
+msgstr "Kezdőlap"
 
 msgid "About us"
-msgstr ""
+msgstr "Rólunk"
 
 msgid "Privacy"
-msgstr ""
+msgstr "Magánélet"
 
 msgid "Terms of use"
-msgstr ""
+msgstr "Használati feltételek"
 
 msgid "Contacts"
-msgstr ""
+msgstr "Kapcsolatok"
 
 msgid "Partnerships"
-msgstr ""
+msgstr "Partnerségek"
 
 msgid "Emergency"
-msgstr ""
+msgstr "Vészhelyzet"
 
 msgid "Stranded Abroad"
-msgstr ""
+msgstr "Megfeneklett külföldön"
 
 msgid "In case of fire, medical or police emergency"
-msgstr ""
+msgstr "Tűz, orvosi vagy rendőrségi vészhelyzet esetén"
 
 msgid "contact the single european emergency nunmber"
-msgstr ""
+msgstr "vegye fel a kapcsolatot az egységes európai segélyhívó számmal"
 
 msgid "It is dial without code, just 112 when in any country of the EU"
-msgstr ""
+msgstr "Kód nélkül tárcsázható, az EU bármely országában csak 112"
 
 msgid "Welcome to Adventora"
-msgstr ""
+msgstr "Üdvözöljük az Adventorában"
 
 msgid "Find your perfect stay with us"
-msgstr ""
+msgstr "Találja meg tökéletes tartózkodását nálunk"
 
 msgid "Registered hotels"
-msgstr ""
+msgstr "Regisztrált szállodák"
 
 msgid "Happy Customers"
-msgstr ""
+msgstr "Boldog vásárlók"
 
 msgid "Total Reservations"
-msgstr ""
+msgstr "Összes foglalás"
 
 msgid "View more"
-msgstr ""
+msgstr "Mutass többet"
 
 msgid "Reserve"
-msgstr ""
+msgstr "lefoglal"
 
 msgid "Admin"
-msgstr ""
+msgstr "Admin"
 
 msgid "Add Reservation"
-msgstr ""
+msgstr "Foglalás hozzáadása"
 
-msgid "Your hotel is not yet approved. Allow us to confirm your info within 48 hours."
+msgid ""
+"Your hotel is not yet approved. Allow us to confirm your info within 48 "
+"hours."
 msgstr ""
+"Szállodája még nincs jóváhagyva. Engedje meg, hogy adatait 48 órán belül "
+"megerősítsük."
 
 msgid "You don't have a hotel"
-msgstr ""
+msgstr "Nincs szállodád"
 
 msgid "Register Hotel"
-msgstr ""
+msgstr "Regisztráljon szállodát"
 
 msgid "Rooms"
-msgstr ""
+msgstr "Szobák"
 
 msgid "Add"
-msgstr ""
+msgstr "Hozzáadás"
 
 msgid "Confirm Address"
-msgstr ""
+msgstr "Erősítse meg címét"
 
 msgid "Reservations"
-msgstr ""
+msgstr "Fenntartások"
 
 msgid "Capacity"
-msgstr ""
+msgstr "Kapacitás"
 
 msgid "Price"
-msgstr ""
+msgstr "Ár"
 
 msgid "Night"
-msgstr ""
+msgstr "Éjszaka"
 
 msgid "Occupied"
-msgstr ""
+msgstr "Megszállt"
 
 msgid "Status"
-msgstr ""
+msgstr "Állapot"
 
 msgid "Available"
-msgstr ""
+msgstr "Elérhető"
 
 msgid "To be cleaned"
-msgstr ""
+msgstr "Takarítandó"
 
 msgid "Edit Hotel Information"
-msgstr ""
+msgstr "Szállodainformáció szerkesztése"
 
 msgid "General Settings"
-msgstr ""
+msgstr "Általános beállítások"
 
 msgid "Management"
-msgstr ""
+msgstr "Menedzsment"
 
 msgid "Information"
-msgstr ""
+msgstr "Információ"
 
 msgid "Photos"
-msgstr ""
+msgstr "Fényképek"
 
 msgid "Set room as occupied"
-msgstr ""
+msgstr "Állítsa be a szobát foglaltnak"
 
 msgid "Select from reservations for room"
-msgstr ""
+msgstr "Válasszon a szobafoglalások közül"
 
 msgid "No reservations for this room"
-msgstr ""
+msgstr "Nincs foglalás erre a szobára"
 
 msgid "Reservation"
-msgstr ""
+msgstr "Foglalás"
 
 msgid "Select"
-msgstr ""
+msgstr "Válassza ki"
 
 msgid "Add Photos"
-msgstr ""
+msgstr "Fényképek hozzáadása"
 
 msgid "Upload"
-msgstr ""
+msgstr "Feltöltés"
 
 msgid "For partnerships contact us at"
-msgstr ""
+msgstr "Partnerkapcsolatokért vegye fel velünk a kapcsolatot a telefonszámon"
 
 msgid "Privacy Policy of Adventora"
-msgstr ""
+msgstr "Az Adventora adatvédelmi szabályzata"
 
 msgid "Last updated: August 13, 2023."
-msgstr ""
+msgstr "Utolsó frissítés: 2023. augusztus 13."
 
-msgid "This <strong>Privacy Policy ('Policy')</strong> explains how Adventora ('we', 'us', 'our') collects, uses, protects, and shares the personal information gathered from users ('you', 'your') of the website <strong>https://adventora.net</strong> ('Website'). This Policy highlights our commitment to data privacy, transparency, and compliance with relevant data protection laws and regulations."
+msgid ""
+"This <strong>Privacy Policy ('Policy')</strong> explains how Adventora "
+"('we', 'us', 'our') collects, uses, protects, and shares the personal "
+"information gathered from users ('you', 'your') of the website "
+"<strong>https://adventora.net</strong> ('Website'). This Policy highlights "
+"our commitment to data privacy, transparency, and compliance with relevant "
+"data protection laws and regulations."
 msgstr ""
+"Ez az <strong>Adatvédelmi szabályzat (\"Irányelv\")</strong> elmagyarázza, "
+"hogy az Adventora (\"mi\", \"mi\", \"mi\") hogyan gyűjti, használja, védi és"
+" osztja meg a felhasználóktól (\"Ön\", a "
+"<strong>https://adventora.net</strong> („Webhely”) webhelyen. Ez a "
+"szabályzat kiemeli elkötelezettségünket az adatvédelem, az átláthatóság, "
+"valamint a vonatkozó adatvédelmi törvények és előírások betartása mellett."
 
 msgid "1. Information Collection"
-msgstr ""
+msgstr "1. Információgyűjtés"
 
-msgid "We collect a variety of personal data from users to ensure the smooth operation of our booking services. This includes, but is not limited to:"
+msgid ""
+"We collect a variety of personal data from users to ensure the smooth "
+"operation of our booking services. This includes, but is not limited to:"
 msgstr ""
+"Foglalási szolgáltatásaink zavartalan működése érdekében számos személyes "
+"adatot gyűjtünk a felhasználóktól. Ez magában foglalja, de nem "
+"kizárólagosan:"
 
 msgid "First and last name"
-msgstr ""
+msgstr "Kereszt-és vezetéknév"
 
 msgid "Email address"
-msgstr ""
+msgstr "Email cím"
 
 msgid "Username"
-msgstr ""
+msgstr "Felhasználónév"
 
 msgid "Phone numbers"
-msgstr ""
+msgstr "Telefonszámok"
 
 msgid "Citizenship"
-msgstr ""
+msgstr "Polgárság"
 
 msgid "For individuals designated as 'hotel manager', we also collect:"
 msgstr ""
+"A „szállodavezetőnek” kijelölt személyek esetében a következőket is "
+"begyűjtjük:"
 
 msgid "Hotel name"
-msgstr ""
+msgstr "Szálloda neve"
 
 msgid "Manager's name"
-msgstr ""
+msgstr "Menedzser neve"
 
 msgid "Unique identification number of the hotel's company (EIK)"
-msgstr ""
+msgstr "A szálloda cégének egyedi azonosító száma (EIK)"
 
 msgid "Hotel phone number"
-msgstr ""
+msgstr "Szálloda telefonszáma"
 
 msgid "Hotel email address"
-msgstr ""
+msgstr "Szálloda e-mail címe"
 
 msgid "Physical address of the hotel"
-msgstr ""
+msgstr "A szálloda fizikai címe"
 
 msgid "2. Purpose and Use of Data"
-msgstr ""
+msgstr "2. Az adatok célja és felhasználása"
 
-msgid "The collected personal information serves as a basis for smooth, secure, and efficient booking and reservations. Your data facilitate account management, responsive customer support, and critical communication. If identified as a hotel manager, certain details are shared with the establishment to optimize reservation monitoring."
+msgid ""
+"The collected personal information serves as a basis for smooth, secure, and"
+" efficient booking and reservations. Your data facilitate account "
+"management, responsive customer support, and critical communication. If "
+"identified as a hotel manager, certain details are shared with the "
+"establishment to optimize reservation monitoring."
 msgstr ""
+"Az összegyűjtött személyes adatok a zökkenőmentes, biztonságos és hatékony "
+"foglalás és foglalás alapjául szolgálnak. Adatai megkönnyítik a "
+"fiókkezelést, a reagáló ügyfélszolgálatot és a kritikus kommunikációt. Ha "
+"szállodavezetőként azonosítják, bizonyos adatokat megosztanak a "
+"szálláshellyel a foglalások optimalizálása érdekében."
 
 msgid "3. Engagement with Third-Party Services"
-msgstr ""
+msgstr "3. Elköteleződés harmadik felek szolgáltatásaival"
 
-msgid "To enhance the user experience and expand our offerings, we engage reputable third-party services, including, but not limited to:"
+msgid ""
+"To enhance the user experience and expand our offerings, we engage reputable"
+" third-party services, including, but not limited to:"
 msgstr ""
+"A felhasználói élmény fokozása és kínálatunk bővítése érdekében megbízható, "
+"harmadik féltől származó szolgáltatásokat veszünk igénybe, beleértve, de nem"
+" kizárólagosan:"
 
 msgid "Google Analytics for detailed website analysis"
-msgstr ""
+msgstr "Google Analytics a weboldal részletes elemzéséhez"
 
 msgid "Top-Rent-A-Car for promotional banners, widgets, and joint promotions"
 msgstr ""
+"Top-Rent-A-Car promóciós bannerekhez, widgetekhez és közös promóciókhoz"
 
-msgid "Social services for login, including Google, GitHub, Reddit, Spotify, Trello, Patreon, Steam, VK, and Amazon"
+msgid ""
+"Social services for login, including Google, GitHub, Reddit, Spotify, "
+"Trello, Patreon, Steam, VK, and Amazon"
 msgstr ""
+"Közösségi szolgáltatások a bejelentkezéshez, beleértve a Google, GitHub, "
+"Reddit, Spotify, Trello, Patreon, Steam, VK és Amazon"
 
-msgid "Payment processing through reputable providers like Stripe and epay.bg for secure financial transactions"
+msgid ""
+"Payment processing through reputable providers like Stripe and epay.bg for "
+"secure financial transactions"
 msgstr ""
+"Fizetések feldolgozása olyan neves szolgáltatókon keresztül, mint a Stripe "
+"és az epay.bg a biztonságos pénzügyi tranzakciók érdekében"
 
 msgid "4. Tracking Mechanisms and Cookies"
-msgstr ""
+msgstr "4. Nyomon követési mechanizmusok és cookie-k"
 
-msgid "Cookies serve as vital components of our digital architecture, contributing to the seamless retention of sessions and the preservation of data for personalization, such as theme settings and language preferences. In addition, certain third-party cookies may be used in conjunction with our respected partners."
+msgid ""
+"Cookies serve as vital components of our digital architecture, contributing "
+"to the seamless retention of sessions and the preservation of data for "
+"personalization, such as theme settings and language preferences. In "
+"addition, certain third-party cookies may be used in conjunction with our "
+"respected partners."
 msgstr ""
+"A cookie-k digitális architektúránk létfontosságú összetevőiként szolgálnak,"
+" hozzájárulva a munkamenetek zökkenőmentes megőrzéséhez és a személyre "
+"szabott adatok megőrzéséhez, például a témabeállításokhoz és a nyelvi "
+"beállításokhoz. Ezen túlmenően, bizonyos harmadik féltől származó cookie-k "
+"is használhatók tisztelt partnereinkkel együtt."
 
 msgid "5. Data Retention Strategy"
-msgstr ""
+msgstr "5. Adatmegőrzési stratégia"
 
-msgid "User personal data continue to be stored in our systems for the duration of an active account. An option for account deletion is provided, allowing for the voluntary removal of associated data. For hotel managers, data related to the establishment is stored for up to one year to comply with security protocols and possible legal regulations."
+msgid ""
+"User personal data continue to be stored in our systems for the duration of "
+"an active account. An option for account deletion is provided, allowing for "
+"the voluntary removal of associated data. For hotel managers, data related "
+"to the establishment is stored for up to one year to comply with security "
+"protocols and possible legal regulations."
 msgstr ""
+"A felhasználói személyes adatokat továbbra is tároljuk rendszereinkben az "
+"aktív fiók fennállása alatt. Lehetőség van a fiók törlésére, amely lehetővé "
+"teszi a kapcsolódó adatok önkéntes eltávolítását. A szállodavezetők számára "
+"a létesítéssel kapcsolatos adatokat a biztonsági protokolloknak és az "
+"esetleges jogszabályi előírásoknak való megfelelés érdekében legfeljebb egy "
+"évig tároljuk."
 
 msgid "6. Robust Security Framework"
-msgstr ""
+msgstr "6. Robusztus biztonsági keretrendszer"
 
-msgid "With the help of modern encryption protocols that include a 512-character encryption key, we impose strict measures to protect sensitive data. Data is stored on a remote database server located in the European Union, secured with the comprehensive security infrastructure provided by Amazon Web Services."
+msgid ""
+"With the help of modern encryption protocols that include a 512-character "
+"encryption key, we impose strict measures to protect sensitive data. Data is"
+" stored on a remote database server located in the European Union, secured "
+"with the comprehensive security infrastructure provided by Amazon Web "
+"Services."
 msgstr ""
+"Az 512 karakteres titkosítási kulcsot tartalmazó modern titkosítási "
+"protokollok segítségével szigorú intézkedéseket vezetünk be az érzékeny "
+"adatok védelmére. Az adatokat az Európai Unióban található távoli adatbázis-"
+"szerveren tároljuk, az Amazon Web Services által biztosított átfogó "
+"biztonsági infrastruktúrával védve."
 
 msgid "7. Data Sharing and Collaborative Efforts"
-msgstr ""
+msgstr "7. Adatmegosztás és együttműködési erőfeszítések"
 
-msgid "Certain user data, including email addresses, names, and contact numbers, are shared with hotels to facilitate effective reservation management. Beyond established partnerships, data sharing with external organizations is limited to data automatically collected by Google Analytics and Top-Rent-A-Car."
+msgid ""
+"Certain user data, including email addresses, names, and contact numbers, "
+"are shared with hotels to facilitate effective reservation management. "
+"Beyond established partnerships, data sharing with external organizations is"
+" limited to data automatically collected by Google Analytics and Top-Rent-A-"
+"Car."
 msgstr ""
+"Bizonyos felhasználói adatokat, beleértve az e-mail címeket, neveket és "
+"elérhetőségeket, megosztjuk a szállodákkal a hatékony foglaláskezelés "
+"megkönnyítése érdekében. A kialakult partnerségeken túl a külső "
+"szervezetekkel való adatmegosztás a Google Analytics és a Top-Rent-A-Car "
+"által automatikusan gyűjtött adatokra korlátozódik."
 
 msgid "8. Cross-Border Data Transfers"
-msgstr ""
+msgstr "8. Határokon átnyúló adatátvitel"
 
-msgid "User personal data remain entirely within the European Union. In cases where your citizenship falls outside the EU, data may be transferred internationally for storage within the jurisdiction of the EU."
+msgid ""
+"User personal data remain entirely within the European Union. In cases where"
+" your citizenship falls outside the EU, data may be transferred "
+"internationally for storage within the jurisdiction of the EU."
 msgstr ""
+"A felhasználói személyes adatok teljes egészében az Európai Unión belül "
+"maradnak. Azokban az esetekben, amikor állampolgársága az EU-n kívül esik, "
+"az adatok nemzetközileg továbbíthatók tárolás céljából az EU joghatóságán "
+"belül."
 
 msgid "9. Protection of Children's Personal Information"
-msgstr ""
+msgstr "9. Gyermekek személyes adatainak védelme"
 
-msgid "Adventora is entirely aimed at legal adults. Due to the mandatory nature of collecting personal data for reservation purposes and payment processing, the platform is not intended for minors. Exceptions may arise when legal adults provide information on minors within the context of their booked vacation."
+msgid ""
+"Adventora is entirely aimed at legal adults. Due to the mandatory nature of "
+"collecting personal data for reservation purposes and payment processing, "
+"the platform is not intended for minors. Exceptions may arise when legal "
+"adults provide information on minors within the context of their booked "
+"vacation."
 msgstr ""
+"Az Adventora teljes mértékben a legális felnőtteknek szól. A személyes "
+"adatok foglalási és fizetési feldolgozási célú gyűjtésének kötelező jellege "
+"miatt a platform nem kiskorúak számára készült. Kivételek adódhatnak, ha a "
+"törvényes felnőttek a lefoglalt nyaralásuk keretében adnak tájékoztatást "
+"kiskorúakról."
 
 msgid "10. Notification of Policy Changes"
-msgstr ""
+msgstr "10. Értesítés a szabályzat változásairól"
 
-msgid "Changes or modifications to this Policy will be communicated via email and will be clearly displayed on the Website."
+msgid ""
+"Changes or modifications to this Policy will be communicated via email and "
+"will be clearly displayed on the Website."
 msgstr ""
+"A jelen Szabályzat változásairól vagy módosításairól e-mailben értesítjük, "
+"és egyértelműen megjelennek a Weboldalon."
 
 msgid "11. Legitimate Basis for Data Processing"
-msgstr ""
+msgstr "11. Az adatfeldolgozás jogos alapja"
 
-msgid "The collection and processing of data are based on the mandatory execution of reservations and related reservation activities."
+msgid ""
+"The collection and processing of data are based on the mandatory execution "
+"of reservations and related reservation activities."
 msgstr ""
+"Az adatok gyűjtése és feldolgozása a foglalások kötelező végrehajtásán és a "
+"kapcsolódó foglalási tevékenységeken alapul."
 
 msgid "12. Implied Consent"
-msgstr ""
+msgstr "12. hallgatólagos beleegyezés"
 
-msgid "By using our platform and creating an account, you implicitly agree to the collection and processing of personal data, in accordance with this Policy."
+msgid ""
+"By using our platform and creating an account, you implicitly agree to the "
+"collection and processing of personal data, in accordance with this Policy."
 msgstr ""
+"Platformunk használatával és fiók létrehozásával Ön hallgatólagosan "
+"hozzájárul személyes adatok gyűjtéséhez és feldolgozásához, a jelen "
+"Szabályzattal összhangban."
 
 msgid "13. Compliance with Applicable Regulations"
-msgstr ""
+msgstr "13. A vonatkozó előírások betartása"
 
-msgid "Our data processing procedures strictly adhere to the regulations and provisions set forth by the General Data Protection Regulation (GDPR)."
+msgid ""
+"Our data processing procedures strictly adhere to the regulations and "
+"provisions set forth by the General Data Protection Regulation (GDPR)."
 msgstr ""
+"Adatkezelési eljárásaink szigorúan betartják az Általános Adatvédelmi "
+"Rendelet (GDPR) előírásait és rendelkezéseit."
 
-msgid "For questions, clarifications, or requests related to your personal data and this Policy, we inform you that you can contact us via the following contact: <a href='mailto:support@adventora.net'>hello@adventora.net</a>."
+msgid ""
+"For questions, clarifications, or requests related to your personal data and"
+" this Policy, we inform you that you can contact us via the following "
+"contact: <a href='mailto:support@adventora.net'>hello@adventora.net</a>."
 msgstr ""
+"Az Ön személyes adataival és jelen Szabályzattal kapcsolatos kérdései, "
+"pontosításai vagy kérései esetén tájékoztatjuk, hogy a következő "
+"elérhetőségeinken fordulhatnak hozzánk: <a "
+"href='mailto:support@adventora.net'>hello@adventora.net</. a>."
 
 msgid "Reserve Room"
-msgstr ""
+msgstr "Szobafoglalás"
 
 msgid "Price / Night"
-msgstr ""
+msgstr "Ár / Éjszaka"
 
 msgid "Name"
-msgstr ""
+msgstr "Név"
 
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 msgid "How many people?"
-msgstr ""
+msgstr "Hány ember?"
 
 msgid "How many nights?"
-msgstr ""
+msgstr "Hány éjszaka?"
 
 msgid "TOTAL"
-msgstr ""
+msgstr "TELJES"
 
 msgid "Username or email"
-msgstr ""
+msgstr "Felhasználónév vagy e-mail"
 
 msgid "Password"
-msgstr ""
+msgstr "Jelszó"
 
 msgid "Login"
-msgstr ""
+msgstr "Belépés"
 
 msgid "The username must contain at least 8 characters."
-msgstr ""
+msgstr "A felhasználónévnek legalább 8 karakterből kell állnia."
 
 msgid "First name"
-msgstr ""
+msgstr "Keresztnév"
 
 msgid "Last name"
-msgstr ""
+msgstr "Vezetéknév"
 
 msgid "Email address must be valid"
-msgstr ""
+msgstr "Az e-mail címnek érvényesnek kell lennie"
 
-msgid "The password must be at least 8 characters long. <br> The password should not contain only digits. <br> The password should not contain only letters. <br> The password should not contain only special characters. <br> The password should not contain the username. <br> The password should not be a commonly used password."
+msgid ""
+"The password must be at least 8 characters long. <br> The password should "
+"not contain only digits. <br> The password should not contain only letters. "
+"<br> The password should not contain only special characters. <br> The "
+"password should not contain the username. <br> The password should not be a "
+"commonly used password."
 msgstr ""
+"A jelszónak legalább 8 karakter hosszúnak kell lennie. <br> A jelszó nem "
+"tartalmazhat csak számjegyeket. <br> A jelszó nem tartalmazhat csak betűket."
+" <br> A jelszó nem tartalmazhat csak speciális karaktereket. <br> A jelszó "
+"nem tartalmazhatja a felhasználónevet. <br> A jelszó nem lehet gyakran "
+"használt jelszó."
 
 msgid "Confirm password"
-msgstr ""
+msgstr "Jelszó megerősítése"
 
 msgid "Enter the same password as above, for verification."
-msgstr ""
+msgstr "Az ellenőrzéshez adja meg a fenti jelszót."
 
 msgid "Sign up"
-msgstr ""
+msgstr "Regisztrálj"
 
 msgid "Vacationer - Explore, plan, and book your ideal vacation activities."
 msgstr ""
+"Nyaraló – Fedezze fel, tervezze meg és foglalja le ideális nyaralási "
+"tevékenységeit."
 
-msgid "Hotel Manager - Oversee operations and provide excellent service in your own hotel."
+msgid ""
+"Hotel Manager - Oversee operations and provide excellent service in your own"
+" hotel."
 msgstr ""
+"Szállodamenedzser – Felügyeli a működést, és kiváló szolgáltatást nyújt "
+"saját szállodájában."
 
-msgid "Employee - Contribute your expertise to a thriving workplace, such as a hotel or guest house."
+msgid ""
+"Employee - Contribute your expertise to a thriving workplace, such as a "
+"hotel or guest house."
 msgstr ""
+"Alkalmazott – Adja hozzá szakértelmét egy virágzó munkahelyhez, például egy "
+"szállodához vagy vendégházhoz."
 
 msgid "Submit"
-msgstr ""
+msgstr "Beküldés"
 
 msgid "First Name"
-msgstr ""
+msgstr "Keresztnév"
 
 msgid "Last Name"
-msgstr ""
+msgstr "Vezetéknév"
 
 msgid "Save"
-msgstr ""
+msgstr "Megment"
 
 msgid "The email must be valid."
-msgstr ""
+msgstr "Az e-mailnek érvényesnek kell lennie."
 
 msgid "Phone"
-msgstr ""
+msgstr "Telefon"
 
 msgid "Choose a Role"
-msgstr ""
+msgstr "Válasszon egy szerepet"
 
 msgid "Old Password"
-msgstr ""
+msgstr "régi jelszó"
 
 msgid "New Password"
-msgstr ""
+msgstr "új jelszó"
 
 msgid "Confirm New Password"
-msgstr ""
+msgstr "Erősítsd meg az új jelszót"
 
 msgid "Enable"
-msgstr ""
+msgstr "Engedélyezze"
 
 msgid "Code"
-msgstr ""
+msgstr "Kód"
 
 msgid "Disable"
-msgstr ""
+msgstr "Letiltás"
 
 msgid "User"
-msgstr ""
+msgstr "Felhasználó"
 
 msgid "Manager"
-msgstr ""
+msgstr "Menedzser"
 
 msgid "Employee"
-msgstr ""
+msgstr "Munkavállaló"
 
 msgid "Malformed security token"
-msgstr ""
+msgstr "Rosszul formázott biztonsági token"
 
 msgid "A user with that email already exists."
-msgstr ""
+msgstr "Ezzel a az emailcímmel már regisztráltak."
 
 msgid "Password must be at least 8 characters long."
-msgstr ""
+msgstr "A jelszónak legalább 8 karakter hosszúnak kell lennie."
 
 msgid "Passwords do not match."
-msgstr ""
+msgstr "A jelszavak nem egyeznek."
 
 msgid "Username must be at least 4 characters long."
-msgstr ""
+msgstr "A felhasználónévnek legalább 4 karakter hosszúnak kell lennie."
 
 msgid "Username should only contain letters and numbers."
-msgstr ""
+msgstr "A felhasználónév csak betűket és számokat tartalmazhat."
 
 msgid "Invalid email."
-msgstr ""
+msgstr "Érvénytelen e-mail."
 
 msgid "A user with that username already exists."
-msgstr ""
+msgstr "Ezzel a felhasználónévvel már létezik felhasználó."
 
 msgid "Successfully registration."
-msgstr ""
+msgstr "Sikeres regisztráció."
 
 msgid "Invalid data."
-msgstr ""
+msgstr "Érvénytelen adat."
 
 msgid "A user with that email does not exist."
-msgstr ""
+msgstr "Nem létezik ilyen e-mail-címmel rendelkező felhasználó."
 
 msgid "Successfully logged in."
-msgstr ""
+msgstr "Sikeres bejelentkezés."
 
 msgid "Invalid password."
-msgstr ""
+msgstr "Érvénytelen jelszó."
 
 msgid "A user with that username does not exist."
-msgstr ""
+msgstr "Nem létezik ilyen felhasználónévvel rendelkező felhasználó."
 
 msgid "Successfully logged out."
-msgstr ""
+msgstr "Sikeresen kijelentkezett."
 
 msgid "Invalid role."
-msgstr ""
+msgstr "Érvénytelen szerepkör."
 
 msgid "Successfully chosen role."
-msgstr ""
+msgstr "Sikeresen választott szerep."
 
 msgid "Successfully confirmed name."
-msgstr ""
+msgstr "A név sikeresen megerősítve."
 
 msgid "Successfully confirmed email."
-msgstr ""
+msgstr "Az e-mail sikeresen megerősítve."
 
 msgid "Invalid username. At least 5 characters."
-msgstr ""
+msgstr "Érvénytelen felhasználónév. Legalább 5 karakter."
 
 msgid "Successfully confirmed username."
-msgstr ""
+msgstr "Felhasználónév sikeresen megerősítve."
 
 msgid "Successfully edited profile."
-msgstr ""
+msgstr "A profil sikeresen szerkesztve."
 
 msgid "Incorrect old password."
-msgstr ""
+msgstr "Helytelen régi jelszó."
 
 msgid "Successfully changed password."
-msgstr ""
+msgstr "A jelszó sikeresen megváltoztatva."
 
 msgid "Incorrect password."
-msgstr ""
+msgstr "Hibás jelszó."
 
 msgid "Successfully deleted account."
-msgstr ""
+msgstr "A fiók sikeresen törölve."
 
 msgid "Successfully confirmed citizenship."
-msgstr ""
+msgstr "Sikeres állampolgárság megerősítése."
 
 msgid "Successfully confirmed phone number."
-msgstr ""
+msgstr "A telefonszám sikeresen megerősítve."
 
 msgid "Two factor authentication is not enabled."
-msgstr ""
+msgstr "A kéttényezős hitelesítés nincs engedélyezve."
 
 msgid "Two factor authentication is already passed."
-msgstr ""
+msgstr "A kétfaktoros hitelesítés már átment."
 
 msgid "Successfully passed two factor authentication"
-msgstr ""
+msgstr "Sikeresen átment a kétfaktoros hitelesítésen"
 
 msgid "Invalid code."
-msgstr ""
+msgstr "Érvénytelen kód."
 
 msgid "Two factor authentication is already enabled."
-msgstr ""
+msgstr "A kétfaktoros hitelesítés már engedélyezve van."
 
 msgid "You cannot enable two factor authentication with a social login."
 msgstr ""
+"Közösségi bejelentkezéssel nem engedélyezheti a kéttényezős hitelesítést."
 
 msgid "Successfully enabled two factor authentication."
-msgstr ""
+msgstr "A kéttényezős hitelesítés sikeresen engedélyezve."
 
 msgid "Successfully disabled two factor authentication."
-msgstr ""
+msgstr "A kéttényezős hitelesítés letiltása sikerült."
 
 msgid "Invalid login data. Please try again."
-msgstr ""
+msgstr "Érvénytelen bejelentkezési adatok. Kérlek próbáld újra."
 
-msgid "To continue, you need to pass an automated security check. Please wait. if you are not redirected within 5 seconds, complete the captcha and click continue."
+msgid ""
+"To continue, you need to pass an automated security check. Please wait. if "
+"you are not redirected within 5 seconds, complete the captcha and click "
+"continue."
 msgstr ""
+"A folytatáshoz át kell mennie egy automatikus biztonsági ellenőrzésen. "
+"Kérlek várj. Ha 5 másodpercen belül nem irányítják át, fejezze be a "
+"captcha-t, és kattintson a Tovább gombra."
 
 msgid "Continue"
-msgstr ""
+msgstr "Folytatni"
 
 msgid "Room not available"
-msgstr ""
+msgstr "A szoba nem elérhető"
 
 msgid "Invalid dates"
-msgstr ""
+msgstr "Érvénytelen dátumok"
 
 msgid "Reservation successful"
-msgstr ""
+msgstr "A foglalás sikeres"
 
 msgid "Reservation not available"
-msgstr ""
+msgstr "Foglalás nem lehetséges"
 
 msgid "Invoice not available"
-msgstr ""
+msgstr "Számla nem elérhető"
 
 msgid "Hotel Name"
-msgstr ""
+msgstr "Szálloda neve"
 
 msgid "Address"
-msgstr ""
+msgstr "Cím"
 
 msgid "City"
-msgstr ""
+msgstr "Város"
 
 msgid "Website"
-msgstr ""
+msgstr "Weboldal"
 
 msgid "Description"
-msgstr ""
+msgstr "Leírás"
 
 msgid "EIK"
-msgstr ""
+msgstr "EIK"
 
 msgid "Authorized Person"
-msgstr ""
+msgstr "Meghatalmazott személy"
 
 msgid "Stars"
-msgstr ""
+msgstr "Csillagok"
 
-msgid "I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy policy</a>"
+msgid ""
+"I have read and agree to the <a href=\"/privacy\" target=\"_blank\">privacy "
+"policy</a>"
 msgstr ""
+"Elolvastam és elfogadom az <a href=\"/privacy\" "
+"target=\"_blank\">adatvédelmi irányelveket</a>"
 
-msgid "I have read and agree to the <a href=\"/terms-of-use\" target=\"_blank\">terms and conditions</a>"
+msgid ""
+"I have read and agree to the <a href=\"/terms-of-use\" "
+"target=\"_blank\">terms and conditions</a>"
 msgstr ""
+"Elolvastam és elfogadom az <a href=\"/terms-of-use\" "
+"target=\"_blank\">Általános Szerződési Feltételeket</a>"
 
-msgid "I hereby certify, under penalty of law, that the information provided about myself and my hotel is accurate and complete to the best of my knowledge.<br> I understand that any false or misleading information provided may result in the immdiate suspesion of my hotel listing from Adventora and may lead to potential legal consequences."
+msgid ""
+"I hereby certify, under penalty of law, that the information provided about "
+"myself and my hotel is accurate and complete to the best of my "
+"knowledge.<br> I understand that any false or misleading information "
+"provided may result in the immdiate suspesion of my hotel listing from "
+"Adventora and may lead to potential legal consequences."
 msgstr ""
+"Ezúton kijelentem, a törvény büntetése mellett, hogy a magamról és a "
+"szállodámról közölt információk legjobb tudásom szerint pontosak és "
+"teljesek.<br> Tudomásul veszem, hogy bármely hamis vagy félrevezető "
+"információ szállodám azonnali gyanúját vonhatja maga után. az Adventora "
+"listája, és lehetséges jogi következményekkel járhat."
 
 msgid "Save Changes"
-msgstr ""
+msgstr "Változtatások mentése"
 
 msgid "Room Number"
-msgstr ""
+msgstr "Szoba szám"
 
 msgid "Luxuries"
-msgstr ""
+msgstr "Luxusok"
 
 msgid "Create Room"
-msgstr ""
+msgstr "Szoba létrehozása"
 
 msgid "Select Room"
-msgstr ""
+msgstr "Válassza a Szoba lehetőséget"
 
 msgid "Check In"
-msgstr ""
+msgstr "Becsekkolás"
 
 msgid "Check Out"
-msgstr ""
+msgstr "Kijelentkezés"
 
 msgid "Guests"
-msgstr ""
+msgstr "Vendégek"
 
 msgid "ID Card Number"
-msgstr ""
+msgstr "Személyi igazolvány szám"
 
 msgid "Create Reservation"
-msgstr ""
+msgstr "Foglalás létrehozása"
 
 msgid "No description provided."
-msgstr ""
+msgstr "Nincs leírás."
 
 msgid "You do not have permission to view this page"
-msgstr ""
+msgstr "Nincs engedélye ennek az oldalnak a megtekintéséhez"
 
 msgid "Your hotel is not approved yet"
-msgstr ""
+msgstr "Szállodája még nincs jóváhagyva"
 
 msgid "Successfully registered hotel"
-msgstr ""
+msgstr "Sikeresen regisztrált szálloda"
 
 msgid "Error while registering hotel"
-msgstr ""
+msgstr "Hiba történt a szálloda regisztrálásakor"
 
 msgid "You have already registered a hotel"
-msgstr ""
+msgstr "Már regisztrált szállodát"
 
 msgid "You have not registered a hotel yet"
-msgstr ""
+msgstr "Még nem regisztrált szállodát"
 
 msgid "Successfully confirmed address"
-msgstr ""
+msgstr "A cím sikeresen megerősítve"
 
 msgid "Error while confirming address"
-msgstr ""
+msgstr "Hiba a cím megerősítése közben"
 
 msgid "No such hotel"
-msgstr ""
+msgstr "Nincs ilyen szálloda"
 
 msgid "We cannot find the hotel you are looking for"
-msgstr ""
+msgstr "Nem találjuk a keresett szállodát"
 
 msgid "Successfully added room"
-msgstr ""
+msgstr "A szoba sikeresen hozzáadva"
 
 msgid "Error while adding room"
-msgstr ""
+msgstr "Hiba történt a szoba hozzáadása közben"
 
 msgid "We cannot find the room you are looking for"
-msgstr ""
+msgstr "Nem találjuk a keresett szobát"
 
 msgid "Successfully updated hotel"
-msgstr ""
+msgstr "Sikeresen felújított szálloda"
 
 msgid "Error while updating hotel"
-msgstr ""
+msgstr "Hiba történt a szálloda frissítésekor"
 
 msgid "Successfully updated room status"
-msgstr ""
+msgstr "A szoba állapota sikeresen frissítve"
 
 msgid "Invalid status"
-msgstr ""
+msgstr "Érvénytelen állapot"
 
 msgid "This room is already occupied"
-msgstr ""
+msgstr "Ez a szoba már foglalt"
 
 msgid "We cannot find the reservation you are looking for"
-msgstr ""
+msgstr "Nem találjuk az Ön által keresett foglalást"
 
 msgid "This reservation is already completed"
-msgstr ""
+msgstr "Ez a foglalás már befejeződött"
 
 msgid "This reservation is already cancelled"
-msgstr ""
+msgstr "Ezt a foglalást már törölték"
 
 msgid "This reservation is already expired"
-msgstr ""
+msgstr "Ez a foglalás már lejárt"
 
 msgid "This reservation is already rejected"
-msgstr ""
+msgstr "Ezt a foglalást már elutasították"
 
 msgid "Successfully occupied room"
-msgstr ""
+msgstr "Sikeresen elfoglalt szoba"
 
 msgid "Successfully deleted room"
-msgstr ""
+msgstr "A szoba sikeresen törölve"
 
 msgid "Successfully added reservation"
-msgstr ""
+msgstr "A foglalás sikeresen hozzáadva"
 
 msgid "Successfully uploaded photos"
-msgstr ""
+msgstr "Sikeresen feltöltött fényképek"
 
 msgid "Successfully deleted photo"
-msgstr ""
+msgstr "A fénykép sikeresen törölve"
 
 msgid "Photo not found"
-msgstr ""
+msgstr "A fénykép nem található"
 
 msgid "Successfully updated room"
-msgstr ""
+msgstr "A szoba sikeresen frissítve"
