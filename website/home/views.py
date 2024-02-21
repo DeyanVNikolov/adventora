@@ -72,7 +72,10 @@ def hotels(request):
         if len(photos) > 0:
             img = None
             for photo in photos:
-                r = requests.get(f'/static/cover/hotel/{hotel.id}/{photo}')
+                host = request.get_host()
+                scheme = request.scheme
+                
+                r = requests.get(f'{scheme}://{host}/static/cover/hotel/{hotel.id}/{photo}')
                 if r.status_code == 200:
                     img = photo
                     break
