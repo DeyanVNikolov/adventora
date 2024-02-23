@@ -236,6 +236,7 @@ AUTH_PASSWORD_VALIDATORS = [
 SOCIAL_AUTH_JSONFIELD_ENABLED = True
 
 CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor/"
+CKEDITOR_ALLOW_NONIMAGE_FILES = False
 
 # DISABLE FILE UPLOAD, ONLY TEXT
 CKEDITOR_CONFIGS = {
@@ -249,13 +250,29 @@ CKEDITOR_CONFIGS = {
         'startupFocus': False,
         'contentsCss': ['/static/css/custom_ckeditor.css'],
         'toolbar_Custom': [
-            ['Format', 'Styles', "Font", "FontSize", 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', 'SpecialChars'],
-            ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', 'Replace', '-', 'Undo', 'Redo'],
+            ['Format', 'Styles', "Font", "FontSize", 'Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', 'SpecialChars', '-', 'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
+            ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord','-', 'Find', 'Replace','SelectAll' , '-', 'Undo', 'Redo'],
             ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', 'HorizontalRule', 'Table'],
             ['RemoveFormat', "TextColor", "BGColor"],
-            ['Maximize', 'ShowBlocks', 'Source'],
+            ['Maximize', 'ShowBlocks', 'Source', 'Preview', 'Print', '-', 'Templates'],
             ['About']
         ],
+        'extraPlugins': ','.join([
+            'uploadimage', # the upload image feature
+            # your extra plugins here
+            'div',
+            'autolink',
+            'autoembed',
+            'embedsemantic',
+            'autogrow',
+            # 'devtools',
+            'widget',
+            'lineutils',
+            'clipboard',
+            'dialog',
+            'dialogui',
+            'elementspath'
+        ]),
 
     },
 }

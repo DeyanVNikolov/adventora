@@ -178,7 +178,7 @@
 
 
     </style>
-    <div class="columns is-multiline has-text-centered">
+    <div class="columns is-multiline">
 
         <script>
             function toggleCollapse(id) {
@@ -207,7 +207,7 @@
 
             </style>
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header has-text-centered">
                         <h1 style="margin: 10px auto;" class="title is-size-5 has-text-weight-bold">{% trans "Room" %} #{{ room.number }}</h1>
                     </div>
                     <div class="card-image has-img">
@@ -221,7 +221,7 @@
 
                         {% if room.luxuries.count > 0 %}
 
-                        <div class="columns is-multiline collapsible-container-{{ forloop.counter }}" id="collapsible-container-{{ forloop.counter }}" style="margin: 0">
+                        <div class="columns is-multiline collapsible-container-{{ forloop.counter }} has-text-centered" id="collapsible-container-{{ forloop.counter }}" style="margin: 0">
                         {% for lux in room.luxuries.all %}
                             <div class="column is-one-quarter column-cc" style="border: 1px #2f2f2f solid; border-radius: 20px; margin: 5px">
                                 <span class="icon"><i style="font-size: 20px" class="mdi {{ lux.icon }}"></i></span><small>{{ lux.name }}</small>
