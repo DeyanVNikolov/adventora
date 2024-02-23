@@ -67,7 +67,7 @@ msgid "Invoice"
 msgstr "Фактура"
 
 msgid "Hotel"
-msgstr "хотел"
+msgstr "Хотел"
 
 msgid "Login with Google"
 msgstr "Влезте с Google"
@@ -94,7 +94,7 @@ msgid "Please enter your two-factor verification code"
 msgstr "Моля, въведете вашия двуфакторен код за потвърждение"
 
 msgid "Home"
-msgstr "У дома"
+msgstr "Начало"
 
 msgid "Hotels"
 msgstr "хотели"
@@ -124,7 +124,7 @@ msgid "About us"
 msgstr "За нас"
 
 msgid "Privacy"
-msgstr "поверителност"
+msgstr "Поверителност"
 
 msgid "Terms of use"
 msgstr "Условия за ползване"
@@ -221,7 +221,7 @@ msgid "Available"
 msgstr "На разположение"
 
 msgid "To be cleaned"
-msgstr "Да се ​​почисти"
+msgstr "Да се почисти"
 
 msgid "Edit Hotel Information"
 msgstr "Редактиране на информацията за хотела"
