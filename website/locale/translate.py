@@ -1,4 +1,15 @@
-# automatic .po file translation
+# AUTOMATIC .PO FILE TRANSLATION
+# Copyright (c) 2024 Deyan Nikolov
+# Adventora International
+
+# -*- coding: utf-8 -*-
+
+# -----------------------------------------------------------
+
+# All rights reserved
+# This script is used to translate .po files from English to other languages
+# It uses Google Translate API to translate the strings
+# The script is used to translate the .po files of the Adventora website
 
 import os
 import sys
