@@ -58,7 +58,7 @@ msgid "Check-in"
 msgstr "Настаняване"
 
 msgid "Check-out"
-msgstr "Разгледайте"
+msgstr "Напускане"
 
 msgid "Total"
 msgstr "Обща сума"
@@ -97,7 +97,7 @@ msgid "Home"
 msgstr "Начало"
 
 msgid "Hotels"
-msgstr "хотели"
+msgstr "Хотели"
 
 msgid "Dashboard"
 msgstr "Табло"
@@ -169,7 +169,7 @@ msgid "View more"
 msgstr "Виж повече"
 
 msgid "Reserve"
-msgstr "резерва"
+msgstr "Резервирай"
 
 msgid "Admin"
 msgstr "Админ"
@@ -209,7 +209,7 @@ msgid "Price"
 msgstr "Цена"
 
 msgid "Night"
-msgstr "нощ"
+msgstr "Нощ"
 
 msgid "Occupied"
 msgstr "Заето"
@@ -221,7 +221,7 @@ msgid "Available"
 msgstr "На разположение"
 
 msgid "To be cleaned"
-msgstr "Да се почисти"
+msgstr "За почистване"
 
 msgid "Edit Hotel Information"
 msgstr "Редактиране на информацията за хотела"
@@ -549,7 +549,7 @@ msgid "Password"
 msgstr "Парола"
 
 msgid "Login"
-msgstr "Влизам"
+msgstr "Вход"
 
 msgid "The username must contain at least 8 characters."
 msgstr "Потребителското име трябва да съдържа поне 8 знака."
@@ -629,7 +629,7 @@ msgid "Old Password"
 msgstr "Стара парола"
 
 msgid "New Password"
-msgstr "нова парола"
+msgstr "Нова парола"
 
 msgid "Confirm New Password"
 msgstr "Потвърждение на новата парола"
@@ -650,7 +650,7 @@ msgid "Manager"
 msgstr "Управител"
 
 msgid "Employee"
-msgstr "служител"
+msgstr "Служител"
 
 msgid "Malformed security token"
 msgstr "Деформиран маркер за сигурност"
