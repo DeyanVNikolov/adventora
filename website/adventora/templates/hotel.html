@@ -88,36 +88,36 @@
             </style>
 
             <div class="column is-full">
-            <section class="section is-unselectable">
-                <div class="container">
-                    <div class="swiper mySwiper" style="height: 700px; border-radius: 15px">
-                        <div class="swiper-wrapper swpmitkodidko" style="overflow: visible !important;">
-                            {% for image in hotel_images %}
-                                <div class="swiper-slide"><img src="/static/cover/hotel/{{ hotel.id }}/{{ image }}" alt="" style="width: 100%; height: 100%"></div>
-                            {% endfor %}
+                <section class="section is-unselectable">
+                    <div class="container">
+                        <div class="swiper mySwiper" style="height: 700px; border-radius: 15px">
+                            <div class="swiper-wrapper swpmitkodidko" style="overflow: visible !important;">
+                                {% for image in hotel_images %}
+                                    <div class="swiper-slide"><img src="/static/cover/hotel/{{ hotel.id }}/{{ image }}" alt="" style="width: 100%; height: 100%"></div>
+                                {% endfor %}
 
 
+                            </div>
+                            <div class="swiper-button-next" style="background-color:rgba(0,0,0,0.66)"></div>
+                            <div class="swiper-button-prev" style="background-color:rgba(0,0,0,0.66)"></div>
                         </div>
-                        <div class="swiper-button-next" style="background-color:rgba(0,0,0,0.66)"></div>
-                        <div class="swiper-button-prev" style="background-color:rgba(0,0,0,0.66)"></div>
                     </div>
-                </div>
-            </section>
+                </section>
 
-            <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-            <script>
+                <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+                <script>
 
-                var swiper = new Swiper(".mySwiper", {
-                    navigation: {
-                        nextEl: ".swiper-button-next",
-                        prevEl: ".swiper-button-prev",
+                    var swiper = new Swiper(".mySwiper", {
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
 
-                    },
-                    loop: true,
+                        },
+                        loop: true,
 
-                });
-            </script>
+                    });
+                </script>
             </div>
 
             <div class="column is-three-fifths card flex-column-card">
@@ -142,27 +142,27 @@
                 </footer>
             </div>
 
-        <div class="column card flex-column-card">
-            {% if LANGUAGE_CODE == "bg" %}
-                <script type="text/javascript" src="https://toprentacar.bg/partner_widget?partner=adventora&channel=widget"></script>
-            {% else %}
-                <script type="text/javascript" src="https://toprentacar.bg/en/partner_widget?partner=adventora&channel=widget"></script>
-            {% endif %}
-        </div>
+            <div class="column card flex-column-card">
+                {% if LANGUAGE_CODE == "bg" %}
+                    <script type="text/javascript" src="https://toprentacar.bg/partner_widget?partner=adventora&channel=widget"></script>
+                {% else %}
+                    <script type="text/javascript" src="https://toprentacar.bg/en/partner_widget?partner=adventora&channel=widget"></script>
+                {% endif %}
+            </div>
 
 
         </div>
-{#    <div class="columns is-multiline is-centered is-vcentered has-text-centered">#}
-{#            <div class="column is-one-third">#}
-{#                d#}
-{#            </div>#}
-{#            <div class="column is-one-third">#}
-{#                d#}
-{#            </div>#}
-{#            <div class="column is-one-third">#}
-{#                d#}
-{#            </div>#}
-{#    </div>#}
+        {#    <div class="columns is-multiline is-centered is-vcentered has-text-centered">#}
+        {#            <div class="column is-one-third">#}
+        {#                d#}
+        {#            </div>#}
+        {#            <div class="column is-one-third">#}
+        {#                d#}
+        {#            </div>#}
+        {#            <div class="column is-one-third">#}
+        {#                d#}
+        {#            </div>#}
+        {#    </div>#}
 
 
     </section>
@@ -170,83 +170,108 @@
 
     <!--Start of list box-->
     <section class="section">
-    <style>
-        .columns-rooms {
-            margin: 10px;
-            border-radius: 25px;
-        }
-
-
-    </style>
-    <div class="columns is-multiline">
-
-        <script>
-            function toggleCollapse(id) {
-                var container = document.getElementById('collapsible-container-' + id);
-                container.classList.toggle('expanded');
+        <style>
+            .columns-rooms {
+                margin: 10px;
+                border-radius: 25px;
             }
-        </script>
-    <style>
 
-    </style>
-        {% for room in rooms %}
 
-        <div class="column is-one-third">
+        </style>
+        <div class="columns is-multiline">
+
+            <script>
+                function toggleModal(id) {
+                    var container = document.getElementById('modal-lux-' + id);
+                    container.classList.toggle('is-active');
+                }
+            </script>
             <style>
-                .collapsible-container-{{ forloop.counter }} {
-                    max-height: 60px;
-                    overflow: hidden;
-                    transition: max-height 0.2s ease-out;
-                    transition: height 0.2s ease-out;
-                }
-
-                .collapsible-container-{{ forloop.counter }}.expanded {
-                    max-height: fit-content;
-                }
-
 
             </style>
-                <div class="card">
-                    <div class="card-header has-text-centered">
-                        <h1 style="margin: 10px auto;" class="title is-size-5 has-text-weight-bold">{% trans "Room" %} #{{ room.number }}</h1>
-                    </div>
-                    <div class="card-image has-img">
-                        <figure class="image is-4by3">
-                            <img src="/static/cover/room/{{ room.id }}/{{ room.id }}-0.png" style="object-fit: cover" alt="Placeholder image">
-                        </figure>
-                    </div>
-                    <div class="card-body">
-                        {{ room.description | safe }}
-                        <hr>
+            {% for room in rooms %}
 
-                        {% if room.luxuries.count > 0 %}
+                <div class="column is-one-third">
+                    <style>
+                        .collapsible-container-{{ forloop.counter }} {
+                            max-height: 60px;
+                            overflow: hidden;
+                            transition: max-height 0.2s ease-out;
+                            transition: height 0.2s ease-out;
+                        }
 
-                        <div class="columns is-multiline collapsible-container-{{ forloop.counter }} has-text-centered" id="collapsible-container-{{ forloop.counter }}" style="margin: 0">
-                        {% for lux in room.luxuries.all %}
-                            <div class="column is-one-quarter column-cc" style="border: 1px #2f2f2f solid; border-radius: 20px; margin: 5px">
-                                <span class="icon"><i style="font-size: 20px" class="mdi {{ lux.icon }}"></i></span><small>{{ lux.name }}</small>
+                        .collapsible-container-{{ forloop.counter }}.expanded {
+                            max-height: fit-content;
+                        }
+
+
+                    </style>
+                    <div class="card">
+                        <div class="card-header has-text-centered">
+                            <h1 style="margin: 10px auto;" class="title is-size-5 has-text-weight-bold">{% trans "Room" %} #{{ room.number }}</h1>
+                        </div>
+                        <div class="card-image has-img">
+                            <figure class="image is-4by3">
+                                <img src="/static/cover/room/{{ room.id }}/{{ room.id }}-0.png" style="object-fit: cover" alt="Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-body">
+                            <div style="padding: 15px">
+                                {{ room.description | safe }}
                             </div>
+                            <hr>
 
-                        {% endfor %}
+                            {% if room.luxuries.count > 0 %}
+
+                                <div class="columns is-multiline collapsible-container-{{ forloop.counter }} has-text-centered" id="collapsible-container-{{ forloop.counter }}" style="margin: 0">
+                                    {% for lux in room.luxuries.all|slice:"4" %}
+                                        <div class="column is-one-quarter column-cc" style="border-radius: 20px; padding: 0">
+                                            <span class="icon"><i style="font-size: 20px" class="mdi {{ lux.icon }}"></i></span><small>{{ lux.name }}</small>
+                                        </div>
+
+                                    {% endfor %}
+                                </div>
+
+                                <button class="button is-success-passive" onclick="toggleModal({{ forloop.counter }})">{% trans "View more" %}</button>
+
+                                <div class="modal" id="modal-lux-{{ forloop.counter }}">
+                                    <div class="modal-background"></div>
+                                    <div class="modal-card">
+                                        <header class="modal-card-head">
+                                            <p class="modal-card-title">{% trans "Room" %} {{ room.number }}</p>
+                                            <button class="delete" onclick="toggleModal({{ forloop.counter }})" aria-label="close"></button>
+                                        </header>
+                                        <section class="modal-card-body">
+                                            <div class="columns is-multiline has-text-centered">
+                                                {% for lux in room.luxuries.all %}
+                                                    <div class="column is-one-quarter column-cc" style="border-radius: 20px; padding: 10px;">
+                                                        <span class="icon"><i style="font-size: 20px" class="mdi {{ lux.icon }}"></i></span><small>{{ lux.name }}</small>
+                                                    </div>
+                                                {% endfor %}
+                                            </div>
+                                        </section>
+                                        <footer class="modal-card-foot">
+                                            <button class="button" onclick="toggleModal({{ forloop.counter }})">Close</button>
+                                        </footer>
+                                        Room {{ room.number }} / {{ room.id }}
+                                    </div>
+                                </div>
+
+
+                            {% endif %}
+                            <br>
+                            <br>
+
 
                         </div>
-                        <button class="button is-success-passive" onclick="toggleCollapse({{ forloop.counter }})">{% trans "View more" %}</button>
-
-                        {% endif %}
-                    <br>
-                    <br>
-
-
-
-                    </div>
-                    <div class="card-footer">
-                        <button style="margin: 10px auto; width: 70%; border-radius: 20px" onclick="window.location.href='/room/{{ room.id }}'"
-                                class="button is-primary">{% trans "Reserve" %}</button>
+                        <div class="card-footer">
+                            <button style="margin: 10px auto; width: 70%; border-radius: 20px" onclick="window.location.href='/room/{{ room.id }}'"
+                                    class="button is-primary">{% trans "Reserve" %}</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        {% endfor %}
-    </div>
+            {% endfor %}
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>

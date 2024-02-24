@@ -159,7 +159,41 @@ def room(request, room_id):
         checkout = datetime.datetime.strptime(checkout, '%Y-%m-%d')
         nights = (checkout - checkin).days
 
+        checkin_timestamp = int(checkin.timestamp())
+        checkout_timestamp = int(checkout.timestamp())
+
         price = room.price * int(nights)
+
+        # check if room is occupied during any of the dates and days inbetween, if so, return error
+        # filter by status "pending" or "occupied" or "checkin" or occupied=true
+
+        reservations = Reservation.objects.filter(room=room, status__in=['pending', 'occupied', 'checkin', 'confirmed'])
+        for reservation in reservations:
+            # reservation.check_in is a date, convert to datetime
+            reservation_in = datetime.datetime.combine(reservation.checkin, datetime.datetime.min.time())
+            reservation_out = datetime.datetime.combine(reservation.checkout, datetime.datetime.min.time())
+
+            reservation_in_timestamp = int(reservation_in.timestamp())
+            reservation_out_timestamp = int(reservation_out.timestamp())
+
+
+
+            if reservation_in_timestamp <= checkin_timestamp <= reservation_out_timestamp:
+                print("1")
+                print(reservation_in_timestamp, checkin_timestamp, reservation_out_timestamp)
+                messages.error(request, _('Room is already reserved for the selected dates'))
+                return redirect('room', room_id=room_id)
+            if reservation_in_timestamp <= checkout_timestamp <= reservation_out_timestamp:
+                print("2")
+                print(reservation_in_timestamp, checkout_timestamp, reservation_out_timestamp)
+                messages.error(request, _('Room is already reserved for the selected dates'))
+                return redirect('room', room_id=room_id)
+            if checkin_timestamp <= reservation_in_timestamp and checkout_timestamp >= reservation_out_timestamp:
+                print("3")
+                print(checkin_timestamp, reservation_in_timestamp, checkout_timestamp, reservation_out_timestamp)
+                messages.error(request, _('Room is already reserved for the selected dates'))
+                return redirect('room', room_id=room_id)
+
 
         reservation = Reservation()
 
