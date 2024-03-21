@@ -7,6 +7,50 @@
 
 
     <div class="columns is-multiline has-text-centered" style="margin: auto">
+        <div class="column is-full">
+            <div style="width: 55%; margin: auto;" class="field">
+                <p class="control has-icons-left has-icons-right">
+                    <input class="input" type="text" placeholder="Serach..." name="search" id="search">
+                    <span class="icon is-small is-left">
+                            <i class="fa-solid fa-magnifying-glass-location"></i>
+                    </span>
+                    <br><br>
+                    <button id="search-submit" class="button is-warning">Search</button>
+                </p>
+            </div>
+            <script>
+                // on #search-submit click or enter press while focused on #search, redirect to /hotels/?search=<search value>
+                document.getElementById('search-submit').addEventListener('click', () => {
+                    if (document.getElementById('search').value) {
+                        window.location.href = `/hotels/?search=${document.getElementById('search').value}`
+                    } else {
+                        window.location.href = `/hotels/`
+                    }
+                })
+
+                document.getElementById('search').addEventListener('keyup', (e) => {
+                    if (e.key === 'Enter') {
+                        if (document.getElementById('search').value) {
+                            window.location.href = `/hotels/?search=${document.getElementById('search').value}`
+                        } else {
+                            window.location.href = `/hotels/`
+                        }
+                    }
+                })
+                
+                // on laod, place the search value in the input
+                window.onload = () => {
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const search = urlParams.get('search');
+                    if (search) {
+                        document.getElementById('search').value = search
+                    }
+                }
+            </script>
+            <br><br>
+        </div>
+
+    {% if hotels %}
         {% for hotel in hotels %}
             <div class="column is-one-quarter">
                 <div class="card">
@@ -15,7 +59,7 @@
                     </div>
                     <div class="card-body has-img">
                         <figure class="image is-4by3">
-                            
+
                             <img src="/static/cover/hotel/{{ hotel.id }}/{{ hotel.main_img }}" style="object-fit: cover" alt="Placeholder image">
                         </figure>
                     </div>
@@ -26,6 +70,13 @@
                 </div>
             </div>
         {% endfor %}
+    {% else %}
+        <div class="column is-full">
+            <h1 class="title is-size-3 has-text-weight-bold">
+                Няма намерени хотели
+            </h1>
+        </div>
+    {% endif %}
     </div>
 
 

@@ -66,6 +66,10 @@ def stranded_abroad(request):
 def hotels(request):
     hotels = Hotel.objects.all().exclude(approved=False)
 
+    search = request.GET.get('search', None)
+    if search:
+        hotels = hotels.filter(name__icontains=search)
+
     for hotel in hotels:
         # select ONE random image from hotel.photos
         photos = str(hotel.photos).split('|PHOTO|')
