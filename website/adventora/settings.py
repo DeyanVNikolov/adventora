@@ -102,6 +102,8 @@ MIDDLEWARE = [
 
 ]
 
+SOCIAL_AUTH_SANITIZE_REDIRECTS = True
+
 TURNSTILE_DEFAULT_CONFIG = {
 
     'callback': 'processturn',

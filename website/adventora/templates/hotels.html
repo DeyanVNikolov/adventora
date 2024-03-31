@@ -57,12 +57,13 @@
                     <div class="card-header">
                         <h1 style="margin: 10px auto;" class="title is-size-5 has-text-weight-bold">{{ hotel.name }}</h1>
                     </div>
+
                     <div class="card-body has-img">
                         <figure class="image is-4by3">
-
                             <img src="/static/cover/hotel/{{ hotel.id }}/{{ hotel.main_img }}" style="object-fit: cover" alt="Placeholder image">
                         </figure>
                     </div>
+
                     <div class="card-footer">
                         <button style="margin: 10px auto; width: 70%; border-radius: 20px" onclick="window.location.href='/hotels/{{ hotel.id }}'"
                                 class="button is-primary">{% trans "View more" %}</button>
