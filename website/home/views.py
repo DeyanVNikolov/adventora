@@ -212,8 +212,8 @@ def room(request, room_id):
 
         reservation.save()
 
-        from .email import sendreservationsuccess
-        sendreservationsuccess(email, name, checkin, checkout, people, nights, price, reservation, hotel, room)
+        # from .email import sendreservationsuccess
+        # sendreservationsuccess(email, name, checkin, checkout, people, nights, price, reservation, hotel, room)
 
         messages.success(request, _('Reservation successful'))
         return redirect('hotels')
